@@ -8,6 +8,7 @@ interface FormActionsProps {
   pendingLabel: string;
   isPending: boolean;
   disabled?: boolean;
+  submitTitle?: string;
 }
 
 export function FormActions({
@@ -16,13 +17,19 @@ export function FormActions({
   pendingLabel,
   isPending,
   disabled = false,
+  submitTitle,
 }: FormActionsProps) {
   return (
     <>
       <Button asChild variant="outline">
         <Link href={cancelHref}>Cancelar</Link>
       </Button>
-      <Button type="submit" disabled={disabled || isPending}>
+      <Button
+        type="submit"
+        disabled={disabled || isPending}
+        aria-disabled={disabled || isPending ? true : undefined}
+        title={submitTitle}
+      >
         {isPending ? pendingLabel : submitLabel}
       </Button>
     </>
