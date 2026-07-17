@@ -28,8 +28,11 @@
 - [x] Crear repositorio de authors.
 - [x] Crear servicio de authors.
 - [x] Crear errores de dominio de authors.
+- [x] Crear pruebas unitarias del esquema de authors.
+- [x] Crear pruebas unitarias del servicio de authors.
 - [ ] Crear politicas RLS de authors.
-- [ ] Crear pruebas automatizadas de authors.
+- [ ] Crear pruebas de integracion del repository de authors.
+- [ ] Traducir conflictos unicos de PostgreSQL en authors.
 - [ ] Crear Server Actions de authors.
 - [ ] Crear autorizacion por roles de authors.
 - [ ] Crear panel administrativo de authors.
