@@ -25,7 +25,6 @@ export const adminNavigationItems: AdminNavigationItem[] = [
     href: '/admin/authors',
     label: 'Autores',
     icon: UsersRound,
-    disabled: true,
   },
   {
     href: '/admin/books',
