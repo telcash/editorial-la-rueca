@@ -6,8 +6,6 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 export default defineConfig([
   ...nextVitals,
   ...nextTs,
-
   eslintConfigPrettier,
-
   globalIgnores(['.next/**', 'out/**', 'build/**', 'coverage/**', 'drizzle/**', 'next-env.d.ts']),
 ]);
