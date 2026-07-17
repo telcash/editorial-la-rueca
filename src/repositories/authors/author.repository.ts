@@ -1,6 +1,6 @@
 import 'server-only';
 
-import { and, asc, desc, eq, ne } from 'drizzle-orm';
+import { and, asc, desc, eq, inArray, ne } from 'drizzle-orm';
 
 import { db } from '@/db';
 import { authors, type Author, type NewAuthor } from '@/db/schema';
@@ -18,6 +18,14 @@ export async function findBySlug(slug: string): Promise<Author | null> {
   const [author] = await db.select().from(authors).where(eq(authors.slug, slug)).limit(1);
 
   return author ?? null;
+}
+
+export async function findByIds(ids: string[]): Promise<Author[]> {
+  if (ids.length === 0) {
+    return [];
+  }
+
+  return db.select().from(authors).where(inArray(authors.id, ids));
 }
 
 export async function findAll(): Promise<Author[]> {

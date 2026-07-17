@@ -22,6 +22,13 @@
       "when": 1784296244610,
       "tag": "0002_faithful_dreadnoughts",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1784315044557,
+      "tag": "0003_soft_zeigeist",
+      "breakpoints": true
     }
   ]
 }
