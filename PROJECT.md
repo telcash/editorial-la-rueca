@@ -44,6 +44,10 @@ UI -> feature -> service -> repository -> Drizzle -> PostgreSQL
 - `profiles` existe en Supabase.
 - Migracion de RLS y trigger generada para `profiles`, aun no aplicada.
 - `public.authors` existe en Supabase.
+- Autenticacion SSR implementada con Supabase.
+- Panel protegido por sesion y rol.
+- Roles del panel tomados desde `public.profiles`.
+- UI administrativa provisional.
 
 ## Roadmap general
 

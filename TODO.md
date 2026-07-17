@@ -20,6 +20,20 @@
 - [ ] Aplicar migracion de RLS y trigger de profiles.
 - [ ] Verificar politicas RLS y trigger de profiles en Supabase.
 - [ ] Configurar Supabase Auth.
+- [x] Crear clientes Supabase SSR.
+- [x] Renovar sesion mediante proxy.ts.
+- [x] Crear login con correo y contrasena.
+- [x] Crear cierre de sesion.
+- [x] Proteger layout /admin.
+- [x] Crear autorizacion inicial para admin/editor.
+- [x] Crear pagina provisional del panel.
+- [x] Crear pagina de acceso no autorizado.
+- [ ] Crear recuperacion de contrasena.
+- [ ] Crear pruebas de integracion de autenticacion.
+- [ ] Crear shell administrativo definitivo.
+- [ ] Crear navegacion lateral.
+- [ ] Crear auditoria.
+- [ ] Crear gestion de usuarios.
 - [x] Generar esquema authors.
 - [x] Generar migracion authors.
 - [x] Aplicar migracion authors.
@@ -35,6 +49,7 @@
 - [ ] Traducir conflictos unicos de PostgreSQL en authors.
 - [ ] Crear Server Actions de authors.
 - [ ] Crear autorizacion por roles de authors.
+- [ ] Crear modulo administrativo de authors.
 - [ ] Crear panel administrativo de authors.
 - [ ] Crear paginas publicas de authors.
 - [ ] Crear libros.
