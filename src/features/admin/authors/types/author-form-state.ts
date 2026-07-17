@@ -15,7 +15,7 @@ export interface AuthorFormValues {
   sortOrder: string;
 }
 
-export type AuthorFormFieldErrors = Partial<Record<keyof AuthorFormValues, string[]>>;
+export type AuthorFormFieldErrors = Partial<Record<keyof AuthorFormValues | 'photo', string[]>>;
 
 export interface AuthorFormState {
   success: boolean;

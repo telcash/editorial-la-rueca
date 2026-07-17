@@ -8,7 +8,17 @@ import { updateAuthorSchema } from '@/schemas/authors/author.schema';
 import { requireEditorialStaff } from '@/services/auth/access.service';
 import { AuthorNotFoundError, AuthorSlugConflictError } from '@/services/authors/author.errors';
 import * as AuthorService from '@/services/authors/author.service';
-import { getAuthorFormValues, getAuthorUpdateInput } from '../lib/author-form-data';
+import {
+  getAuthorFormValues,
+  getAuthorPhotoFile,
+  getAuthorUpdateInput,
+} from '../lib/author-form-data';
+import { AuthorImageUploadError, InvalidAuthorImageError } from '../services/author-image-errors';
+import {
+  getAuthorImagePathFromPublicUrl,
+  validateAuthorImageFile,
+} from '../services/author-image-service.core';
+import * as AuthorImageService from '../services/author-image-service';
 import type { AuthorFormState } from '../types/author-form-state';
 
 export async function updateAuthor(
@@ -18,8 +28,31 @@ export async function updateAuthor(
 ): Promise<AuthorFormState> {
   await requireEditorialStaff();
 
-  const values = getAuthorFormValues(formData);
+  let currentAuthor: Awaited<ReturnType<typeof AuthorService.getAuthorById>>;
+
+  try {
+    currentAuthor = await AuthorService.getAuthorById(authorId);
+  } catch (error) {
+    if (error instanceof AuthorNotFoundError) {
+      const values = getAuthorFormValues(formData);
+
+      return {
+        success: false,
+        fieldErrors: {},
+        formError: 'No se pudo encontrar el autor que intentas actualizar.',
+        values,
+      };
+    }
+
+    throw error;
+  }
+
+  const values = {
+    ...getAuthorFormValues(formData),
+    photoUrl: currentAuthor.photoUrl ?? '',
+  };
   const parsedInput = updateAuthorSchema.safeParse(getAuthorUpdateInput(formData));
+  const photoFile = getAuthorPhotoFile(formData);
 
   if (!parsedInput.success) {
     return {
@@ -28,6 +61,25 @@ export async function updateAuthor(
       formError: null,
       values,
     };
+  }
+
+  if (photoFile) {
+    try {
+      validateAuthorImageFile(photoFile);
+    } catch (error) {
+      if (error instanceof InvalidAuthorImageError) {
+        return {
+          success: false,
+          fieldErrors: {
+            photo: [error.message],
+          },
+          formError: null,
+          values,
+        };
+      }
+
+      throw error;
+    }
   }
 
   try {
@@ -68,6 +120,48 @@ export async function updateAuthor(
       formError: 'No se pudo actualizar el autor. Inténtalo de nuevo.',
       values,
     };
+  }
+
+  if (photoFile) {
+    try {
+      const previousPath = getAuthorImagePathFromPublicUrl(currentAuthor.photoUrl);
+      const uploadedImage = await AuthorImageService.replaceAuthorImage(
+        authorId,
+        photoFile,
+        previousPath,
+      );
+
+      await AuthorService.updateAuthor(authorId, {
+        photoUrl: uploadedImage.publicUrl,
+      });
+    } catch (error) {
+      if (error instanceof InvalidAuthorImageError) {
+        return {
+          success: false,
+          fieldErrors: {
+            photo: [error.message],
+          },
+          formError: null,
+          values,
+        };
+      }
+
+      if (error instanceof AuthorImageUploadError) {
+        return {
+          success: false,
+          fieldErrors: {},
+          formError: 'No se pudo actualizar la foto del autor. Inténtalo de nuevo.',
+          values,
+        };
+      }
+
+      return {
+        success: false,
+        fieldErrors: {},
+        formError: 'No se pudo actualizar la foto del autor. Inténtalo de nuevo.',
+        values,
+      };
+    }
   }
 
   revalidatePath('/admin/authors');

@@ -8,7 +8,14 @@ import { createAuthorSchema } from '@/schemas/authors/author.schema';
 import { requireEditorialStaff } from '@/services/auth/access.service';
 import { AuthorSlugConflictError } from '@/services/authors/author.errors';
 import * as AuthorService from '@/services/authors/author.service';
-import { getAuthorCreateInput, getAuthorFormValues } from '../lib/author-form-data';
+import {
+  getAuthorCreateInput,
+  getAuthorFormValues,
+  getAuthorPhotoFile,
+} from '../lib/author-form-data';
+import { AuthorImageUploadError, InvalidAuthorImageError } from '../services/author-image-errors';
+import { validateAuthorImageFile } from '../services/author-image-service.core';
+import * as AuthorImageService from '../services/author-image-service';
 import type { AuthorFormState } from '../types/author-form-state';
 
 export async function createAuthor(
@@ -19,6 +26,7 @@ export async function createAuthor(
 
   const values = getAuthorFormValues(formData);
   const parsedInput = createAuthorSchema.safeParse(getAuthorCreateInput(formData));
+  const photoFile = getAuthorPhotoFile(formData);
 
   if (!parsedInput.success) {
     return {
@@ -29,8 +37,29 @@ export async function createAuthor(
     };
   }
 
+  if (photoFile) {
+    try {
+      validateAuthorImageFile(photoFile);
+    } catch (error) {
+      if (error instanceof InvalidAuthorImageError) {
+        return {
+          success: false,
+          fieldErrors: {
+            photo: [error.message],
+          },
+          formError: null,
+          values,
+        };
+      }
+
+      throw error;
+    }
+  }
+
+  let createdAuthor: Awaited<ReturnType<typeof AuthorService.createAuthor>>;
+
   try {
-    await AuthorService.createAuthor(parsedInput.data);
+    createdAuthor = await AuthorService.createAuthor(parsedInput.data);
   } catch (error) {
     if (error instanceof AuthorSlugConflictError) {
       return {
@@ -58,6 +87,43 @@ export async function createAuthor(
       formError: 'No se pudo guardar el autor. Inténtalo de nuevo.',
       values,
     };
+  }
+
+  if (photoFile) {
+    try {
+      const uploadedImage = await AuthorImageService.uploadAuthorImage(createdAuthor.id, photoFile);
+
+      await AuthorService.updateAuthor(createdAuthor.id, {
+        photoUrl: uploadedImage.publicUrl,
+      });
+    } catch (error) {
+      if (error instanceof InvalidAuthorImageError) {
+        return {
+          success: false,
+          fieldErrors: {
+            photo: [error.message],
+          },
+          formError: 'El autor fue creado, pero no se pudo subir la imagen.',
+          values,
+        };
+      }
+
+      if (error instanceof AuthorImageUploadError) {
+        return {
+          success: false,
+          fieldErrors: {},
+          formError: 'El autor fue creado, pero no se pudo subir la imagen.',
+          values,
+        };
+      }
+
+      return {
+        success: false,
+        fieldErrors: {},
+        formError: 'El autor fue creado, pero no se pudo subir la imagen.',
+        values,
+      };
+    }
   }
 
   revalidatePath('/admin/authors');

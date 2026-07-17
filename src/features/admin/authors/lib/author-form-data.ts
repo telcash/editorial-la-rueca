@@ -10,7 +10,6 @@ type TextFieldName =
   | 'slug'
   | 'shortBio'
   | 'biography'
-  | 'photoUrl'
   | 'websiteUrl'
   | 'instagramUrl'
   | 'facebookUrl'
@@ -33,7 +32,7 @@ export function getAuthorFormValues(formData: FormData): AuthorFormValues {
     slug: getTextValue(formData, 'slug'),
     shortBio: getTextValue(formData, 'shortBio'),
     biography: getTextValue(formData, 'biography'),
-    photoUrl: getTextValue(formData, 'photoUrl'),
+    photoUrl: '',
     websiteUrl: getTextValue(formData, 'websiteUrl'),
     instagramUrl: getTextValue(formData, 'instagramUrl'),
     facebookUrl: getTextValue(formData, 'facebookUrl'),
@@ -42,6 +41,16 @@ export function getAuthorFormValues(formData: FormData): AuthorFormValues {
     isFeatured: getBooleanValue(formData, 'isFeatured'),
     sortOrder: getTextValue(formData, 'sortOrder') || '0',
   };
+}
+
+export function getAuthorPhotoFile(formData: FormData): File | null {
+  const photo = formData.get('photo');
+
+  if (!(photo instanceof File) || photo.size === 0) {
+    return null;
+  }
+
+  return photo;
 }
 
 export function getAuthorCreateInput(formData: FormData): AuthorCreateInputFromForm {
@@ -53,7 +62,6 @@ export function getAuthorCreateInput(formData: FormData): AuthorCreateInputFromF
     slug: values.slug,
     shortBio: values.shortBio,
     biography: values.biography,
-    photoUrl: values.photoUrl,
     websiteUrl: values.websiteUrl,
     instagramUrl: values.instagramUrl,
     facebookUrl: values.facebookUrl,
@@ -73,7 +81,6 @@ export function getAuthorUpdateInput(formData: FormData): AuthorUpdateInputFromF
     slug: values.slug,
     shortBio: values.shortBio,
     biography: values.biography,
-    photoUrl: values.photoUrl,
     websiteUrl: values.websiteUrl,
     instagramUrl: values.instagramUrl,
     facebookUrl: values.facebookUrl,

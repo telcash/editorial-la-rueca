@@ -48,7 +48,7 @@ export function AuthorForm({ mode = 'create', authorId, initialValues }: AuthorF
   const [state, formAction] = useActionState(action, getInitialState(initialValues));
 
   return (
-    <form action={formAction}>
+    <form action={formAction} encType="multipart/form-data">
       <Card>
         <CardContent className="pt-6">
           <div className="space-y-6">
@@ -57,7 +57,7 @@ export function AuthorForm({ mode = 'create', authorId, initialValues }: AuthorF
                 {state.formError}
               </div>
             ) : null}
-            <AuthorFormFields values={state.values} fieldErrors={state.fieldErrors} />
+            <AuthorFormFields values={state.values} fieldErrors={state.fieldErrors} mode={mode} />
           </div>
         </CardContent>
         <CardFooter className="flex flex-col-reverse gap-3 border-t border-border sm:flex-row sm:justify-end">

@@ -1,10 +1,10 @@
 'use client';
 
-import { LogOut, UserRound } from 'lucide-react';
+import { UserRound } from 'lucide-react';
 
-import { signOut } from '@/features/auth/actions/sign-out';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
+import { LogoutButton } from '@/features/auth/components/logout-button';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -52,12 +52,7 @@ export function AdminUserMenu({ displayName, role, avatarUrl }: AdminUserMenuPro
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild>
-          <form action={signOut} className="w-full">
-            <button type="submit" className="flex w-full items-center gap-2">
-              <LogOut className="size-4" aria-hidden="true" />
-              Cerrar sesión
-            </button>
-          </form>
+          <LogoutButton />
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

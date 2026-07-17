@@ -32,7 +32,6 @@ describe('author form data adapter', () => {
       slug: 'ana-perez',
       shortBio: 'Bio breve',
       biography: 'Biografía completa',
-      photoUrl: 'https://example.com/photo.jpg',
       websiteUrl: 'https://example.com',
       instagramUrl: 'https://instagram.com/ana',
       facebookUrl: 'https://facebook.com/ana',
@@ -94,7 +93,7 @@ describe('author form data adapter', () => {
     formData.set('slug', 'autora-editada');
     formData.set('shortBio', '');
     formData.set('biography', '');
-    formData.set('photoUrl', '');
+    formData.set('photoUrl', 'https://attacker.example/photo.jpg');
     formData.set('websiteUrl', '');
     formData.set('instagramUrl', '');
     formData.set('facebookUrl', '');
@@ -108,7 +107,6 @@ describe('author form data adapter', () => {
       slug: 'autora-editada',
       shortBio: '',
       biography: '',
-      photoUrl: '',
       websiteUrl: '',
       instagramUrl: '',
       facebookUrl: '',
@@ -126,7 +124,7 @@ describe('author form data adapter', () => {
     formData.set('slug', 'autora-editada');
     formData.set('shortBio', '');
     formData.set('biography', '');
-    formData.set('photoUrl', '');
+    formData.set('photoUrl', 'https://attacker.example/photo.jpg');
     formData.set('websiteUrl', '');
     formData.set('instagramUrl', '');
     formData.set('facebookUrl', '');
@@ -136,7 +134,6 @@ describe('author form data adapter', () => {
     expect(updateAuthorSchema.parse(getAuthorUpdateInput(formData))).toMatchObject({
       shortBio: null,
       biography: null,
-      photoUrl: null,
       websiteUrl: null,
       instagramUrl: null,
       facebookUrl: null,

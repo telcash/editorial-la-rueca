@@ -2,11 +2,13 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
 import { Textarea } from '@/components/ui/textarea';
+import { AUTHOR_IMAGE_MAX_SIZE_BYTES } from '../services/author-image-constants';
 import type { AuthorFormFieldErrors, AuthorFormValues } from '../types/author-form-state';
 
 interface AuthorFormFieldsProps {
   values: AuthorFormValues;
   fieldErrors: AuthorFormFieldErrors;
+  mode: 'create' | 'edit';
 }
 
 interface FieldErrorProps {
@@ -31,14 +33,7 @@ function TextField({
 }: {
   id: keyof Pick<
     AuthorFormValues,
-    | 'name'
-    | 'slug'
-    | 'photoUrl'
-    | 'websiteUrl'
-    | 'instagramUrl'
-    | 'facebookUrl'
-    | 'country'
-    | 'sortOrder'
+    'name' | 'slug' | 'websiteUrl' | 'instagramUrl' | 'facebookUrl' | 'country' | 'sortOrder'
   >;
   label: string;
   defaultValue: string;
@@ -60,6 +55,52 @@ function TextField({
       />
       <div id={`${id}-error`}>
         <FieldError errors={errors} />
+      </div>
+    </div>
+  );
+}
+
+function PhotoField({
+  mode,
+  currentPhotoUrl,
+  errors,
+}: {
+  mode: 'create' | 'edit';
+  currentPhotoUrl: string;
+  errors?: string[];
+}) {
+  const label = mode === 'edit' ? 'Reemplazar foto' : 'Foto del autor';
+  const maxSizeMb = AUTHOR_IMAGE_MAX_SIZE_BYTES / (1024 * 1024);
+
+  return (
+    <div className="space-y-3 rounded-lg border border-border px-4 py-4">
+      {mode === 'edit' && currentPhotoUrl ? (
+        <div className="space-y-2">
+          <p className="text-sm font-medium text-foreground">Foto actual</p>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={currentPhotoUrl}
+            alt=""
+            className="size-24 rounded-md border border-border object-cover"
+          />
+        </div>
+      ) : null}
+      <div className="space-y-2">
+        <Label htmlFor="photo">{label}</Label>
+        <Input
+          id="photo"
+          name="photo"
+          type="file"
+          accept="image/jpeg,image/png,image/webp"
+          aria-invalid={errors?.length ? true : undefined}
+          aria-describedby={errors?.length ? 'photo-error' : 'photo-help'}
+        />
+        <p id="photo-help" className="text-sm text-muted-foreground">
+          Selecciona una imagen JPG, PNG o WebP. Tamaño máximo: {maxSizeMb} MB.
+        </p>
+        <div id="photo-error">
+          <FieldError errors={errors} />
+        </div>
       </div>
     </div>
   );
@@ -119,7 +160,7 @@ function SwitchField({
   );
 }
 
-export function AuthorFormFields({ values, fieldErrors }: AuthorFormFieldsProps) {
+export function AuthorFormFields({ values, fieldErrors, mode }: AuthorFormFieldsProps) {
   return (
     <div className="grid gap-6">
       <div className="grid gap-4 md:grid-cols-2">
@@ -148,14 +189,9 @@ export function AuthorFormFields({ values, fieldErrors }: AuthorFormFieldsProps)
         rows={6}
       />
 
+      <PhotoField mode={mode} currentPhotoUrl={values.photoUrl} errors={fieldErrors.photo} />
+
       <div className="grid gap-4 md:grid-cols-2">
-        <TextField
-          id="photoUrl"
-          label="URL de foto"
-          defaultValue={values.photoUrl}
-          errors={fieldErrors.photoUrl}
-          type="url"
-        />
         <TextField
           id="websiteUrl"
           label="Sitio web"
