@@ -24,10 +24,14 @@
 - [x] Generar migracion authors.
 - [x] Aplicar migracion authors.
 - [x] Verificar tabla authors en Supabase.
+- [x] Crear esquema Zod de authors.
+- [x] Crear repositorio de authors.
+- [x] Crear servicio de authors.
+- [x] Crear errores de dominio de authors.
 - [ ] Crear politicas RLS de authors.
-- [ ] Crear repositorio de authors.
-- [ ] Crear servicio de authors.
-- [ ] Crear validacion de authors con Zod.
+- [ ] Crear pruebas automatizadas de authors.
+- [ ] Crear Server Actions de authors.
+- [ ] Crear autorizacion por roles de authors.
 - [ ] Crear panel administrativo de authors.
 - [ ] Crear paginas publicas de authors.
 - [ ] Crear libros.
