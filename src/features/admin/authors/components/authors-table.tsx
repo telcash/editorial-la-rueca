@@ -1,26 +1,13 @@
 import Link from 'next/link';
-import { ImageIcon } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import type { Author } from '@/db/schema';
-import { AuthorStatusBadge } from './author-status-badge';
-import { FeaturedBadge } from './featured-badge';
+import { EntityThumbnail } from '@/features/admin/components/data-display/entity-thumbnail';
+import { FeaturedBadge } from '@/features/admin/components/data-display/featured-badge';
+import { PublicationStatusBadge } from '@/features/admin/components/data-display/publication-status-badge';
 
 interface AuthorsTableProps {
   authors: Author[];
-}
-
-function AuthorPhoto({ name, photoUrl }: { name: string; photoUrl: string | null }) {
-  return (
-    <div className="flex size-11 items-center justify-center overflow-hidden rounded-md border border-border bg-muted text-muted-foreground">
-      {photoUrl ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={photoUrl} alt="" className="size-full object-cover" />
-      ) : (
-        <ImageIcon className="size-4" aria-label={`Sin foto de ${name}`} />
-      )}
-    </div>
-  );
 }
 
 export function AuthorsTable({ authors }: AuthorsTableProps) {
@@ -57,7 +44,11 @@ export function AuthorsTable({ authors }: AuthorsTableProps) {
             {authors.map((author) => (
               <tr key={author.id} className="bg-card">
                 <td className="px-4 py-3">
-                  <AuthorPhoto name={author.name} photoUrl={author.photoUrl} />
+                  <EntityThumbnail
+                    src={author.photoUrl}
+                    alt={`Foto de ${author.name}`}
+                    variant="avatar"
+                  />
                 </td>
                 <td className="px-4 py-3">
                   <div className="font-medium text-foreground">{author.name}</div>
@@ -65,7 +56,7 @@ export function AuthorsTable({ authors }: AuthorsTableProps) {
                 </td>
                 <td className="px-4 py-3 text-muted-foreground">{author.country ?? 'Sin país'}</td>
                 <td className="px-4 py-3">
-                  <AuthorStatusBadge isPublished={author.isPublished} />
+                  <PublicationStatusBadge isPublished={author.isPublished} />
                 </td>
                 <td className="px-4 py-3">
                   <FeaturedBadge isFeatured={author.isFeatured} />

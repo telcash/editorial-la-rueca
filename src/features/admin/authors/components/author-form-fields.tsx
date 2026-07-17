@@ -2,6 +2,8 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
 import { Textarea } from '@/components/ui/textarea';
+import { EntityThumbnail } from '@/features/admin/components/data-display/entity-thumbnail';
+import { FieldError } from '@/features/admin/components/forms/field-error';
 import { AUTHOR_IMAGE_MAX_SIZE_BYTES } from '../services/author-image-constants';
 import type { AuthorFormFieldErrors, AuthorFormValues } from '../types/author-form-state';
 
@@ -9,18 +11,6 @@ interface AuthorFormFieldsProps {
   values: AuthorFormValues;
   fieldErrors: AuthorFormFieldErrors;
   mode: 'create' | 'edit';
-}
-
-interface FieldErrorProps {
-  errors?: string[];
-}
-
-function FieldError({ errors }: FieldErrorProps) {
-  if (!errors?.length) {
-    return null;
-  }
-
-  return <p className="text-sm text-destructive">{errors[0]}</p>;
 }
 
 function TextField({
@@ -54,7 +44,7 @@ function TextField({
         aria-describedby={errors?.length ? `${id}-error` : undefined}
       />
       <div id={`${id}-error`}>
-        <FieldError errors={errors} />
+        <FieldError message={errors?.[0]} />
       </div>
     </div>
   );
@@ -77,12 +67,7 @@ function PhotoField({
       {mode === 'edit' && currentPhotoUrl ? (
         <div className="space-y-2">
           <p className="text-sm font-medium text-foreground">Foto actual</p>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={currentPhotoUrl}
-            alt=""
-            className="size-24 rounded-md border border-border object-cover"
-          />
+          <EntityThumbnail src={currentPhotoUrl} alt="Foto actual del autor" variant="square" />
         </div>
       ) : null}
       <div className="space-y-2">
@@ -99,7 +84,7 @@ function PhotoField({
           Selecciona una imagen JPG, PNG o WebP. Tamaño máximo: {maxSizeMb} MB.
         </p>
         <div id="photo-error">
-          <FieldError errors={errors} />
+          <FieldError message={errors?.[0]} />
         </div>
       </div>
     </div>
@@ -131,7 +116,7 @@ function TextareaField({
         aria-describedby={errors?.length ? `${id}-error` : undefined}
       />
       <div id={`${id}-error`}>
-        <FieldError errors={errors} />
+        <FieldError message={errors?.[0]} />
       </div>
     </div>
   );
