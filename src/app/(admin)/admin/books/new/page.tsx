@@ -4,8 +4,17 @@ import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { BookForm } from '@/features/admin/books/components/book-form';
 import { AdminPageHeader } from '@/features/admin/components/admin-page-header';
+import * as AuthorService from '@/services/authors/author.service';
 
-export default function AdminNewBookPage() {
+export default async function AdminNewBookPage() {
+  const authors = await AuthorService.listAuthors();
+  const authorOptions = authors.map((author) => ({
+    id: author.id,
+    name: author.name,
+    slug: author.slug,
+    photoUrl: author.photoUrl,
+  }));
+
   return (
     <section className="space-y-6">
       <AdminPageHeader
@@ -21,7 +30,7 @@ export default function AdminNewBookPage() {
         }
       />
 
-      <BookForm mode="create" />
+      <BookForm mode="create" authors={authorOptions} />
     </section>
   );
 }

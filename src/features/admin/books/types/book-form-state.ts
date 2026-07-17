@@ -19,6 +19,13 @@ export type BookGeneralFormField = keyof BookGeneralFormValues;
 export type BookGeneralFormErrors = Partial<Record<BookGeneralFormField, string>>;
 export type BookGeneralFormTouched = Partial<Record<BookGeneralFormField, boolean>>;
 
+export interface BookFormAuthorSummary {
+  id: string;
+  name: string;
+  slug: string;
+  photoUrl: string | null;
+}
+
 export const initialBookGeneralFormValues: BookGeneralFormValues = {
   title: '',
   subtitle: '',

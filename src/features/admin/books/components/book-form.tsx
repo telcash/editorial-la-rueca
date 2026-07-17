@@ -5,6 +5,13 @@ import { useMemo, useState, type FormEvent } from 'react';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { FormActions } from '@/features/admin/components/forms/form-actions';
 import {
+  addSelectedAuthor,
+  filterAvailableAuthors,
+  moveSelectedAuthorDown,
+  moveSelectedAuthorUp,
+  removeSelectedAuthor,
+} from '../lib/book-author-selection.helpers';
+import {
   areBookGeneralValuesDirty,
   getVisibleBookGeneralErrors,
   resetSlugFromTitle,
@@ -16,12 +23,15 @@ import {
   type BookGeneralFormField,
   type BookGeneralFormTouched,
   type BookGeneralFormValues,
+  type BookFormAuthorSummary,
 } from '../types/book-form-state';
 import { BookFormSectionPlaceholder } from './book-form-section-placeholder';
+import { BookAuthorsSection } from './book-authors-section';
 import { BookGeneralSection } from './book-general-section';
 
 interface BookFormProps {
   mode?: 'create';
+  authors: BookFormAuthorSummary[];
   initialValues?: Partial<BookGeneralFormValues>;
 }
 
@@ -32,13 +42,19 @@ function getInitialValues(initialValues?: Partial<BookGeneralFormValues>): BookG
   };
 }
 
-export function BookForm({ initialValues }: BookFormProps) {
+export function BookForm({ authors, initialValues }: BookFormProps) {
   const stableInitialValues = useMemo(() => getInitialValues(initialValues), [initialValues]);
   const [values, setValues] = useState<BookGeneralFormValues>(stableInitialValues);
   const [touched, setTouched] = useState<BookGeneralFormTouched>({});
+  const [selectedAuthors, setSelectedAuthors] = useState<BookFormAuthorSummary[]>([]);
+  const [authorSearchQuery, setAuthorSearchQuery] = useState('');
   const [isSlugManuallyEdited, setIsSlugManuallyEdited] = useState(false);
   const visibleErrors = getVisibleBookGeneralErrors(values, touched);
-  const isDirty = areBookGeneralValuesDirty(values, stableInitialValues);
+  const availableAuthors = filterAvailableAuthors(authors, selectedAuthors, authorSearchQuery);
+  const authorError =
+    selectedAuthors.length === 0 ? 'Debe seleccionar al menos un autor.' : undefined;
+  const isDirty =
+    areBookGeneralValuesDirty(values, stableInitialValues) || selectedAuthors.length > 0;
 
   function handleTextChange(field: BookGeneralFormField, value: string) {
     setValues((currentValues) => {
@@ -85,6 +101,22 @@ export function BookForm({ initialValues }: BookFormProps) {
     }));
   }
 
+  function handleAddAuthor(author: BookFormAuthorSummary) {
+    setSelectedAuthors((currentAuthors) => addSelectedAuthor(currentAuthors, author));
+  }
+
+  function handleMoveAuthorUp(authorId: string) {
+    setSelectedAuthors((currentAuthors) => moveSelectedAuthorUp(currentAuthors, authorId));
+  }
+
+  function handleMoveAuthorDown(authorId: string) {
+    setSelectedAuthors((currentAuthors) => moveSelectedAuthorDown(currentAuthors, authorId));
+  }
+
+  function handleRemoveAuthor(authorId: string) {
+    setSelectedAuthors((currentAuthors) => removeSelectedAuthor(currentAuthors, authorId));
+  }
+
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
   }
@@ -105,12 +137,17 @@ export function BookForm({ initialValues }: BookFormProps) {
               onSlugReset={handleSlugReset}
             />
 
-            <BookFormSectionPlaceholder
-              title="Autores"
-              description="Selecciona uno o varios autores y define el orden en el que aparecerán."
-            >
-              Este bloque se implementará en el siguiente sub-sprint.
-            </BookFormSectionPlaceholder>
+            <BookAuthorsSection
+              authors={availableAuthors}
+              selectedAuthors={selectedAuthors}
+              searchQuery={authorSearchQuery}
+              error={authorError}
+              onSearchQueryChange={setAuthorSearchQuery}
+              onAddAuthor={handleAddAuthor}
+              onMoveAuthorUp={handleMoveAuthorUp}
+              onMoveAuthorDown={handleMoveAuthorDown}
+              onRemoveAuthor={handleRemoveAuthor}
+            />
 
             <BookFormSectionPlaceholder
               title="Ediciones y precios"
