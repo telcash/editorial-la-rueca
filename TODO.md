@@ -9,9 +9,10 @@
 - [x] Instalar Drizzle.
 - [x] Crear drizzle.config.ts.
 - [x] Verificar db:generate con 0 tablas.
+- [x] Separar conexion runtime de conexion de migraciones.
 - [ ] Confirmar variables reales de Supabase.
-- [ ] Crear esquema profiles.
-- [ ] Generar primera migracion.
+- [x] Crear esquema profiles.
+- [x] Generar primera migracion.
 - [ ] Aplicar primera migracion.
 - [ ] Verificar la tabla en Supabase.
 - [ ] Configurar Supabase Auth.

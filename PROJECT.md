@@ -40,7 +40,8 @@ UI -> feature -> service -> repository -> Drizzle -> PostgreSQL
 - ESLint y Prettier configurados.
 - Supabase pendiente de conexion completa.
 - Drizzle instalado y configurado.
-- Ninguna tabla creada todavia.
+- Esquema `profiles` generado para `public.profiles`.
+- Primera migracion generada para `profiles`, aun no aplicada.
 
 ## Roadmap general
 
