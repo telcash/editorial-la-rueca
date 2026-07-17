@@ -30,7 +30,6 @@ export const adminNavigationItems: AdminNavigationItem[] = [
     href: '/admin/books',
     label: 'Libros',
     icon: BookOpenText,
-    disabled: true,
   },
   {
     href: '/admin/categories',
