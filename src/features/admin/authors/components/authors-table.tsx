@@ -75,7 +75,7 @@ export function AuthorsTable({ authors }: AuthorsTableProps) {
                 </td>
                 <td className="px-4 py-3 text-right">
                   <Button asChild variant="outline" size="sm">
-                    <Link href={`/admin/authors/${author.id}/edit`}>Editar</Link>
+                    <Link href={`/admin/authors/${author.id}`}>Editar</Link>
                   </Button>
                 </td>
               </tr>

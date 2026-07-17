@@ -7,21 +7,45 @@ import { useFormStatus } from 'react-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { createAuthor } from '../actions/create-author';
-import { initialAuthorFormState } from '../types/author-form-state';
+import { updateAuthor } from '../actions/update-author';
+import {
+  initialAuthorFormState,
+  type AuthorFormState,
+  type AuthorFormValues,
+} from '../types/author-form-state';
 import { AuthorFormFields } from './author-form-fields';
 
-function SubmitButton() {
+interface AuthorFormProps {
+  mode?: 'create' | 'edit';
+  authorId?: string;
+  initialValues?: AuthorFormValues;
+}
+
+function SubmitButton({ label }: { label: string }) {
   const { pending } = useFormStatus();
 
   return (
     <Button type="submit" disabled={pending}>
-      {pending ? 'Guardando…' : 'Guardar autor'}
+      {pending ? 'Guardando…' : label}
     </Button>
   );
 }
 
-export function AuthorForm() {
-  const [state, formAction] = useActionState(createAuthor, initialAuthorFormState);
+function getInitialState(initialValues?: AuthorFormValues): AuthorFormState {
+  if (!initialValues) {
+    return initialAuthorFormState;
+  }
+
+  return {
+    ...initialAuthorFormState,
+    values: initialValues,
+  };
+}
+
+export function AuthorForm({ mode = 'create', authorId, initialValues }: AuthorFormProps) {
+  const action = mode === 'edit' && authorId ? updateAuthor.bind(null, authorId) : createAuthor;
+  const submitLabel = mode === 'edit' ? 'Guardar cambios' : 'Crear autor';
+  const [state, formAction] = useActionState(action, getInitialState(initialValues));
 
   return (
     <form action={formAction}>
@@ -40,7 +64,7 @@ export function AuthorForm() {
           <Button asChild variant="outline">
             <Link href="/admin/authors">Cancelar</Link>
           </Button>
-          <SubmitButton />
+          <SubmitButton label={submitLabel} />
         </CardFooter>
       </Card>
     </form>

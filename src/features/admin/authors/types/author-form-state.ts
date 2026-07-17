@@ -1,4 +1,4 @@
-import type { CreateAuthorInput } from '@/schemas/authors/author.schema';
+import type { CreateAuthorInput, UpdateAuthorInput } from '@/schemas/authors/author.schema';
 
 export interface AuthorFormValues {
   name: string;
@@ -47,3 +47,4 @@ export const initialAuthorFormState: AuthorFormState = {
 };
 
 export type AuthorCreateInputFromForm = CreateAuthorInput;
+export type AuthorUpdateInputFromForm = UpdateAuthorInput;
