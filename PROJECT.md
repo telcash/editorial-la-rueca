@@ -41,7 +41,9 @@ UI -> feature -> service -> repository -> Drizzle -> PostgreSQL
 - Supabase pendiente de conexion completa.
 - Drizzle instalado y configurado.
 - Esquema `profiles` generado para `public.profiles`.
-- Primera migracion generada para `profiles`, aun no aplicada.
+- `profiles` existe en Supabase.
+- Migracion de RLS y trigger generada para `profiles`, aun no aplicada.
+- `public.authors` existe en Supabase.
 
 ## Roadmap general
 

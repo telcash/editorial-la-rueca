@@ -8,6 +8,20 @@
       "when": 1784282789802,
       "tag": "0000_chunky_sinister_six",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1784289300862,
+      "tag": "0001_profiles_auth_rls_trigger",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1784296244610,
+      "tag": "0002_faithful_dreadnoughts",
+      "breakpoints": true
     }
   ]
 }
