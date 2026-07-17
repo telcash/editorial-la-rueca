@@ -26,6 +26,27 @@ export interface BookFormAuthorSummary {
   photoUrl: string | null;
 }
 
+export interface BookEditionFormValues {
+  clientId: string;
+  format: string;
+  editionLabel: string;
+  publicationDate: string;
+  isbn10: string;
+  isbn13: string;
+  price: string;
+  currency: string;
+  pages: string;
+  isAvailable: boolean;
+  isFeatured: boolean;
+  sortOrder: string;
+}
+
+export type BookEditionFormField = keyof Omit<BookEditionFormValues, 'clientId'>;
+export type BookEditionFormErrors = Partial<Record<BookEditionFormField, string>>;
+export type BookEditionFormTouched = Partial<Record<BookEditionFormField, boolean>>;
+export type BookEditionFormTouchedById = Record<string, BookEditionFormTouched>;
+export type BookEditionFormErrorsById = Record<string, BookEditionFormErrors>;
+
 export const initialBookGeneralFormValues: BookGeneralFormValues = {
   title: '',
   subtitle: '',

@@ -13,6 +13,7 @@ interface BookAuthorsSectionProps {
   selectedAuthors: BookFormAuthorSummary[];
   searchQuery: string;
   error?: string;
+  disabled?: boolean;
   onSearchQueryChange: (value: string) => void;
   onAddAuthor: (author: BookFormAuthorSummary) => void;
   onMoveAuthorUp: (authorId: string) => void;
@@ -22,9 +23,11 @@ interface BookAuthorsSectionProps {
 
 function AuthorSearchResults({
   authors,
+  disabled,
   onAddAuthor,
 }: {
   authors: BookFormAuthorSummary[];
+  disabled?: boolean;
   onAddAuthor: (author: BookFormAuthorSummary) => void;
 }) {
   if (authors.length === 0) {
@@ -51,6 +54,7 @@ function AuthorSearchResults({
             type="button"
             variant="outline"
             size="sm"
+            disabled={disabled}
             onClick={() => onAddAuthor(author)}
             aria-label={`Añadir ${author.name}`}
           >
@@ -67,6 +71,7 @@ function SelectedAuthorCard({
   author,
   index,
   totalAuthors,
+  disabled,
   onMoveAuthorUp,
   onMoveAuthorDown,
   onRemoveAuthor,
@@ -74,6 +79,7 @@ function SelectedAuthorCard({
   author: BookFormAuthorSummary;
   index: number;
   totalAuthors: number;
+  disabled?: boolean;
   onMoveAuthorUp: (authorId: string) => void;
   onMoveAuthorDown: (authorId: string) => void;
   onRemoveAuthor: (authorId: string) => void;
@@ -96,7 +102,7 @@ function SelectedAuthorCard({
           type="button"
           variant="outline"
           size="icon-sm"
-          disabled={index === 0}
+          disabled={disabled || index === 0}
           aria-label={`Subir ${author.name}`}
           onClick={() => onMoveAuthorUp(author.id)}
         >
@@ -106,7 +112,7 @@ function SelectedAuthorCard({
           type="button"
           variant="outline"
           size="icon-sm"
-          disabled={index === totalAuthors - 1}
+          disabled={disabled || index === totalAuthors - 1}
           aria-label={`Bajar ${author.name}`}
           onClick={() => onMoveAuthorDown(author.id)}
         >
@@ -116,6 +122,7 @@ function SelectedAuthorCard({
           type="button"
           variant="outline"
           size="icon-sm"
+          disabled={disabled}
           aria-label={`Eliminar ${author.name}`}
           onClick={() => onRemoveAuthor(author.id)}
         >
@@ -131,6 +138,7 @@ export function BookAuthorsSection({
   selectedAuthors,
   searchQuery,
   error,
+  disabled,
   onSearchQueryChange,
   onAddAuthor,
   onMoveAuthorUp,
@@ -151,6 +159,7 @@ export function BookAuthorsSection({
             value={searchQuery}
             placeholder="Buscar autor..."
             autoComplete="off"
+            disabled={disabled}
             onChange={(event) => onSearchQueryChange(event.target.value)}
           />
         </div>
@@ -158,7 +167,7 @@ export function BookAuthorsSection({
         <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
           <div className="space-y-3">
             <h3 className="text-sm font-medium text-foreground">Resultados</h3>
-            <AuthorSearchResults authors={authors} onAddAuthor={onAddAuthor} />
+            <AuthorSearchResults authors={authors} disabled={disabled} onAddAuthor={onAddAuthor} />
           </div>
 
           <div className="space-y-3">
@@ -176,6 +185,7 @@ export function BookAuthorsSection({
                     author={author}
                     index={index}
                     totalAuthors={selectedAuthors.length}
+                    disabled={disabled}
                     onMoveAuthorUp={onMoveAuthorUp}
                     onMoveAuthorDown={onMoveAuthorDown}
                     onRemoveAuthor={onRemoveAuthor}
