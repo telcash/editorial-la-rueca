@@ -16,18 +16,21 @@ const authors: BookFormAuthorSummary[] = [
     name: 'Ana Jardín',
     slug: 'ana-jardin',
     photoUrl: null,
+    isArchived: false,
   },
   {
     id: 'author-2',
     name: 'Bea Luna',
     slug: 'bea-luna',
     photoUrl: null,
+    isArchived: false,
   },
   {
     id: 'author-3',
     name: 'César Río',
     slug: 'cesar-rio',
     photoUrl: null,
+    isArchived: false,
   },
 ];
 

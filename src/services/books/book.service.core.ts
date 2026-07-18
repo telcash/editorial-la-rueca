@@ -1,5 +1,6 @@
 import { z } from 'zod';
 
+import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
 import type { AuthorRepository } from '@/services/authors/author-service.types';
 import {
   createBookSchema,
@@ -9,6 +10,7 @@ import {
   type UpdateBookInput,
 } from '@/schemas/books/book.schema';
 import {
+  ArchivedBookAuthorError,
   BookAuthorNotFoundError,
   BookIsbnConflictError,
   BookNotFoundError,
@@ -50,7 +52,11 @@ function splitUpdateInput(data: UpdateBookInput) {
   return { bookData, authorIds, editions };
 }
 
-async function assertAuthorsExist(repository: AuthorRepository, authorIds: string[]) {
+async function assertAuthorsCanBeRelated(
+  repository: AuthorRepository,
+  authorIds: string[],
+  allowedArchivedAuthorIds: string[] = [],
+) {
   assertUniqueAuthorIds(authorIds);
 
   const foundAuthors = await repository.findByIds(authorIds);
@@ -59,6 +65,15 @@ async function assertAuthorsExist(repository: AuthorRepository, authorIds: strin
 
   if (missingAuthorIds.length > 0) {
     throw new BookAuthorNotFoundError(missingAuthorIds);
+  }
+
+  const allowedArchivedAuthorIdSet = new Set(allowedArchivedAuthorIds);
+  const archivedAuthorIds = foundAuthors
+    .filter((author) => author.isArchived && !allowedArchivedAuthorIdSet.has(author.id))
+    .map((author) => author.id);
+
+  if (archivedAuthorIds.length > 0) {
+    throw new ArchivedBookAuthorError(archivedAuthorIds);
   }
 }
 
@@ -113,8 +128,16 @@ export function createBookService(
       return book;
     },
 
-    async listBooks() {
-      return bookRepository.findAll();
+    async listBooks(status: ArchiveStatus = 'active') {
+      return bookRepository.findAll(status);
+    },
+
+    async listActiveBooks() {
+      return bookRepository.findActive();
+    },
+
+    async listArchivedBooks() {
+      return bookRepository.findArchived();
     },
 
     async listPublishedBooks() {
@@ -134,7 +157,7 @@ export function createBookService(
         throw new BookSlugConflictError(bookData.slug);
       }
 
-      await assertAuthorsExist(authorRepository, authorIds);
+      await assertAuthorsCanBeRelated(authorRepository, authorIds);
       await assertIsbnAvailability(bookRepository, editions);
 
       return bookRepository.create(bookData satisfies BookDataCreateInput, authorIds, editions);
@@ -160,7 +183,11 @@ export function createBookService(
       }
 
       if (authorIds) {
-        await assertAuthorsExist(authorRepository, authorIds);
+        const existingArchivedAuthorIds = currentBook.authors
+          .filter((author) => author.isArchived)
+          .map((author) => author.id);
+
+        await assertAuthorsCanBeRelated(authorRepository, authorIds, existingArchivedAuthorIds);
       }
 
       if (editions) {
@@ -180,6 +207,48 @@ export function createBookService(
       }
 
       return updatedBook;
+    },
+
+    async archiveBook(id: string) {
+      const validId = bookIdSchema.parse(id);
+      const currentBook = await bookRepository.findById(validId);
+
+      if (!currentBook) {
+        throw new BookNotFoundError(validId);
+      }
+
+      if (currentBook.isArchived) {
+        return currentBook;
+      }
+
+      const archivedBook = await bookRepository.archive(validId);
+
+      if (!archivedBook) {
+        throw new BookNotFoundError(validId);
+      }
+
+      return archivedBook;
+    },
+
+    async restoreBook(id: string) {
+      const validId = bookIdSchema.parse(id);
+      const currentBook = await bookRepository.findById(validId);
+
+      if (!currentBook) {
+        throw new BookNotFoundError(validId);
+      }
+
+      if (!currentBook.isArchived) {
+        return currentBook;
+      }
+
+      const restoredBook = await bookRepository.restore(validId);
+
+      if (!restoredBook) {
+        throw new BookNotFoundError(validId);
+      }
+
+      return restoredBook;
     },
   };
 }

@@ -14,5 +14,15 @@ export type {
 
 const bookService = createBookService(bookRepository, authorRepository);
 
-export const { getBookById, getBookBySlug, listBooks, listPublishedBooks, createBook, updateBook } =
-  bookService;
+export const {
+  getBookById,
+  getBookBySlug,
+  listBooks,
+  listActiveBooks,
+  listArchivedBooks,
+  listPublishedBooks,
+  createBook,
+  updateBook,
+  archiveBook,
+  restoreBook,
+} = bookService;

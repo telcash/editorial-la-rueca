@@ -11,6 +11,7 @@ import {
   type Book,
   type NewBookEdition,
 } from '@/db/schema';
+import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
 import type { BookEditionInput } from '@/schemas/books/book.schema';
 import type {
   BookAuthorSummary,
@@ -86,6 +87,14 @@ function toEditionInsert(bookId: string, edition: BookEditionInput): NewBookEdit
   };
 }
 
+function getArchiveCondition(status: ArchiveStatus = 'active') {
+  if (status === 'all') {
+    return undefined;
+  }
+
+  return eq(books.isArchived, status === 'archived');
+}
+
 async function findDetailsByBookIds(bookIds: string[], onlyAvailableEditions = false) {
   if (bookIds.length === 0) {
     return {
@@ -101,6 +110,7 @@ async function findDetailsByBookIds(bookIds: string[], onlyAvailableEditions = f
       name: authors.name,
       slug: authors.slug,
       photoUrl: authors.photoUrl,
+      isArchived: authors.isArchived,
       sortOrder: bookAuthors.sortOrder,
     })
     .from(bookAuthors)
@@ -144,21 +154,30 @@ export async function findBySlug(slug: string): Promise<BookWithDetails | null> 
   return findOneByBook(book ?? null);
 }
 
-export async function findAll(): Promise<BookWithDetails[]> {
+export async function findAll(status: ArchiveStatus = 'active'): Promise<BookWithDetails[]> {
   const bookRows = await db
     .select()
     .from(books)
+    .where(getArchiveCondition(status))
     .orderBy(asc(books.sortOrder), desc(books.createdAt));
   const { authorRows, editionRows } = await findDetailsByBookIds(bookRows.map((book) => book.id));
 
   return assembleBooks(bookRows, authorRows, editionRows);
 }
 
+export async function findActive(): Promise<BookWithDetails[]> {
+  return findAll('active');
+}
+
+export async function findArchived(): Promise<BookWithDetails[]> {
+  return findAll('archived');
+}
+
 export async function findPublished(): Promise<BookWithDetails[]> {
   const bookRows = await db
     .select()
     .from(books)
-    .where(eq(books.isPublished, true))
+    .where(and(eq(books.isPublished, true), eq(books.isArchived, false)))
     .orderBy(desc(books.isFeatured), asc(books.sortOrder), desc(books.createdAt));
   const { authorRows, editionRows } = await findDetailsByBookIds(
     bookRows.map((book) => book.id),
@@ -295,6 +314,34 @@ export async function update(
   return updatedBookId ? findById(updatedBookId) : null;
 }
 
+export async function archive(id: string): Promise<BookWithDetails | null> {
+  const [book] = await db
+    .update(books)
+    .set({
+      isArchived: true,
+      archivedAt: new Date(),
+      updatedAt: new Date(),
+    })
+    .where(eq(books.id, id))
+    .returning({ id: books.id });
+
+  return book ? findById(book.id) : null;
+}
+
+export async function restore(id: string): Promise<BookWithDetails | null> {
+  const [book] = await db
+    .update(books)
+    .set({
+      isArchived: false,
+      archivedAt: null,
+      updatedAt: new Date(),
+    })
+    .where(eq(books.id, id))
+    .returning({ id: books.id });
+
+  return book ? findById(book.id) : null;
+}
+
 export async function findAuthorsByBookId(bookId: string): Promise<BookAuthorSummary[]> {
   const { authorRows } = await findDetailsByBookIds([bookId]);
 
@@ -303,6 +350,7 @@ export async function findAuthorsByBookId(bookId: string): Promise<BookAuthorSum
     name: author.name,
     slug: author.slug,
     photoUrl: author.photoUrl,
+    isArchived: author.isArchived,
     sortOrder: author.sortOrder,
   }));
 }

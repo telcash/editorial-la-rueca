@@ -7,12 +7,13 @@ import { AdminPageHeader } from '@/features/admin/components/admin-page-header';
 import * as AuthorService from '@/services/authors/author.service';
 
 export default async function AdminNewBookPage() {
-  const authors = await AuthorService.listAuthors();
+  const authors = await AuthorService.listActiveAuthors();
   const authorOptions = authors.map((author) => ({
     id: author.id,
     name: author.name,
     slug: author.slug,
     photoUrl: author.photoUrl,
+    isArchived: author.isArchived,
   }));
 
   return (

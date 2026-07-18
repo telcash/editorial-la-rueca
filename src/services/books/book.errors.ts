@@ -29,6 +29,13 @@ export class BookAuthorNotFoundError extends Error {
   }
 }
 
+export class ArchivedBookAuthorError extends Error {
+  constructor(public readonly authorIds: string[]) {
+    super(`No se pueden asociar autores archivados: ${authorIds.join(', ')}.`);
+    this.name = 'ArchivedBookAuthorError';
+  }
+}
+
 export class DuplicateBookAuthorError extends Error {
   constructor() {
     super('No puedes repetir autores en el mismo libro.');

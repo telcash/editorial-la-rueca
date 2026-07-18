@@ -39,6 +39,7 @@ export function mapBookToFormInitialValues(book: BookWithDetails): BookFormIniti
       name: author.name,
       slug: author.slug,
       photoUrl: author.photoUrl,
+      isArchived: author.isArchived,
     }));
 
   const editions = normalizeEditionOrder(

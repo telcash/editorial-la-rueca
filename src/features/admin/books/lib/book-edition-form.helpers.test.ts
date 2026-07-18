@@ -37,12 +37,14 @@ const authors: BookFormAuthorSummary[] = [
     name: 'Autor C',
     slug: 'autor-c',
     photoUrl: null,
+    isArchived: false,
   },
   {
     id: '1d2e4f8a-2a8a-42b9-8d1f-9c8a1f4c7b61',
     name: 'Autor A',
     slug: 'autor-a',
     photoUrl: 'https://example.com/author.jpg',
+    isArchived: false,
   },
 ];
 

@@ -25,6 +25,8 @@ const baseAuthor: Author = {
   country: null,
   isFeatured: false,
   isPublished: true,
+  isArchived: false,
+  archivedAt: null,
   sortOrder: 0,
   createdAt: new Date('2026-01-01T00:00:00.000Z'),
   updatedAt: new Date('2026-01-01T00:00:00.000Z'),
@@ -44,10 +46,14 @@ function createRepositoryMock(): MockAuthorRepository {
     findBySlug: vi.fn<AuthorRepository['findBySlug']>(),
     findByIds: vi.fn<AuthorRepository['findByIds']>(),
     findAll: vi.fn<AuthorRepository['findAll']>(),
+    findActive: vi.fn<AuthorRepository['findActive']>(),
+    findArchived: vi.fn<AuthorRepository['findArchived']>(),
     findPublished: vi.fn<AuthorRepository['findPublished']>(),
     existsBySlug: vi.fn<AuthorRepository['existsBySlug']>(),
     create: vi.fn<AuthorRepository['create']>(),
     update: vi.fn<AuthorRepository['update']>(),
+    archive: vi.fn<AuthorRepository['archive']>(),
+    restore: vi.fn<AuthorRepository['restore']>(),
   };
 }
 
@@ -116,7 +122,19 @@ describe('createAuthorService', () => {
     repository.findAll.mockResolvedValue(authors);
 
     await expect(service.listAuthors()).resolves.toBe(authors);
-    expect(repository.findAll).toHaveBeenCalledOnce();
+    expect(repository.findAll).toHaveBeenCalledWith('active');
+    await expect(service.listAuthors('archived')).resolves.toBe(authors);
+    expect(repository.findAll).toHaveBeenCalledWith('archived');
+  });
+
+  it('listActiveAuthors and listArchivedAuthors delegate to explicit repository methods', async () => {
+    repository.findActive.mockResolvedValue([baseAuthor]);
+    repository.findArchived.mockResolvedValue([{ ...baseAuthor, isArchived: true }]);
+
+    await expect(service.listActiveAuthors()).resolves.toEqual([baseAuthor]);
+    await expect(service.listArchivedAuthors()).resolves.toEqual([
+      expect.objectContaining({ isArchived: true }),
+    ]);
   });
 
   it('listPublishedAuthors delegates to findPublished and returns its result', async () => {
@@ -276,6 +294,64 @@ describe('createAuthorService', () => {
       await expect(service.updateAuthor(authorId, { name: 'Nombre Nuevo' })).rejects.toBeInstanceOf(
         AuthorNotFoundError,
       );
+    });
+  });
+
+  describe('archiveAuthor', () => {
+    it('archives an active author', async () => {
+      const archivedAuthor = {
+        ...baseAuthor,
+        isArchived: true,
+        archivedAt: new Date('2026-02-01T00:00:00.000Z'),
+      };
+      repository.findById.mockResolvedValue(baseAuthor);
+      repository.archive.mockResolvedValue(archivedAuthor);
+
+      await expect(service.archiveAuthor(authorId)).resolves.toBe(archivedAuthor);
+      expect(repository.archive).toHaveBeenCalledWith(authorId);
+    });
+
+    it('is idempotent when the author is already archived', async () => {
+      const archivedAuthor = { ...baseAuthor, isArchived: true };
+      repository.findById.mockResolvedValue(archivedAuthor);
+
+      await expect(service.archiveAuthor(authorId)).resolves.toBe(archivedAuthor);
+      expect(repository.archive).not.toHaveBeenCalled();
+    });
+
+    it('throws AuthorNotFoundError when archiving an unknown author', async () => {
+      repository.findById.mockResolvedValue(null);
+
+      await expect(service.archiveAuthor(authorId)).rejects.toBeInstanceOf(AuthorNotFoundError);
+    });
+  });
+
+  describe('restoreAuthor', () => {
+    it('restores an archived author', async () => {
+      const archivedAuthor = {
+        ...baseAuthor,
+        isArchived: true,
+        archivedAt: new Date('2026-02-01T00:00:00.000Z'),
+      };
+      const restoredAuthor = { ...baseAuthor, isArchived: false, archivedAt: null };
+      repository.findById.mockResolvedValue(archivedAuthor);
+      repository.restore.mockResolvedValue(restoredAuthor);
+
+      await expect(service.restoreAuthor(authorId)).resolves.toBe(restoredAuthor);
+      expect(repository.restore).toHaveBeenCalledWith(authorId);
+    });
+
+    it('is idempotent when the author is already active', async () => {
+      repository.findById.mockResolvedValue(baseAuthor);
+
+      await expect(service.restoreAuthor(authorId)).resolves.toBe(baseAuthor);
+      expect(repository.restore).not.toHaveBeenCalled();
+    });
+
+    it('throws AuthorNotFoundError when restoring an unknown author', async () => {
+      repository.findById.mockResolvedValue(null);
+
+      await expect(service.restoreAuthor(authorId)).rejects.toBeInstanceOf(AuthorNotFoundError);
     });
   });
 });

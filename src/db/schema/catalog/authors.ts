@@ -26,6 +26,8 @@ export const authors = pgTable(
     country: varchar('country', { length: 100 }),
     isFeatured: boolean('is_featured').default(false).notNull(),
     isPublished: boolean('is_published').default(false).notNull(),
+    isArchived: boolean('is_archived').default(false).notNull(),
+    archivedAt: timestamp('archived_at', { withTimezone: true }),
     sortOrder: integer('sort_order').default(0).notNull(),
     createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
     updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
@@ -34,6 +36,7 @@ export const authors = pgTable(
     uniqueIndex('authors_slug_unique_idx').on(table.slug),
     index('authors_is_published_idx').on(table.isPublished),
     index('authors_is_featured_is_published_idx').on(table.isFeatured, table.isPublished),
+    index('authors_is_archived_idx').on(table.isArchived),
     index('authors_sort_order_idx').on(table.sortOrder),
   ],
 ).enableRLS();

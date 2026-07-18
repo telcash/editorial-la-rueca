@@ -12,7 +12,11 @@ export const {
   getAuthorById,
   getAuthorBySlug,
   listAuthors,
+  listActiveAuthors,
+  listArchivedAuthors,
   listPublishedAuthors,
   createAuthor,
   updateAuthor,
+  archiveAuthor,
+  restoreAuthor,
 } = authorService;

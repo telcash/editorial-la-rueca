@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { z } from 'zod';
 
 import {
+  ArchivedBookAuthorError,
   BookAuthorNotFoundError,
   BookIsbnConflictError,
   BookNotFoundError,
@@ -57,6 +58,12 @@ describe('mapCreateBookErrorToState', () => {
         payload,
       ).authorsError,
     ).toBe('Uno o varios autores seleccionados ya no existen.');
+    expect(
+      mapCreateBookErrorToState(
+        new ArchivedBookAuthorError(['550e8400-e29b-41d4-a716-446655440000']),
+        payload,
+      ).authorsError,
+    ).toBe('No puedes añadir autores archivados a un libro.');
     expect(mapCreateBookErrorToState(new BookRequiresAuthorError(), payload).authorsError).toBe(
       'Debe seleccionar al menos un autor.',
     );

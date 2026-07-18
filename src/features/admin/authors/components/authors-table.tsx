@@ -2,6 +2,8 @@ import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
 import type { Author } from '@/db/schema';
+import { AuthorArchiveActionButton } from '@/features/admin/authors/components/author-archive-action-button';
+import { ArchivedBadge } from '@/features/admin/components/data-display/archived-badge';
 import { EntityThumbnail } from '@/features/admin/components/data-display/entity-thumbnail';
 import { FeaturedBadge } from '@/features/admin/components/data-display/featured-badge';
 import { PublicationStatusBadge } from '@/features/admin/components/data-display/publication-status-badge';
@@ -53,15 +55,24 @@ export function AuthorsTable({ authors }: AuthorsTableProps) {
                 </td>
                 <td className="px-4 py-3 text-muted-foreground">{author.country ?? 'Sin país'}</td>
                 <td className="px-4 py-3">
-                  <PublicationStatusBadge isPublished={author.isPublished} />
+                  <div className="flex flex-wrap gap-2">
+                    <PublicationStatusBadge isPublished={author.isPublished} />
+                    <ArchivedBadge isArchived={author.isArchived} />
+                  </div>
                 </td>
                 <td className="px-4 py-3">
                   <FeaturedBadge isFeatured={author.isFeatured} />
                 </td>
                 <td className="px-4 py-3 text-right">
-                  <Button asChild variant="outline" size="sm">
-                    <Link href={`/admin/authors/${author.id}`}>Editar</Link>
-                  </Button>
+                  <div className="flex justify-end gap-2">
+                    <Button asChild variant="outline" size="sm">
+                      <Link href={`/admin/authors/${author.id}`}>Editar</Link>
+                    </Button>
+                    <AuthorArchiveActionButton
+                      authorId={author.id}
+                      isArchived={author.isArchived}
+                    />
+                  </div>
                 </td>
               </tr>
             ))}

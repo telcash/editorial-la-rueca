@@ -20,6 +20,8 @@ const book: BookWithDetails = {
   language: 'es',
   isFeatured: true,
   isPublished: false,
+  isArchived: false,
+  archivedAt: null,
   sortOrder: 4,
   metaTitle: null,
   metaDescription: null,
@@ -32,6 +34,7 @@ const book: BookWithDetails = {
       name: 'Segundo autor',
       slug: 'segundo-autor',
       photoUrl: null,
+      isArchived: true,
       sortOrder: 1,
     },
     {
@@ -39,6 +42,7 @@ const book: BookWithDetails = {
       name: 'Primer autor',
       slug: 'primer-autor',
       photoUrl: 'https://example.com/author.jpg',
+      isArchived: false,
       sortOrder: 0,
     },
   ],
@@ -99,6 +103,7 @@ describe('book edit form helpers', () => {
       'Primer autor',
       'Segundo autor',
     ]);
+    expect(initialValues.selectedAuthors[1]?.isArchived).toBe(true);
     expect(initialValues.editions).toEqual([
       expect.objectContaining({
         clientId: 'existing-c1e5fb46-df62-4c72-946a-f55c03b6a000',

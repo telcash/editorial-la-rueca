@@ -24,6 +24,7 @@ export interface BookFormAuthorSummary {
   name: string;
   slug: string;
   photoUrl: string | null;
+  isArchived: boolean;
 }
 
 export interface BookEditionFormValues {

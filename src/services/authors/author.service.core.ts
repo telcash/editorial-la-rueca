@@ -6,6 +6,7 @@ import {
   type CreateAuthorInput,
   type UpdateAuthorInput,
 } from '@/schemas/authors/author.schema';
+import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
 import { AuthorNotFoundError, AuthorSlugConflictError } from './author.errors';
 import type { AuthorRepository } from './author-service.types';
 
@@ -36,8 +37,16 @@ export function createAuthorService(repository: AuthorRepository) {
       return author;
     },
 
-    async listAuthors() {
-      return repository.findAll();
+    async listAuthors(status: ArchiveStatus = 'active') {
+      return repository.findAll(status);
+    },
+
+    async listActiveAuthors() {
+      return repository.findActive();
+    },
+
+    async listArchivedAuthors() {
+      return repository.findArchived();
     },
 
     async listPublishedAuthors() {
@@ -79,6 +88,48 @@ export function createAuthorService(repository: AuthorRepository) {
       }
 
       return updatedAuthor;
+    },
+
+    async archiveAuthor(id: string) {
+      const validId = authorIdSchema.parse(id);
+      const currentAuthor = await repository.findById(validId);
+
+      if (!currentAuthor) {
+        throw new AuthorNotFoundError(validId);
+      }
+
+      if (currentAuthor.isArchived) {
+        return currentAuthor;
+      }
+
+      const archivedAuthor = await repository.archive(validId);
+
+      if (!archivedAuthor) {
+        throw new AuthorNotFoundError(validId);
+      }
+
+      return archivedAuthor;
+    },
+
+    async restoreAuthor(id: string) {
+      const validId = authorIdSchema.parse(id);
+      const currentAuthor = await repository.findById(validId);
+
+      if (!currentAuthor) {
+        throw new AuthorNotFoundError(validId);
+      }
+
+      if (!currentAuthor.isArchived) {
+        return currentAuthor;
+      }
+
+      const restoredAuthor = await repository.restore(validId);
+
+      if (!restoredAuthor) {
+        throw new AuthorNotFoundError(validId);
+      }
+
+      return restoredAuthor;
     },
   };
 }

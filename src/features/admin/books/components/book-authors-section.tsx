@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { EntityThumbnail } from '@/features/admin/components/data-display/entity-thumbnail';
+import { ArchivedBadge } from '@/features/admin/components/data-display/archived-badge';
 import { FieldError } from '@/features/admin/components/forms/field-error';
 import { FormSection } from '@/features/admin/components/forms/form-section';
 import type { BookFormAuthorSummary } from '../types/book-form-state';
@@ -48,7 +49,10 @@ function AuthorSearchResults({
           <EntityThumbnail src={author.photoUrl} alt={`Foto de ${author.name}`} variant="avatar" />
           <div className="min-w-0 flex-1">
             <p className="truncate text-sm font-medium text-foreground">{author.name}</p>
-            <p className="truncate text-xs text-muted-foreground">{author.slug}</p>
+            <div className="flex flex-wrap items-center gap-2">
+              <p className="truncate text-xs text-muted-foreground">{author.slug}</p>
+              <ArchivedBadge isArchived={author.isArchived} />
+            </div>
           </div>
           <Button
             type="button"
@@ -93,7 +97,10 @@ function SelectedAuthorCard({
         <EntityThumbnail src={author.photoUrl} alt={`Foto de ${author.name}`} variant="avatar" />
         <div className="min-w-0">
           <p className="truncate text-sm font-medium text-foreground">{author.name}</p>
-          <p className="truncate text-xs text-muted-foreground">{author.slug}</p>
+          <div className="flex flex-wrap items-center gap-2">
+            <p className="truncate text-xs text-muted-foreground">{author.slug}</p>
+            <ArchivedBadge isArchived={author.isArchived} />
+          </div>
         </div>
       </div>
 

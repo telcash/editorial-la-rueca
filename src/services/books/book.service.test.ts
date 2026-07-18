@@ -3,6 +3,7 @@ import { beforeEach, describe, expect, it, vi, type Mock } from 'vitest';
 import type { Author } from '@/db/schema';
 import type { AuthorRepository } from '@/services/authors/author-service.types';
 import {
+  ArchivedBookAuthorError,
   BookAuthorNotFoundError,
   BookIsbnConflictError,
   BookNotFoundError,
@@ -36,6 +37,8 @@ const baseAuthor: Author = {
   country: null,
   isFeatured: false,
   isPublished: true,
+  isArchived: false,
+  archivedAt: null,
   sortOrder: 0,
   createdAt: new Date('2026-01-01T00:00:00.000Z'),
   updatedAt: new Date('2026-01-01T00:00:00.000Z'),
@@ -60,6 +63,8 @@ const baseBook: BookWithDetails = {
   language: 'es',
   isFeatured: false,
   isPublished: false,
+  isArchived: false,
+  archivedAt: null,
   sortOrder: 0,
   metaTitle: null,
   metaDescription: null,
@@ -72,6 +77,7 @@ const baseBook: BookWithDetails = {
       name: 'Ana Autora',
       slug: 'ana-autora',
       photoUrl: null,
+      isArchived: false,
       sortOrder: 0,
     },
   ],
@@ -101,12 +107,16 @@ function createBookRepositoryMock(): MockBookRepository {
     findById: vi.fn<BookRepository['findById']>(),
     findBySlug: vi.fn<BookRepository['findBySlug']>(),
     findAll: vi.fn<BookRepository['findAll']>(),
+    findActive: vi.fn<BookRepository['findActive']>(),
+    findArchived: vi.fn<BookRepository['findArchived']>(),
     findPublished: vi.fn<BookRepository['findPublished']>(),
     existsBySlug: vi.fn<BookRepository['existsBySlug']>(),
     existsByIsbn10: vi.fn<BookRepository['existsByIsbn10']>(),
     existsByIsbn13: vi.fn<BookRepository['existsByIsbn13']>(),
     create: vi.fn<BookRepository['create']>(),
     update: vi.fn<BookRepository['update']>(),
+    archive: vi.fn<BookRepository['archive']>(),
+    restore: vi.fn<BookRepository['restore']>(),
     findAuthorsByBookId: vi.fn<BookRepository['findAuthorsByBookId']>(),
     findEditionsByBookId: vi.fn<BookRepository['findEditionsByBookId']>(),
   };
@@ -118,10 +128,14 @@ function createAuthorRepositoryMock(): MockAuthorRepository {
     findBySlug: vi.fn<AuthorRepository['findBySlug']>(),
     findByIds: vi.fn<AuthorRepository['findByIds']>(),
     findAll: vi.fn<AuthorRepository['findAll']>(),
+    findActive: vi.fn<AuthorRepository['findActive']>(),
+    findArchived: vi.fn<AuthorRepository['findArchived']>(),
     findPublished: vi.fn<AuthorRepository['findPublished']>(),
     existsBySlug: vi.fn<AuthorRepository['existsBySlug']>(),
     create: vi.fn<AuthorRepository['create']>(),
     update: vi.fn<AuthorRepository['update']>(),
+    archive: vi.fn<AuthorRepository['archive']>(),
+    restore: vi.fn<AuthorRepository['restore']>(),
   };
 }
 
@@ -172,7 +186,20 @@ describe('createBookService', () => {
     bookRepository.findPublished.mockResolvedValue([baseBook]);
 
     await expect(service.listBooks()).resolves.toEqual([baseBook]);
+    expect(bookRepository.findAll).toHaveBeenCalledWith('active');
+    await expect(service.listBooks('all')).resolves.toEqual([baseBook]);
+    expect(bookRepository.findAll).toHaveBeenCalledWith('all');
     await expect(service.listPublishedBooks()).resolves.toEqual([baseBook]);
+  });
+
+  it('delegates active and archived listings to explicit repository methods', async () => {
+    bookRepository.findActive.mockResolvedValue([baseBook]);
+    bookRepository.findArchived.mockResolvedValue([{ ...baseBook, isArchived: true }]);
+
+    await expect(service.listActiveBooks()).resolves.toEqual([baseBook]);
+    await expect(service.listArchivedBooks()).resolves.toEqual([
+      expect.objectContaining({ isArchived: true }),
+    ]);
   });
 
   describe('createBook', () => {
@@ -209,6 +236,22 @@ describe('createBookService', () => {
           expect.objectContaining({ format: 'ebook', price: null }),
         ],
       );
+    });
+
+    it('rejects archived authors when creating a book', async () => {
+      bookRepository.existsBySlug.mockResolvedValue(false);
+      authorRepository.findByIds.mockResolvedValue([{ ...baseAuthor, isArchived: true }]);
+
+      await expect(
+        service.createBook({
+          title: 'Libro',
+          slug: 'libro',
+          authorIds: [authorId],
+          editions: [{ format: 'paperback' }],
+        }),
+      ).rejects.toBeInstanceOf(ArchivedBookAuthorError);
+
+      expect(bookRepository.create).not.toHaveBeenCalled();
     });
 
     it('throws when an author does not exist', async () => {
@@ -299,6 +342,7 @@ describe('createBookService', () => {
             name: 'Bea Escritora',
             slug: 'bea-escritora',
             photoUrl: null,
+            isArchived: false,
             sortOrder: 0,
           },
         ],
@@ -363,6 +407,101 @@ describe('createBookService', () => {
       ).rejects.toBeInstanceOf(BookAuthorNotFoundError);
 
       expect(bookRepository.update).not.toHaveBeenCalled();
+    });
+
+    it('allows preserving an archived author already related to the book', async () => {
+      const archivedAuthor = { ...baseAuthor, isArchived: true };
+      bookRepository.findById.mockResolvedValue({
+        ...baseBook,
+        authors: [{ ...baseBook.authors[0]!, isArchived: true }],
+      });
+      authorRepository.findByIds.mockResolvedValue([archivedAuthor, secondAuthor]);
+      bookRepository.update.mockResolvedValue(baseBook);
+
+      await service.updateBook(bookId, {
+        authorIds: [authorId, secondAuthorId],
+      });
+
+      expect(bookRepository.update).toHaveBeenCalledWith(
+        bookId,
+        {},
+        [authorId, secondAuthorId],
+        undefined,
+      );
+    });
+
+    it('rejects adding a new archived author while editing', async () => {
+      bookRepository.findById.mockResolvedValue(baseBook);
+      authorRepository.findByIds.mockResolvedValue([{ ...secondAuthor, isArchived: true }]);
+
+      await expect(
+        service.updateBook(bookId, { authorIds: [secondAuthorId] }),
+      ).rejects.toBeInstanceOf(ArchivedBookAuthorError);
+
+      expect(bookRepository.update).not.toHaveBeenCalled();
+    });
+
+    it('allows removing an existing archived author from the book', async () => {
+      bookRepository.findById.mockResolvedValue({
+        ...baseBook,
+        authors: [{ ...baseBook.authors[0]!, isArchived: true }],
+      });
+      authorRepository.findByIds.mockResolvedValue([secondAuthor]);
+      bookRepository.update.mockResolvedValue(baseBook);
+
+      await service.updateBook(bookId, { authorIds: [secondAuthorId] });
+
+      expect(bookRepository.update).toHaveBeenCalledWith(bookId, {}, [secondAuthorId], undefined);
+    });
+  });
+
+  describe('archiveBook', () => {
+    it('archives an active book', async () => {
+      const archivedBook = { ...baseBook, isArchived: true, archivedAt: new Date() };
+      bookRepository.findById.mockResolvedValue(baseBook);
+      bookRepository.archive.mockResolvedValue(archivedBook);
+
+      await expect(service.archiveBook(bookId)).resolves.toBe(archivedBook);
+      expect(bookRepository.archive).toHaveBeenCalledWith(bookId);
+    });
+
+    it('is idempotent when the book is already archived', async () => {
+      const archivedBook = { ...baseBook, isArchived: true };
+      bookRepository.findById.mockResolvedValue(archivedBook);
+
+      await expect(service.archiveBook(bookId)).resolves.toBe(archivedBook);
+      expect(bookRepository.archive).not.toHaveBeenCalled();
+    });
+
+    it('throws BookNotFoundError when archiving an unknown book', async () => {
+      bookRepository.findById.mockResolvedValue(null);
+
+      await expect(service.archiveBook(bookId)).rejects.toBeInstanceOf(BookNotFoundError);
+    });
+  });
+
+  describe('restoreBook', () => {
+    it('restores an archived book', async () => {
+      const archivedBook = { ...baseBook, isArchived: true, archivedAt: new Date() };
+      const restoredBook = { ...baseBook, isArchived: false, archivedAt: null };
+      bookRepository.findById.mockResolvedValue(archivedBook);
+      bookRepository.restore.mockResolvedValue(restoredBook);
+
+      await expect(service.restoreBook(bookId)).resolves.toBe(restoredBook);
+      expect(bookRepository.restore).toHaveBeenCalledWith(bookId);
+    });
+
+    it('is idempotent when the book is already active', async () => {
+      bookRepository.findById.mockResolvedValue(baseBook);
+
+      await expect(service.restoreBook(bookId)).resolves.toBe(baseBook);
+      expect(bookRepository.restore).not.toHaveBeenCalled();
+    });
+
+    it('throws BookNotFoundError when restoring an unknown book', async () => {
+      bookRepository.findById.mockResolvedValue(null);
+
+      await expect(service.restoreBook(bookId)).rejects.toBeInstanceOf(BookNotFoundError);
     });
   });
 });

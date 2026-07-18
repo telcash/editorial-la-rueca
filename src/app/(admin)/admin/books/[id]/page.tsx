@@ -8,6 +8,7 @@ import {
   mapBookToFormInitialValues,
   mergeAvailableAuthors,
 } from '@/features/admin/books/lib/book-edit-form.helpers';
+import { ArchivedBadge } from '@/features/admin/components/data-display/archived-badge';
 import { AdminPageHeader } from '@/features/admin/components/admin-page-header';
 import * as AuthorService from '@/services/authors/author.service';
 import { BookNotFoundError } from '@/services/books/book.errors';
@@ -45,6 +46,7 @@ export default async function AdminEditBookPage({ params, searchParams }: EditBo
       name: author.name,
       slug: author.slug,
       photoUrl: author.photoUrl,
+      isArchived: author.isArchived,
     })),
     initialValues.selectedAuthors,
   );
@@ -63,6 +65,13 @@ export default async function AdminEditBookPage({ params, searchParams }: EditBo
           </Button>
         }
       />
+
+      {book.isArchived ? (
+        <div className="flex items-center gap-3 rounded-md border border-border bg-muted/40 px-4 py-3 text-sm text-muted-foreground">
+          <ArchivedBadge isArchived={book.isArchived} />
+          Este libro está archivado. Puedes editarlo sin restaurarlo automáticamente.
+        </div>
+      ) : null}
 
       {coverUpload === 'failed' ? (
         <div

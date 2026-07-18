@@ -2,6 +2,7 @@ import { ZodError } from 'zod';
 
 import { normalizeIsbn10, normalizeIsbn13 } from '@/schemas/books/book.schema';
 import {
+  ArchivedBookAuthorError,
   BookAuthorNotFoundError,
   BookEditionNotFoundError,
   BookIsbnConflictError,
@@ -66,11 +67,17 @@ export function mapCreateBookErrorToState(
     });
   }
 
-  if (error instanceof BookAuthorNotFoundError || error instanceof DuplicateBookAuthorError) {
+  if (
+    error instanceof BookAuthorNotFoundError ||
+    error instanceof DuplicateBookAuthorError ||
+    error instanceof ArchivedBookAuthorError
+  ) {
     return createBookActionErrorState(
       null,
       {},
-      'Uno o varios autores seleccionados ya no existen.',
+      error instanceof ArchivedBookAuthorError
+        ? 'No puedes añadir autores archivados a un libro.'
+        : 'Uno o varios autores seleccionados ya no existen.',
     );
   }
 

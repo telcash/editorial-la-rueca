@@ -5,6 +5,7 @@ import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { AuthorForm } from '@/features/admin/authors/components/author-form';
 import { getAuthorFormValuesFromAuthor } from '@/features/admin/authors/lib/author-form-data';
+import { ArchivedBadge } from '@/features/admin/components/data-display/archived-badge';
 import { AdminPageHeader } from '@/features/admin/components/admin-page-header';
 import { AuthorNotFoundError } from '@/services/authors/author.errors';
 import * as AuthorService from '@/services/authors/author.service';
@@ -45,6 +46,12 @@ export default async function EditAuthorPage({ params }: EditAuthorPageProps) {
           </Button>
         }
       />
+      {author.isArchived ? (
+        <div className="flex items-center gap-3 rounded-md border border-border bg-muted/40 px-4 py-3 text-sm text-muted-foreground">
+          <ArchivedBadge isArchived={author.isArchived} />
+          Este autor está archivado. Puedes editarlo sin restaurarlo automáticamente.
+        </div>
+      ) : null}
       <AuthorForm
         mode="edit"
         authorId={author.id}

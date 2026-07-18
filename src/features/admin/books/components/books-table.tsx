@@ -1,10 +1,12 @@
 import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
+import { ArchivedBadge } from '@/features/admin/components/data-display/archived-badge';
 import { EntityThumbnail } from '@/features/admin/components/data-display/entity-thumbnail';
 import { FeaturedBadge } from '@/features/admin/components/data-display/featured-badge';
 import { PublicationStatusBadge } from '@/features/admin/components/data-display/publication-status-badge';
 import type { BookWithDetails } from '@/services/books/book.types';
+import { BookArchiveActionButton } from './book-archive-action-button';
 import {
   formatAuthorsSummary,
   formatEditionsSummary,
@@ -98,15 +100,21 @@ export function BooksTable({ books }: BooksTableProps) {
                   </td>
                   <td className="px-4 py-3 text-muted-foreground">{priceSummary.label}</td>
                   <td className="px-4 py-3">
-                    <PublicationStatusBadge isPublished={book.isPublished} />
+                    <div className="flex flex-wrap gap-2">
+                      <PublicationStatusBadge isPublished={book.isPublished} />
+                      <ArchivedBadge isArchived={book.isArchived} />
+                    </div>
                   </td>
                   <td className="px-4 py-3">
                     <FeaturedBadge isFeatured={book.isFeatured} />
                   </td>
                   <td className="px-4 py-3 text-right">
-                    <Button asChild variant="outline" size="sm">
-                      <Link href={`/admin/books/${book.id}`}>Editar</Link>
-                    </Button>
+                    <div className="flex justify-end gap-2">
+                      <Button asChild variant="outline" size="sm">
+                        <Link href={`/admin/books/${book.id}`}>Editar</Link>
+                      </Button>
+                      <BookArchiveActionButton bookId={book.id} isArchived={book.isArchived} />
+                    </div>
                   </td>
                 </tr>
               );
