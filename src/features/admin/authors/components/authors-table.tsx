@@ -14,7 +14,7 @@ export function AuthorsTable({ authors }: AuthorsTableProps) {
   return (
     <div className="overflow-hidden rounded-lg border border-border bg-card">
       <div className="overflow-x-auto">
-        <table className="w-full min-w-[760px] text-left text-sm">
+        <table className="w-full min-w-[680px] text-left text-sm">
           <thead className="border-b border-border bg-muted/60 text-xs font-medium uppercase text-muted-foreground">
             <tr>
               <th scope="col" className="w-20 px-4 py-3">
@@ -31,9 +31,6 @@ export function AuthorsTable({ authors }: AuthorsTableProps) {
               </th>
               <th scope="col" className="px-4 py-3">
                 Destacado
-              </th>
-              <th scope="col" className="px-4 py-3 text-right">
-                Orden
               </th>
               <th scope="col" className="px-4 py-3 text-right">
                 Acción
@@ -60,9 +57,6 @@ export function AuthorsTable({ authors }: AuthorsTableProps) {
                 </td>
                 <td className="px-4 py-3">
                   <FeaturedBadge isFeatured={author.isFeatured} />
-                </td>
-                <td className="px-4 py-3 text-right tabular-nums text-muted-foreground">
-                  {author.sortOrder}
                 </td>
                 <td className="px-4 py-3 text-right">
                   <Button asChild variant="outline" size="sm">

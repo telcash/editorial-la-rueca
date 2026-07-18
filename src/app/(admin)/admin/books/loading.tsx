@@ -28,9 +28,6 @@ function SkeletonRow() {
         <div className="h-5 w-24 animate-pulse rounded-full bg-muted" />
       </td>
       <td className="px-4 py-3">
-        <div className="ml-auto h-4 w-8 animate-pulse rounded bg-muted" />
-      </td>
-      <td className="px-4 py-3">
         <div className="ml-auto h-7 w-16 animate-pulse rounded-md bg-muted" />
       </td>
     </tr>
@@ -43,7 +40,7 @@ export default function AdminBooksLoading() {
       <AdminPageHeader title="Libros" description="Cargando catálogo editorial." />
       <div className="overflow-hidden rounded-lg border border-border bg-card">
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[1080px] text-left text-sm">
+          <table className="w-full min-w-[980px] text-left text-sm">
             <thead className="border-b border-border bg-muted/60 text-xs font-medium uppercase text-muted-foreground">
               <tr>
                 <th scope="col" className="w-24 px-4 py-3">
@@ -66,9 +63,6 @@ export default function AdminBooksLoading() {
                 </th>
                 <th scope="col" className="px-4 py-3">
                   Destacado
-                </th>
-                <th scope="col" className="px-4 py-3 text-right">
-                  Orden
                 </th>
                 <th scope="col" className="px-4 py-3 text-right">
                   Acción

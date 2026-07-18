@@ -48,10 +48,12 @@ export async function updateAuthor(
   }
 
   const values = {
-    ...getAuthorFormValues(formData),
+    ...getAuthorFormValues(formData, { defaultSortOrder: currentAuthor.sortOrder }),
     photoUrl: currentAuthor.photoUrl ?? '',
   };
-  const parsedInput = updateAuthorSchema.safeParse(getAuthorUpdateInput(formData));
+  const parsedInput = updateAuthorSchema.safeParse(
+    getAuthorUpdateInput(formData, { defaultSortOrder: currentAuthor.sortOrder }),
+  );
   const photoFile = getAuthorPhotoFile(formData);
 
   if (!parsedInput.success) {

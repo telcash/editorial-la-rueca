@@ -120,6 +120,14 @@ describe('buildCreateBookPayload', () => {
     expect(payload).not.toHaveProperty('authors');
     expect(getAuthorIds(authors)).toEqual(payload.authorIds);
   });
+
+  it('keeps the internal default book sortOrder when creating', () => {
+    const payload = buildCreateBookPayload(generalValues, authors, [
+      createEmptyEdition(0, () => 'edition-1'),
+    ]);
+
+    expect(payload.sortOrder).toBe('0');
+  });
 });
 
 describe('buildUpdateBookPayload', () => {
@@ -142,6 +150,19 @@ describe('buildUpdateBookPayload', () => {
     ]);
     expect(payload.editions.map((edition) => edition.sortOrder)).toEqual(['0', '1']);
     expect(validateUpdateBookPayload(payload)).toEqual({});
+  });
+
+  it('preserves the existing book sortOrder when updating', () => {
+    const payload = buildUpdateBookPayload(
+      {
+        ...generalValues,
+        sortOrder: '9',
+      },
+      authors,
+      [createEmptyEdition(0, () => 'edition-1')],
+    );
+
+    expect(payload.sortOrder).toBe('9');
   });
 });
 

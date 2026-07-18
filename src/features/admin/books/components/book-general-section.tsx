@@ -55,13 +55,7 @@ function TextField({
 }: {
   id: Extract<
     BookGeneralFormField,
-    | 'title'
-    | 'subtitle'
-    | 'slug'
-    | 'originalPublicationDate'
-    | 'sortOrder'
-    | 'metaTitle'
-    | 'canonicalUrl'
+    'title' | 'subtitle' | 'slug' | 'originalPublicationDate' | 'metaTitle' | 'canonicalUrl'
   >;
   label: string;
   value: string;
@@ -337,7 +331,7 @@ export function BookGeneralSection({
           onBlur={onFieldBlur}
         />
 
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2">
           <TextField
             id="originalPublicationDate"
             label="Fecha original de publicación"
@@ -351,15 +345,6 @@ export function BookGeneralSection({
           <LanguageField
             value={values.language}
             error={errors.language}
-            onChange={onTextChange}
-            onBlur={onFieldBlur}
-          />
-          <TextField
-            id="sortOrder"
-            label="Orden"
-            value={values.sortOrder}
-            error={errors.sortOrder}
-            type="number"
             onChange={onTextChange}
             onBlur={onFieldBlur}
           />

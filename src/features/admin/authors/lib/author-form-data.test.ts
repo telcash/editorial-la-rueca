@@ -58,6 +58,17 @@ describe('author form data adapter', () => {
     });
   });
 
+  it('uses zero as the internal default sortOrder when creating without a visible field', () => {
+    const formData = new FormData();
+
+    formData.set('name', 'Ana Pérez');
+    formData.set('slug', 'ana-perez');
+
+    expect(getAuthorCreateInput(formData)).toMatchObject({
+      sortOrder: 0,
+    });
+  });
+
   it('maps isPublished as true when enabled', () => {
     const formData = new FormData();
 
@@ -113,6 +124,17 @@ describe('author form data adapter', () => {
       country: '',
       isPublished: true,
       isFeatured: true,
+      sortOrder: 7,
+    });
+  });
+
+  it('preserves the existing sortOrder when updating without a visible field', () => {
+    const formData = new FormData();
+
+    formData.set('name', 'Autora Editada');
+    formData.set('slug', 'autora-editada');
+
+    expect(getAuthorUpdateInput(formData, { defaultSortOrder: 7 })).toMatchObject({
       sortOrder: 7,
     });
   });

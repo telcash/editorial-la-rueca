@@ -16,17 +16,30 @@ type TextFieldName =
   | 'country'
   | 'sortOrder';
 
+interface AuthorFormDataOptions {
+  defaultSortOrder?: number | string;
+}
+
 function getTextValue(formData: FormData, field: TextFieldName): string {
   const value = formData.get(field);
 
   return typeof value === 'string' ? value : '';
 }
 
+function getSortOrderValue(formData: FormData, options: AuthorFormDataOptions = {}): string {
+  const value = getTextValue(formData, 'sortOrder');
+
+  return value || String(options.defaultSortOrder ?? 0);
+}
+
 function getBooleanValue(formData: FormData, field: 'isPublished' | 'isFeatured'): boolean {
   return formData.getAll(field).some((value) => value === 'true' || value === 'on');
 }
 
-export function getAuthorFormValues(formData: FormData): AuthorFormValues {
+export function getAuthorFormValues(
+  formData: FormData,
+  options: AuthorFormDataOptions = {},
+): AuthorFormValues {
   return {
     name: getTextValue(formData, 'name'),
     slug: getTextValue(formData, 'slug'),
@@ -39,7 +52,7 @@ export function getAuthorFormValues(formData: FormData): AuthorFormValues {
     country: getTextValue(formData, 'country'),
     isPublished: getBooleanValue(formData, 'isPublished'),
     isFeatured: getBooleanValue(formData, 'isFeatured'),
-    sortOrder: getTextValue(formData, 'sortOrder') || '0',
+    sortOrder: getSortOrderValue(formData, options),
   };
 }
 
@@ -72,8 +85,11 @@ export function getAuthorCreateInput(formData: FormData): AuthorCreateInputFromF
   };
 }
 
-export function getAuthorUpdateInput(formData: FormData): AuthorUpdateInputFromForm {
-  const values = getAuthorFormValues(formData);
+export function getAuthorUpdateInput(
+  formData: FormData,
+  options: AuthorFormDataOptions = {},
+): AuthorUpdateInputFromForm {
+  const values = getAuthorFormValues(formData, options);
   const sortOrder = Number(values.sortOrder);
 
   return {

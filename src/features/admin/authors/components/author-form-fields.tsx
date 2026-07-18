@@ -23,7 +23,7 @@ function TextField({
 }: {
   id: keyof Pick<
     AuthorFormValues,
-    'name' | 'slug' | 'websiteUrl' | 'instagramUrl' | 'facebookUrl' | 'country' | 'sortOrder'
+    'name' | 'slug' | 'websiteUrl' | 'instagramUrl' | 'facebookUrl' | 'country'
   >;
   label: string;
   defaultValue: string;
@@ -203,13 +203,6 @@ export function AuthorFormFields({ values, fieldErrors, mode }: AuthorFormFields
           label="País"
           defaultValue={values.country}
           errors={fieldErrors.country}
-        />
-        <TextField
-          id="sortOrder"
-          label="Orden"
-          defaultValue={values.sortOrder}
-          errors={fieldErrors.sortOrder}
-          type="number"
         />
       </div>
 

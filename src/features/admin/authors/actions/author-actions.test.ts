@@ -78,7 +78,6 @@ function createValidFormData() {
   formData.set('country', '');
   formData.set('isPublished', 'false');
   formData.set('isFeatured', 'false');
-  formData.set('sortOrder', '0');
 
   return formData;
 }
@@ -117,6 +116,7 @@ describe('author server actions', () => {
         photoUrl: expect.any(String),
       }),
     );
+    expect(mocks.createAuthor).toHaveBeenCalledWith(expect.objectContaining({ sortOrder: 0 }));
     expect(mocks.uploadAuthorImage).not.toHaveBeenCalled();
   });
 
@@ -183,7 +183,27 @@ describe('author server actions', () => {
 
     expect(mocks.getAuthorById).toHaveBeenCalledWith(authorId);
     expect(mocks.updateAuthor).toHaveBeenCalledOnce();
+    expect(mocks.updateAuthor).toHaveBeenCalledWith(
+      authorId,
+      expect.objectContaining({ sortOrder: 0 }),
+    );
     expect(mocks.replaceAuthorImage).not.toHaveBeenCalled();
+  });
+
+  it('preserves the existing sortOrder when updating from the hidden UI', async () => {
+    mocks.getAuthorById.mockResolvedValueOnce({
+      ...baseAuthor,
+      sortOrder: 8,
+    });
+
+    await expect(updateAuthor(authorId, {} as never, createValidFormData())).rejects.toThrow(
+      'NEXT_REDIRECT',
+    );
+
+    expect(mocks.updateAuthor).toHaveBeenCalledWith(
+      authorId,
+      expect.objectContaining({ sortOrder: 8 }),
+    );
   });
 
   it('updates an author and replaces its image', async () => {

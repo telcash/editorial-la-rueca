@@ -147,4 +147,18 @@ describe('book edit form helpers', () => {
       }),
     ).toBe(true);
   });
+
+  it('does not mark the edit form as dirty when hidden sortOrder is preserved', () => {
+    const initialValues = mapBookToFormInitialValues(book);
+
+    expect(
+      isBookFormDirty(initialValues, {
+        ...initialValues,
+        general: {
+          ...initialValues.general,
+          sortOrder: initialValues.general.sortOrder,
+        },
+      }),
+    ).toBe(false);
+  });
 });
