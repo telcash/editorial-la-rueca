@@ -79,6 +79,7 @@ export function mapBookToFormInitialValues(book: BookWithDetails): BookFormIniti
     },
     selectedAuthors,
     editions,
+    coverUrl: nullableStringToInput(book.coverUrl),
   };
 }
 

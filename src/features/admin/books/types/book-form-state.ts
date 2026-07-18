@@ -51,6 +51,7 @@ export interface BookFormInitialValues {
   general: BookGeneralFormValues;
   selectedAuthors: BookFormAuthorSummary[];
   editions: BookEditionFormValues[];
+  coverUrl: string;
 }
 
 export const initialBookGeneralFormValues: BookGeneralFormValues = {

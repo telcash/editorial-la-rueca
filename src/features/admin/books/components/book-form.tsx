@@ -1,11 +1,24 @@
 'use client';
 
-import { useMemo, useState, useTransition, type FormEvent, type MouseEvent } from 'react';
+import {
+  useEffect,
+  useMemo,
+  useState,
+  useTransition,
+  type FormEvent,
+  type MouseEvent,
+} from 'react';
 
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { FormActions } from '@/features/admin/components/forms/form-actions';
 import { createBookAction } from '../actions/create-book';
 import { updateBookAction } from '../actions/update-book';
+import {
+  createBookActionFormData,
+  isBookCoverDirty,
+  updateBookActionFormData,
+  validateBookCoverClientFile,
+} from '../lib/book-cover-form.helpers';
 import {
   addSelectedAuthor,
   filterAvailableAuthors,
@@ -50,6 +63,7 @@ import {
 } from '../types/book-form-state';
 import type { BookActionState } from '../types/create-book-action-state';
 import { BookAuthorsSection } from './book-authors-section';
+import { BookCoverSection } from './book-cover-section';
 import { BookEditionsSection } from './book-editions-section';
 import { BookGeneralSection } from './book-general-section';
 
@@ -73,6 +87,7 @@ function getDefaultInitialValues(): BookFormInitialValues {
     general: initialBookGeneralFormValues,
     selectedAuthors: [],
     editions: [createEmptyEdition()],
+    coverUrl: '',
   };
 }
 
@@ -94,6 +109,10 @@ export function BookForm(props: BookFormProps) {
   const [clientPathErrors, setClientPathErrors] = useState<Record<string, string>>({});
   const [serverState, setServerState] = useState<BookActionState | null>(null);
   const [isSlugManuallyEdited, setIsSlugManuallyEdited] = useState(mode === 'edit');
+  const [selectedCoverFile, setSelectedCoverFile] = useState<File | null>(null);
+  const [coverPreviewUrl, setCoverPreviewUrl] = useState<string | null>(null);
+  const [coverError, setCoverError] = useState<string | null>(null);
+  const [removeExistingCover, setRemoveExistingCover] = useState(false);
   const availableAuthors = filterAvailableAuthors(authors, selectedAuthors, authorSearchQuery);
   const buildPayload = mode === 'edit' ? buildUpdateBookPayload : buildCreateBookPayload;
   const validatePayload = mode === 'edit' ? validateUpdateBookPayload : validateCreateBookPayload;
@@ -127,18 +146,30 @@ export function BookForm(props: BookFormProps) {
     general: values,
     selectedAuthors,
     editions,
+    coverUrl: stableInitialValues.coverUrl,
   };
   const isDirty =
     mode === 'edit'
-      ? isBookFormDirty(stableInitialValues, currentInitialValues)
+      ? isBookFormDirty(stableInitialValues, currentInitialValues) ||
+        isBookCoverDirty({ selectedFile: selectedCoverFile, removeExistingCover })
       : areBookGeneralValuesDirty(values, stableInitialValues.general) ||
         selectedAuthors.length > 0 ||
-        isBookFormDirty(getDefaultInitialValues(), currentInitialValues);
+        isBookFormDirty(getDefaultInitialValues(), currentInitialValues) ||
+        isBookCoverDirty({ selectedFile: selectedCoverFile, removeExistingCover });
   const canSubmit =
     selectedAuthors.length > 0 &&
     editions.length > 0 &&
     !hasClientErrors &&
+    !coverError &&
     (mode === 'create' || isDirty);
+
+  useEffect(() => {
+    return () => {
+      if (coverPreviewUrl) {
+        URL.revokeObjectURL(coverPreviewUrl);
+      }
+    };
+  }, [coverPreviewUrl]);
 
   function handleTextChange(field: BookGeneralFormField, value: string) {
     setServerState(null);
@@ -245,6 +276,47 @@ export function BookForm(props: BookFormProps) {
     );
   }
 
+  function handleCoverFileChange(file: File | null) {
+    setServerState(null);
+
+    if (coverPreviewUrl) {
+      URL.revokeObjectURL(coverPreviewUrl);
+      setCoverPreviewUrl(null);
+    }
+
+    if (!file) {
+      setSelectedCoverFile(null);
+      setCoverError(null);
+      return;
+    }
+
+    const validationError = validateBookCoverClientFile(file);
+
+    if (validationError) {
+      setSelectedCoverFile(null);
+      setCoverError(validationError);
+      return;
+    }
+
+    setSelectedCoverFile(file);
+    setRemoveExistingCover(false);
+    setCoverError(null);
+    setCoverPreviewUrl(URL.createObjectURL(file));
+  }
+
+  function handleRemoveExistingCover() {
+    setServerState(null);
+
+    if (coverPreviewUrl) {
+      URL.revokeObjectURL(coverPreviewUrl);
+      setCoverPreviewUrl(null);
+    }
+
+    setSelectedCoverFile(null);
+    setCoverError(null);
+    setRemoveExistingCover(true);
+  }
+
   function handleUpdateEdition(
     clientId: string,
     field: BookEditionFormField,
@@ -289,15 +361,18 @@ export function BookForm(props: BookFormProps) {
     setClientPathErrors(pathErrors);
     setServerState(null);
 
-    if (Object.keys(pathErrors).length > 0) {
+    if (Object.keys(pathErrors).length > 0 || coverError) {
       return;
     }
 
     startTransition(async () => {
       const result =
         mode === 'edit'
-          ? await updateBookAction(props.bookId, payload)
-          : await createBookAction(payload);
+          ? await updateBookAction(
+              props.bookId,
+              updateBookActionFormData(payload, selectedCoverFile, removeExistingCover),
+            )
+          : await createBookAction(createBookActionFormData(payload, selectedCoverFile));
       setServerState(result);
     });
   }
@@ -327,6 +402,17 @@ export function BookForm(props: BookFormProps) {
               onBooleanChange={handleBooleanChange}
               onFieldBlur={handleFieldBlur}
               onSlugReset={handleSlugReset}
+            />
+
+            <BookCoverSection
+              currentCoverUrl={stableInitialValues.coverUrl}
+              previewUrl={coverPreviewUrl}
+              selectedFile={selectedCoverFile}
+              removeExistingCover={removeExistingCover}
+              error={coverError ?? serverState?.pathErrors.cover ?? null}
+              disabled={isPending}
+              onFileChange={handleCoverFileChange}
+              onRemoveExistingCover={handleRemoveExistingCover}
             />
 
             <BookAuthorsSection

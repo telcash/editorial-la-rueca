@@ -17,6 +17,9 @@ interface EditBookPageProps {
   params: Promise<{
     id: string;
   }>;
+  searchParams: Promise<{
+    coverUpload?: string;
+  }>;
 }
 
 async function getBookForEdit(id: string) {
@@ -31,8 +34,9 @@ async function getBookForEdit(id: string) {
   }
 }
 
-export default async function AdminEditBookPage({ params }: EditBookPageProps) {
+export default async function AdminEditBookPage({ params, searchParams }: EditBookPageProps) {
   const { id } = await params;
+  const { coverUpload } = await searchParams;
   const [book, authors] = await Promise.all([getBookForEdit(id), AuthorService.listAuthors()]);
   const initialValues = mapBookToFormInitialValues(book);
   const authorOptions = mergeAvailableAuthors(
@@ -59,6 +63,16 @@ export default async function AdminEditBookPage({ params }: EditBookPageProps) {
           </Button>
         }
       />
+
+      {coverUpload === 'failed' ? (
+        <div
+          role="alert"
+          className="rounded-md border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm text-destructive"
+        >
+          El libro se creó correctamente, pero no se pudo subir la portada. Puedes seleccionar una
+          imagen e intentarlo de nuevo.
+        </div>
+      ) : null}
 
       <BookForm
         mode="edit"
