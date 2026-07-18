@@ -52,6 +52,8 @@ function createRepositoryMock(): MockAuthorRepository {
     findByIds: vi.fn<AuthorRepository['findByIds']>(),
     findAll: vi.fn<AuthorRepository['findAll']>(),
     findAllWithBookCount: vi.fn<AuthorRepository['findAllWithBookCount']>(),
+    getDashboardCounts: vi.fn<AuthorRepository['getDashboardCounts']>(),
+    findRecent: vi.fn<AuthorRepository['findRecent']>(),
     findActive: vi.fn<AuthorRepository['findActive']>(),
     findArchived: vi.fn<AuthorRepository['findArchived']>(),
     findPublished: vi.fn<AuthorRepository['findPublished']>(),

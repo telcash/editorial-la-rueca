@@ -25,10 +25,28 @@ export type BookWithDetails = Book & {
 export type BookDataCreateInput = Omit<CreateBookInput, 'authorIds' | 'editions'>;
 export type BookDataUpdateInput = Omit<UpdateBookInput, 'authorIds' | 'editions'>;
 
+export interface BookDashboardCounts {
+  active: number;
+  published: number;
+  drafts: number;
+  archived: number;
+}
+
+export type BookRecentRow = Pick<
+  Book,
+  'id' | 'title' | 'slug' | 'coverUrl' | 'isPublished' | 'createdAt'
+>;
+
+export type BookRecentItem = BookRecentRow & {
+  authors: BookAuthorSummary[];
+};
+
 export interface BookRepository {
   findById(id: string): Promise<BookWithDetails | null>;
   findBySlug(slug: string): Promise<BookWithDetails | null>;
   findAll(status?: ArchiveStatus): Promise<BookWithDetails[]>;
+  getDashboardCounts(): Promise<BookDashboardCounts>;
+  findRecent(limit?: number): Promise<BookRecentItem[]>;
   findActive(): Promise<BookWithDetails[]>;
   findArchived(): Promise<BookWithDetails[]>;
   findPublished(): Promise<BookWithDetails[]>;

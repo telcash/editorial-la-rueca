@@ -50,7 +50,7 @@ export function AuthorForm({ mode = 'create', authorId, initialValues }: AuthorF
   const [state, formAction] = useActionState(action, getInitialState(initialValues));
 
   return (
-    <form action={formAction} encType="multipart/form-data">
+    <form action={formAction}>
       <Card>
         <CardContent className="pt-6">
           <div className="space-y-6">

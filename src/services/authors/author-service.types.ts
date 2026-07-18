@@ -7,12 +7,24 @@ export interface AuthorAdminListItem {
   bookCount: number;
 }
 
+export interface AuthorDashboardCounts {
+  active: number;
+  archived: number;
+}
+
+export type AuthorRecentItem = Pick<
+  Author,
+  'id' | 'name' | 'slug' | 'photoUrl' | 'isPublished' | 'createdAt'
+>;
+
 export interface AuthorRepository {
   findById(id: string): Promise<Author | null>;
   findBySlug(slug: string): Promise<Author | null>;
   findByIds(ids: string[]): Promise<Author[]>;
   findAll(status?: ArchiveStatus): Promise<Author[]>;
   findAllWithBookCount(status?: ArchiveStatus): Promise<AuthorAdminListItem[]>;
+  getDashboardCounts(): Promise<AuthorDashboardCounts>;
+  findRecent(limit?: number): Promise<AuthorRecentItem[]>;
   findActive(): Promise<Author[]>;
   findArchived(): Promise<Author[]>;
   findPublished(): Promise<Author[]>;

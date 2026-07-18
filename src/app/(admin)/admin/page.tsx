@@ -1,59 +1,73 @@
-import { ArrowRight, BookOpenText, FolderTree, UsersRound } from 'lucide-react';
+import { Archive, BookOpenText, CheckCircle2, FileText, UsersRound } from 'lucide-react';
 
 import { AdminPageHeader } from '@/features/admin/components/admin-page-header';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { DashboardMetricCard } from '@/features/admin/dashboard/components/dashboard-metric-card';
+import { QuickActions } from '@/features/admin/dashboard/components/quick-actions';
+import { RecentAuthors } from '@/features/admin/dashboard/components/recent-authors';
+import { RecentBooks } from '@/features/admin/dashboard/components/recent-books';
+import { requireEditorialStaff } from '@/services/auth/access.service';
+import * as DashboardService from '@/services/dashboard/dashboard.service';
 
-const moduleCards = [
-  {
-    title: 'Autores',
-    description: 'Gestionar autores',
-    status: 'Próximo módulo',
-    icon: UsersRound,
-  },
-  {
-    title: 'Libros',
-    description: 'Gestionar catálogo',
-    status: 'Próximamente',
-    icon: BookOpenText,
-  },
-  {
-    title: 'Categorías',
-    description: 'Organizar categorías',
-    status: 'Próximamente',
-    icon: FolderTree,
-  },
-];
+export default async function AdminPage() {
+  await requireEditorialStaff();
 
-export default function AdminPage() {
+  const dashboard = await DashboardService.getDashboardData();
+
   return (
     <section className="space-y-8">
-      <AdminPageHeader
-        title="Panel editorial"
-        description="Gestiona los contenidos y la presencia digital de Editorial La Rueca."
-      />
+      <AdminPageHeader title="Dashboard" description="Resumen general del catálogo editorial." />
 
-      <div className="grid gap-4 md:grid-cols-3">
-        {moduleCards.map((module) => {
-          const Icon = module.icon;
-
-          return (
-            <Card key={module.title} className="border-border bg-card">
-              <CardHeader>
-                <div className="mb-3 flex size-10 items-center justify-center rounded-md bg-accent text-primary">
-                  <Icon className="size-5" aria-hidden="true" />
-                </div>
-                <CardTitle>{module.title}</CardTitle>
-                <CardDescription>{module.description}</CardDescription>
-              </CardHeader>
-              <CardContent className="flex items-center justify-between">
-                <Badge variant="outline">{module.status}</Badge>
-                <ArrowRight className="size-4 text-muted-foreground" aria-hidden="true" />
-              </CardContent>
-            </Card>
-          );
-        })}
+      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-6">
+        <DashboardMetricCard
+          label="Autores activos"
+          value={dashboard.metrics.authorsActive}
+          icon={UsersRound}
+          href="/admin/authors"
+          description="Autores no archivados"
+        />
+        <DashboardMetricCard
+          label="Autores archivados"
+          value={dashboard.metrics.authorsArchived}
+          icon={Archive}
+          href="/admin/authors?status=archived"
+          description="Fuera del catálogo activo"
+        />
+        <DashboardMetricCard
+          label="Libros activos"
+          value={dashboard.metrics.booksActive}
+          icon={BookOpenText}
+          href="/admin/books"
+          description="Libros no archivados"
+        />
+        <DashboardMetricCard
+          label="Publicados"
+          value={dashboard.metrics.booksPublished}
+          icon={CheckCircle2}
+          href="/admin/books"
+          description="Activos y visibles"
+        />
+        <DashboardMetricCard
+          label="Borradores"
+          value={dashboard.metrics.booksDraft}
+          icon={FileText}
+          href="/admin/books"
+          description="Activos sin publicar"
+        />
+        <DashboardMetricCard
+          label="Libros archivados"
+          value={dashboard.metrics.booksArchived}
+          icon={Archive}
+          href="/admin/books?status=archived"
+          description="Fuera del catálogo activo"
+        />
       </div>
+
+      <div className="grid gap-4 xl:grid-cols-2">
+        <RecentBooks books={dashboard.recentBooks} />
+        <RecentAuthors authors={dashboard.recentAuthors} />
+      </div>
+
+      <QuickActions />
     </section>
   );
 }

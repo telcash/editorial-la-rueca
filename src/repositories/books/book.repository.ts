@@ -1,6 +1,6 @@
 import 'server-only';
 
-import { and, asc, desc, eq, inArray, ne } from 'drizzle-orm';
+import { and, asc, desc, eq, inArray, ne, sql } from 'drizzle-orm';
 
 import { db } from '@/db';
 import {
@@ -15,9 +15,12 @@ import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
 import type { BookEditionInput } from '@/schemas/books/book.schema';
 import type {
   BookAuthorSummary,
+  BookDashboardCounts,
   BookDataCreateInput,
   BookDataUpdateInput,
   BookEditionDetails,
+  BookRecentItem,
+  BookRecentRow,
   BookWithDetails,
 } from '@/services/books/book.types';
 
@@ -53,6 +56,18 @@ function mapBookEditions(editionRows: EditionRow[]): Map<string, BookEditionDeta
   }
 
   return editionsByBookId;
+}
+
+function assembleRecentBooks(
+  bookRows: BookRecentRow[],
+  authorRows: AuthorSummaryRow[],
+): BookRecentItem[] {
+  const authorsByBookId = mapBookAuthors(authorRows);
+
+  return bookRows.map((book) => ({
+    ...book,
+    authors: authorsByBookId.get(book.id) ?? [],
+  }));
 }
 
 function assembleBooks(
@@ -131,6 +146,27 @@ async function findDetailsByBookIds(bookIds: string[], onlyAvailableEditions = f
   return { authorRows, editionRows };
 }
 
+async function findAuthorSummariesByBookIds(bookIds: string[]) {
+  if (bookIds.length === 0) {
+    return [];
+  }
+
+  return db
+    .select({
+      bookId: bookAuthors.bookId,
+      id: authors.id,
+      name: authors.name,
+      slug: authors.slug,
+      photoUrl: authors.photoUrl,
+      isArchived: authors.isArchived,
+      sortOrder: bookAuthors.sortOrder,
+    })
+    .from(bookAuthors)
+    .innerJoin(authors, eq(authors.id, bookAuthors.authorId))
+    .where(inArray(bookAuthors.bookId, bookIds))
+    .orderBy(asc(bookAuthors.bookId), asc(bookAuthors.sortOrder), asc(authors.name));
+}
+
 async function findOneByBook(book: BookRow | null, onlyAvailableEditions = false) {
   if (!book) {
     return null;
@@ -163,6 +199,50 @@ export async function findAll(status: ArchiveStatus = 'active'): Promise<BookWit
   const { authorRows, editionRows } = await findDetailsByBookIds(bookRows.map((book) => book.id));
 
   return assembleBooks(bookRows, authorRows, editionRows);
+}
+
+export async function getDashboardCounts(): Promise<BookDashboardCounts> {
+  const [result] = await db
+    .select({
+      active: sql<number>`count(*) filter (where ${books.isArchived} = false)`.mapWith(Number),
+      published:
+        sql<number>`count(*) filter (where ${books.isPublished} = true and ${books.isArchived} = false)`.mapWith(
+          Number,
+        ),
+      drafts:
+        sql<number>`count(*) filter (where ${books.isPublished} = false and ${books.isArchived} = false)`.mapWith(
+          Number,
+        ),
+      archived: sql<number>`count(*) filter (where ${books.isArchived} = true)`.mapWith(Number),
+    })
+    .from(books);
+
+  return {
+    active: result?.active ?? 0,
+    published: result?.published ?? 0,
+    drafts: result?.drafts ?? 0,
+    archived: result?.archived ?? 0,
+  };
+}
+
+export async function findRecent(limit = 5): Promise<BookRecentItem[]> {
+  const safeLimit = Math.min(Math.max(Math.trunc(limit), 1), 20);
+  const bookRows = await db
+    .select({
+      id: books.id,
+      title: books.title,
+      slug: books.slug,
+      coverUrl: books.coverUrl,
+      isPublished: books.isPublished,
+      createdAt: books.createdAt,
+    })
+    .from(books)
+    .where(eq(books.isArchived, false))
+    .orderBy(desc(books.createdAt))
+    .limit(safeLimit);
+  const authorRows = await findAuthorSummariesByBookIds(bookRows.map((book) => book.id));
+
+  return assembleRecentBooks(bookRows, authorRows);
 }
 
 export async function findActive(): Promise<BookWithDetails[]> {

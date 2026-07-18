@@ -1,11 +1,15 @@
 import 'server-only';
 
-import { and, asc, count, desc, eq, inArray, ne } from 'drizzle-orm';
+import { and, asc, count, desc, eq, inArray, ne, sql } from 'drizzle-orm';
 
 import { db } from '@/db';
 import { authors, bookAuthors, type Author, type NewAuthor } from '@/db/schema';
 import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
-import type { AuthorAdminListItem } from '@/services/authors/author-service.types';
+import type {
+  AuthorAdminListItem,
+  AuthorDashboardCounts,
+  AuthorRecentItem,
+} from '@/services/authors/author-service.types';
 
 type AuthorCreateData = NewAuthor;
 type AuthorUpdateData = Partial<Omit<NewAuthor, 'id' | 'createdAt' | 'updatedAt'>>;
@@ -61,6 +65,38 @@ export async function findAllWithBookCount(
     .orderBy(asc(authors.sortOrder), asc(authors.name));
 
   return rows;
+}
+
+export async function getDashboardCounts(): Promise<AuthorDashboardCounts> {
+  const [result] = await db
+    .select({
+      active: sql<number>`count(*) filter (where ${authors.isArchived} = false)`.mapWith(Number),
+      archived: sql<number>`count(*) filter (where ${authors.isArchived} = true)`.mapWith(Number),
+    })
+    .from(authors);
+
+  return {
+    active: result?.active ?? 0,
+    archived: result?.archived ?? 0,
+  };
+}
+
+export async function findRecent(limit = 5): Promise<AuthorRecentItem[]> {
+  const safeLimit = Math.min(Math.max(Math.trunc(limit), 1), 20);
+
+  return db
+    .select({
+      id: authors.id,
+      name: authors.name,
+      slug: authors.slug,
+      photoUrl: authors.photoUrl,
+      isPublished: authors.isPublished,
+      createdAt: authors.createdAt,
+    })
+    .from(authors)
+    .where(eq(authors.isArchived, false))
+    .orderBy(desc(authors.createdAt))
+    .limit(safeLimit);
 }
 
 export async function findActive(): Promise<Author[]> {
