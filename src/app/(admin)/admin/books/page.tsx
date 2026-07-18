@@ -7,6 +7,7 @@ import { EmptyBooksState } from '@/features/admin/books/components/empty-books-s
 import { ArchiveStatusFilter } from '@/features/admin/components/archive-status-filter';
 import { AdminPageHeader } from '@/features/admin/components/admin-page-header';
 import { parseArchiveStatus } from '@/features/admin/lib/archive-status';
+import { requireEditorialStaff } from '@/services/auth/access.service';
 import * as BookService from '@/services/books/book.service';
 
 interface AdminBooksPageProps {
@@ -18,6 +19,7 @@ interface AdminBooksPageProps {
 export default async function AdminBooksPage({ searchParams }: AdminBooksPageProps) {
   const { status: statusParam } = await searchParams;
   const status = parseArchiveStatus(statusParam);
+  const staff = await requireEditorialStaff();
   const books = await BookService.listBooks(status);
 
   return (
@@ -37,7 +39,11 @@ export default async function AdminBooksPage({ searchParams }: AdminBooksPagePro
 
       <ArchiveStatusFilter baseHref="/admin/books" currentStatus={status} />
 
-      {books.length > 0 ? <BooksTable books={books} /> : <EmptyBooksState status={status} />}
+      {books.length > 0 ? (
+        <BooksTable books={books} canDeletePermanently={staff.role === 'admin'} />
+      ) : (
+        <EmptyBooksState status={status} />
+      )}
     </section>
   );
 }

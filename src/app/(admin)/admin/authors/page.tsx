@@ -7,6 +7,7 @@ import { AuthorsTable } from '@/features/admin/authors/components/authors-table'
 import { ArchiveStatusFilter } from '@/features/admin/components/archive-status-filter';
 import { AdminPageHeader } from '@/features/admin/components/admin-page-header';
 import { parseArchiveStatus } from '@/features/admin/lib/archive-status';
+import { requireEditorialStaff } from '@/services/auth/access.service';
 import * as AuthorService from '@/services/authors/author.service';
 
 interface AdminAuthorsPageProps {
@@ -18,7 +19,8 @@ interface AdminAuthorsPageProps {
 export default async function AdminAuthorsPage({ searchParams }: AdminAuthorsPageProps) {
   const { status: statusParam } = await searchParams;
   const status = parseArchiveStatus(statusParam);
-  const authors = await AuthorService.listAuthors(status);
+  const staff = await requireEditorialStaff();
+  const authors = await AuthorService.listAuthorsForAdmin(status);
 
   return (
     <section className="space-y-6">
@@ -38,7 +40,7 @@ export default async function AdminAuthorsPage({ searchParams }: AdminAuthorsPag
       <ArchiveStatusFilter baseHref="/admin/authors" currentStatus={status} />
 
       {authors.length > 0 ? (
-        <AuthorsTable authors={authors} />
+        <AuthorsTable authors={authors} canDeletePermanently={staff.role === 'admin'} />
       ) : (
         <EmptyAuthorsState status={status} />
       )}

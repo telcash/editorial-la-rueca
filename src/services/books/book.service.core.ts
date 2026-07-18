@@ -13,6 +13,7 @@ import {
   ArchivedBookAuthorError,
   BookAuthorNotFoundError,
   BookIsbnConflictError,
+  BookMustBeArchivedError,
   BookNotFoundError,
   BookRequiresAuthorError,
   BookRequiresEditionError,
@@ -249,6 +250,27 @@ export function createBookService(
       }
 
       return restoredBook;
+    },
+
+    async deleteBookPermanently(id: string) {
+      const validId = bookIdSchema.parse(id);
+      const currentBook = await bookRepository.findById(validId);
+
+      if (!currentBook) {
+        throw new BookNotFoundError(validId);
+      }
+
+      if (!currentBook.isArchived) {
+        throw new BookMustBeArchivedError();
+      }
+
+      const deletedBook = await bookRepository.deletePermanently(validId);
+
+      if (!deletedBook) {
+        throw new BookNotFoundError(validId);
+      }
+
+      return deletedBook;
     },
   };
 }

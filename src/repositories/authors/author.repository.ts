@@ -1,10 +1,11 @@
 import 'server-only';
 
-import { and, asc, desc, eq, inArray, ne } from 'drizzle-orm';
+import { and, asc, count, desc, eq, inArray, ne } from 'drizzle-orm';
 
 import { db } from '@/db';
-import { authors, type Author, type NewAuthor } from '@/db/schema';
+import { authors, bookAuthors, type Author, type NewAuthor } from '@/db/schema';
 import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
+import type { AuthorAdminListItem } from '@/services/authors/author-service.types';
 
 type AuthorCreateData = NewAuthor;
 type AuthorUpdateData = Partial<Omit<NewAuthor, 'id' | 'createdAt' | 'updatedAt'>>;
@@ -45,6 +46,23 @@ export async function findAll(status: ArchiveStatus = 'active'): Promise<Author[
     .orderBy(asc(authors.sortOrder), asc(authors.name));
 }
 
+export async function findAllWithBookCount(
+  status: ArchiveStatus = 'active',
+): Promise<AuthorAdminListItem[]> {
+  const rows = await db
+    .select({
+      author: authors,
+      bookCount: count(bookAuthors.bookId),
+    })
+    .from(authors)
+    .leftJoin(bookAuthors, eq(bookAuthors.authorId, authors.id))
+    .where(getArchiveCondition(status))
+    .groupBy(authors.id)
+    .orderBy(asc(authors.sortOrder), asc(authors.name));
+
+  return rows;
+}
+
 export async function findActive(): Promise<Author[]> {
   return findAll('active');
 }
@@ -59,6 +77,17 @@ export async function findPublished(): Promise<Author[]> {
     .from(authors)
     .where(and(eq(authors.isPublished, true), eq(authors.isArchived, false)))
     .orderBy(desc(authors.isFeatured), asc(authors.sortOrder), asc(authors.name));
+}
+
+export async function countBooksByAuthorId(authorId: string): Promise<number> {
+  const [result] = await db
+    .select({
+      bookCount: count(bookAuthors.bookId),
+    })
+    .from(bookAuthors)
+    .where(eq(bookAuthors.authorId, authorId));
+
+  return result?.bookCount ?? 0;
 }
 
 export async function existsBySlug(slug: string, excludeId?: string): Promise<boolean> {
@@ -118,6 +147,12 @@ export async function restore(id: string): Promise<Author | null> {
     })
     .where(eq(authors.id, id))
     .returning();
+
+  return author ?? null;
+}
+
+export async function deleteById(id: string): Promise<Author | null> {
+  const [author] = await db.delete(authors).where(eq(authors.id, id)).returning();
 
   return author ?? null;
 }

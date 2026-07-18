@@ -11,3 +11,17 @@ export class AuthorSlugConflictError extends Error {
     this.name = 'AuthorSlugConflictError';
   }
 }
+
+export class AuthorMustBeArchivedError extends Error {
+  constructor() {
+    super('Archiva el autor antes de eliminarlo definitivamente.');
+    this.name = 'AuthorMustBeArchivedError';
+  }
+}
+
+export class AuthorHasBooksError extends Error {
+  constructor(public readonly bookCount: number) {
+    super(`El autor está relacionado con ${bookCount} libros y no puede eliminarse.`);
+    this.name = 'AuthorHasBooksError';
+  }
+}

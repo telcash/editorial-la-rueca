@@ -84,3 +84,13 @@ export async function requireEditorialStaff(): Promise<EditorialStaff> {
 
   return staff;
 }
+
+export async function requireAdmin(): Promise<EditorialStaff> {
+  const staff = await requireEditorialStaff();
+
+  if (staff.role !== 'admin') {
+    redirect('/unauthorized');
+  }
+
+  return staff;
+}

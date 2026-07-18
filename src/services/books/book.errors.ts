@@ -63,3 +63,10 @@ export class BookRequiresEditionError extends Error {
     this.name = 'BookRequiresEditionError';
   }
 }
+
+export class BookMustBeArchivedError extends Error {
+  constructor() {
+    super('Archiva el libro antes de eliminarlo definitivamente.');
+    this.name = 'BookMustBeArchivedError';
+  }
+}

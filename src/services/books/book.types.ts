@@ -56,6 +56,7 @@ export interface BookRepository {
   ): Promise<BookWithDetails | null>;
   archive(id: string): Promise<BookWithDetails | null>;
   restore(id: string): Promise<BookWithDetails | null>;
+  deletePermanently(id: string): Promise<BookWithDetails | null>;
   findAuthorsByBookId(bookId: string): Promise<BookAuthorSummary[]>;
   findEditionsByBookId(bookId: string): Promise<BookEditionDetails[]>;
 }

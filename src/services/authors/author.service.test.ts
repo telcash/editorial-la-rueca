@@ -1,7 +1,12 @@
 import { beforeEach, describe, expect, it, vi, type Mock } from 'vitest';
 
 import type { Author } from '@/db/schema';
-import { AuthorNotFoundError, AuthorSlugConflictError } from './author.errors';
+import {
+  AuthorHasBooksError,
+  AuthorMustBeArchivedError,
+  AuthorNotFoundError,
+  AuthorSlugConflictError,
+} from './author.errors';
 import type { AuthorRepository } from './author-service.types';
 import { createAuthorService } from './author.service.core';
 
@@ -46,14 +51,17 @@ function createRepositoryMock(): MockAuthorRepository {
     findBySlug: vi.fn<AuthorRepository['findBySlug']>(),
     findByIds: vi.fn<AuthorRepository['findByIds']>(),
     findAll: vi.fn<AuthorRepository['findAll']>(),
+    findAllWithBookCount: vi.fn<AuthorRepository['findAllWithBookCount']>(),
     findActive: vi.fn<AuthorRepository['findActive']>(),
     findArchived: vi.fn<AuthorRepository['findArchived']>(),
     findPublished: vi.fn<AuthorRepository['findPublished']>(),
+    countBooksByAuthorId: vi.fn<AuthorRepository['countBooksByAuthorId']>(),
     existsBySlug: vi.fn<AuthorRepository['existsBySlug']>(),
     create: vi.fn<AuthorRepository['create']>(),
     update: vi.fn<AuthorRepository['update']>(),
     archive: vi.fn<AuthorRepository['archive']>(),
     restore: vi.fn<AuthorRepository['restore']>(),
+    deleteById: vi.fn<AuthorRepository['deleteById']>(),
   };
 }
 
@@ -125,6 +133,14 @@ describe('createAuthorService', () => {
     expect(repository.findAll).toHaveBeenCalledWith('active');
     await expect(service.listAuthors('archived')).resolves.toBe(authors);
     expect(repository.findAll).toHaveBeenCalledWith('archived');
+  });
+
+  it('listAuthorsForAdmin delegates to the aggregated admin list', async () => {
+    const adminRows = [{ author: baseAuthor, bookCount: 2 }];
+    repository.findAllWithBookCount.mockResolvedValue(adminRows);
+
+    await expect(service.listAuthorsForAdmin('all')).resolves.toBe(adminRows);
+    expect(repository.findAllWithBookCount).toHaveBeenCalledWith('all');
   });
 
   it('listActiveAuthors and listArchivedAuthors delegate to explicit repository methods', async () => {
@@ -352,6 +368,82 @@ describe('createAuthorService', () => {
       repository.findById.mockResolvedValue(null);
 
       await expect(service.restoreAuthor(authorId)).rejects.toBeInstanceOf(AuthorNotFoundError);
+    });
+  });
+
+  describe('deleteAuthorPermanently', () => {
+    it('deletes an archived author without book relations', async () => {
+      const archivedAuthor = { ...baseAuthor, isArchived: true };
+      repository.findById.mockResolvedValue(archivedAuthor);
+      repository.countBooksByAuthorId.mockResolvedValue(0);
+      repository.deleteById.mockResolvedValue(archivedAuthor);
+
+      await expect(service.deleteAuthorPermanently(authorId)).resolves.toBe(archivedAuthor);
+      expect(repository.countBooksByAuthorId).toHaveBeenCalledWith(authorId);
+      expect(repository.deleteById).toHaveBeenCalledWith(authorId);
+    });
+
+    it('rejects active authors', async () => {
+      repository.findById.mockResolvedValue(baseAuthor);
+
+      await expect(service.deleteAuthorPermanently(authorId)).rejects.toBeInstanceOf(
+        AuthorMustBeArchivedError,
+      );
+
+      expect(repository.countBooksByAuthorId).not.toHaveBeenCalled();
+      expect(repository.deleteById).not.toHaveBeenCalled();
+    });
+
+    it('rejects archived authors with one book relation', async () => {
+      repository.findById.mockResolvedValue({ ...baseAuthor, isArchived: true });
+      repository.countBooksByAuthorId.mockResolvedValue(1);
+
+      await expect(service.deleteAuthorPermanently(authorId)).rejects.toBeInstanceOf(
+        AuthorHasBooksError,
+      );
+
+      expect(repository.deleteById).not.toHaveBeenCalled();
+    });
+
+    it('rejects archived authors with several book relations', async () => {
+      repository.findById.mockResolvedValue({ ...baseAuthor, isArchived: true });
+      repository.countBooksByAuthorId.mockResolvedValue(3);
+
+      await expect(service.deleteAuthorPermanently(authorId)).rejects.toMatchObject({
+        bookCount: 3,
+      });
+
+      expect(repository.deleteById).not.toHaveBeenCalled();
+    });
+
+    it('throws AuthorNotFoundError for unknown authors', async () => {
+      repository.findById.mockResolvedValue(null);
+
+      await expect(service.deleteAuthorPermanently(authorId)).rejects.toBeInstanceOf(
+        AuthorNotFoundError,
+      );
+    });
+
+    it('converts concurrent foreign key violations to AuthorHasBooksError', async () => {
+      const archivedAuthor = { ...baseAuthor, isArchived: true };
+      repository.findById.mockResolvedValue(archivedAuthor);
+      repository.countBooksByAuthorId.mockResolvedValue(0);
+      repository.deleteById.mockRejectedValue({ code: '23503' });
+
+      await expect(service.deleteAuthorPermanently(authorId)).rejects.toBeInstanceOf(
+        AuthorHasBooksError,
+      );
+    });
+
+    it('does not delete relations explicitly', async () => {
+      const archivedAuthor = { ...baseAuthor, isArchived: true };
+      repository.findById.mockResolvedValue(archivedAuthor);
+      repository.countBooksByAuthorId.mockResolvedValue(0);
+      repository.deleteById.mockResolvedValue(archivedAuthor);
+
+      await service.deleteAuthorPermanently(authorId);
+
+      expect(repository.deleteById).toHaveBeenCalledWith(authorId);
     });
   });
 });

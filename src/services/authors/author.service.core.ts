@@ -7,11 +7,25 @@ import {
   type UpdateAuthorInput,
 } from '@/schemas/authors/author.schema';
 import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
-import { AuthorNotFoundError, AuthorSlugConflictError } from './author.errors';
+import {
+  AuthorHasBooksError,
+  AuthorMustBeArchivedError,
+  AuthorNotFoundError,
+  AuthorSlugConflictError,
+} from './author.errors';
 import type { AuthorRepository } from './author-service.types';
 
 const authorIdSchema = z.string().uuid('El id del autor debe ser un UUID valido.');
 const authorSlugSchema = createAuthorSchema.shape.slug;
+
+function isForeignKeyViolation(error: unknown) {
+  return (
+    typeof error === 'object' &&
+    error !== null &&
+    'code' in error &&
+    (error as { code?: unknown }).code === '23503'
+  );
+}
 
 export function createAuthorService(repository: AuthorRepository) {
   return {
@@ -39,6 +53,10 @@ export function createAuthorService(repository: AuthorRepository) {
 
     async listAuthors(status: ArchiveStatus = 'active') {
       return repository.findAll(status);
+    },
+
+    async listAuthorsForAdmin(status: ArchiveStatus = 'active') {
+      return repository.findAllWithBookCount(status);
     },
 
     async listActiveAuthors() {
@@ -130,6 +148,43 @@ export function createAuthorService(repository: AuthorRepository) {
       }
 
       return restoredAuthor;
+    },
+
+    async deleteAuthorPermanently(id: string) {
+      const validId = authorIdSchema.parse(id);
+      const currentAuthor = await repository.findById(validId);
+
+      if (!currentAuthor) {
+        throw new AuthorNotFoundError(validId);
+      }
+
+      if (!currentAuthor.isArchived) {
+        throw new AuthorMustBeArchivedError();
+      }
+
+      const bookCount = await repository.countBooksByAuthorId(validId);
+
+      if (bookCount > 0) {
+        throw new AuthorHasBooksError(bookCount);
+      }
+
+      let deletedAuthor: Awaited<ReturnType<AuthorRepository['deleteById']>>;
+
+      try {
+        deletedAuthor = await repository.deleteById(validId);
+      } catch (error) {
+        if (isForeignKeyViolation(error)) {
+          throw new AuthorHasBooksError(1);
+        }
+
+        throw error;
+      }
+
+      if (!deletedAuthor) {
+        throw new AuthorNotFoundError(validId);
+      }
+
+      return deletedAuthor;
     },
   };
 }

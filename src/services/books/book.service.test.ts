@@ -6,6 +6,7 @@ import {
   ArchivedBookAuthorError,
   BookAuthorNotFoundError,
   BookIsbnConflictError,
+  BookMustBeArchivedError,
   BookNotFoundError,
   BookSlugConflictError,
 } from './book.errors';
@@ -117,6 +118,7 @@ function createBookRepositoryMock(): MockBookRepository {
     update: vi.fn<BookRepository['update']>(),
     archive: vi.fn<BookRepository['archive']>(),
     restore: vi.fn<BookRepository['restore']>(),
+    deletePermanently: vi.fn<BookRepository['deletePermanently']>(),
     findAuthorsByBookId: vi.fn<BookRepository['findAuthorsByBookId']>(),
     findEditionsByBookId: vi.fn<BookRepository['findEditionsByBookId']>(),
   };
@@ -128,14 +130,17 @@ function createAuthorRepositoryMock(): MockAuthorRepository {
     findBySlug: vi.fn<AuthorRepository['findBySlug']>(),
     findByIds: vi.fn<AuthorRepository['findByIds']>(),
     findAll: vi.fn<AuthorRepository['findAll']>(),
+    findAllWithBookCount: vi.fn<AuthorRepository['findAllWithBookCount']>(),
     findActive: vi.fn<AuthorRepository['findActive']>(),
     findArchived: vi.fn<AuthorRepository['findArchived']>(),
     findPublished: vi.fn<AuthorRepository['findPublished']>(),
+    countBooksByAuthorId: vi.fn<AuthorRepository['countBooksByAuthorId']>(),
     existsBySlug: vi.fn<AuthorRepository['existsBySlug']>(),
     create: vi.fn<AuthorRepository['create']>(),
     update: vi.fn<AuthorRepository['update']>(),
     archive: vi.fn<AuthorRepository['archive']>(),
     restore: vi.fn<AuthorRepository['restore']>(),
+    deleteById: vi.fn<AuthorRepository['deleteById']>(),
   };
 }
 
@@ -502,6 +507,40 @@ describe('createBookService', () => {
       bookRepository.findById.mockResolvedValue(null);
 
       await expect(service.restoreBook(bookId)).rejects.toBeInstanceOf(BookNotFoundError);
+    });
+  });
+
+  describe('deleteBookPermanently', () => {
+    it('deletes an archived book', async () => {
+      const archivedBook = { ...baseBook, isArchived: true };
+      bookRepository.findById.mockResolvedValue(archivedBook);
+      bookRepository.deletePermanently.mockResolvedValue(archivedBook);
+
+      await expect(service.deleteBookPermanently(bookId)).resolves.toBe(archivedBook);
+      expect(bookRepository.deletePermanently).toHaveBeenCalledWith(bookId);
+    });
+
+    it('rejects active books', async () => {
+      bookRepository.findById.mockResolvedValue(baseBook);
+
+      await expect(service.deleteBookPermanently(bookId)).rejects.toBeInstanceOf(
+        BookMustBeArchivedError,
+      );
+
+      expect(bookRepository.deletePermanently).not.toHaveBeenCalled();
+    });
+
+    it('throws BookNotFoundError for unknown books', async () => {
+      bookRepository.findById.mockResolvedValue(null);
+
+      await expect(service.deleteBookPermanently(bookId)).rejects.toBeInstanceOf(BookNotFoundError);
+    });
+
+    it('throws BookNotFoundError if delete returns null', async () => {
+      bookRepository.findById.mockResolvedValue({ ...baseBook, isArchived: true });
+      bookRepository.deletePermanently.mockResolvedValue(null);
+
+      await expect(service.deleteBookPermanently(bookId)).rejects.toBeInstanceOf(BookNotFoundError);
     });
   });
 });

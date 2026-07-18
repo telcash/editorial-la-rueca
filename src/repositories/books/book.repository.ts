@@ -342,6 +342,22 @@ export async function restore(id: string): Promise<BookWithDetails | null> {
   return book ? findById(book.id) : null;
 }
 
+export async function deletePermanently(id: string): Promise<BookWithDetails | null> {
+  const currentBook = await findById(id);
+
+  if (!currentBook) {
+    return null;
+  }
+
+  await db.transaction(async (tx) => {
+    await tx.delete(bookAuthors).where(eq(bookAuthors.bookId, id));
+    await tx.delete(bookEditions).where(eq(bookEditions.bookId, id));
+    await tx.delete(books).where(eq(books.id, id));
+  });
+
+  return currentBook;
+}
+
 export async function findAuthorsByBookId(bookId: string): Promise<BookAuthorSummary[]> {
   const { authorRows } = await findDetailsByBookIds([bookId]);
 

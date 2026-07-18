@@ -12,6 +12,7 @@ export const {
   getAuthorById,
   getAuthorBySlug,
   listAuthors,
+  listAuthorsForAdmin,
   listActiveAuthors,
   listArchivedAuthors,
   listPublishedAuthors,
@@ -19,4 +20,5 @@ export const {
   updateAuthor,
   archiveAuthor,
   restoreAuthor,
+  deleteAuthorPermanently,
 } = authorService;

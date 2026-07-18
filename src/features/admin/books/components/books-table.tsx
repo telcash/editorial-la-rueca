@@ -7,6 +7,7 @@ import { FeaturedBadge } from '@/features/admin/components/data-display/featured
 import { PublicationStatusBadge } from '@/features/admin/components/data-display/publication-status-badge';
 import type { BookWithDetails } from '@/services/books/book.types';
 import { BookArchiveActionButton } from './book-archive-action-button';
+import { BookPermanentDeleteButton } from './book-permanent-delete-button';
 import {
   formatAuthorsSummary,
   formatEditionsSummary,
@@ -15,9 +16,10 @@ import {
 
 interface BooksTableProps {
   books: BookWithDetails[];
+  canDeletePermanently: boolean;
 }
 
-export function BooksTable({ books }: BooksTableProps) {
+export function BooksTable({ books, canDeletePermanently }: BooksTableProps) {
   return (
     <div className="overflow-hidden rounded-lg border border-border bg-card">
       <div className="overflow-x-auto">
@@ -109,11 +111,14 @@ export function BooksTable({ books }: BooksTableProps) {
                     <FeaturedBadge isFeatured={book.isFeatured} />
                   </td>
                   <td className="px-4 py-3 text-right">
-                    <div className="flex justify-end gap-2">
+                    <div className="flex flex-wrap justify-end gap-2">
                       <Button asChild variant="outline" size="sm">
                         <Link href={`/admin/books/${book.id}`}>Editar</Link>
                       </Button>
                       <BookArchiveActionButton bookId={book.id} isArchived={book.isArchived} />
+                      {canDeletePermanently && book.isArchived ? (
+                        <BookPermanentDeleteButton bookId={book.id} bookTitle={book.title} />
+                      ) : null}
                     </div>
                   </td>
                 </tr>
