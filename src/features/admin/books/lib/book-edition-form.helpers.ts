@@ -1,6 +1,6 @@
 import { ZodError, type ZodIssue } from 'zod';
 
-import { createBookSchema } from '@/schemas/books/book.schema';
+import { createBookSchema, updateBookSchema } from '@/schemas/books/book.schema';
 import type {
   BookEditionFormErrors,
   BookEditionFormErrorsById,
@@ -31,6 +31,8 @@ export type CreateBookFormPayload = {
   authorIds: string[];
   editions: Array<Omit<BookEditionFormValues, 'clientId'>>;
 };
+
+export type UpdateBookFormPayload = CreateBookFormPayload;
 
 type IdGenerator = () => string;
 
@@ -148,6 +150,14 @@ export function buildCreateBookPayload(
   };
 }
 
+export function buildUpdateBookPayload(
+  generalValues: BookGeneralFormValues,
+  selectedAuthors: BookFormAuthorSummary[],
+  editions: BookEditionFormValues[],
+): UpdateBookFormPayload {
+  return buildCreateBookPayload(generalValues, selectedAuthors, editions);
+}
+
 export function mapZodIssuesToPaths(issues: ZodIssue[]): Record<string, string> {
   return issues.reduce<Record<string, string>>((errors, issue) => {
     const path = issue.path.join('.');
@@ -167,6 +177,12 @@ export function mapZodErrorToPaths(error: ZodError): Record<string, string> {
 
 export function validateCreateBookPayload(payload: CreateBookFormPayload): Record<string, string> {
   const result = createBookSchema.safeParse(payload);
+
+  return result.success ? {} : mapZodErrorToPaths(result.error);
+}
+
+export function validateUpdateBookPayload(payload: UpdateBookFormPayload): Record<string, string> {
+  const result = updateBookSchema.safeParse(payload);
 
   return result.success ? {} : mapZodErrorToPaths(result.error);
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { MouseEvent } from 'react';
 
 import { Button } from '@/components/ui/button';
 
@@ -9,6 +10,7 @@ interface FormActionsProps {
   isPending: boolean;
   disabled?: boolean;
   submitTitle?: string;
+  onCancelClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
 }
 
 export function FormActions({
@@ -18,11 +20,14 @@ export function FormActions({
   isPending,
   disabled = false,
   submitTitle,
+  onCancelClick,
 }: FormActionsProps) {
   return (
     <>
       <Button asChild variant="outline">
-        <Link href={cancelHref}>Cancelar</Link>
+        <Link href={cancelHref} onClick={onCancelClick}>
+          Cancelar
+        </Link>
       </Button>
       <Button
         type="submit"

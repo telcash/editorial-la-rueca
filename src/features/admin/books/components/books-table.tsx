@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { Button } from '@/components/ui/button';
 import { EntityThumbnail } from '@/features/admin/components/data-display/entity-thumbnail';
 import { FeaturedBadge } from '@/features/admin/components/data-display/featured-badge';
@@ -108,15 +110,8 @@ export function BooksTable({ books }: BooksTableProps) {
                     {book.sortOrder}
                   </td>
                   <td className="px-4 py-3 text-right">
-                    <Button
-                      type="button"
-                      variant="outline"
-                      size="sm"
-                      disabled
-                      aria-disabled="true"
-                      title="Disponible en el siguiente sprint"
-                    >
-                      Editar
+                    <Button asChild variant="outline" size="sm">
+                      <Link href={`/admin/books/${book.id}`}>Editar</Link>
                     </Button>
                   </td>
                 </tr>

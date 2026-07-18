@@ -6,11 +6,13 @@ import { getAuthorIds } from './book-author-selection.helpers';
 import {
   addEdition,
   buildCreateBookPayload,
+  buildUpdateBookPayload,
   createEmptyEdition,
   mapZodIssuesToPaths,
   normalizeEditionOrder,
   removeEdition,
   updateEdition,
+  validateUpdateBookPayload,
 } from './book-edition-form.helpers';
 
 const generalValues: BookGeneralFormValues = {
@@ -117,6 +119,29 @@ describe('buildCreateBookPayload', () => {
     expect(payload.editions[0]).not.toHaveProperty('clientId');
     expect(payload).not.toHaveProperty('authors');
     expect(getAuthorIds(authors)).toEqual(payload.authorIds);
+  });
+});
+
+describe('buildUpdateBookPayload', () => {
+  it('keeps author order and normalizes edition sort order', () => {
+    const payload = buildUpdateBookPayload(generalValues, authors, [
+      {
+        ...createEmptyEdition(8, () => 'edition-1'),
+        price: '18.90',
+      },
+      {
+        ...createEmptyEdition(3, () => 'edition-2'),
+        format: 'ebook',
+        isbn13: '9780306406157',
+      },
+    ]);
+
+    expect(payload.authorIds).toEqual([
+      '550e8400-e29b-41d4-a716-446655440000',
+      '1d2e4f8a-2a8a-42b9-8d1f-9c8a1f4c7b61',
+    ]);
+    expect(payload.editions.map((edition) => edition.sortOrder)).toEqual(['0', '1']);
+    expect(validateUpdateBookPayload(payload)).toEqual({});
   });
 });
 

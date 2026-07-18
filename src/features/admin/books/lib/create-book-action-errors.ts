@@ -3,22 +3,28 @@ import { ZodError } from 'zod';
 import { normalizeIsbn10, normalizeIsbn13 } from '@/schemas/books/book.schema';
 import {
   BookAuthorNotFoundError,
+  BookEditionNotFoundError,
   BookIsbnConflictError,
   BookNotFoundError,
   BookRequiresAuthorError,
   BookRequiresEditionError,
   BookSlugConflictError,
+  DuplicateBookAuthorError,
 } from '@/services/books/book.errors';
-import type { CreateBookActionState } from '../types/create-book-action-state';
+import type { BookActionState } from '../types/create-book-action-state';
 import type { CreateBookFormPayload } from './book-edition-form.helpers';
 import { mapZodErrorToPaths } from './book-edition-form.helpers';
+
+interface MapBookErrorOptions {
+  mode: 'create' | 'edit';
+}
 
 export function createBookActionErrorState(
   formError: string | null,
   pathErrors: Record<string, string> = {},
   authorsError: string | null = null,
   editionsError: string | null = null,
-): CreateBookActionState {
+): BookActionState {
   return {
     success: false,
     pathErrors,
@@ -49,14 +55,18 @@ function getIsbnConflictPath(error: BookIsbnConflictError, payload: CreateBookFo
 export function mapCreateBookErrorToState(
   error: unknown,
   payload: CreateBookFormPayload,
-): CreateBookActionState {
+  options: MapBookErrorOptions = { mode: 'create' },
+): BookActionState {
   if (error instanceof BookSlugConflictError) {
     return createBookActionErrorState(null, {
-      slug: 'Ya existe un libro con este slug.',
+      slug:
+        options.mode === 'edit'
+          ? 'Ya existe otro libro con este slug.'
+          : 'Ya existe un libro con este slug.',
     });
   }
 
-  if (error instanceof BookAuthorNotFoundError) {
+  if (error instanceof BookAuthorNotFoundError || error instanceof DuplicateBookAuthorError) {
     return createBookActionErrorState(
       null,
       {},
@@ -79,12 +89,28 @@ export function mapCreateBookErrorToState(
   }
 
   if (error instanceof BookNotFoundError) {
-    return createBookActionErrorState('No se pudo crear el libro. Inténtalo de nuevo.');
+    return createBookActionErrorState(
+      options.mode === 'edit'
+        ? 'Este libro ya no existe.'
+        : 'No se pudo crear el libro. Inténtalo de nuevo.',
+    );
+  }
+
+  if (error instanceof BookEditionNotFoundError) {
+    return createBookActionErrorState(
+      options.mode === 'edit'
+        ? 'No se pudieron guardar los cambios. Inténtalo de nuevo.'
+        : 'No se pudo crear el libro. Inténtalo de nuevo.',
+    );
   }
 
   if (error instanceof ZodError) {
     return createBookActionErrorState(null, mapZodErrorToPaths(error));
   }
 
-  return createBookActionErrorState('No se pudo crear el libro. Inténtalo de nuevo.');
+  return createBookActionErrorState(
+    options.mode === 'edit'
+      ? 'No se pudieron guardar los cambios. Inténtalo de nuevo.'
+      : 'No se pudo crear el libro. Inténtalo de nuevo.',
+  );
 }

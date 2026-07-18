@@ -18,6 +18,7 @@ interface BookGeneralSectionProps {
   errors: BookGeneralFormErrors;
   touched: BookGeneralFormTouched;
   isSlugManuallyEdited: boolean;
+  autoFocusTitle?: boolean;
   onTextChange: (field: BookGeneralFormField, value: string) => void;
   onBooleanChange: (
     field: Extract<BookGeneralFormField, 'isPublished' | 'isFeatured'>,
@@ -234,6 +235,7 @@ export function BookGeneralSection({
   errors,
   touched,
   isSlugManuallyEdited,
+  autoFocusTitle = false,
   onTextChange,
   onBooleanChange,
   onFieldBlur,
@@ -254,7 +256,7 @@ export function BookGeneralSection({
           error={errors.title}
           placeholder="El título del libro"
           maxLength={220}
-          autoFocus
+          autoFocus={autoFocusTitle}
           onChange={onTextChange}
           onBlur={onFieldBlur}
         />

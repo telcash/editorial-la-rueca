@@ -1,10 +1,11 @@
 'use client';
 
-import { useMemo, useState, useTransition, type FormEvent } from 'react';
+import { useMemo, useState, useTransition, type FormEvent, type MouseEvent } from 'react';
 
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { FormActions } from '@/features/admin/components/forms/form-actions';
 import { createBookAction } from '../actions/create-book';
+import { updateBookAction } from '../actions/update-book';
 import {
   addSelectedAuthor,
   filterAvailableAuthors,
@@ -15,6 +16,7 @@ import {
 import {
   addEdition,
   buildCreateBookPayload,
+  buildUpdateBookPayload,
   createEmptyEdition,
   getAllEditionFieldsTouched,
   getAuthorsErrorFromPathErrors,
@@ -25,7 +27,9 @@ import {
   removeEdition,
   updateEdition,
   validateCreateBookPayload,
+  validateUpdateBookPayload,
 } from '../lib/book-edition-form.helpers';
+import { isBookFormDirty } from '../lib/book-edit-form.helpers';
 import {
   areBookGeneralValuesDirty,
   getVisibleBookGeneralErrors,
@@ -42,38 +46,58 @@ import {
   type BookEditionFormTouchedById,
   type BookEditionFormValues,
   type BookFormAuthorSummary,
+  type BookFormInitialValues,
 } from '../types/book-form-state';
-import type { CreateBookActionState } from '../types/create-book-action-state';
+import type { BookActionState } from '../types/create-book-action-state';
 import { BookAuthorsSection } from './book-authors-section';
 import { BookEditionsSection } from './book-editions-section';
 import { BookGeneralSection } from './book-general-section';
 
-interface BookFormProps {
-  mode?: 'create';
+type CreateBookFormProps = {
+  mode: 'create';
   authors: BookFormAuthorSummary[];
-  initialValues?: Partial<BookGeneralFormValues>;
-}
+  initialValues?: BookFormInitialValues;
+};
 
-function getInitialValues(initialValues?: Partial<BookGeneralFormValues>): BookGeneralFormValues {
+type EditBookFormProps = {
+  mode: 'edit';
+  bookId: string;
+  authors: BookFormAuthorSummary[];
+  initialValues: BookFormInitialValues;
+};
+
+type BookFormProps = CreateBookFormProps | EditBookFormProps;
+
+function getDefaultInitialValues(): BookFormInitialValues {
   return {
-    ...initialBookGeneralFormValues,
-    ...initialValues,
+    general: initialBookGeneralFormValues,
+    selectedAuthors: [],
+    editions: [createEmptyEdition()],
   };
 }
 
-export function BookForm({ authors, initialValues }: BookFormProps) {
-  const stableInitialValues = useMemo(() => getInitialValues(initialValues), [initialValues]);
+export function BookForm(props: BookFormProps) {
+  const { authors, mode } = props;
+  const stableInitialValues = useMemo(
+    () => props.initialValues ?? getDefaultInitialValues(),
+    [props.initialValues],
+  );
   const [isPending, startTransition] = useTransition();
-  const [values, setValues] = useState<BookGeneralFormValues>(stableInitialValues);
+  const [values, setValues] = useState<BookGeneralFormValues>(stableInitialValues.general);
   const [touched, setTouched] = useState<BookGeneralFormTouched>({});
-  const [selectedAuthors, setSelectedAuthors] = useState<BookFormAuthorSummary[]>([]);
+  const [selectedAuthors, setSelectedAuthors] = useState<BookFormAuthorSummary[]>(
+    stableInitialValues.selectedAuthors,
+  );
   const [authorSearchQuery, setAuthorSearchQuery] = useState('');
-  const [editions, setEditions] = useState<BookEditionFormValues[]>(() => [createEmptyEdition()]);
+  const [editions, setEditions] = useState<BookEditionFormValues[]>(stableInitialValues.editions);
   const [editionTouched, setEditionTouched] = useState<BookEditionFormTouchedById>({});
   const [clientPathErrors, setClientPathErrors] = useState<Record<string, string>>({});
-  const [serverState, setServerState] = useState<CreateBookActionState | null>(null);
-  const [isSlugManuallyEdited, setIsSlugManuallyEdited] = useState(false);
+  const [serverState, setServerState] = useState<BookActionState | null>(null);
+  const [isSlugManuallyEdited, setIsSlugManuallyEdited] = useState(mode === 'edit');
   const availableAuthors = filterAvailableAuthors(authors, selectedAuthors, authorSearchQuery);
+  const buildPayload = mode === 'edit' ? buildUpdateBookPayload : buildCreateBookPayload;
+  const validatePayload = mode === 'edit' ? validateUpdateBookPayload : validateCreateBookPayload;
+  const currentPayload = buildPayload(values, selectedAuthors, editions);
   const submitGeneralErrors = getGeneralErrorsFromPathErrors(clientPathErrors);
   const visibleGeneralErrors = {
     ...getVisibleBookGeneralErrors(values, touched),
@@ -83,10 +107,7 @@ export function BookForm({ authors, initialValues }: BookFormProps) {
   const clientEditionErrors = getEditionErrorsFromPathErrors(clientPathErrors, editions);
   const visibleEditionErrors = {
     ...getVisibleEditionErrors(
-      getEditionErrorsFromPathErrors(
-        validateCreateBookPayload(buildCreateBookPayload(values, selectedAuthors, editions)),
-        editions,
-      ),
+      getEditionErrorsFromPathErrors(validatePayload(currentPayload), editions),
       editionTouched,
     ),
     ...clientEditionErrors,
@@ -100,31 +121,24 @@ export function BookForm({ authors, initialValues }: BookFormProps) {
     getEditionsErrorFromPathErrors(clientPathErrors) ??
     serverState?.editionsError ??
     (editions.length === 0 ? 'Debe añadir al menos una edición.' : undefined);
-  const currentPathErrors = validateCreateBookPayload(
-    buildCreateBookPayload(values, selectedAuthors, editions),
-  );
+  const currentPathErrors = validatePayload(currentPayload);
   const hasClientErrors = Object.keys(currentPathErrors).length > 0;
-  const canSubmit = selectedAuthors.length > 0 && editions.length > 0 && !hasClientErrors;
-  const hasEditionChanges =
-    editions.length !== 1 ||
-    editions.some(
-      (edition) =>
-        edition.format !== 'paperback' ||
-        edition.editionLabel !== '' ||
-        edition.publicationDate !== '' ||
-        edition.isbn10 !== '' ||
-        edition.isbn13 !== '' ||
-        edition.price !== '' ||
-        edition.currency !== 'EUR' ||
-        edition.pages !== '' ||
-        edition.isAvailable !== true ||
-        edition.isFeatured !== false ||
-        edition.sortOrder !== '0',
-    );
+  const currentInitialValues = {
+    general: values,
+    selectedAuthors,
+    editions,
+  };
   const isDirty =
-    areBookGeneralValuesDirty(values, stableInitialValues) ||
-    selectedAuthors.length > 0 ||
-    hasEditionChanges;
+    mode === 'edit'
+      ? isBookFormDirty(stableInitialValues, currentInitialValues)
+      : areBookGeneralValuesDirty(values, stableInitialValues.general) ||
+        selectedAuthors.length > 0 ||
+        isBookFormDirty(getDefaultInitialValues(), currentInitialValues);
+  const canSubmit =
+    selectedAuthors.length > 0 &&
+    editions.length > 0 &&
+    !hasClientErrors &&
+    (mode === 'create' || isDirty);
 
   function handleTextChange(field: BookGeneralFormField, value: string) {
     setServerState(null);
@@ -253,8 +267,8 @@ export function BookForm({ authors, initialValues }: BookFormProps) {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    const payload = buildCreateBookPayload(values, selectedAuthors, editions);
-    const pathErrors = validateCreateBookPayload(payload);
+    const payload = buildPayload(values, selectedAuthors, editions);
+    const pathErrors = validatePayload(payload);
 
     setTouched({
       title: true,
@@ -280,9 +294,22 @@ export function BookForm({ authors, initialValues }: BookFormProps) {
     }
 
     startTransition(async () => {
-      const result = await createBookAction(payload);
+      const result =
+        mode === 'edit'
+          ? await updateBookAction(props.bookId, payload)
+          : await createBookAction(payload);
       setServerState(result);
     });
+  }
+
+  function handleCancelClick(event: MouseEvent<HTMLAnchorElement>) {
+    if (mode !== 'edit' || !isDirty) {
+      return;
+    }
+
+    if (!window.confirm('Hay cambios sin guardar. ¿Quieres salir sin guardarlos?')) {
+      event.preventDefault();
+    }
   }
 
   return (
@@ -295,6 +322,7 @@ export function BookForm({ authors, initialValues }: BookFormProps) {
               errors={visibleGeneralErrors}
               touched={touched}
               isSlugManuallyEdited={isSlugManuallyEdited}
+              autoFocusTitle={mode === 'create'}
               onTextChange={handleTextChange}
               onBooleanChange={handleBooleanChange}
               onFieldBlur={handleFieldBlur}
@@ -337,14 +365,17 @@ export function BookForm({ authors, initialValues }: BookFormProps) {
         <CardFooter className="flex flex-col-reverse gap-3 border-t border-border sm:flex-row sm:justify-end">
           <FormActions
             cancelHref="/admin/books"
-            submitLabel="Guardar libro"
+            submitLabel={mode === 'edit' ? 'Guardar cambios' : 'Guardar libro'}
             pendingLabel="Guardando…"
             isPending={isPending}
             disabled={!canSubmit}
+            onCancelClick={handleCancelClick}
             submitTitle={
               canSubmit
                 ? undefined
-                : 'Selecciona al menos un autor, añade una edición y corrige los errores.'
+                : mode === 'edit' && !isDirty
+                  ? 'No hay cambios para guardar.'
+                  : 'Selecciona al menos un autor, añade una edición y corrige los errores.'
             }
           />
         </CardFooter>

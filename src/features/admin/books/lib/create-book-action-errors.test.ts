@@ -4,6 +4,7 @@ import { z } from 'zod';
 import {
   BookAuthorNotFoundError,
   BookIsbnConflictError,
+  BookNotFoundError,
   BookRequiresAuthorError,
   BookRequiresEditionError,
   BookSlugConflictError,
@@ -94,5 +95,22 @@ describe('mapCreateBookErrorToState', () => {
     expect(mapCreateBookErrorToState(new Error('SQL detail'), payload).formError).toBe(
       'No se pudo crear el libro. Inténtalo de nuevo.',
     );
+  });
+
+  it('uses edit-specific messages when requested', () => {
+    expect(
+      mapCreateBookErrorToState(new BookSlugConflictError('libro'), payload, { mode: 'edit' })
+        .pathErrors.slug,
+    ).toBe('Ya existe otro libro con este slug.');
+    expect(
+      mapCreateBookErrorToState(
+        new BookNotFoundError('7a7f6a8d-3c9c-4f5a-9a11-5ad4e5cfe001'),
+        payload,
+        { mode: 'edit' },
+      ).formError,
+    ).toBe('Este libro ya no existe.');
+    expect(
+      mapCreateBookErrorToState(new Error('SQL detail'), payload, { mode: 'edit' }).formError,
+    ).toBe('No se pudieron guardar los cambios. Inténtalo de nuevo.');
   });
 });

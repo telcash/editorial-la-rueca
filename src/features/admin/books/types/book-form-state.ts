@@ -47,6 +47,12 @@ export type BookEditionFormTouched = Partial<Record<BookEditionFormField, boolea
 export type BookEditionFormTouchedById = Record<string, BookEditionFormTouched>;
 export type BookEditionFormErrorsById = Record<string, BookEditionFormErrors>;
 
+export interface BookFormInitialValues {
+  general: BookGeneralFormValues;
+  selectedAuthors: BookFormAuthorSummary[];
+  editions: BookEditionFormValues[];
+}
+
 export const initialBookGeneralFormValues: BookGeneralFormValues = {
   title: '',
   subtitle: '',
