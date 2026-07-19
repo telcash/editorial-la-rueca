@@ -59,6 +59,7 @@ export interface BookRepository {
   findActive(): Promise<BookWithDetails[]>;
   findArchived(): Promise<BookWithDetails[]>;
   findPublished(): Promise<BookWithDetails[]>;
+  findFeaturedPublished(): Promise<BookWithDetails[]>;
   existsBySlug(slug: string, excludeId?: string): Promise<boolean>;
   existsByIsbn10(
     isbn10: string,

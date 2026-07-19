@@ -143,6 +143,7 @@ function createBookRepositoryMock(): MockBookRepository {
     findActive: vi.fn<BookRepository['findActive']>(),
     findArchived: vi.fn<BookRepository['findArchived']>(),
     findPublished: vi.fn<BookRepository['findPublished']>(),
+    findFeaturedPublished: vi.fn<BookRepository['findFeaturedPublished']>(),
     existsBySlug: vi.fn<BookRepository['existsBySlug']>(),
     existsByIsbn10: vi.fn<BookRepository['existsByIsbn10']>(),
     existsByIsbn13: vi.fn<BookRepository['existsByIsbn13']>(),
@@ -262,6 +263,18 @@ describe('createBookService', () => {
     await expect(service.listArchivedBooks()).resolves.toEqual([
       expect.objectContaining({ isArchived: true }),
     ]);
+  });
+
+  it('delegates featured public listings to the repository', async () => {
+    const featuredBook = {
+      ...baseBook,
+      isFeatured: true,
+      isPublished: true,
+    };
+    bookRepository.findFeaturedPublished.mockResolvedValue([featuredBook]);
+
+    await expect(service.listFeaturedPublishedBooks()).resolves.toEqual([featuredBook]);
+    expect(bookRepository.findFeaturedPublished).toHaveBeenCalledOnce();
   });
 
   describe('createBook', () => {

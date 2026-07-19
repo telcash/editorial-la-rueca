@@ -1,151 +1,187 @@
-import { ArrowRight, Play, Quote } from 'lucide-react';
+import { connection } from 'next/server';
+import { ArrowRight, BookOpen, UsersRound } from 'lucide-react';
 
 import {
   FeaturedBooksCarousel,
   type FeaturedBook,
 } from '@/components/public/featured-books-carousel';
+import { EditorialVideo } from '@/components/public/editorial-video';
 import { PublicButton } from '@/components/public/public-button';
 import { PublicCard } from '@/components/public/public-card';
 import { PublicContainer } from '@/components/public/public-container';
 import { PublicCtaLink } from '@/components/public/public-cta-link';
 import { PublicSection } from '@/components/public/public-section';
 import { SectionHeading } from '@/components/public/section-heading';
+import { TestimonialsSection } from '@/components/public/testimonials-section';
+import { editorialVideoContent, testimonials } from '@/content/public-home';
+import { PublicContactForm } from '@/features/public/contact/components/public-contact-form';
+import { toFeaturedBook } from '@/features/public/home/lib/featured-books';
+import * as BookService from '@/services/books/book.service';
+import * as PublicHomeService from '@/services/public-home/public-home.service';
+import type { PublicHomeMetrics } from '@/services/public-home/public-home.types';
 
-const placeholderSections = [
-  {
-    title: 'Libros destacados',
-    description: 'Espacio reservado para destacar libros publicados desde el catálogo.',
-  },
-  {
-    title: 'Testimonios de autores',
-    description: 'Área futura para experiencias reales de autores acompañados por la editorial.',
-  },
-];
+interface HomeData {
+  featuredBooks: FeaturedBook[];
+  metrics: PublicHomeMetrics | null;
+}
 
-const featuredBookPlaceholders: FeaturedBook[] = Array.from({ length: 8 }, (_, index) => ({
-  id: `featured-book-${index + 1}`,
-  title: `Libro destacado ${String(index + 1).padStart(2, '0')}`,
-  slug: `libro-destacado-${index + 1}`,
-  coverUrl: null,
-  authors: ['Autor pendiente'],
-}));
+function getErrorMessage(error: unknown) {
+  return error instanceof Error ? error.message : 'Unknown error';
+}
 
-export default function PublicHomePage() {
+async function getHomeData(): Promise<HomeData> {
+  const [featuredBooksResult, metricsResult] = await Promise.allSettled([
+    BookService.listFeaturedPublishedBooks(),
+    PublicHomeService.getPublicHomeMetrics(),
+  ]);
+
+  if (featuredBooksResult.status === 'rejected') {
+    console.error('[PublicHome] Featured books query failed', {
+      message: getErrorMessage(featuredBooksResult.reason),
+    });
+  }
+
+  if (metricsResult.status === 'rejected') {
+    console.error('[PublicHome] Metrics query failed', {
+      message: getErrorMessage(metricsResult.reason),
+    });
+  }
+
+  return {
+    featuredBooks:
+      featuredBooksResult.status === 'fulfilled'
+        ? featuredBooksResult.value.map(toFeaturedBook)
+        : [],
+    metrics: metricsResult.status === 'fulfilled' ? metricsResult.value : null,
+  };
+}
+
+function HeroMetrics({ metrics }: { metrics: PublicHomeMetrics | null }) {
+  if (!metrics) {
+    return null;
+  }
+
+  return (
+    <div className="mt-8 grid gap-3 sm:grid-cols-2">
+      <PublicCard className="flex min-h-24 items-center gap-4 bg-white/86 p-4">
+        <span className="flex size-11 shrink-0 items-center justify-center rounded-xl border border-public-red/20 bg-public-red-soft text-public-red">
+          <BookOpen className="size-5" aria-hidden="true" />
+        </span>
+        <span>
+          <strong className="block text-2xl leading-none text-public-red">
+            {metrics.publishedBooks}
+          </strong>
+          <span className="mt-1 block text-xs font-bold leading-4 text-public-ink">
+            libros publicados
+          </span>
+        </span>
+      </PublicCard>
+      <PublicCard className="flex min-h-24 items-center gap-4 bg-white/86 p-4">
+        <span className="flex size-11 shrink-0 items-center justify-center rounded-xl border border-public-red/20 bg-public-red-soft text-public-red">
+          <UsersRound className="size-5" aria-hidden="true" />
+        </span>
+        <span>
+          <strong className="block text-2xl leading-none text-public-red">
+            {metrics.activeAuthors}
+          </strong>
+          <span className="mt-1 block text-xs font-bold leading-4 text-public-ink">
+            autores acompañados
+          </span>
+        </span>
+      </PublicCard>
+    </div>
+  );
+}
+
+export default async function PublicHomePage() {
+  await connection();
+
+  const { featuredBooks, metrics } = await getHomeData();
+
   return (
     <>
       <PublicSection variant="compact" className="pt-5 md:pt-8">
         <PublicContainer>
-          <div className="grid gap-6 lg:grid-cols-[1.55fr_0.95fr]">
+          <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr]">
             <div className="overflow-hidden rounded-2xl border border-public-border bg-white shadow-[0_18px_50px_rgba(23,23,23,0.08)]">
               <div className="grid min-h-[24rem] items-center gap-8 bg-[radial-gradient(circle_at_18%_22%,rgba(224,43,32,0.10),transparent_28%),linear-gradient(110deg,#ffffff_0%,#fbf4ec_100%)] p-6 sm:p-8 lg:p-12">
                 <div className="max-w-2xl">
-                  <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-public-red">
-                    Arquitectura pública
-                  </p>
                   <h1 className="font-serif-public text-[clamp(2.35rem,6vw,3.75rem)] font-semibold leading-[0.95] tracking-normal text-public-ink">
                     Publicamos libros.
                     <span className="block text-public-red">Acompañamos autores.</span>
                   </h1>
                   <p className="mt-5 max-w-xl text-base leading-7 text-public-ink/80 md:text-lg">
-                    Base visual temporal para validar header, footer, espaciado, tipografía y
-                    estructura responsive antes de conectar contenido real.
+                    Te acompañamos durante todo el proceso editorial, con claridad, cercanía y un
+                    equipo que cuida tu obra como merece.
                   </p>
+                  <HeroMetrics metrics={metrics} />
                   <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                     <PublicButton href="#contacto">
-                      Solicitar asesoría
+                      Quiero publicar mi libro
                       <ArrowRight className="size-4" aria-hidden="true" />
                     </PublicButton>
-                    <PublicButton href="/libros" variant="secondary">
-                      Ver catálogo
+                    <PublicButton href="/servicios-editoriales" variant="secondary">
+                      Conocer servicios editoriales
                     </PublicButton>
                   </div>
                 </div>
               </div>
             </div>
 
-            <PublicCard id="contacto" className="p-6 sm:p-8 lg:p-10">
+            <PublicCard id="contacto" className="scroll-mt-24 p-6 sm:p-8 lg:p-10">
               <h2 className="font-serif-public text-3xl font-semibold leading-tight text-public-ink">
-                Cuéntanos tu proyecto
+                Cuéntanos sobre tu libro
               </h2>
               <p className="mt-3 text-sm leading-6 text-public-muted">
-                Placeholder visual para el futuro formulario de contacto. En este sprint no se
-                capturan datos ni se envía información.
+                Déjanos tus datos y te orientamos sobre el proceso editorial más adecuado para tu
+                proyecto.
               </p>
-              <div className="mt-8 grid gap-3" aria-hidden="true">
-                <div className="h-12 rounded-lg border border-public-border bg-white" />
-                <div className="h-12 rounded-lg border border-public-border bg-white" />
-                <div className="h-28 rounded-lg border border-public-border bg-white" />
-                <div className="h-12 rounded-lg bg-public-red" />
+              <div className="mt-7">
+                <PublicContactForm />
               </div>
             </PublicCard>
           </div>
         </PublicContainer>
       </PublicSection>
 
-      <PublicSection>
-        <PublicContainer className="space-y-14">
-          <div>
+      {featuredBooks.length > 0 ? (
+        <PublicSection>
+          <PublicContainer>
             <SectionHeading
-              title={placeholderSections[0].title}
-              description={placeholderSections[0].description}
+              title="Libros destacados"
               action={<PublicCtaLink href="/libros">Ver catálogo completo</PublicCtaLink>}
               align="center"
             />
-            <FeaturedBooksCarousel books={featuredBookPlaceholders} className="mt-8" />
-          </div>
+            <FeaturedBooksCarousel books={featuredBooks} className="mt-8" />
+          </PublicContainer>
+        </PublicSection>
+      ) : null}
 
-          <PublicCard className="grid overflow-hidden p-3 md:grid-cols-[1.15fr_1fr] md:p-4 lg:p-5">
-            <div className="relative aspect-video overflow-hidden rounded-xl bg-[linear-gradient(135deg,#eee8df,#ffffff)]">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_32%_24%,rgba(224,43,32,0.16),transparent_30%)]" />
-              <div className="absolute inset-x-8 bottom-8 top-10 rounded-t-full bg-public-border/55" />
-              <button
-                type="button"
-                aria-label="Reproducir video de presentación de Almudena"
-                className="absolute left-1/2 top-1/2 inline-flex size-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white text-public-red shadow-[0_12px_30px_rgba(23,23,23,0.16)] transition hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red focus-visible:ring-offset-2"
-              >
-                <Play className="ml-1 size-7 fill-current" aria-hidden="true" />
-              </button>
-            </div>
-            <div className="flex flex-col justify-center p-5 md:p-8">
-              <h2 className="font-serif-public text-[clamp(1.75rem,3vw,2.5rem)] font-semibold leading-tight text-public-ink">
-                Conoce a Almudena
+      <PublicSection variant="compact">
+        <PublicContainer>
+          <EditorialVideo content={editorialVideoContent} />
+        </PublicContainer>
+      </PublicSection>
+
+      <TestimonialsSection testimonials={testimonials} />
+
+      <PublicSection variant="compact" className="pt-0">
+        <PublicContainer>
+          <PublicCard className="flex flex-col gap-5 p-6 sm:p-8 lg:flex-row lg:items-center lg:justify-between">
+            <div className="max-w-2xl">
+              <h2 className="font-serif-public text-[clamp(1.75rem,4vw,2.5rem)] leading-tight text-public-ink">
+                ¿Quieres publicar tu libro con acompañamiento editorial?
               </h2>
-              <p className="mt-1 text-sm font-bold text-public-red">
-                Directora de Editorial La Rueca
+              <p className="mt-3 text-base leading-7 text-public-muted">
+                Cuéntanos en qué punto está tu proyecto y te orientaremos sobre el camino más
+                adecuado.
               </p>
-              <p className="mt-4 text-sm leading-7 text-public-muted md:text-base">
-                Espacio preparado para presentar el acompañamiento editorial, la mirada de la
-                dirección y el cuidado de cada proyecto antes de conectar contenido real.
-              </p>
-              <blockquote className="mt-6 rounded-2xl bg-public-surface-subtle p-5 text-sm leading-6 text-public-ink/80">
-                <Quote className="mb-3 size-7 text-public-red" aria-hidden="true" />
-                Cada libro merece una edición honesta, cercana y profesional.
-              </blockquote>
-              <PublicCtaLink href="#testimonios" className="mt-5">
-                Ver más testimonios
-              </PublicCtaLink>
             </div>
+            <PublicButton href="#contacto" className="shrink-0">
+              Solicitar asesoría
+              <ArrowRight className="size-4" aria-hidden="true" />
+            </PublicButton>
           </PublicCard>
-
-          <div id="testimonios">
-            <SectionHeading
-              title={placeholderSections[1].title}
-              description={placeholderSections[1].description}
-            />
-            <div className="mt-8 grid gap-4 md:grid-cols-3">
-              {[0, 1, 2].map((item) => (
-                <PublicCard key={item} className="min-h-40 p-5">
-                  <Quote className="size-9 text-public-border" aria-hidden="true" />
-                  <div className="mt-5 space-y-2">
-                    <div className="h-3 w-full rounded-full bg-public-border" />
-                    <div className="h-3 w-5/6 rounded-full bg-public-border/70" />
-                    <div className="h-3 w-3/5 rounded-full bg-public-border/70" />
-                  </div>
-                  <div className="mt-6 h-3 w-32 rounded-full bg-public-ink/20" />
-                </PublicCard>
-              ))}
-            </div>
-          </div>
         </PublicContainer>
       </PublicSection>
     </>

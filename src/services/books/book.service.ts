@@ -22,6 +22,7 @@ export const {
   listActiveBooks,
   listArchivedBooks,
   listPublishedBooks,
+  listFeaturedPublishedBooks,
   createBook,
   updateBook,
   archiveBook,

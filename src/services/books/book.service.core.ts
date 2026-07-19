@@ -185,6 +185,10 @@ export function createBookService(
       return bookRepository.findPublished();
     },
 
+    async listFeaturedPublishedBooks() {
+      return bookRepository.findFeaturedPublished();
+    },
+
     async createBook(input: unknown) {
       const data = createBookSchema.parse(input);
       const { bookData, authorIds, categoryIds, editions } = splitCreateInput(data);

@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+import Link from 'next/link';
 import { useRef } from 'react';
 import { BookOpen, ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -52,22 +54,35 @@ export function FeaturedBooksCarousel({ books, className }: FeaturedBooksCarouse
         className="flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
         {books.map((book) => (
-          <PublicCard
+          <Link
             key={book.id}
-            className="shrink-0 basis-full snap-start overflow-hidden md:basis-[calc((100%_-_1rem)/2)] lg:basis-[calc((100%_-_3rem)/4)]"
+            href={`/libros/${book.slug}`}
+            className="group shrink-0 basis-full snap-start focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red focus-visible:ring-offset-2 md:basis-[calc((100%_-_1rem)/2)] lg:basis-[calc((100%_-_3rem)/4)]"
           >
-            <div className="aspect-[2/3] bg-public-surface-subtle p-4">
-              <div className="flex h-full items-center justify-center rounded-xl border border-public-border bg-white text-public-red">
-                <BookOpen className="size-10" aria-hidden="true" />
+            <PublicCard className="h-full overflow-hidden transition group-hover:-translate-y-0.5 group-hover:shadow-[0_16px_40px_rgba(23,23,23,0.10)]">
+              <div className="relative aspect-[2/3] bg-public-surface-subtle">
+                {book.coverUrl ? (
+                  <Image
+                    src={book.coverUrl}
+                    alt={`Portada de ${book.title}`}
+                    fill
+                    sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                ) : (
+                  <div className="absolute inset-4 flex items-center justify-center rounded-xl border border-public-border bg-white text-public-red">
+                    <BookOpen className="size-10" aria-hidden="true" />
+                  </div>
+                )}
               </div>
-            </div>
-            <div className="space-y-1.5 p-4">
-              <h3 className="line-clamp-2 text-sm font-bold leading-5 text-public-ink">
-                {book.title}
-              </h3>
-              <p className="truncate text-xs text-public-muted">{book.authors.join(', ')}</p>
-            </div>
-          </PublicCard>
+              <div className="space-y-1.5 p-4">
+                <h3 className="line-clamp-2 text-sm font-bold leading-5 text-public-ink">
+                  {book.title}
+                </h3>
+                <p className="truncate text-xs text-public-muted">{book.authors.join(', ')}</p>
+              </div>
+            </PublicCard>
+          </Link>
         ))}
       </div>
 

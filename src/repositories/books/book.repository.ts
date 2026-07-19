@@ -318,6 +318,22 @@ export async function findPublished(): Promise<BookWithDetails[]> {
   return assembleBooks(bookRows, authorRows, categoryRows, editionRows);
 }
 
+export async function findFeaturedPublished(): Promise<BookWithDetails[]> {
+  const bookRows = await db
+    .select()
+    .from(books)
+    .where(
+      and(eq(books.isFeatured, true), eq(books.isPublished, true), eq(books.isArchived, false)),
+    )
+    .orderBy(asc(books.sortOrder), desc(books.createdAt), asc(books.title));
+  const { authorRows, categoryRows, editionRows } = await findDetailsByBookIds(
+    bookRows.map((book) => book.id),
+    true,
+  );
+
+  return assembleBooks(bookRows, authorRows, categoryRows, editionRows);
+}
+
 export async function existsBySlug(slug: string, excludeId?: string): Promise<boolean> {
   const conditions = excludeId
     ? and(eq(books.slug, slug), ne(books.id, excludeId))
