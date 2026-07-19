@@ -3,6 +3,7 @@ import {
   initialBookGeneralFormValues,
   type BookEditionFormValues,
   type BookFormAuthorSummary,
+  type BookFormCategorySummary,
   type BookFormInitialValues,
 } from '../types/book-form-state';
 import { normalizeEditionOrder } from './book-edition-form.helpers';
@@ -61,6 +62,15 @@ export function mapBookToFormInitialValues(book: BookWithDetails): BookFormIniti
       })),
   );
 
+  const selectedCategories = [...book.categories]
+    .sort((firstCategory, secondCategory) => firstCategory.sortOrder - secondCategory.sortOrder)
+    .map<BookFormCategorySummary>((category) => ({
+      id: category.id,
+      name: category.name,
+      slug: category.slug,
+      isArchived: category.isArchived,
+    }));
+
   return {
     general: {
       ...initialBookGeneralFormValues,
@@ -79,6 +89,7 @@ export function mapBookToFormInitialValues(book: BookWithDetails): BookFormIniti
       canonicalUrl: nullableStringToInput(book.canonicalUrl),
     },
     selectedAuthors,
+    selectedCategories,
     editions,
     coverUrl: nullableStringToInput(book.coverUrl),
   };
@@ -107,6 +118,7 @@ export function serializeBookFormComparableState(values: BookFormInitialValues) 
   return {
     general: values.general,
     selectedAuthorIds: values.selectedAuthors.map((author) => author.id),
+    selectedCategoryIds: values.selectedCategories.map((category) => category.id),
     editions: normalizeEditionOrder(values.editions).map((edition) => ({
       format: edition.format,
       editionLabel: edition.editionLabel,

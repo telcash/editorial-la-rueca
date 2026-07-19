@@ -44,6 +44,7 @@ const baseBook: BookWithDetails = {
       sortOrder: 0,
     },
   ],
+  categories: [],
   editions: [],
 };
 

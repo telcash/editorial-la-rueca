@@ -36,6 +36,27 @@ export class ArchivedBookAuthorError extends Error {
   }
 }
 
+export class BookCategoryNotFoundError extends Error {
+  constructor(public readonly categoryIds: string[]) {
+    super(`No se encontraron las categorías solicitadas: ${categoryIds.join(', ')}.`);
+    this.name = 'BookCategoryNotFoundError';
+  }
+}
+
+export class ArchivedBookCategoryError extends Error {
+  constructor(public readonly categoryIds: string[]) {
+    super(`No se pueden asociar categorías archivadas: ${categoryIds.join(', ')}.`);
+    this.name = 'ArchivedBookCategoryError';
+  }
+}
+
+export class DuplicateBookCategoryError extends Error {
+  constructor() {
+    super('No puedes repetir categorías en el mismo libro.');
+    this.name = 'DuplicateBookCategoryError';
+  }
+}
+
 export class DuplicateBookAuthorError extends Error {
   constructor() {
     super('No puedes repetir autores en el mismo libro.');

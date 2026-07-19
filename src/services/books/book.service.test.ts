@@ -2,13 +2,17 @@ import { beforeEach, describe, expect, it, vi, type Mock } from 'vitest';
 
 import type { Author } from '@/db/schema';
 import type { AuthorRepository } from '@/services/authors/author-service.types';
+import type { CategoryRepository } from '@/services/categories/category.types';
 import {
   ArchivedBookAuthorError,
   BookAuthorNotFoundError,
+  ArchivedBookCategoryError,
+  BookCategoryNotFoundError,
   BookIsbnConflictError,
   BookMustBeArchivedError,
   BookNotFoundError,
   BookSlugConflictError,
+  DuplicateBookCategoryError,
 } from './book.errors';
 import { createBookService } from './book.service.core';
 import type { BookRepository, BookWithDetails } from './book.types';
@@ -21,9 +25,15 @@ type MockAuthorRepository = {
   [Key in keyof AuthorRepository]: Mock<AuthorRepository[Key]>;
 };
 
+type MockCategoryRepository = {
+  [Key in keyof CategoryRepository]: Mock<CategoryRepository[Key]>;
+};
+
 const bookId = '6b34dbd8-6d3c-41db-86b7-c83f3de68d75';
 const authorId = '550e8400-e29b-41d4-a716-446655440000';
 const secondAuthorId = '1d2e4f8a-2a8a-42b9-8d1f-9c8a1f4c7b61';
+const categoryId = '8a9dd9a7-a564-44f3-b65f-94f0390b6d75';
+const secondCategoryId = '781ea7e4-a50f-40ce-a168-3c29ee0a0d1a';
 
 const baseAuthor: Author = {
   id: authorId,
@@ -82,6 +92,7 @@ const baseBook: BookWithDetails = {
       sortOrder: 0,
     },
   ],
+  categories: [],
   editions: [
     {
       id: 'a301b33b-aa0d-470f-a6cc-60f0b9dcacbf',
@@ -103,6 +114,25 @@ const baseBook: BookWithDetails = {
   ],
 };
 
+const baseCategory = {
+  id: categoryId,
+  name: 'Narrativa',
+  slug: 'narrativa',
+  description: null,
+  isPublished: true,
+  isArchived: false,
+  archivedAt: null,
+  createdAt: new Date('2026-01-01T00:00:00.000Z'),
+  updatedAt: new Date('2026-01-01T00:00:00.000Z'),
+};
+
+const secondCategory = {
+  ...baseCategory,
+  id: secondCategoryId,
+  name: 'Poesía',
+  slug: 'poesia',
+};
+
 function createBookRepositoryMock(): MockBookRepository {
   return {
     findById: vi.fn<BookRepository['findById']>(),
@@ -122,6 +152,7 @@ function createBookRepositoryMock(): MockBookRepository {
     restore: vi.fn<BookRepository['restore']>(),
     deletePermanently: vi.fn<BookRepository['deletePermanently']>(),
     findAuthorsByBookId: vi.fn<BookRepository['findAuthorsByBookId']>(),
+    findCategoriesByBookId: vi.fn<BookRepository['findCategoriesByBookId']>(),
     findEditionsByBookId: vi.fn<BookRepository['findEditionsByBookId']>(),
   };
 }
@@ -148,15 +179,37 @@ function createAuthorRepositoryMock(): MockAuthorRepository {
   };
 }
 
+function createCategoryRepositoryMock(): MockCategoryRepository {
+  return {
+    findById: vi.fn<CategoryRepository['findById']>(),
+    findBySlug: vi.fn<CategoryRepository['findBySlug']>(),
+    findByIds: vi.fn<CategoryRepository['findByIds']>(),
+    findAll: vi.fn<CategoryRepository['findAll']>(),
+    findAllWithBookCount: vi.fn<CategoryRepository['findAllWithBookCount']>(),
+    findActive: vi.fn<CategoryRepository['findActive']>(),
+    findArchived: vi.fn<CategoryRepository['findArchived']>(),
+    findPublished: vi.fn<CategoryRepository['findPublished']>(),
+    existsBySlug: vi.fn<CategoryRepository['existsBySlug']>(),
+    create: vi.fn<CategoryRepository['create']>(),
+    update: vi.fn<CategoryRepository['update']>(),
+    archive: vi.fn<CategoryRepository['archive']>(),
+    restore: vi.fn<CategoryRepository['restore']>(),
+    deleteById: vi.fn<CategoryRepository['deleteById']>(),
+    countBooksByCategoryId: vi.fn<CategoryRepository['countBooksByCategoryId']>(),
+  };
+}
+
 describe('createBookService', () => {
   let bookRepository: MockBookRepository;
   let authorRepository: MockAuthorRepository;
+  let categoryRepository: MockCategoryRepository;
   let service: ReturnType<typeof createBookService>;
 
   beforeEach(() => {
     bookRepository = createBookRepositoryMock();
     authorRepository = createAuthorRepositoryMock();
-    service = createBookService(bookRepository, authorRepository);
+    categoryRepository = createCategoryRepositoryMock();
+    service = createBookService(bookRepository, authorRepository, categoryRepository);
   });
 
   describe('getBookById', () => {
@@ -239,6 +292,7 @@ describe('createBookService', () => {
           sortOrder: 0,
         },
         [authorId, secondAuthorId],
+        [],
         [
           expect.objectContaining({ format: 'paperback', price: '18.90', isbn10: '0306406152' }),
           expect.objectContaining({ format: 'paperback' }),
@@ -318,6 +372,135 @@ describe('createBookService', () => {
 
       expect(bookRepository.create).not.toHaveBeenCalled();
     });
+
+    it('creates a book without categories', async () => {
+      bookRepository.existsBySlug.mockResolvedValue(false);
+      bookRepository.existsByIsbn10.mockResolvedValue(false);
+      bookRepository.existsByIsbn13.mockResolvedValue(false);
+      authorRepository.findByIds.mockResolvedValue([baseAuthor]);
+      bookRepository.create.mockResolvedValue(baseBook);
+
+      await expect(
+        service.createBook({
+          title: 'Libro',
+          slug: 'libro',
+          authorIds: [authorId],
+          editions: [{ format: 'paperback' }],
+        }),
+      ).resolves.toBe(baseBook);
+
+      expect(categoryRepository.findByIds).not.toHaveBeenCalled();
+      expect(bookRepository.create).toHaveBeenCalledWith(
+        expect.any(Object),
+        [authorId],
+        [],
+        expect.any(Array),
+      );
+    });
+
+    it('creates a book with one active category', async () => {
+      bookRepository.existsBySlug.mockResolvedValue(false);
+      bookRepository.existsByIsbn10.mockResolvedValue(false);
+      bookRepository.existsByIsbn13.mockResolvedValue(false);
+      authorRepository.findByIds.mockResolvedValue([baseAuthor]);
+      categoryRepository.findByIds.mockResolvedValue([baseCategory]);
+      bookRepository.create.mockResolvedValue({
+        ...baseBook,
+        categories: [
+          { id: categoryId, name: 'Narrativa', slug: 'narrativa', isArchived: false, sortOrder: 0 },
+        ],
+      });
+
+      await service.createBook({
+        title: 'Libro',
+        slug: 'libro',
+        authorIds: [authorId],
+        categoryIds: [categoryId],
+        editions: [{ format: 'paperback' }],
+      });
+
+      expect(categoryRepository.findByIds).toHaveBeenCalledWith([categoryId]);
+      expect(bookRepository.create).toHaveBeenCalledWith(
+        expect.any(Object),
+        [authorId],
+        [categoryId],
+        expect.any(Array),
+      );
+    });
+
+    it('creates a book with several categories preserving order', async () => {
+      bookRepository.existsBySlug.mockResolvedValue(false);
+      bookRepository.existsByIsbn10.mockResolvedValue(false);
+      bookRepository.existsByIsbn13.mockResolvedValue(false);
+      authorRepository.findByIds.mockResolvedValue([baseAuthor]);
+      categoryRepository.findByIds.mockResolvedValue([secondCategory, baseCategory]);
+      bookRepository.create.mockResolvedValue(baseBook);
+
+      await service.createBook({
+        title: 'Libro',
+        slug: 'libro',
+        authorIds: [authorId],
+        categoryIds: [secondCategoryId, categoryId],
+        editions: [{ format: 'paperback' }],
+      });
+
+      expect(bookRepository.create).toHaveBeenCalledWith(
+        expect.any(Object),
+        [authorId],
+        [secondCategoryId, categoryId],
+        expect.any(Array),
+      );
+    });
+
+    it('rejects archived categories when creating a book', async () => {
+      bookRepository.existsBySlug.mockResolvedValue(false);
+      authorRepository.findByIds.mockResolvedValue([baseAuthor]);
+      categoryRepository.findByIds.mockResolvedValue([{ ...baseCategory, isArchived: true }]);
+
+      await expect(
+        service.createBook({
+          title: 'Libro',
+          slug: 'libro',
+          authorIds: [authorId],
+          categoryIds: [categoryId],
+          editions: [{ format: 'paperback' }],
+        }),
+      ).rejects.toBeInstanceOf(ArchivedBookCategoryError);
+
+      expect(bookRepository.create).not.toHaveBeenCalled();
+    });
+
+    it('throws when a category does not exist', async () => {
+      bookRepository.existsBySlug.mockResolvedValue(false);
+      authorRepository.findByIds.mockResolvedValue([baseAuthor]);
+      categoryRepository.findByIds.mockResolvedValue([]);
+
+      await expect(
+        service.createBook({
+          title: 'Libro',
+          slug: 'libro',
+          authorIds: [authorId],
+          categoryIds: [categoryId],
+          editions: [{ format: 'paperback' }],
+        }),
+      ).rejects.toBeInstanceOf(BookCategoryNotFoundError);
+
+      expect(bookRepository.create).not.toHaveBeenCalled();
+    });
+
+    it('rejects duplicate category ids', async () => {
+      await expect(
+        service.createBook({
+          title: 'Libro',
+          slug: 'libro',
+          authorIds: [authorId],
+          categoryIds: [categoryId, categoryId],
+          editions: [{ format: 'paperback' }],
+        }),
+      ).rejects.toBeInstanceOf(DuplicateBookCategoryError);
+
+      expect(bookRepository.create).not.toHaveBeenCalled();
+    });
   });
 
   describe('updateBook', () => {
@@ -333,6 +516,7 @@ describe('createBookService', () => {
       expect(bookRepository.update).toHaveBeenCalledWith(
         bookId,
         { title: 'Nuevo titulo' },
+        undefined,
         undefined,
         undefined,
       );
@@ -362,12 +546,9 @@ describe('createBookService', () => {
         editions: [{ format: 'ebook', isbn13: '978-0-306-40615-7' }],
       });
 
-      expect(bookRepository.update).toHaveBeenCalledWith(
-        bookId,
-        {},
-        [secondAuthorId],
-        [expect.objectContaining({ format: 'ebook', isbn13: '9780306406157' })],
-      );
+      expect(bookRepository.update).toHaveBeenCalledWith(bookId, {}, [secondAuthorId], undefined, [
+        expect.objectContaining({ format: 'ebook', isbn13: '9780306406157' }),
+      ]);
       expect(bookRepository.existsByIsbn13).toHaveBeenCalledWith(
         '9780306406157',
         bookId,
@@ -436,6 +617,7 @@ describe('createBookService', () => {
         {},
         [authorId, secondAuthorId],
         undefined,
+        undefined,
       );
     });
 
@@ -460,7 +642,63 @@ describe('createBookService', () => {
 
       await service.updateBook(bookId, { authorIds: [secondAuthorId] });
 
-      expect(bookRepository.update).toHaveBeenCalledWith(bookId, {}, [secondAuthorId], undefined);
+      expect(bookRepository.update).toHaveBeenCalledWith(
+        bookId,
+        {},
+        [secondAuthorId],
+        undefined,
+        undefined,
+      );
+    });
+
+    it('allows preserving an archived category already related to the book', async () => {
+      const archivedCategory = { ...baseCategory, isArchived: true };
+      bookRepository.findById.mockResolvedValue({
+        ...baseBook,
+        categories: [
+          { id: categoryId, name: 'Narrativa', slug: 'narrativa', isArchived: true, sortOrder: 0 },
+        ],
+      });
+      categoryRepository.findByIds.mockResolvedValue([archivedCategory, secondCategory]);
+      bookRepository.update.mockResolvedValue(baseBook);
+
+      await service.updateBook(bookId, {
+        categoryIds: [categoryId, secondCategoryId],
+      });
+
+      expect(bookRepository.update).toHaveBeenCalledWith(
+        bookId,
+        {},
+        undefined,
+        [categoryId, secondCategoryId],
+        undefined,
+      );
+    });
+
+    it('rejects adding a new archived category while editing', async () => {
+      bookRepository.findById.mockResolvedValue(baseBook);
+      categoryRepository.findByIds.mockResolvedValue([{ ...baseCategory, isArchived: true }]);
+
+      await expect(
+        service.updateBook(bookId, { categoryIds: [categoryId] }),
+      ).rejects.toBeInstanceOf(ArchivedBookCategoryError);
+
+      expect(bookRepository.update).not.toHaveBeenCalled();
+    });
+
+    it('allows removing an existing archived category from the book', async () => {
+      bookRepository.findById.mockResolvedValue({
+        ...baseBook,
+        categories: [
+          { id: categoryId, name: 'Narrativa', slug: 'narrativa', isArchived: true, sortOrder: 0 },
+        ],
+      });
+      bookRepository.update.mockResolvedValue(baseBook);
+
+      await service.updateBook(bookId, { categoryIds: [] });
+
+      expect(categoryRepository.findByIds).not.toHaveBeenCalled();
+      expect(bookRepository.update).toHaveBeenCalledWith(bookId, {}, undefined, [], undefined);
     });
   });
 

@@ -1,7 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import { z } from 'zod';
 
-import type { BookFormAuthorSummary, BookGeneralFormValues } from '../types/book-form-state';
+import type {
+  BookFormAuthorSummary,
+  BookFormCategorySummary,
+  BookGeneralFormValues,
+} from '../types/book-form-state';
 import { getAuthorIds } from './book-author-selection.helpers';
 import {
   addEdition,
@@ -48,6 +52,15 @@ const authors: BookFormAuthorSummary[] = [
   },
 ];
 
+const categories: BookFormCategorySummary[] = [
+  {
+    id: '2d2e4f8a-2a8a-42b9-8d1f-9c8a1f4c7b61',
+    name: 'Narrativa',
+    slug: 'narrativa',
+    isArchived: false,
+  },
+];
+
 describe('edition form helpers', () => {
   it('creates empty editions with defaults and stable client IDs', () => {
     const firstEdition = createEmptyEdition(0, () => 'edition-1');
@@ -90,7 +103,7 @@ describe('edition form helpers', () => {
 
 describe('buildCreateBookPayload', () => {
   it('builds a payload without visual-only data', () => {
-    const payload = buildCreateBookPayload(generalValues, authors, [
+    const payload = buildCreateBookPayload(generalValues, authors, categories, [
       {
         ...createEmptyEdition(0, () => 'edition-1'),
         price: '18,90',
@@ -105,6 +118,7 @@ describe('buildCreateBookPayload', () => {
     expect(payload).toMatchObject({
       title: 'El jardín perdido',
       authorIds: ['550e8400-e29b-41d4-a716-446655440000', '1d2e4f8a-2a8a-42b9-8d1f-9c8a1f4c7b61'],
+      categoryIds: ['2d2e4f8a-2a8a-42b9-8d1f-9c8a1f4c7b61'],
       editions: [
         expect.objectContaining({
           format: 'paperback',
@@ -124,7 +138,7 @@ describe('buildCreateBookPayload', () => {
   });
 
   it('keeps the internal default book sortOrder when creating', () => {
-    const payload = buildCreateBookPayload(generalValues, authors, [
+    const payload = buildCreateBookPayload(generalValues, authors, categories, [
       createEmptyEdition(0, () => 'edition-1'),
     ]);
 
@@ -134,7 +148,7 @@ describe('buildCreateBookPayload', () => {
 
 describe('buildUpdateBookPayload', () => {
   it('keeps author order and normalizes edition sort order', () => {
-    const payload = buildUpdateBookPayload(generalValues, authors, [
+    const payload = buildUpdateBookPayload(generalValues, authors, categories, [
       {
         ...createEmptyEdition(8, () => 'edition-1'),
         price: '18.90',
@@ -161,6 +175,7 @@ describe('buildUpdateBookPayload', () => {
         sortOrder: '9',
       },
       authors,
+      categories,
       [createEmptyEdition(0, () => 'edition-1')],
     );
 

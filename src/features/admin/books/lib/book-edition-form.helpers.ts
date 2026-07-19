@@ -9,6 +9,7 @@ import type {
   BookEditionFormTouchedById,
   BookEditionFormValues,
   BookFormAuthorSummary,
+  BookFormCategorySummary,
   BookGeneralFormErrors,
   BookGeneralFormField,
   BookGeneralFormValues,
@@ -29,6 +30,7 @@ export type CreateBookFormPayload = {
   metaDescription: string;
   canonicalUrl: string;
   authorIds: string[];
+  categoryIds: string[];
   editions: Array<Omit<BookEditionFormValues, 'clientId'>>;
 };
 
@@ -129,11 +131,13 @@ export function getAllEditionFieldsTouched(
 export function buildCreateBookPayload(
   generalValues: BookGeneralFormValues,
   selectedAuthors: BookFormAuthorSummary[],
+  selectedCategories: BookFormCategorySummary[],
   editions: BookEditionFormValues[],
 ): CreateBookFormPayload {
   return {
     ...generalValues,
     authorIds: selectedAuthors.map((author) => author.id),
+    categoryIds: selectedCategories.map((category) => category.id),
     editions: normalizeEditionOrder(editions).map((edition) => ({
       format: edition.format,
       editionLabel: edition.editionLabel,
@@ -153,9 +157,10 @@ export function buildCreateBookPayload(
 export function buildUpdateBookPayload(
   generalValues: BookGeneralFormValues,
   selectedAuthors: BookFormAuthorSummary[],
+  selectedCategories: BookFormCategorySummary[],
   editions: BookEditionFormValues[],
 ): UpdateBookFormPayload {
-  return buildCreateBookPayload(generalValues, selectedAuthors, editions);
+  return buildCreateBookPayload(generalValues, selectedAuthors, selectedCategories, editions);
 }
 
 export function mapZodIssuesToPaths(issues: ZodIssue[]): Record<string, string> {

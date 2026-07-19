@@ -2,6 +2,7 @@ import { z } from 'zod';
 
 import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
 import type { AuthorRepository } from '@/services/authors/author-service.types';
+import type { CategoryRepository } from '@/services/categories/category.types';
 import {
   createBookSchema,
   updateBookSchema,
@@ -11,7 +12,9 @@ import {
 } from '@/schemas/books/book.schema';
 import {
   ArchivedBookAuthorError,
+  ArchivedBookCategoryError,
   BookAuthorNotFoundError,
+  BookCategoryNotFoundError,
   BookIsbnConflictError,
   BookMustBeArchivedError,
   BookNotFoundError,
@@ -19,6 +22,7 @@ import {
   BookRequiresEditionError,
   BookSlugConflictError,
   DuplicateBookAuthorError,
+  DuplicateBookCategoryError,
 } from './book.errors';
 import type { BookDataCreateInput, BookDataUpdateInput, BookRepository } from './book.types';
 
@@ -35,6 +39,12 @@ function assertUniqueAuthorIds(authorIds: string[]) {
   }
 }
 
+function assertUniqueCategoryIds(categoryIds: string[]) {
+  if (new Set(categoryIds).size !== categoryIds.length) {
+    throw new DuplicateBookCategoryError();
+  }
+}
+
 function assertHasEditions(editions: BookEditionInput[]) {
   if (editions.length === 0) {
     throw new BookRequiresEditionError();
@@ -42,15 +52,15 @@ function assertHasEditions(editions: BookEditionInput[]) {
 }
 
 function splitCreateInput(data: CreateBookInput) {
-  const { authorIds, editions, ...bookData } = data;
+  const { authorIds, categoryIds, editions, ...bookData } = data;
 
-  return { bookData, authorIds, editions };
+  return { bookData, authorIds, categoryIds, editions };
 }
 
 function splitUpdateInput(data: UpdateBookInput) {
-  const { authorIds, editions, ...bookData } = data;
+  const { authorIds, categoryIds, editions, ...bookData } = data;
 
-  return { bookData, authorIds, editions };
+  return { bookData, authorIds, categoryIds, editions };
 }
 
 async function assertAuthorsCanBeRelated(
@@ -75,6 +85,35 @@ async function assertAuthorsCanBeRelated(
 
   if (archivedAuthorIds.length > 0) {
     throw new ArchivedBookAuthorError(archivedAuthorIds);
+  }
+}
+
+async function assertCategoriesCanBeRelated(
+  repository: CategoryRepository,
+  categoryIds: string[],
+  allowedArchivedCategoryIds: string[] = [],
+) {
+  assertUniqueCategoryIds(categoryIds);
+
+  if (categoryIds.length === 0) {
+    return;
+  }
+
+  const foundCategories = await repository.findByIds(categoryIds);
+  const foundCategoryIds = new Set(foundCategories.map((category) => category.id));
+  const missingCategoryIds = categoryIds.filter((categoryId) => !foundCategoryIds.has(categoryId));
+
+  if (missingCategoryIds.length > 0) {
+    throw new BookCategoryNotFoundError(missingCategoryIds);
+  }
+
+  const allowedArchivedCategoryIdSet = new Set(allowedArchivedCategoryIds);
+  const archivedCategoryIds = foundCategories
+    .filter((category) => category.isArchived && !allowedArchivedCategoryIdSet.has(category.id))
+    .map((category) => category.id);
+
+  if (archivedCategoryIds.length > 0) {
+    throw new ArchivedBookCategoryError(archivedCategoryIds);
   }
 }
 
@@ -105,6 +144,7 @@ async function assertIsbnAvailability(
 export function createBookService(
   bookRepository: BookRepository,
   authorRepository: AuthorRepository,
+  categoryRepository: CategoryRepository,
 ) {
   return {
     async getBookById(id: string) {
@@ -147,9 +187,10 @@ export function createBookService(
 
     async createBook(input: unknown) {
       const data = createBookSchema.parse(input);
-      const { bookData, authorIds, editions } = splitCreateInput(data);
+      const { bookData, authorIds, categoryIds, editions } = splitCreateInput(data);
 
       assertUniqueAuthorIds(authorIds);
+      assertUniqueCategoryIds(categoryIds);
       assertHasEditions(editions);
 
       const slugExists = await bookRepository.existsBySlug(bookData.slug);
@@ -159,9 +200,15 @@ export function createBookService(
       }
 
       await assertAuthorsCanBeRelated(authorRepository, authorIds);
+      await assertCategoriesCanBeRelated(categoryRepository, categoryIds);
       await assertIsbnAvailability(bookRepository, editions);
 
-      return bookRepository.create(bookData satisfies BookDataCreateInput, authorIds, editions);
+      return bookRepository.create(
+        bookData satisfies BookDataCreateInput,
+        authorIds,
+        categoryIds,
+        editions,
+      );
     },
 
     async updateBook(id: string, input: unknown) {
@@ -173,7 +220,7 @@ export function createBookService(
         throw new BookNotFoundError(validId);
       }
 
-      const { bookData, authorIds, editions } = splitUpdateInput(data);
+      const { bookData, authorIds, categoryIds, editions } = splitUpdateInput(data);
 
       if (bookData.slug && bookData.slug !== currentBook.slug) {
         const slugExists = await bookRepository.existsBySlug(bookData.slug, validId);
@@ -191,6 +238,18 @@ export function createBookService(
         await assertAuthorsCanBeRelated(authorRepository, authorIds, existingArchivedAuthorIds);
       }
 
+      if (categoryIds) {
+        const existingArchivedCategoryIds = currentBook.categories
+          .filter((category) => category.isArchived)
+          .map((category) => category.id);
+
+        await assertCategoriesCanBeRelated(
+          categoryRepository,
+          categoryIds,
+          existingArchivedCategoryIds,
+        );
+      }
+
       if (editions) {
         assertHasEditions(editions);
         await assertIsbnAvailability(bookRepository, editions, validId);
@@ -200,6 +259,7 @@ export function createBookService(
         validId,
         bookData satisfies BookDataUpdateInput,
         authorIds,
+        categoryIds,
         editions,
       );
 

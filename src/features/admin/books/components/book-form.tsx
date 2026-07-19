@@ -27,6 +27,13 @@ import {
   removeSelectedAuthor,
 } from '../lib/book-author-selection.helpers';
 import {
+  addSelectedCategory,
+  filterAvailableCategories,
+  moveSelectedCategoryDown,
+  moveSelectedCategoryUp,
+  removeSelectedCategory,
+} from '../lib/book-category-selection.helpers';
+import {
   addEdition,
   buildCreateBookPayload,
   buildUpdateBookPayload,
@@ -59,10 +66,12 @@ import {
   type BookEditionFormTouchedById,
   type BookEditionFormValues,
   type BookFormAuthorSummary,
+  type BookFormCategorySummary,
   type BookFormInitialValues,
 } from '../types/book-form-state';
 import type { BookActionState } from '../types/create-book-action-state';
 import { BookAuthorsSection } from './book-authors-section';
+import { BookCategoriesSection } from './book-categories-section';
 import { BookCoverSection } from './book-cover-section';
 import { BookEditionsSection } from './book-editions-section';
 import { BookGeneralSection } from './book-general-section';
@@ -70,6 +79,7 @@ import { BookGeneralSection } from './book-general-section';
 type CreateBookFormProps = {
   mode: 'create';
   authors: BookFormAuthorSummary[];
+  categories: BookFormCategorySummary[];
   initialValues?: BookFormInitialValues;
 };
 
@@ -77,6 +87,7 @@ type EditBookFormProps = {
   mode: 'edit';
   bookId: string;
   authors: BookFormAuthorSummary[];
+  categories: BookFormCategorySummary[];
   initialValues: BookFormInitialValues;
 };
 
@@ -86,13 +97,14 @@ function getDefaultInitialValues(): BookFormInitialValues {
   return {
     general: initialBookGeneralFormValues,
     selectedAuthors: [],
+    selectedCategories: [],
     editions: [createEmptyEdition()],
     coverUrl: '',
   };
 }
 
 export function BookForm(props: BookFormProps) {
-  const { authors, mode } = props;
+  const { authors, categories, mode } = props;
   const stableInitialValues = useMemo(
     () => props.initialValues ?? getDefaultInitialValues(),
     [props.initialValues],
@@ -103,7 +115,11 @@ export function BookForm(props: BookFormProps) {
   const [selectedAuthors, setSelectedAuthors] = useState<BookFormAuthorSummary[]>(
     stableInitialValues.selectedAuthors,
   );
+  const [selectedCategories, setSelectedCategories] = useState<BookFormCategorySummary[]>(
+    stableInitialValues.selectedCategories,
+  );
   const [authorSearchQuery, setAuthorSearchQuery] = useState('');
+  const [categorySearchQuery, setCategorySearchQuery] = useState('');
   const [editions, setEditions] = useState<BookEditionFormValues[]>(stableInitialValues.editions);
   const [editionTouched, setEditionTouched] = useState<BookEditionFormTouchedById>({});
   const [clientPathErrors, setClientPathErrors] = useState<Record<string, string>>({});
@@ -114,9 +130,14 @@ export function BookForm(props: BookFormProps) {
   const [coverError, setCoverError] = useState<string | null>(null);
   const [removeExistingCover, setRemoveExistingCover] = useState(false);
   const availableAuthors = filterAvailableAuthors(authors, selectedAuthors, authorSearchQuery);
+  const availableCategories = filterAvailableCategories(
+    categories,
+    selectedCategories,
+    categorySearchQuery,
+  );
   const buildPayload = mode === 'edit' ? buildUpdateBookPayload : buildCreateBookPayload;
   const validatePayload = mode === 'edit' ? validateUpdateBookPayload : validateCreateBookPayload;
-  const currentPayload = buildPayload(values, selectedAuthors, editions);
+  const currentPayload = buildPayload(values, selectedAuthors, selectedCategories, editions);
   const submitGeneralErrors = getGeneralErrorsFromPathErrors(clientPathErrors);
   const visibleGeneralErrors = {
     ...getVisibleBookGeneralErrors(values, touched),
@@ -145,6 +166,7 @@ export function BookForm(props: BookFormProps) {
   const currentInitialValues = {
     general: values,
     selectedAuthors,
+    selectedCategories,
     editions,
     coverUrl: stableInitialValues.coverUrl,
   };
@@ -154,6 +176,7 @@ export function BookForm(props: BookFormProps) {
         isBookCoverDirty({ selectedFile: selectedCoverFile, removeExistingCover })
       : areBookGeneralValuesDirty(values, stableInitialValues.general) ||
         selectedAuthors.length > 0 ||
+        selectedCategories.length > 0 ||
         isBookFormDirty(getDefaultInitialValues(), currentInitialValues) ||
         isBookCoverDirty({ selectedFile: selectedCoverFile, removeExistingCover });
   const canSubmit =
@@ -255,6 +278,48 @@ export function BookForm(props: BookFormProps) {
     setSelectedAuthors((currentAuthors) => removeSelectedAuthor(currentAuthors, authorId));
   }
 
+  function handleAddCategory(category: BookFormCategorySummary) {
+    if (isPending) {
+      return;
+    }
+
+    setServerState(null);
+    setSelectedCategories((currentCategories) => addSelectedCategory(currentCategories, category));
+  }
+
+  function handleMoveCategoryUp(categoryId: string) {
+    if (isPending) {
+      return;
+    }
+
+    setServerState(null);
+    setSelectedCategories((currentCategories) =>
+      moveSelectedCategoryUp(currentCategories, categoryId),
+    );
+  }
+
+  function handleMoveCategoryDown(categoryId: string) {
+    if (isPending) {
+      return;
+    }
+
+    setServerState(null);
+    setSelectedCategories((currentCategories) =>
+      moveSelectedCategoryDown(currentCategories, categoryId),
+    );
+  }
+
+  function handleRemoveCategory(categoryId: string) {
+    if (isPending) {
+      return;
+    }
+
+    setServerState(null);
+    setSelectedCategories((currentCategories) =>
+      removeSelectedCategory(currentCategories, categoryId),
+    );
+  }
+
   function handleAddEdition() {
     if (isPending) {
       return;
@@ -339,7 +404,7 @@ export function BookForm(props: BookFormProps) {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    const payload = buildPayload(values, selectedAuthors, editions);
+    const payload = buildPayload(values, selectedAuthors, selectedCategories, editions);
     const pathErrors = validatePayload(payload);
 
     setTouched({
@@ -426,6 +491,18 @@ export function BookForm(props: BookFormProps) {
               onMoveAuthorUp={handleMoveAuthorUp}
               onMoveAuthorDown={handleMoveAuthorDown}
               onRemoveAuthor={handleRemoveAuthor}
+            />
+
+            <BookCategoriesSection
+              categories={availableCategories}
+              selectedCategories={selectedCategories}
+              searchQuery={categorySearchQuery}
+              disabled={isPending}
+              onSearchQueryChange={setCategorySearchQuery}
+              onAddCategory={handleAddCategory}
+              onMoveCategoryUp={handleMoveCategoryUp}
+              onMoveCategoryDown={handleMoveCategoryDown}
+              onRemoveCategory={handleRemoveCategory}
             />
 
             <BookEditionsSection

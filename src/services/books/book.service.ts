@@ -2,6 +2,7 @@ import 'server-only';
 
 import * as authorRepository from '@/repositories/authors/author.repository';
 import * as bookRepository from '@/repositories/books/book.repository';
+import * as categoryRepository from '@/repositories/categories/category.repository';
 import { createBookService } from './book.service.core';
 
 export { createBookService } from './book.service.core';
@@ -12,7 +13,7 @@ export type {
   BookWithDetails,
 } from './book.types';
 
-const bookService = createBookService(bookRepository, authorRepository);
+const bookService = createBookService(bookRepository, authorRepository, categoryRepository);
 
 export const {
   getBookById,

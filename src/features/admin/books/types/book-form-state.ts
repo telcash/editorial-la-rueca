@@ -27,6 +27,13 @@ export interface BookFormAuthorSummary {
   isArchived: boolean;
 }
 
+export interface BookFormCategorySummary {
+  id: string;
+  name: string;
+  slug: string;
+  isArchived: boolean;
+}
+
 export interface BookEditionFormValues {
   clientId: string;
   format: string;
@@ -51,6 +58,7 @@ export type BookEditionFormErrorsById = Record<string, BookEditionFormErrors>;
 export interface BookFormInitialValues {
   general: BookGeneralFormValues;
   selectedAuthors: BookFormAuthorSummary[];
+  selectedCategories: BookFormCategorySummary[];
   editions: BookEditionFormValues[];
   coverUrl: string;
 }

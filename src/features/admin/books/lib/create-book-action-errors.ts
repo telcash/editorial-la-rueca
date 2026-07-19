@@ -3,7 +3,9 @@ import { ZodError } from 'zod';
 import { normalizeIsbn10, normalizeIsbn13 } from '@/schemas/books/book.schema';
 import {
   ArchivedBookAuthorError,
+  ArchivedBookCategoryError,
   BookAuthorNotFoundError,
+  BookCategoryNotFoundError,
   BookEditionNotFoundError,
   BookIsbnConflictError,
   BookNotFoundError,
@@ -11,6 +13,7 @@ import {
   BookRequiresEditionError,
   BookSlugConflictError,
   DuplicateBookAuthorError,
+  DuplicateBookCategoryError,
 } from '@/services/books/book.errors';
 import type { BookActionState } from '../types/create-book-action-state';
 import type { CreateBookFormPayload } from './book-edition-form.helpers';
@@ -93,6 +96,18 @@ export function mapCreateBookErrorToState(
 
   if (error instanceof BookRequiresEditionError) {
     return createBookActionErrorState(null, {}, null, 'Debe añadir al menos una edición.');
+  }
+
+  if (
+    error instanceof BookCategoryNotFoundError ||
+    error instanceof DuplicateBookCategoryError ||
+    error instanceof ArchivedBookCategoryError
+  ) {
+    return createBookActionErrorState(
+      error instanceof ArchivedBookCategoryError
+        ? 'No puedes añadir categorías archivadas a un libro.'
+        : 'Una o varias categorías seleccionadas ya no existen.',
+    );
   }
 
   if (error instanceof BookNotFoundError) {

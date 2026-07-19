@@ -5,16 +5,20 @@ import { and, asc, desc, eq, inArray, ne, sql } from 'drizzle-orm';
 import { db } from '@/db';
 import {
   authors,
+  bookCategories,
   bookAuthors,
   bookEditions,
   books,
+  categories,
   type Book,
+  type NewBookCategory,
   type NewBookEdition,
 } from '@/db/schema';
 import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
 import type { BookEditionInput } from '@/schemas/books/book.schema';
 import type {
   BookAuthorSummary,
+  BookCategorySummary,
   BookDashboardCounts,
   BookDataCreateInput,
   BookDataUpdateInput,
@@ -27,6 +31,10 @@ import type {
 type BookRow = Book;
 
 interface AuthorSummaryRow extends BookAuthorSummary {
+  bookId: string;
+}
+
+interface CategorySummaryRow extends BookCategorySummary {
   bookId: string;
 }
 
@@ -58,6 +66,18 @@ function mapBookEditions(editionRows: EditionRow[]): Map<string, BookEditionDeta
   return editionsByBookId;
 }
 
+function mapBookCategories(categoryRows: CategorySummaryRow[]): Map<string, BookCategorySummary[]> {
+  const categoriesByBookId = new Map<string, BookCategorySummary[]>();
+
+  for (const { bookId, ...category } of categoryRows) {
+    const currentCategories = categoriesByBookId.get(bookId) ?? [];
+    currentCategories.push(category);
+    categoriesByBookId.set(bookId, currentCategories);
+  }
+
+  return categoriesByBookId;
+}
+
 function assembleRecentBooks(
   bookRows: BookRecentRow[],
   authorRows: AuthorSummaryRow[],
@@ -73,14 +93,17 @@ function assembleRecentBooks(
 function assembleBooks(
   bookRows: BookRow[],
   authorRows: AuthorSummaryRow[],
+  categoryRows: CategorySummaryRow[],
   editionRows: EditionRow[],
 ): BookWithDetails[] {
   const authorsByBookId = mapBookAuthors(authorRows);
+  const categoriesByBookId = mapBookCategories(categoryRows);
   const editionsByBookId = mapBookEditions(editionRows);
 
   return bookRows.map((book) => ({
     ...book,
     authors: authorsByBookId.get(book.id) ?? [],
+    categories: categoriesByBookId.get(book.id) ?? [],
     editions: editionsByBookId.get(book.id) ?? [],
   }));
 }
@@ -102,6 +125,14 @@ function toEditionInsert(bookId: string, edition: BookEditionInput): NewBookEdit
   };
 }
 
+function toCategoryInsert(bookId: string, categoryId: string, index: number): NewBookCategory {
+  return {
+    bookId,
+    categoryId,
+    sortOrder: index,
+  };
+}
+
 function getArchiveCondition(status: ArchiveStatus = 'active') {
   if (status === 'all') {
     return undefined;
@@ -114,6 +145,7 @@ async function findDetailsByBookIds(bookIds: string[], onlyAvailableEditions = f
   if (bookIds.length === 0) {
     return {
       authorRows: [],
+      categoryRows: [],
       editionRows: [],
     };
   }
@@ -143,7 +175,21 @@ async function findDetailsByBookIds(bookIds: string[], onlyAvailableEditions = f
     .where(editionConditions)
     .orderBy(asc(bookEditions.bookId), asc(bookEditions.sortOrder), asc(bookEditions.createdAt));
 
-  return { authorRows, editionRows };
+  const categoryRows = await db
+    .select({
+      bookId: bookCategories.bookId,
+      id: categories.id,
+      name: categories.name,
+      slug: categories.slug,
+      isArchived: categories.isArchived,
+      sortOrder: bookCategories.sortOrder,
+    })
+    .from(bookCategories)
+    .innerJoin(categories, eq(categories.id, bookCategories.categoryId))
+    .where(inArray(bookCategories.bookId, bookIds))
+    .orderBy(asc(bookCategories.bookId), asc(bookCategories.sortOrder), asc(categories.name));
+
+  return { authorRows, categoryRows, editionRows };
 }
 
 async function findAuthorSummariesByBookIds(bookIds: string[]) {
@@ -172,8 +218,11 @@ async function findOneByBook(book: BookRow | null, onlyAvailableEditions = false
     return null;
   }
 
-  const { authorRows, editionRows } = await findDetailsByBookIds([book.id], onlyAvailableEditions);
-  const [bookWithDetails] = assembleBooks([book], authorRows, editionRows);
+  const { authorRows, categoryRows, editionRows } = await findDetailsByBookIds(
+    [book.id],
+    onlyAvailableEditions,
+  );
+  const [bookWithDetails] = assembleBooks([book], authorRows, categoryRows, editionRows);
 
   return bookWithDetails ?? null;
 }
@@ -196,9 +245,11 @@ export async function findAll(status: ArchiveStatus = 'active'): Promise<BookWit
     .from(books)
     .where(getArchiveCondition(status))
     .orderBy(asc(books.sortOrder), desc(books.createdAt));
-  const { authorRows, editionRows } = await findDetailsByBookIds(bookRows.map((book) => book.id));
+  const { authorRows, categoryRows, editionRows } = await findDetailsByBookIds(
+    bookRows.map((book) => book.id),
+  );
 
-  return assembleBooks(bookRows, authorRows, editionRows);
+  return assembleBooks(bookRows, authorRows, categoryRows, editionRows);
 }
 
 export async function getDashboardCounts(): Promise<BookDashboardCounts> {
@@ -259,12 +310,12 @@ export async function findPublished(): Promise<BookWithDetails[]> {
     .from(books)
     .where(and(eq(books.isPublished, true), eq(books.isArchived, false)))
     .orderBy(desc(books.isFeatured), asc(books.sortOrder), desc(books.createdAt));
-  const { authorRows, editionRows } = await findDetailsByBookIds(
+  const { authorRows, categoryRows, editionRows } = await findDetailsByBookIds(
     bookRows.map((book) => book.id),
     true,
   );
 
-  return assembleBooks(bookRows, authorRows, editionRows);
+  return assembleBooks(bookRows, authorRows, categoryRows, editionRows);
 }
 
 export async function existsBySlug(slug: string, excludeId?: string): Promise<boolean> {
@@ -319,6 +370,7 @@ export async function existsByIsbn13(
 export async function create(
   bookData: BookDataCreateInput,
   authorIds: string[],
+  categoryIds: string[],
   editions: BookEditionInput[],
 ): Promise<BookWithDetails> {
   const createdBook = await db.transaction(async (tx) => {
@@ -335,6 +387,14 @@ export async function create(
         sortOrder: index,
       })),
     );
+
+    if (categoryIds.length > 0) {
+      await tx
+        .insert(bookCategories)
+        .values(
+          categoryIds.map((categoryId, index) => toCategoryInsert(book.id, categoryId, index)),
+        );
+    }
 
     await tx
       .insert(bookEditions)
@@ -356,6 +416,7 @@ export async function update(
   id: string,
   bookData: BookDataUpdateInput,
   authorIds?: string[],
+  categoryIds?: string[],
   editions?: BookEditionInput[],
 ): Promise<BookWithDetails | null> {
   const updatedBookId = await db.transaction(async (tx) => {
@@ -381,6 +442,16 @@ export async function update(
           sortOrder: index,
         })),
       );
+    }
+
+    if (categoryIds) {
+      await tx.delete(bookCategories).where(eq(bookCategories.bookId, id));
+
+      if (categoryIds.length > 0) {
+        await tx
+          .insert(bookCategories)
+          .values(categoryIds.map((categoryId, index) => toCategoryInsert(id, categoryId, index)));
+      }
     }
 
     if (editions) {
@@ -431,6 +502,7 @@ export async function deletePermanently(id: string): Promise<BookWithDetails | n
 
   await db.transaction(async (tx) => {
     await tx.delete(bookAuthors).where(eq(bookAuthors.bookId, id));
+    await tx.delete(bookCategories).where(eq(bookCategories.bookId, id));
     await tx.delete(bookEditions).where(eq(bookEditions.bookId, id));
     await tx.delete(books).where(eq(books.id, id));
   });
@@ -448,6 +520,18 @@ export async function findAuthorsByBookId(bookId: string): Promise<BookAuthorSum
     photoUrl: author.photoUrl,
     isArchived: author.isArchived,
     sortOrder: author.sortOrder,
+  }));
+}
+
+export async function findCategoriesByBookId(bookId: string): Promise<BookCategorySummary[]> {
+  const { categoryRows } = await findDetailsByBookIds([bookId]);
+
+  return categoryRows.map((category) => ({
+    id: category.id,
+    name: category.name,
+    slug: category.slug,
+    isArchived: category.isArchived,
+    sortOrder: category.sortOrder,
   }));
 }
 

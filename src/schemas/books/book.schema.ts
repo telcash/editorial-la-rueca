@@ -237,6 +237,10 @@ const authorIdsSchema = z
     message: 'No puedes repetir autores en el mismo libro.',
   });
 
+const categoryIdsSchema = z.array(
+  z.string().uuid('El id de la categoría debe ser un UUID valido.'),
+);
+
 const editionsSchema = z
   .array(bookEditionInputSchema)
   .min(1, 'Debes agregar al menos una edicion.')
@@ -278,6 +282,7 @@ export const createBookSchema = z
     isPublished: bookInputFields.isPublished.default(false),
     sortOrder: bookInputFields.sortOrder.default(0),
     authorIds: authorIdsSchema,
+    categoryIds: categoryIdsSchema.default([]),
     editions: editionsSchema,
   })
   .strict();
@@ -286,6 +291,7 @@ export const updateBookSchema = z
   .object({
     ...bookInputFields,
     authorIds: authorIdsSchema.optional(),
+    categoryIds: categoryIdsSchema.optional(),
     editions: editionsSchema.optional(),
   })
   .strict()

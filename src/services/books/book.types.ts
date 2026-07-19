@@ -15,15 +15,24 @@ export interface BookAuthorSummary {
   sortOrder: number;
 }
 
+export interface BookCategorySummary {
+  id: string;
+  name: string;
+  slug: string;
+  isArchived: boolean;
+  sortOrder: number;
+}
+
 export type BookEditionDetails = BookEdition;
 
 export type BookWithDetails = Book & {
   authors: BookAuthorSummary[];
+  categories: BookCategorySummary[];
   editions: BookEditionDetails[];
 };
 
-export type BookDataCreateInput = Omit<CreateBookInput, 'authorIds' | 'editions'>;
-export type BookDataUpdateInput = Omit<UpdateBookInput, 'authorIds' | 'editions'>;
+export type BookDataCreateInput = Omit<CreateBookInput, 'authorIds' | 'categoryIds' | 'editions'>;
+export type BookDataUpdateInput = Omit<UpdateBookInput, 'authorIds' | 'categoryIds' | 'editions'>;
 
 export interface BookDashboardCounts {
   active: number;
@@ -64,17 +73,20 @@ export interface BookRepository {
   create(
     bookData: BookDataCreateInput,
     authorIds: string[],
+    categoryIds: string[],
     editions: BookEditionInput[],
   ): Promise<BookWithDetails>;
   update(
     id: string,
     bookData: BookDataUpdateInput,
     authorIds?: string[],
+    categoryIds?: string[],
     editions?: BookEditionInput[],
   ): Promise<BookWithDetails | null>;
   archive(id: string): Promise<BookWithDetails | null>;
   restore(id: string): Promise<BookWithDetails | null>;
   deletePermanently(id: string): Promise<BookWithDetails | null>;
   findAuthorsByBookId(bookId: string): Promise<BookAuthorSummary[]>;
+  findCategoriesByBookId(bookId: string): Promise<BookCategorySummary[]>;
   findEditionsByBookId(bookId: string): Promise<BookEditionDetails[]>;
 }

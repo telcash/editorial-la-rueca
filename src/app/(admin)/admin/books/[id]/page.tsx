@@ -8,11 +8,13 @@ import {
   mapBookToFormInitialValues,
   mergeAvailableAuthors,
 } from '@/features/admin/books/lib/book-edit-form.helpers';
+import { mergeAvailableCategories } from '@/features/admin/books/lib/book-category-selection.helpers';
 import { ArchivedBadge } from '@/features/admin/components/data-display/archived-badge';
 import { AdminPageHeader } from '@/features/admin/components/admin-page-header';
 import * as AuthorService from '@/services/authors/author.service';
 import { BookNotFoundError } from '@/services/books/book.errors';
 import * as BookService from '@/services/books/book.service';
+import * as CategoryService from '@/services/categories/category.service';
 
 interface EditBookPageProps {
   params: Promise<{
@@ -38,7 +40,11 @@ async function getBookForEdit(id: string) {
 export default async function AdminEditBookPage({ params, searchParams }: EditBookPageProps) {
   const { id } = await params;
   const { coverUpload } = await searchParams;
-  const [book, authors] = await Promise.all([getBookForEdit(id), AuthorService.listAuthors()]);
+  const [book, authors, categories] = await Promise.all([
+    getBookForEdit(id),
+    AuthorService.listAuthors(),
+    CategoryService.listActiveCategories(),
+  ]);
   const initialValues = mapBookToFormInitialValues(book);
   const authorOptions = mergeAvailableAuthors(
     authors.map((author) => ({
@@ -49,6 +55,15 @@ export default async function AdminEditBookPage({ params, searchParams }: EditBo
       isArchived: author.isArchived,
     })),
     initialValues.selectedAuthors,
+  );
+  const categoryOptions = mergeAvailableCategories(
+    categories.map((category) => ({
+      id: category.id,
+      name: category.name,
+      slug: category.slug,
+      isArchived: category.isArchived,
+    })),
+    initialValues.selectedCategories,
   );
 
   return (
@@ -87,6 +102,7 @@ export default async function AdminEditBookPage({ params, searchParams }: EditBo
         mode="edit"
         bookId={book.id}
         authors={authorOptions}
+        categories={categoryOptions}
         initialValues={initialValues}
       />
     </section>

@@ -46,6 +46,7 @@ const book: BookWithDetails = {
       sortOrder: 0,
     },
   ],
+  categories: [],
   editions: [
     {
       id: 'c1e5fb46-df62-4c72-946a-f55c03b6a001',

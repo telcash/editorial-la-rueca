@@ -35,7 +35,6 @@ export const adminNavigationItems: AdminNavigationItem[] = [
     href: '/admin/categories',
     label: 'Categorías',
     icon: FolderTree,
-    disabled: true,
   },
   {
     href: '/admin/settings',
