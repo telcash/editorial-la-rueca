@@ -20,6 +20,17 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-public-background: var(--public-background);
+  --color-public-ink: var(--public-ink);
+  --color-public-muted: var(--public-muted);
+  --color-public-border: var(--public-border);
+  --color-public-surface: var(--public-surface);
+  --color-public-surface-subtle: var(--public-surface-subtle);
+  --color-public-red: var(--brand-red);
+  --color-public-red-hover: var(--brand-red-hover);
+  --color-public-red-soft: var(--brand-red-soft);
+  --font-public: var(--font-poppins);
+  --font-serif-public: var(--font-source-serif-4);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -46,6 +57,15 @@
   --border: #deded8;
   --input: #deded8;
   --ring: #e02b20;
+  --brand-red: #e02b20;
+  --brand-red-hover: #ba2118;
+  --brand-red-soft: #fff0ef;
+  --public-background: #fbfaf8;
+  --public-ink: #151515;
+  --public-muted: #6f6a62;
+  --public-border: #e6e1da;
+  --public-surface: #ffffff;
+  --public-surface-subtle: #f8f5f1;
 }
 
 body {
