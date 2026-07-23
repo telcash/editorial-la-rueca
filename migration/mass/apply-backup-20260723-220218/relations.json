@@ -1341,9 +1341,7 @@
     "confidence": "high",
     "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
     "warnings": [],
-    "blockingReasons": [
-      "Libro no migrable."
-    ]
+    "blockingReasons": ["Libro no migrable."]
   },
   {
     "relationKey": "book:el canto de las raices cartografias del ser y existir::author:1392",

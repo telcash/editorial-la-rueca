@@ -25,24 +25,12 @@
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:556": [
-        "book:el valle de cristal"
-      ],
-      "author:1029": [
-        "book:el rumor de la marea"
-      ],
-      "author:1230": [
-        "book:estasimo"
-      ],
-      "author:1422": [
-        "book:zoografias"
-      ],
-      "author:1780": [
-        "book:mano a mano"
-      ],
-      "author:2089": [
-        "book:viajando ligero"
-      ],
+      "author:556": ["book:el valle de cristal"],
+      "author:1029": ["book:el rumor de la marea"],
+      "author:1230": ["book:estasimo"],
+      "author:1422": ["book:zoografias"],
+      "author:1780": ["book:mano a mano"],
+      "author:2089": ["book:viajando ligero"],
       "author:2652": [],
       "author:2806": [],
       "author:3153": []
@@ -52,77 +40,52 @@
   },
   {
     "duplicateGroup": "possible-author:ana cordoba del campo",
-    "legacyCandidateKeys": [
-      "author:563",
-      "author:882"
-    ],
+    "legacyCandidateKeys": ["author:563", "author:882"],
     "targetIds": {
       "author:563": "ddc02801-7185-4902-a353-304247dfe612",
       "author:882": null
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:563": [
-        "book:cruce de pasos"
-      ],
-      "author:882": [
-        "book:no te vi venir pues jamas te hubiese dejado entrar"
-      ]
+      "author:563": ["book:cruce de pasos"],
+      "author:882": ["book:no te vi venir pues jamas te hubiese dejado entrar"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
   },
   {
     "duplicateGroup": "possible-author:norberto dominguez jurado",
-    "legacyCandidateKeys": [
-      "author:623",
-      "author:1187"
-    ],
+    "legacyCandidateKeys": ["author:623", "author:1187"],
     "targetIds": {
       "author:623": null,
       "author:1187": null
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:623": [
-        "book:el poder de la educacion nos hace infinitos"
-      ],
-      "author:1187": [
-        "book:la inteligencia artificial en educacion fisica"
-      ]
+      "author:623": ["book:el poder de la educacion nos hace infinitos"],
+      "author:1187": ["book:la inteligencia artificial en educacion fisica"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
   },
   {
     "duplicateGroup": "possible-author:maria dolores castellon perez",
-    "legacyCandidateKeys": [
-      "author:628",
-      "author:1121"
-    ],
+    "legacyCandidateKeys": ["author:628", "author:1121"],
     "targetIds": {
       "author:628": null,
       "author:1121": null
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:628": [
-        "book:julio robles garcia compositor"
-      ],
-      "author:1121": [
-        "book:entrevistas"
-      ]
+      "author:628": ["book:julio robles garcia compositor"],
+      "author:1121": ["book:entrevistas"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
   },
   {
     "duplicateGroup": "possible-author:alonso cruz leon",
-    "legacyCandidateKeys": [
-      "author:633",
-      "author:1473",
-      "author:1858"
-    ],
+    "legacyCandidateKeys": ["author:633", "author:1473", "author:1858"],
     "targetIds": {
       "author:633": null,
       "author:1473": null,
@@ -130,25 +93,16 @@
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:633": [
-        "book:banquero de carlos v a emilio botin"
-      ],
-      "author:1473": [
-        "book:la ultima carta"
-      ],
-      "author:1858": [
-        "book:descartes y su duda hiperbolica"
-      ]
+      "author:633": ["book:banquero de carlos v a emilio botin"],
+      "author:1473": ["book:la ultima carta"],
+      "author:1858": ["book:descartes y su duda hiperbolica"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
   },
   {
     "duplicateGroup": "possible-author:teodoro rodriguez martin",
-    "legacyCandidateKeys": [
-      "author:652",
-      "author:724"
-    ],
+    "legacyCandidateKeys": ["author:652", "author:724"],
     "targetIds": {
       "author:652": null,
       "author:724": null
@@ -156,21 +110,14 @@
     "proposedCanonical": null,
     "associatedBooks": {
       "author:652": [],
-      "author:724": [
-        "book:la pulsera de la princesa yoruba"
-      ]
+      "author:724": ["book:la pulsera de la princesa yoruba"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
   },
   {
     "duplicateGroup": "possible-author:antonio lopez hurtado zarate",
-    "legacyCandidateKeys": [
-      "author:663",
-      "author:710",
-      "author:1712",
-      "author:3099"
-    ],
+    "legacyCandidateKeys": ["author:663", "author:710", "author:1712", "author:3099"],
     "targetIds": {
       "author:663": null,
       "author:710": null,
@@ -179,15 +126,9 @@
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:663": [
-        "book:tiendas y abastos en moralzarzal"
-      ],
-      "author:710": [
-        "book:la ganaderia en moralzarzal"
-      ],
-      "author:1712": [
-        "book:otros oficios en moralzarzal"
-      ],
+      "author:663": ["book:tiendas y abastos en moralzarzal"],
+      "author:710": ["book:la ganaderia en moralzarzal"],
+      "author:1712": ["book:otros oficios en moralzarzal"],
       "author:3099": []
     },
     "photoConflicts": false,
@@ -195,19 +136,14 @@
   },
   {
     "duplicateGroup": "possible-author:antonio l gomez charlin",
-    "legacyCandidateKeys": [
-      "author:690",
-      "author:2962"
-    ],
+    "legacyCandidateKeys": ["author:690", "author:2962"],
     "targetIds": {
       "author:690": null,
       "author:2962": null
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:690": [
-        "book:nagasaki"
-      ],
+      "author:690": ["book:nagasaki"],
       "author:2962": []
     },
     "photoConflicts": false,
@@ -215,107 +151,74 @@
   },
   {
     "duplicateGroup": "possible-author:juan antonio valero casado",
-    "legacyCandidateKeys": [
-      "author:717",
-      "author:1649"
-    ],
+    "legacyCandidateKeys": ["author:717", "author:1649"],
     "targetIds": {
       "author:717": null,
       "author:1649": null
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:717": [
-        "book:espejos de la realidad"
-      ],
-      "author:1649": [
-        "book:entre lineas reflejos de un tiempo convulso"
-      ]
+      "author:717": ["book:espejos de la realidad"],
+      "author:1649": ["book:entre lineas reflejos de un tiempo convulso"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
   },
   {
     "duplicateGroup": "possible-author:alejandro gonzalez garcia",
-    "legacyCandidateKeys": [
-      "author:733",
-      "author:747"
-    ],
+    "legacyCandidateKeys": ["author:733", "author:747"],
     "targetIds": {
       "author:733": null,
       "author:747": null
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:733": [
-        "book:los pensamientos olvidados"
-      ],
-      "author:747": [
-        "book:la vida sin ti"
-      ]
+      "author:733": ["book:los pensamientos olvidados"],
+      "author:747": ["book:la vida sin ti"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
   },
   {
     "duplicateGroup": "possible-author:ignacio luis de orduna puebla",
-    "legacyCandidateKeys": [
-      "author:765",
-      "author:1585"
-    ],
+    "legacyCandidateKeys": ["author:765", "author:1585"],
     "targetIds": {
       "author:765": null,
       "author:1585": null
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:765": [
-        "book:going my way en 40 poemas"
-      ],
-      "author:1585": [
-        "book:christus verbo y verso segun un posadero"
-      ]
+      "author:765": ["book:going my way en 40 poemas"],
+      "author:1585": ["book:christus verbo y verso segun un posadero"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
   },
   {
     "duplicateGroup": "possible-author:carlos jose olmedo batista",
-    "legacyCandidateKeys": [
-      "author:797",
-      "author:1578"
-    ],
+    "legacyCandidateKeys": ["author:797", "author:1578"],
     "targetIds": {
       "author:797": null,
       "author:1578": null
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:797": [
-        "book:la lista de tareas de mi profe jose"
-      ],
-      "author:1578": [
-        "book:la lista de tareas de mi profe jose"
-      ]
+      "author:797": ["book:la lista de tareas de mi profe jose"],
+      "author:1578": ["book:la lista de tareas de mi profe jose"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
   },
   {
     "duplicateGroup": "possible-author:gaspar t jimeno diestro",
-    "legacyCandidateKeys": [
-      "author:802",
-      "author:2406"
-    ],
+    "legacyCandidateKeys": ["author:802", "author:2406"],
     "targetIds": {
       "author:802": null,
       "author:2406": null
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:802": [
-        "book:biodiversidad sostenibilidad supervivencia e inmortalidad"
-      ],
+      "author:802": ["book:biodiversidad sostenibilidad supervivencia e inmortalidad"],
       "author:2406": []
     },
     "photoConflicts": false,
@@ -323,33 +226,22 @@
   },
   {
     "duplicateGroup": "possible-author:angel garcia garcia munoz buru",
-    "legacyCandidateKeys": [
-      "author:813",
-      "author:1256"
-    ],
+    "legacyCandidateKeys": ["author:813", "author:1256"],
     "targetIds": {
       "author:813": null,
       "author:1256": null
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:813": [
-        "book:el camino del angel la realidad de un sueno"
-      ],
-      "author:1256": [
-        "book:versos de madrugada con sentido"
-      ]
+      "author:813": ["book:el camino del angel la realidad de un sueno"],
+      "author:1256": ["book:versos de madrugada con sentido"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
   },
   {
     "duplicateGroup": "possible-author:juan jose velasco sanchez mayoral",
-    "legacyCandidateKeys": [
-      "author:819",
-      "author:1457",
-      "author:1863"
-    ],
+    "legacyCandidateKeys": ["author:819", "author:1457", "author:1863"],
     "targetIds": {
       "author:819": null,
       "author:1457": null,
@@ -357,27 +249,16 @@
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:819": [
-        "book:sus ojos hablaron"
-      ],
-      "author:1457": [
-        "book:una escuela de musica"
-      ],
-      "author:1863": [
-        "book:ilusiones"
-      ]
+      "author:819": ["book:sus ojos hablaron"],
+      "author:1457": ["book:una escuela de musica"],
+      "author:1863": ["book:ilusiones"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
   },
   {
     "duplicateGroup": "possible-author:jose antonio galante perez",
-    "legacyCandidateKeys": [
-      "author:904",
-      "author:1235",
-      "author:1325",
-      "author:3046"
-    ],
+    "legacyCandidateKeys": ["author:904", "author:1235", "author:1325", "author:3046"],
     "targetIds": {
       "author:904": null,
       "author:1235": null,
@@ -386,15 +267,9 @@
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:904": [
-        "book:poesia y whisky"
-      ],
-      "author:1235": [
-        "book:haikus en el camino"
-      ],
-      "author:1325": [
-        "book:el cierzo tatuado"
-      ],
+      "author:904": ["book:poesia y whisky"],
+      "author:1235": ["book:haikus en el camino"],
+      "author:1325": ["book:el cierzo tatuado"],
       "author:3046": []
     },
     "photoConflicts": false,
@@ -402,12 +277,7 @@
   },
   {
     "duplicateGroup": "possible-author:diego gomez costa",
-    "legacyCandidateKeys": [
-      "author:921",
-      "author:1750",
-      "author:1881",
-      "author:2346"
-    ],
+    "legacyCandidateKeys": ["author:921", "author:1750", "author:1881", "author:2346"],
     "targetIds": {
       "author:921": null,
       "author:1750": null,
@@ -416,15 +286,9 @@
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:921": [
-        "book:el rol principal de una pelicula llamada vida"
-      ],
-      "author:1750": [
-        "book:el dolor de un alma sin memoria"
-      ],
-      "author:1881": [
-        "book:el pueblo judio legado y nexo con judea una historia milenaria"
-      ],
+      "author:921": ["book:el rol principal de una pelicula llamada vida"],
+      "author:1750": ["book:el dolor de un alma sin memoria"],
+      "author:1881": ["book:el pueblo judio legado y nexo con judea una historia milenaria"],
       "author:2346": []
     },
     "photoConflicts": false,
@@ -432,10 +296,7 @@
   },
   {
     "duplicateGroup": "possible-author:antonio valdeavero ponce",
-    "legacyCandidateKeys": [
-      "author:938",
-      "author:1686"
-    ],
+    "legacyCandidateKeys": ["author:938", "author:1686"],
     "targetIds": {
       "author:938": null,
       "author:1686": null
@@ -445,20 +306,14 @@
       "author:938": [
         "book:de los rollos del mar muerto a los de rodrigo de lares una narracion audaz para un lector mas inteligente que lerdo belmonte ano 2017 al 2022 libro 1"
       ],
-      "author:1686": [
-        "book:de los rollos del mar muerto a los de rodrigo de lares tomo 2"
-      ]
+      "author:1686": ["book:de los rollos del mar muerto a los de rodrigo de lares tomo 2"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
   },
   {
     "duplicateGroup": "possible-author:manuel gomez rosas",
-    "legacyCandidateKeys": [
-      "author:942",
-      "author:1131",
-      "author:1798"
-    ],
+    "legacyCandidateKeys": ["author:942", "author:1131", "author:1798"],
     "targetIds": {
       "author:942": null,
       "author:1131": null,
@@ -466,12 +321,8 @@
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:942": [
-        "book:humor y prosa de un ajedrecista"
-      ],
-      "author:1131": [
-        "book:humor prosa y una jugadora"
-      ],
+      "author:942": ["book:humor y prosa de un ajedrecista"],
+      "author:1131": ["book:humor prosa y una jugadora"],
       "author:1798": [
         "book:los mejores cortos de gomez rosas cualquier parecido con la realidad es pura coincidencia"
       ]
@@ -497,15 +348,11 @@
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:1017": [
-        "book:perdoname por los poemas que te escribi"
-      ],
+      "author:1017": ["book:perdoname por los poemas que te escribi"],
       "author:1341": [
         "book:quedamos para despedirnos pero ella no lo sabia pensamientos en un pequeno relato sobre la amistad"
       ],
-      "author:1834": [
-        "book:azul"
-      ],
+      "author:1834": ["book:azul"],
       "author:2749": [],
       "author:3166": []
     },
@@ -514,41 +361,29 @@
   },
   {
     "duplicateGroup": "possible-author:julio sanchez alonso",
-    "legacyCandidateKeys": [
-      "author:1040",
-      "author:1219"
-    ],
+    "legacyCandidateKeys": ["author:1040", "author:1219"],
     "targetIds": {
       "author:1040": null,
       "author:1219": null
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:1040": [
-        "book:pollos en la memoria"
-      ],
-      "author:1219": [
-        "book:al final de la escapada memoria personal 1951 2011"
-      ]
+      "author:1040": ["book:pollos en la memoria"],
+      "author:1219": ["book:al final de la escapada memoria personal 1951 2011"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
   },
   {
     "duplicateGroup": "possible-author:alfredo manrique bravo",
-    "legacyCandidateKeys": [
-      "author:1088",
-      "author:3141"
-    ],
+    "legacyCandidateKeys": ["author:1088", "author:3141"],
     "targetIds": {
       "author:1088": null,
       "author:3141": null
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:1088": [
-        "book:en la recta final"
-      ],
+      "author:1088": ["book:en la recta final"],
       "author:3141": []
     },
     "photoConflicts": false,
@@ -556,11 +391,7 @@
   },
   {
     "duplicateGroup": "possible-author:guillermo martinez schrem",
-    "legacyCandidateKeys": [
-      "author:1136",
-      "author:1560",
-      "author:1681"
-    ],
+    "legacyCandidateKeys": ["author:1136", "author:1560", "author:1681"],
     "targetIds": {
       "author:1136": null,
       "author:1560": null,
@@ -568,15 +399,9 @@
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:1136": [
-        "book:ligero como la brisa"
-      ],
-      "author:1560": [
-        "book:famosa gabardina azul"
-      ],
-      "author:1681": [
-        "book:pajaro en el alambre"
-      ]
+      "author:1136": ["book:ligero como la brisa"],
+      "author:1560": ["book:famosa gabardina azul"],
+      "author:1681": ["book:pajaro en el alambre"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
@@ -601,43 +426,28 @@
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:1167": [
-        "book:de barro y silencio"
-      ],
+      "author:1167": ["book:de barro y silencio"],
       "author:1209": [
         "book:esferas temporales aforismos meditaciones y otros escritos breve recopilacion"
       ],
-      "author:1302": [
-        "book:cuentos para amara la nieve y amara toca el tambor"
-      ],
-      "author:1348": [
-        "book:cuentos para amara dona bota la burbuja de mar"
-      ],
-      "author:1365": [
-        "book:nido de barro haikus"
-      ],
-      "author:1431": [
-        "book:cartas a diego reflexiones sobre un nacimiento"
-      ]
+      "author:1302": ["book:cuentos para amara la nieve y amara toca el tambor"],
+      "author:1348": ["book:cuentos para amara dona bota la burbuja de mar"],
+      "author:1365": ["book:nido de barro haikus"],
+      "author:1431": ["book:cartas a diego reflexiones sobre un nacimiento"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
   },
   {
     "duplicateGroup": "possible-author:patxi oyaga",
-    "legacyCandidateKeys": [
-      "author:1214",
-      "author:2756"
-    ],
+    "legacyCandidateKeys": ["author:1214", "author:2756"],
     "targetIds": {
       "author:1214": null,
       "author:2756": null
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:1214": [
-        "book:la sombra del azar"
-      ],
+      "author:1214": ["book:la sombra del azar"],
       "author:2756": []
     },
     "photoConflicts": false,
@@ -645,22 +455,15 @@
   },
   {
     "duplicateGroup": "possible-author:elga reategui",
-    "legacyCandidateKeys": [
-      "author:1246",
-      "author:1947"
-    ],
+    "legacyCandidateKeys": ["author:1246", "author:1947"],
     "targetIds": {
       "author:1246": null,
       "author:1947": null
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:1246": [
-        "book:la ruta de las mariposas"
-      ],
-      "author:1947": [
-        "book:gris mas bien plomo"
-      ]
+      "author:1246": ["book:la ruta de las mariposas"],
+      "author:1947": ["book:gris mas bien plomo"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
@@ -683,15 +486,9 @@
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:1358": [
-        "book:oraculo de la fe el camino del alma"
-      ],
-      "author:1361": [
-        "book:voces del alma el arte de escuchar a traves del tarot"
-      ],
-      "author:1483": [
-        "book:arcanum la tora de minerva"
-      ],
+      "author:1358": ["book:oraculo de la fe el camino del alma"],
+      "author:1361": ["book:voces del alma el arte de escuchar a traves del tarot"],
+      "author:1483": ["book:arcanum la tora de minerva"],
       "author:2855": [],
       "author:2860": []
     },
@@ -700,10 +497,7 @@
   },
   {
     "duplicateGroup": "possible-author:sara sanchez prieto",
-    "legacyCandidateKeys": [
-      "author:1526",
-      "author:1644"
-    ],
+    "legacyCandidateKeys": ["author:1526", "author:1644"],
     "targetIds": {
       "author:1526": null,
       "author:1644": null
@@ -713,28 +507,21 @@
       "author:1526": [
         "book:estrategias educativas a traves del teatro musical experiencias y propuesta metodologica del taller de musicales volumen 1 seleccion de titulos para el aula analisis cinematografico y escenico"
       ],
-      "author:1644": [
-        "book:el musical como vehiculo de aprendizaje"
-      ]
+      "author:1644": ["book:el musical como vehiculo de aprendizaje"]
     },
     "photoConflicts": false,
     "biographyConflicts": true
   },
   {
     "duplicateGroup": "possible-author:manuel ondo ndong",
-    "legacyCandidateKeys": [
-      "author:1902",
-      "author:1917"
-    ],
+    "legacyCandidateKeys": ["author:1902", "author:1917"],
     "targetIds": {
       "author:1902": null,
       "author:1917": null
     },
     "proposedCanonical": null,
     "associatedBooks": {
-      "author:1902": [
-        "book:ndong el jubilado"
-      ],
+      "author:1902": ["book:ndong el jubilado"],
       "author:1917": [
         "book:analisis de errores morfosintacticos en un aula de espanol le el caso del grupo de estudiantes del nivel b2 de secundaria en guinea ecuatorial al expresarse por escrito en espanol"
       ]

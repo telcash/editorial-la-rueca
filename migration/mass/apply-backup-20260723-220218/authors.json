@@ -23,9 +23,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": "86d71b66-740f-4712-b87e-7a61e05acc38",
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem/",
@@ -105,9 +103,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": "ddc02801-7185-4902-a353-304247dfe612",
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/ana-cordoba-del-campo/",
@@ -627,9 +623,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/norberto-dominguez-jurado/",
@@ -669,9 +663,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/maria-dolores-castellon-perez/",
@@ -711,9 +703,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/alonso-cruz-leon/",
@@ -873,9 +863,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/teodoro-rodriguez-martin/",
@@ -955,9 +943,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/antonio-lopez-hurtado-zarate/",
@@ -1037,9 +1023,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/antonio-l-gomez-charlin/",
@@ -1162,9 +1146,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/juan-antonio-valero-casado/",
@@ -1247,9 +1229,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/alejandro-gonzalez-garcia/",
@@ -1452,9 +1432,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/ignacio-luis-de-orduna-puebla/",
@@ -1654,9 +1632,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/carlos-jose-olmedo-batista/",
@@ -1696,9 +1672,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/gaspar-t-jimeno-diestro/",
@@ -1778,9 +1752,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/angel-garcia-garcia-munoz-buru/",
@@ -1820,9 +1792,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/juan-jose-velasco-sanchez-mayoral/",
@@ -2105,9 +2075,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/jose-antonio-galante-perez/",
@@ -2227,9 +2195,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/diego-gomez-costa/",
@@ -2349,9 +2315,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/antonio-valdeavero-ponce/",
@@ -2391,9 +2355,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/manuel-gomez-rosas/",
@@ -2833,9 +2795,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/jose-vte-carmona-simarro/",
@@ -2998,9 +2958,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/julio-sanchez-alonso/",
@@ -3360,9 +3318,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/alfredo-manrique-bravo/",
@@ -3648,9 +3604,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/guillermo-martinez-schrem/",
@@ -3730,9 +3684,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/francisco-marin-vargas/",
@@ -3892,9 +3844,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/norberto-dominguez-jurado-y-maria-isabel-martin-aranda/",
@@ -4097,9 +4047,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/patxi-oyaga/",
@@ -4268,9 +4216,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/elga-reategui/",
@@ -4479,9 +4425,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/jose-vte-carmona-simarro-editorial_la_rueca/",
@@ -4564,9 +4508,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/minerva-buiza/",
@@ -5187,9 +5129,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/sara-sanchez-prieto/",
@@ -6514,9 +6454,7 @@
     "strategy": "PRESERVE_SEPARATE_PENDING_DEDUPLICATION",
     "needsAuthorDeduplication": true,
     "pilotTargetId": null,
-    "warnings": [
-      "Autor en duplicateGroup; se preserva separado para futura fusion."
-    ],
+    "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/manuel-ondo-ndong/",

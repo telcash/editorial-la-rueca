@@ -64,7 +64,5 @@
     "relations": [],
     "storagePaths": []
   },
-  "warnings": [
-    "Rollback destructivo excluye recursos preexisting=true del piloto."
-  ]
+  "warnings": ["Rollback destructivo excluye recursos preexisting=true del piloto."]
 }
