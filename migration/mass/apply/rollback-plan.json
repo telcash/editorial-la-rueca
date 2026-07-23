@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-07-23T18:23:33.119Z",
+  "resources": {
+    "authors": [
+      {
+        "id": "86d71b66-740f-4712-b87e-7a61e05acc38",
+        "candidateKey": "author:556",
+        "preexisting": true
+      },
+      {
+        "id": "ddc02801-7185-4902-a353-304247dfe612",
+        "candidateKey": "author:563",
+        "preexisting": true
+      },
+      {
+        "id": "8c04642d-540d-46a4-ab03-5d3e1f029ca3",
+        "candidateKey": "author:571",
+        "preexisting": true
+      },
+      {
+        "id": "786db0b7-d2f5-4186-982c-e8a4bb54c778",
+        "candidateKey": "author:589",
+        "preexisting": true
+      },
+      {
+        "id": "35ce3606-59f1-493a-bd54-169c33abbee3",
+        "candidateKey": "author:619",
+        "preexisting": true
+      },
+      {
+        "id": "9dcd55de-ff32-4331-93e2-ded0979c905c",
+        "candidateKey": "author:990",
+        "preexisting": true
+      },
+      {
+        "id": "e290a87d-da53-46fb-be45-a4b89e8c9502",
+        "candidateKey": "author:1108",
+        "preexisting": true
+      },
+      {
+        "id": "41be7a29-44d6-4f30-9508-4367a489f8e7",
+        "candidateKey": "author:1712",
+        "preexisting": true
+      }
+    ],
+    "books": [
+      {
+        "id": "38f4596b-3c42-42cb-b453-a02834e050c7",
+        "candidateKey": "book:el valle de cristal",
+        "preexisting": true
+      },
+      {
+        "id": "9dc918df-8c99-473f-90be-a672fbc74803",
+        "candidateKey": "book:cruce de pasos",
+        "preexisting": true
+      },
+      {
+        "id": "11f50eec-ca48-47c5-8d61-38bd573554ba",
+        "candidateKey": "book:requiem por un escritor desconocido",
+        "preexisting": true
+      }
+    ],
+    "editions": [],
+    "relations": [],
+    "storagePaths": []
+  },
+  "warnings": ["Rollback destructivo excluye recursos preexisting=true del piloto."]
+}

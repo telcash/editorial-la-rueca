@@ -1,0 +1,10 @@
+[
+  {
+    "code": "BACKUP_REQUIRED_BEFORE_APPLY",
+    "severity": "error",
+    "entityType": "runtime",
+    "candidateKey": "mass-migration",
+    "message": "Debe existir backup verificado antes de ejecutar apply.",
+    "details": "Apply requiere --confirm MASS_MIGRATION y --confirm-backup."
+  }
+]

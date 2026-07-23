@@ -22,7 +22,8 @@
     "migration:book-cover-audit": "tsx scripts/migration-book-cover-audit.ts",
     "migration:mass-plan": "tsx scripts/migration-mass-plan.ts",
     "migration:mass-resolve": "tsx scripts/migration-mass-resolve.ts",
-    "migration:mass-review": "tsx scripts/migration-mass-review.ts"
+    "migration:mass-review": "tsx scripts/migration-mass-review.ts",
+    "migration:mass": "node --import ./scripts/register-server-only.mjs --import tsx scripts/migration-mass.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.3",
