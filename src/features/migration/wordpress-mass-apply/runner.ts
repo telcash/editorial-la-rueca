@@ -158,9 +158,13 @@ function validateResumeState(
   }
 
   const hasAppliedState = Boolean(
-    existingManifest?.entries.some((entry) =>
-      ['applied', 'partial', 'failed'].includes(entry.status),
-    ),
+    existingManifest?.entries.some((entry) => {
+      if (entry.preexisting === true && entry.checkpoint === 'pilot_reconciled') {
+        return false;
+      }
+
+      return ['applied', 'partial', 'failed'].includes(entry.status);
+    }),
   );
 
   if (!options.resume && hasAppliedState) {

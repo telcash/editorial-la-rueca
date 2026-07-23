@@ -2,10 +2,18 @@ import { mkdtemp, mkdir, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 
 import { runMassMigration } from './runner';
 import type { MassApplyManifest } from './types';
+
+vi.mock('./apply', () => ({
+  applyMassMigration: vi.fn(async () => undefined),
+}));
+
+vi.mock('./preflight', () => ({
+  runMassApplyPreflight: vi.fn(async () => []),
+}));
 
 describe('runMassMigration protections', () => {
   it('requires exact MASS_MIGRATION confirmation for apply', async () => {
@@ -71,6 +79,44 @@ describe('runMassMigration protections', () => {
         batchSize: 20,
       }),
     ).rejects.toThrow('Usa --resume');
+  });
+
+  it('does not require --resume for preflight manifest entries reconciled from the pilot', async () => {
+    const massDirectory = await createMassFixture();
+    await writeManifest(massDirectory, {
+      mode: 'preflight',
+      planFingerprint: 'previous-fingerprint',
+      entries: [
+        {
+          candidateKey: 'author:pilot',
+          entityType: 'author',
+          sourceWpPostId: '556',
+          targetId: '11111111-1111-4111-8111-111111111111',
+          status: 'applied',
+          checkpoint: 'pilot_reconciled',
+          createdAt: '2026-07-23T00:00:00.000Z',
+          updatedAt: '2026-07-23T00:00:00.000Z',
+          warnings: [],
+          sourceMetadata: {},
+          preexisting: true,
+        },
+      ],
+    });
+
+    await expect(
+      runMassMigration({
+        massDirectory,
+        dryRun: false,
+        preflight: false,
+        apply: true,
+        confirm: 'MASS_MIGRATION',
+        confirmBackup: true,
+        resume: false,
+        batchSize: 20,
+      }),
+    ).resolves.toMatchObject({
+      outputDirectory: path.join(massDirectory, 'apply'),
+    });
   });
 
   it('aborts --resume when no previous manifest exists', async () => {
@@ -193,7 +239,8 @@ async function createMassFixture() {
 
 async function writeManifest(
   massDirectory: string,
-  overrides: Pick<MassApplyManifest, 'planFingerprint' | 'entries'>,
+  overrides: Pick<MassApplyManifest, 'planFingerprint' | 'entries'> &
+    Partial<Pick<MassApplyManifest, 'mode'>>,
 ) {
   const applyDirectory = path.join(massDirectory, 'apply');
   await mkdir(applyDirectory, { recursive: true });

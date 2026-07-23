@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-07-23T20:02:28.352Z",
-  "authorsCreated": 0,
+  "generatedAt": "2026-07-23T20:22:18.429Z",
+  "authorsCreated": 180,
   "authorsReusedFromPilot": 8,
-  "booksCreated": 0,
+  "booksCreated": 152,
   "booksReusedFromPilot": 3,
-  "editionsCreated": 0,
-  "relationsCreated": 0,
+  "editionsCreated": 152,
+  "relationsCreated": 153,
   "relationsRepaired": 0,
-  "authorImagesUploaded": 0,
-  "bookCoversUploaded": 0,
+  "authorImagesUploaded": 112,
+  "bookCoversUploaded": 37,
   "editionsRepaired": 0,
-  "skipped": 3,
-  "manualActionRequired": 86,
-  "partial": 0,
-  "failed": 0
+  "skipped": 106,
+  "manualActionRequired": 87,
+  "partial": 6,
+  "failed": 1
 }
