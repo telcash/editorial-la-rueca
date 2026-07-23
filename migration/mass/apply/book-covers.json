@@ -9,9 +9,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:la salvaje",
@@ -77,9 +75,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:la trenza dorada y otros relatos para tiempos nuevos",
@@ -91,9 +87,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:requiem por un escritor desconocido",
@@ -105,9 +99,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:de kolpino a krasny bor",
@@ -119,9 +111,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:dile a mama que nos conocimos en el cafe tres cantones",
@@ -171,9 +161,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:la vida de adonis",
@@ -223,9 +211,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:julio robles garcia compositor",
@@ -254,9 +240,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:la canteria en moralzarzal",
@@ -268,9 +252,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:el delgado hilo de la vida",
@@ -282,9 +264,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:el joven fenix el resurgir de los dioses egipcios",
@@ -296,9 +276,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:tiendas y abastos en moralzarzal",
@@ -310,9 +288,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:yoga volumen 1 2 3 4 5 evolucion integral y evolucion universal",
@@ -324,9 +300,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:nagasaki",
@@ -356,9 +330,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:la ganaderia en moralzarzal",
@@ -370,9 +342,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:espejos de la realidad",
@@ -401,9 +371,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:los pensamientos olvidados",
@@ -415,9 +383,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:la vida sin ti",
@@ -447,9 +413,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:john main apatheia nirvana",
@@ -461,9 +425,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:un siglo de ferrocarril en ecija memorias del marchenilla",
@@ -475,9 +437,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:going my way en 40 poemas",
@@ -489,9 +449,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:ilogica proposicional aforemas y poerismos",
@@ -503,9 +461,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:thailandia el viaje que cambio el rumbo de mi vida como inverti los obstaculos y mis limitaciones en valores gracias a mi experiencia de vida y al coaching",
@@ -517,9 +473,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:luna negra",
@@ -566,9 +520,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:quieres o debes ser feliz darse cuenta de aquello que nos impide ser felices es el primer paso para ser mas feliz",
@@ -580,9 +532,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:el camino del angel la realidad de un sueno",
@@ -594,9 +544,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:sus ojos hablaron",
@@ -608,9 +556,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:diario de un comunero",
@@ -622,9 +568,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:amar a fondo perdido y la decision",
@@ -636,9 +580,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:que cosas",
@@ -668,9 +610,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:estampas de un pueblo andaluz 1960 1974",
@@ -682,9 +622,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:los dictadores y las mujeres adolf hitler",
@@ -696,9 +634,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:poesia y whisky",
@@ -710,9 +646,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:alma en llamas",
@@ -724,9 +658,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:tratado de la ausencia y otros relatos",
@@ -738,9 +670,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:el rol principal de una pelicula llamada vida",
@@ -752,9 +682,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:la flor malva",
@@ -766,9 +694,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:leeme si te atreves",
@@ -780,9 +706,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares una narracion audaz para un lector mas inteligente que lerdo belmonte ano 2017 al 2022 libro 1",
@@ -794,9 +718,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:humor y prosa de un ajedrecista",
@@ -808,9 +730,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:los acorralados",
@@ -822,9 +742,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:diferencias de genero en la expresion conductual de la violencia",
@@ -853,9 +771,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:al otro lado del rio",
@@ -867,9 +783,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:el maestro de salamanca consideracion del derecho internacional humanitario",
@@ -881,9 +795,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:santa cruz de posguerra conversaciones en blanco y negro",
@@ -895,9 +807,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:detras de la corteza",
@@ -909,9 +819,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:quiero estar contigo",
@@ -923,9 +831,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:entre realidades y suenos",
@@ -937,9 +843,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:falsas esperanzas",
@@ -951,9 +855,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:perdoname por los poemas que te escribi",
@@ -965,9 +867,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:el panuelo de marino",
@@ -979,9 +879,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:el rumor de la marea",
@@ -993,9 +891,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:el viaje aventurero de nico",
@@ -1007,9 +903,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:pollos en la memoria",
@@ -1021,9 +915,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:matame de frente",
@@ -1053,9 +945,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:daemon lilith",
@@ -1102,9 +992,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:de estrellas gaviotas y poemas",
@@ -1116,9 +1004,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:y la vida sigue",
@@ -1130,9 +1016,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:una inolvidable noche de futbol en la pared",
@@ -1144,9 +1028,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:en la recta final",
@@ -1158,9 +1040,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:duns scoto versus tomas de aquino la debilidad del neocalcedonismo tomista",
@@ -1172,9 +1052,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:placa blanca dignidad sobre el pecho",
@@ -1186,9 +1064,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:la vida de adonis la impunidad",
@@ -1200,9 +1076,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:el perfume de las emociones",
@@ -1214,9 +1088,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:entrevistas",
@@ -1246,9 +1118,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:ligero como la brisa",
@@ -1260,9 +1130,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:prestoses xaranes de folixes y xordes nel conceyu de mieres",
@@ -1274,9 +1142,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:de barro y silencio",
@@ -1288,9 +1154,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:apuesta personal",
@@ -1302,9 +1166,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:la muerte de adonis los impunes",
@@ -1316,9 +1178,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:el poder de la magia de la comunicacion",
@@ -1330,9 +1190,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:la inteligencia artificial en educacion fisica",
@@ -1344,9 +1202,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:inteligencia artificial en educacion fisica",
@@ -1358,9 +1214,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:sutiles percepciones de una realidad",
@@ -1372,9 +1226,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:amaremos en libertad",
@@ -1386,9 +1238,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:esferas temporales aforismos meditaciones y otros escritos breve recopilacion",
@@ -1400,9 +1250,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:la sombra del azar",
@@ -1414,9 +1262,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:al final de la escapada memoria personal 1951 2011",
@@ -1428,9 +1274,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:estasimo",
@@ -1461,9 +1305,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:la ruta de las mariposas",
@@ -1494,9 +1336,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:cuentos para amara la nieve y amara toca el tambor",
@@ -1508,9 +1348,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:beretricce el palacio velado",
@@ -1522,9 +1360,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:el cierzo tatuado",
@@ -1536,9 +1372,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:quedamos para despedirnos pero ella no lo sabia pensamientos en un pequeno relato sobre la amistad",
@@ -1550,9 +1384,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:cuentos para amara dona bota la burbuja de mar",
@@ -1564,9 +1396,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:oraculo de la fe el camino del alma",
@@ -1578,9 +1408,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:voces del alma el arte de escuchar a traves del tarot",
@@ -1592,9 +1420,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:nido de barro haikus",
@@ -1606,9 +1432,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:con su permiso don alvaro historias de viso del marques",
@@ -1620,9 +1444,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:r",
@@ -1653,9 +1475,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:zoografias",
@@ -1724,9 +1544,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:una escuela de musica",
@@ -1797,9 +1615,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:estrategias educativas a traves del teatro musical experiencias y propuesta metodologica del taller de musicales volumen 1 seleccion de titulos para el aula analisis cinematografico y escenico",
@@ -1811,9 +1627,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:dias de galerna",
@@ -1845,9 +1659,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:famosa gabardina azul",
@@ -1877,9 +1689,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:christus verbo y verso segun un posadero",
@@ -1942,9 +1752,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:metodo sah g maes 36 caminos de curacion para la mente el cuerpo y el espiritual",
@@ -1956,9 +1764,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:el musical como vehiculo de aprendizaje",
@@ -2023,9 +1829,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:otros oficios en moralzarzal",
@@ -2055,9 +1859,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:monasterio de san lorenzo de el escorial una visita interior",
@@ -2160,9 +1962,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:evocacion y sucesos de dolores la tuerta una historia del mundo rural",
@@ -2174,9 +1974,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:azul",
@@ -2315,9 +2113,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:analisis de errores morfosintacticos en un aula de espanol le el caso del grupo de estudiantes del nivel b2 de secundaria en guinea ecuatorial al expresarse por escrito en espanol",
@@ -2329,9 +2125,7 @@
     "status": "NO_COVER",
     "action": "SKIP",
     "confidence": "none",
-    "reasons": [
-      "No hay bestCandidate suficiente; no se fuerza portada."
-    ]
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
   },
   {
     "candidateKey": "book:confesiones verdaderas de un verdadero cascarrabias",

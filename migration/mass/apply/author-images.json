@@ -9,9 +9,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:559",
@@ -23,9 +21,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:563",
@@ -37,9 +33,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:565",
@@ -51,9 +45,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:568",
@@ -65,9 +57,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:571",
@@ -79,9 +69,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:575",
@@ -93,9 +81,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:589",
@@ -107,9 +93,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:592",
@@ -121,9 +105,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:596",
@@ -135,9 +117,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:598",
@@ -149,9 +129,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:601",
@@ -163,9 +141,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:606",
@@ -177,9 +153,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:609",
@@ -191,9 +165,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:619",
@@ -205,9 +177,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:623",
@@ -219,9 +189,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:628",
@@ -233,9 +201,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:633",
@@ -247,9 +213,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:637",
@@ -261,9 +225,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:640",
@@ -275,9 +237,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:646",
@@ -289,9 +249,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:652",
@@ -303,9 +261,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:657",
@@ -317,9 +273,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:663",
@@ -331,9 +285,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:683",
@@ -345,9 +297,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:690",
@@ -359,9 +309,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:702",
@@ -373,9 +321,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:710",
@@ -387,9 +333,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:717",
@@ -401,9 +345,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:724",
@@ -415,9 +357,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:733",
@@ -429,9 +369,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:747",
@@ -443,9 +381,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:751",
@@ -457,9 +393,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:756",
@@ -471,9 +405,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:762",
@@ -485,9 +417,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:765",
@@ -499,9 +429,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:772",
@@ -513,9 +441,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:778",
@@ -527,9 +453,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:786",
@@ -541,9 +465,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:793",
@@ -555,9 +477,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:797",
@@ -569,9 +489,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:802",
@@ -583,9 +501,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:807",
@@ -597,9 +513,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:813",
@@ -611,9 +525,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:819",
@@ -625,9 +537,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:835",
@@ -639,9 +549,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:868",
@@ -653,9 +561,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:879",
@@ -667,9 +573,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:882",
@@ -681,9 +585,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:885",
@@ -695,9 +597,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:894",
@@ -709,9 +609,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:904",
@@ -723,9 +621,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:909",
@@ -737,9 +633,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:915",
@@ -751,9 +645,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:921",
@@ -765,9 +657,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:926",
@@ -779,9 +669,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:932",
@@ -793,9 +681,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:938",
@@ -807,9 +693,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:942",
@@ -821,9 +705,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:946",
@@ -835,9 +717,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:954",
@@ -849,9 +729,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:957",
@@ -863,9 +741,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:963",
@@ -877,9 +753,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:969",
@@ -891,9 +765,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:978",
@@ -905,9 +777,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:990",
@@ -919,9 +789,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1002",
@@ -933,9 +801,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1007",
@@ -947,9 +813,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1012",
@@ -961,9 +825,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1017",
@@ -975,9 +837,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1024",
@@ -989,9 +849,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1029",
@@ -1003,9 +861,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1034",
@@ -1017,9 +873,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1040",
@@ -1031,9 +885,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:1046",
@@ -1045,9 +897,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1052",
@@ -1059,9 +909,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:1057",
@@ -1073,9 +921,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1062",
@@ -1087,9 +933,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1069",
@@ -1101,9 +945,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1073",
@@ -1115,9 +957,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1078",
@@ -1129,9 +969,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1084",
@@ -1143,9 +981,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1088",
@@ -1157,9 +993,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1094",
@@ -1171,9 +1005,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1099",
@@ -1185,9 +1017,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1108",
@@ -1199,9 +1029,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1113",
@@ -1213,9 +1041,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1121",
@@ -1227,9 +1053,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:1131",
@@ -1241,9 +1065,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1136",
@@ -1255,9 +1077,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1161",
@@ -1269,9 +1089,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1167",
@@ -1283,9 +1101,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1172",
@@ -1297,9 +1113,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1177",
@@ -1311,9 +1125,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1182",
@@ -1325,9 +1137,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1187",
@@ -1339,9 +1149,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1194",
@@ -1353,9 +1161,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1198",
@@ -1367,9 +1173,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1204",
@@ -1381,9 +1185,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1209",
@@ -1395,9 +1197,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1214",
@@ -1409,9 +1209,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1219",
@@ -1423,9 +1221,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1230",
@@ -1437,9 +1233,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1235",
@@ -1451,9 +1245,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1246",
@@ -1465,9 +1257,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1256",
@@ -1479,9 +1269,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1302",
@@ -1493,9 +1281,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1313",
@@ -1507,9 +1293,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1325",
@@ -1521,9 +1305,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1341",
@@ -1535,9 +1317,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1348",
@@ -1549,9 +1329,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1358",
@@ -1563,9 +1341,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1361",
@@ -1577,9 +1353,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1365",
@@ -1591,9 +1365,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1367",
@@ -1605,9 +1377,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:1376",
@@ -1619,9 +1389,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1382",
@@ -1633,9 +1401,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:1392",
@@ -1647,9 +1413,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1422",
@@ -1661,9 +1425,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1431",
@@ -1675,9 +1437,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1435",
@@ -1689,9 +1449,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1454",
@@ -1703,9 +1461,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:1457",
@@ -1717,9 +1473,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:1473",
@@ -1731,9 +1485,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1483",
@@ -1745,9 +1497,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1518",
@@ -1759,9 +1509,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:1526",
@@ -1773,9 +1521,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1539",
@@ -1787,9 +1533,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1548",
@@ -1801,9 +1545,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1552",
@@ -1815,9 +1557,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1560",
@@ -1829,9 +1569,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:1569",
@@ -1843,9 +1581,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1578",
@@ -1857,9 +1593,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1585",
@@ -1871,9 +1605,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1602",
@@ -1885,9 +1617,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1614",
@@ -1899,9 +1629,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1616",
@@ -1913,9 +1641,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1633",
@@ -1927,9 +1653,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id no tiene evidencias fuertes de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id no tiene evidencias fuertes de foto de autor."]
   },
   {
     "candidateKey": "author:1644",
@@ -1941,9 +1665,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1649",
@@ -1955,9 +1677,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1681",
@@ -1969,9 +1689,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1686",
@@ -1983,9 +1701,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1712",
@@ -1997,9 +1713,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1722",
@@ -2011,9 +1725,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:1730",
@@ -2025,9 +1737,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1744",
@@ -2039,9 +1749,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1750",
@@ -2053,9 +1761,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1780",
@@ -2067,9 +1773,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1787",
@@ -2081,9 +1785,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1798",
@@ -2095,9 +1797,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1821",
@@ -2109,9 +1809,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1834",
@@ -2123,9 +1821,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1851",
@@ -2137,9 +1833,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1858",
@@ -2151,9 +1845,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1863",
@@ -2165,9 +1857,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1866",
@@ -2179,9 +1869,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1881",
@@ -2193,9 +1881,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1893",
@@ -2207,9 +1893,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1902",
@@ -2221,9 +1905,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1917",
@@ -2235,9 +1917,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1932",
@@ -2249,9 +1929,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1947",
@@ -2263,9 +1941,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:1953",
@@ -2277,9 +1953,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2089",
@@ -2291,9 +1965,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2232",
@@ -2305,9 +1977,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2303",
@@ -2319,9 +1989,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2346",
@@ -2333,9 +2001,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2406",
@@ -2347,9 +2013,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2625",
@@ -2361,9 +2025,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2638",
@@ -2375,9 +2037,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2652",
@@ -2389,9 +2049,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2749",
@@ -2403,9 +2061,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2756",
@@ -2417,9 +2073,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2798",
@@ -2431,9 +2085,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2806",
@@ -2445,9 +2097,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2824",
@@ -2459,9 +2109,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2855",
@@ -2473,9 +2121,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2860",
@@ -2487,9 +2133,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2933",
@@ -2501,9 +2145,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:2962",
@@ -2515,9 +2157,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:3026",
@@ -2529,9 +2169,7 @@
     "status": "READY",
     "action": "UPLOAD",
     "confidence": "high",
-    "reasons": [
-      "_thumbnail_id tiene señales de foto de autor."
-    ]
+    "reasons": ["_thumbnail_id tiene señales de foto de autor."]
   },
   {
     "candidateKey": "author:3046",
@@ -2543,9 +2181,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:3099",
@@ -2557,9 +2193,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:3135",
@@ -2571,9 +2205,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:3141",
@@ -2585,9 +2217,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:3153",
@@ -2599,9 +2229,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:3159",
@@ -2613,9 +2241,7 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   },
   {
     "candidateKey": "author:3166",
@@ -2627,8 +2253,6 @@
     "status": "MANUAL_REVIEW",
     "action": "MANUAL_REVIEW",
     "confidence": "low",
-    "reasons": [
-      "_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."
-    ]
+    "reasons": ["_thumbnail_id e imagen_destacada_2 difieren; rol ambiguo."]
   }
 ]

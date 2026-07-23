@@ -19,9 +19,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "a4810e67-eaee-46c5-8f56-e36d8dcc8f29"
-      ],
+      "authorIds": ["a4810e67-eaee-46c5-8f56-e36d8dcc8f29"],
       "categoryIds": [],
       "editions": [
         {
@@ -39,13 +37,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:556"
-    ],
+    "authorCandidateKeys": ["author:556"],
     "pilotTargetId": "38f4596b-3c42-42cb-b453-a02834e050c7",
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem/",
@@ -82,9 +76,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "a18a555a-afc6-4287-85a6-9b17a60649ec"
-      ],
+      "authorIds": ["a18a555a-afc6-4287-85a6-9b17a60649ec"],
       "categoryIds": [],
       "editions": [
         {
@@ -102,13 +94,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:559"
-    ],
+    "authorCandidateKeys": ["author:559"],
     "pilotTargetId": null,
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/luis-gausach/",
@@ -145,10 +133,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "8d9f2926-9663-4afe-83d9-4303997886b5",
-        "ae28c224-bd1e-4951-8ed5-d00880f76f8d"
-      ],
+      "authorIds": ["8d9f2926-9663-4afe-83d9-4303997886b5", "ae28c224-bd1e-4951-8ed5-d00880f76f8d"],
       "categoryIds": [],
       "editions": [
         {
@@ -166,14 +151,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:563",
-      "author:619"
-    ],
+    "authorCandidateKeys": ["author:563", "author:619"],
     "pilotTargetId": "9dc918df-8c99-473f-90be-a672fbc74803",
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/angel-garcia-munoz/",
@@ -210,9 +190,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "4dc4cf2d-597f-4664-8fa7-03da13fe8b10"
-      ],
+      "authorIds": ["4dc4cf2d-597f-4664-8fa7-03da13fe8b10"],
       "categoryIds": [],
       "editions": [
         {
@@ -230,13 +208,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:565"
-    ],
+    "authorCandidateKeys": ["author:565"],
     "pilotTargetId": null,
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/veronica-gomez-acebo/",
@@ -273,9 +247,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "3616fc84-139e-4a90-8ce2-e7f649fd03be"
-      ],
+      "authorIds": ["3616fc84-139e-4a90-8ce2-e7f649fd03be"],
       "categoryIds": [],
       "editions": [
         {
@@ -293,13 +265,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:568"
-    ],
+    "authorCandidateKeys": ["author:568"],
     "pilotTargetId": null,
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/jaime-caba/",
@@ -336,9 +304,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "324b0ee8-66a1-4b6f-8939-4665e130949b"
-      ],
+      "authorIds": ["324b0ee8-66a1-4b6f-8939-4665e130949b"],
       "categoryIds": [],
       "editions": [
         {
@@ -356,13 +322,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:575"
-    ],
+    "authorCandidateKeys": ["author:575"],
     "pilotTargetId": null,
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/carlos-rios-camacho/",
@@ -399,9 +361,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "f7b32719-5ab1-4cf0-8645-fc4411a759b7"
-      ],
+      "authorIds": ["f7b32719-5ab1-4cf0-8645-fc4411a759b7"],
       "categoryIds": [],
       "editions": [
         {
@@ -419,9 +379,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:589"
-    ],
+    "authorCandidateKeys": ["author:589"],
     "pilotTargetId": "11f50eec-ca48-47c5-8d61-38bd573554ba",
     "warnings": [],
     "blockingReasons": [],
@@ -460,9 +418,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "128eab63-8ad0-413f-8e3a-06f18f985bba"
-      ],
+      "authorIds": ["128eab63-8ad0-413f-8e3a-06f18f985bba"],
       "categoryIds": [],
       "editions": [
         {
@@ -480,9 +436,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:592"
-    ],
+    "authorCandidateKeys": ["author:592"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -521,9 +475,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "cf4df685-17d6-40c7-89e5-b99de774d357"
-      ],
+      "authorIds": ["cf4df685-17d6-40c7-89e5-b99de774d357"],
       "categoryIds": [],
       "editions": [
         {
@@ -541,9 +493,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:596"
-    ],
+    "authorCandidateKeys": ["author:596"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -582,9 +532,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "d4b21719-f3f0-4dd4-8fad-42896d6201eb"
-      ],
+      "authorIds": ["d4b21719-f3f0-4dd4-8fad-42896d6201eb"],
       "categoryIds": [],
       "editions": [
         {
@@ -602,9 +550,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:598"
-    ],
+    "authorCandidateKeys": ["author:598"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -643,9 +589,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "a26693c9-1554-4fd1-800d-a78f660867f0"
-      ],
+      "authorIds": ["a26693c9-1554-4fd1-800d-a78f660867f0"],
       "categoryIds": [],
       "editions": [
         {
@@ -663,9 +607,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:601"
-    ],
+    "authorCandidateKeys": ["author:601"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -704,9 +646,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "b4cc2a7d-ed68-44d2-8d80-96362d506a78"
-      ],
+      "authorIds": ["b4cc2a7d-ed68-44d2-8d80-96362d506a78"],
       "categoryIds": [],
       "editions": [
         {
@@ -724,9 +664,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:606"
-    ],
+    "authorCandidateKeys": ["author:606"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -765,9 +703,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "af34e3b0-ef6a-47cb-87c3-681a06688a7a"
-      ],
+      "authorIds": ["af34e3b0-ef6a-47cb-87c3-681a06688a7a"],
       "categoryIds": [],
       "editions": [
         {
@@ -785,9 +721,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:609"
-    ],
+    "authorCandidateKeys": ["author:609"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -826,9 +760,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "a78f1c1a-8e8d-48f0-8fdb-e10d5a7b4b84"
-      ],
+      "authorIds": ["a78f1c1a-8e8d-48f0-8fdb-e10d5a7b4b84"],
       "categoryIds": [],
       "editions": [
         {
@@ -846,9 +778,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:623"
-    ],
+    "authorCandidateKeys": ["author:623"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -887,9 +817,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "2dfdc537-03f9-4a7f-8589-435943ea55c4"
-      ],
+      "authorIds": ["2dfdc537-03f9-4a7f-8589-435943ea55c4"],
       "categoryIds": [],
       "editions": [
         {
@@ -907,9 +835,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:628"
-    ],
+    "authorCandidateKeys": ["author:628"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -948,9 +874,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "8195273a-59c2-4ce5-8306-3b3b5a212956"
-      ],
+      "authorIds": ["8195273a-59c2-4ce5-8306-3b3b5a212956"],
       "categoryIds": [],
       "editions": [
         {
@@ -968,9 +892,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:633"
-    ],
+    "authorCandidateKeys": ["author:633"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -1009,9 +931,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "c0fd3a34-76e7-47e1-8a31-593cf9ecb736"
-      ],
+      "authorIds": ["c0fd3a34-76e7-47e1-8a31-593cf9ecb736"],
       "categoryIds": [],
       "editions": [
         {
@@ -1029,9 +949,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:637"
-    ],
+    "authorCandidateKeys": ["author:637"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -1070,9 +988,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "91ceb7a9-deef-42cb-8050-f8c455a04ba5"
-      ],
+      "authorIds": ["91ceb7a9-deef-42cb-8050-f8c455a04ba5"],
       "categoryIds": [],
       "editions": [
         {
@@ -1090,13 +1006,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:640"
-    ],
+    "authorCandidateKeys": ["author:640"],
     "pilotTargetId": null,
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/jchamcri/",
@@ -1133,9 +1045,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "a173db3a-752c-4d08-8cb1-28e18b9c5fc9"
-      ],
+      "authorIds": ["a173db3a-752c-4d08-8cb1-28e18b9c5fc9"],
       "categoryIds": [],
       "editions": [
         {
@@ -1153,13 +1063,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:657"
-    ],
+    "authorCandidateKeys": ["author:657"],
     "pilotTargetId": null,
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/marta-susana-pecaric/",
@@ -1196,9 +1102,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "8bca63b4-7d68-481c-8e63-97b2a3fa5b28"
-      ],
+      "authorIds": ["8bca63b4-7d68-481c-8e63-97b2a3fa5b28"],
       "categoryIds": [],
       "editions": [
         {
@@ -1216,9 +1120,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:663"
-    ],
+    "authorCandidateKeys": ["author:663"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -1257,9 +1159,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "6e9e9170-a166-4fd4-8d1d-67c63149dbd7"
-      ],
+      "authorIds": ["6e9e9170-a166-4fd4-8d1d-67c63149dbd7"],
       "categoryIds": [],
       "editions": [
         {
@@ -1277,9 +1177,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:683"
-    ],
+    "authorCandidateKeys": ["author:683"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -1318,9 +1216,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "20934e7e-262c-4213-8d05-6c953ade633b"
-      ],
+      "authorIds": ["20934e7e-262c-4213-8d05-6c953ade633b"],
       "categoryIds": [],
       "editions": [
         {
@@ -1338,9 +1234,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:690"
-    ],
+    "authorCandidateKeys": ["author:690"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -1379,9 +1273,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "d4d570b5-361c-44c5-8170-67e4fcd8ba1b"
-      ],
+      "authorIds": ["d4d570b5-361c-44c5-8170-67e4fcd8ba1b"],
       "categoryIds": [],
       "editions": [
         {
@@ -1399,9 +1291,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:702"
-    ],
+    "authorCandidateKeys": ["author:702"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -1440,9 +1330,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "ed89ff09-6ee6-470e-8e06-638cfde7b0b3"
-      ],
+      "authorIds": ["ed89ff09-6ee6-470e-8e06-638cfde7b0b3"],
       "categoryIds": [],
       "editions": [
         {
@@ -1460,9 +1348,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:710"
-    ],
+    "authorCandidateKeys": ["author:710"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -1501,9 +1387,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "8959fdaf-016a-4822-86a7-8fd62acd600a"
-      ],
+      "authorIds": ["8959fdaf-016a-4822-86a7-8fd62acd600a"],
       "categoryIds": [],
       "editions": [
         {
@@ -1521,9 +1405,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:717"
-    ],
+    "authorCandidateKeys": ["author:717"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -1562,9 +1444,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "d32142f5-23d0-4921-82e0-58aa72b596e3"
-      ],
+      "authorIds": ["d32142f5-23d0-4921-82e0-58aa72b596e3"],
       "categoryIds": [],
       "editions": [
         {
@@ -1582,13 +1462,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:724"
-    ],
+    "authorCandidateKeys": ["author:724"],
     "pilotTargetId": null,
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/teodoro-rodriguez-martin-2/",
@@ -1625,9 +1501,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "0af79840-936c-45c4-8eb1-3eb9afcbe0e7"
-      ],
+      "authorIds": ["0af79840-936c-45c4-8eb1-3eb9afcbe0e7"],
       "categoryIds": [],
       "editions": [
         {
@@ -1645,9 +1519,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:733"
-    ],
+    "authorCandidateKeys": ["author:733"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -1686,9 +1558,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "31552848-7f6c-4689-8282-023a1ca132cc"
-      ],
+      "authorIds": ["31552848-7f6c-4689-8282-023a1ca132cc"],
       "categoryIds": [],
       "editions": [
         {
@@ -1706,13 +1576,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:747"
-    ],
+    "authorCandidateKeys": ["author:747"],
     "pilotTargetId": null,
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/alejandro-gonzalez-garcia-2/",
@@ -1749,9 +1615,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "13fc683b-c58d-48a5-81b2-9c3198d4f6ec"
-      ],
+      "authorIds": ["13fc683b-c58d-48a5-81b2-9c3198d4f6ec"],
       "categoryIds": [],
       "editions": [
         {
@@ -1769,9 +1633,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:751"
-    ],
+    "authorCandidateKeys": ["author:751"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -1810,9 +1672,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "6a9598e6-8635-4178-855f-24398595750a"
-      ],
+      "authorIds": ["6a9598e6-8635-4178-855f-24398595750a"],
       "categoryIds": [],
       "editions": [
         {
@@ -1830,9 +1690,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:756"
-    ],
+    "authorCandidateKeys": ["author:756"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -1871,9 +1729,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "0e8d4160-2b7a-458c-8e22-8e5ca50d619f"
-      ],
+      "authorIds": ["0e8d4160-2b7a-458c-8e22-8e5ca50d619f"],
       "categoryIds": [],
       "editions": [
         {
@@ -1891,9 +1747,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:762"
-    ],
+    "authorCandidateKeys": ["author:762"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -1932,9 +1786,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "a1eb0b6d-1aaf-4603-8475-391ac25a76fa"
-      ],
+      "authorIds": ["a1eb0b6d-1aaf-4603-8475-391ac25a76fa"],
       "categoryIds": [],
       "editions": [
         {
@@ -1952,13 +1804,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:765"
-    ],
+    "authorCandidateKeys": ["author:765"],
     "pilotTargetId": null,
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/ignacio-luis-de-orduna-puebla/",
@@ -1995,9 +1843,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "acd89e0d-b3f1-4765-83b7-ef44530e9e5b"
-      ],
+      "authorIds": ["acd89e0d-b3f1-4765-83b7-ef44530e9e5b"],
       "categoryIds": [],
       "editions": [
         {
@@ -2015,13 +1861,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:772"
-    ],
+    "authorCandidateKeys": ["author:772"],
     "pilotTargetId": null,
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/richard-pazos/",
@@ -2058,9 +1900,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "44c55a4f-7a2d-4905-8150-b017a3cb9141"
-      ],
+      "authorIds": ["44c55a4f-7a2d-4905-8150-b017a3cb9141"],
       "categoryIds": [],
       "editions": [
         {
@@ -2078,9 +1918,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:778"
-    ],
+    "authorCandidateKeys": ["author:778"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -2119,9 +1957,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "261ad6ce-b49b-45a3-8c62-ea6928cad950"
-      ],
+      "authorIds": ["261ad6ce-b49b-45a3-8c62-ea6928cad950"],
       "categoryIds": [],
       "editions": [
         {
@@ -2139,13 +1975,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:793"
-    ],
+    "authorCandidateKeys": ["author:793"],
     "pilotTargetId": null,
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/tamara-chenel/",
@@ -2182,10 +2014,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "65ecb3f1-0305-40d9-8b82-5c8c3f769e52",
-        "4d37577a-37c5-49a5-8cc7-e0f975f263e3"
-      ],
+      "authorIds": ["65ecb3f1-0305-40d9-8b82-5c8c3f769e52", "4d37577a-37c5-49a5-8cc7-e0f975f263e3"],
       "categoryIds": [],
       "editions": [
         {
@@ -2203,14 +2032,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:797",
-      "author:1578"
-    ],
+    "authorCandidateKeys": ["author:797", "author:1578"],
     "pilotTargetId": null,
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/carlos-jose-olmedo-batista-2/",
@@ -2247,9 +2071,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "4df4ff09-65f3-471b-873a-c4ebc5d1cfce"
-      ],
+      "authorIds": ["4df4ff09-65f3-471b-873a-c4ebc5d1cfce"],
       "categoryIds": [],
       "editions": [
         {
@@ -2267,9 +2089,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:802"
-    ],
+    "authorCandidateKeys": ["author:802"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -2308,9 +2128,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "34a2814a-da6b-408c-849e-2f49a8762023"
-      ],
+      "authorIds": ["34a2814a-da6b-408c-849e-2f49a8762023"],
       "categoryIds": [],
       "editions": [
         {
@@ -2328,13 +2146,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:807"
-    ],
+    "authorCandidateKeys": ["author:807"],
     "pilotTargetId": null,
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/gregorio-munoz-gomez/",
@@ -2371,9 +2185,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "fdcceb9a-b02e-4af4-866e-8f505fdce62b"
-      ],
+      "authorIds": ["fdcceb9a-b02e-4af4-866e-8f505fdce62b"],
       "categoryIds": [],
       "editions": [
         {
@@ -2391,9 +2203,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:813"
-    ],
+    "authorCandidateKeys": ["author:813"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -2432,9 +2242,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "e5eadac8-f6c4-432b-8f5b-9ad8a42d9d41"
-      ],
+      "authorIds": ["e5eadac8-f6c4-432b-8f5b-9ad8a42d9d41"],
       "categoryIds": [],
       "editions": [
         {
@@ -2452,9 +2260,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:819"
-    ],
+    "authorCandidateKeys": ["author:819"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -2493,9 +2299,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "bf460ee3-6d6e-4747-8094-9d096a2ff598"
-      ],
+      "authorIds": ["bf460ee3-6d6e-4747-8094-9d096a2ff598"],
       "categoryIds": [],
       "editions": [
         {
@@ -2513,9 +2317,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:835"
-    ],
+    "authorCandidateKeys": ["author:835"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -2554,9 +2356,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "13a84736-77a6-414b-8e78-d3c45f400a75"
-      ],
+      "authorIds": ["13a84736-77a6-414b-8e78-d3c45f400a75"],
       "categoryIds": [],
       "editions": [
         {
@@ -2574,9 +2374,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:868"
-    ],
+    "authorCandidateKeys": ["author:868"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -2615,9 +2413,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "bb631ac6-5121-408c-83c7-f843422dc29a"
-      ],
+      "authorIds": ["bb631ac6-5121-408c-83c7-f843422dc29a"],
       "categoryIds": [],
       "editions": [
         {
@@ -2635,9 +2431,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:879"
-    ],
+    "authorCandidateKeys": ["author:879"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -2676,9 +2470,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "fb00b287-1707-4e98-8c04-ffad192881fa"
-      ],
+      "authorIds": ["fb00b287-1707-4e98-8c04-ffad192881fa"],
       "categoryIds": [],
       "editions": [
         {
@@ -2696,13 +2488,9 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:882"
-    ],
+    "authorCandidateKeys": ["author:882"],
     "pilotTargetId": null,
-    "warnings": [
-      "tf_video no esta modelado; se conserva en sourceMetadata."
-    ],
+    "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
     "blockingReasons": [],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/ana-cordoba-del-campo-2/",
@@ -2739,9 +2527,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "2e3378e3-cb12-4008-8821-fbc208b163a7"
-      ],
+      "authorIds": ["2e3378e3-cb12-4008-8821-fbc208b163a7"],
       "categoryIds": [],
       "editions": [
         {
@@ -2759,9 +2545,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:885"
-    ],
+    "authorCandidateKeys": ["author:885"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -2800,9 +2584,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "c5382cef-c645-4d87-8b52-6d93ebbe5f4a"
-      ],
+      "authorIds": ["c5382cef-c645-4d87-8b52-6d93ebbe5f4a"],
       "categoryIds": [],
       "editions": [
         {
@@ -2820,9 +2602,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:894"
-    ],
+    "authorCandidateKeys": ["author:894"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -2861,9 +2641,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "144e6b0a-d74e-4539-8486-ff5b66a76f1c"
-      ],
+      "authorIds": ["144e6b0a-d74e-4539-8486-ff5b66a76f1c"],
       "categoryIds": [],
       "editions": [
         {
@@ -2881,9 +2659,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:904"
-    ],
+    "authorCandidateKeys": ["author:904"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -2922,9 +2698,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "9a81d4a6-8e40-430d-8231-e113f5a508c8"
-      ],
+      "authorIds": ["9a81d4a6-8e40-430d-8231-e113f5a508c8"],
       "categoryIds": [],
       "editions": [
         {
@@ -2942,9 +2716,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:909"
-    ],
+    "authorCandidateKeys": ["author:909"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -2983,9 +2755,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "4cfa5830-82dd-4868-8f10-dcd078013492"
-      ],
+      "authorIds": ["4cfa5830-82dd-4868-8f10-dcd078013492"],
       "categoryIds": [],
       "editions": [
         {
@@ -3003,9 +2773,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:915"
-    ],
+    "authorCandidateKeys": ["author:915"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3044,9 +2812,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "a470d1d3-5299-4915-80ba-87020fccfcc0"
-      ],
+      "authorIds": ["a470d1d3-5299-4915-80ba-87020fccfcc0"],
       "categoryIds": [],
       "editions": [
         {
@@ -3064,9 +2830,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:921"
-    ],
+    "authorCandidateKeys": ["author:921"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3105,9 +2869,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "3ab11c19-7683-40d5-809c-2dfdfbddcd3a"
-      ],
+      "authorIds": ["3ab11c19-7683-40d5-809c-2dfdfbddcd3a"],
       "categoryIds": [],
       "editions": [
         {
@@ -3125,9 +2887,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:926"
-    ],
+    "authorCandidateKeys": ["author:926"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3166,9 +2926,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "b8a614d4-fa50-4262-83e5-f80dd588edbc"
-      ],
+      "authorIds": ["b8a614d4-fa50-4262-83e5-f80dd588edbc"],
       "categoryIds": [],
       "editions": [
         {
@@ -3186,9 +2944,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:932"
-    ],
+    "authorCandidateKeys": ["author:932"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3227,9 +2983,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "1462b1f8-9456-4c7d-8b3f-7f531cfd82c7"
-      ],
+      "authorIds": ["1462b1f8-9456-4c7d-8b3f-7f531cfd82c7"],
       "categoryIds": [],
       "editions": [
         {
@@ -3247,9 +3001,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:938"
-    ],
+    "authorCandidateKeys": ["author:938"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3288,9 +3040,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "49339fde-b2a9-44d3-8bd8-9037ea82973c"
-      ],
+      "authorIds": ["49339fde-b2a9-44d3-8bd8-9037ea82973c"],
       "categoryIds": [],
       "editions": [
         {
@@ -3308,9 +3058,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:942"
-    ],
+    "authorCandidateKeys": ["author:942"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3349,9 +3097,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "8fe327ae-fc94-4b72-8dd8-19ad3bfc8736"
-      ],
+      "authorIds": ["8fe327ae-fc94-4b72-8dd8-19ad3bfc8736"],
       "categoryIds": [],
       "editions": [
         {
@@ -3369,9 +3115,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:946"
-    ],
+    "authorCandidateKeys": ["author:946"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3410,9 +3154,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "edb2d78b-1d97-4154-8a50-98c6c155b7f5"
-      ],
+      "authorIds": ["edb2d78b-1d97-4154-8a50-98c6c155b7f5"],
       "categoryIds": [],
       "editions": [
         {
@@ -3430,9 +3172,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:954"
-    ],
+    "authorCandidateKeys": ["author:954"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3471,9 +3211,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "321dcccd-35c9-46d2-88d9-96b98890cd6e"
-      ],
+      "authorIds": ["321dcccd-35c9-46d2-88d9-96b98890cd6e"],
       "categoryIds": [],
       "editions": [
         {
@@ -3491,9 +3229,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:957"
-    ],
+    "authorCandidateKeys": ["author:957"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3532,9 +3268,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "440eb677-4223-4f2e-8e54-ddafc3a0bfe1"
-      ],
+      "authorIds": ["440eb677-4223-4f2e-8e54-ddafc3a0bfe1"],
       "categoryIds": [],
       "editions": [
         {
@@ -3552,9 +3286,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:963"
-    ],
+    "authorCandidateKeys": ["author:963"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3593,9 +3325,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "a32b5c20-af72-4534-872c-b71090184f20"
-      ],
+      "authorIds": ["a32b5c20-af72-4534-872c-b71090184f20"],
       "categoryIds": [],
       "editions": [
         {
@@ -3613,9 +3343,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:969"
-    ],
+    "authorCandidateKeys": ["author:969"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3654,9 +3382,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "970ef35b-2db3-435a-815f-5d8781489705"
-      ],
+      "authorIds": ["970ef35b-2db3-435a-815f-5d8781489705"],
       "categoryIds": [],
       "editions": [
         {
@@ -3674,9 +3400,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:978"
-    ],
+    "authorCandidateKeys": ["author:978"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3715,9 +3439,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "bdcef1cc-9510-422f-8495-e81bf620097c"
-      ],
+      "authorIds": ["bdcef1cc-9510-422f-8495-e81bf620097c"],
       "categoryIds": [],
       "editions": [
         {
@@ -3735,9 +3457,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:990"
-    ],
+    "authorCandidateKeys": ["author:990"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3776,9 +3496,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "2b508f0b-0f41-4a7e-8580-2cf05dc8dca5"
-      ],
+      "authorIds": ["2b508f0b-0f41-4a7e-8580-2cf05dc8dca5"],
       "categoryIds": [],
       "editions": [
         {
@@ -3796,9 +3514,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1002"
-    ],
+    "authorCandidateKeys": ["author:1002"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3837,9 +3553,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "3d78e2dc-7369-424d-8c61-c17699f67f7d"
-      ],
+      "authorIds": ["3d78e2dc-7369-424d-8c61-c17699f67f7d"],
       "categoryIds": [],
       "editions": [
         {
@@ -3857,9 +3571,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1007"
-    ],
+    "authorCandidateKeys": ["author:1007"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3898,9 +3610,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "4df6b37c-f796-490d-8edc-3e1c1f098e94"
-      ],
+      "authorIds": ["4df6b37c-f796-490d-8edc-3e1c1f098e94"],
       "categoryIds": [],
       "editions": [
         {
@@ -3918,9 +3628,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1012"
-    ],
+    "authorCandidateKeys": ["author:1012"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -3959,9 +3667,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "ad0e3df5-7ef9-461c-8932-1c71155c4bc0"
-      ],
+      "authorIds": ["ad0e3df5-7ef9-461c-8932-1c71155c4bc0"],
       "categoryIds": [],
       "editions": [
         {
@@ -3979,9 +3685,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1017"
-    ],
+    "authorCandidateKeys": ["author:1017"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4020,9 +3724,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "b09fd9de-07f6-4b4d-89c7-3c6bd6c20ad9"
-      ],
+      "authorIds": ["b09fd9de-07f6-4b4d-89c7-3c6bd6c20ad9"],
       "categoryIds": [],
       "editions": [
         {
@@ -4040,9 +3742,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1024"
-    ],
+    "authorCandidateKeys": ["author:1024"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4081,9 +3781,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "96f9a0ab-9aad-461a-8750-1c7ff6239dca"
-      ],
+      "authorIds": ["96f9a0ab-9aad-461a-8750-1c7ff6239dca"],
       "categoryIds": [],
       "editions": [
         {
@@ -4101,9 +3799,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1029"
-    ],
+    "authorCandidateKeys": ["author:1029"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4142,9 +3838,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "887ded2e-6747-4b4f-8883-04d02901ab76"
-      ],
+      "authorIds": ["887ded2e-6747-4b4f-8883-04d02901ab76"],
       "categoryIds": [],
       "editions": [
         {
@@ -4162,9 +3856,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1034"
-    ],
+    "authorCandidateKeys": ["author:1034"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4203,9 +3895,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "8ac368e0-b8ea-44e5-8ddb-c3322cd4daa2"
-      ],
+      "authorIds": ["8ac368e0-b8ea-44e5-8ddb-c3322cd4daa2"],
       "categoryIds": [],
       "editions": [
         {
@@ -4223,9 +3913,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1040"
-    ],
+    "authorCandidateKeys": ["author:1040"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4264,9 +3952,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "577dd843-5d00-4655-8543-1b8c405904a6"
-      ],
+      "authorIds": ["577dd843-5d00-4655-8543-1b8c405904a6"],
       "categoryIds": [],
       "editions": [
         {
@@ -4284,9 +3970,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1046"
-    ],
+    "authorCandidateKeys": ["author:1046"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4325,9 +4009,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "dc508f77-afbe-4040-8d5c-2fd3eea99e00"
-      ],
+      "authorIds": ["dc508f77-afbe-4040-8d5c-2fd3eea99e00"],
       "categoryIds": [],
       "editions": [
         {
@@ -4345,9 +4027,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1052"
-    ],
+    "authorCandidateKeys": ["author:1052"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4386,9 +4066,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "186faa0b-9597-4d86-8906-073a07880d9a"
-      ],
+      "authorIds": ["186faa0b-9597-4d86-8906-073a07880d9a"],
       "categoryIds": [],
       "editions": [
         {
@@ -4406,9 +4084,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1057"
-    ],
+    "authorCandidateKeys": ["author:1057"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4447,9 +4123,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "45a6a5f6-a1b0-4e6c-81f5-86f49421f693"
-      ],
+      "authorIds": ["45a6a5f6-a1b0-4e6c-81f5-86f49421f693"],
       "categoryIds": [],
       "editions": [
         {
@@ -4467,9 +4141,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1062"
-    ],
+    "authorCandidateKeys": ["author:1062"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4508,9 +4180,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "00058de7-ea20-4603-8c1b-1257b95fc223"
-      ],
+      "authorIds": ["00058de7-ea20-4603-8c1b-1257b95fc223"],
       "categoryIds": [],
       "editions": [
         {
@@ -4528,9 +4198,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1069"
-    ],
+    "authorCandidateKeys": ["author:1069"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4569,9 +4237,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "b369b2f9-b544-4df8-80ae-56281c481ea9"
-      ],
+      "authorIds": ["b369b2f9-b544-4df8-80ae-56281c481ea9"],
       "categoryIds": [],
       "editions": [
         {
@@ -4589,9 +4255,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1073"
-    ],
+    "authorCandidateKeys": ["author:1073"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4630,9 +4294,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "c96fd0bb-c652-4922-8702-1c3afdfb3d9b"
-      ],
+      "authorIds": ["c96fd0bb-c652-4922-8702-1c3afdfb3d9b"],
       "categoryIds": [],
       "editions": [
         {
@@ -4650,9 +4312,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1078"
-    ],
+    "authorCandidateKeys": ["author:1078"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4691,9 +4351,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "355d1539-047d-468c-8c86-5197f8f793bc"
-      ],
+      "authorIds": ["355d1539-047d-468c-8c86-5197f8f793bc"],
       "categoryIds": [],
       "editions": [
         {
@@ -4711,9 +4369,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1084"
-    ],
+    "authorCandidateKeys": ["author:1084"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4752,9 +4408,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "53809862-dcb3-443e-87c0-9bca8b322959"
-      ],
+      "authorIds": ["53809862-dcb3-443e-87c0-9bca8b322959"],
       "categoryIds": [],
       "editions": [
         {
@@ -4772,9 +4426,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1088"
-    ],
+    "authorCandidateKeys": ["author:1088"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4813,9 +4465,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "f2364c47-6cb3-45e0-8112-5cb6b36f5c69"
-      ],
+      "authorIds": ["f2364c47-6cb3-45e0-8112-5cb6b36f5c69"],
       "categoryIds": [],
       "editions": [
         {
@@ -4833,9 +4483,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1094"
-    ],
+    "authorCandidateKeys": ["author:1094"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4874,9 +4522,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "93efc89a-e856-4810-8035-e7aae0ef8caf"
-      ],
+      "authorIds": ["93efc89a-e856-4810-8035-e7aae0ef8caf"],
       "categoryIds": [],
       "editions": [
         {
@@ -4894,9 +4540,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1099"
-    ],
+    "authorCandidateKeys": ["author:1099"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4935,9 +4579,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "0e13c416-12c7-4981-852b-c903d54d5eb7"
-      ],
+      "authorIds": ["0e13c416-12c7-4981-852b-c903d54d5eb7"],
       "categoryIds": [],
       "editions": [
         {
@@ -4955,9 +4597,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1108"
-    ],
+    "authorCandidateKeys": ["author:1108"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -4996,9 +4636,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "32b5c101-9b42-40e4-8e0b-0d1660d7bc2e"
-      ],
+      "authorIds": ["32b5c101-9b42-40e4-8e0b-0d1660d7bc2e"],
       "categoryIds": [],
       "editions": [
         {
@@ -5016,9 +4654,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1113"
-    ],
+    "authorCandidateKeys": ["author:1113"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5057,9 +4693,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "a72c2680-a28f-437e-8b9a-ee6078a03361"
-      ],
+      "authorIds": ["a72c2680-a28f-437e-8b9a-ee6078a03361"],
       "categoryIds": [],
       "editions": [
         {
@@ -5077,9 +4711,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1121"
-    ],
+    "authorCandidateKeys": ["author:1121"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5118,9 +4750,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "65830a44-45bc-40e5-823c-ebcfb9081054"
-      ],
+      "authorIds": ["65830a44-45bc-40e5-823c-ebcfb9081054"],
       "categoryIds": [],
       "editions": [
         {
@@ -5138,9 +4768,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1131"
-    ],
+    "authorCandidateKeys": ["author:1131"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5179,9 +4807,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "39c965db-31e0-49cd-80c9-d49e12819a26"
-      ],
+      "authorIds": ["39c965db-31e0-49cd-80c9-d49e12819a26"],
       "categoryIds": [],
       "editions": [
         {
@@ -5199,9 +4825,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1136"
-    ],
+    "authorCandidateKeys": ["author:1136"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5240,9 +4864,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "f425b1e8-83fd-46d7-8a29-fdcf3cf18f0e"
-      ],
+      "authorIds": ["f425b1e8-83fd-46d7-8a29-fdcf3cf18f0e"],
       "categoryIds": [],
       "editions": [
         {
@@ -5260,9 +4882,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1161"
-    ],
+    "authorCandidateKeys": ["author:1161"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5301,9 +4921,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "ec8eebb1-91bd-4e40-8ea2-aa2e6da7141b"
-      ],
+      "authorIds": ["ec8eebb1-91bd-4e40-8ea2-aa2e6da7141b"],
       "categoryIds": [],
       "editions": [
         {
@@ -5321,9 +4939,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1167"
-    ],
+    "authorCandidateKeys": ["author:1167"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5362,9 +4978,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "ebf59c57-3217-4112-8f02-612a650f8b77"
-      ],
+      "authorIds": ["ebf59c57-3217-4112-8f02-612a650f8b77"],
       "categoryIds": [],
       "editions": [
         {
@@ -5382,9 +4996,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1172"
-    ],
+    "authorCandidateKeys": ["author:1172"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5423,9 +5035,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "14407894-ce0e-4b25-83bc-68c893dff5fc"
-      ],
+      "authorIds": ["14407894-ce0e-4b25-83bc-68c893dff5fc"],
       "categoryIds": [],
       "editions": [
         {
@@ -5443,9 +5053,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1177"
-    ],
+    "authorCandidateKeys": ["author:1177"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5484,9 +5092,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "1a3d9fed-2d77-4555-844d-e3cb6dfda981"
-      ],
+      "authorIds": ["1a3d9fed-2d77-4555-844d-e3cb6dfda981"],
       "categoryIds": [],
       "editions": [
         {
@@ -5504,9 +5110,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1182"
-    ],
+    "authorCandidateKeys": ["author:1182"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5545,9 +5149,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "ddf3ff00-c7b2-4fd8-8115-8e373340b56d"
-      ],
+      "authorIds": ["ddf3ff00-c7b2-4fd8-8115-8e373340b56d"],
       "categoryIds": [],
       "editions": [
         {
@@ -5565,9 +5167,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1187"
-    ],
+    "authorCandidateKeys": ["author:1187"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5606,9 +5206,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "af4d448e-c14e-4bef-87b8-ab3a67bb40e1"
-      ],
+      "authorIds": ["af4d448e-c14e-4bef-87b8-ab3a67bb40e1"],
       "categoryIds": [],
       "editions": [
         {
@@ -5626,9 +5224,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1194"
-    ],
+    "authorCandidateKeys": ["author:1194"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5667,9 +5263,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "a885855c-04d7-4f4e-84d4-07a9c35ea72b"
-      ],
+      "authorIds": ["a885855c-04d7-4f4e-84d4-07a9c35ea72b"],
       "categoryIds": [],
       "editions": [
         {
@@ -5687,9 +5281,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1198"
-    ],
+    "authorCandidateKeys": ["author:1198"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5728,9 +5320,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "ab9c11c4-3597-4873-8e0a-f3eca2c20522"
-      ],
+      "authorIds": ["ab9c11c4-3597-4873-8e0a-f3eca2c20522"],
       "categoryIds": [],
       "editions": [
         {
@@ -5748,9 +5338,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1204"
-    ],
+    "authorCandidateKeys": ["author:1204"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5789,9 +5377,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "09539cf2-9749-4cbc-8ecd-1e41e1dd85fc"
-      ],
+      "authorIds": ["09539cf2-9749-4cbc-8ecd-1e41e1dd85fc"],
       "categoryIds": [],
       "editions": [
         {
@@ -5809,9 +5395,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1209"
-    ],
+    "authorCandidateKeys": ["author:1209"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5850,9 +5434,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "9e0238a7-8c26-4c7f-8d72-d957a257f00a"
-      ],
+      "authorIds": ["9e0238a7-8c26-4c7f-8d72-d957a257f00a"],
       "categoryIds": [],
       "editions": [
         {
@@ -5870,9 +5452,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1214"
-    ],
+    "authorCandidateKeys": ["author:1214"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5911,9 +5491,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "118a36c2-2a9a-4872-8e9b-3c9073b3223c"
-      ],
+      "authorIds": ["118a36c2-2a9a-4872-8e9b-3c9073b3223c"],
       "categoryIds": [],
       "editions": [
         {
@@ -5931,9 +5509,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1219"
-    ],
+    "authorCandidateKeys": ["author:1219"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -5972,9 +5548,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "ef255ac0-7e3b-4119-874a-62238d788c4e"
-      ],
+      "authorIds": ["ef255ac0-7e3b-4119-874a-62238d788c4e"],
       "categoryIds": [],
       "editions": [
         {
@@ -5992,9 +5566,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1230"
-    ],
+    "authorCandidateKeys": ["author:1230"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -6033,9 +5605,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "e7f77455-f6ec-4867-8585-ea4bf9b69d24"
-      ],
+      "authorIds": ["e7f77455-f6ec-4867-8585-ea4bf9b69d24"],
       "categoryIds": [],
       "editions": [
         {
@@ -6053,9 +5623,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1235"
-    ],
+    "authorCandidateKeys": ["author:1235"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -6094,9 +5662,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "26ef53ca-ecca-4f92-886c-d218a430da3f"
-      ],
+      "authorIds": ["26ef53ca-ecca-4f92-886c-d218a430da3f"],
       "categoryIds": [],
       "editions": [
         {
@@ -6114,9 +5680,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1246"
-    ],
+    "authorCandidateKeys": ["author:1246"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -6155,9 +5719,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "62f6d80a-9b48-4a02-86a5-ecdfba8a8612"
-      ],
+      "authorIds": ["62f6d80a-9b48-4a02-86a5-ecdfba8a8612"],
       "categoryIds": [],
       "editions": [
         {
@@ -6175,9 +5737,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1256"
-    ],
+    "authorCandidateKeys": ["author:1256"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -6216,9 +5776,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "60bb4e55-a27c-46f5-8e48-e8aea458a1f9"
-      ],
+      "authorIds": ["60bb4e55-a27c-46f5-8e48-e8aea458a1f9"],
       "categoryIds": [],
       "editions": [
         {
@@ -6236,9 +5794,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1302"
-    ],
+    "authorCandidateKeys": ["author:1302"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -6277,9 +5833,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "0146060d-733b-4d98-8957-af824192f3ea"
-      ],
+      "authorIds": ["0146060d-733b-4d98-8957-af824192f3ea"],
       "categoryIds": [],
       "editions": [
         {
@@ -6297,9 +5851,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1313"
-    ],
+    "authorCandidateKeys": ["author:1313"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -6338,9 +5890,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "76f19510-8334-40c4-8524-a00bd2e29f6d"
-      ],
+      "authorIds": ["76f19510-8334-40c4-8524-a00bd2e29f6d"],
       "categoryIds": [],
       "editions": [
         {
@@ -6358,9 +5908,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1325"
-    ],
+    "authorCandidateKeys": ["author:1325"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -6399,9 +5947,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "1a4c4357-9fb3-4137-88ed-3b784e770f7f"
-      ],
+      "authorIds": ["1a4c4357-9fb3-4137-88ed-3b784e770f7f"],
       "categoryIds": [],
       "editions": [
         {
@@ -6419,9 +5965,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1341"
-    ],
+    "authorCandidateKeys": ["author:1341"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -6460,9 +6004,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "f0cadc3b-a81b-4d17-8b47-bb2d9df6e309"
-      ],
+      "authorIds": ["f0cadc3b-a81b-4d17-8b47-bb2d9df6e309"],
       "categoryIds": [],
       "editions": [
         {
@@ -6480,9 +6022,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1348"
-    ],
+    "authorCandidateKeys": ["author:1348"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -6521,9 +6061,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "d67239b9-b1a8-498c-81c6-88f87e52af88"
-      ],
+      "authorIds": ["d67239b9-b1a8-498c-81c6-88f87e52af88"],
       "categoryIds": [],
       "editions": [
         {
@@ -6541,9 +6079,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1358"
-    ],
+    "authorCandidateKeys": ["author:1358"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -6582,9 +6118,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "4f43c46d-697b-4059-856c-9a06000ab9ae"
-      ],
+      "authorIds": ["4f43c46d-697b-4059-856c-9a06000ab9ae"],
       "categoryIds": [],
       "editions": [
         {
@@ -6602,9 +6136,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1361"
-    ],
+    "authorCandidateKeys": ["author:1361"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -6643,9 +6175,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "c451f423-ef52-4dec-83c4-ade5c436776f"
-      ],
+      "authorIds": ["c451f423-ef52-4dec-83c4-ade5c436776f"],
       "categoryIds": [],
       "editions": [
         {
@@ -6663,9 +6193,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1365"
-    ],
+    "authorCandidateKeys": ["author:1365"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -6704,9 +6232,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "a3fcc5af-b763-4412-80a5-6081526d214c"
-      ],
+      "authorIds": ["a3fcc5af-b763-4412-80a5-6081526d214c"],
       "categoryIds": [],
       "editions": [
         {
@@ -6724,9 +6250,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1367"
-    ],
+    "authorCandidateKeys": ["author:1367"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -6765,9 +6289,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "b4717ad6-e61d-4d22-8b25-7c5496d9b27a"
-      ],
+      "authorIds": ["b4717ad6-e61d-4d22-8b25-7c5496d9b27a"],
       "categoryIds": [],
       "editions": [
         {
@@ -6785,16 +6307,10 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1376"
-    ],
+    "authorCandidateKeys": ["author:1376"],
     "pilotTargetId": null,
-    "warnings": [
-      "SKIPPED_MANUAL_REVIEW: INVALID_OR_UNVERIFIED_TITLE"
-    ],
-    "blockingReasons": [
-      "INVALID_OR_UNVERIFIED_TITLE"
-    ],
+    "warnings": ["SKIPPED_MANUAL_REVIEW: INVALID_OR_UNVERIFIED_TITLE"],
+    "blockingReasons": ["INVALID_OR_UNVERIFIED_TITLE"],
     "sourceMetadata": {
       "oldUrl": "https://editoriallarueca.com/autor/maria-isabel-martinez-gilaranz/",
       "sourceSlug": "maria-isabel-martinez-gilaranz",
@@ -6830,9 +6346,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "ef38b524-1fc3-4705-860e-6f063f08b5fa"
-      ],
+      "authorIds": ["ef38b524-1fc3-4705-860e-6f063f08b5fa"],
       "categoryIds": [],
       "editions": [
         {
@@ -6850,9 +6364,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1392"
-    ],
+    "authorCandidateKeys": ["author:1392"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -6891,9 +6403,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "81721f6f-d607-4907-8248-f22dda25bb07"
-      ],
+      "authorIds": ["81721f6f-d607-4907-8248-f22dda25bb07"],
       "categoryIds": [],
       "editions": [
         {
@@ -6911,9 +6421,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1422"
-    ],
+    "authorCandidateKeys": ["author:1422"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -6952,9 +6460,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "55c92e05-171b-42a3-8d35-a6abe64e546b"
-      ],
+      "authorIds": ["55c92e05-171b-42a3-8d35-a6abe64e546b"],
       "categoryIds": [],
       "editions": [
         {
@@ -6972,9 +6478,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1431"
-    ],
+    "authorCandidateKeys": ["author:1431"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7013,9 +6517,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "fc546386-d479-4e85-8334-1e2da659c413"
-      ],
+      "authorIds": ["fc546386-d479-4e85-8334-1e2da659c413"],
       "categoryIds": [],
       "editions": [
         {
@@ -7033,9 +6535,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1435"
-    ],
+    "authorCandidateKeys": ["author:1435"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7074,9 +6574,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "fc28bbae-7bad-43bf-8b30-ea18a25f5fe8"
-      ],
+      "authorIds": ["fc28bbae-7bad-43bf-8b30-ea18a25f5fe8"],
       "categoryIds": [],
       "editions": [
         {
@@ -7094,9 +6592,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1454"
-    ],
+    "authorCandidateKeys": ["author:1454"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7135,9 +6631,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "dfc07197-e082-4d02-83c2-e6c85660ed58"
-      ],
+      "authorIds": ["dfc07197-e082-4d02-83c2-e6c85660ed58"],
       "categoryIds": [],
       "editions": [
         {
@@ -7155,9 +6649,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1457"
-    ],
+    "authorCandidateKeys": ["author:1457"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7196,9 +6688,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "56d43b6e-dc41-41d2-8709-43460d2c39ad"
-      ],
+      "authorIds": ["56d43b6e-dc41-41d2-8709-43460d2c39ad"],
       "categoryIds": [],
       "editions": [
         {
@@ -7216,9 +6706,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1473"
-    ],
+    "authorCandidateKeys": ["author:1473"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7257,9 +6745,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "a2247f12-4aef-4b61-892b-d3a1548bb13c"
-      ],
+      "authorIds": ["a2247f12-4aef-4b61-892b-d3a1548bb13c"],
       "categoryIds": [],
       "editions": [
         {
@@ -7277,9 +6763,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1483"
-    ],
+    "authorCandidateKeys": ["author:1483"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7318,9 +6802,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "becbe422-bd04-40f6-8e53-863247bed296"
-      ],
+      "authorIds": ["becbe422-bd04-40f6-8e53-863247bed296"],
       "categoryIds": [],
       "editions": [
         {
@@ -7338,9 +6820,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1518"
-    ],
+    "authorCandidateKeys": ["author:1518"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7379,9 +6859,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "a1d129f7-2257-4e63-8dde-4862f096b606"
-      ],
+      "authorIds": ["a1d129f7-2257-4e63-8dde-4862f096b606"],
       "categoryIds": [],
       "editions": [
         {
@@ -7399,9 +6877,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1526"
-    ],
+    "authorCandidateKeys": ["author:1526"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7440,9 +6916,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "aae29d02-588e-4b0f-8e0e-65c7db06e798"
-      ],
+      "authorIds": ["aae29d02-588e-4b0f-8e0e-65c7db06e798"],
       "categoryIds": [],
       "editions": [
         {
@@ -7460,9 +6934,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1539"
-    ],
+    "authorCandidateKeys": ["author:1539"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7501,9 +6973,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "e8c33383-e39e-4b5a-8da9-dc0b1c85e530"
-      ],
+      "authorIds": ["e8c33383-e39e-4b5a-8da9-dc0b1c85e530"],
       "categoryIds": [],
       "editions": [
         {
@@ -7521,9 +6991,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1548"
-    ],
+    "authorCandidateKeys": ["author:1548"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7562,9 +7030,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "9b1fb8a4-790e-4ebc-8cbd-ca3da0563a18"
-      ],
+      "authorIds": ["9b1fb8a4-790e-4ebc-8cbd-ca3da0563a18"],
       "categoryIds": [],
       "editions": [
         {
@@ -7582,9 +7048,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1560"
-    ],
+    "authorCandidateKeys": ["author:1560"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7623,9 +7087,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "f265bb2e-8c30-49d3-8a38-3cc187483f7d"
-      ],
+      "authorIds": ["f265bb2e-8c30-49d3-8a38-3cc187483f7d"],
       "categoryIds": [],
       "editions": [
         {
@@ -7643,9 +7105,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1569"
-    ],
+    "authorCandidateKeys": ["author:1569"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7684,9 +7144,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "c0878585-d56d-4170-8d32-372c9bf279dc"
-      ],
+      "authorIds": ["c0878585-d56d-4170-8d32-372c9bf279dc"],
       "categoryIds": [],
       "editions": [
         {
@@ -7704,9 +7162,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1585"
-    ],
+    "authorCandidateKeys": ["author:1585"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7745,9 +7201,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "98e1e498-5b05-435a-83fa-67afca719550"
-      ],
+      "authorIds": ["98e1e498-5b05-435a-83fa-67afca719550"],
       "categoryIds": [],
       "editions": [
         {
@@ -7765,9 +7219,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1602"
-    ],
+    "authorCandidateKeys": ["author:1602"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7806,9 +7258,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "cb4b702b-3e2d-4d2c-83e6-6b18ca9a3884"
-      ],
+      "authorIds": ["cb4b702b-3e2d-4d2c-83e6-6b18ca9a3884"],
       "categoryIds": [],
       "editions": [
         {
@@ -7826,9 +7276,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1614"
-    ],
+    "authorCandidateKeys": ["author:1614"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7867,9 +7315,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "168b13ab-95e0-4e68-8a35-3b410d973536"
-      ],
+      "authorIds": ["168b13ab-95e0-4e68-8a35-3b410d973536"],
       "categoryIds": [],
       "editions": [
         {
@@ -7887,9 +7333,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1616"
-    ],
+    "authorCandidateKeys": ["author:1616"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7928,9 +7372,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "1ea0b810-ff82-4986-8615-c629f5893c0c"
-      ],
+      "authorIds": ["1ea0b810-ff82-4986-8615-c629f5893c0c"],
       "categoryIds": [],
       "editions": [
         {
@@ -7948,9 +7390,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1633"
-    ],
+    "authorCandidateKeys": ["author:1633"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -7989,9 +7429,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "6942e2ca-398b-45bd-82d0-aba65cd93918"
-      ],
+      "authorIds": ["6942e2ca-398b-45bd-82d0-aba65cd93918"],
       "categoryIds": [],
       "editions": [
         {
@@ -8009,9 +7447,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1644"
-    ],
+    "authorCandidateKeys": ["author:1644"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8050,9 +7486,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "d0041fa0-9736-4477-81f1-a4a9d4953097"
-      ],
+      "authorIds": ["d0041fa0-9736-4477-81f1-a4a9d4953097"],
       "categoryIds": [],
       "editions": [
         {
@@ -8070,9 +7504,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1649"
-    ],
+    "authorCandidateKeys": ["author:1649"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8111,9 +7543,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "3bcdfe3b-06ea-48e5-8c91-c5ef015c1699"
-      ],
+      "authorIds": ["3bcdfe3b-06ea-48e5-8c91-c5ef015c1699"],
       "categoryIds": [],
       "editions": [
         {
@@ -8131,9 +7561,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1681"
-    ],
+    "authorCandidateKeys": ["author:1681"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8172,9 +7600,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "5b7048d2-e626-46e0-867b-501d768c428a"
-      ],
+      "authorIds": ["5b7048d2-e626-46e0-867b-501d768c428a"],
       "categoryIds": [],
       "editions": [
         {
@@ -8192,9 +7618,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1686"
-    ],
+    "authorCandidateKeys": ["author:1686"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8233,9 +7657,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "2a2cfeda-dabb-4b80-8e4b-46961117800b"
-      ],
+      "authorIds": ["2a2cfeda-dabb-4b80-8e4b-46961117800b"],
       "categoryIds": [],
       "editions": [
         {
@@ -8253,9 +7675,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1712"
-    ],
+    "authorCandidateKeys": ["author:1712"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8294,9 +7714,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "95a7c437-3a6e-4eb8-8f87-9981cfc3d625"
-      ],
+      "authorIds": ["95a7c437-3a6e-4eb8-8f87-9981cfc3d625"],
       "categoryIds": [],
       "editions": [
         {
@@ -8314,9 +7732,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1722"
-    ],
+    "authorCandidateKeys": ["author:1722"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8355,9 +7771,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "a0385353-f8bb-4188-8860-9a7650f6c82b"
-      ],
+      "authorIds": ["a0385353-f8bb-4188-8860-9a7650f6c82b"],
       "categoryIds": [],
       "editions": [
         {
@@ -8375,9 +7789,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1730"
-    ],
+    "authorCandidateKeys": ["author:1730"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8416,9 +7828,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "f65613ff-32f4-4b98-8d56-b87406162747"
-      ],
+      "authorIds": ["f65613ff-32f4-4b98-8d56-b87406162747"],
       "categoryIds": [],
       "editions": [
         {
@@ -8436,9 +7846,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1744"
-    ],
+    "authorCandidateKeys": ["author:1744"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8477,9 +7885,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "3b7ae8c0-4941-42b5-88e6-328884a2f8be"
-      ],
+      "authorIds": ["3b7ae8c0-4941-42b5-88e6-328884a2f8be"],
       "categoryIds": [],
       "editions": [
         {
@@ -8497,9 +7903,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1750"
-    ],
+    "authorCandidateKeys": ["author:1750"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8538,9 +7942,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "61deed74-9f3b-4ccf-865d-c6bc5610ac7b"
-      ],
+      "authorIds": ["61deed74-9f3b-4ccf-865d-c6bc5610ac7b"],
       "categoryIds": [],
       "editions": [
         {
@@ -8558,9 +7960,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1780"
-    ],
+    "authorCandidateKeys": ["author:1780"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8599,9 +7999,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "bbcd8312-131d-4389-8c2e-24bca5be8feb"
-      ],
+      "authorIds": ["bbcd8312-131d-4389-8c2e-24bca5be8feb"],
       "categoryIds": [],
       "editions": [
         {
@@ -8619,9 +8017,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1787"
-    ],
+    "authorCandidateKeys": ["author:1787"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8660,9 +8056,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "1dfec387-1391-431c-8249-eb81b66e145b"
-      ],
+      "authorIds": ["1dfec387-1391-431c-8249-eb81b66e145b"],
       "categoryIds": [],
       "editions": [
         {
@@ -8680,9 +8074,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1798"
-    ],
+    "authorCandidateKeys": ["author:1798"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8721,9 +8113,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "8d47b54e-956e-4b6a-8419-4779d5b78642"
-      ],
+      "authorIds": ["8d47b54e-956e-4b6a-8419-4779d5b78642"],
       "categoryIds": [],
       "editions": [
         {
@@ -8741,9 +8131,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1821"
-    ],
+    "authorCandidateKeys": ["author:1821"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8782,9 +8170,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "89404fbb-ce57-45c5-80d8-ff5ca97f19a3"
-      ],
+      "authorIds": ["89404fbb-ce57-45c5-80d8-ff5ca97f19a3"],
       "categoryIds": [],
       "editions": [
         {
@@ -8802,9 +8188,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1834"
-    ],
+    "authorCandidateKeys": ["author:1834"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8843,9 +8227,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "907cfcb1-8b3b-4fa5-8a2c-fad0ce97a3b8"
-      ],
+      "authorIds": ["907cfcb1-8b3b-4fa5-8a2c-fad0ce97a3b8"],
       "categoryIds": [],
       "editions": [
         {
@@ -8863,9 +8245,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1851"
-    ],
+    "authorCandidateKeys": ["author:1851"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8904,9 +8284,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "d65d33c2-d734-4aac-89f3-1ba0b651546b"
-      ],
+      "authorIds": ["d65d33c2-d734-4aac-89f3-1ba0b651546b"],
       "categoryIds": [],
       "editions": [
         {
@@ -8924,9 +8302,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1858"
-    ],
+    "authorCandidateKeys": ["author:1858"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -8965,9 +8341,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "66c4d1d2-5f87-4cf4-88da-64e1ecbd9029"
-      ],
+      "authorIds": ["66c4d1d2-5f87-4cf4-88da-64e1ecbd9029"],
       "categoryIds": [],
       "editions": [
         {
@@ -8985,9 +8359,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1863"
-    ],
+    "authorCandidateKeys": ["author:1863"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -9026,9 +8398,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "6d097bf8-3a30-4b16-891c-797657dfbf9c"
-      ],
+      "authorIds": ["6d097bf8-3a30-4b16-891c-797657dfbf9c"],
       "categoryIds": [],
       "editions": [
         {
@@ -9046,9 +8416,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1866"
-    ],
+    "authorCandidateKeys": ["author:1866"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -9087,9 +8455,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "13220ba3-1a6f-4aaa-82ad-93bb843b7523"
-      ],
+      "authorIds": ["13220ba3-1a6f-4aaa-82ad-93bb843b7523"],
       "categoryIds": [],
       "editions": [
         {
@@ -9107,9 +8473,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1881"
-    ],
+    "authorCandidateKeys": ["author:1881"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -9148,9 +8512,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "5952b8d7-00d4-4b45-8a9d-2e031780c415"
-      ],
+      "authorIds": ["5952b8d7-00d4-4b45-8a9d-2e031780c415"],
       "categoryIds": [],
       "editions": [
         {
@@ -9168,9 +8530,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1893"
-    ],
+    "authorCandidateKeys": ["author:1893"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -9209,9 +8569,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "4ffbc04e-1662-499b-8002-36996e587423"
-      ],
+      "authorIds": ["4ffbc04e-1662-499b-8002-36996e587423"],
       "categoryIds": [],
       "editions": [
         {
@@ -9229,9 +8587,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1902"
-    ],
+    "authorCandidateKeys": ["author:1902"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -9270,9 +8626,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "da348bc3-42c3-4e28-82fa-32da186b5edc"
-      ],
+      "authorIds": ["da348bc3-42c3-4e28-82fa-32da186b5edc"],
       "categoryIds": [],
       "editions": [
         {
@@ -9290,9 +8644,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1917"
-    ],
+    "authorCandidateKeys": ["author:1917"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -9331,9 +8683,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "d6156e74-4647-4044-8da6-8565bfaee2ff"
-      ],
+      "authorIds": ["d6156e74-4647-4044-8da6-8565bfaee2ff"],
       "categoryIds": [],
       "editions": [
         {
@@ -9351,9 +8701,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1932"
-    ],
+    "authorCandidateKeys": ["author:1932"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -9392,9 +8740,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "5fb4815b-7bd7-4d9e-8e76-a409ad4b1ab0"
-      ],
+      "authorIds": ["5fb4815b-7bd7-4d9e-8e76-a409ad4b1ab0"],
       "categoryIds": [],
       "editions": [
         {
@@ -9412,9 +8758,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1947"
-    ],
+    "authorCandidateKeys": ["author:1947"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -9453,9 +8797,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "b9c230bc-3819-4625-880d-fa34dfda21d3"
-      ],
+      "authorIds": ["b9c230bc-3819-4625-880d-fa34dfda21d3"],
       "categoryIds": [],
       "editions": [
         {
@@ -9473,9 +8815,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:1953"
-    ],
+    "authorCandidateKeys": ["author:1953"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],
@@ -9514,9 +8854,7 @@
       "metaTitle": null,
       "metaDescription": null,
       "canonicalUrl": null,
-      "authorIds": [
-        "18077494-4282-4430-8859-aae27b853ca0"
-      ],
+      "authorIds": ["18077494-4282-4430-8859-aae27b853ca0"],
       "categoryIds": [],
       "editions": [
         {
@@ -9534,9 +8872,7 @@
         }
       ]
     },
-    "authorCandidateKeys": [
-      "author:2089"
-    ],
+    "authorCandidateKeys": ["author:2089"],
     "pilotTargetId": null,
     "warnings": [],
     "blockingReasons": [],

@@ -4,142 +4,12 @@
   "planFingerprint": "23ae71c73d34619f9d7676823ab31b7c0ee62ef8b979a07dcefd0bb60f3fa309",
   "currentBatchIndex": 138,
   "completedBatches": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
-    28,
-    29,
-    30,
-    31,
-    32,
-    33,
-    34,
-    35,
-    36,
-    37,
-    38,
-    39,
-    40,
-    41,
-    42,
-    43,
-    44,
-    45,
-    46,
-    47,
-    48,
-    49,
-    50,
-    51,
-    52,
-    53,
-    54,
-    55,
-    56,
-    57,
-    58,
-    59,
-    60,
-    61,
-    62,
-    63,
-    64,
-    65,
-    66,
-    67,
-    68,
-    69,
-    70,
-    71,
-    72,
-    73,
-    74,
-    75,
-    76,
-    77,
-    78,
-    79,
-    80,
-    81,
-    82,
-    83,
-    84,
-    85,
-    86,
-    87,
-    88,
-    89,
-    90,
-    91,
-    92,
-    93,
-    94,
-    95,
-    96,
-    97,
-    98,
-    99,
-    100,
-    101,
-    102,
-    103,
-    104,
-    105,
-    106,
-    107,
-    108,
-    109,
-    110,
-    111,
-    112,
-    113,
-    114,
-    115,
-    116,
-    117,
-    118,
-    119,
-    120,
-    121,
-    122,
-    123,
-    124,
-    125,
-    126,
-    127,
-    128,
-    129,
-    130,
-    131,
-    132,
-    133,
-    134,
-    135,
-    136,
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
+    27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
+    51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74,
+    75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98,
+    99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117,
+    118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136,
     137
   ],
   "entries": [
@@ -537,9 +407,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:20.713Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/norberto-dominguez-jurado/",
         "sourceSlug": "norberto-dominguez-jurado",
@@ -564,9 +432,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:20.927Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/maria-dolores-castellon-perez/",
         "sourceSlug": "maria-dolores-castellon-perez",
@@ -591,9 +457,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:21.102Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/alonso-cruz-leon/",
         "sourceSlug": "alonso-cruz-leon",
@@ -693,9 +557,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:21.786Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/teodoro-rodriguez-martin/",
         "sourceSlug": "teodoro-rodriguez-martin",
@@ -745,9 +607,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:22.154Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/antonio-lopez-hurtado-zarate/",
         "sourceSlug": "antonio-lopez-hurtado-zarate",
@@ -797,9 +657,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:22.528Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/antonio-l-gomez-charlin/",
         "sourceSlug": "antonio-l-gomez-charlin",
@@ -877,9 +735,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:23.022Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/juan-antonio-valero-casado/",
         "sourceSlug": "juan-antonio-valero-casado",
@@ -932,9 +788,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:23.329Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/alejandro-gonzalez-garcia/",
         "sourceSlug": "alejandro-gonzalez-garcia",
@@ -1062,9 +916,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:24.201Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/ignacio-luis-de-orduna-puebla/",
         "sourceSlug": "ignacio-luis-de-orduna-puebla",
@@ -1189,9 +1041,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:25.089Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/carlos-jose-olmedo-batista/",
         "sourceSlug": "carlos-jose-olmedo-batista",
@@ -1216,9 +1066,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:25.232Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/gaspar-t-jimeno-diestro/",
         "sourceSlug": "gaspar-t-jimeno-diestro",
@@ -1268,9 +1116,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:25.617Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/angel-garcia-garcia-munoz-buru/",
         "sourceSlug": "angel-garcia-garcia-munoz-buru",
@@ -1295,9 +1141,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:25.763Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/juan-jose-velasco-sanchez-mayoral/",
         "sourceSlug": "juan-jose-velasco-sanchez-mayoral",
@@ -1475,9 +1319,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:26.918Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/jose-antonio-galante-perez/",
         "sourceSlug": "jose-antonio-galante-perez",
@@ -1552,9 +1394,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:27.419Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/diego-gomez-costa/",
         "sourceSlug": "diego-gomez-costa",
@@ -1629,9 +1469,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:27.914Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/antonio-valdeavero-ponce/",
         "sourceSlug": "antonio-valdeavero-ponce",
@@ -1656,9 +1494,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:28.053Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/manuel-gomez-rosas/",
         "sourceSlug": "manuel-gomez-rosas",
@@ -1933,9 +1769,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:29.867Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/jose-vte-carmona-simarro/",
         "sourceSlug": "jose-vte-carmona-simarro",
@@ -2038,9 +1872,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:30.502Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/julio-sanchez-alonso/",
         "sourceSlug": "julio-sanchez-alonso",
@@ -2265,9 +2097,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:32.075Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/alfredo-manrique-bravo/",
         "sourceSlug": "alfredo-manrique-bravo",
@@ -2448,9 +2278,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:33.170Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/guillermo-martinez-schrem/",
         "sourceSlug": "guillermo-martinez-schrem",
@@ -2500,9 +2328,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:33.539Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/francisco-marin-vargas/",
         "sourceSlug": "francisco-marin-vargas",
@@ -2602,9 +2428,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:34.200Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/norberto-dominguez-jurado-y-maria-isabel-martin-aranda/",
         "sourceSlug": "norberto-dominguez-jurado-y-maria-isabel-martin-aranda",
@@ -2732,9 +2556,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:35.079Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/patxi-oyaga/",
         "sourceSlug": "patxi-oyaga",
@@ -2843,9 +2665,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:35.719Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/elga-reategui/",
         "sourceSlug": "elga-reategui",
@@ -2979,9 +2799,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:36.625Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/jose-vte-carmona-simarro-editorial_la_rueca/",
         "sourceSlug": "jose-vte-carmona-simarro-editorial_la_rueca",
@@ -3034,9 +2852,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:36.932Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/minerva-buiza/",
         "sourceSlug": "minerva-buiza",
@@ -3432,9 +3248,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:39.473Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/sara-sanchez-prieto/",
         "sourceSlug": "sara-sanchez-prieto",
@@ -4285,9 +4099,7 @@
       "checkpoint": "author_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:44.875Z",
-      "warnings": [
-        "Autor en duplicateGroup; se preserva separado para futura fusion."
-      ],
+      "warnings": ["Autor en duplicateGroup; se preserva separado para futura fusion."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/manuel-ondo-ndong/",
         "sourceSlug": "manuel-ondo-ndong",
@@ -5119,9 +4931,7 @@
       "checkpoint": "book_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:51.033Z",
-      "warnings": [
-        "tf_video no esta modelado; se conserva en sourceMetadata."
-      ],
+      "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/luis-gausach/",
         "sourceSlug": "luis-gausach",
@@ -5178,9 +4988,7 @@
       "checkpoint": "book_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:52.170Z",
-      "warnings": [
-        "tf_video no esta modelado; se conserva en sourceMetadata."
-      ],
+      "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/veronica-gomez-acebo/",
         "sourceSlug": "veronica-gomez-acebo",
@@ -5206,9 +5014,7 @@
       "checkpoint": "book_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:52.965Z",
-      "warnings": [
-        "tf_video no esta modelado; se conserva en sourceMetadata."
-      ],
+      "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/jaime-caba/",
         "sourceSlug": "jaime-caba",
@@ -5234,9 +5040,7 @@
       "checkpoint": "book_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:53.716Z",
-      "warnings": [
-        "tf_video no esta modelado; se conserva en sourceMetadata."
-      ],
+      "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/carlos-rios-camacho/",
         "sourceSlug": "carlos-rios-camacho",
@@ -5548,9 +5352,7 @@
       "checkpoint": "book_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:02.560Z",
-      "warnings": [
-        "tf_video no esta modelado; se conserva en sourceMetadata."
-      ],
+      "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/jchamcri/",
         "sourceSlug": "jchamcri",
@@ -5576,9 +5378,7 @@
       "checkpoint": "book_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:03.329Z",
-      "warnings": [
-        "tf_video no esta modelado; se conserva en sourceMetadata."
-      ],
+      "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/marta-susana-pecaric/",
         "sourceSlug": "marta-susana-pecaric",
@@ -5760,9 +5560,7 @@
       "checkpoint": "book_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:08.694Z",
-      "warnings": [
-        "tf_video no esta modelado; se conserva en sourceMetadata."
-      ],
+      "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/teodoro-rodriguez-martin-2/",
         "sourceSlug": "teodoro-rodriguez-martin-2",
@@ -5814,9 +5612,7 @@
       "checkpoint": "book_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:10.207Z",
-      "warnings": [
-        "tf_video no esta modelado; se conserva en sourceMetadata."
-      ],
+      "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/alejandro-gonzalez-garcia-2/",
         "sourceSlug": "alejandro-gonzalez-garcia-2",
@@ -5920,9 +5716,7 @@
       "checkpoint": "book_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:13.141Z",
-      "warnings": [
-        "tf_video no esta modelado; se conserva en sourceMetadata."
-      ],
+      "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/ignacio-luis-de-orduna-puebla/",
         "sourceSlug": "ignacio-luis-de-orduna-puebla",
@@ -5948,9 +5742,7 @@
       "checkpoint": "book_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:13.956Z",
-      "warnings": [
-        "tf_video no esta modelado; se conserva en sourceMetadata."
-      ],
+      "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/richard-pazos/",
         "sourceSlug": "richard-pazos",
@@ -6002,9 +5794,7 @@
       "checkpoint": "book_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:15.453Z",
-      "warnings": [
-        "tf_video no esta modelado; se conserva en sourceMetadata."
-      ],
+      "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/tamara-chenel/",
         "sourceSlug": "tamara-chenel",
@@ -6030,9 +5820,7 @@
       "checkpoint": "book_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:16.224Z",
-      "warnings": [
-        "tf_video no esta modelado; se conserva en sourceMetadata."
-      ],
+      "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/carlos-jose-olmedo-batista-2/",
         "sourceSlug": "carlos-jose-olmedo-batista-2",
@@ -6084,9 +5872,7 @@
       "checkpoint": "book_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:17.759Z",
-      "warnings": [
-        "tf_video no esta modelado; se conserva en sourceMetadata."
-      ],
+      "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/gregorio-munoz-gomez/",
         "sourceSlug": "gregorio-munoz-gomez",
@@ -6242,9 +6028,7 @@
       "checkpoint": "book_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:22.357Z",
-      "warnings": [
-        "tf_video no esta modelado; se conserva en sourceMetadata."
-      ],
+      "warnings": ["tf_video no esta modelado; se conserva en sourceMetadata."],
       "sourceMetadata": {
         "oldUrl": "https://editoriallarueca.com/autor/ana-cordoba-del-campo-2/",
         "sourceSlug": "ana-cordoba-del-campo-2",
@@ -11567,9 +11351,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:51.034Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11604,9 +11386,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:52.170Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11621,9 +11401,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:52.965Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11638,9 +11416,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:53.716Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11675,9 +11451,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:54.941Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11692,9 +11466,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:55.669Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11709,9 +11481,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:56.401Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11726,9 +11496,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:57.187Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11743,9 +11511,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:57.927Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11760,9 +11526,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:58.734Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11777,9 +11541,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:22:59.461Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11794,9 +11556,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:00.246Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11811,9 +11571,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:01.010Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11828,9 +11586,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:01.821Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11845,9 +11601,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:02.560Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11862,9 +11616,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:03.330Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11879,9 +11631,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:04.072Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11896,9 +11646,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:04.775Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11913,9 +11661,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:05.590Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11930,9 +11676,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:06.369Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11947,9 +11691,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:07.186Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11964,9 +11706,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:07.899Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11981,9 +11721,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:08.694Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -11998,9 +11736,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:09.401Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12015,9 +11751,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:10.207Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12032,9 +11766,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:10.928Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12049,9 +11781,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:11.719Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12066,9 +11796,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:12.432Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12083,9 +11811,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:13.142Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12100,9 +11826,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:13.956Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12117,9 +11841,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:14.676Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12134,9 +11856,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:15.453Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12151,9 +11871,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:16.224Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12168,9 +11886,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:17.023Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12185,9 +11901,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:17.759Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12202,9 +11916,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:18.535Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12219,9 +11931,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:19.246Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12236,9 +11946,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:19.985Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12253,9 +11961,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:20.781Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12270,9 +11976,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:21.531Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12287,9 +11991,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:22.357Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12304,9 +12006,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:23.064Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12321,9 +12021,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:23.840Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12338,9 +12036,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:24.541Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12355,9 +12051,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:25.350Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12372,9 +12066,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:26.111Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12389,9 +12081,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:26.830Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12406,9 +12096,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:27.599Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12423,9 +12111,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:28.319Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12440,9 +12126,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:29.140Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12457,9 +12141,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:29.853Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12474,9 +12156,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:30.624Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12491,9 +12171,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:31.384Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12508,9 +12186,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:32.211Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12525,9 +12201,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:32.935Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12542,9 +12216,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:33.643Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12559,9 +12231,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:34.455Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12576,9 +12246,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:35.180Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12593,9 +12261,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:35.961Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12610,9 +12276,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:36.746Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12627,9 +12291,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:37.534Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12644,9 +12306,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:38.237Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12661,9 +12321,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:39.042Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12678,9 +12336,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:39.749Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12695,9 +12351,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:40.554Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12712,9 +12366,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:41.292Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12729,9 +12381,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:42.030Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12746,9 +12396,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:42.810Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12763,9 +12411,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:43.559Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12780,9 +12426,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:44.413Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12797,9 +12441,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:45.118Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12814,9 +12456,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:45.940Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12831,9 +12471,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:46.694Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12848,9 +12486,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:47.524Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12865,9 +12501,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:48.296Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12882,9 +12516,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:49.088Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12899,9 +12531,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:49.834Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12916,9 +12546,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:50.606Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12933,9 +12561,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:51.362Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12950,9 +12576,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:52.241Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12967,9 +12591,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:52.947Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -12984,9 +12606,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:53.720Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13001,9 +12621,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:54.465Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13018,9 +12636,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:55.234Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13035,9 +12651,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:55.988Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13052,9 +12666,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:56.867Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13069,9 +12681,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:57.577Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13086,9 +12696,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:58.284Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13103,9 +12711,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:59.057Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13120,9 +12726,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:23:59.768Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13137,9 +12741,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:00.542Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13154,9 +12756,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:01.281Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13171,9 +12771,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:02.111Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13188,9 +12786,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:02.821Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13205,9 +12801,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:03.624Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13222,9 +12816,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:04.331Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13239,9 +12831,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:05.050Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13256,9 +12846,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:05.892Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13273,9 +12861,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:06.614Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13290,9 +12876,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:07.446Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13307,9 +12891,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:08.155Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13324,9 +12906,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:08.939Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13341,9 +12921,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:09.663Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13358,9 +12936,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:10.469Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13375,9 +12951,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:11.224Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13392,9 +12966,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:12.041Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13409,9 +12981,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:12.750Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13446,9 +13016,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:13.496Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13463,9 +13031,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:14.321Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13480,9 +13046,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:15.031Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13497,9 +13061,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:15.841Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13514,9 +13076,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:16.589Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13531,9 +13091,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:17.407Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13548,9 +13106,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:18.147Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13565,9 +13121,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:18.918Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13582,9 +13136,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:19.656Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13599,9 +13151,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:20.432Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13616,9 +13166,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:21.180Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13633,9 +13181,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:22.036Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13650,9 +13196,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:22.779Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13667,9 +13211,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:23.548Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13684,9 +13226,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:24.253Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13701,9 +13241,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:24.964Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13718,9 +13256,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:25.764Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13735,9 +13271,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:26.508Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13752,9 +13286,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:27.305Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13769,9 +13301,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:28.044Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13786,9 +13316,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:28.822Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13803,9 +13331,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:29.562Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13820,9 +13346,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:30.364Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13837,9 +13361,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:31.079Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13854,9 +13376,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:31.936Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13871,9 +13391,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:32.702Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13888,9 +13406,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:33.509Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13905,9 +13421,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:34.214Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13922,9 +13436,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:34.923Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13939,9 +13451,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:35.709Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13956,9 +13466,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:36.459Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13973,9 +13481,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:37.299Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -13990,9 +13496,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:38.034Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -14007,9 +13511,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:38.841Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -14024,9 +13526,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:39.552Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -14041,9 +13541,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:40.325Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -14058,9 +13556,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:41.066Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -14075,9 +13571,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:41.899Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -14092,9 +13586,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:42.636Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -14109,9 +13601,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:43.340Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -14126,9 +13616,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:44.118Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -14143,9 +13631,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:44.854Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -14160,9 +13646,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:45.661Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -14177,9 +13661,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:46.405Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
@@ -14194,9 +13676,7 @@
       "checkpoint": "edition_created",
       "createdAt": "2026-07-23T20:21:53.810Z",
       "updatedAt": "2026-07-23T20:24:47.231Z",
-      "warnings": [
-        "Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."
-      ],
+      "warnings": ["Edicion inferida; no se inventan ISBN, precio, paginas ni fecha."],
       "sourceMetadata": {
         "inferredEdition": true
       },
