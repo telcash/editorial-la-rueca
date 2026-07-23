@@ -1,0 +1,176 @@
+[
+  {
+    "candidateKey": "book:requiem por un escritor desconocido",
+    "sourceWpPostId": "589",
+    "input": {
+      "title": "Réquiem por un escritor desconocido",
+      "subtitle": null,
+      "slug": "requiem-por-un-escritor-desconocido",
+      "description": "<p><strong><em>Réquiem por un escritor desconocido, </em></strong>es un libro que transcurre en tres planos temporales; el pasado, el futuro y el presente. La primera parte del libro titulada <em>El descubrimiento de la soledad</em>, narra la infancia, la adolescencia y el comienzo de la madurez, con el telón de fondo del deporte de élite, la formación como escritor autodidacta, el sexo y los primeros desengaños vitales. La segunda parte titulada<em> Las heridas del tiempo, </em>narra la vejez del protagonista, cuya obra ha caído en el olvido, excepto uno de sus libros, que tiene un éxito inesperado. Espoleado por una joven descarada y talentosa, el viejo escritor acaba entregando su diario de la pandemia, en donde narra su particular confinamiento y sus reflexiones sobre la vida y la literatura, en medio del caos de muertos y contagiados, con una prosa contaminada por la lectura y la sombra siempre sospechosa de ser un escritor desconocido.</p>",
+      "excerpt": null,
+      "coverUrl": null,
+      "originalPublicationDate": null,
+      "language": "es",
+      "isFeatured": false,
+      "isPublished": false,
+      "sortOrder": 0,
+      "metaTitle": null,
+      "metaDescription": null,
+      "canonicalUrl": null,
+      "authorCandidateKeys": ["author:589"],
+      "categoryIds": [],
+      "editions": [
+        {
+          "format": "paperback",
+          "editionLabel": "Datos pendientes de revisión",
+          "publicationDate": null,
+          "isbn10": null,
+          "isbn13": null,
+          "price": null,
+          "currency": "EUR",
+          "pages": null,
+          "isAvailable": false,
+          "isFeatured": false,
+          "sortOrder": 0
+        }
+      ]
+    },
+    "warnings": [],
+    "requiresManualMergeDecision": false,
+    "sourceMetadata": {
+      "sourceOldUrl": "https://editoriallarueca.com/autor/antonio-lorenzo-gomez-charlin/",
+      "rawReview": "<p><strong><em>Réquiem por un escritor desconocido, </em></strong>es un libro que transcurre en tres planos temporales; el pasado, el futuro y el presente. La primera parte del libro titulada <em>El descubrimiento de la soledad</em>, narra la infancia, la adolescencia y el comienzo de la madurez, con el telón de fondo del deporte de élite, la formación como escritor autodidacta, el sexo y los primeros desengaños vitales. La segunda parte titulada<em> Las heridas del tiempo, </em>narra la vejez del protagonista, cuya obra ha caído en el olvido, excepto uno de sus libros, que tiene un éxito inesperado. Espoleado por una joven descarada y talentosa, el viejo escritor acaba entregando su diario de la pandemia, en donde narra su particular confinamiento y sus reflexiones sobre la vida y la literatura, en medio del caos de muertos y contagiados, con una prosa contaminada por la lectura y la sombra siempre sospechosa de ser un escritor desconocido.</p>",
+      "plainTextPreview": "Réquiem por un escritor desconocido, es un libro que transcurre en tres planos temporales; el pasado, el futuro y el presente. La primera parte del libro titulada El descubrimiento de la soledad , narra la infancia, la adolescencia y el co…",
+      "videoId": null,
+      "duplicateGroupId": null,
+      "sourceAuthorTitle": "Antonio Lorenzo Gómez Charlín",
+      "sourceAuthorSlug": "antonio-lorenzo-gomez-charlin"
+    },
+    "image": {
+      "candidateKey": "book:requiem por un escritor desconocido",
+      "entityType": "book",
+      "sourceWpPostId": "589",
+      "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoCharlin.jpg",
+      "role": "ambiguous",
+      "status": "skipped",
+      "reason": "_thumbnail_id legacy parece foto de autor por filename/titulo; no se clasifica como portada segura."
+    },
+    "status": "planned"
+  },
+  {
+    "candidateKey": "book:cruce de pasos",
+    "sourceWpPostId": "619",
+    "input": {
+      "title": "Cruce de Pasos",
+      "subtitle": null,
+      "slug": "cruce-de-pasos",
+      "description": "<p>« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos o vemos en la televisión.<br />Ambos transitamos el mismo espacio hacia el refugio errático donde habita nuestro yo más íntimo. Cada uno a su paso.<br />Ana hace una poesía muy fresca, tiene prisa para que lo que siente no se pierda. En su fragilidad aparente oculta mucha fuerza: versos recién hechos que huelen a ella. Ángel anda despacio entre la incertidumbre, fiel a sí mismo en cada letra, como la sangre que lo llena. A pesar de su diferencia de edad, quedaron cruzados en este bonito camino de las letras, tienen las mismas raíces y eso se nota. Pasa, esta es tu casa, saboréalo»</p>",
+      "excerpt": null,
+      "coverUrl": null,
+      "originalPublicationDate": null,
+      "language": "es",
+      "isFeatured": false,
+      "isPublished": false,
+      "sortOrder": 0,
+      "metaTitle": null,
+      "metaDescription": null,
+      "canonicalUrl": null,
+      "authorCandidateKeys": ["author:563", "author:619"],
+      "categoryIds": [],
+      "editions": [
+        {
+          "format": "paperback",
+          "editionLabel": "Datos pendientes de revisión",
+          "publicationDate": null,
+          "isbn10": null,
+          "isbn13": null,
+          "price": null,
+          "currency": "EUR",
+          "pages": null,
+          "isAvailable": false,
+          "isFeatured": false,
+          "sortOrder": 0
+        }
+      ]
+    },
+    "warnings": [],
+    "requiresManualMergeDecision": false,
+    "sourceMetadata": {
+      "sourceOldUrl": "https://editoriallarueca.com/autor/angel-garcia-munoz/",
+      "rawReview": "<p>« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos o vemos en la televisión.<br />Ambos transitamos el mismo espacio hacia el refugio errático donde habita nuestro yo más íntimo. Cada uno a su paso.<br />Ana hace una poesía muy fresca, tiene prisa para que lo que siente no se pierda. En su fragilidad aparente oculta mucha fuerza: versos recién hechos que huelen a ella. Ángel anda despacio entre la incertidumbre, fiel a sí mismo en cada letra, como la sangre que lo llena. A pesar de su diferencia de edad, quedaron cruzados en este bonito camino de las letras, tienen las mismas raíces y eso se nota. Pasa, esta es tu casa, saboréalo»</p>",
+      "plainTextPreview": "« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos…",
+      "videoId": "BIkB-8hJR8w",
+      "duplicateGroupId": "duplicate-book:cruce de pasos",
+      "sourceAuthorTitle": "Ángel García Muñoz",
+      "sourceAuthorSlug": "angel-garcia-munoz"
+    },
+    "image": {
+      "candidateKey": "book:cruce de pasos",
+      "entityType": "book",
+      "sourceWpPostId": "619",
+      "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAngel.jpg",
+      "role": "ambiguous",
+      "status": "skipped",
+      "reason": "_thumbnail_id legacy parece foto de autor por filename/titulo; no se clasifica como portada segura."
+    },
+    "status": "planned"
+  },
+  {
+    "candidateKey": "book:el valle de cristal",
+    "sourceWpPostId": "556",
+    "input": {
+      "title": "El Valle de Cristal",
+      "subtitle": null,
+      "slug": "el-valle-de-cristal",
+      "description": "<p>Una nueva investigación se abre en un valle donde la gente tiene mucho que decir y muy pocas ganas de hablar, así que un inspector con métodos poco ortodoxos llega para hurgar en la reciente historia del asesinato de una menor y no solo consigue alterar a sus habitantes sino que también remueve las viejas leyendas que circulan por el valle.</p>",
+      "excerpt": null,
+      "coverUrl": null,
+      "originalPublicationDate": null,
+      "language": "es",
+      "isFeatured": false,
+      "isPublished": false,
+      "sortOrder": 0,
+      "metaTitle": null,
+      "metaDescription": null,
+      "canonicalUrl": null,
+      "authorCandidateKeys": ["author:556"],
+      "categoryIds": [],
+      "editions": [
+        {
+          "format": "paperback",
+          "editionLabel": "Datos pendientes de revisión",
+          "publicationDate": null,
+          "isbn10": null,
+          "isbn13": null,
+          "price": null,
+          "currency": "EUR",
+          "pages": null,
+          "isAvailable": false,
+          "isFeatured": false,
+          "sortOrder": 0
+        }
+      ]
+    },
+    "warnings": [],
+    "requiresManualMergeDecision": false,
+    "sourceMetadata": {
+      "sourceOldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem/",
+      "rawReview": "<p>Una nueva investigación se abre en un valle donde la gente tiene mucho que decir y muy pocas ganas de hablar, así que un inspector con métodos poco ortodoxos llega para hurgar en la reciente historia del asesinato de una menor y no solo consigue alterar a sus habitantes sino que también remueve las viejas leyendas que circulan por el valle.</p>",
+      "plainTextPreview": "Una nueva investigación se abre en un valle donde la gente tiene mucho que decir y muy pocas ganas de hablar, así que un inspector con métodos poco ortodoxos llega para hurgar en la reciente historia del asesinato de una menor y no solo co…",
+      "videoId": "jBsMc6ViAYA",
+      "duplicateGroupId": null,
+      "sourceAuthorTitle": "Guillermo M. Schrem",
+      "sourceAuthorSlug": "guillermo-m-schrem"
+    },
+    "image": {
+      "candidateKey": "book:el valle de cristal",
+      "entityType": "book",
+      "sourceWpPostId": "556",
+      "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg",
+      "role": "ambiguous",
+      "status": "skipped",
+      "reason": "_thumbnail_id legacy sin evidencias suficientes de portada; requiere revision manual."
+    },
+    "status": "planned"
+  }
+]

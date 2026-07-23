@@ -64,6 +64,18 @@ describe('author image service', () => {
     });
   });
 
+  it('generates a UUID path without losing the Crypto receiver context', async () => {
+    const serviceWithRuntimeUuid = createAuthorImageService(storageMock.storage);
+
+    const result = await serviceWithRuntimeUuid.uploadAuthorImage(
+      authorId,
+      createImageFile('image/jpeg'),
+    );
+
+    expect(result.path).toMatch(new RegExp(`^${authorId}/[0-9a-f-]{36}\\.jpg$`, 'i'));
+    expect(storageMock.bucket.upload).toHaveBeenCalledTimes(1);
+  });
+
   it('accepts PNG and WebP images', async () => {
     await service.uploadAuthorImage(authorId, createImageFile('image/png'));
     await service.uploadAuthorImage(authorId, createImageFile('image/webp'));

@@ -1,0 +1,104 @@
+[
+  {
+    "sourceField": "post_title autor",
+    "targetModel": "authors.name",
+    "classification": "DIRECT_MAP",
+    "notes": "Requiere deduplicación manual previa."
+  },
+  {
+    "sourceField": "post_name autor",
+    "targetModel": "authors.slug",
+    "classification": "DIRECT_MAP",
+    "notes": "Validar slugs vacíos y sufijos -2/-3."
+  },
+  {
+    "sourceField": "tf_libro",
+    "targetModel": "books.title",
+    "classification": "DERIVED_MAP",
+    "notes": "En legacy se deriva desde CPT autor, no desde CPT libro."
+  },
+  {
+    "sourceField": "ta_resena",
+    "targetModel": "books.description / authors.biography",
+    "classification": "MANUAL_REVIEW",
+    "notes": "Uso histórico ambiguo; conservar raw HTML."
+  },
+  {
+    "sourceField": "bio_cf",
+    "targetModel": "authors.biography",
+    "classification": "MANUAL_REVIEW",
+    "notes": "Puede complementar biografía."
+  },
+  {
+    "sourceField": "_thumbnail_id",
+    "targetModel": "authors.photo_url / books.cover_url",
+    "classification": "MANUAL_REVIEW",
+    "notes": "Rol de imagen ambiguo en legacy."
+  },
+  {
+    "sourceField": "imagen_destacada_2",
+    "targetModel": "authors.photo_url / books.cover_url",
+    "classification": "MANUAL_REVIEW",
+    "notes": "Resolver contra attachments y revisar patrón."
+  },
+  {
+    "sourceField": "tf_video",
+    "targetModel": "",
+    "classification": "NOT_CURRENTLY_MODELED",
+    "notes": "No existe campo de video en el modelo actual."
+  },
+  {
+    "sourceField": "tf_isbn",
+    "targetModel": "book_editions.isbn13 / isbn10",
+    "classification": "DIRECT_MAP",
+    "notes": "Disponible en ACF moderno si existen libros reales."
+  },
+  {
+    "sourceField": "tf_pvp",
+    "targetModel": "book_editions.price",
+    "classification": "DIRECT_MAP",
+    "notes": "Normalizar moneda/decimal."
+  },
+  {
+    "sourceField": "tf_n_paginas",
+    "targetModel": "book_editions.pages",
+    "classification": "DIRECT_MAP",
+    "notes": "Disponible en ACF moderno."
+  },
+  {
+    "sourceField": "tf_encuadernacion",
+    "targetModel": "book_editions.format",
+    "classification": "DERIVED_MAP",
+    "notes": "Mapeo a enum de formato requerido."
+  },
+  {
+    "sourceField": "tf_alto",
+    "targetModel": "",
+    "classification": "NOT_CURRENTLY_MODELED",
+    "notes": "Dimensiones físicas no modeladas."
+  },
+  {
+    "sourceField": "tf_ancho",
+    "targetModel": "",
+    "classification": "NOT_CURRENTLY_MODELED",
+    "notes": "Dimensiones físicas no modeladas."
+  },
+  {
+    "sourceField": "tf_peso",
+    "targetModel": "",
+    "classification": "NOT_CURRENTLY_MODELED",
+    "notes": "Peso físico no modelado."
+  },
+  {
+    "sourceField": "tf_link_compra_1",
+    "targetModel": "",
+    "classification": "NOT_CURRENTLY_MODELED",
+    "notes": "Enlace de compra no modelado."
+  },
+  {
+    "sourceField": "_edit_lock",
+    "targetModel": "",
+    "classification": "IGNORE_SYSTEM",
+    "notes": "Meta interno de WordPress."
+  }
+]

@@ -1,0 +1,126 @@
+{
+  "generatedAt": "2026-07-23T16:20:09.026Z",
+  "dryRun": false,
+  "summary": {
+    "clearWrongBookCover": 3,
+    "setAuthorPhoto": 6,
+    "manualReview": 2,
+    "applied": 9,
+    "skipped": 0,
+    "partial": 0,
+    "failed": 0,
+    "manualActionRequired": 2
+  },
+  "entries": [
+    {
+      "oldUrl": "https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/book-covers/11f50eec-ca48-47c5-8d61-38bd573554ba/3f869946-b823-4684-8975-f921966a86a2.jpg",
+      "newUrl": null,
+      "storagePath": "11f50eec-ca48-47c5-8d61-38bd573554ba/3f869946-b823-4684-8975-f921966a86a2.jpg",
+      "warnings": [],
+      "candidateKey": "book:requiem por un escritor desconocido",
+      "action": "clear_wrong_book_cover",
+      "targetId": "11f50eec-ca48-47c5-8d61-38bd573554ba",
+      "status": "applied"
+    },
+    {
+      "oldUrl": "https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/book-covers/9dc918df-8c99-473f-90be-a672fbc74803/87f9e567-d57b-4a09-bf1d-7efe6c7a7174.jpg",
+      "newUrl": null,
+      "storagePath": "9dc918df-8c99-473f-90be-a672fbc74803/87f9e567-d57b-4a09-bf1d-7efe6c7a7174.jpg",
+      "warnings": [],
+      "candidateKey": "book:cruce de pasos",
+      "action": "clear_wrong_book_cover",
+      "targetId": "9dc918df-8c99-473f-90be-a672fbc74803",
+      "status": "applied"
+    },
+    {
+      "oldUrl": "https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/book-covers/38f4596b-3c42-42cb-b453-a02834e050c7/97a79e7d-6ad3-40da-99c5-0a8aa7993d26.jpg",
+      "newUrl": null,
+      "storagePath": "38f4596b-3c42-42cb-b453-a02834e050c7/97a79e7d-6ad3-40da-99c5-0a8aa7993d26.jpg",
+      "warnings": [],
+      "candidateKey": "book:el valle de cristal",
+      "action": "clear_wrong_book_cover",
+      "targetId": "38f4596b-3c42-42cb-b453-a02834e050c7",
+      "status": "applied"
+    },
+    {
+      "oldUrl": null,
+      "newUrl": "https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/ddc02801-7185-4902-a353-304247dfe612/167e49fc-c38b-4d39-8e5b-2085364d6bbd.jpg",
+      "storagePath": "ddc02801-7185-4902-a353-304247dfe612/167e49fc-c38b-4d39-8e5b-2085364d6bbd.jpg",
+      "warnings": [],
+      "candidateKey": "author:563",
+      "action": "set_author_photo",
+      "targetId": "ddc02801-7185-4902-a353-304247dfe612",
+      "status": "applied"
+    },
+    {
+      "oldUrl": null,
+      "newUrl": "https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/786db0b7-d2f5-4186-982c-e8a4bb54c778/2138b3ce-d1ec-4cb6-b740-8d8cb8efe8fb.jpg",
+      "storagePath": "786db0b7-d2f5-4186-982c-e8a4bb54c778/2138b3ce-d1ec-4cb6-b740-8d8cb8efe8fb.jpg",
+      "warnings": [],
+      "candidateKey": "author:589",
+      "action": "set_author_photo",
+      "targetId": "786db0b7-d2f5-4186-982c-e8a4bb54c778",
+      "status": "applied"
+    },
+    {
+      "oldUrl": null,
+      "newUrl": "https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/35ce3606-59f1-493a-bd54-169c33abbee3/24703b9d-b76c-4672-8a74-675c41fa08d2.jpg",
+      "storagePath": "35ce3606-59f1-493a-bd54-169c33abbee3/24703b9d-b76c-4672-8a74-675c41fa08d2.jpg",
+      "warnings": [],
+      "candidateKey": "author:619",
+      "action": "set_author_photo",
+      "targetId": "35ce3606-59f1-493a-bd54-169c33abbee3",
+      "status": "applied"
+    },
+    {
+      "oldUrl": null,
+      "newUrl": "https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/9dcd55de-ff32-4331-93e2-ded0979c905c/54e8cb1e-a8b3-4be7-ae26-4307685e7983.jpg",
+      "storagePath": "9dcd55de-ff32-4331-93e2-ded0979c905c/54e8cb1e-a8b3-4be7-ae26-4307685e7983.jpg",
+      "warnings": [],
+      "candidateKey": "author:990",
+      "action": "set_author_photo",
+      "targetId": "9dcd55de-ff32-4331-93e2-ded0979c905c",
+      "status": "applied"
+    },
+    {
+      "oldUrl": null,
+      "newUrl": "https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/e290a87d-da53-46fb-be45-a4b89e8c9502/cbed2392-c258-4c8c-b846-aae41b7e219d.jpg",
+      "storagePath": "e290a87d-da53-46fb-be45-a4b89e8c9502/cbed2392-c258-4c8c-b846-aae41b7e219d.jpg",
+      "warnings": [],
+      "candidateKey": "author:1108",
+      "action": "set_author_photo",
+      "targetId": "e290a87d-da53-46fb-be45-a4b89e8c9502",
+      "status": "applied"
+    },
+    {
+      "oldUrl": null,
+      "newUrl": "https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/41be7a29-44d6-4f30-9508-4367a489f8e7/124ef539-3643-4a02-9c77-52e57325ec8f.jpg",
+      "storagePath": "41be7a29-44d6-4f30-9508-4367a489f8e7/124ef539-3643-4a02-9c77-52e57325ec8f.jpg",
+      "warnings": [],
+      "candidateKey": "author:1712",
+      "action": "set_author_photo",
+      "targetId": "41be7a29-44d6-4f30-9508-4367a489f8e7",
+      "status": "applied"
+    },
+    {
+      "oldUrl": null,
+      "newUrl": null,
+      "storagePath": null,
+      "warnings": ["Manual review requested by decisions file."],
+      "candidateKey": "author:556",
+      "action": "manual_review",
+      "targetId": "86d71b66-740f-4712-b87e-7a61e05acc38",
+      "status": "manual_action_required"
+    },
+    {
+      "oldUrl": null,
+      "newUrl": null,
+      "storagePath": null,
+      "warnings": ["Manual review requested by decisions file."],
+      "candidateKey": "author:571",
+      "action": "manual_review",
+      "targetId": "8c04642d-540d-46a4-ab03-5d3e1f029ca3",
+      "status": "manual_action_required"
+    }
+  ]
+}

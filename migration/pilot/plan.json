@@ -1,0 +1,1366 @@
+{
+  "generatedAt": "2026-07-23T16:27:06.557Z",
+  "mode": "dry-run",
+  "authors": [
+    {
+      "candidateKey": "author:571",
+      "sourceWpPostId": "571",
+      "input": {
+        "name": "Antoñita la Fantástica",
+        "slug": "antonita-la-fantastica",
+        "shortBio": null,
+        "biography": "<p><span style=\"font-weight: 400;\">Presentación del libro </span></p>\r\n<p><span style=\"font-weight: 400;\">Desde Barcelona con Amor.</span></p>\r\n<p><span style=\"font-weight: 400;\">Antes de seguir, muchas gracias por el interés de leer, mis relatos que se podrían calificar como “delirios cervantinos” o  divertimentos literarios.</span></p>\r\n<p><span style=\"font-weight: 400;\"> Yo me defino como una escritora más bien “casual y de cercanías”, por lo tanto el evento de presentar mi libro, se lo dejo para los genios de la literatura, como Almudena Grandes o Eduardo  Mendoza.</span></p>\r\n<p><span style=\"font-weight: 400;\">El título “Desde Barcelona con Amor” es un poco la consecuencia, del aburrimiento de estar continuamente escuchando noticias negativas sobre Barcelona.</span></p>\r\n<p><span style=\"font-weight: 400;\">Escribo bajo seudónimo, porque mi nombre real no es nada glamuroso, y me sirve de nexo para conectarme con los diferentes protagonistas de mis relatos, así pues, yo siempre aparezco, de alguna forma, dentro de mis historias, aunque sea fugazmente.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-weight: 400;\">Me inspira “La Cubana”, compañía teatral.</span></p>\r\n<p><span style=\"font-weight: 400;\">Esa locura de que los actores, actrices interactúen con el público, que los espectadores  formen parte de la obra me fascina, me parece una genialidad, esa capacidad que tienen para inventar y desarrollar otras formas de hacer teatro, de representar un musical,  es maravillosamente admirable.</span></p>\r\n<p><span style=\"font-weight: 400;\">Esa frescura y espontaneidad con la que se mueven los actores y actrices sobre el escenario o por el patio de butacas, qué no sabes bien si estás asistiendo a un ensayo  o a la primera representación, es de una sencillez extraordinaria, y da igual que vayas una vez, que lo hagas seis, siempre es la misma sensación.</span></p>\r\n<p><span style=\"font-weight: 400;\">¿¡Es un ensayo o la primera representación!?</span></p>\r\n<p><span style=\"font-weight: 400;\">Ese es el dinamismo  del cual a mí me gustaría impregnar a mis personajes, todos están en mi cabeza, por lo tanto todos forman parte del relato incluida la voz en off.</span></p>\r\n<p><span style=\"font-weight: 400;\">La película La Rosa Púrpura del Cairo, tiene este giro de guión, donde un actor sale de la pantalla del cine para hablar con una espectadora.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-weight: 400;\">Resumiendo mucho, yo “hago una caricatura de la huella emocional -de la ingenuidad- de mis personajes”</span></p>\r\n<p><span style=\"font-weight: 400;\">Normalmente son los padres, las madres quienes  leen a los niños antes de ir a dormir. Este libro está pensado, al revés, para que sean las niñas o los niños  quienes se lo lean a ellos, o a otros niños, o a sus abuelos. De modo que está escrito para leerlo en voz alta, para ser escuchado. La tonalidad, el énfasis, varía si leemos de viva voz o solo para nosotros. </span></p>\r\n<p><span style=\"font-weight: 400;\">Por supuesto, cada cual que lo lea como más le guste, pero que lo lea.</span></p>\r\n<p><span style=\"font-weight: 400;\">P.D. Creo que el único que no se debería leer en voz alta es, “Almas románticas”  quizás sea más intimista. </span></p>\r\n<p><span style=\"font-weight: 400;\">Cada uno de nosotros tenemos nuestra  huella emocional, ese modo de ser o de actuar, esa primera impresión por la cual nos identifican, o  reconocemos en los demás, ese ligero trazo que destaca de su personalidad. </span></p>\r\n<p><span style=\"font-weight: 400;\">Personalmente me llama mucho la atención, ese rasgo de nuestro carácter, que es la ingenuidad mezclada con el razonamiento empírico, por ejemplo.</span></p>\r\n<p><span style=\"font-weight: 400;\">Todos sabemos lo que es un chaleco salvavidas, por lo tanto, si tú te pones un cha-le-co-sal-va-vi-das, sin importar cuál sea tu situación de riesgo, ya sea dentro del coche, escalando, yendo en bici, en el avión, se supone que tu vida no corre peligro, tranquilo, tranquila llevas un chaleco salvavidas, ¡nada malo te puede pasar! Los personajes son próximos y ligeros, escribo como si tú formaras parte de la historia, por ello no son necesarias las descripciones, cada quién que decida como son, quizás te recuerdan a alguien que conoces ya sea cercano o lejano, o simplemente a ti mismo.</span></p>\r\n<p><span style=\"font-weight: 400;\">Y como dijo el gurú de La Moncloa, en ese momento estelar “Urbi et orbi “</span></p>\r\n<p><span style=\"font-weight: 400;\">- Todo es cierto, salvo algunas cositas, y lo segundo, ya tal -fin de la cita-.</span></p>\r\n<p><span style=\"font-weight: 400;\">Mis personajes están inspirados en personas reales hasta el punto de conservar sus nombres originales.</span></p>\r\n<p><span style=\"font-weight: 400;\">La primera sensación que transmiten, es su “candor”, ese coctel de inocencia, ausencia de malicia e hipocresía, esta marca emotiva, es el nexo entre todos ellos.</span></p>\r\n<p><span style=\"font-weight: 400;\">¿Qué es el candor?</span></p>\r\n<p><span style=\"font-weight: 400;\">Cuando tus llegas a casa de tu amiga y su hija de cinco años te dice.</span></p>\r\n<p><span style=\"font-weight: 400;\">-“Mira, tengo una cajita llena de varitas mágicas”.</span></p>\r\n<p><span style=\"font-weight: 400;\">Y al abrirla ves que son cucharillas de café con leche y que además está completamente convencida, que lo que hay dentro de los lápices, no es la tinta, sino que son letras y números , y se coloca delante de ti y te explica su teoría por la cual llegó a esa conclusión, ¿qué puedes hacer? -Nada, solo dejarte envolver por esa cálida sensación de ternura, para que quede grabada para siempre en la memoria emotiva de tus recuerdos.</span></p>\r\n<p><span style=\"font-weight: 400;\">Karla mi querida Karla, eres  el candor personificado y mi musa, al igual que el resto de todos los niños y niñas que conozco o con los cuales me cruzo en mi día a día.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-weight: 400;\">Os hago un resumen muy breve de qué o quién me inspiró mis relatos.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-weight: 400;\">I-El Conseguidor de sueños. La primera parte, es el peculiar tour turístico por Barcelona  de Michel. Él es un parisino que un día viene a conocer Barcelona y le gustó tanto que se queda a vivir en ella... Es profesor de francés, la singular forma de enseñar su idioma, sus clases y sus alumnos me inspiraron la segunda parte del relato.</span></p>\r\n<p><span style=\"font-weight: 400;\">III-México-Venecia Teotihuacán. -Sale de una cena que tuve con mis amigos mexicanos, en Barcelona vísperas de Sant Jordi. Humberto me pregunta si habría mucha gente en la calle, que si eso sucede él no piensa salir del hotel. Roxana, su mujer, y yo nos miramos extrañadas, en el D.F, que es donde viven, tienen tantos habitantes como toda Cataluña (8 millones de personas) y para más inri, a los tres días se iban a Venecia. Y de ese momento saqué esta historia. Cuando estamos muy agobiados, ¡a toditos todas nos gustaría irnos a una isla! Y que esté bien lejos de nuestro lugar de residencia, también deseamos viajar o irnos a vivir fuera de nuestra ciudad o país, tenemos ansias de conocer mundo, para después pasar nuestra estancia buscando comidas, bebidas, lugares, etc. que nos recuerden a nuestro lugar de origen. Que es lo que hace Humberto en la primera parte.</span></p>\r\n<p><span style=\"font-weight: 400;\">La segunda y tercera parte es cuando se manifiesta en nosotros el síndrome de Cristóbal Colón, descubriendo nuestro país y sentimos esa imperativa necesidad de contárselo a los demás, porque creemos que somos los primeros en verlo. Creo que ahora se llama instagram.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-weight: 400;\">IV-Súper Mario ya tiene quién le escriba-</span></p>\r\n<p><span style=\"font-weight: 400;\">Bueno la primera parte, versa, sobre esa situación de tener un encargo literario, tener una fecha de entrega, pero la inspiración se ha esfumado y la pereza ha Okupado tu mente, y no sabes por dónde empezar. Tu agente literario, te recuerda cada día que el tiempo pasa y no ve ningún progreso. .. da la impresión que haya mutado en el cobrador del frac.</span></p>\r\n<p><span style=\"font-weight: 400;\">P.D.-La escena del parto y el cordón umbilical es verídico, y lo he resumido, porque el catálogo continuaba, por lo visto en las privadas el parto no solo es sin dolor, sino que además es un espectáculo. Te lo pueden filmar, ¿crees que la banda sonora será la original, con subtítulos? ¿Aparecerá en un recuadrito el traductor para sordos? lo dejo aquí, porque ya mi mente empieza a imaginar.</span></p>\r\n<p><span style=\"font-weight: 400;\">La segunda parte es la que realmente está vinculada al titulo.</span></p>\r\n<p><span style=\"font-weight: 400;\">La situación es la siguiente, padres y madres que van a merendar a la cafetería con sus respectiva hijas, Clara (siempre con sus cascos puestos) y Ainhoa, que a su vez son muy amiguitas.</span></p>\r\n<p><span style=\"font-weight: 400;\">Uno de los padres Jordi alias “Súper Mario” es reformador de grandes edificios, y va vestido tal cual, solo le falta el casco. Su mujer Neus –Maria de las Nieves-investigadora en el Banco de Sangre en Barcelona-</span></p>\r\n<p><span style=\"font-weight: 400;\">Conversación-</span></p>\r\n<p><span style=\"font-weight: 400;\">-Jordi necesito unas vacaciones, ya, estoy muy cansada.</span></p>\r\n<p><span style=\"font-weight: 400;\">-¿Qué os parece -dice la mamá de Carla- si hacemos un crucero los cuatro juntos?</span></p>\r\n<p><span style=\"font-weight: 400;\">-¿Qué haces Jordi? -le pregunta su mujer Neus</span></p>\r\n<p><span style=\"font-weight: 400;\">-Mirar si alguien me había escrito- Esta frase es la que me dio el pie para el título del relato.</span></p>\r\n<p><span style=\"font-weight: 400;\">Como anécdota os diré que en este relato, hay un momento que aparece una “marcianita”, existe realmente, pero no sé quién es. Desde mi trabajo veo  cada día asomarse a la ventana, del edificio de enfrente, una joven  vestida de verde a fumar su cigarrillo, y me pareció original darle su minuto de gloria. Creo, por los ademanes, que es una mujer, seguro no lo sé.</span></p>\r\n<p><span style=\"font-weight: 400;\">V-Tierras de almas románticas.</span></p>\r\n<p><span style=\"font-weight: 400;\">Se me ocurrió viendo un día “Firts Dates” o esas aplicaciones para buscar pareja. Siento un poquito de pena hacia ellos y ellas, pues dan la impresión que un día se fueron hacer recados y  en su lista estaba </span></p>\r\n<p><span style=\"font-weight: 400;\">“ir a buscar el amor” como hace la mariposa en la primera parte.</span></p>\r\n<p><span style=\"font-weight: 400;\">La segunda parte, es muy cortita, pero trata de la desesperación que se sufre, cuando tienes que dejar a tu pareja, en busca de un futuro mejor para ambos.</span></p>\r\n<p><span style=\"font-weight: 400;\">Y la tercera versa sobre el desamor, sobre todo si te enamoras de quién no debes o no eres correspondido.</span></p>\r\n<p><span style=\"font-weight: 400;\">Para mí el romanticismo es un estilo de vida, igual que es ser gótico, vegetariano. . . creo que se podría definir, por la serenidad, la cortesía y la elegancia tanto en las formas como en las emociones.</span></p>\r\n<p><span style=\"font-weight: 400;\">El segundo relato.</span></p>\r\n<p><span style=\"font-weight: 400;\"> II-Crónicas de la señora Cinesa -lo dejè expresamente para el final, mi primer escrito y el que es más personal, lo considero un relato de auto-ayuda, al menos par mí, así lo fue. Tanto las películas, como las notas, fueron en su momento esos “clavos ardiendo”, a los cuales me tuve que aferrar para hacer mi “remontada vital”. Os acordáis de aquella secuencia de la película La Tormenta Perfecta-donde el capitán tiene delante de él, una ola de 30 metros de altura, pone el motor a toda máquina mientras, se aferra al timón con todas sus fuerzas, implorando a su Dios y a todos sus seres queridos, vivos y fallecidos, que le ayuden, porque todavía le queda mucha vida por delante, pues esa fue mi situación durante dos años, otro año más tocando  fondo y tres de remontada. Hubo un momento de conjunción de estrellas y no fue para bien.</span></p>\r\n<p><span style=\"font-weight: 400;\"> Coincide con la crisis económica, social, emocional.</span></p>\r\n<p><span style=\"font-weight: 400;\">Y hasta aquí puedo escribir</span></p>\r\n<p><span style=\"font-weight: 400;\">Gracias de nuevo por vuestro interés y sobre todo por vuestro tiempo</span></p>\r\n<p><span style=\"font-weight: 400;\">Un afectuoso saludo.</span></p>\r\n<p><span style=\"font-weight: 400;\">Antoñita La fantástica.</span></p>\r\n<p>&nbsp;</p>",
+        "photoUrl": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "isFeatured": false,
+        "isPublished": false,
+        "sortOrder": 0
+      },
+      "warnings": [],
+      "sourceMetadata": {
+        "sourceOldUrl": "https://editoriallarueca.com/autor/antonita-la-fantastica/",
+        "rawReview": "<p><span style=\"font-weight: 400;\">Presentación del libro </span></p>\r\n<p><span style=\"font-weight: 400;\">Desde Barcelona con Amor.</span></p>\r\n<p><span style=\"font-weight: 400;\">Antes de seguir, muchas gracias por el interés de leer, mis relatos que se podrían calificar como “delirios cervantinos” o  divertimentos literarios.</span></p>\r\n<p><span style=\"font-weight: 400;\"> Yo me defino como una escritora más bien “casual y de cercanías”, por lo tanto el evento de presentar mi libro, se lo dejo para los genios de la literatura, como Almudena Grandes o Eduardo  Mendoza.</span></p>\r\n<p><span style=\"font-weight: 400;\">El título “Desde Barcelona con Amor” es un poco la consecuencia, del aburrimiento de estar continuamente escuchando noticias negativas sobre Barcelona.</span></p>\r\n<p><span style=\"font-weight: 400;\">Escribo bajo seudónimo, porque mi nombre real no es nada glamuroso, y me sirve de nexo para conectarme con los diferentes protagonistas de mis relatos, así pues, yo siempre aparezco, de alguna forma, dentro de mis historias, aunque sea fugazmente.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-weight: 400;\">Me inspira “La Cubana”, compañía teatral.</span></p>\r\n<p><span style=\"font-weight: 400;\">Esa locura de que los actores, actrices interactúen con el público, que los espectadores  formen parte de la obra me fascina, me parece una genialidad, esa capacidad que tienen para inventar y desarrollar otras formas de hacer teatro, de representar un musical,  es maravillosamente admirable.</span></p>\r\n<p><span style=\"font-weight: 400;\">Esa frescura y espontaneidad con la que se mueven los actores y actrices sobre el escenario o por el patio de butacas, qué no sabes bien si estás asistiendo a un ensayo  o a la primera representación, es de una sencillez extraordinaria, y da igual que vayas una vez, que lo hagas seis, siempre es la misma sensación.</span></p>\r\n<p><span style=\"font-weight: 400;\">¿¡Es un ensayo o la primera representación!?</span></p>\r\n<p><span style=\"font-weight: 400;\">Ese es el dinamismo  del cual a mí me gustaría impregnar a mis personajes, todos están en mi cabeza, por lo tanto todos forman parte del relato incluida la voz en off.</span></p>\r\n<p><span style=\"font-weight: 400;\">La película La Rosa Púrpura del Cairo, tiene este giro de guión, donde un actor sale de la pantalla del cine para hablar con una espectadora.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-weight: 400;\">Resumiendo mucho, yo “hago una caricatura de la huella emocional -de la ingenuidad- de mis personajes”</span></p>\r\n<p><span style=\"font-weight: 400;\">Normalmente son los padres, las madres quienes  leen a los niños antes de ir a dormir. Este libro está pensado, al revés, para que sean las niñas o los niños  quienes se lo lean a ellos, o a otros niños, o a sus abuelos. De modo que está escrito para leerlo en voz alta, para ser escuchado. La tonalidad, el énfasis, varía si leemos de viva voz o solo para nosotros. </span></p>\r\n<p><span style=\"font-weight: 400;\">Por supuesto, cada cual que lo lea como más le guste, pero que lo lea.</span></p>\r\n<p><span style=\"font-weight: 400;\">P.D. Creo que el único que no se debería leer en voz alta es, “Almas románticas”  quizás sea más intimista. </span></p>\r\n<p><span style=\"font-weight: 400;\">Cada uno de nosotros tenemos nuestra  huella emocional, ese modo de ser o de actuar, esa primera impresión por la cual nos identifican, o  reconocemos en los demás, ese ligero trazo que destaca de su personalidad. </span></p>\r\n<p><span style=\"font-weight: 400;\">Personalmente me llama mucho la atención, ese rasgo de nuestro carácter, que es la ingenuidad mezclada con el razonamiento empírico, por ejemplo.</span></p>\r\n<p><span style=\"font-weight: 400;\">Todos sabemos lo que es un chaleco salvavidas, por lo tanto, si tú te pones un cha-le-co-sal-va-vi-das, sin importar cuál sea tu situación de riesgo, ya sea dentro del coche, escalando, yendo en bici, en el avión, se supone que tu vida no corre peligro, tranquilo, tranquila llevas un chaleco salvavidas, ¡nada malo te puede pasar! Los personajes son próximos y ligeros, escribo como si tú formaras parte de la historia, por ello no son necesarias las descripciones, cada quién que decida como son, quizás te recuerdan a alguien que conoces ya sea cercano o lejano, o simplemente a ti mismo.</span></p>\r\n<p><span style=\"font-weight: 400;\">Y como dijo el gurú de La Moncloa, en ese momento estelar “Urbi et orbi “</span></p>\r\n<p><span style=\"font-weight: 400;\">- Todo es cierto, salvo algunas cositas, y lo segundo, ya tal -fin de la cita-.</span></p>\r\n<p><span style=\"font-weight: 400;\">Mis personajes están inspirados en personas reales hasta el punto de conservar sus nombres originales.</span></p>\r\n<p><span style=\"font-weight: 400;\">La primera sensación que transmiten, es su “candor”, ese coctel de inocencia, ausencia de malicia e hipocresía, esta marca emotiva, es el nexo entre todos ellos.</span></p>\r\n<p><span style=\"font-weight: 400;\">¿Qué es el candor?</span></p>\r\n<p><span style=\"font-weight: 400;\">Cuando tus llegas a casa de tu amiga y su hija de cinco años te dice.</span></p>\r\n<p><span style=\"font-weight: 400;\">-“Mira, tengo una cajita llena de varitas mágicas”.</span></p>\r\n<p><span style=\"font-weight: 400;\">Y al abrirla ves que son cucharillas de café con leche y que además está completamente convencida, que lo que hay dentro de los lápices, no es la tinta, sino que son letras y números , y se coloca delante de ti y te explica su teoría por la cual llegó a esa conclusión, ¿qué puedes hacer? -Nada, solo dejarte envolver por esa cálida sensación de ternura, para que quede grabada para siempre en la memoria emotiva de tus recuerdos.</span></p>\r\n<p><span style=\"font-weight: 400;\">Karla mi querida Karla, eres  el candor personificado y mi musa, al igual que el resto de todos los niños y niñas que conozco o con los cuales me cruzo en mi día a día.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-weight: 400;\">Os hago un resumen muy breve de qué o quién me inspiró mis relatos.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-weight: 400;\">I-El Conseguidor de sueños. La primera parte, es el peculiar tour turístico por Barcelona  de Michel. Él es un parisino que un día viene a conocer Barcelona y le gustó tanto que se queda a vivir en ella... Es profesor de francés, la singular forma de enseñar su idioma, sus clases y sus alumnos me inspiraron la segunda parte del relato.</span></p>\r\n<p><span style=\"font-weight: 400;\">III-México-Venecia Teotihuacán. -Sale de una cena que tuve con mis amigos mexicanos, en Barcelona vísperas de Sant Jordi. Humberto me pregunta si habría mucha gente en la calle, que si eso sucede él no piensa salir del hotel. Roxana, su mujer, y yo nos miramos extrañadas, en el D.F, que es donde viven, tienen tantos habitantes como toda Cataluña (8 millones de personas) y para más inri, a los tres días se iban a Venecia. Y de ese momento saqué esta historia. Cuando estamos muy agobiados, ¡a toditos todas nos gustaría irnos a una isla! Y que esté bien lejos de nuestro lugar de residencia, también deseamos viajar o irnos a vivir fuera de nuestra ciudad o país, tenemos ansias de conocer mundo, para después pasar nuestra estancia buscando comidas, bebidas, lugares, etc. que nos recuerden a nuestro lugar de origen. Que es lo que hace Humberto en la primera parte.</span></p>\r\n<p><span style=\"font-weight: 400;\">La segunda y tercera parte es cuando se manifiesta en nosotros el síndrome de Cristóbal Colón, descubriendo nuestro país y sentimos esa imperativa necesidad de contárselo a los demás, porque creemos que somos los primeros en verlo. Creo que ahora se llama instagram.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-weight: 400;\">IV-Súper Mario ya tiene quién le escriba-</span></p>\r\n<p><span style=\"font-weight: 400;\">Bueno la primera parte, versa, sobre esa situación de tener un encargo literario, tener una fecha de entrega, pero la inspiración se ha esfumado y la pereza ha Okupado tu mente, y no sabes por dónde empezar. Tu agente literario, te recuerda cada día que el tiempo pasa y no ve ningún progreso. .. da la impresión que haya mutado en el cobrador del frac.</span></p>\r\n<p><span style=\"font-weight: 400;\">P.D.-La escena del parto y el cordón umbilical es verídico, y lo he resumido, porque el catálogo continuaba, por lo visto en las privadas el parto no solo es sin dolor, sino que además es un espectáculo. Te lo pueden filmar, ¿crees que la banda sonora será la original, con subtítulos? ¿Aparecerá en un recuadrito el traductor para sordos? lo dejo aquí, porque ya mi mente empieza a imaginar.</span></p>\r\n<p><span style=\"font-weight: 400;\">La segunda parte es la que realmente está vinculada al titulo.</span></p>\r\n<p><span style=\"font-weight: 400;\">La situación es la siguiente, padres y madres que van a merendar a la cafetería con sus respectiva hijas, Clara (siempre con sus cascos puestos) y Ainhoa, que a su vez son muy amiguitas.</span></p>\r\n<p><span style=\"font-weight: 400;\">Uno de los padres Jordi alias “Súper Mario” es reformador de grandes edificios, y va vestido tal cual, solo le falta el casco. Su mujer Neus –Maria de las Nieves-investigadora en el Banco de Sangre en Barcelona-</span></p>\r\n<p><span style=\"font-weight: 400;\">Conversación-</span></p>\r\n<p><span style=\"font-weight: 400;\">-Jordi necesito unas vacaciones, ya, estoy muy cansada.</span></p>\r\n<p><span style=\"font-weight: 400;\">-¿Qué os parece -dice la mamá de Carla- si hacemos un crucero los cuatro juntos?</span></p>\r\n<p><span style=\"font-weight: 400;\">-¿Qué haces Jordi? -le pregunta su mujer Neus</span></p>\r\n<p><span style=\"font-weight: 400;\">-Mirar si alguien me había escrito- Esta frase es la que me dio el pie para el título del relato.</span></p>\r\n<p><span style=\"font-weight: 400;\">Como anécdota os diré que en este relato, hay un momento que aparece una “marcianita”, existe realmente, pero no sé quién es. Desde mi trabajo veo  cada día asomarse a la ventana, del edificio de enfrente, una joven  vestida de verde a fumar su cigarrillo, y me pareció original darle su minuto de gloria. Creo, por los ademanes, que es una mujer, seguro no lo sé.</span></p>\r\n<p><span style=\"font-weight: 400;\">V-Tierras de almas románticas.</span></p>\r\n<p><span style=\"font-weight: 400;\">Se me ocurrió viendo un día “Firts Dates” o esas aplicaciones para buscar pareja. Siento un poquito de pena hacia ellos y ellas, pues dan la impresión que un día se fueron hacer recados y  en su lista estaba </span></p>\r\n<p><span style=\"font-weight: 400;\">“ir a buscar el amor” como hace la mariposa en la primera parte.</span></p>\r\n<p><span style=\"font-weight: 400;\">La segunda parte, es muy cortita, pero trata de la desesperación que se sufre, cuando tienes que dejar a tu pareja, en busca de un futuro mejor para ambos.</span></p>\r\n<p><span style=\"font-weight: 400;\">Y la tercera versa sobre el desamor, sobre todo si te enamoras de quién no debes o no eres correspondido.</span></p>\r\n<p><span style=\"font-weight: 400;\">Para mí el romanticismo es un estilo de vida, igual que es ser gótico, vegetariano. . . creo que se podría definir, por la serenidad, la cortesía y la elegancia tanto en las formas como en las emociones.</span></p>\r\n<p><span style=\"font-weight: 400;\">El segundo relato.</span></p>\r\n<p><span style=\"font-weight: 400;\"> II-Crónicas de la señora Cinesa -lo dejè expresamente para el final, mi primer escrito y el que es más personal, lo considero un relato de auto-ayuda, al menos par mí, así lo fue. Tanto las películas, como las notas, fueron en su momento esos “clavos ardiendo”, a los cuales me tuve que aferrar para hacer mi “remontada vital”. Os acordáis de aquella secuencia de la película La Tormenta Perfecta-donde el capitán tiene delante de él, una ola de 30 metros de altura, pone el motor a toda máquina mientras, se aferra al timón con todas sus fuerzas, implorando a su Dios y a todos sus seres queridos, vivos y fallecidos, que le ayuden, porque todavía le queda mucha vida por delante, pues esa fue mi situación durante dos años, otro año más tocando  fondo y tres de remontada. Hubo un momento de conjunción de estrellas y no fue para bien.</span></p>\r\n<p><span style=\"font-weight: 400;\"> Coincide con la crisis económica, social, emocional.</span></p>\r\n<p><span style=\"font-weight: 400;\">Y hasta aquí puedo escribir</span></p>\r\n<p><span style=\"font-weight: 400;\">Gracias de nuevo por vuestro interés y sobre todo por vuestro tiempo</span></p>\r\n<p><span style=\"font-weight: 400;\">Un afectuoso saludo.</span></p>\r\n<p><span style=\"font-weight: 400;\">Antoñita La fantástica.</span></p>\r\n<p>&nbsp;</p>",
+        "plainTextPreview": "Presentación del libro Desde Barcelona con Amor. Antes de seguir, muchas gracias por el interés de leer, mis relatos que se podrían calificar como “delirios cervantinos” o divertimentos literarios. Yo me defino como una escritora más bien…",
+        "reviewLikelyType": "author_bio",
+        "reviewConfidence": "medium",
+        "yoastMetaTitle": null,
+        "yoastMetaDescription": null,
+        "canonicalUrl": null,
+        "classification": "author_only_candidate",
+        "possibleDuplicateGroup": null
+      },
+      "image": {
+        "candidateKey": "author:571",
+        "entityType": "author",
+        "sourceWpPostId": "571",
+        "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/w_DesdeBCNconAmor_dibujo-1.jpg",
+        "role": "safe_author_photo",
+        "status": "planned",
+        "reason": "Autor moderno con attachment unico resuelto."
+      },
+      "status": "planned"
+    },
+    {
+      "candidateKey": "author:1712",
+      "sourceWpPostId": "1712",
+      "input": {
+        "name": "Antonio López Hurtado (Zárate)",
+        "slug": "antonio-lopez-hurtado-zarate-3",
+        "shortBio": null,
+        "biography": null,
+        "photoUrl": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "isFeatured": false,
+        "isPublished": false,
+        "sortOrder": 0
+      },
+      "warnings": [
+        "Posible duplicado de autor: possible-author:antonio lopez hurtado zarate.",
+        "Registro legacy combinado: ta_resena no se persiste como biografia."
+      ],
+      "sourceMetadata": {
+        "sourceOldUrl": "https://editoriallarueca.com/autor/antonio-lopez-hurtado-zarate-3/",
+        "rawReview": "<p>Antonio López Hurtado, ingeniero de telecomunicaciones nacido en Madrid en 1943, ha dedicado su vida a la investigación sobre Moralzarzal. A través de su web, <strong data-start=\"159\" data-end=\"188\"><a href=\"http://www.conocermoralzarzal.es\" target=\"_new\" rel=\"noopener\" data-start=\"161\" data-end=\"186\" data-is-only-node=\"\">www.conocermoralzarzal.es</a></strong>, comparte estudios sobre la historia, fauna, flora, tradiciones y oficios del pueblo. Autor de <em data-start=\"284\" data-end=\"316\">Moralzarzal, Crónicas del agua</em> y colaborador en <em data-start=\"334\" data-end=\"373\">Recursos Patrimoniales de Moralzarzal</em>, ha publicado diversos trabajos sobre los oficios tradicionales y el patrimonio local. Actualmente jubilado, sigue divulgando el legado cultural de su comunidad.</p>\r\n<p>&nbsp;</p>",
+        "plainTextPreview": "Antonio López Hurtado, ingeniero de telecomunicaciones nacido en Madrid en 1943, ha dedicado su vida a la investigación sobre Moralzarzal. A través de su web, www.conocermoralzarzal.es , comparte estudios sobre la historia, fauna, flora, t…",
+        "reviewLikelyType": "book_synopsis",
+        "reviewConfidence": "medium",
+        "yoastMetaTitle": null,
+        "yoastMetaDescription": "Descubre los oficios que dieron vida a nuestro pueblo",
+        "canonicalUrl": null,
+        "classification": "legacy_author_book_combined",
+        "possibleDuplicateGroup": "possible-author:antonio lopez hurtado zarate"
+      },
+      "image": {
+        "candidateKey": "author:1712",
+        "entityType": "author",
+        "sourceWpPostId": "1712",
+        "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/foto1.jpg",
+        "role": "ambiguous",
+        "status": "skipped",
+        "reason": "_thumbnail_id e imagen_destacada_2 apuntan a imagenes diferentes."
+      },
+      "status": "planned"
+    },
+    {
+      "candidateKey": "author:556",
+      "sourceWpPostId": "556",
+      "input": {
+        "name": "Guillermo M. Schrem",
+        "slug": "guillermo-m-schrem",
+        "shortBio": null,
+        "biography": null,
+        "photoUrl": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "isFeatured": false,
+        "isPublished": false,
+        "sortOrder": 0
+      },
+      "warnings": [
+        "Posible duplicado de autor: possible-author:guillermo m schrem.",
+        "Registro legacy combinado: ta_resena no se persiste como biografia."
+      ],
+      "sourceMetadata": {
+        "sourceOldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem/",
+        "rawReview": "<p>Una nueva investigación se abre en un valle donde la gente tiene mucho que decir y muy pocas ganas de hablar, así que un inspector con métodos poco ortodoxos llega para hurgar en la reciente historia del asesinato de una menor y no solo consigue alterar a sus habitantes sino que también remueve las viejas leyendas que circulan por el valle.</p>",
+        "plainTextPreview": "Una nueva investigación se abre en un valle donde la gente tiene mucho que decir y muy pocas ganas de hablar, así que un inspector con métodos poco ortodoxos llega para hurgar en la reciente historia del asesinato de una menor y no solo co…",
+        "reviewLikelyType": "book_synopsis",
+        "reviewConfidence": "medium",
+        "yoastMetaTitle": null,
+        "yoastMetaDescription": null,
+        "canonicalUrl": null,
+        "classification": "legacy_author_book_combined",
+        "possibleDuplicateGroup": "possible-author:guillermo m schrem"
+      },
+      "image": {
+        "candidateKey": "author:556",
+        "entityType": "author",
+        "sourceWpPostId": "556",
+        "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg",
+        "role": "ambiguous",
+        "status": "skipped",
+        "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+      },
+      "status": "planned"
+    },
+    {
+      "candidateKey": "author:1108",
+      "sourceWpPostId": "1108",
+      "input": {
+        "name": "MAURO",
+        "slug": "mauro",
+        "shortBio": null,
+        "biography": null,
+        "photoUrl": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "isFeatured": false,
+        "isPublished": false,
+        "sortOrder": 0
+      },
+      "warnings": ["Registro legacy combinado: ta_resena no se persiste como biografia."],
+      "sourceMetadata": {
+        "sourceOldUrl": "https://editoriallarueca.com/autor/mauro/",
+        "rawReview": "<p class=\"yiv5820021877p1\" style=\"margin: 0cm; background: white;\"><span class=\"yiv5820021877s1\"><span style=\"font-size: 13.0pt; font-family: 'Helvetica',sans-serif; color: #1d2228;\">Esta novela no solo es un thriller de acción, sino también un choque de posiciones humanas existentes y contemporáneas. Una historia narrada de tal forma que puede provocar un estado de confusión sobre lo que es realidad y lo que es ficción. </span></span></p>",
+        "plainTextPreview": "Esta novela no solo es un thriller de acción, sino también un choque de posiciones humanas existentes y contemporáneas. Una historia narrada de tal forma que puede provocar un estado de confusión sobre lo que es realidad y lo que es ficció…",
+        "reviewLikelyType": "book_synopsis",
+        "reviewConfidence": "medium",
+        "yoastMetaTitle": null,
+        "yoastMetaDescription": "En esta trilogia, el periodista A. Zuluaga desentraña una trama llena de intriga.",
+        "canonicalUrl": null,
+        "classification": "legacy_author_book_combined",
+        "possibleDuplicateGroup": null
+      },
+      "image": {
+        "candidateKey": "author:1108",
+        "entityType": "author",
+        "sourceWpPostId": "1108",
+        "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/w_FOTO-MAURO.jpg",
+        "role": "ambiguous",
+        "status": "skipped",
+        "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+      },
+      "status": "planned"
+    },
+    {
+      "candidateKey": "author:990",
+      "sourceWpPostId": "990",
+      "input": {
+        "name": "Jerónimo Campoy Muñoz",
+        "slug": "jeronimo-campoy-munoz",
+        "shortBio": null,
+        "biography": null,
+        "photoUrl": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "isFeatured": false,
+        "isPublished": false,
+        "sortOrder": 0
+      },
+      "warnings": ["Registro legacy combinado: ta_resena no se persiste como biografia."],
+      "sourceMetadata": {
+        "sourceOldUrl": "https://editoriallarueca.com/autor/jeronimo-campoy-munoz/",
+        "rawReview": "<p>Libro de historias diversas, muy originales y actuales, que son contadas por uno de sus árboles: un gran acebuche que habla con otros bonsáis y que a su vez le cuentan sus historias y las de sus cuidadores.</p>",
+        "plainTextPreview": "Libro de historias diversas, muy originales y actuales, que son contadas por uno de sus árboles: un gran acebuche que habla con otros bonsáis y que a su vez le cuentan sus historias y las de sus cuidadores.",
+        "reviewLikelyType": "book_synopsis",
+        "reviewConfidence": "medium",
+        "yoastMetaTitle": null,
+        "yoastMetaDescription": null,
+        "canonicalUrl": null,
+        "classification": "legacy_author_book_combined",
+        "possibleDuplicateGroup": null
+      },
+      "image": {
+        "candidateKey": "author:990",
+        "entityType": "author",
+        "sourceWpPostId": "990",
+        "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoJeronimo.jpg",
+        "role": "ambiguous",
+        "status": "skipped",
+        "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+      },
+      "status": "planned"
+    },
+    {
+      "candidateKey": "author:563",
+      "sourceWpPostId": "563",
+      "input": {
+        "name": "Ana Córdoba del Campo",
+        "slug": "ana-cordoba-del-campo",
+        "shortBio": null,
+        "biography": null,
+        "photoUrl": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "isFeatured": false,
+        "isPublished": false,
+        "sortOrder": 0
+      },
+      "warnings": [
+        "Posible duplicado de autor: possible-author:ana cordoba del campo.",
+        "Registro legacy combinado: ta_resena no se persiste como biografia."
+      ],
+      "sourceMetadata": {
+        "sourceOldUrl": "https://editoriallarueca.com/autor/ana-cordoba-del-campo/",
+        "rawReview": "<p>« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos o vemos en la televisión.</p>\r\n<p>Ambos transitamos el mismo espacio hacia el refugio errático donde habita nuestro yo más íntimo. Cada uno a su paso.</p>\r\n<p>Ana hace una poesía muy fresca, tiene prisa para que lo que siente no se pierda. En su fragilidad aparente oculta mucha fuerza: versos recién hechos que huelen a ella.  Ángel anda despacio entre la incertidumbre, fiel a sí mismo en cada letra, como la sangre que lo llena. A pesar de su diferencia de edad, quedaron cruzados en este bonito camino de las letras, tienen las mismas raíces y eso se nota. Pasa, esta es tu casa, saboréalo»</p>",
+        "plainTextPreview": "« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos…",
+        "reviewLikelyType": "book_synopsis",
+        "reviewConfidence": "medium",
+        "yoastMetaTitle": null,
+        "yoastMetaDescription": null,
+        "canonicalUrl": null,
+        "classification": "legacy_author_book_combined",
+        "possibleDuplicateGroup": "possible-author:ana cordoba del campo"
+      },
+      "image": {
+        "candidateKey": "author:563",
+        "entityType": "author",
+        "sourceWpPostId": "563",
+        "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/fotoAna.jpg",
+        "role": "ambiguous",
+        "status": "skipped",
+        "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+      },
+      "status": "planned"
+    },
+    {
+      "candidateKey": "author:589",
+      "sourceWpPostId": "589",
+      "input": {
+        "name": "Antonio Lorenzo Gómez Charlín",
+        "slug": "antonio-lorenzo-gomez-charlin",
+        "shortBio": null,
+        "biography": null,
+        "photoUrl": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "isFeatured": false,
+        "isPublished": false,
+        "sortOrder": 0
+      },
+      "warnings": ["Registro legacy combinado: ta_resena no se persiste como biografia."],
+      "sourceMetadata": {
+        "sourceOldUrl": "https://editoriallarueca.com/autor/antonio-lorenzo-gomez-charlin/",
+        "rawReview": "<p><strong><em>Réquiem por un escritor desconocido, </em></strong>es un libro que transcurre en tres planos temporales; el pasado, el futuro y el presente. La primera parte del libro titulada <em>El descubrimiento de la soledad</em>, narra la infancia, la adolescencia y el comienzo de la madurez, con el telón de fondo del deporte de élite, la formación como escritor autodidacta, el sexo y los primeros desengaños vitales. La segunda parte titulada<em> Las heridas del tiempo, </em>narra la vejez del protagonista, cuya obra ha caído en el olvido, excepto uno de sus libros, que tiene un éxito inesperado. Espoleado por una joven descarada y talentosa, el viejo escritor acaba entregando su diario de la pandemia, en donde narra su particular confinamiento y sus reflexiones sobre la vida y la literatura, en medio del caos de muertos y contagiados, con una prosa contaminada por la lectura y la sombra siempre sospechosa de ser un escritor desconocido.</p>",
+        "plainTextPreview": "Réquiem por un escritor desconocido, es un libro que transcurre en tres planos temporales; el pasado, el futuro y el presente. La primera parte del libro titulada El descubrimiento de la soledad , narra la infancia, la adolescencia y el co…",
+        "reviewLikelyType": "book_synopsis",
+        "reviewConfidence": "medium",
+        "yoastMetaTitle": null,
+        "yoastMetaDescription": null,
+        "canonicalUrl": null,
+        "classification": "legacy_author_book_combined",
+        "possibleDuplicateGroup": null
+      },
+      "image": {
+        "candidateKey": "author:589",
+        "entityType": "author",
+        "sourceWpPostId": "589",
+        "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoCharlin.jpg",
+        "role": "ambiguous",
+        "status": "skipped",
+        "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+      },
+      "status": "planned"
+    },
+    {
+      "candidateKey": "author:619",
+      "sourceWpPostId": "619",
+      "input": {
+        "name": "Ángel García Muñoz",
+        "slug": "angel-garcia-munoz",
+        "shortBio": null,
+        "biography": null,
+        "photoUrl": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "isFeatured": false,
+        "isPublished": false,
+        "sortOrder": 0
+      },
+      "warnings": ["Registro legacy combinado: ta_resena no se persiste como biografia."],
+      "sourceMetadata": {
+        "sourceOldUrl": "https://editoriallarueca.com/autor/angel-garcia-munoz/",
+        "rawReview": "<p>« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos o vemos en la televisión.<br />Ambos transitamos el mismo espacio hacia el refugio errático donde habita nuestro yo más íntimo. Cada uno a su paso.<br />Ana hace una poesía muy fresca, tiene prisa para que lo que siente no se pierda. En su fragilidad aparente oculta mucha fuerza: versos recién hechos que huelen a ella. Ángel anda despacio entre la incertidumbre, fiel a sí mismo en cada letra, como la sangre que lo llena. A pesar de su diferencia de edad, quedaron cruzados en este bonito camino de las letras, tienen las mismas raíces y eso se nota. Pasa, esta es tu casa, saboréalo»</p>",
+        "plainTextPreview": "« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos…",
+        "reviewLikelyType": "book_synopsis",
+        "reviewConfidence": "medium",
+        "yoastMetaTitle": null,
+        "yoastMetaDescription": null,
+        "canonicalUrl": null,
+        "classification": "legacy_author_book_combined",
+        "possibleDuplicateGroup": null
+      },
+      "image": {
+        "candidateKey": "author:619",
+        "entityType": "author",
+        "sourceWpPostId": "619",
+        "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAngel.jpg",
+        "role": "ambiguous",
+        "status": "skipped",
+        "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+      },
+      "status": "planned"
+    }
+  ],
+  "books": [
+    {
+      "candidateKey": "book:requiem por un escritor desconocido",
+      "sourceWpPostId": "589",
+      "input": {
+        "title": "Réquiem por un escritor desconocido",
+        "subtitle": null,
+        "slug": "requiem-por-un-escritor-desconocido",
+        "description": "<p><strong><em>Réquiem por un escritor desconocido, </em></strong>es un libro que transcurre en tres planos temporales; el pasado, el futuro y el presente. La primera parte del libro titulada <em>El descubrimiento de la soledad</em>, narra la infancia, la adolescencia y el comienzo de la madurez, con el telón de fondo del deporte de élite, la formación como escritor autodidacta, el sexo y los primeros desengaños vitales. La segunda parte titulada<em> Las heridas del tiempo, </em>narra la vejez del protagonista, cuya obra ha caído en el olvido, excepto uno de sus libros, que tiene un éxito inesperado. Espoleado por una joven descarada y talentosa, el viejo escritor acaba entregando su diario de la pandemia, en donde narra su particular confinamiento y sus reflexiones sobre la vida y la literatura, en medio del caos de muertos y contagiados, con una prosa contaminada por la lectura y la sombra siempre sospechosa de ser un escritor desconocido.</p>",
+        "excerpt": null,
+        "coverUrl": null,
+        "originalPublicationDate": null,
+        "language": "es",
+        "isFeatured": false,
+        "isPublished": false,
+        "sortOrder": 0,
+        "metaTitle": null,
+        "metaDescription": null,
+        "canonicalUrl": null,
+        "authorCandidateKeys": ["author:589"],
+        "categoryIds": [],
+        "editions": [
+          {
+            "format": "paperback",
+            "editionLabel": "Datos pendientes de revisión",
+            "publicationDate": null,
+            "isbn10": null,
+            "isbn13": null,
+            "price": null,
+            "currency": "EUR",
+            "pages": null,
+            "isAvailable": false,
+            "isFeatured": false,
+            "sortOrder": 0
+          }
+        ]
+      },
+      "warnings": [],
+      "requiresManualMergeDecision": false,
+      "sourceMetadata": {
+        "sourceOldUrl": "https://editoriallarueca.com/autor/antonio-lorenzo-gomez-charlin/",
+        "rawReview": "<p><strong><em>Réquiem por un escritor desconocido, </em></strong>es un libro que transcurre en tres planos temporales; el pasado, el futuro y el presente. La primera parte del libro titulada <em>El descubrimiento de la soledad</em>, narra la infancia, la adolescencia y el comienzo de la madurez, con el telón de fondo del deporte de élite, la formación como escritor autodidacta, el sexo y los primeros desengaños vitales. La segunda parte titulada<em> Las heridas del tiempo, </em>narra la vejez del protagonista, cuya obra ha caído en el olvido, excepto uno de sus libros, que tiene un éxito inesperado. Espoleado por una joven descarada y talentosa, el viejo escritor acaba entregando su diario de la pandemia, en donde narra su particular confinamiento y sus reflexiones sobre la vida y la literatura, en medio del caos de muertos y contagiados, con una prosa contaminada por la lectura y la sombra siempre sospechosa de ser un escritor desconocido.</p>",
+        "plainTextPreview": "Réquiem por un escritor desconocido, es un libro que transcurre en tres planos temporales; el pasado, el futuro y el presente. La primera parte del libro titulada El descubrimiento de la soledad , narra la infancia, la adolescencia y el co…",
+        "videoId": null,
+        "duplicateGroupId": null,
+        "sourceAuthorTitle": "Antonio Lorenzo Gómez Charlín",
+        "sourceAuthorSlug": "antonio-lorenzo-gomez-charlin"
+      },
+      "image": {
+        "candidateKey": "book:requiem por un escritor desconocido",
+        "entityType": "book",
+        "sourceWpPostId": "589",
+        "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoCharlin.jpg",
+        "role": "ambiguous",
+        "status": "skipped",
+        "reason": "_thumbnail_id legacy parece foto de autor por filename/titulo; no se clasifica como portada segura."
+      },
+      "status": "planned"
+    },
+    {
+      "candidateKey": "book:cruce de pasos",
+      "sourceWpPostId": "619",
+      "input": {
+        "title": "Cruce de Pasos",
+        "subtitle": null,
+        "slug": "cruce-de-pasos",
+        "description": "<p>« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos o vemos en la televisión.<br />Ambos transitamos el mismo espacio hacia el refugio errático donde habita nuestro yo más íntimo. Cada uno a su paso.<br />Ana hace una poesía muy fresca, tiene prisa para que lo que siente no se pierda. En su fragilidad aparente oculta mucha fuerza: versos recién hechos que huelen a ella. Ángel anda despacio entre la incertidumbre, fiel a sí mismo en cada letra, como la sangre que lo llena. A pesar de su diferencia de edad, quedaron cruzados en este bonito camino de las letras, tienen las mismas raíces y eso se nota. Pasa, esta es tu casa, saboréalo»</p>",
+        "excerpt": null,
+        "coverUrl": null,
+        "originalPublicationDate": null,
+        "language": "es",
+        "isFeatured": false,
+        "isPublished": false,
+        "sortOrder": 0,
+        "metaTitle": null,
+        "metaDescription": null,
+        "canonicalUrl": null,
+        "authorCandidateKeys": ["author:563", "author:619"],
+        "categoryIds": [],
+        "editions": [
+          {
+            "format": "paperback",
+            "editionLabel": "Datos pendientes de revisión",
+            "publicationDate": null,
+            "isbn10": null,
+            "isbn13": null,
+            "price": null,
+            "currency": "EUR",
+            "pages": null,
+            "isAvailable": false,
+            "isFeatured": false,
+            "sortOrder": 0
+          }
+        ]
+      },
+      "warnings": [],
+      "requiresManualMergeDecision": false,
+      "sourceMetadata": {
+        "sourceOldUrl": "https://editoriallarueca.com/autor/angel-garcia-munoz/",
+        "rawReview": "<p>« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos o vemos en la televisión.<br />Ambos transitamos el mismo espacio hacia el refugio errático donde habita nuestro yo más íntimo. Cada uno a su paso.<br />Ana hace una poesía muy fresca, tiene prisa para que lo que siente no se pierda. En su fragilidad aparente oculta mucha fuerza: versos recién hechos que huelen a ella. Ángel anda despacio entre la incertidumbre, fiel a sí mismo en cada letra, como la sangre que lo llena. A pesar de su diferencia de edad, quedaron cruzados en este bonito camino de las letras, tienen las mismas raíces y eso se nota. Pasa, esta es tu casa, saboréalo»</p>",
+        "plainTextPreview": "« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos…",
+        "videoId": "BIkB-8hJR8w",
+        "duplicateGroupId": "duplicate-book:cruce de pasos",
+        "sourceAuthorTitle": "Ángel García Muñoz",
+        "sourceAuthorSlug": "angel-garcia-munoz"
+      },
+      "image": {
+        "candidateKey": "book:cruce de pasos",
+        "entityType": "book",
+        "sourceWpPostId": "619",
+        "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAngel.jpg",
+        "role": "ambiguous",
+        "status": "skipped",
+        "reason": "_thumbnail_id legacy parece foto de autor por filename/titulo; no se clasifica como portada segura."
+      },
+      "status": "planned"
+    },
+    {
+      "candidateKey": "book:el valle de cristal",
+      "sourceWpPostId": "556",
+      "input": {
+        "title": "El Valle de Cristal",
+        "subtitle": null,
+        "slug": "el-valle-de-cristal",
+        "description": "<p>Una nueva investigación se abre en un valle donde la gente tiene mucho que decir y muy pocas ganas de hablar, así que un inspector con métodos poco ortodoxos llega para hurgar en la reciente historia del asesinato de una menor y no solo consigue alterar a sus habitantes sino que también remueve las viejas leyendas que circulan por el valle.</p>",
+        "excerpt": null,
+        "coverUrl": null,
+        "originalPublicationDate": null,
+        "language": "es",
+        "isFeatured": false,
+        "isPublished": false,
+        "sortOrder": 0,
+        "metaTitle": null,
+        "metaDescription": null,
+        "canonicalUrl": null,
+        "authorCandidateKeys": ["author:556"],
+        "categoryIds": [],
+        "editions": [
+          {
+            "format": "paperback",
+            "editionLabel": "Datos pendientes de revisión",
+            "publicationDate": null,
+            "isbn10": null,
+            "isbn13": null,
+            "price": null,
+            "currency": "EUR",
+            "pages": null,
+            "isAvailable": false,
+            "isFeatured": false,
+            "sortOrder": 0
+          }
+        ]
+      },
+      "warnings": [],
+      "requiresManualMergeDecision": false,
+      "sourceMetadata": {
+        "sourceOldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem/",
+        "rawReview": "<p>Una nueva investigación se abre en un valle donde la gente tiene mucho que decir y muy pocas ganas de hablar, así que un inspector con métodos poco ortodoxos llega para hurgar en la reciente historia del asesinato de una menor y no solo consigue alterar a sus habitantes sino que también remueve las viejas leyendas que circulan por el valle.</p>",
+        "plainTextPreview": "Una nueva investigación se abre en un valle donde la gente tiene mucho que decir y muy pocas ganas de hablar, así que un inspector con métodos poco ortodoxos llega para hurgar en la reciente historia del asesinato de una menor y no solo co…",
+        "videoId": "jBsMc6ViAYA",
+        "duplicateGroupId": null,
+        "sourceAuthorTitle": "Guillermo M. Schrem",
+        "sourceAuthorSlug": "guillermo-m-schrem"
+      },
+      "image": {
+        "candidateKey": "book:el valle de cristal",
+        "entityType": "book",
+        "sourceWpPostId": "556",
+        "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg",
+        "role": "ambiguous",
+        "status": "skipped",
+        "reason": "_thumbnail_id legacy sin evidencias suficientes de portada; requiere revision manual."
+      },
+      "status": "planned"
+    }
+  ],
+  "relations": [
+    {
+      "bookCandidateKey": "book:el valle de cristal",
+      "authorCandidateKey": "author:556",
+      "sourceWpPostId": "556",
+      "confidence": "high",
+      "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+      "status": "planned",
+      "warnings": []
+    },
+    {
+      "bookCandidateKey": "book:cruce de pasos",
+      "authorCandidateKey": "author:563",
+      "sourceWpPostId": "563",
+      "confidence": "high",
+      "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+      "status": "planned",
+      "warnings": []
+    },
+    {
+      "bookCandidateKey": "book:requiem por un escritor desconocido",
+      "authorCandidateKey": "author:589",
+      "sourceWpPostId": "589",
+      "confidence": "high",
+      "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+      "status": "planned",
+      "warnings": []
+    },
+    {
+      "bookCandidateKey": "book:cruce de pasos",
+      "authorCandidateKey": "author:619",
+      "sourceWpPostId": "619",
+      "confidence": "high",
+      "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+      "status": "planned",
+      "warnings": []
+    }
+  ],
+  "editions": [
+    {
+      "bookCandidateKey": "book:requiem por un escritor desconocido",
+      "editionLabel": "Datos pendientes de revisión",
+      "format": "paperback",
+      "inferredEdition": true,
+      "status": "planned"
+    },
+    {
+      "bookCandidateKey": "book:cruce de pasos",
+      "editionLabel": "Datos pendientes de revisión",
+      "format": "paperback",
+      "inferredEdition": true,
+      "status": "planned"
+    },
+    {
+      "bookCandidateKey": "book:el valle de cristal",
+      "editionLabel": "Datos pendientes de revisión",
+      "format": "paperback",
+      "inferredEdition": true,
+      "status": "planned"
+    }
+  ],
+  "images": [
+    {
+      "candidateKey": "author:571",
+      "entityType": "author",
+      "sourceWpPostId": "571",
+      "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/w_DesdeBCNconAmor_dibujo-1.jpg",
+      "role": "safe_author_photo",
+      "status": "planned",
+      "reason": "Autor moderno con attachment unico resuelto."
+    },
+    {
+      "candidateKey": "author:1712",
+      "entityType": "author",
+      "sourceWpPostId": "1712",
+      "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/foto1.jpg",
+      "role": "ambiguous",
+      "status": "skipped",
+      "reason": "_thumbnail_id e imagen_destacada_2 apuntan a imagenes diferentes."
+    },
+    {
+      "candidateKey": "author:556",
+      "entityType": "author",
+      "sourceWpPostId": "556",
+      "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg",
+      "role": "ambiguous",
+      "status": "skipped",
+      "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+    },
+    {
+      "candidateKey": "author:1108",
+      "entityType": "author",
+      "sourceWpPostId": "1108",
+      "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/w_FOTO-MAURO.jpg",
+      "role": "ambiguous",
+      "status": "skipped",
+      "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+    },
+    {
+      "candidateKey": "author:990",
+      "entityType": "author",
+      "sourceWpPostId": "990",
+      "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoJeronimo.jpg",
+      "role": "ambiguous",
+      "status": "skipped",
+      "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+    },
+    {
+      "candidateKey": "author:563",
+      "entityType": "author",
+      "sourceWpPostId": "563",
+      "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/fotoAna.jpg",
+      "role": "ambiguous",
+      "status": "skipped",
+      "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+    },
+    {
+      "candidateKey": "author:589",
+      "entityType": "author",
+      "sourceWpPostId": "589",
+      "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoCharlin.jpg",
+      "role": "ambiguous",
+      "status": "skipped",
+      "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+    },
+    {
+      "candidateKey": "author:619",
+      "entityType": "author",
+      "sourceWpPostId": "619",
+      "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAngel.jpg",
+      "role": "ambiguous",
+      "status": "skipped",
+      "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+    },
+    {
+      "candidateKey": "book:requiem por un escritor desconocido",
+      "entityType": "book",
+      "sourceWpPostId": "589",
+      "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoCharlin.jpg",
+      "role": "ambiguous",
+      "status": "skipped",
+      "reason": "_thumbnail_id legacy parece foto de autor por filename/titulo; no se clasifica como portada segura."
+    },
+    {
+      "candidateKey": "book:cruce de pasos",
+      "entityType": "book",
+      "sourceWpPostId": "619",
+      "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAngel.jpg",
+      "role": "ambiguous",
+      "status": "skipped",
+      "reason": "_thumbnail_id legacy parece foto de autor por filename/titulo; no se clasifica como portada segura."
+    },
+    {
+      "candidateKey": "book:el valle de cristal",
+      "entityType": "book",
+      "sourceWpPostId": "556",
+      "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg",
+      "role": "ambiguous",
+      "status": "skipped",
+      "reason": "_thumbnail_id legacy sin evidencias suficientes de portada; requiere revision manual."
+    }
+  ],
+  "issues": [
+    {
+      "details": "_thumbnail_id e imagen_destacada_2 apuntan a imagenes diferentes.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "author:1712",
+      "sourceWpPostId": "1712",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "author:556",
+      "sourceWpPostId": "556",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "author:1108",
+      "sourceWpPostId": "1108",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "author:990",
+      "sourceWpPostId": "990",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "author:563",
+      "sourceWpPostId": "563",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "author:589",
+      "sourceWpPostId": "589",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "author:619",
+      "sourceWpPostId": "619",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "_thumbnail_id legacy parece foto de autor por filename/titulo; no se clasifica como portada segura.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "book:requiem por un escritor desconocido",
+      "sourceWpPostId": "589",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "_thumbnail_id legacy parece foto de autor por filename/titulo; no se clasifica como portada segura.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "book:cruce de pasos",
+      "sourceWpPostId": "619",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "_thumbnail_id legacy sin evidencias suficientes de portada; requiere revision manual.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "book:el valle de cristal",
+      "sourceWpPostId": "556",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    }
+  ],
+  "manifest": {
+    "generatedAt": "2026-07-23T16:27:06.557Z",
+    "auditSource": "/Users/carlossalazar/programacion/editorial-la-rueca/migration/audit",
+    "entries": [
+      {
+        "sourceType": "author",
+        "sourceWpPostId": "571",
+        "candidateKey": "author:571",
+        "targetEntityType": "authors",
+        "targetId": "8c04642d-540d-46a4-ab03-5d3e1f029ca3",
+        "status": "partial",
+        "warnings": [],
+        "sourceMetadata": {
+          "sourceOldUrl": "https://editoriallarueca.com/autor/antonita-la-fantastica/",
+          "rawReview": "<p><span style=\"font-weight: 400;\">Presentación del libro </span></p>\r\n<p><span style=\"font-weight: 400;\">Desde Barcelona con Amor.</span></p>\r\n<p><span style=\"font-weight: 400;\">Antes de seguir, muchas gracias por el interés de leer, mis relatos que se podrían calificar como “delirios cervantinos” o  divertimentos literarios.</span></p>\r\n<p><span style=\"font-weight: 400;\"> Yo me defino como una escritora más bien “casual y de cercanías”, por lo tanto el evento de presentar mi libro, se lo dejo para los genios de la literatura, como Almudena Grandes o Eduardo  Mendoza.</span></p>\r\n<p><span style=\"font-weight: 400;\">El título “Desde Barcelona con Amor” es un poco la consecuencia, del aburrimiento de estar continuamente escuchando noticias negativas sobre Barcelona.</span></p>\r\n<p><span style=\"font-weight: 400;\">Escribo bajo seudónimo, porque mi nombre real no es nada glamuroso, y me sirve de nexo para conectarme con los diferentes protagonistas de mis relatos, así pues, yo siempre aparezco, de alguna forma, dentro de mis historias, aunque sea fugazmente.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-weight: 400;\">Me inspira “La Cubana”, compañía teatral.</span></p>\r\n<p><span style=\"font-weight: 400;\">Esa locura de que los actores, actrices interactúen con el público, que los espectadores  formen parte de la obra me fascina, me parece una genialidad, esa capacidad que tienen para inventar y desarrollar otras formas de hacer teatro, de representar un musical,  es maravillosamente admirable.</span></p>\r\n<p><span style=\"font-weight: 400;\">Esa frescura y espontaneidad con la que se mueven los actores y actrices sobre el escenario o por el patio de butacas, qué no sabes bien si estás asistiendo a un ensayo  o a la primera representación, es de una sencillez extraordinaria, y da igual que vayas una vez, que lo hagas seis, siempre es la misma sensación.</span></p>\r\n<p><span style=\"font-weight: 400;\">¿¡Es un ensayo o la primera representación!?</span></p>\r\n<p><span style=\"font-weight: 400;\">Ese es el dinamismo  del cual a mí me gustaría impregnar a mis personajes, todos están en mi cabeza, por lo tanto todos forman parte del relato incluida la voz en off.</span></p>\r\n<p><span style=\"font-weight: 400;\">La película La Rosa Púrpura del Cairo, tiene este giro de guión, donde un actor sale de la pantalla del cine para hablar con una espectadora.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-weight: 400;\">Resumiendo mucho, yo “hago una caricatura de la huella emocional -de la ingenuidad- de mis personajes”</span></p>\r\n<p><span style=\"font-weight: 400;\">Normalmente son los padres, las madres quienes  leen a los niños antes de ir a dormir. Este libro está pensado, al revés, para que sean las niñas o los niños  quienes se lo lean a ellos, o a otros niños, o a sus abuelos. De modo que está escrito para leerlo en voz alta, para ser escuchado. La tonalidad, el énfasis, varía si leemos de viva voz o solo para nosotros. </span></p>\r\n<p><span style=\"font-weight: 400;\">Por supuesto, cada cual que lo lea como más le guste, pero que lo lea.</span></p>\r\n<p><span style=\"font-weight: 400;\">P.D. Creo que el único que no se debería leer en voz alta es, “Almas románticas”  quizás sea más intimista. </span></p>\r\n<p><span style=\"font-weight: 400;\">Cada uno de nosotros tenemos nuestra  huella emocional, ese modo de ser o de actuar, esa primera impresión por la cual nos identifican, o  reconocemos en los demás, ese ligero trazo que destaca de su personalidad. </span></p>\r\n<p><span style=\"font-weight: 400;\">Personalmente me llama mucho la atención, ese rasgo de nuestro carácter, que es la ingenuidad mezclada con el razonamiento empírico, por ejemplo.</span></p>\r\n<p><span style=\"font-weight: 400;\">Todos sabemos lo que es un chaleco salvavidas, por lo tanto, si tú te pones un cha-le-co-sal-va-vi-das, sin importar cuál sea tu situación de riesgo, ya sea dentro del coche, escalando, yendo en bici, en el avión, se supone que tu vida no corre peligro, tranquilo, tranquila llevas un chaleco salvavidas, ¡nada malo te puede pasar! Los personajes son próximos y ligeros, escribo como si tú formaras parte de la historia, por ello no son necesarias las descripciones, cada quién que decida como son, quizás te recuerdan a alguien que conoces ya sea cercano o lejano, o simplemente a ti mismo.</span></p>\r\n<p><span style=\"font-weight: 400;\">Y como dijo el gurú de La Moncloa, en ese momento estelar “Urbi et orbi “</span></p>\r\n<p><span style=\"font-weight: 400;\">- Todo es cierto, salvo algunas cositas, y lo segundo, ya tal -fin de la cita-.</span></p>\r\n<p><span style=\"font-weight: 400;\">Mis personajes están inspirados en personas reales hasta el punto de conservar sus nombres originales.</span></p>\r\n<p><span style=\"font-weight: 400;\">La primera sensación que transmiten, es su “candor”, ese coctel de inocencia, ausencia de malicia e hipocresía, esta marca emotiva, es el nexo entre todos ellos.</span></p>\r\n<p><span style=\"font-weight: 400;\">¿Qué es el candor?</span></p>\r\n<p><span style=\"font-weight: 400;\">Cuando tus llegas a casa de tu amiga y su hija de cinco años te dice.</span></p>\r\n<p><span style=\"font-weight: 400;\">-“Mira, tengo una cajita llena de varitas mágicas”.</span></p>\r\n<p><span style=\"font-weight: 400;\">Y al abrirla ves que son cucharillas de café con leche y que además está completamente convencida, que lo que hay dentro de los lápices, no es la tinta, sino que son letras y números , y se coloca delante de ti y te explica su teoría por la cual llegó a esa conclusión, ¿qué puedes hacer? -Nada, solo dejarte envolver por esa cálida sensación de ternura, para que quede grabada para siempre en la memoria emotiva de tus recuerdos.</span></p>\r\n<p><span style=\"font-weight: 400;\">Karla mi querida Karla, eres  el candor personificado y mi musa, al igual que el resto de todos los niños y niñas que conozco o con los cuales me cruzo en mi día a día.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-weight: 400;\">Os hago un resumen muy breve de qué o quién me inspiró mis relatos.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-weight: 400;\">I-El Conseguidor de sueños. La primera parte, es el peculiar tour turístico por Barcelona  de Michel. Él es un parisino que un día viene a conocer Barcelona y le gustó tanto que se queda a vivir en ella... Es profesor de francés, la singular forma de enseñar su idioma, sus clases y sus alumnos me inspiraron la segunda parte del relato.</span></p>\r\n<p><span style=\"font-weight: 400;\">III-México-Venecia Teotihuacán. -Sale de una cena que tuve con mis amigos mexicanos, en Barcelona vísperas de Sant Jordi. Humberto me pregunta si habría mucha gente en la calle, que si eso sucede él no piensa salir del hotel. Roxana, su mujer, y yo nos miramos extrañadas, en el D.F, que es donde viven, tienen tantos habitantes como toda Cataluña (8 millones de personas) y para más inri, a los tres días se iban a Venecia. Y de ese momento saqué esta historia. Cuando estamos muy agobiados, ¡a toditos todas nos gustaría irnos a una isla! Y que esté bien lejos de nuestro lugar de residencia, también deseamos viajar o irnos a vivir fuera de nuestra ciudad o país, tenemos ansias de conocer mundo, para después pasar nuestra estancia buscando comidas, bebidas, lugares, etc. que nos recuerden a nuestro lugar de origen. Que es lo que hace Humberto en la primera parte.</span></p>\r\n<p><span style=\"font-weight: 400;\">La segunda y tercera parte es cuando se manifiesta en nosotros el síndrome de Cristóbal Colón, descubriendo nuestro país y sentimos esa imperativa necesidad de contárselo a los demás, porque creemos que somos los primeros en verlo. Creo que ahora se llama instagram.</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-weight: 400;\">IV-Súper Mario ya tiene quién le escriba-</span></p>\r\n<p><span style=\"font-weight: 400;\">Bueno la primera parte, versa, sobre esa situación de tener un encargo literario, tener una fecha de entrega, pero la inspiración se ha esfumado y la pereza ha Okupado tu mente, y no sabes por dónde empezar. Tu agente literario, te recuerda cada día que el tiempo pasa y no ve ningún progreso. .. da la impresión que haya mutado en el cobrador del frac.</span></p>\r\n<p><span style=\"font-weight: 400;\">P.D.-La escena del parto y el cordón umbilical es verídico, y lo he resumido, porque el catálogo continuaba, por lo visto en las privadas el parto no solo es sin dolor, sino que además es un espectáculo. Te lo pueden filmar, ¿crees que la banda sonora será la original, con subtítulos? ¿Aparecerá en un recuadrito el traductor para sordos? lo dejo aquí, porque ya mi mente empieza a imaginar.</span></p>\r\n<p><span style=\"font-weight: 400;\">La segunda parte es la que realmente está vinculada al titulo.</span></p>\r\n<p><span style=\"font-weight: 400;\">La situación es la siguiente, padres y madres que van a merendar a la cafetería con sus respectiva hijas, Clara (siempre con sus cascos puestos) y Ainhoa, que a su vez son muy amiguitas.</span></p>\r\n<p><span style=\"font-weight: 400;\">Uno de los padres Jordi alias “Súper Mario” es reformador de grandes edificios, y va vestido tal cual, solo le falta el casco. Su mujer Neus –Maria de las Nieves-investigadora en el Banco de Sangre en Barcelona-</span></p>\r\n<p><span style=\"font-weight: 400;\">Conversación-</span></p>\r\n<p><span style=\"font-weight: 400;\">-Jordi necesito unas vacaciones, ya, estoy muy cansada.</span></p>\r\n<p><span style=\"font-weight: 400;\">-¿Qué os parece -dice la mamá de Carla- si hacemos un crucero los cuatro juntos?</span></p>\r\n<p><span style=\"font-weight: 400;\">-¿Qué haces Jordi? -le pregunta su mujer Neus</span></p>\r\n<p><span style=\"font-weight: 400;\">-Mirar si alguien me había escrito- Esta frase es la que me dio el pie para el título del relato.</span></p>\r\n<p><span style=\"font-weight: 400;\">Como anécdota os diré que en este relato, hay un momento que aparece una “marcianita”, existe realmente, pero no sé quién es. Desde mi trabajo veo  cada día asomarse a la ventana, del edificio de enfrente, una joven  vestida de verde a fumar su cigarrillo, y me pareció original darle su minuto de gloria. Creo, por los ademanes, que es una mujer, seguro no lo sé.</span></p>\r\n<p><span style=\"font-weight: 400;\">V-Tierras de almas románticas.</span></p>\r\n<p><span style=\"font-weight: 400;\">Se me ocurrió viendo un día “Firts Dates” o esas aplicaciones para buscar pareja. Siento un poquito de pena hacia ellos y ellas, pues dan la impresión que un día se fueron hacer recados y  en su lista estaba </span></p>\r\n<p><span style=\"font-weight: 400;\">“ir a buscar el amor” como hace la mariposa en la primera parte.</span></p>\r\n<p><span style=\"font-weight: 400;\">La segunda parte, es muy cortita, pero trata de la desesperación que se sufre, cuando tienes que dejar a tu pareja, en busca de un futuro mejor para ambos.</span></p>\r\n<p><span style=\"font-weight: 400;\">Y la tercera versa sobre el desamor, sobre todo si te enamoras de quién no debes o no eres correspondido.</span></p>\r\n<p><span style=\"font-weight: 400;\">Para mí el romanticismo es un estilo de vida, igual que es ser gótico, vegetariano. . . creo que se podría definir, por la serenidad, la cortesía y la elegancia tanto en las formas como en las emociones.</span></p>\r\n<p><span style=\"font-weight: 400;\">El segundo relato.</span></p>\r\n<p><span style=\"font-weight: 400;\"> II-Crónicas de la señora Cinesa -lo dejè expresamente para el final, mi primer escrito y el que es más personal, lo considero un relato de auto-ayuda, al menos par mí, así lo fue. Tanto las películas, como las notas, fueron en su momento esos “clavos ardiendo”, a los cuales me tuve que aferrar para hacer mi “remontada vital”. Os acordáis de aquella secuencia de la película La Tormenta Perfecta-donde el capitán tiene delante de él, una ola de 30 metros de altura, pone el motor a toda máquina mientras, se aferra al timón con todas sus fuerzas, implorando a su Dios y a todos sus seres queridos, vivos y fallecidos, que le ayuden, porque todavía le queda mucha vida por delante, pues esa fue mi situación durante dos años, otro año más tocando  fondo y tres de remontada. Hubo un momento de conjunción de estrellas y no fue para bien.</span></p>\r\n<p><span style=\"font-weight: 400;\"> Coincide con la crisis económica, social, emocional.</span></p>\r\n<p><span style=\"font-weight: 400;\">Y hasta aquí puedo escribir</span></p>\r\n<p><span style=\"font-weight: 400;\">Gracias de nuevo por vuestro interés y sobre todo por vuestro tiempo</span></p>\r\n<p><span style=\"font-weight: 400;\">Un afectuoso saludo.</span></p>\r\n<p><span style=\"font-weight: 400;\">Antoñita La fantástica.</span></p>\r\n<p>&nbsp;</p>",
+          "plainTextPreview": "Presentación del libro Desde Barcelona con Amor. Antes de seguir, muchas gracias por el interés de leer, mis relatos que se podrían calificar como “delirios cervantinos” o divertimentos literarios. Yo me defino como una escritora más bien…",
+          "reviewLikelyType": "author_bio",
+          "reviewConfidence": "medium",
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null,
+          "canonicalUrl": null,
+          "classification": "author_only_candidate",
+          "possibleDuplicateGroup": null
+        },
+        "imageStatus": "planned",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "image_failed"
+      },
+      {
+        "sourceType": "author",
+        "sourceWpPostId": "1712",
+        "candidateKey": "author:1712",
+        "targetEntityType": "authors",
+        "targetId": "41be7a29-44d6-4f30-9508-4367a489f8e7",
+        "status": "applied",
+        "warnings": [
+          "Posible duplicado de autor: possible-author:antonio lopez hurtado zarate.",
+          "Registro legacy combinado: ta_resena no se persiste como biografia."
+        ],
+        "sourceMetadata": {
+          "sourceOldUrl": "https://editoriallarueca.com/autor/antonio-lopez-hurtado-zarate-3/",
+          "rawReview": "<p>Antonio López Hurtado, ingeniero de telecomunicaciones nacido en Madrid en 1943, ha dedicado su vida a la investigación sobre Moralzarzal. A través de su web, <strong data-start=\"159\" data-end=\"188\"><a href=\"http://www.conocermoralzarzal.es\" target=\"_new\" rel=\"noopener\" data-start=\"161\" data-end=\"186\" data-is-only-node=\"\">www.conocermoralzarzal.es</a></strong>, comparte estudios sobre la historia, fauna, flora, tradiciones y oficios del pueblo. Autor de <em data-start=\"284\" data-end=\"316\">Moralzarzal, Crónicas del agua</em> y colaborador en <em data-start=\"334\" data-end=\"373\">Recursos Patrimoniales de Moralzarzal</em>, ha publicado diversos trabajos sobre los oficios tradicionales y el patrimonio local. Actualmente jubilado, sigue divulgando el legado cultural de su comunidad.</p>\r\n<p>&nbsp;</p>",
+          "plainTextPreview": "Antonio López Hurtado, ingeniero de telecomunicaciones nacido en Madrid en 1943, ha dedicado su vida a la investigación sobre Moralzarzal. A través de su web, www.conocermoralzarzal.es , comparte estudios sobre la historia, fauna, flora, t…",
+          "reviewLikelyType": "book_synopsis",
+          "reviewConfidence": "medium",
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Descubre los oficios que dieron vida a nuestro pueblo",
+          "canonicalUrl": null,
+          "classification": "legacy_author_book_combined",
+          "possibleDuplicateGroup": "possible-author:antonio lopez hurtado zarate"
+        },
+        "imageStatus": "skipped",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "author_created"
+      },
+      {
+        "sourceType": "author",
+        "sourceWpPostId": "556",
+        "candidateKey": "author:556",
+        "targetEntityType": "authors",
+        "targetId": "86d71b66-740f-4712-b87e-7a61e05acc38",
+        "status": "applied",
+        "warnings": [
+          "Posible duplicado de autor: possible-author:guillermo m schrem.",
+          "Registro legacy combinado: ta_resena no se persiste como biografia."
+        ],
+        "sourceMetadata": {
+          "sourceOldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem/",
+          "rawReview": "<p>Una nueva investigación se abre en un valle donde la gente tiene mucho que decir y muy pocas ganas de hablar, así que un inspector con métodos poco ortodoxos llega para hurgar en la reciente historia del asesinato de una menor y no solo consigue alterar a sus habitantes sino que también remueve las viejas leyendas que circulan por el valle.</p>",
+          "plainTextPreview": "Una nueva investigación se abre en un valle donde la gente tiene mucho que decir y muy pocas ganas de hablar, así que un inspector con métodos poco ortodoxos llega para hurgar en la reciente historia del asesinato de una menor y no solo co…",
+          "reviewLikelyType": "book_synopsis",
+          "reviewConfidence": "medium",
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null,
+          "canonicalUrl": null,
+          "classification": "legacy_author_book_combined",
+          "possibleDuplicateGroup": "possible-author:guillermo m schrem"
+        },
+        "imageStatus": "skipped",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "author_created"
+      },
+      {
+        "sourceType": "author",
+        "sourceWpPostId": "1108",
+        "candidateKey": "author:1108",
+        "targetEntityType": "authors",
+        "targetId": "e290a87d-da53-46fb-be45-a4b89e8c9502",
+        "status": "applied",
+        "warnings": ["Registro legacy combinado: ta_resena no se persiste como biografia."],
+        "sourceMetadata": {
+          "sourceOldUrl": "https://editoriallarueca.com/autor/mauro/",
+          "rawReview": "<p class=\"yiv5820021877p1\" style=\"margin: 0cm; background: white;\"><span class=\"yiv5820021877s1\"><span style=\"font-size: 13.0pt; font-family: 'Helvetica',sans-serif; color: #1d2228;\">Esta novela no solo es un thriller de acción, sino también un choque de posiciones humanas existentes y contemporáneas. Una historia narrada de tal forma que puede provocar un estado de confusión sobre lo que es realidad y lo que es ficción. </span></span></p>",
+          "plainTextPreview": "Esta novela no solo es un thriller de acción, sino también un choque de posiciones humanas existentes y contemporáneas. Una historia narrada de tal forma que puede provocar un estado de confusión sobre lo que es realidad y lo que es ficció…",
+          "reviewLikelyType": "book_synopsis",
+          "reviewConfidence": "medium",
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "En esta trilogia, el periodista A. Zuluaga desentraña una trama llena de intriga.",
+          "canonicalUrl": null,
+          "classification": "legacy_author_book_combined",
+          "possibleDuplicateGroup": null
+        },
+        "imageStatus": "skipped",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "author_created"
+      },
+      {
+        "sourceType": "author",
+        "sourceWpPostId": "990",
+        "candidateKey": "author:990",
+        "targetEntityType": "authors",
+        "targetId": "9dcd55de-ff32-4331-93e2-ded0979c905c",
+        "status": "applied",
+        "warnings": ["Registro legacy combinado: ta_resena no se persiste como biografia."],
+        "sourceMetadata": {
+          "sourceOldUrl": "https://editoriallarueca.com/autor/jeronimo-campoy-munoz/",
+          "rawReview": "<p>Libro de historias diversas, muy originales y actuales, que son contadas por uno de sus árboles: un gran acebuche que habla con otros bonsáis y que a su vez le cuentan sus historias y las de sus cuidadores.</p>",
+          "plainTextPreview": "Libro de historias diversas, muy originales y actuales, que son contadas por uno de sus árboles: un gran acebuche que habla con otros bonsáis y que a su vez le cuentan sus historias y las de sus cuidadores.",
+          "reviewLikelyType": "book_synopsis",
+          "reviewConfidence": "medium",
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null,
+          "canonicalUrl": null,
+          "classification": "legacy_author_book_combined",
+          "possibleDuplicateGroup": null
+        },
+        "imageStatus": "skipped",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "author_created"
+      },
+      {
+        "sourceType": "author",
+        "sourceWpPostId": "563",
+        "candidateKey": "author:563",
+        "targetEntityType": "authors",
+        "targetId": "ddc02801-7185-4902-a353-304247dfe612",
+        "status": "applied",
+        "warnings": [
+          "Posible duplicado de autor: possible-author:ana cordoba del campo.",
+          "Registro legacy combinado: ta_resena no se persiste como biografia."
+        ],
+        "sourceMetadata": {
+          "sourceOldUrl": "https://editoriallarueca.com/autor/ana-cordoba-del-campo/",
+          "rawReview": "<p>« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos o vemos en la televisión.</p>\r\n<p>Ambos transitamos el mismo espacio hacia el refugio errático donde habita nuestro yo más íntimo. Cada uno a su paso.</p>\r\n<p>Ana hace una poesía muy fresca, tiene prisa para que lo que siente no se pierda. En su fragilidad aparente oculta mucha fuerza: versos recién hechos que huelen a ella.  Ángel anda despacio entre la incertidumbre, fiel a sí mismo en cada letra, como la sangre que lo llena. A pesar de su diferencia de edad, quedaron cruzados en este bonito camino de las letras, tienen las mismas raíces y eso se nota. Pasa, esta es tu casa, saboréalo»</p>",
+          "plainTextPreview": "« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos…",
+          "reviewLikelyType": "book_synopsis",
+          "reviewConfidence": "medium",
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null,
+          "canonicalUrl": null,
+          "classification": "legacy_author_book_combined",
+          "possibleDuplicateGroup": "possible-author:ana cordoba del campo"
+        },
+        "imageStatus": "skipped",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "author_created"
+      },
+      {
+        "sourceType": "author",
+        "sourceWpPostId": "589",
+        "candidateKey": "author:589",
+        "targetEntityType": "authors",
+        "targetId": "786db0b7-d2f5-4186-982c-e8a4bb54c778",
+        "status": "applied",
+        "warnings": ["Registro legacy combinado: ta_resena no se persiste como biografia."],
+        "sourceMetadata": {
+          "sourceOldUrl": "https://editoriallarueca.com/autor/antonio-lorenzo-gomez-charlin/",
+          "rawReview": "<p><strong><em>Réquiem por un escritor desconocido, </em></strong>es un libro que transcurre en tres planos temporales; el pasado, el futuro y el presente. La primera parte del libro titulada <em>El descubrimiento de la soledad</em>, narra la infancia, la adolescencia y el comienzo de la madurez, con el telón de fondo del deporte de élite, la formación como escritor autodidacta, el sexo y los primeros desengaños vitales. La segunda parte titulada<em> Las heridas del tiempo, </em>narra la vejez del protagonista, cuya obra ha caído en el olvido, excepto uno de sus libros, que tiene un éxito inesperado. Espoleado por una joven descarada y talentosa, el viejo escritor acaba entregando su diario de la pandemia, en donde narra su particular confinamiento y sus reflexiones sobre la vida y la literatura, en medio del caos de muertos y contagiados, con una prosa contaminada por la lectura y la sombra siempre sospechosa de ser un escritor desconocido.</p>",
+          "plainTextPreview": "Réquiem por un escritor desconocido, es un libro que transcurre en tres planos temporales; el pasado, el futuro y el presente. La primera parte del libro titulada El descubrimiento de la soledad , narra la infancia, la adolescencia y el co…",
+          "reviewLikelyType": "book_synopsis",
+          "reviewConfidence": "medium",
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null,
+          "canonicalUrl": null,
+          "classification": "legacy_author_book_combined",
+          "possibleDuplicateGroup": null
+        },
+        "imageStatus": "skipped",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "author_created"
+      },
+      {
+        "sourceType": "author",
+        "sourceWpPostId": "619",
+        "candidateKey": "author:619",
+        "targetEntityType": "authors",
+        "targetId": "35ce3606-59f1-493a-bd54-169c33abbee3",
+        "status": "applied",
+        "warnings": ["Registro legacy combinado: ta_resena no se persiste como biografia."],
+        "sourceMetadata": {
+          "sourceOldUrl": "https://editoriallarueca.com/autor/angel-garcia-munoz/",
+          "rawReview": "<p>« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos o vemos en la televisión.<br />Ambos transitamos el mismo espacio hacia el refugio errático donde habita nuestro yo más íntimo. Cada uno a su paso.<br />Ana hace una poesía muy fresca, tiene prisa para que lo que siente no se pierda. En su fragilidad aparente oculta mucha fuerza: versos recién hechos que huelen a ella. Ángel anda despacio entre la incertidumbre, fiel a sí mismo en cada letra, como la sangre que lo llena. A pesar de su diferencia de edad, quedaron cruzados en este bonito camino de las letras, tienen las mismas raíces y eso se nota. Pasa, esta es tu casa, saboréalo»</p>",
+          "plainTextPreview": "« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos…",
+          "reviewLikelyType": "book_synopsis",
+          "reviewConfidence": "medium",
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null,
+          "canonicalUrl": null,
+          "classification": "legacy_author_book_combined",
+          "possibleDuplicateGroup": null
+        },
+        "imageStatus": "skipped",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "author_created"
+      },
+      {
+        "sourceType": "book",
+        "sourceWpPostId": "589",
+        "candidateKey": "book:requiem por un escritor desconocido",
+        "targetEntityType": "books",
+        "targetId": "11f50eec-ca48-47c5-8d61-38bd573554ba",
+        "status": "applied",
+        "warnings": [],
+        "sourceMetadata": {
+          "sourceOldUrl": "https://editoriallarueca.com/autor/antonio-lorenzo-gomez-charlin/",
+          "rawReview": "<p><strong><em>Réquiem por un escritor desconocido, </em></strong>es un libro que transcurre en tres planos temporales; el pasado, el futuro y el presente. La primera parte del libro titulada <em>El descubrimiento de la soledad</em>, narra la infancia, la adolescencia y el comienzo de la madurez, con el telón de fondo del deporte de élite, la formación como escritor autodidacta, el sexo y los primeros desengaños vitales. La segunda parte titulada<em> Las heridas del tiempo, </em>narra la vejez del protagonista, cuya obra ha caído en el olvido, excepto uno de sus libros, que tiene un éxito inesperado. Espoleado por una joven descarada y talentosa, el viejo escritor acaba entregando su diario de la pandemia, en donde narra su particular confinamiento y sus reflexiones sobre la vida y la literatura, en medio del caos de muertos y contagiados, con una prosa contaminada por la lectura y la sombra siempre sospechosa de ser un escritor desconocido.</p>",
+          "plainTextPreview": "Réquiem por un escritor desconocido, es un libro que transcurre en tres planos temporales; el pasado, el futuro y el presente. La primera parte del libro titulada El descubrimiento de la soledad , narra la infancia, la adolescencia y el co…",
+          "videoId": null,
+          "duplicateGroupId": null,
+          "sourceAuthorTitle": "Antonio Lorenzo Gómez Charlín",
+          "sourceAuthorSlug": "antonio-lorenzo-gomez-charlin"
+        },
+        "imageStatus": "planned",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "complete"
+      },
+      {
+        "sourceType": "book",
+        "sourceWpPostId": "619",
+        "candidateKey": "book:cruce de pasos",
+        "targetEntityType": "books",
+        "targetId": "9dc918df-8c99-473f-90be-a672fbc74803",
+        "status": "applied",
+        "warnings": [],
+        "sourceMetadata": {
+          "sourceOldUrl": "https://editoriallarueca.com/autor/angel-garcia-munoz/",
+          "rawReview": "<p>« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos o vemos en la televisión.<br />Ambos transitamos el mismo espacio hacia el refugio errático donde habita nuestro yo más íntimo. Cada uno a su paso.<br />Ana hace una poesía muy fresca, tiene prisa para que lo que siente no se pierda. En su fragilidad aparente oculta mucha fuerza: versos recién hechos que huelen a ella. Ángel anda despacio entre la incertidumbre, fiel a sí mismo en cada letra, como la sangre que lo llena. A pesar de su diferencia de edad, quedaron cruzados en este bonito camino de las letras, tienen las mismas raíces y eso se nota. Pasa, esta es tu casa, saboréalo»</p>",
+          "plainTextPreview": "« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera persona. Nuestras vivencias y lo que nos rodea, de lo que leemos…",
+          "videoId": "BIkB-8hJR8w",
+          "duplicateGroupId": "duplicate-book:cruce de pasos",
+          "sourceAuthorTitle": "Ángel García Muñoz",
+          "sourceAuthorSlug": "angel-garcia-munoz"
+        },
+        "imageStatus": "planned",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "complete"
+      },
+      {
+        "sourceType": "book",
+        "sourceWpPostId": "556",
+        "candidateKey": "book:el valle de cristal",
+        "targetEntityType": "books",
+        "targetId": "38f4596b-3c42-42cb-b453-a02834e050c7",
+        "status": "applied",
+        "warnings": [],
+        "sourceMetadata": {
+          "sourceOldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem/",
+          "rawReview": "<p>Una nueva investigación se abre en un valle donde la gente tiene mucho que decir y muy pocas ganas de hablar, así que un inspector con métodos poco ortodoxos llega para hurgar en la reciente historia del asesinato de una menor y no solo consigue alterar a sus habitantes sino que también remueve las viejas leyendas que circulan por el valle.</p>",
+          "plainTextPreview": "Una nueva investigación se abre en un valle donde la gente tiene mucho que decir y muy pocas ganas de hablar, así que un inspector con métodos poco ortodoxos llega para hurgar en la reciente historia del asesinato de una menor y no solo co…",
+          "videoId": "jBsMc6ViAYA",
+          "duplicateGroupId": null,
+          "sourceAuthorTitle": "Guillermo M. Schrem",
+          "sourceAuthorSlug": "guillermo-m-schrem"
+        },
+        "imageStatus": "planned",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "complete"
+      },
+      {
+        "sourceType": "relation",
+        "sourceWpPostId": "556",
+        "candidateKey": "book:el valle de cristal:author:556",
+        "targetEntityType": "book_authors",
+        "targetId": "38f4596b-3c42-42cb-b453-a02834e050c7",
+        "status": "applied",
+        "warnings": [],
+        "sourceMetadata": {
+          "bookCandidateKey": "book:el valle de cristal",
+          "authorCandidateKey": "author:556",
+          "confidence": "high",
+          "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro."
+        },
+        "imageStatus": "not_applicable",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "book_created"
+      },
+      {
+        "sourceType": "relation",
+        "sourceWpPostId": "563",
+        "candidateKey": "book:cruce de pasos:author:563",
+        "targetEntityType": "book_authors",
+        "targetId": "9dc918df-8c99-473f-90be-a672fbc74803",
+        "status": "applied",
+        "warnings": [],
+        "sourceMetadata": {
+          "bookCandidateKey": "book:cruce de pasos",
+          "authorCandidateKey": "author:563",
+          "confidence": "high",
+          "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro."
+        },
+        "imageStatus": "not_applicable",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "book_created"
+      },
+      {
+        "sourceType": "relation",
+        "sourceWpPostId": "589",
+        "candidateKey": "book:requiem por un escritor desconocido:author:589",
+        "targetEntityType": "book_authors",
+        "targetId": "11f50eec-ca48-47c5-8d61-38bd573554ba",
+        "status": "applied",
+        "warnings": [],
+        "sourceMetadata": {
+          "bookCandidateKey": "book:requiem por un escritor desconocido",
+          "authorCandidateKey": "author:589",
+          "confidence": "high",
+          "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro."
+        },
+        "imageStatus": "not_applicable",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "book_created"
+      },
+      {
+        "sourceType": "relation",
+        "sourceWpPostId": "619",
+        "candidateKey": "book:cruce de pasos:author:619",
+        "targetEntityType": "book_authors",
+        "targetId": "9dc918df-8c99-473f-90be-a672fbc74803",
+        "status": "applied",
+        "warnings": [],
+        "sourceMetadata": {
+          "bookCandidateKey": "book:cruce de pasos",
+          "authorCandidateKey": "author:619",
+          "confidence": "high",
+          "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro."
+        },
+        "imageStatus": "not_applicable",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "book_created"
+      },
+      {
+        "sourceType": "edition",
+        "sourceWpPostId": "",
+        "candidateKey": "book:requiem por un escritor desconocido",
+        "targetEntityType": "book_editions",
+        "targetId": "26e55648-487e-49ff-8fbb-a3523492f6cb",
+        "status": "applied",
+        "warnings": ["Edicion minima inferida para cumplir el dominio actual."],
+        "sourceMetadata": {
+          "editionLabel": "Datos pendientes de revisión",
+          "format": "paperback"
+        },
+        "imageStatus": "not_applicable",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "inferredEdition": true,
+        "checkpoint": "book_created"
+      },
+      {
+        "sourceType": "edition",
+        "sourceWpPostId": "",
+        "candidateKey": "book:cruce de pasos",
+        "targetEntityType": "book_editions",
+        "targetId": "45ec4036-00f0-45dc-b787-89f0f2810f96",
+        "status": "applied",
+        "warnings": ["Edicion minima inferida para cumplir el dominio actual."],
+        "sourceMetadata": {
+          "editionLabel": "Datos pendientes de revisión",
+          "format": "paperback"
+        },
+        "imageStatus": "not_applicable",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "inferredEdition": true,
+        "checkpoint": "book_created"
+      },
+      {
+        "sourceType": "edition",
+        "sourceWpPostId": "",
+        "candidateKey": "book:el valle de cristal",
+        "targetEntityType": "book_editions",
+        "targetId": "fd5a20df-569d-403d-bc46-ec1892a46a45",
+        "status": "applied",
+        "warnings": ["Edicion minima inferida para cumplir el dominio actual."],
+        "sourceMetadata": {
+          "editionLabel": "Datos pendientes de revisión",
+          "format": "paperback"
+        },
+        "imageStatus": "not_applicable",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "inferredEdition": true,
+        "checkpoint": "book_created"
+      },
+      {
+        "sourceType": "image",
+        "sourceWpPostId": "571",
+        "candidateKey": "author:571",
+        "targetEntityType": "author_images",
+        "targetId": null,
+        "status": "skipped",
+        "warnings": ["Autor moderno con attachment unico resuelto."],
+        "sourceMetadata": {
+          "entityType": "author",
+          "role": "safe_author_photo",
+          "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/w_DesdeBCNconAmor_dibujo-1.jpg",
+          "migrationErrorCode": "IMAGE_TOO_LARGE",
+          "retryable": false,
+          "manualActionRequired": true
+        },
+        "imageStatus": "manual_action_required",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "manual_action_required"
+      },
+      {
+        "sourceType": "image",
+        "sourceWpPostId": "1712",
+        "candidateKey": "author:1712",
+        "targetEntityType": "author_images",
+        "targetId": null,
+        "status": "skipped",
+        "warnings": ["_thumbnail_id e imagen_destacada_2 apuntan a imagenes diferentes."],
+        "sourceMetadata": {
+          "entityType": "author",
+          "role": "ambiguous",
+          "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/foto1.jpg"
+        },
+        "imageStatus": "skipped",
+        "createdAt": "2026-07-23T16:27:06.557Z"
+      },
+      {
+        "sourceType": "image",
+        "sourceWpPostId": "556",
+        "candidateKey": "author:556",
+        "targetEntityType": "author_images",
+        "targetId": null,
+        "status": "skipped",
+        "warnings": [
+          "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+        ],
+        "sourceMetadata": {
+          "entityType": "author",
+          "role": "ambiguous",
+          "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg"
+        },
+        "imageStatus": "skipped",
+        "createdAt": "2026-07-23T16:27:06.557Z"
+      },
+      {
+        "sourceType": "image",
+        "sourceWpPostId": "1108",
+        "candidateKey": "author:1108",
+        "targetEntityType": "author_images",
+        "targetId": null,
+        "status": "skipped",
+        "warnings": [
+          "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+        ],
+        "sourceMetadata": {
+          "entityType": "author",
+          "role": "ambiguous",
+          "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/w_FOTO-MAURO.jpg"
+        },
+        "imageStatus": "skipped",
+        "createdAt": "2026-07-23T16:27:06.557Z"
+      },
+      {
+        "sourceType": "image",
+        "sourceWpPostId": "990",
+        "candidateKey": "author:990",
+        "targetEntityType": "author_images",
+        "targetId": null,
+        "status": "skipped",
+        "warnings": [
+          "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+        ],
+        "sourceMetadata": {
+          "entityType": "author",
+          "role": "ambiguous",
+          "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoJeronimo.jpg"
+        },
+        "imageStatus": "skipped",
+        "createdAt": "2026-07-23T16:27:06.557Z"
+      },
+      {
+        "sourceType": "image",
+        "sourceWpPostId": "563",
+        "candidateKey": "author:563",
+        "targetEntityType": "author_images",
+        "targetId": null,
+        "status": "skipped",
+        "warnings": [
+          "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+        ],
+        "sourceMetadata": {
+          "entityType": "author",
+          "role": "ambiguous",
+          "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/fotoAna.jpg"
+        },
+        "imageStatus": "skipped",
+        "createdAt": "2026-07-23T16:27:06.557Z"
+      },
+      {
+        "sourceType": "image",
+        "sourceWpPostId": "589",
+        "candidateKey": "author:589",
+        "targetEntityType": "author_images",
+        "targetId": null,
+        "status": "skipped",
+        "warnings": [
+          "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+        ],
+        "sourceMetadata": {
+          "entityType": "author",
+          "role": "ambiguous",
+          "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoCharlin.jpg"
+        },
+        "imageStatus": "skipped",
+        "createdAt": "2026-07-23T16:27:06.557Z"
+      },
+      {
+        "sourceType": "image",
+        "sourceWpPostId": "619",
+        "candidateKey": "author:619",
+        "targetEntityType": "author_images",
+        "targetId": null,
+        "status": "skipped",
+        "warnings": [
+          "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+        ],
+        "sourceMetadata": {
+          "entityType": "author",
+          "role": "ambiguous",
+          "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAngel.jpg"
+        },
+        "imageStatus": "skipped",
+        "createdAt": "2026-07-23T16:27:06.557Z"
+      },
+      {
+        "sourceType": "image",
+        "sourceWpPostId": "589",
+        "candidateKey": "book:requiem por un escritor desconocido",
+        "targetEntityType": "book_covers",
+        "targetId": "11f50eec-ca48-47c5-8d61-38bd573554ba/3f869946-b823-4684-8975-f921966a86a2.jpg",
+        "status": "applied",
+        "warnings": [
+          "_thumbnail_id legacy parece foto de autor por filename/titulo; no se clasifica como portada segura."
+        ],
+        "sourceMetadata": {
+          "entityType": "book",
+          "role": "safe_book_cover",
+          "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoCharlin.jpg",
+          "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/FotoCharlin.jpg",
+          "storagePath": "11f50eec-ca48-47c5-8d61-38bd573554ba/3f869946-b823-4684-8975-f921966a86a2.jpg",
+          "resultingUrl": "https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/book-covers/11f50eec-ca48-47c5-8d61-38bd573554ba/3f869946-b823-4684-8975-f921966a86a2.jpg"
+        },
+        "imageStatus": "uploaded",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "complete"
+      },
+      {
+        "sourceType": "image",
+        "sourceWpPostId": "619",
+        "candidateKey": "book:cruce de pasos",
+        "targetEntityType": "book_covers",
+        "targetId": "9dc918df-8c99-473f-90be-a672fbc74803/87f9e567-d57b-4a09-bf1d-7efe6c7a7174.jpg",
+        "status": "applied",
+        "warnings": [
+          "_thumbnail_id legacy parece foto de autor por filename/titulo; no se clasifica como portada segura."
+        ],
+        "sourceMetadata": {
+          "entityType": "book",
+          "role": "safe_book_cover",
+          "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAngel.jpg",
+          "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAngel.jpg",
+          "storagePath": "9dc918df-8c99-473f-90be-a672fbc74803/87f9e567-d57b-4a09-bf1d-7efe6c7a7174.jpg",
+          "resultingUrl": "https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/book-covers/9dc918df-8c99-473f-90be-a672fbc74803/87f9e567-d57b-4a09-bf1d-7efe6c7a7174.jpg"
+        },
+        "imageStatus": "uploaded",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "complete"
+      },
+      {
+        "sourceType": "image",
+        "sourceWpPostId": "556",
+        "candidateKey": "book:el valle de cristal",
+        "targetEntityType": "book_covers",
+        "targetId": "38f4596b-3c42-42cb-b453-a02834e050c7/97a79e7d-6ad3-40da-99c5-0a8aa7993d26.jpg",
+        "status": "applied",
+        "warnings": [
+          "_thumbnail_id legacy sin evidencias suficientes de portada; requiere revision manual."
+        ],
+        "sourceMetadata": {
+          "entityType": "book",
+          "role": "safe_book_cover",
+          "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg",
+          "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg",
+          "storagePath": "38f4596b-3c42-42cb-b453-a02834e050c7/97a79e7d-6ad3-40da-99c5-0a8aa7993d26.jpg",
+          "resultingUrl": "https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/book-covers/38f4596b-3c42-42cb-b453-a02834e050c7/97a79e7d-6ad3-40da-99c5-0a8aa7993d26.jpg"
+        },
+        "imageStatus": "uploaded",
+        "createdAt": "2026-07-23T16:27:06.557Z",
+        "checkpoint": "complete"
+      }
+    ]
+  }
+}

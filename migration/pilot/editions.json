@@ -1,0 +1,23 @@
+[
+  {
+    "bookCandidateKey": "book:requiem por un escritor desconocido",
+    "editionLabel": "Datos pendientes de revisión",
+    "format": "paperback",
+    "inferredEdition": true,
+    "status": "planned"
+  },
+  {
+    "bookCandidateKey": "book:cruce de pasos",
+    "editionLabel": "Datos pendientes de revisión",
+    "format": "paperback",
+    "inferredEdition": true,
+    "status": "planned"
+  },
+  {
+    "bookCandidateKey": "book:el valle de cristal",
+    "editionLabel": "Datos pendientes de revisión",
+    "format": "paperback",
+    "inferredEdition": true,
+    "status": "planned"
+  }
+]

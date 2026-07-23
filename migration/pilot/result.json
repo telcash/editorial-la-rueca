@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-07-23T16:27:06.557Z",
+  "planned": 19,
+  "createdAuthors": 0,
+  "createdBooks": 0,
+  "createdRelations": 0,
+  "createdEditions": 0,
+  "uploadedAuthorImages": 0,
+  "uploadedBookCovers": 0,
+  "skipped": 10,
+  "partial": 0,
+  "failed": 0,
+  "issues": [
+    {
+      "details": "_thumbnail_id e imagen_destacada_2 apuntan a imagenes diferentes.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "author:1712",
+      "sourceWpPostId": "1712",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "author:556",
+      "sourceWpPostId": "556",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "author:1108",
+      "sourceWpPostId": "1108",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "author:990",
+      "sourceWpPostId": "990",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "author:563",
+      "sourceWpPostId": "563",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "author:589",
+      "sourceWpPostId": "589",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "author:619",
+      "sourceWpPostId": "619",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "_thumbnail_id legacy parece foto de autor por filename/titulo; no se clasifica como portada segura.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "book:requiem por un escritor desconocido",
+      "sourceWpPostId": "589",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "_thumbnail_id legacy parece foto de autor por filename/titulo; no se clasifica como portada segura.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "book:cruce de pasos",
+      "sourceWpPostId": "619",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    },
+    {
+      "details": "_thumbnail_id legacy sin evidencias suficientes de portada; requiere revision manual.",
+      "severity": "warning",
+      "code": "IMAGE_SKIPPED_FOR_MANUAL_REVIEW",
+      "candidateKey": "book:el valle de cristal",
+      "sourceWpPostId": "556",
+      "message": "La imagen no se subira automaticamente en el piloto."
+    }
+  ]
+}

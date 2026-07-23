@@ -1,0 +1,38 @@
+[
+  {
+    "bookCandidateKey": "book:el valle de cristal",
+    "authorCandidateKey": "author:556",
+    "sourceWpPostId": "556",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "status": "planned",
+    "warnings": []
+  },
+  {
+    "bookCandidateKey": "book:cruce de pasos",
+    "authorCandidateKey": "author:563",
+    "sourceWpPostId": "563",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "status": "planned",
+    "warnings": []
+  },
+  {
+    "bookCandidateKey": "book:requiem por un escritor desconocido",
+    "authorCandidateKey": "author:589",
+    "sourceWpPostId": "589",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "status": "planned",
+    "warnings": []
+  },
+  {
+    "bookCandidateKey": "book:cruce de pasos",
+    "authorCandidateKey": "author:619",
+    "sourceWpPostId": "619",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "status": "planned",
+    "warnings": []
+  }
+]

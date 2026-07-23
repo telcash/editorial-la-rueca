@@ -196,7 +196,7 @@ export function createBookCoverService(
   storageClient: BookCoverStorageClient,
   options: BookCoverServiceOptions = {},
 ) {
-  const getRandomUUID = options.randomUUID ?? crypto.randomUUID;
+  const getRandomUUID = options.randomUUID ?? (() => globalThis.crypto.randomUUID());
 
   return {
     async uploadBookCover(bookId: string, file: File): Promise<BookCoverUploadResult> {

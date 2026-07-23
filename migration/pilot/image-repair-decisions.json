@@ -1,0 +1,47 @@
+{
+  "decisions": {
+    "book:requiem por un escritor desconocido": {
+      "action": "clear_wrong_book_cover"
+    },
+    "book:cruce de pasos": {
+      "action": "clear_wrong_book_cover"
+    },
+    "book:el valle de cristal": {
+      "action": "clear_wrong_book_cover"
+    },
+    "author:563": {
+      "action": "set_author_photo",
+      "attachmentId": "617"
+    },
+    "author:589": {
+      "action": "set_author_photo",
+      "attachmentId": "591"
+    },
+    "author:619": {
+      "action": "set_author_photo",
+      "attachmentId": "621"
+    },
+    "author:990": {
+      "action": "set_author_photo",
+      "attachmentId": "992"
+    },
+    "author:1108": {
+      "action": "set_author_photo",
+      "attachmentId": "1110"
+    },
+    "author:1712": {
+      "action": "set_author_photo",
+      "attachmentId": "1714"
+    },
+    "author:556": {
+      "action": "manual_review"
+    },
+    "author:571": {
+      "action": "manual_review"
+    }
+  },
+  "notes": [
+    "Decisiones aprobadas tras revision visual.",
+    "No ejecutar reparacion real sin --apply --repair-images --confirm REPAIR."
+  ]
+}

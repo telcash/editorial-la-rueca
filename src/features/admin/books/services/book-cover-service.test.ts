@@ -64,6 +64,18 @@ describe('book cover service', () => {
     });
   });
 
+  it('generates a UUID path without losing the Crypto receiver context', async () => {
+    const serviceWithRuntimeUuid = createBookCoverService(storageMock.storage);
+
+    const result = await serviceWithRuntimeUuid.uploadBookCover(
+      bookId,
+      createImageFile('image/jpeg'),
+    );
+
+    expect(result.path).toMatch(new RegExp(`^${bookId}/[0-9a-f-]{36}\\.jpg$`, 'i'));
+    expect(storageMock.bucket.upload).toHaveBeenCalledTimes(1);
+  });
+
   it('accepts PNG and WebP images', async () => {
     await service.uploadBookCover(bookId, createImageFile('image/png'));
     await service.uploadBookCover(bookId, createImageFile('image/webp'));

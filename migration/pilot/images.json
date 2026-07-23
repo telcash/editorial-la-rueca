@@ -1,0 +1,101 @@
+[
+  {
+    "candidateKey": "author:571",
+    "entityType": "author",
+    "sourceWpPostId": "571",
+    "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/w_DesdeBCNconAmor_dibujo-1.jpg",
+    "role": "safe_author_photo",
+    "status": "planned",
+    "reason": "Autor moderno con attachment unico resuelto."
+  },
+  {
+    "candidateKey": "author:1712",
+    "entityType": "author",
+    "sourceWpPostId": "1712",
+    "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/foto1.jpg",
+    "role": "ambiguous",
+    "status": "skipped",
+    "reason": "_thumbnail_id e imagen_destacada_2 apuntan a imagenes diferentes."
+  },
+  {
+    "candidateKey": "author:556",
+    "entityType": "author",
+    "sourceWpPostId": "556",
+    "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg",
+    "role": "ambiguous",
+    "status": "skipped",
+    "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+  },
+  {
+    "candidateKey": "author:1108",
+    "entityType": "author",
+    "sourceWpPostId": "1108",
+    "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/w_FOTO-MAURO.jpg",
+    "role": "ambiguous",
+    "status": "skipped",
+    "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+  },
+  {
+    "candidateKey": "author:990",
+    "entityType": "author",
+    "sourceWpPostId": "990",
+    "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoJeronimo.jpg",
+    "role": "ambiguous",
+    "status": "skipped",
+    "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+  },
+  {
+    "candidateKey": "author:563",
+    "entityType": "author",
+    "sourceWpPostId": "563",
+    "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/fotoAna.jpg",
+    "role": "ambiguous",
+    "status": "skipped",
+    "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+  },
+  {
+    "candidateKey": "author:589",
+    "entityType": "author",
+    "sourceWpPostId": "589",
+    "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoCharlin.jpg",
+    "role": "ambiguous",
+    "status": "skipped",
+    "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+  },
+  {
+    "candidateKey": "author:619",
+    "entityType": "author",
+    "sourceWpPostId": "619",
+    "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAngel.jpg",
+    "role": "ambiguous",
+    "status": "skipped",
+    "reason": "Registro legacy combinado: la imagen puede ser foto de autor o portada de libro."
+  },
+  {
+    "candidateKey": "book:requiem por un escritor desconocido",
+    "entityType": "book",
+    "sourceWpPostId": "589",
+    "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoCharlin.jpg",
+    "role": "ambiguous",
+    "status": "skipped",
+    "reason": "_thumbnail_id legacy parece foto de autor por filename/titulo; no se clasifica como portada segura."
+  },
+  {
+    "candidateKey": "book:cruce de pasos",
+    "entityType": "book",
+    "sourceWpPostId": "619",
+    "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAngel.jpg",
+    "role": "ambiguous",
+    "status": "skipped",
+    "reason": "_thumbnail_id legacy parece foto de autor por filename/titulo; no se clasifica como portada segura."
+  },
+  {
+    "candidateKey": "book:el valle de cristal",
+    "entityType": "book",
+    "sourceWpPostId": "556",
+    "attachmentUrl": "https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg",
+    "role": "ambiguous",
+    "status": "skipped",
+    "reason": "_thumbnail_id legacy sin evidencias suficientes de portada; requiere revision manual."
+  }
+]

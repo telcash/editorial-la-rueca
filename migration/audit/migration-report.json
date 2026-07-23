@@ -1,0 +1,1366 @@
+{
+  "generatedAt": "2026-07-19T16:20:51.209Z",
+  "sourceFile": "../../Downloads/editoriallarueca.WordPress.2026-07-15.xml",
+  "sourceSizeBytes": 9664209,
+  "wxrVersion": "1.2",
+  "siteUrl": "https://editoriallarueca.com",
+  "countsByPostType": {
+    "acf-field": 25,
+    "attachment": 1071,
+    "acf-field-group": 3,
+    "acf-post-type": 1,
+    "autor": 188,
+    "custom_css": 3,
+    "et_pb_layout": 11,
+    "et_header_layout": 3,
+    "et_body_layout": 3,
+    "flamingo_contact": 4,
+    "et_template": 8,
+    "flamingo_inbound": 281,
+    "page": 26,
+    "nav_menu_item": 7,
+    "post": 2,
+    "product": 3,
+    "shop_coupon": 1,
+    "wp_font_face": 36,
+    "wp_font_family": 12,
+    "wpcf7_contact_form": 4,
+    "wpupg_grid": 2,
+    "wp_navigation": 1
+  },
+  "countsByStatus": {
+    "publish": 622,
+    "inherit": 1071,
+    "draft": 2
+  },
+  "totalAttachments": 1071,
+  "totalAutoresCpt": 188,
+  "totalLibrosCpt": 0,
+  "totalPages": 26,
+  "totalWooCommerceProducts": 3,
+  "frequentMetaKeysByPostType": {
+    "acf-field": [
+      {
+        "key": "dfiFeatured",
+        "count": 25
+      }
+    ],
+    "attachment": [
+      {
+        "key": "_wp_attached_file",
+        "count": 1071
+      },
+      {
+        "key": "_wp_attachment_metadata",
+        "count": 1068
+      },
+      {
+        "key": "siteground_optimizer_is_optimized",
+        "count": 929
+      },
+      {
+        "key": "siteground_optimizer_original_filesize",
+        "count": 929
+      },
+      {
+        "key": "siteground_optimizer_is_converted_to_webp",
+        "count": 849
+      },
+      {
+        "key": "siteground_optimizer_optimization_failed",
+        "count": 145
+      },
+      {
+        "key": "_et_builder_dynamic_assets_loading_attr_threshold",
+        "count": 3
+      },
+      {
+        "key": "_wp_attachment_image_alt",
+        "count": 3
+      },
+      {
+        "key": "_et_dynamic_cached_shortcodes",
+        "count": 1
+      }
+    ],
+    "acf-field-group": [
+      {
+        "key": "_edit_last",
+        "count": 3
+      },
+      {
+        "key": "dfiFeatured",
+        "count": 3
+      }
+    ],
+    "acf-post-type": [
+      {
+        "key": "_edit_last",
+        "count": 1
+      }
+    ],
+    "autor": [
+      {
+        "key": "_edit_last",
+        "count": 188
+      },
+      {
+        "key": "_et_builder_dynamic_assets_loading_attr_threshold",
+        "count": 188
+      },
+      {
+        "key": "_et_dynamic_cached_attributes",
+        "count": 188
+      },
+      {
+        "key": "_et_dynamic_cached_shortcodes",
+        "count": 188
+      },
+      {
+        "key": "_thumbnail_id",
+        "count": 188
+      },
+      {
+        "key": "dfiFeatured",
+        "count": 188
+      },
+      {
+        "key": "et_enqueued_post_fonts",
+        "count": 188
+      },
+      {
+        "key": "ta_resena",
+        "count": 188
+      },
+      {
+        "key": "tf_libro",
+        "count": 164
+      },
+      {
+        "key": "tf_video",
+        "count": 164
+      },
+      {
+        "key": "_yoast_wpseo_estimated-reading-time-minutes",
+        "count": 135
+      },
+      {
+        "key": "_yoast_wpseo_metadesc",
+        "count": 97
+      },
+      {
+        "key": "_yoast_wpseo_wordproof_timestamp",
+        "count": 64
+      },
+      {
+        "key": "_et_pb_first_image",
+        "count": 45
+      },
+      {
+        "key": "_et_pb_old_content",
+        "count": 45
+      },
+      {
+        "key": "_et_pb_page_layout",
+        "count": 45
+      },
+      {
+        "key": "_et_pb_post_hide_nav",
+        "count": 45
+      },
+      {
+        "key": "_et_pb_side_nav",
+        "count": 45
+      },
+      {
+        "key": "_et_pb_truncate_post",
+        "count": 45
+      },
+      {
+        "key": "_et_pb_truncate_post_date",
+        "count": 45
+      },
+      {
+        "key": "_et_pb_use_builder",
+        "count": 45
+      },
+      {
+        "key": "_imagen_destacada_2",
+        "count": 45
+      },
+      {
+        "key": "_ta_resena",
+        "count": 45
+      },
+      {
+        "key": "_yoast_wpseo_content_score",
+        "count": 45
+      },
+      {
+        "key": "imagen_destacada_2",
+        "count": 45
+      }
+    ],
+    "custom_css": [],
+    "et_pb_layout": [
+      {
+        "key": "_et_pb_built_for_post_type",
+        "count": 11
+      },
+      {
+        "key": "_et_pb_module_type",
+        "count": 2
+      },
+      {
+        "key": "_edit_last",
+        "count": 1
+      },
+      {
+        "key": "_et_builder_version",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_ab_current_shortcode",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_ab_subjects",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_content_area_background_color",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_custom_css",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_dark_text_color",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_enable_shortcode_tracking",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_first_image",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_gutter_width",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_light_text_color",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_old_content",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_page_z_index",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_row_layout",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_section_background_color",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_static_css_file",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_truncate_post",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_truncate_post_date",
+        "count": 1
+      },
+      {
+        "key": "_et_pb_use_builder",
+        "count": 1
+      },
+      {
+        "key": "_global_colors_info",
+        "count": 1
+      },
+      {
+        "key": "dfiFeatured",
+        "count": 1
+      }
+    ],
+    "et_header_layout": [
+      {
+        "key": "_et_builder_version",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_ab_current_shortcode",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_ab_subjects",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_built_for_post_type",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_custom_css",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_enable_shortcode_tracking",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_first_image",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_gutter_width",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_show_page_creation",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_truncate_post",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_truncate_post_date",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_use_builder",
+        "count": 3
+      },
+      {
+        "key": "_global_colors_info",
+        "count": 3
+      },
+      {
+        "key": "_thumbnail_id",
+        "count": 3
+      }
+    ],
+    "et_body_layout": [
+      {
+        "key": "_et_builder_version",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_ab_current_shortcode",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_ab_subjects",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_built_for_post_type",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_custom_css",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_enable_shortcode_tracking",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_first_image",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_gutter_width",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_show_page_creation",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_truncate_post",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_truncate_post_date",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_use_builder",
+        "count": 3
+      },
+      {
+        "key": "_global_colors_info",
+        "count": 3
+      },
+      {
+        "key": "_thumbnail_id",
+        "count": 3
+      }
+    ],
+    "flamingo_contact": [
+      {
+        "key": "_email",
+        "count": 4
+      },
+      {
+        "key": "_last_contacted",
+        "count": 4
+      },
+      {
+        "key": "_name",
+        "count": 4
+      },
+      {
+        "key": "_props",
+        "count": 4
+      },
+      {
+        "key": "_wp_old_date",
+        "count": 3
+      }
+    ],
+    "et_template": [
+      {
+        "key": "_et_autogenerated_title",
+        "count": 8
+      },
+      {
+        "key": "_et_body_layout_enabled",
+        "count": 8
+      },
+      {
+        "key": "_et_body_layout_id",
+        "count": 8
+      },
+      {
+        "key": "_et_default",
+        "count": 8
+      },
+      {
+        "key": "_et_enabled",
+        "count": 8
+      },
+      {
+        "key": "_et_footer_layout_enabled",
+        "count": 8
+      },
+      {
+        "key": "_et_footer_layout_id",
+        "count": 8
+      },
+      {
+        "key": "_et_header_layout_enabled",
+        "count": 8
+      },
+      {
+        "key": "_et_header_layout_id",
+        "count": 8
+      },
+      {
+        "key": "_et_onboarding_created",
+        "count": 8
+      },
+      {
+        "key": "_et_use_on",
+        "count": 6
+      },
+      {
+        "key": "_et_theme_builder_marked_as_unused",
+        "count": 4
+      }
+    ],
+    "flamingo_inbound": [
+      {
+        "key": "_akismet",
+        "count": 281
+      },
+      {
+        "key": "_consent",
+        "count": 281
+      },
+      {
+        "key": "_field_email",
+        "count": 281
+      },
+      {
+        "key": "_field_honeypot-110-time-check",
+        "count": 281
+      },
+      {
+        "key": "_field_honeypot-110-time-start",
+        "count": 281
+      },
+      {
+        "key": "_field_mensaje",
+        "count": 281
+      },
+      {
+        "key": "_field_nombre",
+        "count": 281
+      },
+      {
+        "key": "_field_privacidad",
+        "count": 281
+      },
+      {
+        "key": "_field_provincia",
+        "count": 281
+      },
+      {
+        "key": "_fields",
+        "count": 281
+      },
+      {
+        "key": "_from",
+        "count": 281
+      },
+      {
+        "key": "_from_email",
+        "count": 281
+      },
+      {
+        "key": "_from_name",
+        "count": 281
+      },
+      {
+        "key": "_hash",
+        "count": 281
+      },
+      {
+        "key": "_meta",
+        "count": 281
+      },
+      {
+        "key": "_recaptcha",
+        "count": 281
+      },
+      {
+        "key": "_spam_log",
+        "count": 281
+      },
+      {
+        "key": "_subject",
+        "count": 281
+      },
+      {
+        "key": "_submission_status",
+        "count": 281
+      },
+      {
+        "key": "_field_telefono",
+        "count": 277
+      },
+      {
+        "key": "_field_titulo",
+        "count": 4
+      }
+    ],
+    "page": [
+      {
+        "key": "_et_builder_dynamic_assets_loading_attr_threshold",
+        "count": 24
+      },
+      {
+        "key": "_et_dynamic_cached_attributes",
+        "count": 24
+      },
+      {
+        "key": "_et_dynamic_cached_shortcodes",
+        "count": 24
+      },
+      {
+        "key": "et_enqueued_post_fonts",
+        "count": 24
+      },
+      {
+        "key": "_edit_last",
+        "count": 21
+      },
+      {
+        "key": "_wp_page_template",
+        "count": 21
+      },
+      {
+        "key": "_et_pb_old_content",
+        "count": 14
+      },
+      {
+        "key": "_et_pb_show_page_creation",
+        "count": 14
+      },
+      {
+        "key": "_et_pb_use_builder",
+        "count": 14
+      },
+      {
+        "key": "_yoast_wpseo_content_score",
+        "count": 14
+      },
+      {
+        "key": "_yoast_wpseo_estimated-reading-time-minutes",
+        "count": 14
+      },
+      {
+        "key": "dfiFeatured",
+        "count": 14
+      },
+      {
+        "key": "_et_builder_version",
+        "count": 13
+      },
+      {
+        "key": "_et_pb_ab_current_shortcode",
+        "count": 13
+      },
+      {
+        "key": "_et_pb_ab_subjects",
+        "count": 13
+      },
+      {
+        "key": "_et_pb_built_for_post_type",
+        "count": 13
+      },
+      {
+        "key": "_et_pb_custom_css",
+        "count": 13
+      },
+      {
+        "key": "_et_pb_enable_shortcode_tracking",
+        "count": 13
+      },
+      {
+        "key": "_et_pb_first_image",
+        "count": 13
+      },
+      {
+        "key": "_et_pb_gutter_width",
+        "count": 13
+      },
+      {
+        "key": "_et_pb_truncate_post",
+        "count": 13
+      },
+      {
+        "key": "_et_pb_truncate_post_date",
+        "count": 13
+      },
+      {
+        "key": "_global_colors_info",
+        "count": 13
+      },
+      {
+        "key": "_thumbnail_id",
+        "count": 13
+      },
+      {
+        "key": "_et_builder_module_features_cache",
+        "count": 12
+      }
+    ],
+    "nav_menu_item": [
+      {
+        "key": "_wp_old_date",
+        "count": 32
+      },
+      {
+        "key": "_menu_item_classes",
+        "count": 7
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "count": 7
+      },
+      {
+        "key": "_menu_item_object",
+        "count": 7
+      },
+      {
+        "key": "_menu_item_object_id",
+        "count": 7
+      },
+      {
+        "key": "_menu_item_target",
+        "count": 7
+      },
+      {
+        "key": "_menu_item_type",
+        "count": 7
+      },
+      {
+        "key": "_menu_item_url",
+        "count": 7
+      },
+      {
+        "key": "_menu_item_xfn",
+        "count": 7
+      }
+    ],
+    "post": [
+      {
+        "key": "_wp_old_slug",
+        "count": 3
+      },
+      {
+        "key": "_edit_last",
+        "count": 2
+      },
+      {
+        "key": "_et_builder_dynamic_assets_loading_attr_threshold",
+        "count": 2
+      },
+      {
+        "key": "_et_dynamic_cached_attributes",
+        "count": 2
+      },
+      {
+        "key": "_et_dynamic_cached_shortcodes",
+        "count": 2
+      },
+      {
+        "key": "_wpb_vc_js_status",
+        "count": 2
+      },
+      {
+        "key": "_yoast_wpseo_content_score",
+        "count": 2
+      },
+      {
+        "key": "_yoast_wpseo_estimated-reading-time-minutes",
+        "count": 2
+      },
+      {
+        "key": "et_enqueued_post_fonts",
+        "count": 2
+      },
+      {
+        "key": "_thumbnail_id",
+        "count": 1
+      },
+      {
+        "key": "_wpb_post_custom_layout",
+        "count": 1
+      },
+      {
+        "key": "_yoast_wpseo_metadesc",
+        "count": 1
+      },
+      {
+        "key": "_yoast_wpseo_primary_category",
+        "count": 1
+      },
+      {
+        "key": "dfiFeatured",
+        "count": 1
+      }
+    ],
+    "product": [
+      {
+        "key": "_backorders",
+        "count": 3
+      },
+      {
+        "key": "_download_expiry",
+        "count": 3
+      },
+      {
+        "key": "_download_limit",
+        "count": 3
+      },
+      {
+        "key": "_downloadable",
+        "count": 3
+      },
+      {
+        "key": "_edit_last",
+        "count": 3
+      },
+      {
+        "key": "_et_builder_dynamic_assets_loading_attr_threshold",
+        "count": 3
+      },
+      {
+        "key": "_et_dynamic_cached_attributes",
+        "count": 3
+      },
+      {
+        "key": "_et_dynamic_cached_shortcodes",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_first_image",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_old_content",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_page_layout",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_post_hide_nav",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_side_nav",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_truncate_post",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_truncate_post_date",
+        "count": 3
+      },
+      {
+        "key": "_et_pb_use_builder",
+        "count": 3
+      },
+      {
+        "key": "_manage_stock",
+        "count": 3
+      },
+      {
+        "key": "_price",
+        "count": 3
+      },
+      {
+        "key": "_product_version",
+        "count": 3
+      },
+      {
+        "key": "_regular_price",
+        "count": 3
+      },
+      {
+        "key": "_sold_individually",
+        "count": 3
+      },
+      {
+        "key": "_stock",
+        "count": 3
+      },
+      {
+        "key": "_stock_status",
+        "count": 3
+      },
+      {
+        "key": "_tax_class",
+        "count": 3
+      },
+      {
+        "key": "_tax_status",
+        "count": 3
+      }
+    ],
+    "shop_coupon": [
+      {
+        "key": "_edit_last",
+        "count": 1
+      },
+      {
+        "key": "_used_by",
+        "count": 1
+      },
+      {
+        "key": "coupon_amount",
+        "count": 1
+      },
+      {
+        "key": "date_expires",
+        "count": 1
+      },
+      {
+        "key": "dfiFeatured",
+        "count": 1
+      },
+      {
+        "key": "discount_type",
+        "count": 1
+      },
+      {
+        "key": "exclude_product_brands",
+        "count": 1
+      },
+      {
+        "key": "exclude_sale_items",
+        "count": 1
+      },
+      {
+        "key": "free_shipping",
+        "count": 1
+      },
+      {
+        "key": "individual_use",
+        "count": 1
+      },
+      {
+        "key": "limit_usage_to_x_items",
+        "count": 1
+      },
+      {
+        "key": "product_brands",
+        "count": 1
+      },
+      {
+        "key": "usage_count",
+        "count": 1
+      },
+      {
+        "key": "usage_limit",
+        "count": 1
+      },
+      {
+        "key": "usage_limit_per_user",
+        "count": 1
+      }
+    ],
+    "wp_font_face": [],
+    "wp_font_family": [],
+    "wpcf7_contact_form": [
+      {
+        "key": "_additional_settings",
+        "count": 4
+      },
+      {
+        "key": "_form",
+        "count": 4
+      },
+      {
+        "key": "_hash",
+        "count": 4
+      },
+      {
+        "key": "_locale",
+        "count": 4
+      },
+      {
+        "key": "_mail",
+        "count": 4
+      },
+      {
+        "key": "_mail_2",
+        "count": 4
+      },
+      {
+        "key": "_messages",
+        "count": 4
+      },
+      {
+        "key": "_flamingo",
+        "count": 2
+      },
+      {
+        "key": "migrate_from_cf7_redirect",
+        "count": 1
+      }
+    ],
+    "wpupg_grid": [
+      {
+        "key": "wpupg_centered",
+        "count": 2
+      },
+      {
+        "key": "wpupg_deeplinking",
+        "count": 2
+      },
+      {
+        "key": "wpupg_deeplinking_jump",
+        "count": 2
+      },
+      {
+        "key": "wpupg_empty_message",
+        "count": 2
+      },
+      {
+        "key": "wpupg_filters",
+        "count": 2
+      },
+      {
+        "key": "wpupg_filters_enabled",
+        "count": 2
+      },
+      {
+        "key": "wpupg_filters_no_selection",
+        "count": 2
+      },
+      {
+        "key": "wpupg_filters_relation",
+        "count": 2
+      },
+      {
+        "key": "wpupg_filters_style",
+        "count": 2
+      },
+      {
+        "key": "wpupg_images_only",
+        "count": 2
+      },
+      {
+        "key": "wpupg_language",
+        "count": 2
+      },
+      {
+        "key": "wpupg_layout_desktop_sizing",
+        "count": 2
+      },
+      {
+        "key": "wpupg_layout_desktop_sizing_columns",
+        "count": 2
+      },
+      {
+        "key": "wpupg_layout_desktop_sizing_fixed",
+        "count": 2
+      },
+      {
+        "key": "wpupg_layout_desktop_sizing_margin",
+        "count": 2
+      },
+      {
+        "key": "wpupg_layout_mobile_different",
+        "count": 2
+      },
+      {
+        "key": "wpupg_layout_mobile_sizing",
+        "count": 2
+      },
+      {
+        "key": "wpupg_layout_mobile_sizing_columns",
+        "count": 2
+      },
+      {
+        "key": "wpupg_layout_mobile_sizing_fixed",
+        "count": 2
+      },
+      {
+        "key": "wpupg_layout_mobile_sizing_margin",
+        "count": 2
+      },
+      {
+        "key": "wpupg_layout_mode",
+        "count": 2
+      },
+      {
+        "key": "wpupg_layout_tablet_different",
+        "count": 2
+      },
+      {
+        "key": "wpupg_layout_tablet_sizing",
+        "count": 2
+      },
+      {
+        "key": "wpupg_layout_tablet_sizing_columns",
+        "count": 2
+      },
+      {
+        "key": "wpupg_layout_tablet_sizing_fixed",
+        "count": 2
+      }
+    ],
+    "wp_navigation": []
+  },
+  "taxonomiesDetected": {
+    "editorial": [
+      {
+        "taxonomy": "product_cat",
+        "term": "Sin categorizar",
+        "slug": "sin-categorizar",
+        "count": 3
+      },
+      {
+        "taxonomy": "product_tag",
+        "term": "RafaelMartinez",
+        "slug": "rafaelmartinez",
+        "count": 2
+      },
+      {
+        "taxonomy": "category",
+        "term": "Uncategorized",
+        "slug": "uncategorized",
+        "count": 1
+      },
+      {
+        "taxonomy": "category",
+        "term": "Amazon",
+        "slug": "amazon",
+        "count": 1
+      },
+      {
+        "taxonomy": "post_tag",
+        "term": "Amazon",
+        "slug": "amazon",
+        "count": 1
+      },
+      {
+        "taxonomy": "post_tag",
+        "term": "Editorial",
+        "slug": "editorial",
+        "count": 1
+      },
+      {
+        "taxonomy": "post_tag",
+        "term": "Publicar",
+        "slug": "publicar",
+        "count": 1
+      }
+    ],
+    "pluginOrSystem": [
+      {
+        "taxonomy": "flamingo_inbound_channel",
+        "term": "Formulario de contacto 1",
+        "slug": "formulario-de-contacto-1",
+        "count": 277
+      },
+      {
+        "taxonomy": "module_width",
+        "term": "regular",
+        "slug": "regular",
+        "count": 10
+      },
+      {
+        "taxonomy": "scope",
+        "term": "not_global",
+        "slug": "not_global",
+        "count": 10
+      },
+      {
+        "taxonomy": "layout_type",
+        "term": "section",
+        "slug": "section",
+        "count": 7
+      },
+      {
+        "taxonomy": "nav_menu",
+        "term": "Main",
+        "slug": "main",
+        "count": 7
+      },
+      {
+        "taxonomy": "flamingo_inbound_channel",
+        "term": "Formulario de contacto landing",
+        "slug": "formulario-de-contacto-1_copy",
+        "count": 4
+      },
+      {
+        "taxonomy": "product_type",
+        "term": "simple",
+        "slug": "simple",
+        "count": 3
+      },
+      {
+        "taxonomy": "layout_type",
+        "term": "module",
+        "slug": "module",
+        "count": 2
+      },
+      {
+        "taxonomy": "layout_type",
+        "term": "layout",
+        "slug": "layout",
+        "count": 1
+      },
+      {
+        "taxonomy": "layout_type",
+        "term": "row",
+        "slug": "row",
+        "count": 1
+      }
+    ],
+    "notSuitableForAutomaticCategoryMigration": [
+      {
+        "taxonomy": "product_cat",
+        "term": "Sin categorizar",
+        "slug": "sin-categorizar",
+        "reason": "Categoría genérica o comercial que requiere revisión manual."
+      },
+      {
+        "taxonomy": "category",
+        "term": "Uncategorized",
+        "slug": "uncategorized",
+        "reason": "Categoría genérica o comercial que requiere revisión manual."
+      },
+      {
+        "taxonomy": "category",
+        "term": "Amazon",
+        "slug": "amazon",
+        "reason": "Categoría genérica o comercial que requiere revisión manual."
+      },
+      {
+        "taxonomy": "post_tag",
+        "term": "Amazon",
+        "slug": "amazon",
+        "reason": "Categoría genérica o comercial que requiere revisión manual."
+      }
+    ]
+  },
+  "statistics": {
+    "wpAuthors": 188,
+    "authorsWithTfLibro": 158,
+    "authorsWithoutTfLibro": 30,
+    "authorClassificationCounts": {
+      "legacy_author_book_combined": 158,
+      "author_only_candidate": 30,
+      "ambiguous": 0
+    },
+    "uniqueBookCandidates": 156,
+    "duplicatedBookTitles": 2,
+    "recordsWithVideo": 18,
+    "recordsWithThumbnail": 188,
+    "recordsWithImagenDestacada2": 44,
+    "recordsWithYoastMetaDescription": 97,
+    "resolvedAttachmentReferences": 232,
+    "brokenImageReferences": 0,
+    "possibleDuplicateAuthors": 85
+  },
+  "acfBookFieldsDetected": [
+    {
+      "fieldName": "tf_autor",
+      "fieldKey": "field_68f87f3de6755",
+      "fieldType": "text",
+      "defaultValue": ""
+    },
+    {
+      "fieldName": "tf_genero",
+      "fieldKey": "field_68f8802417c20",
+      "fieldType": "text",
+      "defaultValue": ""
+    },
+    {
+      "fieldName": "tf_fecha_publicacion",
+      "fieldKey": "field_68f88168c11f6",
+      "fieldType": "date_picker",
+      "defaultValue": ""
+    },
+    {
+      "fieldName": "tf_n_paginas",
+      "fieldKey": "field_68f881abf03b5",
+      "fieldType": "number",
+      "defaultValue": ""
+    },
+    {
+      "fieldName": "tf_idioma",
+      "fieldKey": "field_68f881dbe4841",
+      "fieldType": "text",
+      "defaultValue": "Español"
+    },
+    {
+      "fieldName": "tf_encuadernacion",
+      "fieldKey": "field_68f882259149d",
+      "fieldType": "text",
+      "defaultValue": "Fresada"
+    },
+    {
+      "fieldName": "tf_isbn",
+      "fieldKey": "field_68f8824d09d5c",
+      "fieldType": "text",
+      "defaultValue": ""
+    },
+    {
+      "fieldName": "tf_fecha_edicion",
+      "fieldKey": "field_68f8826884381",
+      "fieldType": "date_picker",
+      "defaultValue": ""
+    },
+    {
+      "fieldName": "tf_alto",
+      "fieldKey": "field_68f882adbb341",
+      "fieldType": "number",
+      "defaultValue": "210"
+    },
+    {
+      "fieldName": "tf_ancho",
+      "fieldKey": "field_68f882cc7f80b",
+      "fieldType": "number",
+      "defaultValue": "150"
+    },
+    {
+      "fieldName": "tf_pvp",
+      "fieldKey": "field_68f882f3ddb50",
+      "fieldType": "number",
+      "defaultValue": ""
+    },
+    {
+      "fieldName": "ta_sinopsis",
+      "fieldKey": "field_68f88328b7e36",
+      "fieldType": "textarea",
+      "defaultValue": ""
+    },
+    {
+      "fieldName": "tf_link_compra_1",
+      "fieldKey": "field_68f883656c225",
+      "fieldType": "link",
+      "defaultValue": ""
+    },
+    {
+      "fieldName": "tf_peso",
+      "fieldKey": "field_68ffb4b77163c",
+      "fieldType": "number",
+      "defaultValue": ""
+    },
+    {
+      "fieldName": "tf_link_compra_1",
+      "fieldKey": "field_69034b3c19b14",
+      "fieldType": "link",
+      "defaultValue": ""
+    }
+  ],
+  "warnings": ["NO_ACTUAL_BOOK_POSTS_FOUND"],
+  "woocommerceAudit": {
+    "totalProducts": 3,
+    "products": [
+      {
+        "wpPostId": "2711",
+        "title": "La luna triangular",
+        "slug": "la-luna-triangular",
+        "status": "publish",
+        "sku": "",
+        "price": "18",
+        "regularPrice": "18",
+        "externalUrl": "",
+        "productType": "simple",
+        "thumbnailId": "320"
+      },
+      {
+        "wpPostId": "2713",
+        "title": "Morir todos los días",
+        "slug": "morir-todos-los-dias",
+        "status": "publish",
+        "sku": "",
+        "price": "18",
+        "regularPrice": "18",
+        "externalUrl": "",
+        "productType": "simple",
+        "thumbnailId": "1533"
+      },
+      {
+        "wpPostId": "3102",
+        "title": "Trabajas demasiado para ganar tan poco",
+        "slug": "trabajas-demasiado-para-ganar-tan-poco",
+        "status": "publish",
+        "sku": "",
+        "price": "7.90",
+        "regularPrice": "7.90",
+        "externalUrl": "",
+        "productType": "simple",
+        "thumbnailId": "3086"
+      }
+    ]
+  }
+}

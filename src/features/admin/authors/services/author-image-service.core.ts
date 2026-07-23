@@ -200,7 +200,7 @@ export function createAuthorImageService(
   storageClient: AuthorImageStorageClient,
   options: AuthorImageServiceOptions = {},
 ) {
-  const getRandomUUID = options.randomUUID ?? crypto.randomUUID;
+  const getRandomUUID = options.randomUUID ?? (() => globalThis.crypto.randomUUID());
 
   return {
     async uploadAuthorImage(authorId: string, file: File): Promise<AuthorImageUploadResult> {

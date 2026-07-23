@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-07-23T16:27:06.557Z",
+  "authors": [
+    "41be7a29-44d6-4f30-9508-4367a489f8e7",
+    "86d71b66-740f-4712-b87e-7a61e05acc38",
+    "e290a87d-da53-46fb-be45-a4b89e8c9502",
+    "9dcd55de-ff32-4331-93e2-ded0979c905c",
+    "ddc02801-7185-4902-a353-304247dfe612",
+    "786db0b7-d2f5-4186-982c-e8a4bb54c778",
+    "35ce3606-59f1-493a-bd54-169c33abbee3"
+  ],
+  "books": [
+    "11f50eec-ca48-47c5-8d61-38bd573554ba",
+    "9dc918df-8c99-473f-90be-a672fbc74803",
+    "38f4596b-3c42-42cb-b453-a02834e050c7"
+  ],
+  "storageFiles": [
+    "11f50eec-ca48-47c5-8d61-38bd573554ba/3f869946-b823-4684-8975-f921966a86a2.jpg",
+    "9dc918df-8c99-473f-90be-a672fbc74803/87f9e567-d57b-4a09-bf1d-7efe6c7a7174.jpg",
+    "38f4596b-3c42-42cb-b453-a02834e050c7/97a79e7d-6ad3-40da-99c5-0a8aa7993d26.jpg"
+  ],
+  "notes": [
+    "Apply: revisar manualmente estos IDs y paths antes de borrar datos.",
+    "La reversión es manual y debe revisarse antes de borrar datos."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "bookDuplicateGroups": {
+    "duplicate-book:cruce de pasos": {
+      "action": "merge",
+      "canonicalCandidateKey": "book:cruce de pasos",
+      "mergeAuthorRelations": true
+    }
+  }
+}

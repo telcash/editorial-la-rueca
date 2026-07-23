@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2026-07-19T16:20:51.212Z",
+  "cases": [
+    {
+      "kind": "legacy_simple",
+      "reason": "Legacy con tf_libro y relación inferida.",
+      "sourceWpPostId": "589",
+      "bookCandidateKey": "book:requiem por un escritor desconocido",
+      "title": "Réquiem por un escritor desconocido"
+    },
+    {
+      "kind": "duplicate_multi_author",
+      "reason": "Título duplicado o multi-autor candidato.",
+      "sourceWpPostId": "563",
+      "bookCandidateKey": "book:cruce de pasos",
+      "title": "Cruce de Pasos"
+    },
+    {
+      "kind": "with_video",
+      "reason": "Registro legacy con video.",
+      "sourceWpPostId": "556",
+      "bookCandidateKey": "book:el valle de cristal",
+      "title": "El Valle de Cristal"
+    },
+    {
+      "kind": "without_video",
+      "reason": "Registro legacy sin video.",
+      "sourceWpPostId": "589",
+      "bookCandidateKey": "book:requiem por un escritor desconocido",
+      "title": "Réquiem por un escritor desconocido"
+    },
+    {
+      "kind": "with_image",
+      "reason": "Registro con imagen asociada.",
+      "sourceWpPostId": "556",
+      "bookCandidateKey": "book:el valle de cristal",
+      "title": "El Valle de Cristal"
+    },
+    {
+      "kind": "modern_author_without_book",
+      "reason": "Autor moderno sin tf_libro.",
+      "sourceWpPostId": "571",
+      "authorCandidateKey": "author:571",
+      "title": "Antoñita la Fantástica"
+    },
+    {
+      "kind": "ambiguous_image_role",
+      "reason": "Registro con _thumbnail_id e imagen_destacada_2 diferentes.",
+      "sourceWpPostId": "1712",
+      "authorCandidateKey": "author:1712",
+      "title": "Antonio López Hurtado (Zárate)"
+    },
+    {
+      "kind": "possible_duplicate_author",
+      "reason": "Posible duplicado por nombre o slug normalizado.",
+      "sourceWpPostId": "556",
+      "authorCandidateKey": "author:556",
+      "title": "Guillermo M. Schrem"
+    },
+    {
+      "kind": "with_yoast_meta_description",
+      "reason": "Autor con metadescripción Yoast disponible.",
+      "sourceWpPostId": "1108",
+      "authorCandidateKey": "author:1108",
+      "title": "MAURO"
+    },
+    {
+      "kind": "with_secondary_image_field",
+      "reason": "Autor con imagen_destacada_2 para revisar patrón de imagen.",
+      "sourceWpPostId": "1712",
+      "authorCandidateKey": "author:1712",
+      "title": "Antonio López Hurtado (Zárate)"
+    },
+    {
+      "kind": "with_html_review",
+      "reason": "Registro con ta_resena HTML preservado.",
+      "sourceWpPostId": "556",
+      "authorCandidateKey": "author:556",
+      "title": "Guillermo M. Schrem"
+    },
+    {
+      "kind": "legacy_missing_dedicated_book_url",
+      "reason": "Libro legacy sin URL antigua dedicada propia.",
+      "sourceWpPostId": "556",
+      "bookCandidateKey": "book:el valle de cristal",
+      "title": "El Valle de Cristal"
+    },
+    {
+      "kind": "recent_author",
+      "reason": "Registro reciente por fecha de modificación.",
+      "sourceWpPostId": "990",
+      "authorCandidateKey": "author:990",
+      "title": "Jerónimo Campoy Muñoz"
+    }
+  ]
+}

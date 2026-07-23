@@ -1,0 +1,1072 @@
+wpPostId,title,slug,url,parentId,mimeType,width,height,attachedFile
+7,logo-la-rueca,logo-la-rueca,https://editoriallarueca.com/wp-content/uploads/logo-la-rueca.png,,image/png,500,182,logo-la-rueca.png
+30,espiral,espiral,https://editoriallarueca.com/wp-content/uploads/espiral.png,,image/png,977,681,espiral.png
+32,wheel-icon-black,wheel-icon-black,https://editoriallarueca.com/wp-content/uploads/wheel-icon-black.svg,,,150,150,wheel-icon-black.svg
+33,wheel-icon-red,wheel-icon-red,https://editoriallarueca.com/wp-content/uploads/wheel-icon-red.svg,,,150,150,wheel-icon-red.svg
+34,wheel-icon-white,wheel-icon-white,https://editoriallarueca.com/wp-content/uploads/wheel-icon-white.svg,,,150,150,wheel-icon-white.svg
+43,portada-libro,portada-libro,https://editoriallarueca.com/wp-content/uploads/portada-libro.jpg,,image/jpeg,500,707,portada-libro.jpg
+48,arrow-black-next,arrow-black-next,https://editoriallarueca.com/wp-content/uploads/arrow-black-next.svg,,,150,150,arrow-black-next.svg
+49,arrow-black-prev,arrow-black-prev,https://editoriallarueca.com/wp-content/uploads/arrow-black-prev.svg,,,150,150,arrow-black-prev.svg
+50,arrow-red-next,arrow-red-next,https://editoriallarueca.com/wp-content/uploads/arrow-red-next.svg,,,150,150,arrow-red-next.svg
+51,arrow-red-prev,arrow-red-prev,https://editoriallarueca.com/wp-content/uploads/arrow-red-prev.svg,,,150,150,arrow-red-prev.svg
+52,proceso-asesoramiento,proceso-asesoramiento,https://editoriallarueca.com/wp-content/uploads/proceso-asesoramiento.jpg,,image/jpeg,800,600,proceso-asesoramiento.jpg
+53,proceso-correccion,proceso-correccion,https://editoriallarueca.com/wp-content/uploads/proceso-correccion.jpg,,image/jpeg,800,600,proceso-correccion.jpg
+54,proceso-distribucion,proceso-distribucion,https://editoriallarueca.com/wp-content/uploads/proceso-distribucion.jpg,,image/jpeg,800,600,proceso-distribucion.jpg
+55,proceso-manuscrito,proceso-manuscrito,https://editoriallarueca.com/wp-content/uploads/proceso-manuscrito.jpg,,image/jpeg,800,600,proceso-manuscrito.jpg
+56,proceso-maquetacion,proceso-maquetacion,https://editoriallarueca.com/wp-content/uploads/proceso-maquetacion.jpg,,image/jpeg,800,600,proceso-maquetacion.jpg
+57,proceso-presupuesto,proceso-presupuesto,https://editoriallarueca.com/wp-content/uploads/proceso-presupuesto.jpg,,image/jpeg,800,600,proceso-presupuesto.jpg
+58,fondo-home-1,fondo-home-1,https://editoriallarueca.com/wp-content/uploads/fondo-home-1.jpg,,image/jpeg,1800,1199,fondo-home-1.jpg
+59,fondo-home-2,fondo-home-2,https://editoriallarueca.com/wp-content/uploads/fondo-home-2.jpg,,image/jpeg,1800,1199,fondo-home-2.jpg
+60,about-rueca,about-rueca,https://editoriallarueca.com/wp-content/uploads/about-rueca.jpg,,image/jpeg,700,700,about-rueca.jpg
+61,fondo-about,fondo-about,https://editoriallarueca.com/wp-content/uploads/fondo-about.jpg,,image/jpeg,470,470,fondo-about.jpg
+62,fondo-contacto,fondo-contacto,https://editoriallarueca.com/wp-content/uploads/fondo-contacto.jpg,,image/jpeg,1701,1213,fondo-contacto.jpg
+63,fondo-trans-contacto,fondo-trans-contacto,https://editoriallarueca.com/wp-content/uploads/fondo-trans-contacto.png,,image/png,1800,400,fondo-trans-contacto.png
+64,fondo-contacto-trans,fondo-contacto-trans,https://editoriallarueca.com/wp-content/uploads/fondo-contacto-trans.png,,image/png,1800,400,fondo-contacto-trans.png
+74,logo-footer,logo-footer,https://editoriallarueca.com/wp-content/uploads/logo-footer.png,,image/png,221,74,logo-footer.png
+76,espiral-roja,espiral-roja,https://editoriallarueca.com/wp-content/uploads/espiral-roja.png,,image/png,739,512,espiral-roja.png
+77,firma,firma,https://editoriallarueca.com/wp-content/uploads/firma.png,,image/png,159,120,firma.png
+78,fondo-parallax,fondo-parallax,https://editoriallarueca.com/wp-content/uploads/fondo-parallax.jpg,,image/jpeg,1800,1200,fondo-parallax.jpg
+79,foto-almudena,foto-almudena,https://editoriallarueca.com/wp-content/uploads/foto-almudena.jpg,,image/jpeg,286,391,foto-almudena.jpg
+91,formato-digital,formato-digital,https://editoriallarueca.com/wp-content/uploads/formato-digital.jpg,,image/jpeg,800,500,formato-digital.jpg
+92,formato-papel,formato-papel,https://editoriallarueca.com/wp-content/uploads/formato-papel.jpg,,image/jpeg,800,500,formato-papel.jpg
+93,icon-correccion-black,icon-correccion-black,https://editoriallarueca.com/wp-content/uploads/icon-correccion-black.svg,,,150,150,icon-correccion-black.svg
+94,icon-correccion-red,icon-correccion-red,https://editoriallarueca.com/wp-content/uploads/icon-correccion-red.svg,,,150,150,icon-correccion-red.svg
+95,icon-isbn-black,icon-isbn-black,https://editoriallarueca.com/wp-content/uploads/icon-isbn-black.svg,,,150,150,icon-isbn-black.svg
+96,icon-isbn-red,icon-isbn-red,https://editoriallarueca.com/wp-content/uploads/icon-isbn-red.svg,,,150,150,icon-isbn-red.svg
+97,icon-maquetacion-black,icon-maquetacion-black,https://editoriallarueca.com/wp-content/uploads/icon-maquetacion-black.svg,,,150,150,icon-maquetacion-black.svg
+98,icon-maquetacion-red,icon-maquetacion-red,https://editoriallarueca.com/wp-content/uploads/icon-maquetacion-red.svg,,,150,150,icon-maquetacion-red.svg
+99,icon-portada-black,icon-portada-black,https://editoriallarueca.com/wp-content/uploads/icon-portada-black.svg,,,150,150,icon-portada-black.svg
+100,icon-portada-red,icon-portada-red,https://editoriallarueca.com/wp-content/uploads/icon-portada-red.svg,,,150,150,icon-portada-red.svg
+101,icon-promocion-black,icon-promocion-black,https://editoriallarueca.com/wp-content/uploads/icon-promocion-black.svg,,,150,150,icon-promocion-black.svg
+102,icon-promocion-red,icon-promocion-red,https://editoriallarueca.com/wp-content/uploads/icon-promocion-red.svg,,,150,150,icon-promocion-red.svg
+103,icon-correccion-black-2,icon-correccion-black-2,https://editoriallarueca.com/wp-content/uploads/icon-correccion-black-2.svg,,,150,150,icon-correccion-black-2.svg
+104,icon-correccion-red-2,icon-correccion-red-2,https://editoriallarueca.com/wp-content/uploads/icon-correccion-red-2.svg,,,150,150,icon-correccion-red-2.svg
+105,icon-deposito-black,icon-deposito-black,https://editoriallarueca.com/wp-content/uploads/icon-deposito-black.svg,,,150,150,icon-deposito-black.svg
+106,icon-deposito-red,icon-deposito-red,https://editoriallarueca.com/wp-content/uploads/icon-deposito-red.svg,,,150,150,icon-deposito-red.svg
+107,icon-impresion-black,icon-impresion-black,https://editoriallarueca.com/wp-content/uploads/icon-impresion-black.svg,,,150,150,icon-impresion-black.svg
+108,icon-impresion-red,icon-impresion-red,https://editoriallarueca.com/wp-content/uploads/icon-impresion-red.svg,,,150,150,icon-impresion-red.svg
+109,fondo-tarifa,fondo-tarifa,https://editoriallarueca.com/wp-content/uploads/fondo-tarifa.jpg,,image/jpeg,500,500,fondo-tarifa.jpg
+118,fondo-trans-tablet,fondo-trans-tablet,https://editoriallarueca.com/wp-content/uploads/fondo-trans-tablet.png,,image/png,1024,1200,fondo-trans-tablet.png
+119,fondo-trans-mb,fondo-trans-mb,https://editoriallarueca.com/wp-content/uploads/fondo-trans-mb.png,,image/png,500,2000,fondo-trans-mb.png
+120,icon-down-arrow-white,icon-down-arrow-white,https://editoriallarueca.com/wp-content/uploads/icon-down-arrow-white.svg,,,150,150,icon-down-arrow-white.svg
+121,escribiendo,escribiendo,https://editoriallarueca.com/wp-content/uploads/escribiendo.jpg,,image/jpeg,700,549,escribiendo.jpg
+123,derechos-autor,derechos-autor,https://editoriallarueca.com/wp-content/uploads/derechos-autor.jpg,,image/jpeg,700,700,derechos-autor.jpg
+124,proceso-impresion,proceso-impresion,https://editoriallarueca.com/wp-content/uploads/proceso-impresion.jpg,,image/jpeg,800,600,proceso-impresion.jpg
+125,firma-almudena,firma-almudena,https://editoriallarueca.com/wp-content/uploads/firma-almudena.png,,image/png,170,115,firma-almudena.png
+126,icon-amazon-black,icon-amazon-black,https://editoriallarueca.com/wp-content/uploads/icon-amazon-black.svg,,,150,150,icon-amazon-black.svg
+127,icon-amazon-red,icon-amazon-red,https://editoriallarueca.com/wp-content/uploads/icon-amazon-red.svg,,,150,150,icon-amazon-red.svg
+128,aventura-en-el-bosque-encantado,aventura-en-el-bosque-encantado,https://editoriallarueca.com/wp-content/uploads/aventura-en-el-bosque-encantado.jpg,,image/jpeg,500,707,aventura-en-el-bosque-encantado.jpg
+129,la-sonrisa-de-pepe,la-sonrisa-de-pepe,https://editoriallarueca.com/wp-content/uploads/la-sonrisa-de-pepe.jpg,,image/jpeg,500,707,la-sonrisa-de-pepe.jpg
+130,la-vida-de-adonis,la-vida-de-adonis,https://editoriallarueca.com/wp-content/uploads/la-vida-de-adonis.jpg,,image/jpeg,500,707,la-vida-de-adonis.jpg
+131,pequeno-redoble-de-campana,pequeno-redoble-de-campana,https://editoriallarueca.com/wp-content/uploads/pequeno-redoble-de-campana.jpg,,image/jpeg,500,707,pequeno-redoble-de-campana.jpg
+132,tierra-de-campos,tierra-de-campos,https://editoriallarueca.com/wp-content/uploads/tierra-de-campos.jpg,,image/jpeg,500,707,tierra-de-campos.jpg
+133,tristeza-del-alma,tristeza-del-alma,https://editoriallarueca.com/wp-content/uploads/tristeza-del-alma.jpg,,image/jpeg,500,707,tristeza-del-alma.jpg
+134,volveras-a-pasadena,volveras-a-pasadena,https://editoriallarueca.com/wp-content/uploads/volveras-a-pasadena.jpg,,image/jpeg,500,707,volveras-a-pasadena.jpg
+135,tierra-de-campos,tierra-de-campos-2,https://editoriallarueca.com/wp-content/uploads/tierra-de-campos-1.jpg,,image/jpeg,500,707,tierra-de-campos-1.jpg
+136,recuerdo-al-olvido,recuerdo-al-olvido,https://editoriallarueca.com/wp-content/uploads/recuerdo-al-olvido.jpg,,image/jpeg,500,707,recuerdo-al-olvido.jpg
+139,tierra-de-campos-2-edicion,tierra-de-campos-2-edicion,https://editoriallarueca.com/wp-content/uploads/tierra-de-campos-2-edicion.jpg,,image/jpeg,500,707,tierra-de-campos-2-edicion.jpg
+141,Yahoo Mail - Sin asunto,yahoo-mail-sin-asunto,https://editoriallarueca.com/wp-content/uploads/foto-almudena-web.jpg,,image/jpeg,670,648,foto-almudena-web.jpg
+156,w_Nagasaki,w_nagasaki,https://editoriallarueca.com/wp-content/uploads/w_Nagasaki.jpg,,image/jpeg,1811,2560,w_Nagasaki-scaled.jpg
+158,w_LuciaErice_Pepe,w_luciaerice_pepe,https://editoriallarueca.com/wp-content/uploads/w_LuciaErice_Pepe.jpg,,image/jpeg,1811,2560,w_LuciaErice_Pepe-scaled.jpg
+160,w_Kalifornia,w_kalifornia,https://editoriallarueca.com/wp-content/uploads/w_Kalifornia.jpg,,image/jpeg,1811,2560,w_Kalifornia-scaled.jpg
+162,w_HistoriaMagica,w_historiamagica,https://editoriallarueca.com/wp-content/uploads/w_HistoriaMagica.jpg,,image/jpeg,1808,2560,w_HistoriaMagica-scaled.jpg
+163,RecuerdoOlvido,recuerdoolvido,https://editoriallarueca.com/wp-content/uploads/w_RecuerdoOlvido.jpg,,image/jpeg,1810,2560,w_RecuerdoOlvido-scaled.jpg
+164,w_HistoriaMagica,w_historiamagica-2,https://editoriallarueca.com/wp-content/uploads/w_HistoriaMagicaRGB.jpg,,image/jpeg,1808,2560,w_HistoriaMagicaRGB-scaled.jpg
+165,AM_TierraCampos_Cubierta,am_tierracampos_cubierta,https://editoriallarueca.com/wp-content/uploads/w_TierraCamposCMYK.jpg,,image/jpeg,1818,2560,w_TierraCamposCMYK-scaled.jpg
+166,AM_TierraCampos_Cubierta,am_tierracampos_cubierta-2,https://editoriallarueca.com/wp-content/uploads/w_TierraCampos.jpg,,image/jpeg,1818,2560,w_TierraCampos-scaled.jpg
+167,w_OLvido,w_olvido,https://editoriallarueca.com/wp-content/uploads/w_OLvido.jpg,,image/jpeg,1417,2004,w_OLvido.jpg
+170,Processed with VSCO with hb1 preset,processed-with-vsco-with-hb1-preset,https://editoriallarueca.com/wp-content/uploads/fondo-parallax-2.jpg,,image/jpeg,1920,1280,fondo-parallax-2.jpg
+171,icon-facebook,icon-facebook,https://editoriallarueca.com/wp-content/uploads/icon-facebook.svg,,,150,150,icon-facebook.svg
+172,icon-instagram,icon-instagram,https://editoriallarueca.com/wp-content/uploads/icon-instagram.svg,,,150,150,icon-instagram.svg
+183,icon-audio-black,icon-audio-black,https://editoriallarueca.com/wp-content/uploads/icon-audio-black.svg,,,150,150,icon-audio-black.svg
+184,icon-audio-red,icon-audio-red,https://editoriallarueca.com/wp-content/uploads/icon-audio-red.svg,,,150,150,icon-audio-red.svg
+187,W_ElRuta,w_elruta,https://editoriallarueca.com/wp-content/uploads/W_ElRuta.psd,,,,,W_ElRuta.psd
+188,W_ElRuta,w_elruta-2,https://editoriallarueca.com/wp-content/uploads/W_ElRuta-1.psd,,,,,W_ElRuta-1.psd
+189,W_ElRuta,w_elruta-3,https://editoriallarueca.com/wp-content/uploads/W_ElRuta.jpg,,image/jpeg,1417,2004,W_ElRuta.jpg
+190,W_ElRuta,w_elruta-4,https://editoriallarueca.com/wp-content/uploads/W_ElRuta-1.jpg,,image/jpeg,1417,2004,W_ElRuta-1.jpg
+192,W_Diccionario,w_diccionario,https://editoriallarueca.com/wp-content/uploads/W_Diccionario.jpg,,image/jpeg,1811,2560,W_Diccionario-scaled.jpg
+193,W_Diccionario,w_diccionario-2,https://editoriallarueca.com/wp-content/uploads/W_Diccionario-1.jpg,,image/jpeg,1811,2560,W_Diccionario-1-scaled.jpg
+196,YoTeAcuso_RedesSociales,yoteacuso_redessociales,https://editoriallarueca.com/wp-content/uploads/W_YoTeAcuso.jpg,,image/jpeg,1811,2560,W_YoTeAcuso-scaled.jpg
+200,W_ELR_Criterios,w_elr_criterios,https://editoriallarueca.com/wp-content/uploads/W_ELR_Criterios.jpg,,image/jpeg,1811,2560,W_ELR_Criterios-scaled.jpg
+201,W_ELR_Criterios,w_elr_criterios-2,https://editoriallarueca.com/wp-content/uploads/W_ELR_Criterios-1.jpg,,image/jpeg,1811,2560,W_ELR_Criterios-1-scaled.jpg
+203,Obra de arte e ilustración,obra-de-arte-e-ilustracion,https://editoriallarueca.com/wp-content/uploads/W_HalleyBuena.jpg,,image/jpeg,1811,2560,W_HalleyBuena-scaled.jpg
+205,W_PasatiemposPerversos,w_pasatiemposperversos,https://editoriallarueca.com/wp-content/uploads/W_PasatiemposPerversos.jpg,,image/jpeg,1811,2560,W_PasatiemposPerversos-scaled.jpg
+206,W_PasatiemposPerversos,w_pasatiemposperversos-2,https://editoriallarueca.com/wp-content/uploads/W2_PasatiemposPerversos.jpg,,image/jpeg,660,862,W2_PasatiemposPerversos.jpg
+208,W_cineYmedicina,w_cineymedicina,https://editoriallarueca.com/wp-content/uploads/W_cineYmedicina.jpg,,image/jpeg,1811,2560,W_cineYmedicina-scaled.jpg
+209,W__Pasatiempos_Conesa,w__pasatiempos_conesa,https://editoriallarueca.com/wp-content/uploads/W__Pasatiempos_Conesa.psd,,,,,W__Pasatiempos_Conesa.psd
+210,W__Pasatiempos_Conesa,w__pasatiempos_conesa-2,https://editoriallarueca.com/wp-content/uploads/W__Pasatiempos_Conesa.jpg,,image/jpeg,1811,2560,W__Pasatiempos_Conesa-scaled.jpg
+213,Obra de arte e ilustración,obra-de-arte-e-ilustracion-2,https://editoriallarueca.com/wp-content/uploads/w_Ajusticiados.jpg,,image/jpeg,1811,2560,w_Ajusticiados-scaled.jpg
+214,Obra de arte e ilustración,obra-de-arte-e-ilustracion-3,https://editoriallarueca.com/wp-content/uploads/w_Ajusticiados-1.jpg,,image/jpeg,1811,2560,w_Ajusticiados-1-scaled.jpg
+215,logo-acjr,logo-acjr,https://editoriallarueca.com/wp-content/uploads/logo-acjr.jpg,,image/jpeg,300,300,logo-acjr.jpg
+216,logo-anverso-reverso,logo-anverso-reverso,https://editoriallarueca.com/wp-content/uploads/logo-anverso-reverso.jpg,,image/jpeg,300,300,logo-anverso-reverso.jpg
+217,logo-cibes,logo-cibes,https://editoriallarueca.com/wp-content/uploads/logo-cibes.jpg,,image/jpeg,300,300,logo-cibes.jpg
+226,FotoPortadaMisioneras,fotoportadamisioneras,https://editoriallarueca.com/wp-content/uploads/w_GuerraCivil_Misioneras.jpg,,image/jpeg,1829,2560,w_GuerraCivil_Misioneras-scaled.jpg
+227,W_FotoPortadaMisioneras,w_fotoportadamisioneras,https://editoriallarueca.com/wp-content/uploads/W_FotoPortadaMisioneras.tif,,,,,W_FotoPortadaMisioneras.tif
+228,FotoPortadaMisioneras,fotoportadamisioneras-2,https://editoriallarueca.com/wp-content/uploads/W_FotoPortadaMisioneras.jpg,,image/jpeg,1417,1984,W_FotoPortadaMisioneras.jpg
+230,w_cuentos,w_cuentos,https://editoriallarueca.com/wp-content/uploads/w_cuentos.jpg,,image/jpeg,1811,2560,w_cuentos-scaled.jpg
+233,w_ProfeciasBiblicas,w_profeciasbiblicas,https://editoriallarueca.com/wp-content/uploads/w2_ProfeciasBiblicas.jpg,,image/jpeg,1811,2560,w2_ProfeciasBiblicas-scaled.jpg
+235,w_Football,w_football,https://editoriallarueca.com/wp-content/uploads/w_Football.jpg,,image/jpeg,1811,2560,w_Football-scaled.jpg
+239,W_JoaquinRiquelme,w_joaquinriquelme,https://editoriallarueca.com/wp-content/uploads/W_JoaquinRiquelme.jpg,,image/jpeg,1417,2004,W_JoaquinRiquelme.jpg
+240,W_JoaquinRiquelme,w_joaquinriquelme-2,https://editoriallarueca.com/wp-content/uploads/W_JoaquinRiquelme.tif,,,,,W_JoaquinRiquelme.tif
+241,W_JoaquinRiquelme,w_joaquinriquelme-3,https://editoriallarueca.com/wp-content/uploads/W_JoaquinRiquelme-1.tif,,,,,W_JoaquinRiquelme-1.tif
+243,w_desdeBcn,w_desdebcn,https://editoriallarueca.com/wp-content/uploads/w_desdeBcn.jpg,,image/jpeg,1811,2560,w_desdeBcn-scaled.jpg
+245,icon-cart-black,icon-cart-black,https://editoriallarueca.com/wp-content/uploads/icon-cart-black.svg,,,150,150,icon-cart-black.svg
+246,icon-cart-red,icon-cart-red,https://editoriallarueca.com/wp-content/uploads/icon-cart-red.svg,,,150,150,icon-cart-red.svg
+247,icon-cart-white,icon-cart-white,https://editoriallarueca.com/wp-content/uploads/icon-cart-white.svg,,,150,150,icon-cart-white.svg
+252,W_cub_Luna_Rafa,w_cub_luna_rafa,https://editoriallarueca.com/wp-content/uploads/W_cub_Luna_Rafa.jpg,,image/jpeg,1833,2560,W_cub_Luna_Rafa-scaled.jpg
+254,w_rss_Nagasaki,w_rss_nagasaki,https://editoriallarueca.com/wp-content/uploads/w_rss_Nagasaki.tif,,,,,w_rss_Nagasaki.tif
+255,w_rss_Nagasaki,w_rss_nagasaki-2,https://editoriallarueca.com/wp-content/uploads/w_rss_Nagasaki.jpg,,image/jpeg,1417,2035,w_rss_Nagasaki.jpg
+257,w_desdeBcn,w_desdebcn-2,https://editoriallarueca.com/wp-content/uploads/w_desdeBcn-1.jpg,,image/jpeg,551,827,w_desdeBcn-1.jpg
+258,Obra de arte e ilustración,obra-de-arte-e-ilustracion-4,https://editoriallarueca.com/wp-content/uploads/w_Ajusticiados-2.jpg,,image/jpeg,551,827,w_Ajusticiados-2.jpg
+260,W_Teoría,w_teoria,https://editoriallarueca.com/wp-content/uploads/W_Teoria.jpg,,image/jpeg,1363,2004,W_Teoria.jpg
+261,w_TierraCampos,w_tierracampos,https://editoriallarueca.com/wp-content/uploads/w_TierraCampos-1.jpg,,image/jpeg,1417,2131,w_TierraCampos-1.jpg
+262,w_Kalifornia,w_kalifornia-2,https://editoriallarueca.com/wp-content/uploads/w_Kalifornia-1.jpg,,image/jpeg,1417,2183,w_Kalifornia-1.jpg
+263,w_TierraCampos,w_tierracampos-2,https://editoriallarueca.com/wp-content/uploads/w_TierraCampos-2.jpg,,image/jpeg,1417,2131,w_TierraCampos-2.jpg
+264,2w_TierraCampos,2w_tierracampos,https://editoriallarueca.com/wp-content/uploads/2w_TierraCampos.jpg,,image/jpeg,1417,2131,2w_TierraCampos.jpg
+265,2w_TierraCampos,2w_tierracampos-2,https://editoriallarueca.com/wp-content/uploads/2w_TierraCampos-1.jpg,,image/jpeg,1417,2131,2w_TierraCampos-1.jpg
+266,3w_TierraCampos,3w_tierracampos,https://editoriallarueca.com/wp-content/uploads/3w_TierraCampos.jpg,,image/jpeg,1417,2131,3w_TierraCampos.jpg
+267,2w_YoTeAcuso,2w_yoteacuso,https://editoriallarueca.com/wp-content/uploads/2w_YoTeAcuso.jpg,,image/jpeg,1779,2560,2w_YoTeAcuso-scaled.jpg
+268,w_3Pasadena,w_3pasadena,https://editoriallarueca.com/wp-content/uploads/w_3Pasadena.jpg,,image/jpeg,1417,2185,w_3Pasadena.jpg
+269,2W_Kalifornia,2w_kalifornia,https://editoriallarueca.com/wp-content/uploads/2W_Kalifornia.jpg,,image/jpeg,1417,1984,2W_Kalifornia.jpg
+270,2w_nefertiti,2w_nefertiti,https://editoriallarueca.com/wp-content/uploads/2w_nefertiti.jpg,,image/jpeg,1417,1946,2w_nefertiti.jpg
+272,w_TierraCamposNueva,w_tierracamposnueva,https://editoriallarueca.com/wp-content/uploads/w_TierraCamposNueva.tif,,,,,w_TierraCamposNueva.tif
+273,w_TierraCamposNueva,w_tierracamposnueva-2,https://editoriallarueca.com/wp-content/uploads/w_TierraCamposNueva.jpg,,image/jpeg,1417,2150,w_TierraCamposNueva.jpg
+275,W_1435,w_1435,https://editoriallarueca.com/wp-content/uploads/W_1435.tif,,,,,W_1435.tif
+276,W_1435,w_1435-2,https://editoriallarueca.com/wp-content/uploads/W_1435.jpg,,image/jpeg,1417,1984,W_1435.jpg
+278,W_1435,w_1435-3,https://editoriallarueca.com/wp-content/uploads/W_1435-1.jpg,,image/jpeg,1417,1984,W_1435-1.jpg
+279,w_ElAzulMar,w_elazulmar,https://editoriallarueca.com/wp-content/uploads/w_ElAzulMar.jpg,,image/jpeg,1417,1984,w_ElAzulMar.jpg
+280,W_1435,w_1435-4,https://editoriallarueca.com/wp-content/uploads/W_1435-2.jpg,,image/jpeg,1417,1984,W_1435-2.jpg
+281,W_1435,w_1435-5,https://editoriallarueca.com/wp-content/uploads/W_1435-3.jpg,,image/jpeg,1417,1984,W_1435-3.jpg
+283,w_Luna2ed,w_luna2ed,https://editoriallarueca.com/wp-content/uploads/w_Luna2ed.jpg,,image/jpeg,1417,2116,w_Luna2ed.jpg
+284,w_Luna2ed,w_luna2ed-2,https://editoriallarueca.com/wp-content/uploads/w_Luna2ed-1.jpg,,image/jpeg,1417,2116,w_Luna2ed-1.jpg
+285,2w_redesSociales_Rene,2w_redessociales_rene,https://editoriallarueca.com/wp-content/uploads/2w_redesSociales_Rene.jpg,,image/jpeg,1813,2560,2w_redesSociales_Rene-scaled.jpg
+286,2w_redesSociales_Rene,2w_redessociales_rene-2,https://editoriallarueca.com/wp-content/uploads/2w_redesSociales_Rene-1.jpg,,image/jpeg,613,866,2w_redesSociales_Rene-1.jpg
+290,w_arqueologia,w_arqueologia,https://editoriallarueca.com/wp-content/uploads/w_arqueologia.jpg,,image/jpeg,1417,2079,w_arqueologia.jpg
+292,w_Cub_Sexualidad,w_cub_sexualidad,https://editoriallarueca.com/wp-content/uploads/w_Cub_Sexualidad.jpg,,image/jpeg,1751,2560,w_Cub_Sexualidad-scaled.jpg
+294,w_DileAMama,w_dileamama,https://editoriallarueca.com/wp-content/uploads/w_DileAMama.jpg,,image/jpeg,1846,2560,w_DileAMama-scaled.jpg
+297,w_1435OK,w_1435ok,https://editoriallarueca.com/wp-content/uploads/w_1435OK-1.jpg,,image/jpeg,1846,2560,w_1435OK-1-scaled.jpg
+300,w_Redoble,w_redoble,https://editoriallarueca.com/wp-content/uploads/w_Redoble.jpg,,image/jpeg,1417,1948,w_Redoble.jpg
+301,w_Redoble,w_redoble-2,https://editoriallarueca.com/wp-content/uploads/w_Redoble-1.jpg,,image/jpeg,1417,1948,w_Redoble-1.jpg
+307,w_dance,w_dance,https://editoriallarueca.com/wp-content/uploads/w_dance.jpg,,image/jpeg,1417,1984,w_dance.jpg
+309,w_Encuentros,w_encuentros,https://editoriallarueca.com/wp-content/uploads/w_Encuentros.jpg,,image/jpeg,482,680,w_Encuentros.jpg
+312,w_Salvaje,w_salvaje,https://editoriallarueca.com/wp-content/uploads/w_Salvaje.jpg,,image/jpeg,1417,2077,w_Salvaje.jpg
+313,w_Salvaje,w_salvaje-2,https://editoriallarueca.com/wp-content/uploads/w_Salvaje.tif,,,,,w_Salvaje.tif
+314,w_Salvaje,w_salvaje-3,https://editoriallarueca.com/wp-content/uploads/w_Salvaje-1.tif,,,,,w_Salvaje-1.tif
+315,w_Salvaje,w_salvaje-4,https://editoriallarueca.com/wp-content/uploads/w_Salvaje-2.tif,,,,,w_Salvaje-2.tif
+316,w_SalvajeOK,w_salvajeok,https://editoriallarueca.com/wp-content/uploads/w_SalvajeOK.jpg,,image/jpeg,1417,1995,w_SalvajeOK.jpg
+318,RSS_Portada,rss_portada,https://editoriallarueca.com/wp-content/uploads/W_JChamCri.jpg,,image/jpeg,1824,2560,W_JChamCri-scaled.jpg
+320,w_cub_Luna3ed,w_cub_luna3ed,https://editoriallarueca.com/wp-content/uploads/w_cub_Luna3ed.jpg,,image/jpeg,1713,2560,w_cub_Luna3ed-scaled.jpg
+323,w_NoEsManera,w_noesmanera,https://editoriallarueca.com/wp-content/uploads/w_NoEsManera.jpg,,image/jpeg,1417,1984,w_NoEsManera.jpg
+325,2w_EsaNoEsManera,2w_esanoesmanera,https://editoriallarueca.com/wp-content/uploads/2w_EsaNoEsManera.jpg,,image/jpeg,1417,1984,2w_EsaNoEsManera.jpg
+328,W_ComerBien,w_comerbien,https://editoriallarueca.com/wp-content/uploads/W_ComerBien.jpg,,image/jpeg,1417,2052,W_ComerBien.jpg
+407,Amazon,amazon,https://editoriallarueca.com/wp-content/uploads/Amazon.png,,image/png,583,360,Amazon.png
+409,Logo_Amazon,logo_amazon,https://editoriallarueca.com/wp-content/uploads/Logo_Amazon.png,,image/png,550,700,Logo_Amazon.png
+461,w_Puzzle,w_puzzle,https://editoriallarueca.com/wp-content/uploads/w_Puzzle.jpg,,image/jpeg,1417,2124,w_Puzzle.jpg
+462,W_ComerBien,w_comerbien-2,https://editoriallarueca.com/wp-content/uploads/W_ComerBien-1.jpg,,image/jpeg,482,698,W_ComerBien-1.jpg
+463,W_ComerBien,w_comerbien-3,https://editoriallarueca.com/wp-content/uploads/W_ComerBien-2.jpg,,image/jpeg,482,698,W_ComerBien-2.jpg
+466,w_Profundidad,w_profundidad,https://editoriallarueca.com/wp-content/uploads/w_Profundidad.tif,,,,,w_Profundidad.tif
+467,w_Profundidad,w_profundidad-2,https://editoriallarueca.com/wp-content/uploads/w_Profundidad.jpg,,image/jpeg,1417,1984,w_Profundidad.jpg
+469,AF_CubOK_CRUCE DE PASOS 3ª edición (CMYK),af_cubok_cruce-de-pasos-3a-edicion-cmyk,https://editoriallarueca.com/wp-content/uploads/w_CRUCE-DE-PASOS-3a-edicion-CMYK.jpg,,image/jpeg,1772,2272,w_CRUCE-DE-PASOS-3a-edicion-CMYK.jpg
+480,RRSS_Canteria,rrss_canteria,https://editoriallarueca.com/wp-content/uploads/w_Canteria-1.jpg,,image/jpeg,1761,2560,w_Canteria-1-scaled.jpg
+483,W_CarlosRios,w_carlosrios,https://editoriallarueca.com/wp-content/uploads/W_CarlosRios.tif,,,,,W_CarlosRios.tif
+484,W_CarlosRios,w_carlosrios-2,https://editoriallarueca.com/wp-content/uploads/W_CarlosRios.jpg,,image/jpeg,1417,1984,W_CarlosRios.jpg
+485,W_CarlosRios,w_carlosrios-3,https://editoriallarueca.com/wp-content/uploads/W_CarlosRios-1.jpg,,image/jpeg,1417,1984,W_CarlosRios-1.jpg
+488,w_LaRana,w_larana,https://editoriallarueca.com/wp-content/uploads/w_LaRana.jpg,,image/jpeg,1417,2124,w_LaRana.jpg
+490,w_DeKolpino,w_dekolpino,https://editoriallarueca.com/wp-content/uploads/w_DeKolpino.jpg,,image/jpeg,1417,2014,w_DeKolpino.jpg
+491,w_DeKolpino,w_dekolpino-2,https://editoriallarueca.com/wp-content/uploads/w_DeKolpino-1.jpg,,image/jpeg,1417,2014,w_DeKolpino-1.jpg
+492,w_DeKolpino,w_dekolpino-3,https://editoriallarueca.com/wp-content/uploads/w_DeKolpino-2.jpg,,image/jpeg,1417,2014,w_DeKolpino-2.jpg
+496,W_campos_de_dispersión_ascéticA,w_campos_de_dispersion_ascetica,https://editoriallarueca.com/wp-content/uploads/W_campos_de_dispersion_asceticA.jpg,,image/jpeg,1681,2560,W_campos_de_dispersion_asceticA-scaled.jpg
+497,w_campos_de_dispersión_ascética_VA,w_campos_de_dispersion_ascetica_va,https://editoriallarueca.com/wp-content/uploads/w_campos_de_dispersion_ascetica_VA.tif,,,,,w_campos_de_dispersion_ascetica_VA.tif
+498,w_campos_de_dispersión_ascética_VA,w_campos_de_dispersion_ascetica_va-2,https://editoriallarueca.com/wp-content/uploads/w_campos_de_dispersion_ascetica_VA.jpg,,image/jpeg,1676,2560,w_campos_de_dispersion_ascetica_VA-scaled.jpg
+500,RRSS_Requiem,rrss_requiem,https://editoriallarueca.com/wp-content/uploads/RRSS_Requiem.jpg,,image/jpeg,2560,1707,RRSS_Requiem-scaled.jpg
+501,w_Requiem,w_requiem,https://editoriallarueca.com/wp-content/uploads/w_Requiem.jpg,,image/jpeg,1417,2082,w_Requiem.jpg
+504,w_Espiral,w_espiral,https://editoriallarueca.com/wp-content/uploads/w_Espiral.jpg,,image/jpeg,1417,1997,w_Espiral.jpg
+506,W_ElValle_Guillermo,w_elvalle_guillermo,https://editoriallarueca.com/wp-content/uploads/w_ElValle_Guillermo.jpg,,image/jpeg,1781,2560,w_ElValle_Guillermo-scaled.jpg
+510,w_Infinita_Norberto,w_infinita_norberto,https://editoriallarueca.com/wp-content/uploads/w_Infinita_Norberto.jpg,,image/jpeg,1743,2560,w_Infinita_Norberto-scaled.jpg
+512,mar_AF_cub_corre_TomatesVGA,mar_af_cub_corre_tomatesvga,https://editoriallarueca.com/wp-content/uploads/w_cub_corre_TomatesVGA.jpg,,image/jpeg,1743,2560,w_cub_corre_TomatesVGA-scaled.jpg
+515,W_cub_Monstruo,w_cub_monstruo,https://editoriallarueca.com/wp-content/uploads/W_cub_Monstruo.jpg,,image/jpeg,1733,2560,W_cub_Monstruo-scaled.jpg
+518,W_CUB_LA LISTA DE TAREAS _ELR,w_cub_la-lista-de-tareas-_elr,https://editoriallarueca.com/wp-content/uploads/W_CUB_LA-LISTA-DE-TAREAS-_ELR.jpg,,image/jpeg,1746,2560,W_CUB_LA-LISTA-DE-TAREAS-_ELR-scaled.jpg
+521,w_PadreInaki,w_padreinaki,https://editoriallarueca.com/wp-content/uploads/w_PadreInaki.jpg,,image/jpeg,1890,1985,w_PadreInaki.jpg
+528,icon-presentacion-red,icon-presentacion-red,https://editoriallarueca.com/wp-content/uploads/icon-presentacion-red.svg,,,150,150,icon-presentacion-red.svg
+529,icon-presentacion,icon-presentacion,https://editoriallarueca.com/wp-content/uploads/icon-presentacion.svg,,,150,150,icon-presentacion.svg
+531,foto-autor,foto-autor,https://editoriallarueca.com/wp-content/uploads/foto-autor.jpg,,image/jpeg,400,500,foto-autor.jpg
+532,foto-libro,foto-libro,https://editoriallarueca.com/wp-content/uploads/foto-libro.jpg,,image/jpeg,1000,667,foto-libro.jpg
+533,UnbuenLibro,unbuenlibro,https://editoriallarueca.com/wp-content/uploads/UnbuenLibro.jpg,,image/jpeg,2560,1707,UnbuenLibro-scaled.jpg
+535,Book_crucePasos,book_crucepasos,https://editoriallarueca.com/wp-content/uploads/Book_crucePasos.jpg,,image/jpeg,2560,1707,Book_crucePasos-scaled.jpg
+537,CartelTrofeoLaRueca004_Mesa de trabajo 1,carteltrofeolarueca004_mesa-de-trabajo-1,https://editoriallarueca.com/wp-content/uploads/CartelTrofeoLaRueca004_Mesa-de-trabajo-1.png,,image/png,1477,2067,CartelTrofeoLaRueca004_Mesa-de-trabajo-1.png
+541,w_DesdeBCNconAmor_dibujo,w_desdebcnconamor_dibujo,https://editoriallarueca.com/wp-content/uploads/w_DesdeBCNconAmor_dibujo.jpg,,image/jpeg,1394,2560,w_DesdeBCNconAmor_dibujo-scaled.jpg
+542,Book-ElPoder_Norberto,book-elpoder_norberto,https://editoriallarueca.com/wp-content/uploads/Book-ElPoder_Norberto.jpg,,image/jpeg,2560,1707,Book-ElPoder_Norberto-scaled.jpg
+543,MockUp_Valle,mockup_valle,https://editoriallarueca.com/wp-content/uploads/MockUp_Valle.jpg,,image/jpeg,2560,1707,MockUp_Valle-scaled.jpg
+544,RRSS_Espiral,rrss_espiral,https://editoriallarueca.com/wp-content/uploads/RRSS_Espiral.jpg,,image/jpeg,2560,1707,RRSS_Espiral-scaled.jpg
+545,Single Hard Cover with Open Book Psd Mockup,single-hard-cover-with-open-book-psd-mockup,https://editoriallarueca.com/wp-content/uploads/MockUp_Campos.jpg,,image/jpeg,2560,1920,MockUp_Campos-scaled.jpg
+546,Single Hard Cover with Open Book Psd Mockup,single-hard-cover-with-open-book-psd-mockup-2,https://editoriallarueca.com/wp-content/uploads/Mockup_Kolpino2.jpg,,image/jpeg,2560,1920,Mockup_Kolpino2-scaled.jpg
+547,MockUp_LaTrenza,mockup_latrenza,https://editoriallarueca.com/wp-content/uploads/MockUp_LaTrenza.jpg,,image/jpeg,2560,1707,MockUp_LaTrenza-scaled.jpg
+548,Single Hard Cover with Open Book Psd Mockup,single-hard-cover-with-open-book-psd-mockup-3,https://editoriallarueca.com/wp-content/uploads/Mockup_ComerBienEnCasa.jpg,,image/jpeg,2560,1920,Mockup_ComerBienEnCasa-scaled.jpg
+549,Book-ElDelgado,book-eldelgado,https://editoriallarueca.com/wp-content/uploads/Book-ElDelgado.jpg,,image/jpeg,2560,1707,Book-ElDelgado-scaled.jpg
+550,Book_Cover_Mockup_Salvaje,book_cover_mockup_salvaje,https://editoriallarueca.com/wp-content/uploads/Book_Cover_Mockup_Salvaje.jpg,,image/jpeg,2560,1810,Book_Cover_Mockup_Salvaje-scaled.jpg
+551,MockUp_Halley,mockup_halley,https://editoriallarueca.com/wp-content/uploads/MockUp_Halley.jpg,,image/jpeg,2560,1707,MockUp_Halley-scaled.jpg
+552,094-Desk-Top-5x8-Paperback-Book-Mockup-COVERVAULT,094-desk-top-5x8-paperback-book-mockup-covervault,https://editoriallarueca.com/wp-content/uploads/094-Desk-Top-5x8-Paperback-Book-Mockup-COVERVAULT.psd,,,,,094-Desk-Top-5x8-Paperback-Book-Mockup-COVERVAULT.psd
+553,MockUp_Elazul,mockup_elazul,https://editoriallarueca.com/wp-content/uploads/MockUp_Elazul.jpg,,image/jpeg,2504,2560,MockUp_Elazul-scaled.jpg
+554,MockUp_DesdeBCN,mockup_desdebcn,https://editoriallarueca.com/wp-content/uploads/MockUp_DesdeBCN.jpg,,image/jpeg,2504,2560,MockUp_DesdeBCN-scaled.jpg
+555,MockUp_Dileamama,mockup_dileamama,https://editoriallarueca.com/wp-content/uploads/MockUp_Dileamama.jpg,,image/jpeg,2560,1707,MockUp_Dileamama-scaled.jpg
+557,WhatsApp Image 2022-07-21 at 7.21.26 PM,whatsapp-image-2022-07-21-at-7-21-26-pm,https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg,,image/jpeg,777,1600,WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg
+558,book-Stack_vALLE,book-stack_valle,https://editoriallarueca.com/wp-content/uploads/book-Stack_vALLE.jpg,,image/jpeg,2560,1707,book-Stack_vALLE-scaled.jpg
+560,FotoPortada_Gausach,fotoportada_gausach,https://editoriallarueca.com/wp-content/uploads/FotoPortada_Gausach.jpeg,,image/jpeg,1200,1600,FotoPortada_Gausach.jpeg
+561,Imagen7778,imagen7778,https://editoriallarueca.com/wp-content/uploads/Imagen7778.jpg,,image/jpeg,1920,2560,Imagen7778-scaled.jpg
+562,BookCover_Salvaje,bookcover_salvaje,https://editoriallarueca.com/wp-content/uploads/BookCover_Salvaje.jpg,,image/jpeg,2560,1810,BookCover_Salvaje-scaled.jpg
+564,Book_crucePasos,book_crucepasos-2,https://editoriallarueca.com/wp-content/uploads/Book_crucePasos-1.jpg,,image/jpeg,2560,1707,Book_crucePasos-1-scaled.jpg
+566,FotoVeronica,fotoveronica,https://editoriallarueca.com/wp-content/uploads/FotoVeronica.tif,,,,,FotoVeronica.tif
+567,Single Hard Cover with Open Book Psd Mockup,single-hard-cover-with-open-book-psd-mockup-4,https://editoriallarueca.com/wp-content/uploads/Mockup_ComerBienEnCasa-1.jpg,,image/jpeg,2560,1920,Mockup_ComerBienEnCasa-1-scaled.jpg
+569,1657541819163_auto_x2,1657541819163_auto_x2,https://editoriallarueca.com/wp-content/uploads/1657541819163_auto_x2.jpg,,image/jpeg,2413,2560,1657541819163_auto_x2-scaled.jpg
+570,MockUp_Halley,mockup_halley-2,https://editoriallarueca.com/wp-content/uploads/MockUp_Halley-1.jpg,,image/jpeg,2560,1707,MockUp_Halley-1-scaled.jpg
+572,w_desdeBcn,w_desdebcn-3,https://editoriallarueca.com/wp-content/uploads/w_desdeBcn-2.jpg,,image/jpeg,551,827,w_desdeBcn-2.jpg
+573,MockUp_DesdeBCN,mockup_desdebcn-2,https://editoriallarueca.com/wp-content/uploads/MockUp_DesdeBCN-1.jpg,,image/jpeg,2504,2560,MockUp_DesdeBCN-1-scaled.jpg
+574,w_DesdeBCNconAmor_dibujo,w_desdebcnconamor_dibujo-2,https://editoriallarueca.com/wp-content/uploads/w_DesdeBCNconAmor_dibujo-1.jpg,,image/jpeg,1394,2560,w_DesdeBCNconAmor_dibujo-1-scaled.jpg
+576,WhatsApp Image 2022-07-12 at 7.12.52 PM,whatsapp-image-2022-07-12-at-7-12-52-pm,https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-12-at-7.12.52-PM.jpeg,,image/jpeg,1600,1066,WhatsApp-Image-2022-07-12-at-7.12.52-PM.jpeg
+577,MockUp_LaTrenza,mockup_latrenza-2,https://editoriallarueca.com/wp-content/uploads/MockUp_LaTrenza-1.jpg,,image/jpeg,2560,1707,MockUp_LaTrenza-1-scaled.jpg
+580,w_CUB_Camino_Argimiro_ELR,w_cub_camino_argimiro_elr,https://editoriallarueca.com/wp-content/uploads/w_A-lo-largo-del-Camino_jpg.jpg,,image/jpeg,500,715,w_A-lo-largo-del-Camino_jpg.jpg
+581,MockUp_LaTrenza_Pix,mockup_latrenza_pix,https://editoriallarueca.com/wp-content/uploads/MockUp_LaTrenza_Pix.jpg,,image/jpeg,900,600,MockUp_LaTrenza_Pix.jpg
+582,MockUp_DesdeBCN_pix,mockup_desdebcn_pix,https://editoriallarueca.com/wp-content/uploads/MockUp_DesdeBCN_pix.jpg,,image/jpeg,900,920,MockUp_DesdeBCN_pix.jpg
+583,MockUp_Halley_Pix,mockup_halley_pix,https://editoriallarueca.com/wp-content/uploads/MockUp_Halley_Pix.jpg,,image/jpeg,900,600,MockUp_Halley_Pix.jpg
+584,Single Hard Cover with Open Book Psd Mockup,single-hard-cover-with-open-book-psd-mockup-5,https://editoriallarueca.com/wp-content/uploads/Mockup_ComerBienEnCasaPixeles.jpg,,image/jpeg,900,675,Mockup_ComerBienEnCasaPixeles.jpg
+585,MockUp_Salvaje_pix,mockup_salvaje_pix,https://editoriallarueca.com/wp-content/uploads/MockUp_Salvaje_pix.jpg,,image/jpeg,900,636,MockUp_Salvaje_pix.jpg
+586,MockUp_crucePasos_pix,mockup_crucepasos_pix,https://editoriallarueca.com/wp-content/uploads/MockUp_crucePasos_pix.jpg,,image/jpeg,900,600,MockUp_crucePasos_pix.jpg
+587,Mockup_SalvajePixeles,mockup_salvajepixeles,https://editoriallarueca.com/wp-content/uploads/Mockup_SalvajePixeles.jpg,,image/jpeg,900,636,Mockup_SalvajePixeles.jpg
+588,Book Cover Multiple Psd Mockup,book-cover-multiple-psd-mockup,https://editoriallarueca.com/wp-content/uploads/MockUp_Guillermo.jpg,,image/jpeg,900,675,MockUp_Guillermo.jpg
+590,MockUp_Requiem_pix,mockup_requiem_pix,https://editoriallarueca.com/wp-content/uploads/MockUp_Requiem_pix.jpg,,image/jpeg,900,600,MockUp_Requiem_pix.jpg
+591,FotoCharlin,fotocharlin,https://editoriallarueca.com/wp-content/uploads/FotoCharlin.jpg,,image/jpeg,400,511,FotoCharlin.jpg
+593,Single Hard Cover with Open Book Psd Mockup,single-hard-cover-with-open-book-psd-mockup-6,https://editoriallarueca.com/wp-content/uploads/Mockup_Kolpino_Pixeles.jpg,,image/jpeg,900,675,Mockup_Kolpino_Pixeles.jpg
+594,FotoArgimiroPortada,fotoargimiroportada,https://editoriallarueca.com/wp-content/uploads/FotoArgimiroPortada.jpg,,image/jpeg,500,500,FotoArgimiroPortada.jpg
+595,FotoCarlosRios,fotocarlosrios,https://editoriallarueca.com/wp-content/uploads/FotoCarlosRios.jpg,,image/jpeg,500,887,FotoCarlosRios.jpg
+597,FotoFernandgrijalba,fotofernandgrijalba,https://editoriallarueca.com/wp-content/uploads/FotoFernandgrijalba.jpg,,image/jpeg,500,474,FotoFernandgrijalba.jpg
+599,Single Hard Cover with Open Book Psd Mockup,single-hard-cover-with-open-book-psd-mockup-7,https://editoriallarueca.com/wp-content/uploads/MockUp_Campos_Pixeles.jpg,,image/jpeg,900,675,MockUp_Campos_Pixeles.jpg
+600,FotoFran,fotofran,https://editoriallarueca.com/wp-content/uploads/FotoFran.jpg,,image/jpeg,500,599,FotoFran.jpg
+602,MockUp_Teoria_pix,mockup_teoria_pix,https://editoriallarueca.com/wp-content/uploads/MockUp_Teoria_pix.jpg,,image/jpeg,900,920,MockUp_Teoria_pix.jpg
+603,fotoFrancisca,fotofrancisca,https://editoriallarueca.com/wp-content/uploads/fotoFrancisca-1.jpg,,image/jpeg,500,590,fotoFrancisca-1.jpg
+604,JaimeCaba,jaimecaba,https://editoriallarueca.com/wp-content/uploads/JaimeCaba.jpg,,image/jpeg,500,530,JaimeCaba.jpg
+605,MockUp_Halley_Pix,mockup_halley_pix-2,https://editoriallarueca.com/wp-content/uploads/MockUp_Halley_Pix-1.jpg,,image/jpeg,900,600,MockUp_Halley_Pix-1.jpg
+607,MockUp_Adonis_Pixeles,mockup_adonis_pixeles,https://editoriallarueca.com/wp-content/uploads/MockUp_Adonis_Pixeles.jpg,,image/jpeg,900,600,MockUp_Adonis_Pixeles.jpg
+608,FotoMauro,fotomauro,https://editoriallarueca.com/wp-content/uploads/FotoMauro.jpg,,image/jpeg,500,519,FotoMauro.jpg
+610,MockUp_Elazul_pix,mockup_elazul_pix,https://editoriallarueca.com/wp-content/uploads/MockUp_Elazul_pix.jpg,,image/jpeg,900,920,MockUp_Elazul_pix.jpg
+611,FotoKarlos,fotokarlos,https://editoriallarueca.com/wp-content/uploads/FotoKarlos.jpg,,image/jpeg,500,505,FotoKarlos.jpg
+612,w_desdeBcn,w_desdebcn-4,https://editoriallarueca.com/wp-content/uploads/w_desdeBcn-3.jpg,,image/jpeg,551,827,w_desdeBcn-3.jpg
+613,w_CUB_Camino_Argimiro_ELR,w_cub_camino_argimiro_elr-2,https://editoriallarueca.com/wp-content/uploads/w_A-lo-largo-del-Camino_jpg-1.jpg,,image/jpeg,500,715,w_A-lo-largo-del-Camino_jpg-1.jpg
+615,W_Fenix_MartaPecaric,w_fenix_martapecaric,https://editoriallarueca.com/wp-content/uploads/W_Fenix_MartaPecaric.jpg,,image/jpeg,500,767,W_Fenix_MartaPecaric.jpg
+617,fotoAna,fotoana,https://editoriallarueca.com/wp-content/uploads/fotoAna.jpg,,image/jpeg,400,460,fotoAna.jpg
+620,MockUp_crucePasos_pix,mockup_crucepasos_pix-2,https://editoriallarueca.com/wp-content/uploads/MockUp_crucePasos_pix-1.jpg,,image/jpeg,900,600,MockUp_crucePasos_pix-1.jpg
+621,FotoAngel,fotoangel,https://editoriallarueca.com/wp-content/uploads/FotoAngel.jpg,,image/jpeg,400,451,FotoAngel.jpg
+622,FotoLuisGaushac,fotoluisgaushac,https://editoriallarueca.com/wp-content/uploads/FotoLuisGaushac.jpg,,image/jpeg,400,533,FotoLuisGaushac.jpg
+624,MockUp_Elpoder_pix,mockup_elpoder_pix,https://editoriallarueca.com/wp-content/uploads/MockUp_Elpoder_pix.jpg,,image/jpeg,900,600,MockUp_Elpoder_pix.jpg
+625,FotoNorberto,fotonorberto,https://editoriallarueca.com/wp-content/uploads/FotoNorberto.jpg,,image/jpeg,400,414,FotoNorberto.jpg
+627,W_Compositor,w_compositor,https://editoriallarueca.com/wp-content/uploads/W_Compositor.jpg,,image/jpeg,500,733,W_Compositor.jpg
+629,MockupCompositor_pix,mockupcompositor_pix,https://editoriallarueca.com/wp-content/uploads/MockupCompositor_pix.jpg,,image/jpeg,900,506,MockupCompositor_pix.jpg
+630,Loli Castellón,loli-castellon,https://editoriallarueca.com/wp-content/uploads/Loli-Castellon.jpg,,image/jpeg,400,488,Loli-Castellon.jpg
+632,w_Banquero_AlonsoC,w_banquero_alonsoc,https://editoriallarueca.com/wp-content/uploads/w_Banquero_AlonsoC.jpg,,image/jpeg,500,731,w_Banquero_AlonsoC.jpg
+634,FotoAlonsoOK,fotoalonsook,https://editoriallarueca.com/wp-content/uploads/FotoAlonsoOK.jpg,,image/jpeg,400,556,FotoAlonsoOK.jpg
+635,MockUp_DelBanqueropix,mockup_delbanqueropix,https://editoriallarueca.com/wp-content/uploads/MockUp_DelBanqueropix.jpg,,image/jpeg,900,600,MockUp_DelBanqueropix.jpg
+636,FotoVeronica,fotoveronica-2,https://editoriallarueca.com/wp-content/uploads/FotoVeronica.jpg,,image/jpeg,400,507,FotoVeronica.jpg
+638,MockUp_Canteria_Pixeles2,mockup_canteria_pixeles2,https://editoriallarueca.com/wp-content/uploads/MockUp_Canteria_Pixeles2.jpg,,image/jpeg,900,600,MockUp_Canteria_Pixeles2.jpg
+639,Antonio Zarate,antonio-zarate,https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg,,image/jpeg,400,300,Antonio-Zarate.jpg
+641,Backup_ElDelgado_pix,backup_eldelgado_pix,https://editoriallarueca.com/wp-content/uploads/Backup_ElDelgado_pix.jpg,,image/jpeg,900,600,Backup_ElDelgado_pix.jpg
+642,JuanaChamorro,juanachamorro,https://editoriallarueca.com/wp-content/uploads/JuanaChamorro.jpg,,image/jpeg,400,371,JuanaChamorro.jpg
+644,w_PadreInaki,w_padreinaki-2,https://editoriallarueca.com/wp-content/uploads/w_PadreInaki-1.jpg,,image/jpeg,1890,1985,w_PadreInaki-1.jpg
+647,MockUp_Lalunapix,mockup_lalunapix,https://editoriallarueca.com/wp-content/uploads/MockUp_Lalunapix.jpg,,image/jpeg,900,684,MockUp_Lalunapix.jpg
+648,OLYMPUS DIGITAL CAMERA,olympus-digital-camera,https://editoriallarueca.com/wp-content/uploads/Foto-Rafa.jpg,,image/jpeg,400,323,Foto-Rafa.jpg
+650,w_cub_Posos_ELR,w_cub_posos_elr,https://editoriallarueca.com/wp-content/uploads/w_cub_Posos_ELR.jpg,,image/jpeg,500,718,w_cub_Posos_ELR.jpg
+651,W_cub_Posos_ELR,w_cub_posos_elr-2,https://editoriallarueca.com/wp-content/uploads/W_cub_Posos_ELR-1.jpg,,image/jpeg,500,720,W_cub_Posos_ELR-1.jpg
+653,MOckUp_PososPixeles2,mockup_posospixeles2,https://editoriallarueca.com/wp-content/uploads/MOckUp_PososPixeles2.jpg,,image/jpeg,900,684,MOckUp_PososPixeles2.jpg
+654,TeodoroRodriguez,teodororodriguez,https://editoriallarueca.com/wp-content/uploads/TeodoroRodriguez.jpg,,image/jpeg,400,476,TeodoroRodriguez.jpg
+658,MockUp_Fenix_pixe,mockup_fenix_pixe,https://editoriallarueca.com/wp-content/uploads/MockUp_Fenix_pixe.jpg,,image/jpeg,900,1125,MockUp_Fenix_pixe.jpg
+659,MartaSusanaPecaric,martasusanapecaric,https://editoriallarueca.com/wp-content/uploads/MartaSusanaPecaric.jpg,,image/jpeg,400,376,MartaSusanaPecaric.jpg
+662,w_Tiendas_Zarate,w_tiendas_zarate,https://editoriallarueca.com/wp-content/uploads/w_Tiendas_Zarate.jpg,,image/jpeg,500,727,w_Tiendas_Zarate.jpg
+664,MockUp_Tiendas,mockup_tiendas,https://editoriallarueca.com/wp-content/uploads/MockUp_Tiendas.jpg,,image/jpeg,900,600,MockUp_Tiendas.jpg
+667,w_Yoga1Chicos,w_yoga1chicos,https://editoriallarueca.com/wp-content/uploads/w_Yoga1Chicos.jpg,,image/jpeg,500,746,w_Yoga1Chicos.jpg
+669,w_Yoga1Chicas,w_yoga1chicas,https://editoriallarueca.com/wp-content/uploads/w_Yoga1Chicas.jpg,,image/jpeg,500,753,w_Yoga1Chicas.jpg
+672,w_Yoga2,w_yoga2,https://editoriallarueca.com/wp-content/uploads/w_Yoga2.jpg,,image/jpeg,500,736,w_Yoga2.jpg
+674,w_Yoga3,w_yoga3,https://editoriallarueca.com/wp-content/uploads/w_Yoga3-1.jpg,,image/jpeg,500,726,w_Yoga3-1.jpg
+676,w_YoGA4,w_yoga4,https://editoriallarueca.com/wp-content/uploads/w_YoGA4.jpg,,image/jpeg,500,755,w_YoGA4.jpg
+678,w_YogaV5,w_yogav5,https://editoriallarueca.com/wp-content/uploads/w_YogaV5.jpg,,image/jpeg,500,762,w_YogaV5.jpg
+684,MockUP_Yoga-Pixeles,mockup_yoga-pixeles,https://editoriallarueca.com/wp-content/uploads/MockUP_Yoga-Pixeles.jpg,,image/jpeg,900,600,MockUP_Yoga-Pixeles.jpg
+686,FotoMiguelVestido,fotomiguelvestido,https://editoriallarueca.com/wp-content/uploads/FotoMiguelVestido.jpg,,image/jpeg,400,335,FotoMiguelVestido.jpg
+687,Todos4,todos4,https://editoriallarueca.com/wp-content/uploads/Todos4.jpeg,,image/jpeg,1080,1080,Todos4.jpeg
+689,Nagasaki003,nagasaki003,https://editoriallarueca.com/wp-content/uploads/w_Nagasaki-1.jpg,,image/jpeg,500,697,w_Nagasaki-1.jpg
+691,MockUpNagasaki,mockupnagasaki,https://editoriallarueca.com/wp-content/uploads/MockUpNagasaki.png,,image/png,1600,900,MockUpNagasaki.png
+692,FotoCharlin,fotocharlin-2,https://editoriallarueca.com/wp-content/uploads/FotoCharlin-1.jpg,,image/jpeg,400,511,FotoCharlin-1.jpg
+694,Universo Portada002,universo-portada002,https://editoriallarueca.com/wp-content/uploads/w_Esfuerzo_Gaspar.jpg,,image/jpeg,1207,1733,w_Esfuerzo_Gaspar.jpg
+696,Imprimir,imprimir,https://editoriallarueca.com/wp-content/uploads/w_cub_Guiripa_JoseLeon.jpg,,image/jpeg,500,733,w_cub_Guiripa_JoseLeon.jpg
+699,LaNochePortada,lanocheportada,https://editoriallarueca.com/wp-content/uploads/w_LlegaLaNoche.jpg,,image/jpeg,500,735,w_LlegaLaNoche.jpg
+703,MockUP_Guiripa,mockup_guiripa,https://editoriallarueca.com/wp-content/uploads/MockUP_Guiripa.jpg,,image/jpeg,900,506,MockUP_Guiripa.jpg
+704,w_Foto JBLQ,w_foto-jblq,https://editoriallarueca.com/wp-content/uploads/w_Foto-JBLQ.jpg,,image/jpeg,400,382,w_Foto-JBLQ.jpg
+706,W_ElRuta,w_elruta-5,https://editoriallarueca.com/wp-content/uploads/W_ElRuta-2.jpg,,image/jpeg,1417,2004,W_ElRuta-2.jpg
+709,AAFF_cub_ ganaderia_Zarate,aaff_cub_-ganaderia_zarate,https://editoriallarueca.com/wp-content/uploads/w_Ganaderia.jpg,,image/jpeg,500,719,w_Ganaderia.jpg
+711,3 de Zarate,3-de-zarate,https://editoriallarueca.com/wp-content/uploads/3-de-Zarate.jpg,,image/jpeg,900,600,3-de-Zarate.jpg
+714,EspejosdlRealidad,espejosdlrealidad,https://editoriallarueca.com/wp-content/uploads/w_EspejosdlRealidad.jpg,,image/jpeg,500,767,w_EspejosdlRealidad.jpg
+715,PortadaTomatesFinal,portadatomatesfinal,https://editoriallarueca.com/wp-content/uploads/w_Tomates_conTilde.jpg,,image/jpeg,500,735,w_Tomates_conTilde.jpg
+716,MockUpPeq_comerbien,mockuppeq_comerbien,https://editoriallarueca.com/wp-content/uploads/MockUpPeq_comerbien.jpg,,image/jpeg,900,920,MockUpPeq_comerbien.jpg
+718,MockUp_Espejos,mockup_espejos,https://editoriallarueca.com/wp-content/uploads/MockUp_Espejos.jpg,,image/jpeg,2504,2560,MockUp_Espejos-scaled.jpg
+719,w_fotoJuanAntonioValero,w_fotojuanantoniovalero,https://editoriallarueca.com/wp-content/uploads/w_fotoJuanAntonioValero.jpg,,image/jpeg,500,723,w_fotoJuanAntonioValero.jpg
+721,w_Banquero_AlonsoC,w_banquero_alonsoc-2,https://editoriallarueca.com/wp-content/uploads/w_Banquero_AlonsoC-1.jpg,,image/jpeg,500,731,w_Banquero_AlonsoC-1.jpg
+723,PulseraPortada001,pulseraportada001,https://editoriallarueca.com/wp-content/uploads/w_Pulsera.jpg,,image/jpeg,500,745,w_Pulsera.jpg
+725,Pulseramockup,pulseramockup,https://editoriallarueca.com/wp-content/uploads/Pulseramockup.png,,image/png,1600,900,Pulseramockup.png
+726,w_Teodoro,w_teodoro,https://editoriallarueca.com/wp-content/uploads/w_Teodoro.jpg,,image/jpeg,354,488,w_Teodoro.jpg
+729,w_fotoJuanAntonioValero,w_fotojuanantoniovalero-2,https://editoriallarueca.com/wp-content/uploads/w_fotoJuanAntonioValero-1.jpg,,image/jpeg,500,723,w_fotoJuanAntonioValero-1.jpg
+730,w_JuanAntonio_EntrevistaFoto,w_juanantonio_entrevistafoto,https://editoriallarueca.com/wp-content/uploads/w_JuanAntonio_EntrevistaFoto.jpg,,image/jpeg,400,267,w_JuanAntonio_EntrevistaFoto.jpg
+732,TAPA.indd,tapa-indd,https://editoriallarueca.com/wp-content/uploads/W_Pensamientos.jpg,,image/jpeg,500,748,W_Pensamientos.jpg
+734,MockUp_pensa_pequeño,mockup_pensa_pequeno,https://editoriallarueca.com/wp-content/uploads/MockUp_pensa_pequeno.jpg,,image/jpeg,900,600,MockUp_pensa_pequeno.jpg
+735,FotoAlejandro,fotoalejandro,https://editoriallarueca.com/wp-content/uploads/FotoAlejandro.jpg,,image/jpeg,240,240,FotoAlejandro.jpg
+741,AmadoPortada001,amadoportada001,https://editoriallarueca.com/wp-content/uploads/w_HasAmado.jpg,,image/jpeg,500,710,w_HasAmado.jpg
+744,w_ElRemanso,w_elremanso,https://editoriallarueca.com/wp-content/uploads/w_ElRemanso.jpg,,image/jpeg,500,500,w_ElRemanso.jpg
+746,LaVidaSinTi001,lavidasinti001,https://editoriallarueca.com/wp-content/uploads/w_LavidaSinTi.jpg,,image/jpeg,500,747,w_LavidaSinTi.jpg
+748,LaVidamockup,lavidamockup,https://editoriallarueca.com/wp-content/uploads/LaVidamockup.png,,image/png,1600,900,LaVidamockup.png
+750,Armas002,armas002,https://editoriallarueca.com/wp-content/uploads/w_AdiosArmas.jpg,,image/jpeg,500,620,w_AdiosArmas.jpg
+752,Mid fold book mockup with floral illustration,mid-fold-book-mockup-with-floral-illustration,https://editoriallarueca.com/wp-content/uploads/w_2MockUp_ElRemanso.jpg,,image/jpeg,900,601,w_2MockUp_ElRemanso.jpg
+753,w_Sara Ramiro_El Remanso,w_sara-ramiro_el-remanso,https://editoriallarueca.com/wp-content/uploads/w_Sara-Ramiro_El-Remanso.jpg,,image/jpeg,400,512,w_Sara-Ramiro_El-Remanso.jpg
+755,John003,john003,https://editoriallarueca.com/wp-content/uploads/w_JohnMain.jpg,,image/jpeg,500,667,w_JohnMain.jpg
+757,Johnmockup,johnmockup,https://editoriallarueca.com/wp-content/uploads/Johnmockup.png,,image/png,1600,900,Johnmockup.png
+758,Foto Carlos,foto-carlos,https://editoriallarueca.com/wp-content/uploads/Foto-Carlos.jpg,,image/jpeg,130,170,Foto-Carlos.jpg
+761,tren,tren,https://editoriallarueca.com/wp-content/uploads/w_978-84-18924-63-7Cub.jpg,,image/jpeg,1818,2560,w_978-84-18924-63-7Cub-scaled.jpg
+763,w_TrenMockup,w_trenmockup,https://editoriallarueca.com/wp-content/uploads/w_TrenMockup.png,,image/png,2551,2041,w_TrenMockup.png
+764,RemasterDirector_V0,remasterdirector_v0,https://editoriallarueca.com/wp-content/uploads/w_Foto-carnet-Rosi-Laguna.jpg,,image/jpeg,1134,1402,w_Foto-carnet-Rosi-Laguna.jpg
+766,PadreIñaki,padreinaki,https://editoriallarueca.com/wp-content/uploads/PadreInaki.jpg,,image/jpeg,900,1600,PadreInaki.jpg
+767,Mid fold book mockup with floral illustration,mid-fold-book-mockup-with-floral-illustration-2,https://editoriallarueca.com/wp-content/uploads/MockUp_PadreInaqui.jpg,,image/jpeg,2560,1709,MockUp_PadreInaqui-scaled.jpg
+768,FotoPadreInaki,fotopadreinaki,https://editoriallarueca.com/wp-content/uploads/FotoPadreInaki.jpg,,image/jpeg,320,672,FotoPadreInaki.jpg
+771,AAFF_2cub_978-84-18924-66-8,aaff_2cub_978-84-18924-66-8,https://editoriallarueca.com/wp-content/uploads/w_Ilogica.jpg,,image/jpeg,1806,2560,w_Ilogica-scaled.jpg
+773,Mockup_ilogica,mockup_ilogica,https://editoriallarueca.com/wp-content/uploads/Mockup_ilogica.jpg,,image/jpeg,2560,2560,Mockup_ilogica-scaled.jpg
+774,FotoRichard,fotorichard,https://editoriallarueca.com/wp-content/uploads/FotoRichard.jpg,,image/jpeg,1152,2048,FotoRichard.jpg
+775,RicharPazos,richarpazos,https://editoriallarueca.com/wp-content/uploads/RicharPazos.jpg,,image/jpeg,400,658,RicharPazos.jpg
+777,PortadaCoaching,portadacoaching,https://editoriallarueca.com/wp-content/uploads/w_PortadaCoaching.jpg,,image/jpeg,1829,2560,w_PortadaCoaching-scaled.jpg
+779,CoachingMockup (1),coachingmockup-1,https://editoriallarueca.com/wp-content/uploads/CoachingMockup-1.png,,image/png,2560,2048,CoachingMockup-1-scaled.png
+780,JorgeGonzalez,jorgegonzalez,https://editoriallarueca.com/wp-content/uploads/JorgeGonzalez.jpg,,image/jpeg,1024,768,JorgeGonzalez.jpg
+782,Portada,portada,https://editoriallarueca.com/wp-content/uploads/w_MuestramePortada.jpg,,image/jpeg,500,700,w_MuestramePortada.jpg
+785,MisterioPortada,misterioportada,https://editoriallarueca.com/wp-content/uploads/w_MisterioPortada.jpg,,image/jpeg,500,700,w_MisterioPortada.jpg
+787,mockUP_ElMisterio,mockup_elmisterio,https://editoriallarueca.com/wp-content/uploads/mockUP_ElMisterio.jpg,,image/jpeg,900,600,mockUP_ElMisterio.jpg
+788,FotoJessica,fotojessica,https://editoriallarueca.com/wp-content/uploads/FotoJessica.jpg,,image/jpeg,300,400,FotoJessica.jpg
+790,whatsapp,whatsapp,https://editoriallarueca.com/wp-content/uploads/whatsapp.svg,,,150,800,whatsapp.svg
+792,PortadaLunaNegra,portadalunanegra,https://editoriallarueca.com/wp-content/uploads/PortadaLunaNegra.jpeg,,image/jpeg,827,1241,PortadaLunaNegra.jpeg
+794,MockUP_LunaNegra,mockup_lunanegra,https://editoriallarueca.com/wp-content/uploads/MockUP_LunaNegra.jpg,,image/jpeg,900,600,MockUP_LunaNegra.jpg
+795,Tamara,tamara,https://editoriallarueca.com/wp-content/uploads/Tamara.jpg,,image/jpeg,500,597,Tamara.jpg
+798,MockUpListaTareasPeq,mockuplistatareaspeq,https://editoriallarueca.com/wp-content/uploads/MockUpListaTareasPeq.jpg,,image/jpeg,900,720,MockUpListaTareasPeq.jpg
+799,FotoCarlosJ.Olmedo,fotocarlosj-olmedo,https://editoriallarueca.com/wp-content/uploads/FotoCarlosJ.Olmedo.jpg,,image/jpeg,200,189,FotoCarlosJ.Olmedo.jpg
+801,BiodervisidadPortada,biodervisidadportada,https://editoriallarueca.com/wp-content/uploads/w_BiodervisidadPortada.jpg,,image/jpeg,500,700,w_BiodervisidadPortada.jpg
+803,w_BiodiversidadMockUp,w_biodiversidadmockup,https://editoriallarueca.com/wp-content/uploads/w_BiodiversidadMockUp.png,,image/png,900,506,w_BiodiversidadMockUp.png
+804,FotoGaspar,fotogaspar,https://editoriallarueca.com/wp-content/uploads/FotoGaspar.jpg,,image/jpeg,552,648,FotoGaspar.jpg
+806,FelizPortada,felizportada,https://editoriallarueca.com/wp-content/uploads/w_FelizPortada.jpg,,image/jpeg,500,700,w_FelizPortada.jpg
+808,w_FelizMockup,w_felizmockup,https://editoriallarueca.com/wp-content/uploads/w_FelizMockup.png,,image/png,900,680,w_FelizMockup.png
+809,w_FOTO gregorio,w_foto-gregorio,https://editoriallarueca.com/wp-content/uploads/w_FOTO-gregorio.jpg,,image/jpeg,498,502,w_FOTO-gregorio.jpg
+812,PortadaCaminoDelAngel,portadacaminodelangel,https://editoriallarueca.com/wp-content/uploads/W_PortadaCaminoDelAngel.jpg,,image/jpeg,500,700,W_PortadaCaminoDelAngel.jpg
+814,w_CaminoDelAngelMockUp,w_caminodelangelmockup,https://editoriallarueca.com/wp-content/uploads/w_CaminoDelAngelMockUp.jpg,,image/jpeg,900,675,w_CaminoDelAngelMockUp.jpg
+815,w_Foto Angel Garcia,w_foto-angel-garcia,https://editoriallarueca.com/wp-content/uploads/w_Foto-Angel-Garcia.jpg,,image/jpeg,400,520,w_Foto-Angel-Garcia.jpg
+818,OjosPortada,ojosportada,https://editoriallarueca.com/wp-content/uploads/W_OjosPortada.jpg,,image/jpeg,500,700,W_OjosPortada.jpg
+820,W_OjosMockUp,w_ojosmockup,https://editoriallarueca.com/wp-content/uploads/W_OjosMockUp.png,,image/png,1261,900,W_OjosMockUp.png
+821,Inés + Roberto,ines-roberto,https://editoriallarueca.com/wp-content/uploads/W_Juan-Jose-Velasco-S.jpg,,image/jpeg,400,559,W_Juan-Jose-Velasco-S.jpg
+824,cub_978-84-18924-65-1,cub_978-84-18924-65-1,https://editoriallarueca.com/wp-content/uploads/w_cub_978-84-18924-65-1-.jpg,,image/jpeg,500,531,w_cub_978-84-18924-65-1-.jpg
+825,SONY DSC,sony-dsc,https://editoriallarueca.com/wp-content/uploads/w_mockup_Sara.jpg,,image/jpeg,2560,1701,w_mockup_Sara-scaled.jpg
+826,WhatsApp Image 2023-02-22 at 07.31.28,whatsapp-image-2023-02-22-at-07-31-28,https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2023-02-22-at-07.31.28.jpeg,,image/jpeg,1131,1600,WhatsApp-Image-2023-02-22-at-07.31.28.jpeg
+828,AjedrezPortada,ajedrezportada,https://editoriallarueca.com/wp-content/uploads/web_AjedrezPortada.jpg,,image/jpeg,500,700,web_AjedrezPortada.jpg
+830,w_AjedrezMockup,w_ajedrezmockup,https://editoriallarueca.com/wp-content/uploads/w_AjedrezMockup.jpg,,image/jpeg,900,545,w_AjedrezMockup.jpg
+831,w_FotoManuel,w_fotomanuel,https://editoriallarueca.com/wp-content/uploads/w_FotoManuel.jpg,,image/jpeg,400,533,w_FotoManuel.jpg
+834,NachoMiguelPortada,nachomiguelportada,https://editoriallarueca.com/wp-content/uploads/w_Portada.jpg,,image/jpeg,500,700,w_Portada.jpg
+836,w_MockUp,w_mockup,https://editoriallarueca.com/wp-content/uploads/w_MockUp.jpg,,image/jpeg,900,643,w_MockUp.jpg
+837,w_Foto Nacho Miguelsanz,w_foto-nacho-miguelsanz,https://editoriallarueca.com/wp-content/uploads/w_Foto-Nacho-Miguelsanz.jpg,,image/jpeg,400,369,w_Foto-Nacho-Miguelsanz.jpg
+840,portada,portada-2,https://editoriallarueca.com/wp-content/uploads/w_portadaAmazon.jpg,,image/jpeg,1713,2560,w_portadaAmazon-scaled.jpg
+843,Sal,sal,https://editoriallarueca.com/wp-content/uploads/w_SalPortada.jpg,,image/jpeg,500,700,w_SalPortada.jpg
+845,MorirPlantilla,morirplantilla,https://editoriallarueca.com/wp-content/uploads/w_Morir.jpg,,image/jpeg,500,691,w_Morir.jpg
+849,DecisionPortada,decisionportada,https://editoriallarueca.com/wp-content/uploads/w_DecisioPortada.jpg,,image/jpeg,500,719,w_DecisioPortada.jpg
+851,AmarPortada,amarportada,https://editoriallarueca.com/wp-content/uploads/w_AmarPortada.jpg,,image/jpeg,500,750,w_AmarPortada.jpg
+854,ElAmorPortada,elamorportada,https://editoriallarueca.com/wp-content/uploads/ElAmorPortada.pdf,,application/pdf,,,ElAmorPortada.pdf
+856,ElAmorPortada,elamorportada-2,https://editoriallarueca.com/wp-content/uploads/w_ElAmorPortada.jpg,,image/jpeg,500,700,w_ElAmorPortada.jpg
+858,Diseño Portada y Contraportada (Mi libro en Solitario).jpg,diseno-portada-y-contraportada-mi-libro-en-solitario-jpg,https://editoriallarueca.com/wp-content/uploads/w_AnaCordoba.jpg,,image/jpeg,502,732,w_AnaCordoba.jpg
+861,w_Portada,w_portada,https://editoriallarueca.com/wp-content/uploads/w_Portada-1.jpg,,image/jpeg,500,731,w_Portada-1.jpg
+862,w_Portada,w_portada-2,https://editoriallarueca.com/wp-content/uploads/w_Portada-2.jpg,,image/jpeg,500,731,w_Portada-2.jpg
+865,CapacidadesPortada,capacidadesportada,https://editoriallarueca.com/wp-content/uploads/w_CapacidadesPortada.jpg,,image/jpeg,1707,2560,w_CapacidadesPortada-scaled.jpg
+867,InviernoPortada,inviernoportada,https://editoriallarueca.com/wp-content/uploads/w_InviernoPortada.jpg,,image/jpeg,1828,2560,w_InviernoPortada-scaled.jpg
+869,AmarMockup,amarmockup,https://editoriallarueca.com/wp-content/uploads/AmarMockup.png,,image/png,2560,1707,AmarMockup-scaled.png
+870,FotoFernando,fotofernando,https://editoriallarueca.com/wp-content/uploads/FotoFernando.jpg,,image/jpeg,400,533,FotoFernando.jpg
+871,A5 Magazine Catalogue Mockup,a5-magazine-catalogue-mockup,https://editoriallarueca.com/wp-content/uploads/mockupLos2.jpg,,image/jpeg,2560,1920,mockupLos2-scaled.jpg
+873,978-84-19865-05-2  Cub_Castellano,978-84-19865-05-2-cub_castellano,https://editoriallarueca.com/wp-content/uploads/w_PortadaCastellano.jpg,,image/jpeg,500,740,w_PortadaCastellano.jpg
+875,MockUp_LeccionesPerdidas,mockup_leccionesperdidas,https://editoriallarueca.com/wp-content/uploads/MockUp_LeccionesPerdidas.jpg,,image/jpeg,900,600,MockUp_LeccionesPerdidas.jpg
+876,dav,dav,https://editoriallarueca.com/wp-content/uploads/w_FotoAutor.jpg,,image/jpeg,400,476,w_FotoAutor.jpg
+878,QueCosasPortada,quecosasportada,https://editoriallarueca.com/wp-content/uploads/w_QueCosasPortada.jpg,,image/jpeg,500,700,w_QueCosasPortada.jpg
+880,QueCosasMockup,quecosasmockup,https://editoriallarueca.com/wp-content/uploads/QueCosasMockup.png,,image/png,2560,1732,QueCosasMockup-scaled.png
+881,FotoSantiagoBalmaseda,fotosantiagobalmaseda,https://editoriallarueca.com/wp-content/uploads/FotoSantiagoBalmaseda.jpg,,image/jpeg,2560,1920,FotoSantiagoBalmaseda-scaled.jpg
+883,w_RRSS_AnaCordoba,w_rrss_anacordoba,https://editoriallarueca.com/wp-content/uploads/w_RRSS_AnaCordoba.jpg,,image/jpeg,700,1050,w_RRSS_AnaCordoba.jpg
+884,w_FotoAnaCordobaparaweb,w_fotoanacordobaparaweb,https://editoriallarueca.com/wp-content/uploads/w_FotoAnaCordobaparaweb.jpg,,image/jpeg,533,667,w_FotoAnaCordobaparaweb.jpg
+886,w_InviernoMockUp,w_inviernomockup,https://editoriallarueca.com/wp-content/uploads/w_InviernoMockUp.jpg,,image/jpeg,700,490,w_InviernoMockUp.jpg
+887,w_FotoEzequiel,w_fotoezequiel,https://editoriallarueca.com/wp-content/uploads/w_FotoEzequiel.jpg,,image/jpeg,400,533,w_FotoEzequiel.jpg
+890,FotoAlejandroGonzalez,fotoalejandrogonzalez,https://editoriallarueca.com/wp-content/uploads/FotoAlejandroGonzalez.jpg,,image/jpeg,1709,2560,FotoAlejandroGonzalez-scaled.jpg
+893,DictadoresPortada,dictadoresportada,https://editoriallarueca.com/wp-content/uploads/w_DictadoresPortada1.jpg,,image/jpeg,500,700,w_DictadoresPortada1.jpg
+895,DictadoresMockup,dictadoresmockup,https://editoriallarueca.com/wp-content/uploads/DictadoresMockup.png,,image/png,2560,1707,DictadoresMockup-scaled.png
+896,w_FotoRosa,w_fotorosa,https://editoriallarueca.com/wp-content/uploads/w_FotoRosa.jpg,,image/jpeg,382,492,w_FotoRosa.jpg
+898,DesamorIVPortada,desamorivportada,https://editoriallarueca.com/wp-content/uploads/w_DesamorIVPortada.jpg,,image/jpeg,500,733,w_DesamorIVPortada.jpg
+900,w_DesamorIVMockup,w_desamorivmockup,https://editoriallarueca.com/wp-content/uploads/w_DesamorIVMockup.jpg,,image/jpeg,500,295,w_DesamorIVMockup.jpg
+901,w_FotoPabloVozmediano,w_fotopablovozmediano,https://editoriallarueca.com/wp-content/uploads/w_FotoPabloVozmediano.jpg,,image/jpeg,400,300,w_FotoPabloVozmediano.jpg
+903,GalantePlantilla,galanteplantilla,https://editoriallarueca.com/wp-content/uploads/w_GalantePlantilla.jpg,,image/jpeg,500,747,w_GalantePlantilla.jpg
+905,GalanteMockup,galantemockup,https://editoriallarueca.com/wp-content/uploads/GalanteMockup.png,,image/png,2560,1707,GalanteMockup-scaled.png
+906,w_FotoGalante,w_fotogalante,https://editoriallarueca.com/wp-content/uploads/w_FotoGalante.jpg,,image/jpeg,400,274,w_FotoGalante.jpg
+908,EnLlamasPortada,enllamasportada,https://editoriallarueca.com/wp-content/uploads/w_EnLlamasPortada.jpg,,image/jpeg,500,750,w_EnLlamasPortada.jpg
+910,EnLlamasMockup,enllamasmockup,https://editoriallarueca.com/wp-content/uploads/EnLlamasMockup.png,,image/png,2560,1707,EnLlamasMockup-scaled.png
+911,w_FotoDavidNavarro1,w_fotodavidnavarro1,https://editoriallarueca.com/wp-content/uploads/w_FotoDavidNavarro1.jpg,,image/jpeg,400,585,w_FotoDavidNavarro1.jpg
+912,PlantillaGregorio2daEdicion,plantillagregorio2daedicion,https://editoriallarueca.com/wp-content/uploads/w_2oedi_9788418924705_cvr.jpg,,image/jpeg,500,763,w_2oedi_9788418924705_cvr.jpg
+914,AusenciaPortadapdf,ausenciaportadapdf,https://editoriallarueca.com/wp-content/uploads/w_AusenciaPortada.jpg,,image/jpeg,500,750,w_AusenciaPortada.jpg
+916,AusenciaMockup,ausenciamockup,https://editoriallarueca.com/wp-content/uploads/AusenciaMockup.png,,image/png,2560,1920,AusenciaMockup-scaled.png
+917,w_juan5,w_juan5,https://editoriallarueca.com/wp-content/uploads/w_juan5.jpg,,image/jpeg,400,300,w_juan5.jpg
+920,peliculaPortada,peliculaportada,https://editoriallarueca.com/wp-content/uploads/w_peliculaPortadapeq.jpg,,image/jpeg,500,750,w_peliculaPortadapeq.jpg
+922,PeliculaMockup,peliculamockup,https://editoriallarueca.com/wp-content/uploads/PeliculaMockup.png,,image/png,2560,1920,PeliculaMockup-scaled.png
+923,w_fotoDiegoGomez,w_fotodiegogomez,https://editoriallarueca.com/wp-content/uploads/w_fotoDiegoGomez.jpg,,image/jpeg,400,621,w_fotoDiegoGomez.jpg
+925,MalvaPortada,malvaportada,https://editoriallarueca.com/wp-content/uploads/w_MalvaPortada.jpg,,image/jpeg,500,700,w_MalvaPortada.jpg
+927,MalvaMockup,malvamockup,https://editoriallarueca.com/wp-content/uploads/MalvaMockup.png,,image/png,2560,1707,MalvaMockup-scaled.png
+928,w_FotoEvaRiber,w_fotoevariber,https://editoriallarueca.com/wp-content/uploads/w_FotoEvaRiber.jpg,,image/jpeg,400,464,w_FotoEvaRiber.jpg
+931,LeemePortada,leemeportada,https://editoriallarueca.com/wp-content/uploads/w_LeemePortada.jpg,,image/jpeg,500,719,w_LeemePortada.jpg
+933,LeemeMockup,leememockup,https://editoriallarueca.com/wp-content/uploads/LeemeMockup.png,,image/png,2560,1920,LeemeMockup-scaled.png
+935,fotoGrupo,fotogrupo,https://editoriallarueca.com/wp-content/uploads/fotoGrupo.jpg,,image/jpeg,437,543,fotoGrupo.jpg
+937,MarMuertoPortada,marmuertoportada,https://editoriallarueca.com/wp-content/uploads/W_MarMuertoPortada.jpg,,image/jpeg,500,706,W_MarMuertoPortada.jpg
+939,MarMuertoMockup,marmuertomockup,https://editoriallarueca.com/wp-content/uploads/MarMuertoMockup.png,,image/png,2560,1828,MarMuertoMockup-scaled.png
+940,w_FotoValdeavero-1,w_fotovaldeavero-1,https://editoriallarueca.com/wp-content/uploads/w_FotoValdeavero-1.jpg,,image/jpeg,500,330,w_FotoValdeavero-1.jpg
+943,w_fotoAutorPresentacion,w_fotoautorpresentacion,https://editoriallarueca.com/wp-content/uploads/w_fotoAutorPresentacion.jpg,,image/jpeg,529,427,w_fotoAutorPresentacion.jpg
+945,AcorraladosPortada,acorraladosportada,https://editoriallarueca.com/wp-content/uploads/w_AcorraladosPortada.jpg,,image/jpeg,500,700,w_AcorraladosPortada.jpg
+947,AcorraladosMockup,acorraladosmockup,https://editoriallarueca.com/wp-content/uploads/AcorraladosMockup.png,,image/png,2560,1512,AcorraladosMockup-scaled.png
+948,w_FotoFidel,w_fotofidel,https://editoriallarueca.com/wp-content/uploads/w_FotoFidel.jpg,,image/jpeg,400,519,w_FotoFidel.jpg
+950,MarMuertoPortada,marmuertoportada-2,https://editoriallarueca.com/wp-content/uploads/w2_MarMuertoPortada.jpg,,image/jpeg,500,706,w2_MarMuertoPortada.jpg
+953,GenerosPortada,generosportada,https://editoriallarueca.com/wp-content/uploads/w_GenerosPortada.jpg,,image/jpeg,500,700,w_GenerosPortada.jpg
+955,w_GenerosMockup,w_generosmockup,https://editoriallarueca.com/wp-content/uploads/w_GenerosMockup.png,,image/png,1500,1000,w_GenerosMockup.png
+956,w_FotoIsabel,w_fotoisabel,https://editoriallarueca.com/wp-content/uploads/w_FotoIsabel.jpg,,image/jpeg,400,401,w_FotoIsabel.jpg
+958,w_mockup_Encuentros,w_mockup_encuentros,https://editoriallarueca.com/wp-content/uploads/w_mockup_Encuentros.jpg,,image/jpeg,2504,2560,w_mockup_Encuentros-scaled.jpg
+959,w_FotoJoseAntonio,w_fotojoseantonio,https://editoriallarueca.com/wp-content/uploads/w_FotoJoseAntonio.jpg,,image/jpeg,400,597,w_FotoJoseAntonio.jpg
+962,RioPortada,rioportada,https://editoriallarueca.com/wp-content/uploads/w_RioPortada.jpg,,image/jpeg,500,750,w_RioPortada.jpg
+964,RioMockUp,riomockup,https://editoriallarueca.com/wp-content/uploads/RioMockUp.png,,image/png,2560,1792,RioMockUp-scaled.png
+965,w_FotoAnaOrtega,w_fotoanaortega,https://editoriallarueca.com/wp-content/uploads/w_FotoAnaOrtega.jpg,,image/jpeg,397,513,w_FotoAnaOrtega.jpg
+968,ElMaestroPortada,elmaestroportada,https://editoriallarueca.com/wp-content/uploads/w_2portada.jpg,,image/jpeg,500,700,w_2portada.jpg
+970,ElMaestroMockup,elmaestromockup,https://editoriallarueca.com/wp-content/uploads/ElMaestroMockup.png,,image/png,2560,1707,ElMaestroMockup-scaled.png
+971,w_Juana Hdez Conesa,w_juana-hdez-conesa,https://editoriallarueca.com/wp-content/uploads/w_Juana-Hdez-Conesa.jpg,,image/jpeg,400,601,w_Juana-Hdez-Conesa.jpg
+973,TresRepublicanosPortada,tresrepublicanosportada,https://editoriallarueca.com/wp-content/uploads/w_TresRepublicanosPortada.jpg,,image/jpeg,1181,1654,w_TresRepublicanosPortada.jpg
+975,ConversacionesPortada002,conversacionesportada002,https://editoriallarueca.com/wp-content/uploads/w_ConversacionesPortada002.jpg,,image/jpeg,1181,1654,w_ConversacionesPortada002.jpg
+977,MarMuerto004Portada,marmuerto004portada,https://editoriallarueca.com/wp-content/uploads/w_MarMuerto004Portada.jpg,,image/jpeg,500,706,w_MarMuerto004Portada.jpg
+979,w_FotoRafael,w_fotorafael,https://editoriallarueca.com/wp-content/uploads/w_FotoRafael.jpg,,image/jpeg,400,267,w_FotoRafael.jpg
+980,ConversacionesMockup,conversacionesmockup,https://editoriallarueca.com/wp-content/uploads/ConversacionesMockup.png,,image/png,2560,1920,ConversacionesMockup-scaled.png
+981,w_FotoRafael,w_fotorafael-2,https://editoriallarueca.com/wp-content/uploads/w_FotoRafael-1.jpg,,image/jpeg,400,267,w_FotoRafael-1.jpg
+982,w_FotoRafael,w_fotorafael-3,https://editoriallarueca.com/wp-content/uploads/w_FotoRafael-2.jpg,,image/jpeg,236,267,w_FotoRafael-2.jpg
+985,978-84-19865-02-1,978-84-19865-02-1,https://editoriallarueca.com/wp-content/uploads/W_CineYMedicina-1.jpg,,image/jpeg,500,742,W_CineYMedicina-1.jpg
+987,LaCasaOlvidorAmazon,lacasaolvidoramazon,https://editoriallarueca.com/wp-content/uploads/W_cASA.jpg,,image/jpeg,1198,1800,W_cASA.jpg
+989,CortezaPortada,cortezaportada,https://editoriallarueca.com/wp-content/uploads/w_CortezaPortada.jpg,,image/jpeg,500,700,w_CortezaPortada.jpg
+991,CortezaMockUp,cortezamockup,https://editoriallarueca.com/wp-content/uploads/CortezaMockUp.png,,image/png,2560,1552,CortezaMockUp-scaled.png
+992,w_FotoJeronimo,w_fotojeronimo,https://editoriallarueca.com/wp-content/uploads/w_FotoJeronimo.jpg,,image/jpeg,556,987,w_FotoJeronimo.jpg
+994,w_3sueños,w_3suenos,https://editoriallarueca.com/wp-content/uploads/w_3suenos.jpg,,image/jpeg,1236,1876,w_3suenos.jpg
+995,Book Cover Multiple Psd Mockup,book-cover-multiple-psd-mockup-2,https://editoriallarueca.com/wp-content/uploads/mockup_5librosJuanapeq.jpg,,image/jpeg,2000,1500,mockup_5librosJuanapeq.jpg
+997,978-84-19865-01-4,978-84-19865-01-4,https://editoriallarueca.com/wp-content/uploads/w_Ajusticiados-3.jpg,,image/jpeg,500,736,w_Ajusticiados-3.jpg
+999,W_YoTeAcusoPEQ,w_yoteacusopeq,https://editoriallarueca.com/wp-content/uploads/W_YoTeAcusoPEQ.jpg,,image/jpeg,500,700,W_YoTeAcusoPEQ.jpg
+1001,EstarContigoPortada,estarcontigoportada,https://editoriallarueca.com/wp-content/uploads/w_EstarContigoPortada.jpg,,image/jpeg,500,750,w_EstarContigoPortada.jpg
+1003,EstarContigoMockup,estarcontigomockup,https://editoriallarueca.com/wp-content/uploads/EstarContigoMockup.png,,image/png,2560,1707,EstarContigoMockup-scaled.png
+1004,w_FotoPatricia1,w_fotopatricia1,https://editoriallarueca.com/wp-content/uploads/w_FotoPatricia1.jpg,,image/jpeg,556,511,w_FotoPatricia1.jpg
+1006,EntreRealidadesPortada,entrerealidadesportada,https://editoriallarueca.com/wp-content/uploads/w_EntreRealidadesPortada.jpg,,image/jpeg,500,700,w_EntreRealidadesPortada.jpg
+1008,EntreRealidadesMockup,entrerealidadesmockup,https://editoriallarueca.com/wp-content/uploads/EntreRealidadesMockup.png,,image/png,2560,1707,EntreRealidadesMockup-scaled.png
+1009,w_FOTO DEL AUTOR BENEDICTO CUERVO,w_foto-del-autor-benedicto-cuervo,https://editoriallarueca.com/wp-content/uploads/w_FOTO-DEL-AUTOR-BENEDICTO-CUERVO.jpg,,image/jpeg,400,560,w_FOTO-DEL-AUTOR-BENEDICTO-CUERVO.jpg
+1011,GuemesPortada,guemesportada,https://editoriallarueca.com/wp-content/uploads/w_GuemesPortada.jpg,,image/jpeg,500,700,w_GuemesPortada.jpg
+1013,GuemesMockup,guemesmockup,https://editoriallarueca.com/wp-content/uploads/GuemesMockup.png,,image/png,2560,1512,GuemesMockup-scaled.png
+1014,w_FotoMiguelAngelGuemes,w_fotomiguelangelguemes,https://editoriallarueca.com/wp-content/uploads/w_FotoMiguelAngelGuemes.jpg,,image/jpeg,400,446,w_FotoMiguelAngelGuemes.jpg
+1016,PerdonamePortada,perdonameportada,https://editoriallarueca.com/wp-content/uploads/w_PerdonamePortada.jpg,,image/jpeg,500,750,w_PerdonamePortada.jpg
+1018,PerdonameMockup,perdonamemockup,https://editoriallarueca.com/wp-content/uploads/PerdonameMockup.png,,image/png,2560,1792,PerdonameMockup-scaled.png
+1019,w_Foto autor,w_foto-autor,https://editoriallarueca.com/wp-content/uploads/w_Foto-autor.jpg,,image/jpeg,833,1592,w_Foto-autor.jpg
+1021,VillaSiciliaPortada,villasiciliaportada,https://editoriallarueca.com/wp-content/uploads/w_VillaSiciliaPortada.jpg,,image/jpeg,500,700,w_VillaSiciliaPortada.jpg
+1023,PañueloPortada,panueloportada,https://editoriallarueca.com/wp-content/uploads/w_PanueloPortada.jpg,,image/jpeg,500,700,w_PanueloPortada.jpg
+1025,PañueloMockup,panuelomockup,https://editoriallarueca.com/wp-content/uploads/PanueloMockup.png,,image/png,2560,1690,PanueloMockup-scaled.png
+1026,w_FotoIsabel,w_fotoisabel-2,https://editoriallarueca.com/wp-content/uploads/w_FotoIsabel-1.jpg,,image/jpeg,400,533,w_FotoIsabel-1.jpg
+1028,RumordelaMareaPortada,rumordelamareaportada,https://editoriallarueca.com/wp-content/uploads/w_RumordelaMareaPortada.jpg,,image/jpeg,500,700,w_RumordelaMareaPortada.jpg
+1030,RumordelamareaMockup,rumordelamareamockup,https://editoriallarueca.com/wp-content/uploads/RumordelamareaMockup.png,,image/png,2560,1707,RumordelamareaMockup-scaled.png
+1031,w_FotoGuillermo,w_fotoguillermo,https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo.jpg,,image/jpeg,400,823,w_FotoGuillermo.jpg
+1033,NicosPortada,nicosportada,https://editoriallarueca.com/wp-content/uploads/w_NicosPortada.jpg,,image/jpeg,500,700,w_NicosPortada.jpg
+1035,NicosMockup,nicosmockup,https://editoriallarueca.com/wp-content/uploads/NicosMockup.png,,image/png,2560,1707,NicosMockup-scaled.png
+1036,W_FOTO AUTOR NIKLAS,w_foto-autor-niklas,https://editoriallarueca.com/wp-content/uploads/W_FOTO-AUTOR-NIKLAS.jpg,,image/jpeg,400,267,W_FOTO-AUTOR-NIKLAS.jpg
+1039,w_POLLOS_maq2_portada_OK2_sinmarcas,w_pollos_maq2_portada_ok2_sinmarcas,https://editoriallarueca.com/wp-content/uploads/w_POLLOS_maq2_portada_OK2_sinmarcas.jpg,,image/jpeg,500,731,w_POLLOS_maq2_portada_OK2_sinmarcas.jpg
+1041,w_MockUp_Pollos,w_mockup_pollos,https://editoriallarueca.com/wp-content/uploads/w_MockUp_Pollos.jpg,,image/jpeg,900,600,w_MockUp_Pollos.jpg
+1042,W_Julio,w_julio,https://editoriallarueca.com/wp-content/uploads/W_Julio.jpg,,image/jpeg,556,396,W_Julio.jpg
+1045,MatamedeFrenteAmazon004,matamedefrenteamazon004,https://editoriallarueca.com/wp-content/uploads/W_portada-3.jpg,,image/jpeg,500,738,W_portada-3.jpg
+1048,w_FotoAutores,w_fotoautores,https://editoriallarueca.com/wp-content/uploads/w_FotoAutores.jpg,,image/jpeg,503,277,w_FotoAutores.jpg
+1049,w_FotoFelipeAndres,w_fotofelipeandres,https://editoriallarueca.com/wp-content/uploads/w_FotoFelipeAndres.jpg,,image/jpeg,556,569,w_FotoFelipeAndres.jpg
+1051,DeJuanaJuan003,dejuanajuan003,https://editoriallarueca.com/wp-content/uploads/PortadaJuanAJuan.jpg,,image/jpeg,700,522,PortadaJuanAJuan.jpg
+1053,DeJuanaJuanMockup,dejuanajuanmockup,https://editoriallarueca.com/wp-content/uploads/DeJuanaJuanMockup.png,,image/png,2560,1707,DeJuanaJuanMockup-scaled.png
+1054,w_RicardoRodriguez,w_ricardorodriguez,https://editoriallarueca.com/wp-content/uploads/w_RicardoRodriguez.jpg,,image/jpeg,400,300,w_RicardoRodriguez.jpg
+1056,DeamonLilithPortada,deamonlilithportada,https://editoriallarueca.com/wp-content/uploads/w_DeamonLilithPortada.jpg,,image/jpeg,500,700,w_DeamonLilithPortada.jpg
+1058,DaemonLilithMockup,daemonlilithmockup,https://editoriallarueca.com/wp-content/uploads/DaemonLilithMockup.png,,image/png,2560,1708,DaemonLilithMockup-scaled.png
+1059,w_FotoManue,w_fotomanue,https://editoriallarueca.com/wp-content/uploads/w_FotoManue.jpg,,image/jpeg,400,600,w_FotoManue.jpg
+1061,LetargoPortada,letargoportada,https://editoriallarueca.com/wp-content/uploads/w_LetargoPortada.jpg,,image/jpeg,500,700,w_LetargoPortada.jpg
+1063,LetargoMockup,letargomockup,https://editoriallarueca.com/wp-content/uploads/LetargoMockup.png,,image/png,2560,1920,LetargoMockup-scaled.png
+1064,w_fotoSantiago,w_fotosantiago,https://editoriallarueca.com/wp-content/uploads/w_fotoSantiago.jpg,,image/jpeg,221,290,w_fotoSantiago.jpg
+1066,PacoDazaPortada002,pacodazaportada002,https://editoriallarueca.com/wp-content/uploads/w_PacoDazaPortada002.jpg,,image/jpeg,500,706,w_PacoDazaPortada002.jpg
+1068,BarcaPortuPortada,barcaportuportada,https://editoriallarueca.com/wp-content/uploads/w_BarcaPortuPortada.jpg,,image/jpeg,500,700,w_BarcaPortuPortada.jpg
+1070,BarcaPortuMockup,barcaportumockup,https://editoriallarueca.com/wp-content/uploads/BarcaPortuMockup.png,,image/png,2560,1920,BarcaPortuMockup-scaled.png
+1071,w_FotoJosé Luis,w_fotojose-luis,https://editoriallarueca.com/wp-content/uploads/w_FotoJose-Luis.jpg,,image/jpeg,400,598,w_FotoJose-Luis.jpg
+1074,PacoDazaMockup,pacodazamockup,https://editoriallarueca.com/wp-content/uploads/PacoDazaMockup.png,,image/png,2560,2048,PacoDazaMockup-scaled.png
+1075,w_foto PacoDaza,w_foto-pacodaza,https://editoriallarueca.com/wp-content/uploads/w_foto-PacoDaza.jpg,,image/jpeg,496,692,w_foto-PacoDaza.jpg
+1077,LaVidaPortada,lavidaportada,https://editoriallarueca.com/wp-content/uploads/w_LaVidaPortada.jpg,,image/jpeg,500,700,w_LaVidaPortada.jpg
+1079,LaVidaMockup,lavidamockup-2,https://editoriallarueca.com/wp-content/uploads/LaVidaMockup-1.png,,image/png,2560,1707,LaVidaMockup-1-scaled.png
+1080,w_FotoLola,w_fotolola,https://editoriallarueca.com/wp-content/uploads/w_FotoLola.jpg,,image/jpeg,400,681,w_FotoLola.jpg
+1083,InolvidablePortada,inolvidableportada,https://editoriallarueca.com/wp-content/uploads/w_InolvidablePortada.jpg,,image/jpeg,500,700,w_InolvidablePortada.jpg
+1085,InolvidableMockup,inolvidablemockup,https://editoriallarueca.com/wp-content/uploads/InolvidableMockup.png,,image/png,2560,1792,InolvidableMockup-scaled.png
+1086,w_FotoMarcelo,w_fotomarcelo,https://editoriallarueca.com/wp-content/uploads/w_FotoMarcelo.jpg,,image/jpeg,264,417,w_FotoMarcelo.jpg
+1087,RectaFinalPortada,rectafinalportada,https://editoriallarueca.com/wp-content/uploads/w_RectaFinalPortada.jpg,,image/jpeg,500,700,w_RectaFinalPortada.jpg
+1089,RectaFinalMockup,rectafinalmockup,https://editoriallarueca.com/wp-content/uploads/RectaFinalMockup.png,,image/png,2560,1920,RectaFinalMockup-scaled.png
+1090,w_Foto autor,w_foto-autor-2,https://editoriallarueca.com/wp-content/uploads/w_Foto-autor-1.jpg,,image/jpeg,368,368,w_Foto-autor-1.jpg
+1093,DunsScotoPortada002,dunsscotoportada002,https://editoriallarueca.com/wp-content/uploads/w_DunsScotoPortada002.jpg,,image/jpeg,500,700,w_DunsScotoPortada002.jpg
+1095,DunsScotoMockup,dunsscotomockup,https://editoriallarueca.com/wp-content/uploads/DunsScotoMockup.png,,image/png,2560,1707,DunsScotoMockup-scaled.png
+1096,w_Foto Marcelino Valiño Vidal - Escoto vs. Aquino,w_foto-marcelino-valino-vidal-escoto-vs-aquino,https://editoriallarueca.com/wp-content/uploads/w_Foto-Marcelino-Valino-Vidal-Escoto-vs.-Aquino.jpg,,image/jpeg,400,804,w_Foto-Marcelino-Valino-Vidal-Escoto-vs.-Aquino.jpg
+1098,PlacaBlancaPortada,placablancaportada,https://editoriallarueca.com/wp-content/uploads/w_PlacaBlancaPortada.jpg,,image/jpeg,500,750,w_PlacaBlancaPortada.jpg
+1100,PlacaBlancaMockup,placablancamockup,https://editoriallarueca.com/wp-content/uploads/PlacaBlancaMockup.png,,image/png,2560,1707,PlacaBlancaMockup-scaled.png
+1101,w_FotoAutor,w_fotoautor,https://editoriallarueca.com/wp-content/uploads/w_FotoAutor-1.jpg,,image/jpeg,1080,1422,w_FotoAutor-1.jpg
+1107,w_2Edi_LaVida_Mauro,w_2edi_lavida_mauro,https://editoriallarueca.com/wp-content/uploads/w_2Edi_LaVida_Mauro.jpg,,image/jpeg,500,713,w_2Edi_LaVida_Mauro.jpg
+1109,MockUp_LaVidaAdonis,mockup_lavidaadonis,https://editoriallarueca.com/wp-content/uploads/MockUp_LaVidaAdonis.jpg,,image/jpeg,900,600,MockUp_LaVidaAdonis.jpg
+1110,w_FOTO MAURO,w_foto-mauro,https://editoriallarueca.com/wp-content/uploads/w_FOTO-MAURO.jpg,,image/jpeg,400,404,w_FOTO-MAURO.jpg
+1112,PerfumePortada002,perfumeportada002,https://editoriallarueca.com/wp-content/uploads/w_PerfumePortada002.jpg,,image/jpeg,500,785,w_PerfumePortada002.jpg
+1114,PerfumeMockup,perfumemockup,https://editoriallarueca.com/wp-content/uploads/PerfumeMockup.png,,image/png,2560,1828,PerfumeMockup-scaled.png
+1115,W_FotoLuzStella,w_fotoluzstella,https://editoriallarueca.com/wp-content/uploads/W_FotoLuzStella.jpg,,image/jpeg,296,481,W_FotoLuzStella.jpg
+1118,CaminandoPortada002,caminandoportada002,https://editoriallarueca.com/wp-content/uploads/W_CaminandoPortada002.jpg,,image/jpeg,500,706,W_CaminandoPortada002.jpg
+1120,EntrevistasPortada,entrevistasportada,https://editoriallarueca.com/wp-content/uploads/w_EntrevistasPortada.jpg,,image/jpeg,500,700,w_EntrevistasPortada.jpg
+1122,w_Loli Castellón,w_loli-castellon,https://editoriallarueca.com/wp-content/uploads/w_Loli-Castellon.jpg,,image/jpeg,407,497,w_Loli-Castellon.jpg
+1123,EntrevistasMockup,entrevistasmockup,https://editoriallarueca.com/wp-content/uploads/EntrevistasMockup.png,,image/png,2133,2560,EntrevistasMockup-scaled.png
+1125,LucesPortada,lucesportada,https://editoriallarueca.com/wp-content/uploads/w_LucesPortada.jpg,,image/jpeg,500,700,w_LucesPortada.jpg
+1130,HumorPlantilla,humorplantilla,https://editoriallarueca.com/wp-content/uploads/w_cub_Humor.jpg,,image/jpeg,500,759,w_cub_Humor.jpg
+1132,HumorPlantilla,humorplantilla-2,https://editoriallarueca.com/wp-content/uploads/w_cub_Humor-1.jpg,,image/jpeg,500,759,w_cub_Humor-1.jpg
+1133,w_FotoManuel,w_fotomanuel-2,https://editoriallarueca.com/wp-content/uploads/w_FotoManuel-1.jpg,,image/jpeg,400,533,w_FotoManuel-1.jpg
+1135,LigeroPortada002,ligeroportada002,https://editoriallarueca.com/wp-content/uploads/w_LigeroPortada002.jpg,,image/jpeg,500,700,w_LigeroPortada002.jpg
+1137,MockUp_Guillermo5libros,mockup_guillermo5libros,https://editoriallarueca.com/wp-content/uploads/MockUp_Guillermo5libros.jpg,,image/jpeg,2560,1707,MockUp_Guillermo5libros-scaled.jpg
+1138,w_FotoGuillermo,w_fotoguillermo-2,https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-1.jpg,,image/jpeg,1442,2560,w_FotoGuillermo-1-scaled.jpg
+1144,icon-mex,icon-mex,https://editoriallarueca.com/wp-content/uploads/icon-mex.png,,image/png,96,96,icon-mex.png
+1145,icon-spa,icon-spa,https://editoriallarueca.com/wp-content/uploads/icon-spa.png,,image/png,96,96,icon-spa.png
+1146,icon-arg,icon-arg,https://editoriallarueca.com/wp-content/uploads/icon-arg.png,,image/png,96,96,icon-arg.png
+1147,icon-chi,icon-chi,https://editoriallarueca.com/wp-content/uploads/icon-chi.png,,image/png,96,96,icon-chi.png
+1148,icon-col,icon-col,https://editoriallarueca.com/wp-content/uploads/icon-col.png,,image/png,96,96,icon-col.png
+1149,icon-cos,icon-cos,https://editoriallarueca.com/wp-content/uploads/icon-cos.png,,image/png,96,96,icon-cos.png
+1150,icon-ecu,icon-ecu,https://editoriallarueca.com/wp-content/uploads/icon-ecu.png,,image/png,96,96,icon-ecu.png
+1151,icon-usa,icon-usa,https://editoriallarueca.com/wp-content/uploads/icon-usa.png,,image/png,96,96,icon-usa.png
+1158,NachoMiguelPortada5ta,nachomiguelportada5ta,https://editoriallarueca.com/wp-content/uploads/w_NachoMiguelPortada5ta.jpg,,image/jpeg,500,700,w_NachoMiguelPortada5ta.jpg
+1160,ConchaPortada002,conchaportada002,https://editoriallarueca.com/wp-content/uploads/w_ConchaPortada002.jpg,,image/jpeg,500,700,w_ConchaPortada002.jpg
+1162,w_Foto Conchi,w_foto-conchi,https://editoriallarueca.com/wp-content/uploads/w_Foto-Conchi.jpg,,image/jpeg,521,386,w_Foto-Conchi.jpg
+1163,ConchaMockup,conchamockup,https://editoriallarueca.com/wp-content/uploads/ConchaMockup.png,,image/png,2560,1707,ConchaMockup-scaled.png
+1166,BarroPortada,barroportada,https://editoriallarueca.com/wp-content/uploads/w_BarroPortada.jpg,,image/jpeg,500,750,w_BarroPortada.jpg
+1168,BarroMockup,barromockup,https://editoriallarueca.com/wp-content/uploads/BarroMockup.png,,image/png,2560,1707,BarroMockup-scaled.png
+1169,w_Foto_FcoMarin,w_foto_fcomarin,https://editoriallarueca.com/wp-content/uploads/w_Foto_FcoMarin.jpg,,image/jpeg,485,508,w_Foto_FcoMarin.jpg
+1171,IñakiPortada,inakiportada,https://editoriallarueca.com/wp-content/uploads/w_InakiPortada.jpg,,image/jpeg,500,750,w_InakiPortada.jpg
+1173,IñakiMockup,inakimockup,https://editoriallarueca.com/wp-content/uploads/InakiMockup.png,,image/png,2560,2048,InakiMockup-scaled.png
+1174,W_FOTO INAKI AZONA,w_foto-inaki-azona,https://editoriallarueca.com/wp-content/uploads/W_FOTO-INAKI-AZONA.jpg,,image/jpeg,400,654,W_FOTO-INAKI-AZONA.jpg
+1176,978-84-19865-47-2_cvs,978-84-19865-47-2_cvs,https://editoriallarueca.com/wp-content/uploads/w_portada_lamuerte.jpg,,image/jpeg,500,744,w_portada_lamuerte.jpg
+1178,MockUp_LaMuerte,mockup_lamuerte,https://editoriallarueca.com/wp-content/uploads/MockUp_LaMuerte.png,,image/png,2560,1946,MockUp_LaMuerte-scaled.png
+1179,foto Mauro OK,foto-mauro-ok,https://editoriallarueca.com/wp-content/uploads/foto-Mauro-OK.jpeg,,image/jpeg,682,1024,foto-Mauro-OK.jpeg
+1181,IñakiDominPortada,inakidominportada,https://editoriallarueca.com/wp-content/uploads/w_InakiDominPortada.jpg,,image/jpeg,500,700,w_InakiDominPortada.jpg
+1183,w_foto iñaki,w_foto-inaki,https://editoriallarueca.com/wp-content/uploads/w_foto-inaki.jpg,,image/jpeg,400,392,w_foto-inaki.jpg
+1184,IñaquiDominMockUp,inaquidominmockup,https://editoriallarueca.com/wp-content/uploads/InaquiDominMockUp.png,,image/png,2560,1536,InaquiDominMockUp-scaled.png
+1186,InteligenciaArtificialPortada,inteligenciaartificialportada,https://editoriallarueca.com/wp-content/uploads/w_InteligenciaArtificialPortada.jpg,,image/jpeg,500,700,w_InteligenciaArtificialPortada.jpg
+1190,w_autores,w_autores,https://editoriallarueca.com/wp-content/uploads/w_autores.jpg,,image/jpeg,400,262,w_autores.jpg
+1191,w_autores,w_autores-2,https://editoriallarueca.com/wp-content/uploads/w_autores-1.jpg,,image/jpeg,200,131,w_autores-1.jpg
+1192,w_autores2,w_autores2,https://editoriallarueca.com/wp-content/uploads/w_autores2.jpg,,image/jpeg,200,117,w_autores2.jpg
+1193,W_FotoNorberto,w_fotonorberto,https://editoriallarueca.com/wp-content/uploads/W_FotoNorberto.jpg,,image/jpeg,400,414,W_FotoNorberto.jpg
+1195,W_Foto Maria Isabel Martin,w_foto-maria-isabel-martin,https://editoriallarueca.com/wp-content/uploads/W_Foto-Maria-Isabel-Martin.jpg,,image/jpeg,667,889,W_Foto-Maria-Isabel-Martin.jpg
+1197,RosarioPortada,rosarioportada,https://editoriallarueca.com/wp-content/uploads/w_RosarioPortada.jpg,,image/jpeg,500,700,w_RosarioPortada.jpg
+1199,RosarioMockUp,rosariomockup,https://editoriallarueca.com/wp-content/uploads/RosarioMockUp.png,,image/png,2560,1512,RosarioMockUp-scaled.png
+1200,w_fOTO_RosarioReal,w_foto_rosarioreal,https://editoriallarueca.com/wp-content/uploads/w_fOTO_RosarioReal.jpg,,image/jpeg,189,340,w_fOTO_RosarioReal.jpg
+1201,w_978-84-19865-40-3_CUBIERTA,w_978-84-19865-40-3_cubierta,https://editoriallarueca.com/wp-content/uploads/w_978-84-19865-40-3_CUBIERTA.jpg,,image/jpeg,500,738,w_978-84-19865-40-3_CUBIERTA.jpg
+1203,AmaremosPortada002,amaremosportada002,https://editoriallarueca.com/wp-content/uploads/w_AmaremosPortada002.jpg,,image/jpeg,500,700,w_AmaremosPortada002.jpg
+1205,AmaremosMockup,amaremosmockup,https://editoriallarueca.com/wp-content/uploads/AmaremosMockup.png,,image/png,2560,1862,AmaremosMockup-scaled.png
+1206,w_fotoAndres,w_fotoandres,https://editoriallarueca.com/wp-content/uploads/w_fotoAndres.jpg,,image/jpeg,243,433,w_fotoAndres.jpg
+1208,EsferasPortada003,esferasportada003,https://editoriallarueca.com/wp-content/uploads/w_EsferasPortada003.jpg,,image/jpeg,500,750,w_EsferasPortada003.jpg
+1210,EsferasMockUp,esferasmockup,https://editoriallarueca.com/wp-content/uploads/EsferasMockUp.png,,image/png,2560,1512,EsferasMockUp-scaled.png
+1211,w_Foto_FcoMarin,w_foto_fcomarin-2,https://editoriallarueca.com/wp-content/uploads/w_Foto_FcoMarin-1.jpg,,image/jpeg,485,508,w_Foto_FcoMarin-1.jpg
+1213,PatxiPortada,patxiportada,https://editoriallarueca.com/wp-content/uploads/w_PatxiPortada.jpg,,image/jpeg,500,700,w_PatxiPortada.jpg
+1215,PatxiMockup,patximockup,https://editoriallarueca.com/wp-content/uploads/PatxiMockup.png,,image/png,2560,1707,PatxiMockup-scaled.png
+1216,W_FOTOpatxi,w_fotopatxi,https://editoriallarueca.com/wp-content/uploads/W_FOTOpatxi.jpg,,image/jpeg,833,833,W_FOTOpatxi.jpg
+1218,AlFinalPortada,alfinalportada,https://editoriallarueca.com/wp-content/uploads/w_AlFinalPortada.jpg,,image/jpeg,500,700,w_AlFinalPortada.jpg
+1220,cof,cof,https://editoriallarueca.com/wp-content/uploads/w_FotoJulio_solapa.jpg,,image/jpeg,400,751,w_FotoJulio_solapa.jpg
+1222,InteligenciArtificalMockUp003,inteligenciartificalmockup003,https://editoriallarueca.com/wp-content/uploads/InteligenciArtificalMockUp003.png,,image/png,2560,1792,InteligenciArtificalMockUp003-scaled.png
+1223,w_InteligenciaArtificialPortada003,w_inteligenciaartificialportada003,https://editoriallarueca.com/wp-content/uploads/w_InteligenciaArtificialPortada003.tif,,,,,w_InteligenciaArtificialPortada003.tif
+1224,InteligenciaArtificialPortada003,inteligenciaartificialportada003,https://editoriallarueca.com/wp-content/uploads/w_InteligenciaArtificialPortada003.jpg,,image/jpeg,500,700,w_InteligenciaArtificialPortada003.jpg
+1225,InteligenciArtificalMockUp003,inteligenciartificalmockup003-2,https://editoriallarueca.com/wp-content/uploads/InteligenciArtificalMockUp003-1.png,,image/png,2560,1792,InteligenciArtificalMockUp003-1-scaled.png
+1227,978-84-19865-61-8cub2,978-84-19865-61-8cub2,https://editoriallarueca.com/wp-content/uploads/w_portada_Leccion.jpg,,image/jpeg,500,692,w_portada_Leccion.jpg
+1229,w_Estásimo - portada,w_estasimo-portada,https://editoriallarueca.com/wp-content/uploads/w_Estasimo-portada.jpg,,image/jpeg,500,700,w_Estasimo-portada.jpg
+1231,MockUp_Estasimo_Pixeles,mockup_estasimo_pixeles,https://editoriallarueca.com/wp-content/uploads/MockUp_Estasimo_Pixeles.jpg,,image/jpeg,796,654,MockUp_Estasimo_Pixeles.jpg
+1232,w_FotoGuillermo,w_fotoguillermo-3,https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-2.jpg,,image/jpeg,400,711,w_FotoGuillermo-2.jpg
+1234,HaikusPortada,haikusportada,https://editoriallarueca.com/wp-content/uploads/w_HaikusPortada.jpg,,image/jpeg,500,700,w_HaikusPortada.jpg
+1236,HaikusMockup,haikusmockup,https://editoriallarueca.com/wp-content/uploads/HaikusMockup.png,,image/png,2560,1810,HaikusMockup-scaled.png
+1245,LA RUTA DE LAS MARIPOSAS_portada,la-ruta-de-las-mariposas_portada,https://editoriallarueca.com/wp-content/uploads/w_LA-RUTA-DE-LAS-MARIPOSAS_portada.jpg,,image/jpeg,500,707,w_LA-RUTA-DE-LAS-MARIPOSAS_portada.jpg
+1247,mockup_LaRuta,mockup_laruta,https://editoriallarueca.com/wp-content/uploads/mockup_LaRuta.jpg,,image/jpeg,2560,1707,mockup_LaRuta-scaled.jpg
+1248,w_Foto Elga,w_foto-elga,https://editoriallarueca.com/wp-content/uploads/w_Foto-Elga.jpg,,image/jpeg,400,267,w_Foto-Elga.jpg
+1250,LagrimasWPortada,lagrimaswportada,https://editoriallarueca.com/wp-content/uploads/w_LagrimasWPortada.jpg,,image/jpeg,500,700,w_LagrimasWPortada.jpg
+1251,978-84-19865-61-8.cvg,978-84-19865-61-8-cvg,https://editoriallarueca.com/wp-content/uploads/W_PORTADA-4.jpg,,image/jpeg,500,693,W_PORTADA-4.jpg
+1253,w2_Versos de madrugada,w2_versos-de-madrugada,https://editoriallarueca.com/wp-content/uploads/w2_Versos-de-madrugada.jpg,,image/jpeg,500,701,w2_Versos-de-madrugada.jpg
+1257,w_MockUp_VersosMadrugada,w_mockup_versosmadrugada,https://editoriallarueca.com/wp-content/uploads/w_MockUp_VersosMadrugada.jpg,,image/jpeg,1000,667,w_MockUp_VersosMadrugada.jpg
+1258,foto autor,foto-autor-2,https://editoriallarueca.com/wp-content/uploads/foto-autor-1.jpg,,image/jpeg,309,363,foto-autor-1.jpg
+1301,978-84-19865-68-7cub,978-84-19865-68-7cub,https://editoriallarueca.com/wp-content/uploads/w_cuentos-1.jpg,,image/jpeg,500,542,w_cuentos-1.jpg
+1305,978-84-19865-67-0Cub,978-84-19865-67-0cub,https://editoriallarueca.com/wp-content/uploads/w_Portadaweb.jpg,,image/jpeg,500,731,w_Portadaweb.jpg
+1311,BerectriccePortada,berectricceportada,https://editoriallarueca.com/wp-content/uploads/w_BerectriccePortada.jpg,,image/jpeg,500,700,w_BerectriccePortada.jpg
+1312,w_Foto_FcoMarin,w_foto_fcomarin-3,https://editoriallarueca.com/wp-content/uploads/w_Foto_FcoMarin-2.jpg,,image/jpeg,485,508,w_Foto_FcoMarin-2.jpg
+1314,BerectricceMockup,berectriccemockup,https://editoriallarueca.com/wp-content/uploads/BerectricceMockup.png,,image/png,2560,1810,BerectricceMockup-scaled.png
+1315,w_FotoJoaquín,w_fotojoaquin,https://editoriallarueca.com/wp-content/uploads/w_FotoJoaquin.jpg,,image/jpeg,1575,2100,w_FotoJoaquin.jpg
+1324,CierzoPortada,cierzoportada,https://editoriallarueca.com/wp-content/uploads/w_CierzoPortada.jpg,,image/jpeg,500,700,w_CierzoPortada.jpg
+1326,CierzoMockup,cierzomockup,https://editoriallarueca.com/wp-content/uploads/CierzoMockup.png,,image/png,2560,1707,CierzoMockup-scaled.png
+1327,w_Foto JoseAntonioGalante,w_foto-joseantoniogalante,https://editoriallarueca.com/wp-content/uploads/w_Foto-JoseAntonioGalante.jpg,,image/jpeg,400,346,w_Foto-JoseAntonioGalante.jpg
+1331,w_PortadaNido,w_portadanido,https://editoriallarueca.com/wp-content/uploads/w_PortadaNido.jpg,,image/jpeg,500,795,w_PortadaNido.jpg
+1338,w_Portada_Marques,w_portada_marques,https://editoriallarueca.com/wp-content/uploads/w_Portada_Marques.jpg,,image/jpeg,1515,2383,w_Portada_Marques.jpg
+1340,w_quedamosPortada,w_quedamosportada,https://editoriallarueca.com/wp-content/uploads/w_quedamosPortada.jpg,,image/jpeg,500,750,w_quedamosPortada.jpg
+1342,MockUp_Carmona_Pixeles,mockup_carmona_pixeles,https://editoriallarueca.com/wp-content/uploads/MockUp_Carmona_Pixeles.jpg,,image/jpeg,796,654,MockUp_Carmona_Pixeles.jpg
+1344,w_FotoJoseVicente2,w_fotojosevicente2,https://editoriallarueca.com/wp-content/uploads/w_FotoJoseVicente2.jpg,,image/jpeg,332,604,w_FotoJoseVicente2.jpg
+1346,978-84-19865-71-7_CUB,978-84-19865-71-7_cub,https://editoriallarueca.com/wp-content/uploads/w_portadaDonaBota.jpg,,image/jpeg,700,761,w_portadaDonaBota.jpg
+1347,978-84-19865-71-7_CUB,978-84-19865-71-7_cub-2,https://editoriallarueca.com/wp-content/uploads/w_portadaDonaBota-1.jpg,,image/jpeg,500,544,w_portadaDonaBota-1.jpg
+1349,w_mockUp_amara.Bota,w_mockup_amara-bota,https://editoriallarueca.com/wp-content/uploads/w_mockUp_amara.Bota_.jpg,,image/jpeg,2560,1707,w_mockUp_amara.Bota_-scaled.jpg
+1353,w_Portada_Voces del Alma,w_portada_voces-del-alma,https://editoriallarueca.com/wp-content/uploads/w_Portada_Voces-del-Alma.jpg,,image/jpeg,700,1021,w_Portada_Voces-del-Alma.jpg
+1357,w_portadaWeb,w_portadaweb,https://editoriallarueca.com/wp-content/uploads/w_portadaWeb-1.jpg,,image/jpeg,500,733,w_portadaWeb-1.jpg
+1359,MockuPMinerva,mockupminerva,https://editoriallarueca.com/wp-content/uploads/MockuPMinerva.jpg,,image/jpeg,2000,1323,MockuPMinerva.jpg
+1360,w_portadaWeb,w_portadaweb-2,https://editoriallarueca.com/wp-content/uploads/w_portadaWeb-2.jpg,,image/jpeg,500,733,w_portadaWeb-2.jpg
+1362,Minimal book mockup psd,minimal-book-mockup-psd,https://editoriallarueca.com/wp-content/uploads/w_MockUp_voces2.jpg,,image/jpeg,2000,1333,w_MockUp_voces2.jpg
+1363,Foto5Minerva,foto5minerva,https://editoriallarueca.com/wp-content/uploads/Foto5Minerva.jpeg,,image/jpeg,1591,2048,Foto5Minerva.jpeg
+1364,Foto3Minerva,foto3minerva,https://editoriallarueca.com/wp-content/uploads/Foto3Minerva.jpeg,,image/jpeg,1536,2048,Foto3Minerva.jpeg
+1366,MockUp_Nido_Peq,mockup_nido_peq,https://editoriallarueca.com/wp-content/uploads/MockUp_Nido_Peq.jpg,,image/jpeg,500,500,MockUp_Nido_Peq.jpg
+1368,w_mockUpMarques2,w_mockupmarques2,https://editoriallarueca.com/wp-content/uploads/w_mockUpMarques2.jpg,,image/jpeg,2560,1920,w_mockUpMarques2-scaled.jpg
+1369,w_mockUp_Marques,w_mockup_marques,https://editoriallarueca.com/wp-content/uploads/w_mockUp_Marques.jpg,,image/jpeg,2560,1707,w_mockUp_Marques-scaled.jpg
+1373,w_AndresYAnaCon_su_permiso_don_alvaro,w_andresyanacon_su_permiso_don_alvaro,https://editoriallarueca.com/wp-content/uploads/w_AndresYAnaCon_su_permiso_don_alvaro.jpg,,image/jpeg,400,533,w_AndresYAnaCon_su_permiso_don_alvaro.jpg
+1375,w_Portada _R_ Isabel Martínez,w_portada-_r_-isabel-martinez,https://editoriallarueca.com/wp-content/uploads/w_Portada-_R_-Isabel-Martinez.jpg,,image/jpeg,500,700,w_Portada-_R_-Isabel-Martinez.jpg
+1377,w_mockUpR,w_mockupr,https://editoriallarueca.com/wp-content/uploads/w_mockUpR.jpg,,image/jpeg,1000,667,w_mockUpR.jpg
+1378,w_Portada _R_ Isabel Martínez,w_portada-_r_-isabel-martinez-2,https://editoriallarueca.com/wp-content/uploads/w_Portada-_R_-Isabel-Martinez-1.jpg,,image/jpeg,500,700,w_Portada-_R_-Isabel-Martinez-1.jpg
+1379,w_FotoMaríaIsabel,w_fotomariaisabel,https://editoriallarueca.com/wp-content/uploads/w_FotoMariaIsabel.jpg,,image/jpeg,834,1110,w_FotoMariaIsabel.jpg
+1381,w_Portada_Pinguillen,w_portada_pinguillen,https://editoriallarueca.com/wp-content/uploads/w_Portada_Pinguillen.jpg,,image/jpeg,1724,2560,w_Portada_Pinguillen-scaled.jpg
+1383,w_CarmenPinguillen,w_carmenpinguillen,https://editoriallarueca.com/wp-content/uploads/w_CarmenPinguillen.jpg,,image/jpeg,148,209,w_CarmenPinguillen.jpg
+1384,w_CarmenPinguillen,w_carmenpinguillen-2,https://editoriallarueca.com/wp-content/uploads/w_CarmenPinguillen-1.jpg,,image/jpeg,200,282,w_CarmenPinguillen-1.jpg
+1385,w_mockUp_Pinguillen,w_mockup_pinguillen,https://editoriallarueca.com/wp-content/uploads/w_mockUp_Pinguillen.jpg,,image/jpeg,1500,1000,w_mockUp_Pinguillen.jpg
+1391,w_portada_ElCantoWeb,w_portada_elcantoweb,https://editoriallarueca.com/wp-content/uploads/w_portada_ElCantoWeb.jpg,,image/jpeg,500,749,w_portada_ElCantoWeb.jpg
+1393,w_MockUp_ElCanto2,w_mockup_elcanto2,https://editoriallarueca.com/wp-content/uploads/w_MockUp_ElCanto2.jpg,,image/jpeg,2560,1707,w_MockUp_ElCanto2-scaled.jpg
+1394,w_Foto Ines,w_foto-ines,https://editoriallarueca.com/wp-content/uploads/w_Foto-Ines.jpg,,image/jpeg,400,342,w_Foto-Ines.jpg
+1399,MockUp_Nido_Peq,mockup_nido_peq-2,https://editoriallarueca.com/wp-content/uploads/MockUp_Nido_Peq-1.jpg,,image/jpeg,500,500,MockUp_Nido_Peq-1.jpg
+1403,w_losanimales,w_losanimales,https://editoriallarueca.com/wp-content/uploads/w_losanimales.jpg,,image/jpeg,2508,2560,w_losanimales-scaled.jpg
+1404,w_los animales,w_los-animales,https://editoriallarueca.com/wp-content/uploads/w_los-animales.jpg,,image/jpeg,2508,2560,w_los-animales-scaled.jpg
+1421,w_Zoografias,w_zoografias,https://editoriallarueca.com/wp-content/uploads/w_Zoografias.jpg,,image/jpeg,500,715,w_Zoografias.jpg
+1423,mockUp_Zoografiaspeq,mockup_zoografiaspeq,https://editoriallarueca.com/wp-content/uploads/mockUp_Zoografiaspeq.jpg,,image/jpeg,1707,2560,mockUp_Zoografiaspeq-scaled.jpg
+1424,w_FotoGuillermo,w_fotoguillermo-4,https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-3.jpg,,image/jpeg,400,533,w_FotoGuillermo-3.jpg
+1426,w_portada_suspiros,w_portada_suspiros,https://editoriallarueca.com/wp-content/uploads/w_portada_suspiros.jpg,,image/jpeg,500,721,w_portada_suspiros.jpg
+1430,w_portadaCartas,w_portadacartas,https://editoriallarueca.com/wp-content/uploads/w_portadaCartas.jpg,,image/jpeg,500,772,w_portadaCartas.jpg
+1432,MockUp_Cartas,mockup_cartas,https://editoriallarueca.com/wp-content/uploads/MockUp_Cartas.jpg,,image/jpeg,900,900,MockUp_Cartas.jpg
+1434,w_PortadaAmorAmor,w_portadaamoramor,https://editoriallarueca.com/wp-content/uploads/w_PortadaAmorAmor.jpg,,image/jpeg,500,819,w_PortadaAmorAmor.jpg
+1436,mockUpAmorAmor,mockupamoramor,https://editoriallarueca.com/wp-content/uploads/mockUpAmorAmor.jpg,,image/jpeg,2000,1333,mockUpAmorAmor.jpg
+1437,w_fotoEduardo,w_fotoeduardo,https://editoriallarueca.com/wp-content/uploads/w_fotoEduardo.jpg,,image/jpeg,556,823,w_fotoEduardo.jpg
+1439,w_portada_FamiliasBorbon,w_portada_familiasborbon,https://editoriallarueca.com/wp-content/uploads/w_portada_FamiliasBorbon.jpg,,image/jpeg,500,623,w_portada_FamiliasBorbon.jpg
+1449,w_Rodrigo_PortadaOK,w_rodrigo_portadaok,https://editoriallarueca.com/wp-content/uploads/w_Rodrigo_PortadaOK.jpg,,image/jpeg,500,665,w_Rodrigo_PortadaOK.jpg
+1450,w_Rodrigo_PortadaOK,w_rodrigo_portadaok-2,https://editoriallarueca.com/wp-content/uploads/w_Rodrigo_PortadaOK-1.jpg,,image/jpeg,500,665,w_Rodrigo_PortadaOK-1.jpg
+1453,w_Portada_EscuelaMusica,w_portada_escuelamusica,https://editoriallarueca.com/wp-content/uploads/w_Portada_EscuelaMusica.jpg,,image/jpeg,500,741,w_Portada_EscuelaMusica.jpg
+1455,BárbaraMila,barbaramila,https://editoriallarueca.com/wp-content/uploads/BarbaraMila.jpg,,image/jpeg,1134,849,BarbaraMila.jpg
+1456,Daniela Corao,daniela-corao,https://editoriallarueca.com/wp-content/uploads/Daniela-Corao.jpg,,image/jpeg,1134,1512,Daniela-Corao.jpg
+1458,MockuPEscuelaMusicaPEQ,mockupescuelamusicapeq,https://editoriallarueca.com/wp-content/uploads/MockuPEscuelaMusicaPEQ.jpg,,image/jpeg,2000,1429,MockuPEscuelaMusicaPEQ.jpg
+1459,Inés + Roberto,ines-roberto-2,https://editoriallarueca.com/wp-content/uploads/W_Juan-Jose-Velasco-S-1.jpg,,image/jpeg,400,559,W_Juan-Jose-Velasco-S-1.jpg
+1462,978-84-19865-81-6cub,978-84-19865-81-6cub,https://editoriallarueca.com/wp-content/uploads/w_Portada-5.jpg,,image/jpeg,1876,2047,w_Portada-5.jpg
+1472,w_LaUltima,w_laultima,https://editoriallarueca.com/wp-content/uploads/w_LaUltima.jpg,,image/jpeg,500,710,w_LaUltima.jpg
+1474,UltimaCartaMockUp,ultimacartamockup,https://editoriallarueca.com/wp-content/uploads/UltimaCartaMockUp.png,,image/png,2560,1707,UltimaCartaMockUp-scaled.png
+1475,w_FotoAutor_Alonso,w_fotoautor_alonso,https://editoriallarueca.com/wp-content/uploads/w_FotoAutor_Alonso.jpg,,image/jpeg,400,542,w_FotoAutor_Alonso.jpg
+1482,w_portada Minerva_ARKANUM-,w_portada-minerva_arkanum,https://editoriallarueca.com/wp-content/uploads/w_portada-Minerva_ARKANUM-.jpg,,image/jpeg,500,728,w_portada-Minerva_ARKANUM-.jpg
+1484,mockUP_3librosMinervapeq,mockup_3librosminervapeq,https://editoriallarueca.com/wp-content/uploads/mockUP_3librosMinervapeq.jpg,,image/jpeg,2000,1334,mockUP_3librosMinervapeq.jpg
+1485,w_Foto Minerva1,w_foto-minerva1,https://editoriallarueca.com/wp-content/uploads/w_Foto-Minerva1.jpg,,image/jpeg,400,515,w_Foto-Minerva1.jpg
+1492,cub_DiosBendiga,cub_diosbendiga,https://editoriallarueca.com/wp-content/uploads/w_PortadaDiosBendigatuDia.jpg,,image/jpeg,500,718,w_PortadaDiosBendigatuDia.jpg
+1517,w_Portada,w_portada-3,https://editoriallarueca.com/wp-content/uploads/w_Portada-6.jpg,,image/jpeg,2009,2560,w_Portada-6-scaled.jpg
+1519,w_mockup_Raimundo,w_mockup_raimundo,https://editoriallarueca.com/wp-content/uploads/w_mockup_Raimundo.jpg,,image/jpeg,1500,1071,w_mockup_Raimundo.jpg
+1520,IMG_20230912_Cazorla,img_20230912_cazorla,https://editoriallarueca.com/wp-content/uploads/IMG_20230912_Cazorla.jpg,,image/jpeg,1920,2560,IMG_20230912_Cazorla-scaled.jpg
+1525,w_portada,w_portada-4,https://editoriallarueca.com/wp-content/uploads/w_portada-7.jpg,,image/jpeg,500,696,w_portada-7.jpg
+1527,w_fotoSara,w_fotosara,https://editoriallarueca.com/wp-content/uploads/w_fotoSara.jpg,,image/jpeg,400,589,w_fotoSara.jpg
+1530,cub_HistoriaFamiliar,cub_historiafamiliar,https://editoriallarueca.com/wp-content/uploads/w_Portada-8.jpg,,image/jpeg,500,721,w_Portada-8.jpg
+1533,979-13-87525-02-6_cub,979-13-87525-02-6_cub,https://editoriallarueca.com/wp-content/uploads/w_portadaMorir.jpg,,image/jpeg,500,731,w_portadaMorir.jpg
+1538,w_PortadaDiasGalerna,w_portadadiasgalerna,https://editoriallarueca.com/wp-content/uploads/w_PortadaDiasGalerna.jpg,,image/jpeg,1812,2560,w_PortadaDiasGalerna-scaled.jpg
+1540,w_mockupDiasGalerna,w_mockupdiasgalerna,https://editoriallarueca.com/wp-content/uploads/w_mockupDiasGalerna.jpg,,image/jpeg,2560,1707,w_mockupDiasGalerna-scaled.jpg
+1542,w_fotoAutor,w_fotoautor-2,https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-2.jpg,,image/jpeg,1134,850,w_fotoAutor-2.jpg
+1543,w2_fotoAutor,w2_fotoautor,https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor.jpg,,image/jpeg,1134,1214,w2_fotoAutor.jpg
+1547,979-13-87525-04-0_cub,979-13-87525-04-0_cub,https://editoriallarueca.com/wp-content/uploads/w_portadaOKpequena.jpg,,image/jpeg,500,697,w_portadaOKpequena.jpg
+1549,w_1MockUp_Monedas,w_1mockup_monedas,https://editoriallarueca.com/wp-content/uploads/w_1MockUp_Monedas.jpg,,image/jpeg,900,600,w_1MockUp_Monedas.jpg
+1550,Jesus Adame - Autor,jesus-adame-autor,https://editoriallarueca.com/wp-content/uploads/Jesus-Adame-Autor.tif,,,,,Jesus-Adame-Autor.tif
+1551,w_fotoJesus,w_fotojesus,https://editoriallarueca.com/wp-content/uploads/w_fotoJesus.jpg,,image/jpeg,400,600,w_fotoJesus.jpg
+1554,fotoRAFA,fotorafa,https://editoriallarueca.com/wp-content/uploads/fotoRAFA.jpeg,,image/jpeg,1170,1828,fotoRAFA.jpeg
+1555,fotoRAFA,fotorafa-2,https://editoriallarueca.com/wp-content/uploads/fotoRAFA-1.jpeg,,image/jpeg,1170,1828,fotoRAFA-1.jpeg
+1559,979-13-87525-06-4_cub,979-13-87525-06-4_cub,https://editoriallarueca.com/wp-content/uploads/w_portada-9.jpg,,image/jpeg,500,700,w_portada-9.jpg
+1561,mockup_Gabardina,mockup_gabardina,https://editoriallarueca.com/wp-content/uploads/mockup_Gabardina.jpg,,image/jpeg,1500,1533,mockup_Gabardina.jpg
+1562,w_guillermo,w_guillermo,https://editoriallarueca.com/wp-content/uploads/w_guillermo.jpg,,image/jpeg,400,301,w_guillermo.jpg
+1565,979-13-87525-00-2_cub,979-13-87525-00-2_cub,https://editoriallarueca.com/wp-content/uploads/w_portadaAdios.jpg,,image/jpeg,500,750,w_portadaAdios.jpg
+1568,3cub_ensayo,3cub_ensayo,https://editoriallarueca.com/wp-content/uploads/w_portada-10.jpg,,image/jpeg,500,713,w_portada-10.jpg
+1570,W_MOCKuP_SirTristan2,w_mockup_sirtristan2,https://editoriallarueca.com/wp-content/uploads/W_MOCKuP_SirTristan2.jpg,,image/jpeg,2504,2560,W_MOCKuP_SirTristan2-scaled.jpg
+1571,w_fotoautor,w_fotoautor-3,https://editoriallarueca.com/wp-content/uploads/w_fotoautor-3.jpg,,image/jpeg,400,467,w_fotoautor-3.jpg
+1577,W_CUB_LA LISTA DE TAREAS _ELR,w_cub_la-lista-de-tareas-_elr-2,https://editoriallarueca.com/wp-content/uploads/w_PortadaOK.jpg,,image/jpeg,500,706,w_PortadaOK.jpg
+1579,w_mockUp_ListaTareas,w_mockup_listatareas,https://editoriallarueca.com/wp-content/uploads/w_mockUp_ListaTareas.jpg,,image/jpeg,2560,1440,w_mockUp_ListaTareas-scaled.jpg
+1580,w_FotoCarlosJ.Olmedo,w_fotocarlosj-olmedo,https://editoriallarueca.com/wp-content/uploads/w_FotoCarlosJ.Olmedo.jpg,,image/jpeg,400,378,w_FotoCarlosJ.Olmedo.jpg
+1584,PORTADA Y CONTRAPORTADA.cdr,portada-y-contraportada-cdr,https://editoriallarueca.com/wp-content/uploads/w_portada-11.jpg,,image/jpeg,500,680,w_portada-11.jpg
+1586,w_mockUp_Cristus,w_mockup_cristus,https://editoriallarueca.com/wp-content/uploads/w_mockUp_Cristus.jpg,,image/jpeg,2560,1440,w_mockUp_Cristus-scaled.jpg
+1587,PORTADA Y CONTRAPORTADA.cdr,portada-y-contraportada-cdr-2,https://editoriallarueca.com/wp-content/uploads/w_fotoPadreInaki.jpg,,image/jpeg,400,704,w_fotoPadreInaki.jpg
+1594,979-13-87525-11-8_cub,979-13-87525-11-8_cub,https://editoriallarueca.com/wp-content/uploads/w_portadaPeq.jpg,,image/jpeg,500,718,w_portadaPeq.jpg
+1599,Mariposas_120X180 (2) - 1,mariposas_120x180-2-1,https://editoriallarueca.com/wp-content/uploads/w_mariposas_portada.jpg,,image/jpeg,500,765,w_mariposas_portada.jpg
+1601,978-84-19865-69-4 _cub,978-84-19865-69-4-_cub,https://editoriallarueca.com/wp-content/uploads/w_portada_ElValor.jpg,,image/jpeg,500,800,w_portada_ElValor.jpg
+1603,MockUp_el valor,mockup_el-valor,https://editoriallarueca.com/wp-content/uploads/MockUp_el-valor.jpg,,image/jpeg,900,900,MockUp_el-valor.jpg
+1604,w_fotoCarmenGordillo,w_fotocarmengordillo,https://editoriallarueca.com/wp-content/uploads/w_fotoCarmenGordillo.jpg,,image/jpeg,400,406,w_fotoCarmenGordillo.jpg
+1612,cub_PlanesEnlazados,cub_planesenlazados,https://editoriallarueca.com/wp-content/uploads/w_portadaPlanes.jpg,,image/jpeg,1181,1701,w_portadaPlanes.jpg
+1615,w_mockUP_planes,w_mockup_planes,https://editoriallarueca.com/wp-content/uploads/w_mockUP_planes.jpg,,image/jpeg,2560,1440,w_mockUP_planes-scaled.jpg
+1617,MockUp_mariposas_sandra,mockup_mariposas_sandra,https://editoriallarueca.com/wp-content/uploads/MockUp_mariposas_sandra.jpg,,image/jpeg,900,900,MockUp_mariposas_sandra.jpg
+1618,w_fotoSandra,w_fotosandra,https://editoriallarueca.com/wp-content/uploads/w_fotoSandra.jpg,,image/jpeg,400,526,w_fotoSandra.jpg
+1619,w_fotoMariaParedes,w_fotomariaparedes,https://editoriallarueca.com/wp-content/uploads/w_fotoMariaParedes.jpg,,image/jpeg,400,636,w_fotoMariaParedes.jpg
+1621,979-13-87525-13-2_cubOK2,979-13-87525-13-2_cubok2,https://editoriallarueca.com/wp-content/uploads/w_portadaLatinOK.jpg,,image/jpeg,500,722,w_portadaLatinOK.jpg
+1628,979-13-87525-12-5_cub,979-13-87525-12-5_cub,https://editoriallarueca.com/wp-content/uploads/w_portadaCuentos.jpg,,image/jpeg,500,628,w_portadaCuentos.jpg
+1632,979-13-87525-10-1_cub,979-13-87525-10-1_cub,https://editoriallarueca.com/wp-content/uploads/w_portadaMalva.jpg,,image/jpeg,500,773,w_portadaMalva.jpg
+1634,w_MockUP_Metodo,w_mockup_metodo,https://editoriallarueca.com/wp-content/uploads/w_MockUP_Metodo.jpg,,image/jpeg,2362,1575,w_MockUP_Metodo.jpg
+1635,w_Malva,w_malva,https://editoriallarueca.com/wp-content/uploads/w_Malva.jpg,,image/jpeg,1134,1512,w_Malva.jpg
+1643,978-84-19865-97-7_cub,978-84-19865-97-7_cub,https://editoriallarueca.com/wp-content/uploads/w_portada-12.jpg,,image/jpeg,1181,1654,w_portada-12.jpg
+1645,w_Mockup_Simba2,w_mockup_simba2,https://editoriallarueca.com/wp-content/uploads/w_Mockup_Simba2.jpg,,image/jpeg,2362,1575,w_Mockup_Simba2.jpg
+1646,w_fotoSara,w_fotosara-2,https://editoriallarueca.com/wp-content/uploads/w_fotoSara-1.jpg,,image/jpeg,400,589,w_fotoSara-1.jpg
+1648,cub3_Reflejos,cub3_reflejos,https://editoriallarueca.com/wp-content/uploads/w_portada-13.jpg,,image/jpeg,1103,1701,w_portada-13.jpg
+1650,w_MookUp_reflejos,w_mookup_reflejos,https://editoriallarueca.com/wp-content/uploads/w_MookUp_reflejos.jpg,,image/jpeg,1417,945,w_MookUp_reflejos.jpg
+1651,w_mockUp3_reflejos,w_mockup3_reflejos,https://editoriallarueca.com/wp-content/uploads/w_mockUp3_reflejos.jpg,,image/jpeg,1890,1350,w_mockUp3_reflejos.jpg
+1652,dav,dav-2,https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-4.jpg,,image/jpeg,1134,1126,w_fotoAutor-4.jpg
+1666,979-13-87525-01-9_cub,979-13-87525-01-9_cub,https://editoriallarueca.com/wp-content/uploads/w_portada-14.jpg,,image/jpeg,1800,2560,w_portada-14-scaled.jpg
+1667,979-13-87525-01-9_cub,979-13-87525-01-9_cub-2,https://editoriallarueca.com/wp-content/uploads/w_portada-15.jpg,,image/jpeg,1189,1638,w_portada-15.jpg
+1671,979-13-87525-19-4_cub,979-13-87525-19-4_cub,https://editoriallarueca.com/wp-content/uploads/w_portada-16.jpg,,image/jpeg,1939,2560,w_portada-16-scaled.jpg
+1673,08 ALTA Antonio Bejarano_Sapiens,08-alta-antonio-bejarano_sapiens,https://editoriallarueca.com/wp-content/uploads/08-ALTA-Antonio-Bejarano_Sapiens.docx,,,,,08-ALTA-Antonio-Bejarano_Sapiens.docx
+1674,979-13-87525-18-7_cub,979-13-87525-18-7_cub,https://editoriallarueca.com/wp-content/uploads/w_portadaCarolina.jpg,,image/jpeg,1206,1716,w_portadaCarolina.jpg
+1675,979-13-87525-18-7_cub,979-13-87525-18-7_cub-2,https://editoriallarueca.com/wp-content/uploads/w_portadaCarolina-1.jpg,,image/jpeg,1206,1716,w_portadaCarolina-1.jpg
+1680,979-13-87525-20-0_cub,979-13-87525-20-0_cub,https://editoriallarueca.com/wp-content/uploads/w_PajaroPortada.jpg,,image/jpeg,1747,2560,w_PajaroPortada-scaled.jpg
+1682,mockup_pajaro,mockup_pajaro,https://editoriallarueca.com/wp-content/uploads/mockup_pajaro.jpg,,image/jpeg,1417,945,mockup_pajaro.jpg
+1683,FotoAutor,fotoautor,https://editoriallarueca.com/wp-content/uploads/FotoAutor.jpg,,image/jpeg,1442,2560,FotoAutor-scaled.jpg
+1685,979-13-87525-16-3_cub,979-13-87525-16-3_cub,https://editoriallarueca.com/wp-content/uploads/ww_portada.jpg,,image/jpeg,500,721,ww_portada.jpg
+1687,w_mockupRollos2_2,w_mockuprollos2_2,https://editoriallarueca.com/wp-content/uploads/w_mockupRollos2_2.jpg,,image/jpeg,2000,1334,w_mockupRollos2_2.jpg
+1688,FotoAntonioValdeavero2,fotoantoniovaldeavero2,https://editoriallarueca.com/wp-content/uploads/FotoAntonioValdeavero2.tif,,,,,FotoAntonioValdeavero2.tif
+1689,FotoValdeavero-1,fotovaldeavero-1,https://editoriallarueca.com/wp-content/uploads/FotoValdeavero-1.tif,,,,,FotoValdeavero-1.tif
+1690,FotoAntonioValdeavero2,fotoantoniovaldeavero2-2,https://editoriallarueca.com/wp-content/uploads/FotoAntonioValdeavero2.jpg,,image/jpeg,400,421,FotoAntonioValdeavero2.jpg
+1711,979-13-87525-17-0_cub,979-13-87525-17-0_cub,https://editoriallarueca.com/wp-content/uploads/w_portada_OtrosOficios.jpg,,image/jpeg,500,735,w_portada_OtrosOficios.jpg
+1713,fotoZarate,fotozarate,https://editoriallarueca.com/wp-content/uploads/fotoZarate.jpg,,image/jpeg,2560,1920,fotoZarate-scaled.jpg
+1714,foto1,foto1,https://editoriallarueca.com/wp-content/uploads/foto1.jpg,,image/jpeg,746,990,foto1.jpg
+1716,979-13-87525-21-7_cub,979-13-87525-21-7_cub,https://editoriallarueca.com/wp-content/uploads/979-13-87525-21-7_cub.pdf,,application/pdf,,,979-13-87525-21-7_cub.pdf
+1717,979-13-87525-05-7_cub,979-13-87525-05-7_cub,https://editoriallarueca.com/wp-content/uploads/w_portada-17.jpg,,image/jpeg,500,789,w_portada-17.jpg
+1721,Obra de arte e ilustración,obra-de-arte-e-ilustracion-5,https://editoriallarueca.com/wp-content/uploads/ww_portada-1.jpg,,image/jpeg,500,748,ww_portada-1.jpg
+1723,w_mockUp_Libero,w_mockup_libero,https://editoriallarueca.com/wp-content/uploads/w_mockUp_Libero.jpg,,image/jpeg,2000,1334,w_mockUp_Libero.jpg
+1724,FotoAutor,fotoautor-2,https://editoriallarueca.com/wp-content/uploads/FotoAutor-1.jpg,,image/jpeg,1080,1159,FotoAutor-1.jpg
+1729,979-13-87525-23-1_cub,979-13-87525-23-1_cub,https://editoriallarueca.com/wp-content/uploads/w_portadapeqyela.jpg,,image/jpeg,500,756,w_portadapeqyela.jpg
+1731,w_MockUp_Escorial,w_mockup_escorial,https://editoriallarueca.com/wp-content/uploads/w_MockUp_Escorial.jpg,,image/jpeg,1500,1071,w_MockUp_Escorial.jpg
+1732,FotoAutor,fotoautor-3,https://editoriallarueca.com/wp-content/uploads/FotoAutor-2.jpg,,image/jpeg,1190,1605,FotoAutor-2.jpg
+1733,978-84-18924-85-9 _cub_Amar,978-84-18924-85-9-_cub_amar,https://editoriallarueca.com/wp-content/uploads/w_PORTADA_AMAR.jpg,,image/jpeg,500,768,w_PORTADA_AMAR.jpg
+1734,978-84-18924-86-6_cubDecision,978-84-18924-86-6_cubdecision,https://editoriallarueca.com/wp-content/uploads/w_Portada_Decision.jpg,,image/jpeg,1276,1900,w_Portada_Decision.jpg
+1735,978-84-18924-86-6_cubDecision,978-84-18924-86-6_cubdecision-2,https://editoriallarueca.com/wp-content/uploads/w_Portada_Decision-1.jpg,,image/jpeg,1276,1900,w_Portada_Decision-1.jpg
+1736,978-84-18924-86-6_cubDecision,978-84-18924-86-6_cubdecision-3,https://editoriallarueca.com/wp-content/uploads/w_Portada_Decision-2.jpg,,image/jpeg,1276,1900,w_Portada_Decision-2.jpg
+1745,w_MockUp_compendio,w_mockup_compendio,https://editoriallarueca.com/wp-content/uploads/w_MockUp_compendio.jpg,,image/jpeg,2560,1829,w_MockUp_compendio-scaled.jpg
+1746,FotoElenaMiramontes,fotoelenamiramontes,https://editoriallarueca.com/wp-content/uploads/FotoElenaMiramontes.jpg,,image/jpeg,400,393,FotoElenaMiramontes.jpg
+1748,979-13-87525-25-5_cub,979-13-87525-25-5_cub,https://editoriallarueca.com/wp-content/uploads/w_portada_Diego.jpg,,image/jpeg,500,793,w_portada_Diego.jpg
+1749,"Book cover mockup psd, editable design",book-cover-mockup-psd-editable-design,https://editoriallarueca.com/wp-content/uploads/w_mockup_Diego.jpg,,image/jpeg,2560,1706,w_mockup_Diego-scaled.jpg
+1751,w_fotoDiegoGomez,w_fotodiegogomez-2,https://editoriallarueca.com/wp-content/uploads/w_fotoDiegoGomez-1.jpg,,image/jpeg,170,264,w_fotoDiegoGomez-1.jpg
+1752,w_fotoDiego,w_fotodiego,https://editoriallarueca.com/wp-content/uploads/w_fotoDiego.jpg,,image/jpeg,40,62,w_fotoDiego.jpg
+1753,w_fotoDiego,w_fotodiego-2,https://editoriallarueca.com/wp-content/uploads/w_fotoDiego-1.jpg,,image/jpeg,40,62,w_fotoDiego-1.jpg
+1754,w_fotoDiego,w_fotodiego-3,https://editoriallarueca.com/wp-content/uploads/w_fotoDiego-2.jpg,,image/jpeg,40,62,w_fotoDiego-2.jpg
+1758,979-13-87525-26-2_cub,979-13-87525-26-2_cub,https://editoriallarueca.com/wp-content/uploads/ww_portada-2.jpg,,image/jpeg,500,722,ww_portada-2.jpg
+1779,979-13-87525-32-3_cub,979-13-87525-32-3_cub,https://editoriallarueca.com/wp-content/uploads/w_portada_manoAMano.jpg,,image/jpeg,500,739,w_portada_manoAMano.jpg
+1781,w_MockUp_ManoAMano,w_mockup_manoamano,https://editoriallarueca.com/wp-content/uploads/w_MockUp_ManoAMano.jpg,,image/jpeg,500,333,w_MockUp_ManoAMano.jpg
+1782,w_FotoGuillermo,w_fotoguillermo-5,https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-4.jpg,,image/jpeg,236,419,w_FotoGuillermo-4.jpg
+1786,portada MarinaOK,portada-marinaok,https://editoriallarueca.com/wp-content/uploads/portada-MarinaOK.jpg,,image/jpeg,886,1276,portada-MarinaOK.jpg
+1788,"Book cover mockup psd, editable design",book-cover-mockup-psd-editable-design-2,https://editoriallarueca.com/wp-content/uploads/w_MockUp_Perderse.jpg,,image/jpeg,2000,1333,w_MockUp_Perderse.jpg
+1789,w_FotoMarina,w_fotomarina,https://editoriallarueca.com/wp-content/uploads/w_FotoMarina.jpg,,image/jpeg,354,361,w_FotoMarina.jpg
+1791,CUB_UnPaseo,cub_unpaseo,https://editoriallarueca.com/wp-content/uploads/ww_portada-3.jpg,,image/jpeg,500,733,ww_portada-3.jpg
+1792,"Perderse, Encontrarse, Despertar - 1",perderse-encontrarse-despertar-1,https://editoriallarueca.com/wp-content/uploads/w_perderse.jpg,,image/jpeg,500,700,w_perderse.jpg
+1797,979-13-87525-27-9_cub,979-13-87525-27-9_cub,https://editoriallarueca.com/wp-content/uploads/ww_Portada-4.jpg,,image/jpeg,500,700,ww_Portada-4.jpg
+1799,w_mockup_LosMejores,w_mockup_losmejores,https://editoriallarueca.com/wp-content/uploads/w_mockup_LosMejores.jpg,,image/jpeg,1000,667,w_mockup_LosMejores.jpg
+1800,w_FotoManuel,w_fotomanuel-3,https://editoriallarueca.com/wp-content/uploads/w_FotoManuel-2.jpg,,image/jpeg,400,533,w_FotoManuel-2.jpg
+1820,979-13-87525-34-7_cub,979-13-87525-34-7_cub,https://editoriallarueca.com/wp-content/uploads/w_portadaDoloresTuerta.jpg,,image/jpeg,500,728,w_portadaDoloresTuerta.jpg
+1822,w_MockuP_DoloresP,w_mockup_doloresp,https://editoriallarueca.com/wp-content/uploads/w_MockuP_DoloresP.jpg,,image/jpeg,2362,1575,w_MockuP_DoloresP.jpg
+1823,Evoto,evoto,https://editoriallarueca.com/wp-content/uploads/fotoAutor-3.jpg,,image/jpeg,2132,2560,fotoAutor-3-scaled.jpg
+1829,AAFF_cub_2ED_LosAnimales,aaff_cub_2ed_losanimales,https://editoriallarueca.com/wp-content/uploads/ww_LosAnimales2ED.jpg,,image/jpeg,500,534,ww_LosAnimales2ED.jpg
+1833,979-13-87525-37-8_cub,979-13-87525-37-8_cub,https://editoriallarueca.com/wp-content/uploads/ww_portadaAzul.jpg,,image/jpeg,500,796,ww_portadaAzul.jpg
+1835,w_mokUp_Azul,w_mokup_azul,https://editoriallarueca.com/wp-content/uploads/w_mokUp_Azul.jpg,,image/jpeg,2560,1920,w_mokUp_Azul-scaled.jpg
+1836,FotoJoseVicente3,fotojosevicente3,https://editoriallarueca.com/wp-content/uploads/FotoJoseVicente3.jpg,,image/jpeg,346,629,FotoJoseVicente3.jpg
+1837,979-13-87525-37-8_cub,979-13-87525-37-8_cub-2,https://editoriallarueca.com/wp-content/uploads/ww_portadaAzul-1.jpg,,image/jpeg,500,796,ww_portadaAzul-1.jpg
+1838,979-13-87525-37-8_cub,979-13-87525-37-8_cub-3,https://editoriallarueca.com/wp-content/uploads/ww_portadaAzul-2.jpg,,image/jpeg,500,796,ww_portadaAzul-2.jpg
+1846,cub_cartas,cub_cartas,https://editoriallarueca.com/wp-content/uploads/w_portada-18.jpg,,image/jpeg,500,710,w_portada-18.jpg
+1848,979-13-87525-38-5Cub,979-13-87525-38-5cub,https://editoriallarueca.com/wp-content/uploads/w_ilusiones.jpg,,image/jpeg,500,738,w_ilusiones.jpg
+1850,cub_1_Memorias,cub_1_memorias,https://editoriallarueca.com/wp-content/uploads/ww_PortadaOpera.jpg,,image/jpeg,500,690,ww_PortadaOpera.jpg
+1852,w_mockUP_Memorias,w_mockup_memorias,https://editoriallarueca.com/wp-content/uploads/w_mockUP_Memorias.jpg,,image/jpeg,2560,1707,w_mockUP_Memorias-scaled.jpg
+1853,fotoAutorColor,fotoautorcolor,https://editoriallarueca.com/wp-content/uploads/fotoAutorColor.tif,,,,,fotoAutorColor.tif
+1854,w_fotoPiero,w_fotopiero,https://editoriallarueca.com/wp-content/uploads/w_fotoPiero.jpg,,image/jpeg,354,374,w_fotoPiero.jpg
+1857,Portada_Socrates,portada_socrates,https://editoriallarueca.com/wp-content/uploads/ww_portadaDescartes.jpg,,image/jpeg,500,722,ww_portadaDescartes.jpg
+1859,w_mockUpDescartes,w_mockupdescartes,https://editoriallarueca.com/wp-content/uploads/w_mockUpDescartes.jpg,,image/jpeg,1500,1000,w_mockUpDescartes.jpg
+1860,Alonso-Cruz,alonso-cruz,https://editoriallarueca.com/wp-content/uploads/Alonso-Cruz.jpg,,image/jpeg,145,226,Alonso-Cruz.jpg
+1861,W_Alonso-Cruz,w_alonso-cruz,https://editoriallarueca.com/wp-content/uploads/W_Alonso-Cruz.jpg,,image/jpeg,60,94,W_Alonso-Cruz.jpg
+1862,ww_mockup-Descartes,ww_mockup-descartes,https://editoriallarueca.com/wp-content/uploads/ww_mockup-Descartes.jpg,,image/jpeg,1500,1000,ww_mockup-Descartes.jpg
+1864,Laptop psd mockup with coffee mug on wooden table,laptop-psd-mockup-with-coffee-mug-on-wooden-table,https://editoriallarueca.com/wp-content/uploads/w_mockUp_Ilusiones2.jpg,,image/jpeg,2560,1707,w_mockUp_Ilusiones2-scaled.jpg
+1865,w_fotoAutor,w_fotoautor-4,https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-5.jpg,,image/jpeg,326,466,w_fotoAutor-5.jpg
+1867,"Book cover mockup psd, editable design",book-cover-mockup-psd-editable-design-3,https://editoriallarueca.com/wp-content/uploads/W_MOCKup_RosaMEscudero.jpg,,image/jpeg,2560,1706,W_MOCKup_RosaMEscudero-scaled.jpg
+1868,w_fotoAutora,w_fotoautora,https://editoriallarueca.com/wp-content/uploads/w_fotoAutora.jpg,,image/jpeg,472,521,w_fotoAutora.jpg
+1879,979-13-87525-41-5_cub,979-13-87525-41-5_cub,https://editoriallarueca.com/wp-content/uploads/w_portada_pueblo.jpg,,image/jpeg,500,815,w_portada_pueblo.jpg
+1882,w_MockUp_PuebloJudio2,w_mockup_pueblojudio2,https://editoriallarueca.com/wp-content/uploads/w_MockUp_PuebloJudio2.jpg,,image/jpeg,500,333,w_MockUp_PuebloJudio2.jpg
+1883,w_fotoDiegoGomez,w_fotodiegogomez-3,https://editoriallarueca.com/wp-content/uploads/w_fotoDiegoGomez-2.jpg,,image/jpeg,200,312,w_fotoDiegoGomez-2.jpg
+1889,AF_cub_fuerteventura_Light_ELR,af_cub_fuerteventura_light_elr,https://editoriallarueca.com/wp-content/uploads/w_portadaIngles.jpg,,image/jpeg,500,723,w_portadaIngles.jpg
+1891,w_PortadaLuzSilencios,w_portadaluzsilencios,https://editoriallarueca.com/wp-content/uploads/w_PortadaLuzSilencios.jpg,,image/jpeg,500,769,w_PortadaLuzSilencios.jpg
+1894,mockuP_Fuerteventura_Castellano,mockup_fuerteventura_castellano,https://editoriallarueca.com/wp-content/uploads/mockuP_Fuerteventura_Castellano.jpg,,image/jpeg,2000,1334,mockuP_Fuerteventura_Castellano.jpg
+1896,Antonio-Olmedo,antonio-olmedo,https://editoriallarueca.com/wp-content/uploads/Antonio-Olmedo.jpg,,image/jpeg,145,221,Antonio-Olmedo.jpg
+1897,w_fotoAntonio,w_fotoantonio,https://editoriallarueca.com/wp-content/uploads/w_fotoAntonio.jpg,,image/jpeg,40,61,w_fotoAntonio.jpg
+1898,w_AntonioOlmedo_fotobiografia,w_antonioolmedo_fotobiografia,https://editoriallarueca.com/wp-content/uploads/w_AntonioOlmedo_fotobiografia.jpg,,image/jpeg,40,26,w_AntonioOlmedo_fotobiografia.jpg
+1899,w_AntonioOlmedo_fotobiografia,w_antonioolmedo_fotobiografia-2,https://editoriallarueca.com/wp-content/uploads/w_AntonioOlmedo_fotobiografia-1.jpg,,image/jpeg,400,260,w_AntonioOlmedo_fotobiografia-1.jpg
+1901,Diseño sin título - 1,diseno-sin-titulo-1,https://editoriallarueca.com/wp-content/uploads/w_portada150x210.jpg,,image/jpeg,500,807,w_portada150x210.jpg
+1903,w_MockuP_Jubidado,w_mockup_jubidado,https://editoriallarueca.com/wp-content/uploads/w_MockuP_Jubidado.jpg,,image/jpeg,1000,668,w_MockuP_Jubidado.jpg
+1905,ww_fotoAutor,ww_fotoautor,https://editoriallarueca.com/wp-content/uploads/ww_fotoAutor.jpg,,image/jpeg,100,143,ww_fotoAutor.jpg
+1906,ww_fotoAutor,ww_fotoautor-2,https://editoriallarueca.com/wp-content/uploads/ww_fotoAutor-1.jpg,,image/jpeg,100,143,ww_fotoAutor-1.jpg
+1909,cub_Tuesta2,cub_tuesta2,https://editoriallarueca.com/wp-content/uploads/ww_portada-5.jpg,,image/jpeg,500,744,ww_portada-5.jpg
+1913,w_portada_cascarrab ias,w_portada_cascarrab-ias,https://editoriallarueca.com/wp-content/uploads/w_portada_cascarrab-ias.png,,image/png,500,719,w_portada_cascarrab-ias.png
+1916,979-13-87525-43-9_cubmarcascorte,979-13-87525-43-9_cubmarcascorte,https://editoriallarueca.com/wp-content/uploads/w_portadaWEB-3.jpg,,image/jpeg,500,711,w_portadaWEB-3.jpg
+1918,w_mockUp_Tesis,w_mockup_tesis,https://editoriallarueca.com/wp-content/uploads/w_mockUp_Tesis.jpg,,image/jpeg,2000,1593,w_mockUp_Tesis.jpg
+1919,FOTO BIOGRAFIA TESIS 1,foto-biografia-tesis-1,https://editoriallarueca.com/wp-content/uploads/FOTO-BIOGRAFIA-TESIS-1.jpg,,image/jpeg,1847,2560,FOTO-BIOGRAFIA-TESIS-1-scaled.jpg
+1933,w_Mockup_cascarrabias copia,w_mockup_cascarrabias-copia,https://editoriallarueca.com/wp-content/uploads/w_Mockup_cascarrabias-copia.jpg,,image/jpeg,2000,1333,w_Mockup_cascarrabias-copia.jpg
+1934,w_fotoAutor,w_fotoautor-5,https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-6.jpg,,image/jpeg,150,271,w_fotoAutor-6.jpg
+1936,979-13-87525-49-1_cub,979-13-87525-49-1_cub,https://editoriallarueca.com/wp-content/uploads/w_portada_Raquel-copia.jpg,,image/jpeg,500,714,w_portada_Raquel-copia.jpg
+1939,979-13-87525-45-3_cub,979-13-87525-45-3_cub,https://editoriallarueca.com/wp-content/uploads/ww_portada-6.jpg,,image/jpeg,500,721,ww_portada-6.jpg
+1941,cub_Penuntimo,cub_penuntimo,https://editoriallarueca.com/wp-content/uploads/w_Portada_penuntimo.jpg,,image/jpeg,500,733,w_Portada_penuntimo.jpg
+1946,PORTADAnueva,portadanueva,https://editoriallarueca.com/wp-content/uploads/ww_Portada_gris.jpg,,image/jpeg,500,707,ww_Portada_gris.jpg
+1948,2w_mockup_Gris copia,2w_mockup_gris-copia,https://editoriallarueca.com/wp-content/uploads/2w_mockup_Gris-copia.jpg,,image/jpeg,500,333,2w_mockup_Gris-copia.jpg
+1949,Oplus_131072,oplus_131072,https://editoriallarueca.com/wp-content/uploads/Foto-Elga.jpg,,image/jpeg,400,441,Foto-Elga.jpg
+1952,979-13-87525-47-7_cub,979-13-87525-47-7_cub,https://editoriallarueca.com/wp-content/uploads/w_portada-19.jpg,,image/jpeg,500,728,w_portada-19.jpg
+1954,w_mockup_clonacion copia,w_mockup_clonacion-copia,https://editoriallarueca.com/wp-content/uploads/w_mockup_clonacion-copia.jpg,,image/jpeg,500,333,w_mockup_clonacion-copia.jpg
+1956,w_fotoAutor,w_fotoautor-6,https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-7.jpg,,image/jpeg,400,528,w_fotoAutor-7.jpg
+1958,ww_portada,ww_portada,https://editoriallarueca.com/wp-content/uploads/ww_portada-7.jpg,,image/jpeg,500,721,ww_portada-7.jpg
+2003,AAFF_cub_ElMundoRural,aaff_cub_elmundorural,https://editoriallarueca.com/wp-content/uploads/w_portada-20.jpg,,image/jpeg,1186,1702,w_portada-20.jpg
+2088,979-13-87525-55-2_cub,979-13-87525-55-2_cub,https://editoriallarueca.com/wp-content/uploads/w_Portada_Viajando.jpg,,image/jpeg,500,732,w_Portada_Viajando.jpg
+2090,Mockup_Viajando,mockup_viajando,https://editoriallarueca.com/wp-content/uploads/Mockup_Viajando.jpg,,image/jpeg,1500,1500,Mockup_Viajando.jpg
+2091,w_Guillermo,w_guillermo-2,https://editoriallarueca.com/wp-content/uploads/w_Guillermo-1.jpg,,image/jpeg,400,710,w_Guillermo-1.jpg
+2231,979-13-87525-56-9_cub,979-13-87525-56-9_cub,https://editoriallarueca.com/wp-content/uploads/w_portadaECOS.jpg,,image/jpeg,500,733,w_portadaECOS.jpg
+2233,MockUp_Ecos copia,mockup_ecos-copia,https://editoriallarueca.com/wp-content/uploads/MockUp_Ecos-copia.jpg,,image/jpeg,2560,1707,MockUp_Ecos-copia-scaled.jpg
+2234,w_fotoautor copia,w_fotoautor-copia,https://editoriallarueca.com/wp-content/uploads/w_fotoautor-copia.jpg,,image/jpeg,60,47,w_fotoautor-copia.jpg
+2235,fotoautor copia,fotoautor-copia,https://editoriallarueca.com/wp-content/uploads/fotoautor-copia.jpg,,image/jpeg,257,200,fotoautor-copia.jpg
+2237,w_portadaProteccion,w_portadaproteccion,https://editoriallarueca.com/wp-content/uploads/w_portadaProteccion.tif,,,,,w_portadaProteccion.tif
+2238,AAFF_cub_ProteccionSocial,aaff_cub_proteccionsocial,https://editoriallarueca.com/wp-content/uploads/w_portadaProteccion.jpg,,image/jpeg,500,725,w_portadaProteccion.jpg
+2302,979-13-87525-50-7_cub,979-13-87525-50-7_cub,https://editoriallarueca.com/wp-content/uploads/w_Portada_AEDOS.jpg,,image/jpeg,500,705,w_Portada_AEDOS.jpg
+2304,w_Mockup_AEDOS,w_mockup_aedos,https://editoriallarueca.com/wp-content/uploads/w_Mockup_AEDOS.jpg,,image/jpeg,2000,1429,w_Mockup_AEDOS.jpg
+2306,w_FotoAutores,w_fotoautores-2,https://editoriallarueca.com/wp-content/uploads/w_FotoAutores-1.jpg,,image/jpeg,200,113,w_FotoAutores-1.jpg
+2307,w_FotoAutores,w_fotoautores-3,https://editoriallarueca.com/wp-content/uploads/w_FotoAutores-2.jpg,,image/jpeg,200,113,w_FotoAutores-2.jpg
+2309,979-13-87525-24-8-cub,979-13-87525-24-8-cub,https://editoriallarueca.com/wp-content/uploads/w_portadaGuinea.jpg,,image/jpeg,500,723,w_portadaGuinea.jpg
+2345,979-13-87525-57-6_cub,979-13-87525-57-6_cub,https://editoriallarueca.com/wp-content/uploads/w_portadaManual.jpg,,image/jpeg,500,772,w_portadaManual.jpg
+2347,w_fotoDiegoGomezCosta copia,w_fotodiegogomezcosta-copia,https://editoriallarueca.com/wp-content/uploads/w_fotoDiegoGomezCosta-copia.jpg,,image/jpeg,250,247,w_fotoDiegoGomezCosta-copia.jpg
+2393,979-13-87525-40-8_cub,979-13-87525-40-8_cub,https://editoriallarueca.com/wp-content/uploads/w_Portada_Bosque-copia.jpg,,image/jpeg,500,768,w_Portada_Bosque-copia.jpg
+2403,979-13-87525-61-3_cub,979-13-87525-61-3_cub,https://editoriallarueca.com/wp-content/uploads/W_portada_clinica.jpg,,image/jpeg,500,797,W_portada_clinica.jpg
+2405,AAFF_cub_Disilencia,aaff_cub_disilencia,https://editoriallarueca.com/wp-content/uploads/w_Disilencia.jpg,,image/jpeg,500,701,w_Disilencia.jpg
+2407,FotoGaspar,fotogaspar-2,https://editoriallarueca.com/wp-content/uploads/FotoGaspar.tif,,,,,FotoGaspar.tif
+2408,FotoGaspar copia,fotogaspar-copia,https://editoriallarueca.com/wp-content/uploads/FotoGaspar-copia.jpg,,image/jpeg,264,327,FotoGaspar-copia.jpg
+2424,979-13-87525-61-3_cub,979-13-87525-61-3_cub-2,https://editoriallarueca.com/wp-content/uploads/W_portada_clinica-1.jpg,,image/jpeg,1090,1722,W_portada_clinica-1.jpg
+2593,979-13-87525-52-1_cub,979-13-87525-52-1_cub,https://editoriallarueca.com/wp-content/uploads/w_portada_Disfobia.jpg,,image/jpeg,500,702,w_portada_Disfobia.jpg
+2605,w_mockup_manual,w_mockup_manual,https://editoriallarueca.com/wp-content/uploads/w_mockup_manual.jpg,,image/jpeg,1417,945,w_mockup_manual.jpg
+2606,w2_fotoDiegoGomezCosta copia,w2_fotodiegogomezcosta-copia,https://editoriallarueca.com/wp-content/uploads/w2_fotoDiegoGomezCosta-copia.jpg,,image/jpeg,2362,2332,w2_fotoDiegoGomezCosta-copia.jpg
+2608,w_Mockup_AEDOS,w_mockup_aedos-2,https://editoriallarueca.com/wp-content/uploads/w_Mockup_AEDOS-1.jpg,,image/jpeg,1500,1072,w_Mockup_AEDOS-1.jpg
+2609,w2_fotoAutoresAEDOS,w2_fotoautoresaedos,https://editoriallarueca.com/wp-content/uploads/w2_fotoAutoresAEDOS.jpg,,image/jpeg,1441,2560,w2_fotoAutoresAEDOS-scaled.jpg
+2610,w2_fotoAutor,w2_fotoautor-2,https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-1.jpg,,image/jpeg,1512,2268,w2_fotoAutor-1.jpg
+2611,w_Guillermo,w_guillermo-3,https://editoriallarueca.com/wp-content/uploads/w_Guillermo-2.jpg,,image/jpeg,1512,2268,w_Guillermo-2.jpg
+2612,w2_Breijo,w2_breijo,https://editoriallarueca.com/wp-content/uploads/w2_Breijo.jpg,,image/jpeg,1512,2268,w2_Breijo.jpg
+2613,w2_ManuelOndo,w2_manuelondo,https://editoriallarueca.com/wp-content/uploads/w2_ManuelOndo.jpg,,image/jpeg,1512,2268,w2_ManuelOndo.jpg
+2614,w2_Olmedo,w2_olmedo,https://editoriallarueca.com/wp-content/uploads/w2_Olmedo.jpg,,image/jpeg,1512,2268,w2_Olmedo.jpg
+2615,w_MockuP_Ingles3,w_mockup_ingles3,https://editoriallarueca.com/wp-content/uploads/w_MockuP_Ingles3.jpg,,image/jpeg,2000,1335,w_MockuP_Ingles3.jpg
+2616,w_MockUp_PuebloJudio2,w_mockup_pueblojudio2-2,https://editoriallarueca.com/wp-content/uploads/w_MockUp_PuebloJudio2-1.jpg,,image/jpeg,500,333,w_MockUp_PuebloJudio2-1.jpg
+2617,w2_fotoAutor,w2_fotoautor-3,https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-2.jpg,,image/jpeg,1512,2268,w2_fotoAutor-2.jpg
+2618,w_fotoPiero,w_fotopiero-2,https://editoriallarueca.com/wp-content/uploads/w_fotoPiero-1.jpg,,image/jpeg,1512,2268,w_fotoPiero-1.jpg
+2619,Diseño sin título - 1,diseno-sin-titulo-1-2,https://editoriallarueca.com/wp-content/uploads/w_fotoAutora-1.jpg,,image/jpeg,1512,2268,w_fotoAutora-1.jpg
+2620,"Book cover mockup psd, editable design",book-cover-mockup-psd-editable-design-4,https://editoriallarueca.com/wp-content/uploads/W_MOCKup_RosaMEscudero-1.jpg,,image/jpeg,2560,1706,W_MOCKup_RosaMEscudero-1-scaled.jpg
+2621,w_mokUp_Azul,w_mokup_azul-2,https://editoriallarueca.com/wp-content/uploads/w_mokUp_Azul-1.jpg,,image/jpeg,2560,1920,w_mokUp_Azul-1-scaled.jpg
+2622,2w_JoseVteCarmona,2w_josevtecarmona,https://editoriallarueca.com/wp-content/uploads/2w_JoseVteCarmona.jpg,,image/jpeg,1512,2268,2w_JoseVteCarmona.jpg
+2623,w_JoseHerruzo,w_joseherruzo,https://editoriallarueca.com/wp-content/uploads/w_JoseHerruzo.jpg,,image/jpeg,1512,2268,w_JoseHerruzo.jpg
+2624,Single Hard Cover with Open Book Psd Mockup,single-hard-cover-with-open-book-psd-mockup-8,https://editoriallarueca.com/wp-content/uploads/w_MockUp_Evocacion2.jpg,,image/jpeg,2560,1920,w_MockUp_Evocacion2-scaled.jpg
+2626,w_mockuP_UnPaseo,w_mockup_unpaseo,https://editoriallarueca.com/wp-content/uploads/w_mockuP_UnPaseo.jpg,,image/jpeg,2000,1333,w_mockuP_UnPaseo.jpg
+2627,w_fotoRosario,w_fotorosario,https://editoriallarueca.com/wp-content/uploads/w_fotoRosario.jpg,,image/jpeg,302,309,w_fotoRosario.jpg
+2629,979-13-87525-49-1_cub,979-13-87525-49-1_cub-2,https://editoriallarueca.com/wp-content/uploads/w_portada_Raquel-copia-1.jpg,,image/jpeg,500,714,w_portada_Raquel-copia-1.jpg
+2630,Floral magazine cover mockup psd summer reading,floral-magazine-cover-mockup-psd-summer-reading,https://editoriallarueca.com/wp-content/uploads/w_mockup_suenos.jpg,,image/jpeg,2560,1708,w_mockup_suenos-scaled.jpg
+2631,w_Mockup_RossyDeJuan copia,w_mockup_rossydejuan-copia,https://editoriallarueca.com/wp-content/uploads/w_Mockup_RossyDeJuan-copia.jpg,,image/jpeg,1500,1000,w_Mockup_RossyDeJuan-copia.jpg
+2632,w2_fotoAutor,w2_fotoautor-4,https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-3.jpg,,image/jpeg,1512,2268,w2_fotoAutor-3.jpg
+2633,w_MockUp_compendio,w_mockup_compendio-2,https://editoriallarueca.com/wp-content/uploads/w_MockUp_compendio-1.jpg,,image/jpeg,2560,1829,w_MockUp_compendio-1-scaled.jpg
+2634,w_mockup_oficios,w_mockup_oficios,https://editoriallarueca.com/wp-content/uploads/w_mockup_oficios.jpg,,image/jpeg,1417,945,w_mockup_oficios.jpg
+2637,cub_Recordando,cub_recordando,https://editoriallarueca.com/wp-content/uploads/w_portada_Apascovid.jpg,,image/jpeg,500,733,w_portada_Apascovid.jpg
+2639,w_MockUp_Apascovid copia,w_mockup_apascovid-copia,https://editoriallarueca.com/wp-content/uploads/w_MockUp_Apascovid-copia.jpg,,image/jpeg,2000,1429,w_MockUp_Apascovid-copia.jpg
+2640,w_FotoAutora,w_fotoautora-2,https://editoriallarueca.com/wp-content/uploads/w_FotoAutora-2.jpg,,image/jpeg,200,258,w_FotoAutora-2.jpg
+2641,w_portada_Kalaallit,w_portada_kalaallit,https://editoriallarueca.com/wp-content/uploads/w_portada_Kalaallit.tif,,,,,w_portada_Kalaallit.tif
+2642,w_portada_Kalaallit,w_portada_kalaallit-2,https://editoriallarueca.com/wp-content/uploads/w_portada_Kalaallit-1.tif,,,,,w_portada_Kalaallit-1.tif
+2643,979-13-87525-64-4_cubCorrec,979-13-87525-64-4_cubcorrec,https://editoriallarueca.com/wp-content/uploads/w_portada_Kalaallit.jpg,,image/jpeg,500,714,w_portada_Kalaallit.jpg
+2645,AAFF_cub_ALaMemoria,aaff_cub_alamemoria,https://editoriallarueca.com/wp-content/uploads/w_portada-21.jpg,,image/jpeg,500,504,w_portada-21.jpg
+2651,Adobe Photoshop PDF,adobe-photoshop-pdf,https://editoriallarueca.com/wp-content/uploads/w_portada-22.jpg,,image/jpeg,500,730,w_portada-22.jpg
+2653,mockup_22dias,mockup_22dias,https://editoriallarueca.com/wp-content/uploads/mockup_22dias.jpg,,image/jpeg,700,467,mockup_22dias.jpg
+2654,FotoGuillermo,fotoguillermo,https://editoriallarueca.com/wp-content/uploads/FotoGuillermo.jpg,,image/jpeg,1181,2099,FotoGuillermo.jpg
+2748,Kate Cuidados de enfermería en el Paciente Crítico - 1,kate-cuidados-de-enfermeria-en-el-paciente-critico-1,https://editoriallarueca.com/wp-content/uploads/w_portadaKate.jpg,,image/jpeg,500,720,w_portadaKate.jpg
+2750,w_MockuP_kATE2 copia,w_mockup_kate2-copia,https://editoriallarueca.com/wp-content/uploads/w_MockuP_kATE2-copia.jpg,,image/jpeg,1500,1000,w_MockuP_kATE2-copia.jpg
+2755,Ilusiones - 1,ilusiones-1,https://editoriallarueca.com/wp-content/uploads/w_Portada_Ilusiones.jpg,,image/jpeg,500,720,w_Portada_Ilusiones.jpg
+2757,w_MockuP_Ilusiones,w_mockup_ilusiones,https://editoriallarueca.com/wp-content/uploads/w_MockuP_Ilusiones.jpg,,image/jpeg,2000,1335,w_MockuP_Ilusiones.jpg
+2758,W_FOTOpatxi,w_fotopatxi-2,https://editoriallarueca.com/wp-content/uploads/W_FOTOpatxi-1.jpg,,image/jpeg,833,833,W_FOTOpatxi-1.jpg
+2796,979-13-87525-67-5_cub,979-13-87525-67-5_cub,https://editoriallarueca.com/wp-content/uploads/W_portada_andanzas.jpg,,image/jpeg,500,754,W_portada_andanzas.jpg
+2797,979-13-87525-67-5_cub,979-13-87525-67-5_cub-2,https://editoriallarueca.com/wp-content/uploads/W_portada_andanzas-1.jpg,,image/jpeg,500,754,W_portada_andanzas-1.jpg
+2799,w_mockUP_andanzas,w_mockup_andanzas,https://editoriallarueca.com/wp-content/uploads/w_mockUP_andanzas.jpg,,image/jpeg,1672,2560,w_mockUP_andanzas-scaled.jpg
+2805,Forastero - 1,forastero-1,https://editoriallarueca.com/wp-content/uploads/w-portadaForastero.jpg,,image/jpeg,500,700,w-portadaForastero.jpg
+2807,w_MockUp_Forastero,w_mockup_forastero,https://editoriallarueca.com/wp-content/uploads/w_MockUp_Forastero.jpg,,image/jpeg,1500,1000,w_MockUp_Forastero.jpg
+2808,w_fotoAutor copia,w_fotoautor-copia-2,https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-copia.jpg,,image/jpeg,1181,2097,w_fotoAutor-copia.jpg
+2823,979-13-87525-72-9_cub,979-13-87525-72-9_cub,https://editoriallarueca.com/wp-content/uploads/w_portada_TierraCampos.jpg,,image/jpeg,500,770,w_portada_TierraCampos.jpg
+2825,w_Mockup_TierraCampos,w_mockup_tierracampos,https://editoriallarueca.com/wp-content/uploads/w_Mockup_TierraCampos.jpg,,image/jpeg,2000,1600,w_Mockup_TierraCampos.jpg
+2826,FotoAbel,fotoabel,https://editoriallarueca.com/wp-content/uploads/FotoAbel.jpeg,,image/jpeg,1076,1600,FotoAbel.jpeg
+2854,w_Portada,w_portada-5,https://editoriallarueca.com/wp-content/uploads/w_Portada-23.jpg,,image/jpeg,500,731,w_Portada-23.jpg
+2856,w_mockup_Arcanos copia,w_mockup_arcanos-copia,https://editoriallarueca.com/wp-content/uploads/w_mockup_Arcanos-copia.jpg,,image/jpeg,2000,2000,w_mockup_Arcanos-copia.jpg
+2857,FotoMinerva,fotominerva,https://editoriallarueca.com/wp-content/uploads/FotoMinerva.jpeg,,image/jpeg,959,1600,FotoMinerva.jpeg
+2859,AF_cub_tarot_MinervaELR2,af_cub_tarot_minervaelr2,https://editoriallarueca.com/wp-content/uploads/w_PORTADA_cursoTarot.jpg,,image/jpeg,500,785,w_PORTADA_cursoTarot.jpg
+2861,w_mockUp_CursoTarot,w_mockup_cursotarot,https://editoriallarueca.com/wp-content/uploads/w_mockUp_CursoTarot.jpg,,image/jpeg,2000,2000,w_mockUp_CursoTarot.jpg
+2862,w_fotoMinerva,w_fotominerva,https://editoriallarueca.com/wp-content/uploads/w_fotoMinerva.jpg,,image/jpeg,556,657,w_fotoMinerva.jpg
+2863,Foto4Minerva,foto4minerva,https://editoriallarueca.com/wp-content/uploads/Foto4Minerva.jpg,,image/jpeg,600,710,Foto4Minerva.jpg
+2905,AF_cub_tarot_MinervaELR2,af_cub_tarot_minervaelr2-2,https://editoriallarueca.com/wp-content/uploads/Libro_Curso-completo-de-TAROT-y-ciencias-magicas.-Combinaciones-rituales-tiradas-y-consejos_Autora_MinervaBuiza.jpg,,image/jpeg,500,785,Libro_Curso-completo-de-TAROT-y-ciencias-magicas.-Combinaciones-rituales-tiradas-y-consejos_Autora_MinervaBuiza.jpg
+2906,AF_cub_tarot_MinervaELR2,af_cub_tarot_minervaelr2-3,https://editoriallarueca.com/wp-content/uploads/Libro_Curso-completo-de-TAROT-y-ciencias-magicas.-Combinaciones-rituales-tiradas-y-consejos_Autora_MinervaBuiza-1.jpg,,image/jpeg,500,785,Libro_Curso-completo-de-TAROT-y-ciencias-magicas.-Combinaciones-rituales-tiradas-y-consejos_Autora_MinervaBuiza-1.jpg
+2907,Libro_ARCANUM – Los Cuatro Elementos – La Torá de Minerva_Autora_MinervaBuiza,libro_arcanum-los-cuatro-elementos-la-tora-de-minerva_autora_minervabuiza,https://editoriallarueca.com/wp-content/uploads/Libro_ARCANUM-–-Los-Cuatro-Elementos-–-La-Tora-de-Minerva_Autora_MinervaBuiza.jpg,,image/jpeg,500,731,Libro_ARCANUM-–-Los-Cuatro-Elementos-–-La-Tora-de-Minerva_Autora_MinervaBuiza.jpg
+2908,979-13-87525-72-9_cub,979-13-87525-72-9_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Tierra-de-campos_Autor_Abel-de-Lamo-Rubio.jpg,,image/jpeg,500,770,Libro_Tierra-de-campos_Autor_Abel-de-Lamo-Rubio.jpg
+2909,Forastero - 1,forastero-1-2,https://editoriallarueca.com/wp-content/uploads/Libro_Forastero_Autor_Guillermo-M.-Schrem.jpg,,image/jpeg,500,700,Libro_Forastero_Autor_Guillermo-M.-Schrem.jpg
+2910,979-13-87525-67-5_cub,979-13-87525-67-5_cub-3,https://editoriallarueca.com/wp-content/uploads/Libro_Andanzas-Nortenas_Autor-Jose-Manuel-Vazquez.jpg,,image/jpeg,500,754,Libro_Andanzas-Nortenas_Autor-Jose-Manuel-Vazquez.jpg
+2911,Ilusiones - 1,ilusiones-1-2,https://editoriallarueca.com/wp-content/uploads/Libro_Ilusiones_Autor_Patxi-Oyaga.jpg,,image/jpeg,500,720,Libro_Ilusiones_Autor_Patxi-Oyaga.jpg
+2912,Kate Cuidados de enfermería en el Paciente Crítico - 1,kate-cuidados-de-enfermeria-en-el-paciente-critico-1-2,https://editoriallarueca.com/wp-content/uploads/Libro_Kate-Cuidados-de-enfermeria-en-el-Paciente-Critico_Autor_Jose-Vte.-Carmona.jpg,,image/jpeg,500,720,Libro_Kate-Cuidados-de-enfermeria-en-el-Paciente-Critico_Autor_Jose-Vte.-Carmona.jpg
+2913,979-13-87525-66-8-cub,979-13-87525-66-8-cub,https://editoriallarueca.com/wp-content/uploads/Libro_22Kilos-un-millon_Autor_Guillermo-M.-Schrem.jpg,,image/jpeg,500,699,Libro_22Kilos-un-millon_Autor_Guillermo-M.-Schrem.jpg
+2914,979-13-87525-64-4_cubCorrec,979-13-87525-64-4_cubcorrec-2,https://editoriallarueca.com/wp-content/uploads/Libro_Kalaallit-Nunaat-Groenlandia-–-Hostilidad-y-Belleza-cogidas-de-la-mano_Autores_Guillermo-del-Moral-y-Victoria-Fernandez-Collado.jpg,,image/jpeg,500,714,Libro_Kalaallit-Nunaat-Groenlandia-–-Hostilidad-y-Belleza-cogidas-de-la-mano_Autores_Guillermo-del-Moral-y-Victoria-Fernandez-Collado.jpg
+2915,cub_Recordando,cub_recordando-2,https://editoriallarueca.com/wp-content/uploads/Libro_-Recordando-mis-recuerdos-el-cuarenta-de-mayo_Autora_Teresa-Sanchez.jpg,,image/jpeg,500,733,Libro_-Recordando-mis-recuerdos-el-cuarenta-de-mayo_Autora_Teresa-Sanchez.jpg
+2916,979-13-87525-49-1_cub,979-13-87525-49-1_cub-3,https://editoriallarueca.com/wp-content/uploads/libro_Los-suenos-de-Raquel_Autora_Rossy-de-Juan.jpg,,image/jpeg,500,714,libro_Los-suenos-de-Raquel_Autora_Rossy-de-Juan.jpg
+2917,979-13-87525-52-1_cub,979-13-87525-52-1_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Disforia-Mental_Autor-Buvi.jpg,,image/jpeg,500,702,Libro_Disforia-Mental_Autor-Buvi.jpg
+2918,979-13-87525-61-3_cub,979-13-87525-61-3_cub-3,https://editoriallarueca.com/wp-content/uploads/Libro_Manuel-de-clinica-Odontologica-Integral_Autor-Diego-Gomez-Costa_Genero-Odontologia-MMD.jpg,,image/jpeg,1090,1722,Libro_Manuel-de-clinica-Odontologica-Integral_Autor-Diego-Gomez-Costa_Genero-Odontologia-MMD.jpg
+2919,979-13-87525-40-8_cub,979-13-87525-40-8_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_El-bosque-del-silencio_Autor-Juan-Barrero_Genero-Poesia-DC.jpg,,image/jpeg,500,768,Libro_El-bosque-del-silencio_Autor-Juan-Barrero_Genero-Poesia-DC.jpg
+2920,979-13-87525-57-6_cub,979-13-87525-57-6_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Manual-de-Odontologia-para-Pacientes-con-Necesidades-Especiales-y-Condiciones-Medicas-Complejas_Autor_Diego-Gomez-Costa_MMD.jpg,,image/jpeg,500,772,Libro_Manual-de-Odontologia-para-Pacientes-con-Necesidades-Especiales-y-Condiciones-Medicas-Complejas_Autor_Diego-Gomez-Costa_MMD.jpg
+2922,979-13-87525-50-7_cub,979-13-87525-50-7_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Literatura-clasica-para-fliparte-en-las-cenas_Autores_AEDOS-MODERNOS_Genero-DSBB-Literatura-clasica.jpg,,image/jpeg,500,705,Libro_Literatura-clasica-para-fliparte-en-las-cenas_Autores_AEDOS-MODERNOS_Genero-DSBB-Literatura-clasica.jpg
+2923,AAFF_cub_ProteccionSocial,aaff_cub_proteccionsocial-2,https://editoriallarueca.com/wp-content/uploads/Libro_PROTECCION-SOCIAL-A-LA-INFANCIA-EN-CHILE-PROPUESTAS-PARA-TRANSFORMAR-UNA-LARGA-CRISIS-EN-UNA-OPORTUNIDAD-DE-MEJORA-EFECTI.jpg,,image/jpeg,500,725,Libro_PROTECCION-SOCIAL-A-LA-INFANCIA-EN-CHILE-PROPUESTAS-PARA-TRANSFORMAR-UNA-LARGA-CRISIS-EN-UNA-OPORTUNIDAD-DE-MEJORA-EFECTI.jpg
+2924,979-13-87525-56-9_cub,979-13-87525-56-9_cub-2,https://editoriallarueca.com/wp-content/uploads/Ecos-del-Mundo-Un-Viaje-de-Ensueno-a-traves-de-los-Continentes_Autor_J.EmilioRomero_Genero-WTL-Viajes-y-vacaciones.jpg,,image/jpeg,500,733,Ecos-del-Mundo-Un-Viaje-de-Ensueno-a-traves-de-los-Continentes_Autor_J.EmilioRomero_Genero-WTL-Viajes-y-vacaciones.jpg
+2925,979-13-87525-55-2_cub,979-13-87525-55-2_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_ViajandoLigero_Autor_GuillermoM.Schrem_Genero-FA-Ficcion-contemporanea.jpg,,image/jpeg,500,732,Libro_ViajandoLigero_Autor_GuillermoM.Schrem_Genero-FA-Ficcion-contemporanea.jpg
+2926,979-13-87525-47-7_cub,979-13-87525-47-7_cub-2,https://editoriallarueca.com/wp-content/uploads/libro_El-joven-clonado_Autor_LuisGausach_Genero-FA-Ficcion-contemporanea.jpg,,image/jpeg,500,728,libro_El-joven-clonado_Autor_LuisGausach_Genero-FA-Ficcion-contemporanea.jpg
+2927,PORTADAnueva,portadanueva-2,https://editoriallarueca.com/wp-content/uploads/Libro_Gris-mas-bien-plomo_Autora_ElgaReategui_Genero_Novela-FA.jpg,,image/jpeg,500,707,Libro_Gris-mas-bien-plomo_Autora_ElgaReategui_Genero_Novela-FA.jpg
+2928,cub_Penuntimo,cub_penuntimo-2,https://editoriallarueca.com/wp-content/uploads/Libro_Penultimo-verso-Me-rindo_Autor_MiguelAngelGuemes.jpg,,image/jpeg,500,733,Libro_Penultimo-verso-Me-rindo_Autor_MiguelAngelGuemes.jpg
+2930,Manual de gestión para dueños de pymes atrapados en su negocio,manual-de-gestion-para-duenos-de-pymes-atrapados-en-su-negocio,https://editoriallarueca.com/wp-content/uploads/Libro_Trabajas-demasiado-para-ganar-tan-poco-–-Manual-de-gestion-para-duenos-de-pymes-atrapados-en-su-negocio_Autor_GuillermoMayayo_Genero_KJ-Busine.jpg,,image/jpeg,500,720,Libro_Trabajas-demasiado-para-ganar-tan-poco-–-Manual-de-gestion-para-duenos-de-pymes-atrapados-en-su-negocio_Autor_GuillermoMayayo_Genero_KJ-Busine.jpg
+2934,Libro_Trabajas demasiado para ganar tan poco_ Manual de gestión para dueños de pymes atrapados en su negocio_Autor Guillermo Mayayo_Genero KJ,libro_trabajas-demasiado-para-ganar-tan-poco_-manual-de-gestion-para-duenos-de-pymes-atrapados-en-su-negocio_autor-guillermo-mayayo_genero-kj,https://editoriallarueca.com/wp-content/uploads/Libro_Trabajas-demasiado-para-ganar-tan-poco_-Manual-de-gestion-para-duenos-de-pymes-atrapados-en-su-negocio_Autor-Guillermo-Mayayo_Genero-KJ.jpg,,image/jpeg,1890,1350,Libro_Trabajas-demasiado-para-ganar-tan-poco_-Manual-de-gestion-para-duenos-de-pymes-atrapados-en-su-negocio_Autor-Guillermo-Mayayo_Genero-KJ.jpg
+2935,Autor_Guillermo Mayayo García_Libro_ Trabajas demasiado para ganar tan poco_Genero Business&Management,autor_guillermo-mayayo-garcia_libro_-trabajas-demasiado-para-ganar-tan-poco_genero-businessmanagement,https://editoriallarueca.com/wp-content/uploads/Autor_Guillermo-Mayayo-Garcia_Libro_-Trabajas-demasiado-para-ganar-tan-poco_Genero-BusinessManagement.jpg,,image/jpeg,400,601,Autor_Guillermo-Mayayo-Garcia_Libro_-Trabajas-demasiado-para-ganar-tan-poco_Genero-BusinessManagement.jpg
+2936,979-13-87525-45-3_cub,979-13-87525-45-3_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_La-Seguridad-ciudadana-en-el-Ambito-Local-–-Manual-para-la-gestion-de-la-seguridad-Municipal_AutorLeonardoRoman_Genero-JPP.jpg,,image/jpeg,1346,1940,Libro_La-Seguridad-ciudadana-en-el-Ambito-Local-–-Manual-para-la-gestion-de-la-seguridad-Municipal_AutorLeonardoRoman_Genero-JPP.jpg
+2937,979-13-87525-43-9_cubmarcascorte,979-13-87525-43-9_cubmarcascorte-2,https://editoriallarueca.com/wp-content/uploads/libro_-Analisis-de-errores-morfosintacticos-en-un-aula-de-EspanolLE.-El-caso-del-grupo-de-estudiantes-del-nivel-B2-de-seg.jpg,,image/jpeg,500,721,libro_-Analisis-de-errores-morfosintacticos-en-un-aula-de-EspanolLE.-El-caso-del-grupo-de-estudiantes-del-nivel-B2-de-seg.jpg
+2938,Libro_Confesiones verdaderas de un verdadero cascarrabias_Autor_FcoBreijo_genero WH humor,libro_confesiones-verdaderas-de-un-verdadero-cascarrabias_autor_fcobreijo_genero-wh-humor,https://editoriallarueca.com/wp-content/uploads/Libro_Confesiones-verdaderas-de-un-verdadero-cascarrabias_Autor_FcoBreijo_genero-WH-humor.jpg,,image/jpeg,1512,2268,Libro_Confesiones-verdaderas-de-un-verdadero-cascarrabias_Autor_FcoBreijo_genero-WH-humor.jpg
+2939,Libro_FUERTEVENTURA Luz y Silencios_Autor_AntonioOlmedo_género VTH,libro_fuerteventura-luz-y-silencios_autor_antonioolmedo_genero-vth,https://editoriallarueca.com/wp-content/uploads/Libro_FUERTEVENTURA-Luz-y-Silencios_Autor_AntonioOlmedo_genero-VTH.tif,,,,,Libro_FUERTEVENTURA-Luz-y-Silencios_Autor_AntonioOlmedo_genero-VTH.tif
+2940,Libro_FUERTEVENTURA Luz y Silencios_Autor_AntonioOlmedo_género VTH,libro_fuerteventura-luz-y-silencios_autor_antonioolmedo_genero-vth-2,https://editoriallarueca.com/wp-content/uploads/Libro_FUERTEVENTURA-Luz-y-Silencios_Autor_AntonioOlmedo_genero-VTH-1.tif,,,,,Libro_FUERTEVENTURA-Luz-y-Silencios_Autor_AntonioOlmedo_genero-VTH-1.tif
+2941,Libro_FUERTEVENTURA Luz y Silencios_Autor_AntonioOlmedo_género VTH,libro_fuerteventura-luz-y-silencios_autor_antonioolmedo_genero-vth-3,https://editoriallarueca.com/wp-content/uploads/Libro_FUERTEVENTURA-Luz-y-Silencios_Autor_AntonioOlmedo_genero-VTH-2.tif,,,,,Libro_FUERTEVENTURA-Luz-y-Silencios_Autor_AntonioOlmedo_genero-VTH-2.tif
+2961,Libro_El lenguaje perdido de las nubes_Autor_AntonioL.GomezCharlin_Género Ficción (FA)_EditorialLaRueca,libro_el-lenguaje-perdido-de-las-nubes_autor_antoniol-gomezcharlin_genero-ficcion-fa_editoriallarueca,https://editoriallarueca.com/wp-content/uploads/Libro_El-lenguaje-perdido-de-las-nubes_Autor_AntonioL.GomezCharlin_Genero-Ficcion-FA_EditorialLaRueca.png,,image/png,425,595,Libro_El-lenguaje-perdido-de-las-nubes_Autor_AntonioL.GomezCharlin_Genero-Ficcion-FA_EditorialLaRueca.png
+2963,MochUP_Libro_El lenguaje perdido de las nubesAutor_AntonioL,mochup_libro_el-lenguaje-perdido-de-las-nubesautor_antoniol,https://editoriallarueca.com/wp-content/uploads/MochUP_Libro_El-lenguaje-perdido-de-las-nubesAutor_AntonioL.jpg,,image/jpeg,1528,1356,MochUP_Libro_El-lenguaje-perdido-de-las-nubesAutor_AntonioL.jpg
+2964,CUBIERTAS MODIFICADAS.indd,cubiertas-modificadas-indd,https://editoriallarueca.com/wp-content/uploads/Libro_El-lenguaje-perdido-de-las-nubes_Autor_AntonioLCharlin_Genero-FA_Editorial-La-Rueca.jpg,,image/jpeg,177,226,Libro_El-lenguaje-perdido-de-las-nubes_Autor_AntonioLCharlin_Genero-FA_Editorial-La-Rueca.jpg
+2969,Libro_FuerteventuraLuzySilencios_Autor_Antonio Olmedo_Genero Turismo_EditorialLaRueca,libro_fuerteventuraluzysilencios_autor_antonio-olmedo_genero-turismo_editoriallarueca,https://editoriallarueca.com/wp-content/uploads/Libro_FuerteventuraLuzySilencios_Autor_Antonio-Olmedo_Genero-Turismo_EditorialLaRueca-.jpg,,image/jpeg,240,369,Libro_FuerteventuraLuzySilencios_Autor_Antonio-Olmedo_Genero-Turismo_EditorialLaRueca-.jpg
+2970,979-13-87525-41-5_cub,979-13-87525-41-5_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_El-pueblo-Judio.-Legado-y-nexo-con-Judea-Una-historia-Milenaria_Autor_DiegoGomezCosta_GeneroHBJF1_EditorialLaRueca.jpg,,image/jpeg,500,815,Libro_El-pueblo-Judio.-Legado-y-nexo-con-Judea-Una-historia-Milenaria_Autor_DiegoGomezCosta_GeneroHBJF1_EditorialLaRueca.jpg
+2971,Portada_Socrates,portada_socrates-2,https://editoriallarueca.com/wp-content/uploads/Libro_-Descartes-y-su-duda-hiperbolica_Autor_AlonsoCruz_GeneroDNF_EditorialLaRueca.jpg,,image/jpeg,500,722,Libro_-Descartes-y-su-duda-hiperbolica_Autor_AlonsoCruz_GeneroDNF_EditorialLaRueca.jpg
+2972,cub_1_Memorias,cub_1_memorias-2,https://editoriallarueca.com/wp-content/uploads/Libro_Memorias-de-Opera_Autor_PIERO-POGGIALINI_Genero_BG_EditorialLaRueca.jpg,,image/jpeg,500,690,Libro_Memorias-de-Opera_Autor_PIERO-POGGIALINI_Genero_BG_EditorialLaRueca.jpg
+2977,cub_cartas,cub_cartas-2,https://editoriallarueca.com/wp-content/uploads/Libro_Cartas-a-un-hombre_Autor_Rosa-Ma-Escudero_Genero-DNF_Editorial-la-Rueca-.jpg,,image/jpeg,500,710,Libro_Cartas-a-un-hombre_Autor_Rosa-Ma-Escudero_Genero-DNF_Editorial-la-Rueca-.jpg
+2978,979-13-87525-37-8_cub,979-13-87525-37-8_cub-4,https://editoriallarueca.com/wp-content/uploads/Libro_AZUL_Autor_JoseVteCarmona_Genero-FA_Editorial-La-Rueca-.jpg,,image/jpeg,500,796,Libro_AZUL_Autor_JoseVteCarmona_Genero-FA_Editorial-La-Rueca-.jpg
+2979,979-13-87525-34-7_cub,979-13-87525-34-7_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Evocacion-y-sucesos-de-Dolores-la-Tuerta_Autor_Jose-Herruzo_Genero-_Novela-Historica_Editorial-la-Rueca.jpg,,image/jpeg,500,728,Libro_Evocacion-y-sucesos-de-Dolores-la-Tuerta_Autor_Jose-Herruzo_Genero-_Novela-Historica_Editorial-la-Rueca.jpg
+2980,979-13-87525-27-9_cub,979-13-87525-27-9_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Los-mejores-cortos-de-Gomez-Rosas_Autor_Manuel-Gomez-Rosas_genero-YFQ_Editorial-la-Rueca.jpg,,image/jpeg,500,700,Libro_Los-mejores-cortos-de-Gomez-Rosas_Autor_Manuel-Gomez-Rosas_genero-YFQ_Editorial-la-Rueca.jpg
+2981,CUB_UnPaseo,cub_unpaseo-2,https://editoriallarueca.com/wp-content/uploads/Libro_Un-paseo-por-mis-recuerdos_Autora_Rossi-De-Juan_Genero_BT_Editorial-la-Rueca.jpg,,image/jpeg,500,733,Libro_Un-paseo-por-mis-recuerdos_Autora_Rossi-De-Juan_Genero_BT_Editorial-la-Rueca.jpg
+2982,"Perderse, Encontrarse, Despertar - 1",perderse-encontrarse-despertar-1-2,https://editoriallarueca.com/wp-content/uploads/Libro_-Perderse-Encontrarse-Despertar_Autora_Marina-A.-Dominguez_Genero_Poesia-DC_Editorial-la-Rueca.jpg,,image/jpeg,500,700,Libro_-Perderse-Encontrarse-Despertar_Autora_Marina-A.-Dominguez_Genero_Poesia-DC_Editorial-la-Rueca.jpg
+2983,979-13-87525-32-3_cub,979-13-87525-32-3_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Mano-a-Mano_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca.jpg,,image/jpeg,500,739,Libro_Mano-a-Mano_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca.jpg
+2984,Adobe Photoshop PDF,adobe-photoshop-pdf-2,https://editoriallarueca.com/wp-content/uploads/Libro_Veintidos-kilos-un-millon_Autor_Guillermo-M.-Schrem_Genero-FA_-Editorial-la-Rueca.jpg,,image/jpeg,500,730,Libro_Veintidos-kilos-un-millon_Autor_Guillermo-M.-Schrem_Genero-FA_-Editorial-la-Rueca.jpg
+2985,979-13-87525-20-0_cub,979-13-87525-20-0_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Pajaro-en-el-Alambre_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca.jpg,,image/jpeg,1747,2560,Libro_Pajaro-en-el-Alambre_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca-scaled.jpg
+2986,979-13-87525-25-5_cub,979-13-87525-25-5_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_El-dolor-de-un-alma-sin-memoria_Autor_Diego-Gomez-Costa_Fenero-FA-Editorial-la-Rueca-copia.jpg,,image/jpeg,500,793,Libro_El-dolor-de-un-alma-sin-memoria_Autor_Diego-Gomez-Costa_Fenero-FA-Editorial-la-Rueca-copia.jpg
+2987,979-13-87525-23-1_cub,979-13-87525-23-1_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Monasterio-de-San-Lorenzo-de-El-Escorial-–-Una-visita-interior_Autor_Santiago-Garcia-Gonzalez_Genero-WTGC_Editorial-la-Rueca.jpg,,image/jpeg,1270,1937,Libro_Monasterio-de-San-Lorenzo-de-El-Escorial-–-Una-visita-interior_Autor_Santiago-Garcia-Gonzalez_Genero-WTGC_Editorial-la-Rueca.jpg
+2988,979-13-87525-17-0_cub,979-13-87525-17-0_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Otros-Oficios-en-Moralzarzal_Autor_Antonio-Lopez-Hurtado_genero-GP-Editorial-la-Rueca.jpg,,image/jpeg,1184,1710,Libro_Otros-Oficios-en-Moralzarzal_Autor_Antonio-Lopez-Hurtado_genero-GP-Editorial-la-Rueca.jpg
+2989,979-13-87525-01-9_cub,979-13-87525-01-9_cub-3,https://editoriallarueca.com/wp-content/uploads/Libro_Las-aventuras-de-SuperPsico_Autora_Maria-Isabel-Herrero-de-la-Torre_Genero-YB_Editorial-la-Rueca.jpg,,image/jpeg,1189,1638,Libro_Las-aventuras-de-SuperPsico_Autora_Maria-Isabel-Herrero-de-la-Torre_Genero-YB_Editorial-la-Rueca.jpg
+2990,GenerosPortada,generosportada-2,https://editoriallarueca.com/wp-content/uploads/Libro_Diferencias-de-genero-en-la-expresion-conductual-de-la-violencia_Autora_Maria-Isabel-Herrero-de-la-Torre_Genero-JFF-Editorial-la-rueca-.jpg,,image/jpeg,500,700,Libro_Diferencias-de-genero-en-la-expresion-conductual-de-la-violencia_Autora_Maria-Isabel-Herrero-de-la-Torre_Genero-JFF-Editorial-la-rueca-.jpg
+2991,cub3_Reflejos,cub3_reflejos-2,https://editoriallarueca.com/wp-content/uploads/Libro_Entre-lineas-reflejos-de-un-tiempo-convulso_Autor_Juan-Antonio-Valero-Casado_Genero-DN-Editorioal-La-Rueca.jpg,,image/jpeg,1103,1701,Libro_Entre-lineas-reflejos-de-un-tiempo-convulso_Autor_Juan-Antonio-Valero-Casado_Genero-DN-Editorioal-La-Rueca.jpg
+2992,978-84-19865-97-7_cub,978-84-19865-97-7_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_El-musical-como-vehiculo-de-aprendizaje_Autora_Sara-Sanchez-Prieto_Genero-ANC-Editorial-la-Rueca.jpg,,image/jpeg,1181,1654,Libro_El-musical-como-vehiculo-de-aprendizaje_Autora_Sara-Sanchez-Prieto_Genero-ANC-Editorial-la-Rueca.jpg
+2993,Libro_Estrategias educativas a través del teatro musical_Autora_Sara Sánchez Prieto_Género (ANC) Editorial la Rueca,libro_estrategias-educativas-a-traves-del-teatro-musical_autora_sara-sanchez-prieto_genero-anc-editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/Libro_Estrategias-educativas-a-traves-del-teatro-musical_Autora_Sara-Sanchez-Prieto_Genero-ANC-Editorial-la-Rueca-.jpg,,image/jpeg,500,696,Libro_Estrategias-educativas-a-traves-del-teatro-musical_Autora_Sara-Sanchez-Prieto_Genero-ANC-Editorial-la-Rueca-.jpg
+2994,979-13-87525-10-1_cub,979-13-87525-10-1_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Metodo-Sah-G-Maes_Autora_Malva-Luz_Genero-VXFC1-Editorial-la-Rueca.jpg,,image/jpeg,500,773,Libro_Metodo-Sah-G-Maes_Autora_Malva-Luz_Genero-VXFC1-Editorial-la-Rueca.jpg
+2995,979-13-87525-12-5_cub,979-13-87525-12-5_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Cuentos-Infantiles_Autor_Manuel-Anton_Genero-FYB-Editorial-la-Rueca.jpg,,image/jpeg,500,628,Libro_Cuentos-Infantiles_Autor_Manuel-Anton_Genero-FYB-Editorial-la-Rueca.jpg
+2996,978-84-19865-69-4 _cub,978-84-19865-69-4-_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_El-valor-de-la-amistad-–-Un-viaje-al-pais-de-las-Nubes_Autora_Mari-Carmen-Gordillo-Gonzalez_Genero-YF-Editorial-la-Rueca.jpg,,image/jpeg,500,800,Libro_El-valor-de-la-amistad-–-Un-viaje-al-pais-de-las-Nubes_Autora_Mari-Carmen-Gordillo-Gonzalez_Genero-YF-Editorial-la-Rueca.jpg
+2997,979-13-87525-11-8_cub,979-13-87525-11-8_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Compendio-sobre-los-ejercicios-y-el-arte-militar-reunido-en-tres-libros_Traduccion_-Elena-Miramontes_Genero-HB-Editorial-la-Rueca.jpg,,image/jpeg,500,718,Libro_Compendio-sobre-los-ejercicios-y-el-arte-militar-reunido-en-tres-libros_Traduccion_-Elena-Miramontes_Genero-HB-Editorial-la-Rueca.jpg
+2998,PORTADA Y CONTRAPORTADA.cdr,portada-y-contraportada-cdr-3,https://editoriallarueca.com/wp-content/uploads/Libro_Christus-verbo-y-verso-segun-un-posadero_Autor_-Ignacio-Luis-de-Orduna-Puebla_Genero-DC-LaRue.jpg,,image/jpeg,500,680,Libro_Christus-verbo-y-verso-segun-un-posadero_Autor_-Ignacio-Luis-de-Orduna-Puebla_Genero-DC-LaRue.jpg
+2999,3cub_ensayo,3cub_ensayo-2,https://editoriallarueca.com/wp-content/uploads/Libro_El-poderoso-Sir-Tristan-en-la-Saga-del-Prince-Valiant-1937-1971-de-Harold-Foster.-_Autor_CarlosRios_Genero-DSBB-.jpg,,image/jpeg,500,713,Libro_El-poderoso-Sir-Tristan-en-la-Saga-del-Prince-Valiant-1937-1971-de-Harold-Foster.-_Autor_CarlosRios_Genero-DSBB-.jpg
+3000,979-13-87525-00-2_cub,979-13-87525-00-2_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Adios-a-la-tristeza_Autor_DavidGarcia_Genero-YBCS-Editorial-la-Rueca-copia.jpg,,image/jpeg,500,750,Libro_Adios-a-la-tristeza_Autor_DavidGarcia_Genero-YBCS-Editorial-la-Rueca-copia.jpg
+3001,979-13-87525-06-4_cub,979-13-87525-06-4_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Famosa-gabardina-azul_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca.jpg,,image/jpeg,500,700,Libro_Famosa-gabardina-azul_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca.jpg
+3002,979-13-87525-04-0_cub,979-13-87525-04-0_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Monedad-del-Corazon_Autor_Jesus-Adame-Ardila_Genero-FV-Editorial-la-Rueca.jpg,,image/jpeg,500,697,Libro_Monedad-del-Corazon_Autor_Jesus-Adame-Ardila_Genero-FV-Editorial-la-Rueca.jpg
+3003,Libro_Dias de Galerna_Autor_Rodrigo Vázquez_Género (WT) Editorial la Rueca,libro_dias-de-galerna_autor_rodrigo-vazquez_genero-wt-editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/Libro_Dias-de-Galerna_Autor_Rodrigo-Vazquez_Genero-WT-Editorial-la-Rueca-.jpg,,image/jpeg,1812,2560,Libro_Dias-de-Galerna_Autor_Rodrigo-Vazquez_Genero-WT-Editorial-la-Rueca--scaled.jpg
+3004,979-13-87525-02-6_cub,979-13-87525-02-6_cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_Morir-todos-los-dias_Autores-Gabriela-Yordinova-y-Rafael-Martinez-Serrano_Genero-BT-Editorial-la-Rueca.jpg,,image/jpeg,500,731,Libro_Morir-todos-los-dias_Autores-Gabriela-Yordinova-y-Rafael-Martinez-Serrano_Genero-BT-Editorial-la-Rueca.jpg
+3005,978-84-18924-14-9_cub,978-84-18924-14-9_cub,https://editoriallarueca.com/wp-content/uploads/libro_La-luna-triangular_Autor_Rafael-Martinez-Serrano_Genero-FA-Editorial-la-Rueca.jpg,,image/jpeg,500,762,libro_La-luna-triangular_Autor_Rafael-Martinez-Serrano_Genero-FA-Editorial-la-Rueca.jpg
+3006,Libro_Arcanum–La torá de Minerva_Autora_Minerva Buiza_Género (VXFC1) Editorial la Rueca,libro_arcanum-la-tora-de-minerva_autora_minerva-buiza_genero-vxfc1-editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/Libro_Arcanum–La-tora-de-Minerva_Autora_Minerva-Buiza_Genero-VXFC1-Editorial-la-Rueca.jpg,,image/jpeg,500,728,Libro_Arcanum–La-tora-de-Minerva_Autora_Minerva-Buiza_Genero-VXFC1-Editorial-la-Rueca.jpg
+3007,Libro_La última carta_Autor_Alonso Cruz León_Género (HP) Editorial la Rueca,libro_la-ultima-carta_autor_alonso-cruz-leon_genero-hp-editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/Libro_La-ultima-carta_Autor_Alonso-Cruz-Leon_Genero-HP-Editorial-la-Rueca.jpg,,image/jpeg,500,710,Libro_La-ultima-carta_Autor_Alonso-Cruz-Leon_Genero-HP-Editorial-la-Rueca.jpg
+3008,978-84-19865-81-6cub,978-84-19865-81-6cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_CUENTOS-PARA-AMARA-–-El-secreto-del-carpintero_Autor_Francisco-Marin-Vargas_Genero-YBCS-Editorial-la-Rueca.jpg,,image/jpeg,1876,2047,Libro_CUENTOS-PARA-AMARA-–-El-secreto-del-carpintero_Autor_Francisco-Marin-Vargas_Genero-YBCS-Editorial-la-Rueca.jpg
+3009,978-84-19865-71-7_CUB,978-84-19865-71-7_cub-3,https://editoriallarueca.com/wp-content/uploads/Libro_CUENTOS-PARA-AMARA-DonaBota_Autor_Francisco-Marin-Vargas_Genero-YBCS-Editorial-La-Rueca.jpg,,image/jpeg,500,544,Libro_CUENTOS-PARA-AMARA-DonaBota_Autor_Francisco-Marin-Vargas_Genero-YBCS-Editorial-La-Rueca.jpg
+3010,978-84-19865-68-7cub,978-84-19865-68-7cub-2,https://editoriallarueca.com/wp-content/uploads/Libro_CUENTOS-PARA-AMARA-La-Nieve-–-Amara-toca-el-tambor_Autor_Francisco-Marin-Vargas_Genero-YBCS-Editorial-la-Rueca.jpg,,image/jpeg,500,542,Libro_CUENTOS-PARA-AMARA-La-Nieve-–-Amara-toca-el-tambor_Autor_Francisco-Marin-Vargas_Genero-YBCS-Editorial-la-Rueca.jpg
+3011,Libro_Una escuela de música_Autor_ Juan José Velasco Sánchez-Mayoral_Género FA_Editorial la Rueca,libro_una-escuela-de-musica_autor_-juan-jose-velasco-sanchez-mayoral_genero-fa_editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/Libro_Una-escuela-de-musica_Autor_-Juan-Jose-Velasco-Sanchez-Mayoral_Genero-FA_Editorial-la-Rueca.jpg,,image/jpeg,500,741,Libro_Una-escuela-de-musica_Autor_-Juan-Jose-Velasco-Sanchez-Mayoral_Genero-FA_Editorial-la-Rueca.jpg
+3012,Libro_Cartas a Diego – Reflexiones sobre un nacimiento_Autor_Francisco Marín Vargas_Género BG_Editorial la Rueca,libro_cartas-a-diego-reflexiones-sobre-un-nacimiento_autor_francisco-marin-vargas_genero-bg_editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/Libro_Cartas-a-Diego-–-Reflexiones-sobre-un-nacimiento_Autor_Francisco-Marin-Vargas_Genero-BG_Editorial-la-Rueca.jpg,,image/jpeg,500,772,Libro_Cartas-a-Diego-–-Reflexiones-sobre-un-nacimiento_Autor_Francisco-Marin-Vargas_Genero-BG_Editorial-la-Rueca.jpg
+3013,979-13-87525-24-8-cub,979-13-87525-24-8-cub-2,https://editoriallarueca.com/wp-content/uploads/libro_-El-futuro-politico-de-Guinea-Ecuatorial_Autor_Anastasio-Sima_Genero-ensayo-Politico_Editorial-la-Rueca.jpg,,image/jpeg,500,723,libro_-El-futuro-politico-de-Guinea-Ecuatorial_Autor_Anastasio-Sima_Genero-ensayo-Politico_Editorial-la-Rueca.jpg
+3014,AAFF_cub_ElMundoRural,aaff_cub_elmundorural-2,https://editoriallarueca.com/wp-content/uploads/Libro-El-mundo-rural-en-Moralzarzal_Autor-Antonio-Lopez-Hurtado_Genero-Historia_Editorial-la-Rueca.jpg,,image/jpeg,1186,1702,Libro-El-mundo-rural-en-Moralzarzal_Autor-Antonio-Lopez-Hurtado_Genero-Historia_Editorial-la-Rueca.jpg
+3015,w_1435OK,w_1435ok-2,https://editoriallarueca.com/wp-content/uploads/Libro-1435-mm-Ancho-de-via-europeo_Autor-Guillermo-M.-Schrem_Genero-Novela_Editorial-la-Rueca.jpg,,image/jpeg,1846,2560,Libro-1435-mm-Ancho-de-via-europeo_Autor-Guillermo-M.-Schrem_Genero-Novela_Editorial-la-Rueca-scaled.jpg
+3016,Libro El azul del mar en los mapas_Autor Karlos de Oro_Género Ficción_,libro-el-azul-del-mar-en-los-mapas_autor-karlos-de-oro_genero-ficcion_,https://editoriallarueca.com/wp-content/uploads/Libro-El-azul-del-mar-en-los-mapas_Autor-Karlos-de-Oro_Genero-Ficcion_.jpg,,image/jpeg,1417,1984,Libro-El-azul-del-mar-en-los-mapas_Autor-Karlos-de-Oro_Genero-Ficcion_.jpg
+3017,Libro Arqueologia Feminista Ibérica_Autora F. Martín-Cano Abreu_Género_investigación,libro-arqueologia-feminista-iberica_autora-f-martin-cano-abreu_genero_investigacion,https://editoriallarueca.com/wp-content/uploads/Libro-Arqueologia-Feminista-Iberica_Autora-F.-Martin-Cano-Abreu_Genero_investigacion.jpg,,image/jpeg,1417,2079,Libro-Arqueologia-Feminista-Iberica_Autora-F.-Martin-Cano-Abreu_Genero_investigacion.jpg
+3018,w_Cub_Sexualidad,w_cub_sexualidad-2,https://editoriallarueca.com/wp-content/uploads/Libro-SEXUALIDAD-FEMENINA-EN-EL-3ER-MILENIO_Autora-F.-Martin-Cano-Abreu_Genero-Investiga.jpg,,image/jpeg,500,731,Libro-SEXUALIDAD-FEMENINA-EN-EL-3ER-MILENIO_Autora-F.-Martin-Cano-Abreu_Genero-Investiga.jpg
+3019,Libro Dile a mamá que nos conocimos en el Café Tres Cantones-Autor Fernando Grijalba_Género Novela_Editorial la Rueca,libro-dile-a-mama-que-nos-conocimos-en-el-cafe-tres-cantones-autor-fernando-grijalba_genero-novela_editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/Libro-Dile-a-mama-que-nos-conocimos-en-el-Cafe-Tres-Cantones-Autor-Fernando-Grijalba_Genero-Novela_Editorial-la-Rueca.jpg,,image/jpeg,250,350,Libro-Dile-a-mama-que-nos-conocimos-en-el-Cafe-Tres-Cantones-Autor-Fernando-Grijalba_Genero-Novela_Editorial-la-Rueca.jpg
+3020,Libro DANCE ME TO THE END OF LOVE_Autor Guillermo M. Schrem_Género Novela_Editorial la Rueca,libro-dance-me-to-the-end-of-love_autor-guillermo-m-schrem_genero-novela_editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/Libro-DANCE-ME-TO-THE-END-OF-LOVE_Autor-Guillermo-M.-Schrem_Genero-Novela_Editorial-la-Rueca.jpg,,image/jpeg,1042,1458,Libro-DANCE-ME-TO-THE-END-OF-LOVE_Autor-Guillermo-M.-Schrem_Genero-Novela_Editorial-la-Rueca.jpg
+3021,Libro La salvaje_Autor Luis Gausachs_Género Novela_Editorial la Rueca,libro-la-salvaje_autor-luis-gausachs_genero-novela_editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/Libro-La-salvaje_Autor-Luis-Gausachs_Genero-Novela_Editorial-la-Rueca.jpg,,image/jpeg,500,699,Libro-La-salvaje_Autor-Luis-Gausachs_Genero-Novela_Editorial-la-Rueca.jpg
+3022,Libro Esa no es manera de decir adiós_Autor Guillermo M. Schrem_Género Novela_Editorial la Rueca,libro-esa-no-es-manera-de-decir-adios_autor-guillermo-m-schrem_genero-novela_editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/Libro-Esa-no-es-manera-de-decir-adios_Autor-Guillermo-M.-Schrem_Genero-Novela_Editorial-la-Rueca.jpg,,image/jpeg,1417,1984,Libro-Esa-no-es-manera-de-decir-adios_Autor-Guillermo-M.-Schrem_Genero-Novela_Editorial-la-Rueca.jpg
+3023,mar_AF_cub_corre_TomatesVGA,mar_af_cub_corre_tomatesvga-2,https://editoriallarueca.com/wp-content/uploads/Libro-Comer-bien-en-casa_Autora-Veronica-Gomez-Acebo_Genero-Recetas_Editorial-la-Rueca.jpg,,image/jpeg,1743,2560,Libro-Comer-bien-en-casa_Autora-Veronica-Gomez-Acebo_Genero-Recetas_Editorial-la-Rueca-scaled.jpg
+3025,979-13-87525-73-6_cub,979-13-87525-73-6_cub,https://editoriallarueca.com/wp-content/uploads/Libro_-Terrores-propios-y-ajenos_Autor-Jesus-Bocho_Genero_Narrativa-Ficcion.jpg,,image/jpeg,500,710,Libro_-Terrores-propios-y-ajenos_Autor-Jesus-Bocho_Genero_Narrativa-Ficcion.jpg
+3027,Autor_Jesús M. Bocho_Libro_Terrores propios y ajenos-Galería de relatos_género Narrativa_Editorial la Rueca,autor_jesus-m-bocho_libro_terrores-propios-y-ajenos-galeria-de-relatos_genero-narrativa_editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/Autor_Jesus-M.-Bocho_Libro_Terrores-propios-y-ajenos-Galeria-de-relatos_genero-Narrativa_Editorial-la-Rueca.jpg,,image/jpeg,556,710,Autor_Jesus-M.-Bocho_Libro_Terrores-propios-y-ajenos-Galeria-de-relatos_genero-Narrativa_Editorial-la-Rueca.jpg
+3029,m_Publicación_Terrores propios y ajenos_Autor_Jesús Bocho_Género Ficción_Editorial la Rueca,m_publicacion_terrores-propios-y-ajenos_autor_jesus-bocho_genero-ficcion_editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/m_Publicacion_Terrores-propios-y-ajenos_Autor_Jesus-Bocho_Genero-Ficcion_Editorial-la-Rueca.jpg,,image/jpeg,1500,1000,m_Publicacion_Terrores-propios-y-ajenos_Autor_Jesus-Bocho_Genero-Ficcion_Editorial-la-Rueca.jpg
+3030,CUBIERTAS LA LISTA DE TAREAS2.indd,cubiertas-la-lista-de-tareas2-indd,https://editoriallarueca.com/wp-content/uploads/Libro-La-lista-de-tareas-de-mi-profe-Jose_Aurtor_Carlos-Jose-Olmedo-Batista_Genero-Libro-Infantil.jpg,,image/jpeg,500,735,Libro-La-lista-de-tareas-de-mi-profe-Jose_Aurtor_Carlos-Jose-Olmedo-Batista_Genero-Libro-Infantil.jpg
+3031,W_cub_Monstruo,w_cub_monstruo-2,https://editoriallarueca.com/wp-content/uploads/Libro-De-la-mano-con-el-Monstruo_Autor-Carlos-Jose-Olmedo-Batista_Genero-Libro-Infantil-Ilustrado.jpg,,image/jpeg,1733,2560,Libro-De-la-mano-con-el-Monstruo_Autor-Carlos-Jose-Olmedo-Batista_Genero-Libro-Infantil-Ilustrado-scaled.jpg
+3032,W_Compositor,w_compositor-2,https://editoriallarueca.com/wp-content/uploads/libro-Julio-Robles-Garcia-–-Compositor-_Autora-Maria-Dolores-Castellon-Perez_Genero-Musica.jpg,,image/jpeg,500,733,libro-Julio-Robles-Garcia-–-Compositor-_Autora-Maria-Dolores-Castellon-Perez_Genero-Musica.jpg
+3033,w_Yoga1Chicos,w_yoga1chicos-2,https://editoriallarueca.com/wp-content/uploads/Libro-YOGA-Volumen-1-Evolucion-integral-y-evolucion-universal-Chicos_Autor-Miguel-Gomez-Aregana.jpg,,image/jpeg,500,746,Libro-YOGA-Volumen-1-Evolucion-integral-y-evolucion-universal-Chicos_Autor-Miguel-Gomez-Aregana.jpg
+3034,w_Yoga1Chicas,w_yoga1chicas-2,https://editoriallarueca.com/wp-content/uploads/Libro-YOGA-–-Volumen-1-–-Evolucion-integral-y-evolucion-universal-–-Chicas_l_Autor-Miguel-Gomez-Aregana_Genero-YOGA.jpg,,image/jpeg,500,753,Libro-YOGA-–-Volumen-1-–-Evolucion-integral-y-evolucion-universal-–-Chicas_l_Autor-Miguel-Gomez-Aregana_Genero-YOGA.jpg
+3035,w_Yoga2,w_yoga2-2,https://editoriallarueca.com/wp-content/uploads/Libro-YOGA-–-Trabajo-sobre-la-introspeccion-y-el-autoconocimiento-MiguelGomezAregana.jpg,,image/jpeg,500,736,Libro-YOGA-–-Trabajo-sobre-la-introspeccion-y-el-autoconocimiento-MiguelGomezAregana.jpg
+3036,w_Yoga3,w_yoga3-2,https://editoriallarueca.com/wp-content/uploads/Libro-Yoga-–-Volumen-3-Desde-antes-del-Big-Bang-hasta-manana-MiguelGomez-Aregana.jpg,,image/jpeg,500,726,Libro-Yoga-–-Volumen-3-Desde-antes-del-Big-Bang-hasta-manana-MiguelGomez-Aregana.jpg
+3037,w_YoGA4,w_yoga4-2,https://editoriallarueca.com/wp-content/uploads/Libro-YOGA-–-Volumen-4-–Buscando-a-Dios-Miguel-Gomez-Aregana.jpg,,image/jpeg,500,755,Libro-YOGA-–-Volumen-4-–Buscando-a-Dios-Miguel-Gomez-Aregana.jpg
+3038,w_YogaV5,w_yogav5-2,https://editoriallarueca.com/wp-content/uploads/Libro-Yoga-–-Volumen-5-–-Evolucion-integral-Y-evolucion-universal-–-Naturalmente-meditando-Miguel-Gomez-Aregana.jpg,,image/jpeg,500,762,Libro-Yoga-–-Volumen-5-–-Evolucion-integral-Y-evolucion-universal-–-Naturalmente-meditando-Miguel-Gomez-Aregana.jpg
+3039,Nagasaki003,nagasaki003-2,https://editoriallarueca.com/wp-content/uploads/Libro-Nagasaki-Antonio-L.-Gomez-Charlin_Genero-Narrativa-gallego.jpg,,image/jpeg,500,697,Libro-Nagasaki-Antonio-L.-Gomez-Charlin_Genero-Narrativa-gallego.jpg
+3040,LaNochePortada,lanocheportada-2,https://editoriallarueca.com/wp-content/uploads/Libro-Llega-la-noche_Autor-Guillermo-M.-Schrem_Genero-Novela_Editorial-la-Rueca.jpg,,image/jpeg,500,735,Libro-Llega-la-noche_Autor-Guillermo-M.-Schrem_Genero-Novela_Editorial-la-Rueca.jpg
+3041,EspejosdlRealidad,espejosdlrealidad-2,https://editoriallarueca.com/wp-content/uploads/LIbro-Espejos-de-la-realidad-Juan-Antonio-Valero_Genero-Articulos-periodisticos.jpg,,image/jpeg,500,767,LIbro-Espejos-de-la-realidad-Juan-Antonio-Valero_Genero-Articulos-periodisticos.jpg
+3045,979-13-87525-77-4_cub,979-13-87525-77-4_cub,https://editoriallarueca.com/wp-content/uploads/Libro-Adagio-para-Whisky_Autor-Jose-Antonio-Galante_Genero-Poesia_Editorial-la-Rueca.jpg,,image/jpeg,500,705,Libro-Adagio-para-Whisky_Autor-Jose-Antonio-Galante_Genero-Poesia_Editorial-la-Rueca.jpg
+3047,Autor_JoseAntonioGalante_Libro Adagio para whisky_Género Poesía,autor_joseantoniogalante_libro-adagio-para-whisky_genero-poesia,https://editoriallarueca.com/wp-content/uploads/Autor_JoseAntonioGalante_Libro-Adagio-para-whisky_Genero-Poesia.jpg,,image/jpeg,556,480,Autor_JoseAntonioGalante_Libro-Adagio-para-whisky_Genero-Poesia.jpg
+3048,Autor_JoseAntonioGalante_Libro Adagio para whisky_Género Poesía,autor_joseantoniogalante_libro-adagio-para-whisky_genero-poesia-2,https://editoriallarueca.com/wp-content/uploads/Autor_JoseAntonioGalante_Libro-Adagio-para-whisky_Genero-Poesia-1.jpg,,image/jpeg,556,480,Autor_JoseAntonioGalante_Libro-Adagio-para-whisky_Genero-Poesia-1.jpg
+3049,w_adagioParaWhisky copia,w_adagioparawhisky-copia,https://editoriallarueca.com/wp-content/uploads/w_adagioParaWhisky-copia.jpg,,image/jpeg,1500,1000,w_adagioParaWhisky-copia.jpg
+3051,979-13-87525-78-1_cub,979-13-87525-78-1_cub,https://editoriallarueca.com/wp-content/uploads/libro_Haikus-tras-la-ventana_Autor-Jose-Antonio-Galante-Perez_Genero-Poesia_Editorial-la-Rueca.jpg,,image/jpeg,500,738,libro_Haikus-tras-la-ventana_Autor-Jose-Antonio-Galante-Perez_Genero-Poesia_Editorial-la-Rueca.jpg
+3098,979-13-87525-81-1_cub,979-13-87525-81-1_cub,https://editoriallarueca.com/wp-content/uploads/libro-LaEnsenanza-en-Moralzarzal_Autor-Antonio-Lopez-Hurtado_Genero-GP-investigacion-e-informacion-general_Editorial-la-Rueca-copia.jpg,,image/jpeg,500,721,libro-LaEnsenanza-en-Moralzarzal_Autor-Antonio-Lopez-Hurtado_Genero-GP-investigacion-e-informacion-general_Editorial-la-Rueca-copia.jpg
+3100,FotoAntonio Zarate_libroLaEnsenanza en Moralzarzal,fotoantonio-zarate_librolaensenanza-en-moralzarzal,https://editoriallarueca.com/wp-content/uploads/FotoAntonio-Zarate_libroLaEnsenanza-en-Moralzarzal.tif,,,,,FotoAntonio-Zarate_libroLaEnsenanza-en-Moralzarzal.tif
+3101,Antonio Zarate_libroLaEnsenanza en Moralzarzal_libro La Enseñanza en Moralzarzal,antonio-zarate_librolaensenanza-en-moralzarzal_libro-la-ensenanza-en-moralzarzal,https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate_libroLaEnsenanza-en-Moralzarzal_libro-La-Ensenanza-en-Moralzarzal.jpg,,image/jpeg,400,307,Antonio-Zarate_libroLaEnsenanza-en-Moralzarzal_libro-La-Ensenanza-en-Moralzarzal.jpg
+3133,Título Por lo Pindio_Autora_Victoria Huelin_género DNF ensayos literarios_Editorial la Rueca,titulo-por-lo-pindio_autora_victoria-huelin_genero-dnf-ensayos-literarios_editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/Titulo-Por-lo-Pindio_Autora_Victoria-Huelin_genero-DNF-ensayos-literarios_Editorial-la-Rueca.tif,,,,,Titulo-Por-lo-Pindio_Autora_Victoria-Huelin_genero-DNF-ensayos-literarios_Editorial-la-Rueca.tif
+3134,979-13-87525-82-8_cub,979-13-87525-82-8_cub,https://editoriallarueca.com/wp-content/uploads/Titulo-Por-lo-Pindio_Autora_Victoria-Huelin_genero-DNF-ensayos-literarios_Editorial-la-Rueca.jpg,,image/jpeg,500,732,Titulo-Por-lo-Pindio_Autora_Victoria-Huelin_genero-DNF-ensayos-literarios_Editorial-la-Rueca.jpg
+3136,w_mockUp_Pindio copia,w_mockup_pindio-copia,https://editoriallarueca.com/wp-content/uploads/w_mockUp_Pindio-copia.jpg,,image/jpeg,2500,1668,w_mockUp_Pindio-copia.jpg
+3137,Autora Victoria Huelin _Título Por lo Pindio_Género DNF ensayo literario_Editorial la Rueca,autora-victoria-huelin-_titulo-por-lo-pindio_genero-dnf-ensayo-literario_editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/Autora-Victoria-Huelin-_Titulo-Por-lo-Pindio_Genero-DNF-ensayo-literario_Editorial-la-Rueca.jpg,,image/jpeg,400,268,Autora-Victoria-Huelin-_Titulo-Por-lo-Pindio_Genero-DNF-ensayo-literario_Editorial-la-Rueca.jpg
+1316,LogoLaRueca,logolarueca,https://editoriallarueca.com/wp-content/uploads/LogoLaRueca.png,,image/png,500,182,LogoLaRueca.png
+1317,LogoCuadradoRueca,logocuadradorueca,https://editoriallarueca.com/wp-content/uploads/LogoCuadradoRueca.png,,image/png,500,500,LogoCuadradoRueca.png
+2099,Espiral-roja-1,espiral-roja-1,https://editoriallarueca.com/wp-content/uploads/Espiral-roja-1.png,,image/png,800,300,Espiral-roja-1.png
+2100,fondo-home-1-300x200-1,fondo-home-1-300x200-1,https://editoriallarueca.com/wp-content/uploads/fondo-home-1-300x200-1.jpg,,image/jpeg,1800,1199,fondo-home-1-300x200-1.jpg
+2101,Editorial-La-Rueca-300x300-1,editorial-la-rueca-300x300-1,https://editoriallarueca.com/wp-content/uploads/Editorial-La-Rueca-300x300-1.png,,image/png,500,500,Editorial-La-Rueca-300x300-1.png
+2102,fondo-home-2-300x200-1,fondo-home-2-300x200-1,https://editoriallarueca.com/wp-content/uploads/fondo-home-2-300x200-1.jpg,,image/jpeg,1800,1199,fondo-home-2-300x200-1.jpg
+3140,979-13-87525-84-2_cub,979-13-87525-84-2_cub,https://editoriallarueca.com/wp-content/uploads/Libro-Cuando-te-vuelva-a-encontrar_Autor-Alfredo-Manrique_Genero-Biografia-BT_-Editorial-la-Rueca.jpg,,image/jpeg,500,712,Libro-Cuando-te-vuelva-a-encontrar_Autor-Alfredo-Manrique_Genero-Biografia-BT_-Editorial-la-Rueca.jpg
+3142,"Book cover mockup psd, editable design",book-cover-mockup-psd-editable-design-5,https://editoriallarueca.com/wp-content/uploads/w_MockUp_CuandoTeVuelvaAEncontrar.jpg,,image/jpeg,2560,1707,w_MockUp_CuandoTeVuelvaAEncontrar-scaled.jpg
+3143,Autor Alfredo Manrique Bravo_Libro Cuando te vuelva a encontrar_Género Biografía (BT)_Editorial la Rueca,autor-alfredo-manrique-bravo_libro-cuando-te-vuelva-a-encontrar_genero-biografia-bt_editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/Autor-Alfredo-Manrique-Bravo_Libro-Cuando-te-vuelva-a-encontrar_Genero-Biografia-BT_Editorial-la-Rueca.jpg,,image/jpeg,400,428,Autor-Alfredo-Manrique-Bravo_Libro-Cuando-te-vuelva-a-encontrar_Genero-Biografia-BT_Editorial-la-Rueca.jpg
+3144,w_mockup_Enseñanza,w_mockup_ensenanza,https://editoriallarueca.com/wp-content/uploads/w_mockup_Ensenanza.jpg,,image/jpeg,2000,1520,w_mockup_Ensenanza.jpg
+3152,Diseño sin título - 1,diseno-sin-titulo-1-3,https://editoriallarueca.com/wp-content/uploads/Libro-Cuando-el-rio-suena_Autor-Guillermo-M.-Schrem_Genero-Ficcion-FA_Editorial-la-Rueca.jpg,,image/jpeg,500,700,Libro-Cuando-el-rio-suena_Autor-Guillermo-M.-Schrem_Genero-Ficcion-FA_Editorial-la-Rueca.jpg
+3154,w_mockUp_Rio copia,w_mockup_rio-copia,https://editoriallarueca.com/wp-content/uploads/w_mockUp_Rio-copia.jpg,,image/jpeg,2500,1406,w_mockUp_Rio-copia.jpg
+3155,FotoAutor,fotoautor-4,https://editoriallarueca.com/wp-content/uploads/FotoAutor.jpeg,,image/jpeg,1536,2048,FotoAutor.jpeg
+3158,979-13-87525-85-9_cub,979-13-87525-85-9_cub,https://editoriallarueca.com/wp-content/uploads/Libro_El-Arte-de-Cosplay_Autor_Osian-R.-Vaquero_Genero-Comic-AKLC_Editorial-la-Ruecajpg.jpg,,image/jpeg,500,737,Libro_El-Arte-de-Cosplay_Autor_Osian-R.-Vaquero_Genero-Comic-AKLC_Editorial-la-Ruecajpg.jpg
+3160,w_MockUp_Cosplay,w_mockup_cosplay,https://editoriallarueca.com/wp-content/uploads/w_MockUp_Cosplay.jpg,,image/jpeg,2000,1333,w_MockUp_Cosplay.jpg
+3161,autor OsianRodriguez_Libro El arte de Cosplay_Género AKLC – Cómic y caricatura_Editorial la Rueca copia,autor-osianrodriguez_libro-el-arte-de-cosplay_genero-aklc-comic-y-caricatura_editorial-la-rueca-copia,https://editoriallarueca.com/wp-content/uploads/autor-OsianRodriguez_Libro-El-arte-de-Cosplay_Genero-AKLC-–-Comic-y-caricatura_Editorial-la-Rueca-copia.jpg,,image/jpeg,400,509,autor-OsianRodriguez_Libro-El-arte-de-Cosplay_Genero-AKLC-–-Comic-y-caricatura_Editorial-la-Rueca-copia.jpg
+3163,979-13-87525-86-6_cubTP,979-13-87525-86-6_cubtp,https://editoriallarueca.com/wp-content/uploads/Libro-A-cielo-abierto_Autor-Juan-Vidal_Genero-Poesia_editorial-la-rueca.jpg,,image/jpeg,500,768,Libro-A-cielo-abierto_Autor-Juan-Vidal_Genero-Poesia_editorial-la-rueca.jpg
+3165,979-13-87525-88-0_cub,979-13-87525-88-0_cub,https://editoriallarueca.com/wp-content/uploads/Libro-Regreso-a-la-invisibilidad_Autor-Jose-Vte-Carmona_Genero-Relatos-cortos_Editorial-la-Rueca.jpg,,image/jpeg,1097,1682,Libro-Regreso-a-la-invisibilidad_Autor-Jose-Vte-Carmona_Genero-Relatos-cortos_Editorial-la-Rueca.jpg
+3167,w_MockUp_Invisibilidad,w_mockup_invisibilidad,https://editoriallarueca.com/wp-content/uploads/w_MockUp_Invisibilidad.png,,image/png,1080,1080,w_MockUp_Invisibilidad.png
+3168,Autor José Vte Carmona_Libro Regreso a la invisibilidad_Genero Relatos_Editorial la Rueca,autor-jose-vte-carmona_libro-regreso-a-la-invisibilidad_genero-relatos_editorial-la-rueca,https://editoriallarueca.com/wp-content/uploads/Autor-Jose-Vte-Carmona_Libro-Regreso-a-la-invisibilidad_Genero-Relatos_Editorial-la-Rueca.jpg,,image/jpeg,346,629,Autor-Jose-Vte-Carmona_Libro-Regreso-a-la-invisibilidad_Genero-Relatos_Editorial-la-Rueca.jpg
+2145,Espiral-roja-2,espiral-roja-2,https://editoriallarueca.com/wp-content/uploads/Espiral-roja-2.png,,image/png,800,300,Espiral-roja-2.png
+2146,proceso-asesoramiento,proceso-asesoramiento-2,https://editoriallarueca.com/wp-content/uploads/proceso-asesoramiento.webp,,image/webp,800,600,proceso-asesoramiento.webp
+2147,proceso-presupuesto,proceso-presupuesto-2,https://editoriallarueca.com/wp-content/uploads/proceso-presupuesto.webp,,image/webp,800,600,proceso-presupuesto.webp
+2148,proceso-correccion,proceso-correccion-2,https://editoriallarueca.com/wp-content/uploads/proceso-correccion.webp,,image/webp,800,600,proceso-correccion.webp
+2149,proceso-maquetacion,proceso-maquetacion-2,https://editoriallarueca.com/wp-content/uploads/proceso-maquetacion.webp,,image/webp,800,600,proceso-maquetacion.webp
+2150,proceso-distribucion,proceso-distribucion-2,https://editoriallarueca.com/wp-content/uploads/proceso-distribucion.webp,,image/webp,800,600,proceso-distribucion.webp
+2153,Espiral-roja-3,espiral-roja-3,https://editoriallarueca.com/wp-content/uploads/Espiral-roja-3.png,,image/png,800,300,Espiral-roja-3.png
+2155,Espiral-roja-4,espiral-roja-4,https://editoriallarueca.com/wp-content/uploads/Espiral-roja-4.png,,image/png,800,300,Espiral-roja-4.png
+2167,Espiral-roja-1-1,espiral-roja-1-1,https://editoriallarueca.com/wp-content/uploads/Espiral-roja-1-1.png,,image/png,800,300,Espiral-roja-1-1.png
+2168,firma-almudena,firma-almudena-2,https://editoriallarueca.com/wp-content/uploads/firma-almudena.webp,,image/webp,170,115,firma-almudena.webp
+2169,foto-almudena-web,foto-almudena-web,https://editoriallarueca.com/wp-content/uploads/foto-almudena-web.webp,,image/webp,670,648,foto-almudena-web.webp
+2170,logo-anverso-reverso,logo-anverso-reverso-2,https://editoriallarueca.com/wp-content/uploads/logo-anverso-reverso.webp,,image/webp,300,300,logo-anverso-reverso.webp
+2171,logo-cibes,logo-cibes-2,https://editoriallarueca.com/wp-content/uploads/logo-cibes.webp,,image/webp,300,300,logo-cibes.webp
+2172,logo-acjr,logo-acjr-2,https://editoriallarueca.com/wp-content/uploads/logo-acjr.webp,,image/webp,300,300,logo-acjr.webp
+2600,Alomnso cruz,alomnso-cruz,https://editoriallarueca.com/wp-content/uploads/Alomnso-cruz.png,,image/png,600,400,Alomnso-cruz.png
+2655,woocommerce-placeholder,woocommerce-placeholder,https://editoriallarueca.com/wp-content/uploads/woocommerce-placeholder.webp,,image/webp,1200,1200,woocommerce-placeholder.webp
+2802,Impresion_Manuscritos,impresion_manuscritos,https://editoriallarueca.com/wp-content/uploads/Impresion_Manuscritos.png,,image/png,900,300,Impresion_Manuscritos.png
+2871,Guia-Maestra-De-la-Idea-al-Lector,guia-maestra-de-la-idea-al-lector,https://editoriallarueca.com/wp-content/uploads/Guia-Maestra-De-la-Idea-al-Lector.pdf,,application/pdf,,,Guia-Maestra-De-la-Idea-al-Lector.pdf
+2888,Autoedición,autoedicion,https://editoriallarueca.com/wp-content/uploads/Autoedicion.png,,image/png,1200,1200,Autoedicion.png
+2889,Publicacion_Hibrida,publicacion_hibrida,https://editoriallarueca.com/wp-content/uploads/Publicacion_Hibrida.png,,image/png,1200,1200,Publicacion_Hibrida.png
+2944,Guia_Maestra_De_la_Idea_al_Lector,guia_maestra_de_la_idea_al_lector,https://editoriallarueca.com/wp-content/uploads/Guia_Maestra_De_la_Idea_al_Lector.pdf,,application/pdf,,,Guia_Maestra_De_la_Idea_al_Lector.pdf
+2951,Portada_Guia_escritor_novel,portada_guia_escritor_novel,https://editoriallarueca.com/wp-content/uploads/Portada_Guia_escritor_novel.png,,image/png,848,1264,Portada_Guia_escritor_novel.png
+3056,real-estate-04,real-estate-04,https://editoriallarueca.com/wp-content/uploads/real-estate-04.jpg,,image/jpeg,1920,1181,real-estate-04.jpg
+3057,real-estate-11,real-estate-11,https://editoriallarueca.com/wp-content/uploads/real-estate-11.jpg,,image/jpeg,600,460,real-estate-11.jpg
+3058,real-estate-09,real-estate-09,https://editoriallarueca.com/wp-content/uploads/real-estate-09.jpg,,image/jpeg,600,460,real-estate-09.jpg
+3059,real-estate-12,real-estate-12,https://editoriallarueca.com/wp-content/uploads/real-estate-12.jpg,,image/jpeg,600,460,real-estate-12.jpg
+3060,real-estate-08,real-estate-08,https://editoriallarueca.com/wp-content/uploads/real-estate-08.jpg,,image/jpeg,600,460,real-estate-08.jpg
+3061,real-estate-07,real-estate-07,https://editoriallarueca.com/wp-content/uploads/real-estate-07.jpg,,image/jpeg,600,460,real-estate-07.jpg
+3062,real-estate-10-1-1,real-estate-10-1-1,https://editoriallarueca.com/wp-content/uploads/real-estate-10-1-1.jpg,,image/jpeg,600,460,real-estate-10-1-1.jpg
+3063,real-estate-06,real-estate-06,https://editoriallarueca.com/wp-content/uploads/real-estate-06.jpg,,image/jpeg,1920,555,real-estate-06.jpg
+3067,Libros_en_libreria,libros_en_libreria,https://editoriallarueca.com/wp-content/uploads/Libros_en_libreria.png,,image/png,1730,909,Libros_en_libreria.png
+3078,book-cover-5-1,book-cover-5-1,https://editoriallarueca.com/wp-content/uploads/book-cover-5-1.jpg,,image/jpeg,1600,2400,book-cover-5-1.jpg
+3079,book-cover-1-1,book-cover-1-1,https://editoriallarueca.com/wp-content/uploads/book-cover-1-1.jpg,,image/jpeg,1600,2400,book-cover-1-1.jpg
+3080,book-cover-4-1,book-cover-4-1,https://editoriallarueca.com/wp-content/uploads/book-cover-4-1.jpg,,image/jpeg,1600,2400,book-cover-4-1.jpg
+3081,book-cover-3-1,book-cover-3-1,https://editoriallarueca.com/wp-content/uploads/book-cover-3-1.jpg,,image/jpeg,1600,2400,book-cover-3-1.jpg
+3082,portrait-square-01,portrait-square-01,https://editoriallarueca.com/wp-content/uploads/portrait-square-01.jpg,,image/jpeg,400,400,portrait-square-01.jpg
+3086,Portada_Trabajas_demasiado,portada_trabajas_demasiado,https://editoriallarueca.com/wp-content/uploads/Portada_Trabajas_demasiado.png,,image/png,1111,1600,Portada_Trabajas_demasiado.png
+3089,Guillermo Mayayo,guillermo-mayayo,https://editoriallarueca.com/wp-content/uploads/Guillermo-Mayayo.jpeg,,image/jpeg,683,683,Guillermo-Mayayo.jpeg
+3103,Trabajas_demasiado,trabajas_demasiado,https://editoriallarueca.com/wp-content/uploads/woocommerce_uploads/Trabajas_demasiado-xfrqga.pdf,,application/pdf,,,woocommerce_uploads/Trabajas_demasiado-xfrqga.pdf
+3113,trabajas-demasiado-para-ganar-tan-poco (1),trabajas-demasiado-para-ganar-tan-poco-1,https://editoriallarueca.com/wp-content/uploads/trabajas-demasiado-para-ganar-tan-poco-1.epub,,,,,trabajas-demasiado-para-ganar-tan-poco-1.epub
