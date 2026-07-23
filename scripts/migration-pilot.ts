@@ -5,6 +5,7 @@ import {
   getPilotCliEnvStatus,
   loadPilotCliEnv,
 } from '@/features/migration/wordpress-pilot/env';
+import type { BookCoverRepairResult } from '@/features/migration/wordpress-pilot/book-cover-repair-apply';
 import type { ImageRepairResult } from '@/features/migration/wordpress-pilot/image-repair-apply';
 import type { PilotPlan, PilotResult } from '@/features/migration/wordpress-pilot/types';
 
@@ -17,12 +18,14 @@ interface CliArgs {
   checkRuntime: boolean;
   retryImages: boolean;
   repairImages: boolean;
+  repairBookCovers: boolean;
 }
 
 interface PilotCliRunResult {
   plan: Pick<PilotPlan, 'mode' | 'authors' | 'books' | 'issues'>;
   result: PilotResult | null;
   repairResult?: ImageRepairResult | null;
+  bookCoverRepairResult?: BookCoverRepairResult | null;
   outputDirectory: string;
 }
 
@@ -37,6 +40,7 @@ export interface MigrationPilotCliDependencies {
     confirm?: string;
     retryImages: boolean;
     repairImages: boolean;
+    repairBookCovers: boolean;
   }) => Promise<PilotCliRunResult>;
   cleanupRuntime?: () => Promise<void>;
   log?: (message?: unknown, ...optionalParams: unknown[]) => void;
@@ -52,6 +56,7 @@ function parseArgs(argv: string[]): CliArgs {
     checkRuntime: false,
     retryImages: false,
     repairImages: false,
+    repairBookCovers: false,
   };
 
   for (let index = 0; index < argv.length; index += 1) {
@@ -102,6 +107,11 @@ function parseArgs(argv: string[]): CliArgs {
 
     if (arg === '--repair-images') {
       args.repairImages = true;
+      continue;
+    }
+
+    if (arg === '--repair-book-covers') {
+      args.repairBookCovers = true;
     }
   }
 
@@ -171,14 +181,16 @@ export async function executeMigrationPilotCli(
       throw new Error('Uso: npm run migration:pilot -- --audit <directorio> [--dry-run]');
     }
 
-    const { plan, result, repairResult, outputDirectory } = await runPilotMigration({
-      auditDirectory,
-      outputDirectory: args.outputDirectory,
-      apply: args.apply,
-      confirm: args.confirm,
-      retryImages: args.retryImages,
-      repairImages: args.repairImages,
-    });
+    const { plan, result, repairResult, bookCoverRepairResult, outputDirectory } =
+      await runPilotMigration({
+        auditDirectory,
+        outputDirectory: args.outputDirectory,
+        apply: args.apply,
+        confirm: args.confirm,
+        retryImages: args.retryImages,
+        repairImages: args.repairImages,
+        repairBookCovers: args.repairBookCovers,
+      });
 
     log('[migration:pilot] mode', plan.mode);
     log('[migration:pilot] output', outputDirectory);
@@ -198,6 +210,22 @@ export async function executeMigrationPilotCli(
       log('[migration:pilot] image repair', repairResult.summary);
 
       if (repairResult.summary.failed > 0) {
+        exitCode = 1;
+      }
+    }
+
+    if (bookCoverRepairResult) {
+      const [entry] = bookCoverRepairResult.entries;
+
+      log('[migration:pilot] book cover repair', bookCoverRepairResult.summary);
+
+      if (entry) {
+        log('[migration:pilot] book', entry.candidateKey);
+        log('[migration:pilot] attachment', entry.attachmentId);
+        log('[migration:pilot] action', 'set_book_cover');
+      }
+
+      if (bookCoverRepairResult.summary.failed > 0) {
         exitCode = 1;
       }
     }

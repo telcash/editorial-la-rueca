@@ -149,6 +149,10 @@ function createServices(overrides: Partial<PilotApplyServices> = {}): PilotApply
       })),
     },
     books: {
+      getBookById: vi.fn(async () => ({
+        id: '00000000-0000-4000-8000-000000000101',
+        coverUrl: null,
+      })),
       getBookBySlug: vi.fn(async () => {
         throw notFound('BookNotFoundError');
       }),

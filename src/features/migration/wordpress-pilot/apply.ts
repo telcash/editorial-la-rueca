@@ -45,6 +45,7 @@ export interface PilotApplyServices {
     updateAuthor(id: string, input: UpdateAuthorInput): Promise<PilotApplyAuthor | null>;
   };
   books: {
+    getBookById(id: string): Promise<{ id: string; coverUrl: string | null }>;
     getBookBySlug(slug: string): Promise<PilotApplyBook>;
     createBook(input: CreateBookInput): Promise<PilotApplyBook>;
     updateBook(id: string, input: UpdateBookInput): Promise<PilotApplyBook | null>;

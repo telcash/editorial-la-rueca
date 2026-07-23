@@ -18,7 +18,8 @@
     "db:migrate": "drizzle-kit migrate",
     "db:studio": "drizzle-kit studio",
     "migration:audit": "tsx scripts/migration-audit.ts",
-    "migration:pilot": "node --import ./scripts/register-server-only.mjs --import tsx scripts/migration-pilot.ts"
+    "migration:pilot": "node --import ./scripts/register-server-only.mjs --import tsx scripts/migration-pilot.ts",
+    "migration:book-cover-audit": "tsx scripts/migration-book-cover-audit.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.3",

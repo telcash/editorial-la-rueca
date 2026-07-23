@@ -157,6 +157,10 @@ function createServices(events: string[] = []): PilotApplyServices {
       }),
     },
     books: {
+      getBookById: vi.fn(async () => ({
+        id: 'book-id',
+        coverUrl: null,
+      })),
       getBookBySlug: vi.fn(),
       createBook,
       updateBook: vi.fn(async () => {

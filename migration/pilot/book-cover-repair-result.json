@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-07-23T16:49:40.960Z",
+  "dryRun": false,
+  "summary": {
+    "planned": 0,
+    "applied": 1,
+    "skipped": 0,
+    "failed": 0,
+    "manualActionRequired": 0
+  },
+  "entries": [
+    {
+      "candidateKey": "book:cruce de pasos",
+      "targetId": "9dc918df-8c99-473f-90be-a672fbc74803",
+      "attachmentId": "469",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_CRUCE-DE-PASOS-3a-edicion-CMYK.jpg",
+      "storagePath": "9dc918df-8c99-473f-90be-a672fbc74803/e67eac4d-0706-4e38-ba7a-632d4fb0d696.jpg",
+      "oldCoverUrl": null,
+      "newCoverUrl": "https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/book-covers/9dc918df-8c99-473f-90be-a672fbc74803/e67eac4d-0706-4e38-ba7a-632d4fb0d696.jpg",
+      "status": "applied",
+      "warnings": []
+    }
+  ],
+  "noChange": [
+    "book:el valle de cristal",
+    "book:requiem por un escritor desconocido"
+  ]
+}

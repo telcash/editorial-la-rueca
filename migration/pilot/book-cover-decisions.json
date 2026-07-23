@@ -1,0 +1,12 @@
+{
+  "decisions": {
+    "book:cruce de pasos": {
+      "action": "set_book_cover",
+      "attachmentId": "469"
+    }
+  },
+  "notes": [
+    "Decision puntual aprobada para asignar la portada real de Cruce de Pasos.",
+    "No ejecutar reparacion real sin --apply --repair-book-covers --confirm COVER_REPAIR."
+  ]
+}

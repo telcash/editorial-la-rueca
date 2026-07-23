@@ -2,6 +2,8 @@ import path from 'node:path';
 
 import { readPilotAuditData } from './audit-data';
 import { applyPilotMigration } from './apply';
+import { runBookCoverRepair } from './book-cover-repair-apply';
+import type { BookCoverRepairResult } from './book-cover-repair-apply';
 import {
   createFailedPilotResult,
   createPilotCheckpointWriter,
@@ -23,6 +25,7 @@ export interface PilotCliOptions {
   confirm?: string;
   retryImages?: boolean;
   repairImages?: boolean;
+  repairBookCovers?: boolean;
 }
 
 function markNonRetryableImageFailures(plan: PilotPlan, existingResult: PilotResult | null) {
@@ -61,7 +64,18 @@ export async function runPilotMigration(options: PilotCliOptions) {
     throw new Error('Para reparar imagenes debes usar --apply --repair-images --confirm REPAIR.');
   }
 
-  if (options.apply && !options.repairImages && options.confirm !== 'PILOT') {
+  if (options.apply && options.repairBookCovers && options.confirm !== 'COVER_REPAIR') {
+    throw new Error(
+      'Para reparar portadas debes usar --apply --repair-book-covers --confirm COVER_REPAIR.',
+    );
+  }
+
+  if (
+    options.apply &&
+    !options.repairImages &&
+    !options.repairBookCovers &&
+    options.confirm !== 'PILOT'
+  ) {
     throw new Error('Para aplicar el piloto debes usar --apply --confirm PILOT.');
   }
 
@@ -99,6 +113,25 @@ export async function runPilotMigration(options: PilotCliOptions) {
       plan,
       result: null,
       repairResult,
+      bookCoverRepairResult: null,
+      outputDirectory,
+    };
+  }
+
+  if (options.repairBookCovers) {
+    const bookCoverRepairResult: BookCoverRepairResult = await runBookCoverRepair({
+      outputDirectory,
+      apply: options.apply,
+      confirm: options.confirm,
+      manifest: existingManifest ?? plan.manifest,
+      attachments: data.attachments,
+    });
+
+    return {
+      plan,
+      result: null,
+      repairResult: null,
+      bookCoverRepairResult,
       outputDirectory,
     };
   }
@@ -110,6 +143,7 @@ export async function runPilotMigration(options: PilotCliOptions) {
       plan,
       result: null,
       repairResult: null,
+      bookCoverRepairResult: null,
       outputDirectory,
     };
   }
@@ -126,6 +160,7 @@ export async function runPilotMigration(options: PilotCliOptions) {
       plan,
       result,
       repairResult: null,
+      bookCoverRepairResult: null,
       outputDirectory,
     };
   } catch (error) {
