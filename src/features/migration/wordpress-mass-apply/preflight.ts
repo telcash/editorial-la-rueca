@@ -10,7 +10,10 @@ export async function runMassApplyPreflight(plan: MassApplyPlan): Promise<MassAp
     ]);
 
     for (const author of plan.authors) {
-      if (author.action !== 'CREATE') {
+      if (
+        author.action !== 'CREATE' ||
+        hasAppliedManifestEntry(plan, 'author', author.candidateKey)
+      ) {
         continue;
       }
 
@@ -32,7 +35,7 @@ export async function runMassApplyPreflight(plan: MassApplyPlan): Promise<MassAp
     }
 
     for (const book of plan.books) {
-      if (book.action !== 'CREATE') {
+      if (book.action !== 'CREATE' || hasAppliedManifestEntry(plan, 'book', book.candidateKey)) {
         continue;
       }
 
@@ -68,4 +71,18 @@ export async function runMassApplyPreflight(plan: MassApplyPlan): Promise<MassAp
 
 function isNotFoundError(error: unknown, name: string) {
   return error instanceof Error && error.name === name;
+}
+
+function hasAppliedManifestEntry(
+  plan: MassApplyPlan,
+  entityType: 'author' | 'book',
+  candidateKey: string,
+) {
+  return plan.manifest.entries.some(
+    (entry) =>
+      entry.entityType === entityType &&
+      entry.candidateKey === candidateKey &&
+      entry.status === 'applied' &&
+      Boolean(entry.targetId),
+  );
 }

@@ -529,6 +529,9 @@ function createManifest(params: {
   return {
     generatedAt: params.generatedAt,
     mode: params.mode,
+    planFingerprint: null,
+    currentBatchIndex: 0,
+    completedBatches: [],
     entries,
   };
 }
@@ -598,6 +601,7 @@ function createRollbackPlan(
       relations: [],
       storagePaths: [],
     },
+    orderedOperations: [],
     warnings: ['Rollback destructivo excluye recursos preexisting=true del piloto.'],
   };
 }
@@ -686,8 +690,10 @@ function createInitialResult(
     booksReusedFromPilot: books.filter((book) => book.action === 'REUSE_PILOT').length,
     editionsCreated: 0,
     relationsCreated: 0,
+    relationsRepaired: 0,
     authorImagesUploaded: 0,
     bookCoversUploaded: 0,
+    editionsRepaired: 0,
     skipped:
       authors.filter((author) => author.action === 'SKIP').length +
       books.filter((book) => book.action === 'SKIP').length +

@@ -12,10 +12,14 @@ export type MassApplyCheckpoint =
   | 'pilot_reconciled'
   | 'author_created'
   | 'book_created'
+  | 'relation_repaired'
+  | 'edition_repaired'
   | 'edition_created'
   | 'relation_created'
+  | 'uploaded_pending_db'
   | 'author_image_uploaded'
   | 'book_cover_uploaded'
+  | 'cleanup_failed'
   | 'complete'
   | 'manual_action_required'
   | 'skipped';
@@ -103,8 +107,40 @@ export interface MassApplyManifestEntry {
 export interface MassApplyManifest {
   generatedAt: string;
   mode: 'dry-run' | 'preflight' | 'apply';
+  planFingerprint: string | null;
+  currentBatchIndex: number;
+  completedBatches: number[];
   entries: MassApplyManifestEntry[];
 }
+
+export type MassApplyRollbackOperation =
+  | {
+      action: 'delete_storage_path';
+      bucket: string;
+      path: string;
+      candidateKey: string;
+    }
+  | {
+      action: 'delete_book_relation';
+      bookId: string;
+      authorId: string;
+      candidateKey: string;
+    }
+  | {
+      action: 'delete_book_edition';
+      id: string;
+      candidateKey: string;
+    }
+  | {
+      action: 'delete_book';
+      id: string;
+      candidateKey: string;
+    }
+  | {
+      action: 'delete_author';
+      id: string;
+      candidateKey: string;
+    };
 
 export interface MassApplyRollbackPlan {
   generatedAt: string;
@@ -125,6 +161,7 @@ export interface MassApplyRollbackPlan {
       preexisting: boolean;
     }>;
   };
+  orderedOperations: MassApplyRollbackOperation[];
   warnings: string[];
 }
 
@@ -136,8 +173,10 @@ export interface MassApplyResult {
   booksReusedFromPilot: number;
   editionsCreated: number;
   relationsCreated: number;
+  relationsRepaired: number;
   authorImagesUploaded: number;
   bookCoversUploaded: number;
+  editionsRepaired: number;
   skipped: number;
   manualActionRequired: number;
   partial: number;
@@ -168,7 +207,11 @@ export interface MassApplyConflict {
     | 'TOTAL_RECONCILIATION_FAILED'
     | 'BACKUP_REQUIRED_BEFORE_APPLY'
     | 'PREFLIGHT_DB_UNAVAILABLE'
-    | 'EXISTING_SLUG_WITHOUT_MANIFEST';
+    | 'EXISTING_SLUG_WITHOUT_MANIFEST'
+    | 'PILOT_AUTHOR_NOT_FOUND'
+    | 'PILOT_BOOK_NOT_FOUND'
+    | 'PILOT_ENTITY_MISMATCH'
+    | 'PILOT_BOOK_RECONCILIATION_FAILED';
   severity: 'warning' | 'error';
   entityType: 'author' | 'book' | 'relation' | 'edition' | 'image' | 'runtime';
   candidateKey: string;
