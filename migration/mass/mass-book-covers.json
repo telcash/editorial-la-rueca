@@ -1,0 +1,2047 @@
+[
+  {
+    "bookCandidateKey": "book:el valle de cristal",
+    "sourceWpPostId": "556",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:la salvaje",
+    "sourceWpPostId": "559",
+    "attachmentId": "3021",
+    "filename": "Libro-La-salvaje_Autor-Luis-Gausachs_Genero-Novela_Editorial-la-Rueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro-La-salvaje_Autor-Luis-Gausachs_Genero-Novela_Editorial-la-Rueca.jpg",
+    "score": 110,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:cruce de pasos",
+    "sourceWpPostId": "619",
+    "attachmentId": "469",
+    "filename": "w_CRUCE-DE-PASOS-3a-edicion-CMYK.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/w_CRUCE-DE-PASOS-3a-edicion-CMYK.jpg",
+    "score": 130,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:comer bien en casa",
+    "sourceWpPostId": "565",
+    "attachmentId": "3023",
+    "filename": "Libro-Comer-bien-en-casa_Autora-Veronica-Gomez-Acebo_Genero-Recetas_Editorial-la-Rueca-scaled.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro-Comer-bien-en-casa_Autora-Veronica-Gomez-Acebo_Genero-Recetas_Editorial-la-Rueca.jpg",
+    "score": 80,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:cuando su mirada pasaba por halley",
+    "sourceWpPostId": "568",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:la trenza dorada y otros relatos para tiempos nuevos",
+    "sourceWpPostId": "575",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:requiem por un escritor desconocido",
+    "sourceWpPostId": "589",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:de kolpino a krasny bor",
+    "sourceWpPostId": "592",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:dile a mama que nos conocimos en el cafe tres cantones",
+    "sourceWpPostId": "596",
+    "attachmentId": "3019",
+    "filename": "Libro-Dile-a-mama-que-nos-conocimos-en-el-Cafe-Tres-Cantones-Autor-Fernando-Grijalba_Genero-Novela_Editorial-la-Rueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro-Dile-a-mama-que-nos-conocimos-en-el-Cafe-Tres-Cantones-Autor-Fernando-Grijalba_Genero-Novela_Editorial-la-Rueca.jpg",
+    "score": 92,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones tipo avatar",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:campos de dispersion ascetica",
+    "sourceWpPostId": "598",
+    "attachmentId": "496",
+    "filename": "W_campos_de_dispersion_asceticA-scaled.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/W_campos_de_dispersion_asceticA.jpg",
+    "score": 130,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:teoria metaforica del bestiaro romanico proposito revolucionario la educacion sexual",
+    "sourceWpPostId": "601",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:la vida de adonis",
+    "sourceWpPostId": "606",
+    "attachmentId": "130",
+    "filename": "la-vida-de-adonis.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/la-vida-de-adonis.jpg",
+    "score": 130,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:el azul del mar en los mapas",
+    "sourceWpPostId": "609",
+    "attachmentId": "3016",
+    "filename": "Libro-El-azul-del-mar-en-los-mapas_Autor-Karlos-de-Oro_Genero-Ficcion_.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro-El-azul-del-mar-en-los-mapas_Autor-Karlos-de-Oro_Genero-Ficcion_.jpg",
+    "score": 118,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:el poder de la educacion nos hace infinitos",
+    "sourceWpPostId": "623",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:julio robles garcia compositor",
+    "sourceWpPostId": "628",
+    "attachmentId": "3032",
+    "filename": "libro-Julio-Robles-Garcia-–-Compositor-_Autora-Maria-Dolores-Castellon-Perez_Genero-Musica.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/libro-Julio-Robles-Garcia-–-Compositor-_Autora-Maria-Dolores-Castellon-Perez_Genero-Musica.jpg",
+    "score": 80,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:banquero de carlos v a emilio botin",
+    "sourceWpPostId": "633",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:la canteria en moralzarzal",
+    "sourceWpPostId": "637",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:el delgado hilo de la vida",
+    "sourceWpPostId": "640",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:el joven fenix el resurgir de los dioses egipcios",
+    "sourceWpPostId": "657",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:tiendas y abastos en moralzarzal",
+    "sourceWpPostId": "663",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:yoga volumen 1 2 3 4 5 evolucion integral y evolucion universal",
+    "sourceWpPostId": "683",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:nagasaki",
+    "sourceWpPostId": "690",
+    "attachmentId": "3039",
+    "filename": "Libro-Nagasaki-Antonio-L.-Gomez-Charlin_Genero-Narrativa-gallego.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro-Nagasaki-Antonio-L.-Gomez-Charlin_Genero-Narrativa-gallego.jpg",
+    "score": 140,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:un ameno curso introductorio a la ecologia humana",
+    "sourceWpPostId": "702",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:la ganaderia en moralzarzal",
+    "sourceWpPostId": "710",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:espejos de la realidad",
+    "sourceWpPostId": "717",
+    "attachmentId": "3041",
+    "filename": "LIbro-Espejos-de-la-realidad-Juan-Antonio-Valero_Genero-Articulos-periodisticos.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/LIbro-Espejos-de-la-realidad-Juan-Antonio-Valero_Genero-Articulos-periodisticos.jpg",
+    "score": 80,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:la pulsera de la princesa yoruba",
+    "sourceWpPostId": "724",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:los pensamientos olvidados",
+    "sourceWpPostId": "733",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:la vida sin ti",
+    "sourceWpPostId": "747",
+    "attachmentId": "746",
+    "filename": "w_LavidaSinTi.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/w_LavidaSinTi.jpg",
+    "score": 130,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:relatos de agua dulce",
+    "sourceWpPostId": "751",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:john main apatheia nirvana",
+    "sourceWpPostId": "756",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:un siglo de ferrocarril en ecija memorias del marchenilla",
+    "sourceWpPostId": "762",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:going my way en 40 poemas",
+    "sourceWpPostId": "765",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:ilogica proposicional aforemas y poerismos",
+    "sourceWpPostId": "772",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:thailandia el viaje que cambio el rumbo de mi vida como inverti los obstaculos y mis limitaciones en valores gracias a mi experiencia de vida y al coaching",
+    "sourceWpPostId": "778",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:luna negra",
+    "sourceWpPostId": "793",
+    "attachmentId": "792",
+    "filename": "PortadaLunaNegra.jpeg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/PortadaLunaNegra.jpeg",
+    "score": 130,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:la lista de tareas de mi profe jose",
+    "sourceWpPostId": "1578",
+    "attachmentId": "3030",
+    "filename": "Libro-La-lista-de-tareas-de-mi-profe-Jose_Aurtor_Carlos-Jose-Olmedo-Batista_Genero-Libro-Infantil.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro-La-lista-de-tareas-de-mi-profe-Jose_Aurtor_Carlos-Jose-Olmedo-Batista_Genero-Libro-Infantil.jpg",
+    "score": 80,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:biodiversidad sostenibilidad supervivencia e inmortalidad",
+    "sourceWpPostId": "802",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:quieres o debes ser feliz darse cuenta de aquello que nos impide ser felices es el primer paso para ser mas feliz",
+    "sourceWpPostId": "807",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:el camino del angel la realidad de un sueno",
+    "sourceWpPostId": "813",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:sus ojos hablaron",
+    "sourceWpPostId": "819",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:diario de un comunero",
+    "sourceWpPostId": "835",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:amar a fondo perdido y la decision",
+    "sourceWpPostId": "868",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:que cosas",
+    "sourceWpPostId": "879",
+    "attachmentId": "878",
+    "filename": "w_QueCosasPortada.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/w_QueCosasPortada.jpg",
+    "score": 130,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:no te vi venir pues jamas te hubiese dejado entrar",
+    "sourceWpPostId": "882",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:estampas de un pueblo andaluz 1960 1974",
+    "sourceWpPostId": "885",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:los dictadores y las mujeres adolf hitler",
+    "sourceWpPostId": "894",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:poesia y whisky",
+    "sourceWpPostId": "904",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:alma en llamas",
+    "sourceWpPostId": "909",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:tratado de la ausencia y otros relatos",
+    "sourceWpPostId": "915",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:el rol principal de una pelicula llamada vida",
+    "sourceWpPostId": "921",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:la flor malva",
+    "sourceWpPostId": "926",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:leeme si te atreves",
+    "sourceWpPostId": "932",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares una narracion audaz para un lector mas inteligente que lerdo belmonte ano 2017 al 2022 libro 1",
+    "sourceWpPostId": "938",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:humor y prosa de un ajedrecista",
+    "sourceWpPostId": "942",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:los acorralados",
+    "sourceWpPostId": "946",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:diferencias de genero en la expresion conductual de la violencia",
+    "sourceWpPostId": "954",
+    "attachmentId": "2990",
+    "filename": "Libro_Diferencias-de-genero-en-la-expresion-conductual-de-la-violencia_Autora_Maria-Isabel-Herrero-de-la-Torre_Genero-JFF-Editorial-la-rueca-.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Diferencias-de-genero-en-la-expresion-conductual-de-la-violencia_Autora_Maria-Isabel-Herrero-de-la-Torre_Genero-JFF-Editorial-la-rueca-.jpg",
+    "score": 80,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:encuentros campezanos",
+    "sourceWpPostId": "957",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:al otro lado del rio",
+    "sourceWpPostId": "963",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:el maestro de salamanca consideracion del derecho internacional humanitario",
+    "sourceWpPostId": "969",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:santa cruz de posguerra conversaciones en blanco y negro",
+    "sourceWpPostId": "978",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:detras de la corteza",
+    "sourceWpPostId": "990",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:quiero estar contigo",
+    "sourceWpPostId": "1002",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:entre realidades y suenos",
+    "sourceWpPostId": "1007",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:falsas esperanzas",
+    "sourceWpPostId": "1012",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:perdoname por los poemas que te escribi",
+    "sourceWpPostId": "1017",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:el panuelo de marino",
+    "sourceWpPostId": "1024",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:el rumor de la marea",
+    "sourceWpPostId": "1029",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:el viaje aventurero de nico",
+    "sourceWpPostId": "1034",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:pollos en la memoria",
+    "sourceWpPostId": "1040",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:matame de frente",
+    "sourceWpPostId": "1046",
+    "attachmentId": "1045",
+    "filename": "W_portada-3.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/W_portada-3.jpg",
+    "score": 106,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: portada",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:de juan a juan el musical el libreto y un relato",
+    "sourceWpPostId": "1052",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:daemon lilith",
+    "sourceWpPostId": "1057",
+    "attachmentId": "1058",
+    "filename": "DaemonLilithMockup-scaled.png",
+    "url": "https://editoriallarueca.com/wp-content/uploads/DaemonLilithMockup.png",
+    "score": 94,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "imagen horizontal o panoramica"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:letargo",
+    "sourceWpPostId": "1062",
+    "attachmentId": "1061",
+    "filename": "w_LetargoPortada.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/w_LetargoPortada.jpg",
+    "score": 130,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:la barca del portugues",
+    "sourceWpPostId": "1069",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:de estrellas gaviotas y poemas",
+    "sourceWpPostId": "1073",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:y la vida sigue",
+    "sourceWpPostId": "1078",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:una inolvidable noche de futbol en la pared",
+    "sourceWpPostId": "1084",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:en la recta final",
+    "sourceWpPostId": "1088",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:duns scoto versus tomas de aquino la debilidad del neocalcedonismo tomista",
+    "sourceWpPostId": "1094",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:placa blanca dignidad sobre el pecho",
+    "sourceWpPostId": "1099",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:la vida de adonis la impunidad",
+    "sourceWpPostId": "1108",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:el perfume de las emociones",
+    "sourceWpPostId": "1113",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:entrevistas",
+    "sourceWpPostId": "1121",
+    "attachmentId": "1120",
+    "filename": "w_EntrevistasPortada.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/w_EntrevistasPortada.jpg",
+    "score": 130,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:humor prosa y una jugadora",
+    "sourceWpPostId": "1131",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:ligero como la brisa",
+    "sourceWpPostId": "1136",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:prestoses xaranes de folixes y xordes nel conceyu de mieres",
+    "sourceWpPostId": "1161",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:de barro y silencio",
+    "sourceWpPostId": "1167",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:apuesta personal",
+    "sourceWpPostId": "1172",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:la muerte de adonis los impunes",
+    "sourceWpPostId": "1177",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:el poder de la magia de la comunicacion",
+    "sourceWpPostId": "1182",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:la inteligencia artificial en educacion fisica",
+    "sourceWpPostId": "1187",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:inteligencia artificial en educacion fisica",
+    "sourceWpPostId": "1194",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:sutiles percepciones de una realidad",
+    "sourceWpPostId": "1198",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:amaremos en libertad",
+    "sourceWpPostId": "1204",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:esferas temporales aforismos meditaciones y otros escritos breve recopilacion",
+    "sourceWpPostId": "1209",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:la sombra del azar",
+    "sourceWpPostId": "1214",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:al final de la escapada memoria personal 1951 2011",
+    "sourceWpPostId": "1219",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:estasimo",
+    "sourceWpPostId": "1230",
+    "attachmentId": "1229",
+    "filename": "w_Estasimo-portada.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/w_Estasimo-portada.jpg",
+    "score": 148,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: portada",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:haikus en el camino",
+    "sourceWpPostId": "1235",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:la ruta de las mariposas",
+    "sourceWpPostId": "1246",
+    "attachmentId": "1245",
+    "filename": "w_LA-RUTA-DE-LAS-MARIPOSAS_portada.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/w_LA-RUTA-DE-LAS-MARIPOSAS_portada.jpg",
+    "score": 148,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: portada",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:versos de madrugada con sentido",
+    "sourceWpPostId": "1256",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:cuentos para amara la nieve y amara toca el tambor",
+    "sourceWpPostId": "1302",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:beretricce el palacio velado",
+    "sourceWpPostId": "1313",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:el cierzo tatuado",
+    "sourceWpPostId": "1325",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:quedamos para despedirnos pero ella no lo sabia pensamientos en un pequeno relato sobre la amistad",
+    "sourceWpPostId": "1341",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:cuentos para amara dona bota la burbuja de mar",
+    "sourceWpPostId": "1348",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:oraculo de la fe el camino del alma",
+    "sourceWpPostId": "1358",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:voces del alma el arte de escuchar a traves del tarot",
+    "sourceWpPostId": "1361",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:nido de barro haikus",
+    "sourceWpPostId": "1365",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:con su permiso don alvaro historias de viso del marques",
+    "sourceWpPostId": "1367",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:r",
+    "sourceWpPostId": "1376",
+    "attachmentId": "1039",
+    "filename": "w_POLLOS_maq2_portada_OK2_sinmarcas.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/w_POLLOS_maq2_portada_OK2_sinmarcas.jpg",
+    "score": 148,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: portada",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:el canto de las raices cartografias del ser y existir",
+    "sourceWpPostId": "1392",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:zoografias",
+    "sourceWpPostId": "1422",
+    "attachmentId": "1423",
+    "filename": "mockUp_Zoografiaspeq-scaled.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/mockUp_Zoografiaspeq.jpg",
+    "score": 148,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: mockup",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:cartas a diego reflexiones sobre un nacimiento",
+    "sourceWpPostId": "1431",
+    "attachmentId": "3012",
+    "filename": "Libro_Cartas-a-Diego-–-Reflexiones-sobre-un-nacimiento_Autor_Francisco-Marin-Vargas_Genero-BG_Editorial-la-Rueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Cartas-a-Diego-–-Reflexiones-sobre-un-nacimiento_Autor_Francisco-Marin-Vargas_Genero-BG_Editorial-la-Rueca.jpg",
+    "score": 118,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:amor amor",
+    "sourceWpPostId": "1435",
+    "attachmentId": "1434",
+    "filename": "w_PortadaAmorAmor.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/w_PortadaAmorAmor.jpg",
+    "score": 130,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:rodrigo se fue a otro lugar",
+    "sourceWpPostId": "1454",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:una escuela de musica",
+    "sourceWpPostId": "1457",
+    "attachmentId": "3011",
+    "filename": "Libro_Una-escuela-de-musica_Autor_-Juan-Jose-Velasco-Sanchez-Mayoral_Genero-FA_Editorial-la-Rueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Una-escuela-de-musica_Autor_-Juan-Jose-Velasco-Sanchez-Mayoral_Genero-FA_Editorial-la-Rueca.jpg",
+    "score": 118,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:la ultima carta",
+    "sourceWpPostId": "1473",
+    "attachmentId": "3007",
+    "filename": "Libro_La-ultima-carta_Autor_Alonso-Cruz-Leon_Genero-HP-Editorial-la-Rueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_La-ultima-carta_Autor_Alonso-Cruz-Leon_Genero-HP-Editorial-la-Rueca.jpg",
+    "score": 118,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:arcanum la tora de minerva",
+    "sourceWpPostId": "1483",
+    "attachmentId": "3006",
+    "filename": "Libro_Arcanum–La-tora-de-Minerva_Autora_Minerva-Buiza_Genero-VXFC1-Editorial-la-Rueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Arcanum–La-tora-de-Minerva_Autora_Minerva-Buiza_Genero-VXFC1-Editorial-la-Rueca.jpg",
+    "score": 148,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:de origine nostra fatum nostrum",
+    "sourceWpPostId": "1518",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:estrategias educativas a traves del teatro musical experiencias y propuesta metodologica del taller de musicales volumen 1 seleccion de titulos para el aula analisis cinematografico y escenico",
+    "sourceWpPostId": "1526",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:dias de galerna",
+    "sourceWpPostId": "1539",
+    "attachmentId": "3003",
+    "filename": "Libro_Dias-de-Galerna_Autor_Rodrigo-Vazquez_Genero-WT-Editorial-la-Rueca--scaled.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Dias-de-Galerna_Autor_Rodrigo-Vazquez_Genero-WT-Editorial-la-Rueca-.jpg",
+    "score": 118,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:monedas del corazon",
+    "sourceWpPostId": "1548",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:famosa gabardina azul",
+    "sourceWpPostId": "1560",
+    "attachmentId": "3001",
+    "filename": "Libro_Famosa-gabardina-azul_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Famosa-gabardina-azul_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca.jpg",
+    "score": 50,
+    "confidence": "medium",
+    "status": "MANUAL_REVIEW",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:el poderoso sir tristan en la saga del prince valiant 1937 1971 de harold foster la apoteosis medieval de un arte contemporaneo",
+    "sourceWpPostId": "1569",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:christus verbo y verso segun un posadero",
+    "sourceWpPostId": "1585",
+    "attachmentId": "1587",
+    "filename": "w_fotoPadreInaki.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/w_fotoPadreInaki.jpg",
+    "score": 42,
+    "confidence": "low",
+    "status": "NO_AUTO_UPLOAD",
+    "reasons": [
+      "filename/title contiene señal de portada: portada",
+      "coincide con _thumbnail_id del registro legacy",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:el valor de la amistad un viaje al pais de las nubes",
+    "sourceWpPostId": "1602",
+    "attachmentId": "2996",
+    "filename": "Libro_El-valor-de-la-amistad-–-Un-viaje-al-pais-de-las-Nubes_Autora_Mari-Carmen-Gordillo-Gonzalez_Genero-YF-Editorial-la-Rueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_El-valor-de-la-amistad-–-Un-viaje-al-pais-de-las-Nubes_Autora_Mari-Carmen-Gordillo-Gonzalez_Genero-YF-Editorial-la-Rueca.jpg",
+    "score": 80,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:planes enlazados",
+    "sourceWpPostId": "1614",
+    "attachmentId": "1612",
+    "filename": "w_portadaPlanes.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/w_portadaPlanes.jpg",
+    "score": 88,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:mariposas en el jardin",
+    "sourceWpPostId": "1616",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:metodo sah g maes 36 caminos de curacion para la mente el cuerpo y el espiritual",
+    "sourceWpPostId": "1633",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:el musical como vehiculo de aprendizaje",
+    "sourceWpPostId": "1644",
+    "attachmentId": "2992",
+    "filename": "Libro_El-musical-como-vehiculo-de-aprendizaje_Autora_Sara-Sanchez-Prieto_Genero-ANC-Editorial-la-Rueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_El-musical-como-vehiculo-de-aprendizaje_Autora_Sara-Sanchez-Prieto_Genero-ANC-Editorial-la-Rueca.jpg",
+    "score": 80,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:entre lineas reflejos de un tiempo convulso",
+    "sourceWpPostId": "1649",
+    "attachmentId": "2991",
+    "filename": "Libro_Entre-lineas-reflejos-de-un-tiempo-convulso_Autor_Juan-Antonio-Valero-Casado_Genero-DN-Editorioal-La-Rueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Entre-lineas-reflejos-de-un-tiempo-convulso_Autor_Juan-Antonio-Valero-Casado_Genero-DN-Editorioal-La-Rueca.jpg",
+    "score": 50,
+    "confidence": "medium",
+    "status": "MANUAL_REVIEW",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:pajaro en el alambre",
+    "sourceWpPostId": "1681",
+    "attachmentId": "2985",
+    "filename": "Libro_Pajaro-en-el-Alambre_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca-scaled.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Pajaro-en-el-Alambre_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca.jpg",
+    "score": 50,
+    "confidence": "medium",
+    "status": "MANUAL_REVIEW",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares tomo 2",
+    "sourceWpPostId": "1686",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:otros oficios en moralzarzal",
+    "sourceWpPostId": "1712",
+    "attachmentId": "2988",
+    "filename": "Libro_Otros-Oficios-en-Moralzarzal_Autor_Antonio-Lopez-Hurtado_genero-GP-Editorial-la-Rueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Otros-Oficios-en-Moralzarzal_Autor_Antonio-Lopez-Hurtado_genero-GP-Editorial-la-Rueca.jpg",
+    "score": 50,
+    "confidence": "medium",
+    "status": "MANUAL_REVIEW",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:libero mi alma con 131 angeles",
+    "sourceWpPostId": "1722",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:monasterio de san lorenzo de el escorial una visita interior",
+    "sourceWpPostId": "1730",
+    "attachmentId": "2987",
+    "filename": "Libro_Monasterio-de-San-Lorenzo-de-El-Escorial-–-Una-visita-interior_Autor_Santiago-Garcia-Gonzalez_Genero-WTGC_Editorial-la-Rueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Monasterio-de-San-Lorenzo-de-El-Escorial-–-Una-visita-interior_Autor_Santiago-Garcia-Gonzalez_Genero-WTGC_Editorial-la-Rueca.jpg",
+    "score": 50,
+    "confidence": "medium",
+    "status": "MANUAL_REVIEW",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:compendio sobre los ejercicios y el arte militar reunido en tres libros",
+    "sourceWpPostId": "1744",
+    "attachmentId": "2997",
+    "filename": "Libro_Compendio-sobre-los-ejercicios-y-el-arte-militar-reunido-en-tres-libros_Traduccion_-Elena-Miramontes_Genero-HB-Editorial-la-Rueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Compendio-sobre-los-ejercicios-y-el-arte-militar-reunido-en-tres-libros_Traduccion_-Elena-Miramontes_Genero-HB-Editorial-la-Rueca.jpg",
+    "score": 80,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:el dolor de un alma sin memoria",
+    "sourceWpPostId": "1750",
+    "attachmentId": "2986",
+    "filename": "Libro_El-dolor-de-un-alma-sin-memoria_Autor_Diego-Gomez-Costa_Fenero-FA-Editorial-la-Rueca-copia.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_El-dolor-de-un-alma-sin-memoria_Autor_Diego-Gomez-Costa_Fenero-FA-Editorial-la-Rueca-copia.jpg",
+    "score": 50,
+    "confidence": "medium",
+    "status": "MANUAL_REVIEW",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:mano a mano",
+    "sourceWpPostId": "1780",
+    "attachmentId": "1781",
+    "filename": "w_MockUp_ManoAMano.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/w_MockUp_ManoAMano.jpg",
+    "score": 122,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: mockup",
+      "coincide con imagen_destacada_2 del registro legacy",
+      "imagen horizontal o panoramica"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:perderse encontrarse despertar",
+    "sourceWpPostId": "1787",
+    "attachmentId": "2982",
+    "filename": "Libro_-Perderse-Encontrarse-Despertar_Autora_Marina-A.-Dominguez_Genero_Poesia-DC_Editorial-la-Rueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_-Perderse-Encontrarse-Despertar_Autora_Marina-A.-Dominguez_Genero_Poesia-DC_Editorial-la-Rueca.jpg",
+    "score": 148,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:los mejores cortos de gomez rosas cualquier parecido con la realidad es pura coincidencia",
+    "sourceWpPostId": "1798",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:evocacion y sucesos de dolores la tuerta una historia del mundo rural",
+    "sourceWpPostId": "1821",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:azul",
+    "sourceWpPostId": "1834",
+    "attachmentId": "279",
+    "filename": "w_ElAzulMar.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/w_ElAzulMar.jpg",
+    "score": 130,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:memorias de opera",
+    "sourceWpPostId": "1851",
+    "attachmentId": "2972",
+    "filename": "Libro_Memorias-de-Opera_Autor_PIERO-POGGIALINI_Genero_BG_EditorialLaRueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Memorias-de-Opera_Autor_PIERO-POGGIALINI_Genero_BG_EditorialLaRueca.jpg",
+    "score": 42,
+    "confidence": "low",
+    "status": "NO_AUTO_UPLOAD",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:descartes y su duda hiperbolica",
+    "sourceWpPostId": "1858",
+    "attachmentId": "2971",
+    "filename": "Libro_-Descartes-y-su-duda-hiperbolica_Autor_AlonsoCruz_GeneroDNF_EditorialLaRueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_-Descartes-y-su-duda-hiperbolica_Autor_AlonsoCruz_GeneroDNF_EditorialLaRueca.jpg",
+    "score": 50,
+    "confidence": "medium",
+    "status": "MANUAL_REVIEW",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: portada, libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:ilusiones",
+    "sourceWpPostId": "1863",
+    "attachmentId": "2755",
+    "filename": "w_Portada_Ilusiones.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/w_Portada_Ilusiones.jpg",
+    "score": 148,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: portada",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:cartas a un hombre",
+    "sourceWpPostId": "1866",
+    "attachmentId": "2977",
+    "filename": "Libro_Cartas-a-un-hombre_Autor_Rosa-Ma-Escudero_Genero-DNF_Editorial-la-Rueca-.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Cartas-a-un-hombre_Autor_Rosa-Ma-Escudero_Genero-DNF_Editorial-la-Rueca-.jpg",
+    "score": 50,
+    "confidence": "medium",
+    "status": "MANUAL_REVIEW",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:el pueblo judio legado y nexo con judea una historia milenaria",
+    "sourceWpPostId": "1881",
+    "attachmentId": "2970",
+    "filename": "Libro_El-pueblo-Judio.-Legado-y-nexo-con-Judea-Una-historia-Milenaria_Autor_DiegoGomezCosta_GeneroHBJF1_EditorialLaRueca.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_El-pueblo-Judio.-Legado-y-nexo-con-Judea-Una-historia-Milenaria_Autor_DiegoGomezCosta_GeneroHBJF1_EditorialLaRueca.jpg",
+    "score": 50,
+    "confidence": "medium",
+    "status": "MANUAL_REVIEW",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:fuerteventura luz y silencios",
+    "sourceWpPostId": "1893",
+    "attachmentId": "2969",
+    "filename": "Libro_FuerteventuraLuzySilencios_Autor_Antonio-Olmedo_Genero-Turismo_EditorialLaRueca-.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_FuerteventuraLuzySilencios_Autor_Antonio-Olmedo_Genero-Turismo_EditorialLaRueca-.jpg",
+    "score": 110,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:ndong el jubilado",
+    "sourceWpPostId": "1902",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:analisis de errores morfosintacticos en un aula de espanol le el caso del grupo de estudiantes del nivel b2 de secundaria en guinea ecuatorial al expresarse por escrito en espanol",
+    "sourceWpPostId": "1917",
+    "attachmentId": null,
+    "filename": null,
+    "url": null,
+    "score": null,
+    "confidence": "none",
+    "status": "NO_COVER",
+    "reasons": ["No hay bestCandidate suficiente; no se fuerza portada."]
+  },
+  {
+    "bookCandidateKey": "book:confesiones verdaderas de un verdadero cascarrabias",
+    "sourceWpPostId": "1932",
+    "attachmentId": "2938",
+    "filename": "Libro_Confesiones-verdaderas-de-un-verdadero-cascarrabias_Autor_FcoBreijo_genero-WH-humor.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Confesiones-verdaderas-de-un-verdadero-cascarrabias_Autor_FcoBreijo_genero-WH-humor.jpg",
+    "score": 118,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:gris mas bien plomo",
+    "sourceWpPostId": "1947",
+    "attachmentId": "2927",
+    "filename": "Libro_Gris-mas-bien-plomo_Autora_ElgaReategui_Genero_Novela-FA.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Gris-mas-bien-plomo_Autora_ElgaReategui_Genero_Novela-FA.jpg",
+    "score": 80,
+    "confidence": "high",
+    "status": "AUTO_UPLOAD_CANDIDATE",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:el joven clonado",
+    "sourceWpPostId": "1953",
+    "attachmentId": "2926",
+    "filename": "libro_El-joven-clonado_Autor_LuisGausach_Genero-FA-Ficcion-contemporanea.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/libro_El-joven-clonado_Autor_LuisGausach_Genero-FA-Ficcion-contemporanea.jpg",
+    "score": 50,
+    "confidence": "medium",
+    "status": "MANUAL_REVIEW",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  },
+  {
+    "bookCandidateKey": "book:viajando ligero",
+    "sourceWpPostId": "2089",
+    "attachmentId": "2925",
+    "filename": "Libro_ViajandoLigero_Autor_GuillermoM.Schrem_Genero-FA-Ficcion-contemporanea.jpg",
+    "url": "https://editoriallarueca.com/wp-content/uploads/Libro_ViajandoLigero_Autor_GuillermoM.Schrem_Genero-FA-Ficcion-contemporanea.jpg",
+    "score": 50,
+    "confidence": "medium",
+    "status": "MANUAL_REVIEW",
+    "reasons": [
+      "filename contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ]
+  }
+]

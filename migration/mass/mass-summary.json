@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-07-23T17:10:59.288Z",
+  "sources": {
+    "totalAuthorsCpt": 188,
+    "totalLegacyBookRows": 158,
+    "totalUniqueLegacyBooks": 156,
+    "totalRelationships": 158,
+    "totalAttachments": 1071
+  },
+  "authors": {
+    "totalCandidates": 188,
+    "ready": 103,
+    "duplicateDecision": 85,
+    "manualReview": 0,
+    "skipped": 0,
+    "withSafePhoto": 116,
+    "tooLarge": 0,
+    "noImage": 0
+  },
+  "books": {
+    "totalCandidates": 156,
+    "ready": 155,
+    "blockedDuplicate": 0,
+    "manualReview": 0,
+    "skipped": 0,
+    "inferredEditions": 156,
+    "highConfidenceCover": 40,
+    "mediumCover": 11,
+    "lowCover": 2,
+    "noCover": 103
+  },
+  "relations": {
+    "auto": 87,
+    "manual": 0,
+    "blocked": 71
+  },
+  "images": {
+    "authorPhotosSafe": 116,
+    "bookCoversHigh": 40,
+    "manualReview": 83,
+    "tooLarge": 0
+  },
+  "blockers": 156,
+  "manualReview": {
+    "total": 170,
+    "authorDuplicates": 85,
+    "bookDuplicates": 0,
+    "authorImages": 72,
+    "bookCovers": 13,
+    "unmodeledFields": 5
+  },
+  "redirects": 344
+}

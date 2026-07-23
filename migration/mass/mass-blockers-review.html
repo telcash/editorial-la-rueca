@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mass Blockers Review</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 24px;
+        color: #111;
+        background: #f7f7f5;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: Georgia, serif;
+      }
+      .group {
+        margin: 0 0 32px;
+        padding: 20px;
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 12px;
+      }
+      .card {
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background: #fff;
+      }
+      img,
+      .placeholder {
+        width: 96px;
+        height: 96px;
+        object-fit: cover;
+        border-radius: 6px;
+        background: #eee;
+        display: grid;
+        place-items: center;
+        font-size: 12px;
+        color: #666;
+      }
+      pre {
+        overflow: auto;
+        background: #111;
+        color: #f5f5f5;
+        padding: 16px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mass Blockers Review</h1>
+    <section>
+      <h2>Resumen general</h2>
+      <ul>
+        <li>Duplicate groups: 29</li>
+        <li>Registros afectados: 85</li>
+        <li>MERGE_HIGH_CONFIDENCE: 7</li>
+        <li>LIKELY_MERGE_MANUAL_CONFIRMATION: 22</li>
+        <li>KEEP_SEPARATE: 0</li>
+        <li>MANUAL_REVIEW: 0</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Relaciones bloqueadas</h2>
+      <pre>
+{
+  &quot;before&quot;: {
+    &quot;ready&quot;: 87,
+    &quot;blocked&quot;: 71,
+    &quot;manual&quot;: 0
+  },
+  &quot;causes&quot;: {
+    &quot;BLOCKED_BY_AUTHOR_DUPLICATE&quot;: 59,
+    &quot;BLOCKED_BY_AUTHOR_DUPLICATE_RESOLVABLE&quot;: 11,
+    &quot;INVALID_BOOK_REFERENCE&quot;: 1
+  },
+  &quot;afterHighConfidence&quot;: {
+    &quot;ready&quot;: 98,
+    &quot;stillBlocked&quot;: 60,
+    &quot;duplicateBookAuthorRelations&quot;: 0,
+    &quot;booksWithZeroAuthors&quot;: [
+      &quot;book:el valle de cristal&quot;,
+      &quot;book:el poder de la educacion nos hace infinitos&quot;,
+      &quot;book:julio robles garcia compositor&quot;,
+      &quot;book:banquero de carlos v a emilio botin&quot;,
+      &quot;book:tiendas y abastos en moralzarzal&quot;,
+      &quot;book:la ganaderia en moralzarzal&quot;,
+      &quot;book:espejos de la realidad&quot;,
+      &quot;book:la pulsera de la princesa yoruba&quot;,
+      &quot;book:los pensamientos olvidados&quot;,
+      &quot;book:la vida sin ti&quot;,
+      &quot;book:going my way en 40 poemas&quot;,
+      &quot;book:la lista de tareas de mi profe jose&quot;,
+      &quot;book:el camino del angel la realidad de un sueno&quot;,
+      &quot;book:sus ojos hablaron&quot;,
+      &quot;book:no te vi venir pues jamas te hubiese dejado entrar&quot;,
+      &quot;book:poesia y whisky&quot;,
+      &quot;book:de los rollos del mar muerto a los de rodrigo de lares una narracion audaz para un lector mas inteligente que lerdo belmonte ano 2017 al 2022 libro 1&quot;,
+      &quot;book:humor y prosa de un ajedrecista&quot;,
+      &quot;book:perdoname por los poemas que te escribi&quot;,
+      &quot;book:el rumor de la marea&quot;,
+      &quot;book:entrevistas&quot;,
+      &quot;book:humor prosa y una jugadora&quot;,
+      &quot;book:ligero como la brisa&quot;,
+      &quot;book:de barro y silencio&quot;,
+      &quot;book:la inteligencia artificial en educacion fisica&quot;,
+      &quot;book:esferas temporales aforismos meditaciones y otros escritos breve recopilacion&quot;,
+      &quot;book:estasimo&quot;,
+      &quot;book:haikus en el camino&quot;,
+      &quot;book:versos de madrugada con sentido&quot;,
+      &quot;book:cuentos para amara la nieve y amara toca el tambor&quot;,
+      &quot;book:el cierzo tatuado&quot;,
+      &quot;book:quedamos para despedirnos pero ella no lo sabia pensamientos en un pequeno relato sobre la amistad&quot;,
+      &quot;book:cuentos para amara dona bota la burbuja de mar&quot;,
+      &quot;book:oraculo de la fe el camino del alma&quot;,
+      &quot;book:voces del alma el arte de escuchar a traves del tarot&quot;,
+      &quot;book:nido de barro haikus&quot;,
+      &quot;book:zoografias&quot;,
+      &quot;book:cartas a diego reflexiones sobre un nacimiento&quot;,
+      &quot;book:una escuela de musica&quot;,
+      &quot;book:la ultima carta&quot;,
+      &quot;book:arcanum la tora de minerva&quot;,
+      &quot;book:estrategias educativas a traves del teatro musical experiencias y propuesta metodologica del taller de musicales volumen 1 seleccion de titulos para el aula analisis cinematografico y escenico&quot;,
+      &quot;book:famosa gabardina azul&quot;,
+      &quot;book:christus verbo y verso segun un posadero&quot;,
+      &quot;book:el musical como vehiculo de aprendizaje&quot;,
+      &quot;book:entre lineas reflejos de un tiempo convulso&quot;,
+      &quot;book:pajaro en el alambre&quot;,
+      &quot;book:de los rollos del mar muerto a los de rodrigo de lares tomo 2&quot;,
+      &quot;book:otros oficios en moralzarzal&quot;,
+      &quot;book:mano a mano&quot;,
+      &quot;book:los mejores cortos de gomez rosas cualquier parecido con la realidad es pura coincidencia&quot;,
+      &quot;book:azul&quot;,
+      &quot;book:descartes y su duda hiperbolica&quot;,
+      &quot;book:ilusiones&quot;,
+      &quot;book:ndong el jubilado&quot;,
+      &quot;book:analisis de errores morfosintacticos en un aula de espanol le el caso del grupo de estudiantes del nivel b2 de secundaria en guinea ecuatorial al expresarse por escrito en espanol&quot;,
+      &quot;book:viajando ligero&quot;
+    ],
+    &quot;multiAuthorBooks&quot;: []
+  }
+}</pre>
+    </section>
+    <section>
+      <h2>book:r</h2>
+      <pre>
+{
+  &quot;status&quot;: &quot;MANUAL_REVIEW&quot;,
+  &quot;sourceWpPostId&quot;: &quot;1376&quot;,
+  &quot;titleRaw&quot;: &quot;R&quot;,
+  &quot;tfLibroRaw&quot;: &quot;R&quot;,
+  &quot;normalizedTitle&quot;: &quot;r&quot;,
+  &quot;author&quot;: &quot;María Isabel Martínez Gilaranz&quot;,
+  &quot;rawReviewPreview&quot;: &quot;Qué ocurre cuando una mujer que cree que no es capaz de hacer algo, de la noche a la mañana de la forma más inesperada, lo logra? R entra a trabajar como camarero, en una empresa y conoce a una alta ejecutiva, que le revela su gran secreto... Poco a poco enta…&quot;,
+  &quot;slug&quot;: &quot;r&quot;,
+  &quot;attachments&quot;: [
+    {
+      &quot;attachmentId&quot;: &quot;1379&quot;,
+      &quot;url&quot;: &quot;https://editoriallarueca.com/wp-content/uploads/w_FotoMariaIsabel.jpg&quot;,
+      &quot;reason&quot;: &quot;thumbnailId en books-candidates.csv&quot;
+    }
+  ],
+  &quot;oldUrl&quot;: &quot;https://editoriallarueca.com/autor/maria-isabel-martinez-gilaranz/&quot;,
+  &quot;hiddenCharacterEvidence&quot;: [],
+  &quot;reasons&quot;: [
+    &quot;El libro queda bloqueado porque el titulo normalizado genera slug demasiado corto para createBookSchema.&quot;,
+    &quot;tf_libro contiene un unico caracter visible: requiere decision editorial.&quot;
+  ]
+}</pre>
+    </section>
+    <section>
+      <h2>Slug conflicts</h2>
+      <pre>[]</pre>
+    </section>
+    <section>
+      <h2>Simulation results</h2>
+      <pre>
+{
+  &quot;before&quot;: {
+    &quot;authorsReady&quot;: 103,
+    &quot;authorsBlocked&quot;: 85,
+    &quot;relationsReady&quot;: 87,
+    &quot;relationsBlocked&quot;: 71,
+    &quot;booksBlocked&quot;: 1
+  },
+  &quot;afterHighConfidence&quot;: {
+    &quot;uniqueAuthorsExpected&quot;: 179,
+    &quot;authorsReady&quot;: 119,
+    &quot;authorsStillManual&quot;: 69,
+    &quot;relationsReady&quot;: 98,
+    &quot;relationsStillBlocked&quot;: 60,
+    &quot;booksReady&quot;: 155,
+    &quot;remainingBlockers&quot;: 130
+  }
+}</pre>
+    </section>
+  </body>
+</html>

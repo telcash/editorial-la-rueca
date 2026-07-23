@@ -1,0 +1,2372 @@
+[
+  {
+    "bookCandidateKey": "book:el valle de cristal",
+    "authorCandidateKey": "author:556",
+    "sourceWpPostId": "556",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:556",
+      "bookCandidateKey": "book:el valle de cristal"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la salvaje",
+    "authorCandidateKey": "author:559",
+    "sourceWpPostId": "559",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:559",
+      "bookCandidateKey": "book:la salvaje"
+    }
+  },
+  {
+    "bookCandidateKey": "book:cruce de pasos",
+    "authorCandidateKey": "author:563",
+    "sourceWpPostId": "563",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:563",
+      "bookCandidateKey": "book:cruce de pasos"
+    }
+  },
+  {
+    "bookCandidateKey": "book:comer bien en casa",
+    "authorCandidateKey": "author:565",
+    "sourceWpPostId": "565",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:565",
+      "bookCandidateKey": "book:comer bien en casa"
+    }
+  },
+  {
+    "bookCandidateKey": "book:cuando su mirada pasaba por halley",
+    "authorCandidateKey": "author:568",
+    "sourceWpPostId": "568",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:568",
+      "bookCandidateKey": "book:cuando su mirada pasaba por halley"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la trenza dorada y otros relatos para tiempos nuevos",
+    "authorCandidateKey": "author:575",
+    "sourceWpPostId": "575",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:575",
+      "bookCandidateKey": "book:la trenza dorada y otros relatos para tiempos nuevos"
+    }
+  },
+  {
+    "bookCandidateKey": "book:requiem por un escritor desconocido",
+    "authorCandidateKey": "author:589",
+    "sourceWpPostId": "589",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:589",
+      "bookCandidateKey": "book:requiem por un escritor desconocido"
+    }
+  },
+  {
+    "bookCandidateKey": "book:de kolpino a krasny bor",
+    "authorCandidateKey": "author:592",
+    "sourceWpPostId": "592",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:592",
+      "bookCandidateKey": "book:de kolpino a krasny bor"
+    }
+  },
+  {
+    "bookCandidateKey": "book:dile a mama que nos conocimos en el cafe tres cantones",
+    "authorCandidateKey": "author:596",
+    "sourceWpPostId": "596",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:596",
+      "bookCandidateKey": "book:dile a mama que nos conocimos en el cafe tres cantones"
+    }
+  },
+  {
+    "bookCandidateKey": "book:campos de dispersion ascetica",
+    "authorCandidateKey": "author:598",
+    "sourceWpPostId": "598",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:598",
+      "bookCandidateKey": "book:campos de dispersion ascetica"
+    }
+  },
+  {
+    "bookCandidateKey": "book:teoria metaforica del bestiaro romanico proposito revolucionario la educacion sexual",
+    "authorCandidateKey": "author:601",
+    "sourceWpPostId": "601",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:601",
+      "bookCandidateKey": "book:teoria metaforica del bestiaro romanico proposito revolucionario la educacion sexual"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la vida de adonis",
+    "authorCandidateKey": "author:606",
+    "sourceWpPostId": "606",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:606",
+      "bookCandidateKey": "book:la vida de adonis"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el azul del mar en los mapas",
+    "authorCandidateKey": "author:609",
+    "sourceWpPostId": "609",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:609",
+      "bookCandidateKey": "book:el azul del mar en los mapas"
+    }
+  },
+  {
+    "bookCandidateKey": "book:cruce de pasos",
+    "authorCandidateKey": "author:619",
+    "sourceWpPostId": "619",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:619",
+      "bookCandidateKey": "book:cruce de pasos"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el poder de la educacion nos hace infinitos",
+    "authorCandidateKey": "author:623",
+    "sourceWpPostId": "623",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:623",
+      "bookCandidateKey": "book:el poder de la educacion nos hace infinitos"
+    }
+  },
+  {
+    "bookCandidateKey": "book:julio robles garcia compositor",
+    "authorCandidateKey": "author:628",
+    "sourceWpPostId": "628",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:628",
+      "bookCandidateKey": "book:julio robles garcia compositor"
+    }
+  },
+  {
+    "bookCandidateKey": "book:banquero de carlos v a emilio botin",
+    "authorCandidateKey": "author:633",
+    "sourceWpPostId": "633",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:633",
+      "bookCandidateKey": "book:banquero de carlos v a emilio botin"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la canteria en moralzarzal",
+    "authorCandidateKey": "author:637",
+    "sourceWpPostId": "637",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:637",
+      "bookCandidateKey": "book:la canteria en moralzarzal"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el delgado hilo de la vida",
+    "authorCandidateKey": "author:640",
+    "sourceWpPostId": "640",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:640",
+      "bookCandidateKey": "book:el delgado hilo de la vida"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el joven fenix el resurgir de los dioses egipcios",
+    "authorCandidateKey": "author:657",
+    "sourceWpPostId": "657",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:657",
+      "bookCandidateKey": "book:el joven fenix el resurgir de los dioses egipcios"
+    }
+  },
+  {
+    "bookCandidateKey": "book:tiendas y abastos en moralzarzal",
+    "authorCandidateKey": "author:663",
+    "sourceWpPostId": "663",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:663",
+      "bookCandidateKey": "book:tiendas y abastos en moralzarzal"
+    }
+  },
+  {
+    "bookCandidateKey": "book:yoga volumen 1 2 3 4 5 evolucion integral y evolucion universal",
+    "authorCandidateKey": "author:683",
+    "sourceWpPostId": "683",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:683",
+      "bookCandidateKey": "book:yoga volumen 1 2 3 4 5 evolucion integral y evolucion universal"
+    }
+  },
+  {
+    "bookCandidateKey": "book:nagasaki",
+    "authorCandidateKey": "author:690",
+    "sourceWpPostId": "690",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:690",
+      "bookCandidateKey": "book:nagasaki"
+    }
+  },
+  {
+    "bookCandidateKey": "book:un ameno curso introductorio a la ecologia humana",
+    "authorCandidateKey": "author:702",
+    "sourceWpPostId": "702",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:702",
+      "bookCandidateKey": "book:un ameno curso introductorio a la ecologia humana"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la ganaderia en moralzarzal",
+    "authorCandidateKey": "author:710",
+    "sourceWpPostId": "710",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:710",
+      "bookCandidateKey": "book:la ganaderia en moralzarzal"
+    }
+  },
+  {
+    "bookCandidateKey": "book:espejos de la realidad",
+    "authorCandidateKey": "author:717",
+    "sourceWpPostId": "717",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:717",
+      "bookCandidateKey": "book:espejos de la realidad"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la pulsera de la princesa yoruba",
+    "authorCandidateKey": "author:724",
+    "sourceWpPostId": "724",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:724",
+      "bookCandidateKey": "book:la pulsera de la princesa yoruba"
+    }
+  },
+  {
+    "bookCandidateKey": "book:los pensamientos olvidados",
+    "authorCandidateKey": "author:733",
+    "sourceWpPostId": "733",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:733",
+      "bookCandidateKey": "book:los pensamientos olvidados"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la vida sin ti",
+    "authorCandidateKey": "author:747",
+    "sourceWpPostId": "747",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:747",
+      "bookCandidateKey": "book:la vida sin ti"
+    }
+  },
+  {
+    "bookCandidateKey": "book:relatos de agua dulce",
+    "authorCandidateKey": "author:751",
+    "sourceWpPostId": "751",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:751",
+      "bookCandidateKey": "book:relatos de agua dulce"
+    }
+  },
+  {
+    "bookCandidateKey": "book:john main apatheia nirvana",
+    "authorCandidateKey": "author:756",
+    "sourceWpPostId": "756",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:756",
+      "bookCandidateKey": "book:john main apatheia nirvana"
+    }
+  },
+  {
+    "bookCandidateKey": "book:un siglo de ferrocarril en ecija memorias del marchenilla",
+    "authorCandidateKey": "author:762",
+    "sourceWpPostId": "762",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:762",
+      "bookCandidateKey": "book:un siglo de ferrocarril en ecija memorias del marchenilla"
+    }
+  },
+  {
+    "bookCandidateKey": "book:going my way en 40 poemas",
+    "authorCandidateKey": "author:765",
+    "sourceWpPostId": "765",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:765",
+      "bookCandidateKey": "book:going my way en 40 poemas"
+    }
+  },
+  {
+    "bookCandidateKey": "book:ilogica proposicional aforemas y poerismos",
+    "authorCandidateKey": "author:772",
+    "sourceWpPostId": "772",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:772",
+      "bookCandidateKey": "book:ilogica proposicional aforemas y poerismos"
+    }
+  },
+  {
+    "bookCandidateKey": "book:thailandia el viaje que cambio el rumbo de mi vida como inverti los obstaculos y mis limitaciones en valores gracias a mi experiencia de vida y al coaching",
+    "authorCandidateKey": "author:778",
+    "sourceWpPostId": "778",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:778",
+      "bookCandidateKey": "book:thailandia el viaje que cambio el rumbo de mi vida como inverti los obstaculos y mis limitaciones en valores gracias a mi experiencia de vida y al coaching"
+    }
+  },
+  {
+    "bookCandidateKey": "book:luna negra",
+    "authorCandidateKey": "author:793",
+    "sourceWpPostId": "793",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:793",
+      "bookCandidateKey": "book:luna negra"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la lista de tareas de mi profe jose",
+    "authorCandidateKey": "author:797",
+    "sourceWpPostId": "797",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:797",
+      "bookCandidateKey": "book:la lista de tareas de mi profe jose"
+    }
+  },
+  {
+    "bookCandidateKey": "book:biodiversidad sostenibilidad supervivencia e inmortalidad",
+    "authorCandidateKey": "author:802",
+    "sourceWpPostId": "802",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:802",
+      "bookCandidateKey": "book:biodiversidad sostenibilidad supervivencia e inmortalidad"
+    }
+  },
+  {
+    "bookCandidateKey": "book:quieres o debes ser feliz darse cuenta de aquello que nos impide ser felices es el primer paso para ser mas feliz",
+    "authorCandidateKey": "author:807",
+    "sourceWpPostId": "807",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:807",
+      "bookCandidateKey": "book:quieres o debes ser feliz darse cuenta de aquello que nos impide ser felices es el primer paso para ser mas feliz"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el camino del angel la realidad de un sueno",
+    "authorCandidateKey": "author:813",
+    "sourceWpPostId": "813",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:813",
+      "bookCandidateKey": "book:el camino del angel la realidad de un sueno"
+    }
+  },
+  {
+    "bookCandidateKey": "book:sus ojos hablaron",
+    "authorCandidateKey": "author:819",
+    "sourceWpPostId": "819",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:819",
+      "bookCandidateKey": "book:sus ojos hablaron"
+    }
+  },
+  {
+    "bookCandidateKey": "book:diario de un comunero",
+    "authorCandidateKey": "author:835",
+    "sourceWpPostId": "835",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:835",
+      "bookCandidateKey": "book:diario de un comunero"
+    }
+  },
+  {
+    "bookCandidateKey": "book:amar a fondo perdido y la decision",
+    "authorCandidateKey": "author:868",
+    "sourceWpPostId": "868",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:868",
+      "bookCandidateKey": "book:amar a fondo perdido y la decision"
+    }
+  },
+  {
+    "bookCandidateKey": "book:que cosas",
+    "authorCandidateKey": "author:879",
+    "sourceWpPostId": "879",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:879",
+      "bookCandidateKey": "book:que cosas"
+    }
+  },
+  {
+    "bookCandidateKey": "book:no te vi venir pues jamas te hubiese dejado entrar",
+    "authorCandidateKey": "author:882",
+    "sourceWpPostId": "882",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:882",
+      "bookCandidateKey": "book:no te vi venir pues jamas te hubiese dejado entrar"
+    }
+  },
+  {
+    "bookCandidateKey": "book:estampas de un pueblo andaluz 1960 1974",
+    "authorCandidateKey": "author:885",
+    "sourceWpPostId": "885",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:885",
+      "bookCandidateKey": "book:estampas de un pueblo andaluz 1960 1974"
+    }
+  },
+  {
+    "bookCandidateKey": "book:los dictadores y las mujeres adolf hitler",
+    "authorCandidateKey": "author:894",
+    "sourceWpPostId": "894",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:894",
+      "bookCandidateKey": "book:los dictadores y las mujeres adolf hitler"
+    }
+  },
+  {
+    "bookCandidateKey": "book:poesia y whisky",
+    "authorCandidateKey": "author:904",
+    "sourceWpPostId": "904",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:904",
+      "bookCandidateKey": "book:poesia y whisky"
+    }
+  },
+  {
+    "bookCandidateKey": "book:alma en llamas",
+    "authorCandidateKey": "author:909",
+    "sourceWpPostId": "909",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:909",
+      "bookCandidateKey": "book:alma en llamas"
+    }
+  },
+  {
+    "bookCandidateKey": "book:tratado de la ausencia y otros relatos",
+    "authorCandidateKey": "author:915",
+    "sourceWpPostId": "915",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:915",
+      "bookCandidateKey": "book:tratado de la ausencia y otros relatos"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el rol principal de una pelicula llamada vida",
+    "authorCandidateKey": "author:921",
+    "sourceWpPostId": "921",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:921",
+      "bookCandidateKey": "book:el rol principal de una pelicula llamada vida"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la flor malva",
+    "authorCandidateKey": "author:926",
+    "sourceWpPostId": "926",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:926",
+      "bookCandidateKey": "book:la flor malva"
+    }
+  },
+  {
+    "bookCandidateKey": "book:leeme si te atreves",
+    "authorCandidateKey": "author:932",
+    "sourceWpPostId": "932",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:932",
+      "bookCandidateKey": "book:leeme si te atreves"
+    }
+  },
+  {
+    "bookCandidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares una narracion audaz para un lector mas inteligente que lerdo belmonte ano 2017 al 2022 libro 1",
+    "authorCandidateKey": "author:938",
+    "sourceWpPostId": "938",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:938",
+      "bookCandidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares una narracion audaz para un lector mas inteligente que lerdo belmonte ano 2017 al 2022 libro 1"
+    }
+  },
+  {
+    "bookCandidateKey": "book:humor y prosa de un ajedrecista",
+    "authorCandidateKey": "author:942",
+    "sourceWpPostId": "942",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:942",
+      "bookCandidateKey": "book:humor y prosa de un ajedrecista"
+    }
+  },
+  {
+    "bookCandidateKey": "book:los acorralados",
+    "authorCandidateKey": "author:946",
+    "sourceWpPostId": "946",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:946",
+      "bookCandidateKey": "book:los acorralados"
+    }
+  },
+  {
+    "bookCandidateKey": "book:diferencias de genero en la expresion conductual de la violencia",
+    "authorCandidateKey": "author:954",
+    "sourceWpPostId": "954",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:954",
+      "bookCandidateKey": "book:diferencias de genero en la expresion conductual de la violencia"
+    }
+  },
+  {
+    "bookCandidateKey": "book:encuentros campezanos",
+    "authorCandidateKey": "author:957",
+    "sourceWpPostId": "957",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:957",
+      "bookCandidateKey": "book:encuentros campezanos"
+    }
+  },
+  {
+    "bookCandidateKey": "book:al otro lado del rio",
+    "authorCandidateKey": "author:963",
+    "sourceWpPostId": "963",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:963",
+      "bookCandidateKey": "book:al otro lado del rio"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el maestro de salamanca consideracion del derecho internacional humanitario",
+    "authorCandidateKey": "author:969",
+    "sourceWpPostId": "969",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:969",
+      "bookCandidateKey": "book:el maestro de salamanca consideracion del derecho internacional humanitario"
+    }
+  },
+  {
+    "bookCandidateKey": "book:santa cruz de posguerra conversaciones en blanco y negro",
+    "authorCandidateKey": "author:978",
+    "sourceWpPostId": "978",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:978",
+      "bookCandidateKey": "book:santa cruz de posguerra conversaciones en blanco y negro"
+    }
+  },
+  {
+    "bookCandidateKey": "book:detras de la corteza",
+    "authorCandidateKey": "author:990",
+    "sourceWpPostId": "990",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:990",
+      "bookCandidateKey": "book:detras de la corteza"
+    }
+  },
+  {
+    "bookCandidateKey": "book:quiero estar contigo",
+    "authorCandidateKey": "author:1002",
+    "sourceWpPostId": "1002",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1002",
+      "bookCandidateKey": "book:quiero estar contigo"
+    }
+  },
+  {
+    "bookCandidateKey": "book:entre realidades y suenos",
+    "authorCandidateKey": "author:1007",
+    "sourceWpPostId": "1007",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1007",
+      "bookCandidateKey": "book:entre realidades y suenos"
+    }
+  },
+  {
+    "bookCandidateKey": "book:falsas esperanzas",
+    "authorCandidateKey": "author:1012",
+    "sourceWpPostId": "1012",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1012",
+      "bookCandidateKey": "book:falsas esperanzas"
+    }
+  },
+  {
+    "bookCandidateKey": "book:perdoname por los poemas que te escribi",
+    "authorCandidateKey": "author:1017",
+    "sourceWpPostId": "1017",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1017",
+      "bookCandidateKey": "book:perdoname por los poemas que te escribi"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el panuelo de marino",
+    "authorCandidateKey": "author:1024",
+    "sourceWpPostId": "1024",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1024",
+      "bookCandidateKey": "book:el panuelo de marino"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el rumor de la marea",
+    "authorCandidateKey": "author:1029",
+    "sourceWpPostId": "1029",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1029",
+      "bookCandidateKey": "book:el rumor de la marea"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el viaje aventurero de nico",
+    "authorCandidateKey": "author:1034",
+    "sourceWpPostId": "1034",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1034",
+      "bookCandidateKey": "book:el viaje aventurero de nico"
+    }
+  },
+  {
+    "bookCandidateKey": "book:pollos en la memoria",
+    "authorCandidateKey": "author:1040",
+    "sourceWpPostId": "1040",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1040",
+      "bookCandidateKey": "book:pollos en la memoria"
+    }
+  },
+  {
+    "bookCandidateKey": "book:matame de frente",
+    "authorCandidateKey": "author:1046",
+    "sourceWpPostId": "1046",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1046",
+      "bookCandidateKey": "book:matame de frente"
+    }
+  },
+  {
+    "bookCandidateKey": "book:de juan a juan el musical el libreto y un relato",
+    "authorCandidateKey": "author:1052",
+    "sourceWpPostId": "1052",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1052",
+      "bookCandidateKey": "book:de juan a juan el musical el libreto y un relato"
+    }
+  },
+  {
+    "bookCandidateKey": "book:daemon lilith",
+    "authorCandidateKey": "author:1057",
+    "sourceWpPostId": "1057",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1057",
+      "bookCandidateKey": "book:daemon lilith"
+    }
+  },
+  {
+    "bookCandidateKey": "book:letargo",
+    "authorCandidateKey": "author:1062",
+    "sourceWpPostId": "1062",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1062",
+      "bookCandidateKey": "book:letargo"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la barca del portugues",
+    "authorCandidateKey": "author:1069",
+    "sourceWpPostId": "1069",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1069",
+      "bookCandidateKey": "book:la barca del portugues"
+    }
+  },
+  {
+    "bookCandidateKey": "book:de estrellas gaviotas y poemas",
+    "authorCandidateKey": "author:1073",
+    "sourceWpPostId": "1073",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1073",
+      "bookCandidateKey": "book:de estrellas gaviotas y poemas"
+    }
+  },
+  {
+    "bookCandidateKey": "book:y la vida sigue",
+    "authorCandidateKey": "author:1078",
+    "sourceWpPostId": "1078",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1078",
+      "bookCandidateKey": "book:y la vida sigue"
+    }
+  },
+  {
+    "bookCandidateKey": "book:una inolvidable noche de futbol en la pared",
+    "authorCandidateKey": "author:1084",
+    "sourceWpPostId": "1084",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1084",
+      "bookCandidateKey": "book:una inolvidable noche de futbol en la pared"
+    }
+  },
+  {
+    "bookCandidateKey": "book:en la recta final",
+    "authorCandidateKey": "author:1088",
+    "sourceWpPostId": "1088",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1088",
+      "bookCandidateKey": "book:en la recta final"
+    }
+  },
+  {
+    "bookCandidateKey": "book:duns scoto versus tomas de aquino la debilidad del neocalcedonismo tomista",
+    "authorCandidateKey": "author:1094",
+    "sourceWpPostId": "1094",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1094",
+      "bookCandidateKey": "book:duns scoto versus tomas de aquino la debilidad del neocalcedonismo tomista"
+    }
+  },
+  {
+    "bookCandidateKey": "book:placa blanca dignidad sobre el pecho",
+    "authorCandidateKey": "author:1099",
+    "sourceWpPostId": "1099",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1099",
+      "bookCandidateKey": "book:placa blanca dignidad sobre el pecho"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la vida de adonis la impunidad",
+    "authorCandidateKey": "author:1108",
+    "sourceWpPostId": "1108",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1108",
+      "bookCandidateKey": "book:la vida de adonis la impunidad"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el perfume de las emociones",
+    "authorCandidateKey": "author:1113",
+    "sourceWpPostId": "1113",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1113",
+      "bookCandidateKey": "book:el perfume de las emociones"
+    }
+  },
+  {
+    "bookCandidateKey": "book:entrevistas",
+    "authorCandidateKey": "author:1121",
+    "sourceWpPostId": "1121",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1121",
+      "bookCandidateKey": "book:entrevistas"
+    }
+  },
+  {
+    "bookCandidateKey": "book:humor prosa y una jugadora",
+    "authorCandidateKey": "author:1131",
+    "sourceWpPostId": "1131",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1131",
+      "bookCandidateKey": "book:humor prosa y una jugadora"
+    }
+  },
+  {
+    "bookCandidateKey": "book:ligero como la brisa",
+    "authorCandidateKey": "author:1136",
+    "sourceWpPostId": "1136",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1136",
+      "bookCandidateKey": "book:ligero como la brisa"
+    }
+  },
+  {
+    "bookCandidateKey": "book:prestoses xaranes de folixes y xordes nel conceyu de mieres",
+    "authorCandidateKey": "author:1161",
+    "sourceWpPostId": "1161",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1161",
+      "bookCandidateKey": "book:prestoses xaranes de folixes y xordes nel conceyu de mieres"
+    }
+  },
+  {
+    "bookCandidateKey": "book:de barro y silencio",
+    "authorCandidateKey": "author:1167",
+    "sourceWpPostId": "1167",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1167",
+      "bookCandidateKey": "book:de barro y silencio"
+    }
+  },
+  {
+    "bookCandidateKey": "book:apuesta personal",
+    "authorCandidateKey": "author:1172",
+    "sourceWpPostId": "1172",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1172",
+      "bookCandidateKey": "book:apuesta personal"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la muerte de adonis los impunes",
+    "authorCandidateKey": "author:1177",
+    "sourceWpPostId": "1177",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1177",
+      "bookCandidateKey": "book:la muerte de adonis los impunes"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el poder de la magia de la comunicacion",
+    "authorCandidateKey": "author:1182",
+    "sourceWpPostId": "1182",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1182",
+      "bookCandidateKey": "book:el poder de la magia de la comunicacion"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la inteligencia artificial en educacion fisica",
+    "authorCandidateKey": "author:1187",
+    "sourceWpPostId": "1187",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1187",
+      "bookCandidateKey": "book:la inteligencia artificial en educacion fisica"
+    }
+  },
+  {
+    "bookCandidateKey": "book:inteligencia artificial en educacion fisica",
+    "authorCandidateKey": "author:1194",
+    "sourceWpPostId": "1194",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1194",
+      "bookCandidateKey": "book:inteligencia artificial en educacion fisica"
+    }
+  },
+  {
+    "bookCandidateKey": "book:sutiles percepciones de una realidad",
+    "authorCandidateKey": "author:1198",
+    "sourceWpPostId": "1198",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1198",
+      "bookCandidateKey": "book:sutiles percepciones de una realidad"
+    }
+  },
+  {
+    "bookCandidateKey": "book:amaremos en libertad",
+    "authorCandidateKey": "author:1204",
+    "sourceWpPostId": "1204",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1204",
+      "bookCandidateKey": "book:amaremos en libertad"
+    }
+  },
+  {
+    "bookCandidateKey": "book:esferas temporales aforismos meditaciones y otros escritos breve recopilacion",
+    "authorCandidateKey": "author:1209",
+    "sourceWpPostId": "1209",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1209",
+      "bookCandidateKey": "book:esferas temporales aforismos meditaciones y otros escritos breve recopilacion"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la sombra del azar",
+    "authorCandidateKey": "author:1214",
+    "sourceWpPostId": "1214",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1214",
+      "bookCandidateKey": "book:la sombra del azar"
+    }
+  },
+  {
+    "bookCandidateKey": "book:al final de la escapada memoria personal 1951 2011",
+    "authorCandidateKey": "author:1219",
+    "sourceWpPostId": "1219",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1219",
+      "bookCandidateKey": "book:al final de la escapada memoria personal 1951 2011"
+    }
+  },
+  {
+    "bookCandidateKey": "book:estasimo",
+    "authorCandidateKey": "author:1230",
+    "sourceWpPostId": "1230",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1230",
+      "bookCandidateKey": "book:estasimo"
+    }
+  },
+  {
+    "bookCandidateKey": "book:haikus en el camino",
+    "authorCandidateKey": "author:1235",
+    "sourceWpPostId": "1235",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1235",
+      "bookCandidateKey": "book:haikus en el camino"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la ruta de las mariposas",
+    "authorCandidateKey": "author:1246",
+    "sourceWpPostId": "1246",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1246",
+      "bookCandidateKey": "book:la ruta de las mariposas"
+    }
+  },
+  {
+    "bookCandidateKey": "book:versos de madrugada con sentido",
+    "authorCandidateKey": "author:1256",
+    "sourceWpPostId": "1256",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1256",
+      "bookCandidateKey": "book:versos de madrugada con sentido"
+    }
+  },
+  {
+    "bookCandidateKey": "book:cuentos para amara la nieve y amara toca el tambor",
+    "authorCandidateKey": "author:1302",
+    "sourceWpPostId": "1302",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1302",
+      "bookCandidateKey": "book:cuentos para amara la nieve y amara toca el tambor"
+    }
+  },
+  {
+    "bookCandidateKey": "book:beretricce el palacio velado",
+    "authorCandidateKey": "author:1313",
+    "sourceWpPostId": "1313",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1313",
+      "bookCandidateKey": "book:beretricce el palacio velado"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el cierzo tatuado",
+    "authorCandidateKey": "author:1325",
+    "sourceWpPostId": "1325",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1325",
+      "bookCandidateKey": "book:el cierzo tatuado"
+    }
+  },
+  {
+    "bookCandidateKey": "book:quedamos para despedirnos pero ella no lo sabia pensamientos en un pequeno relato sobre la amistad",
+    "authorCandidateKey": "author:1341",
+    "sourceWpPostId": "1341",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1341",
+      "bookCandidateKey": "book:quedamos para despedirnos pero ella no lo sabia pensamientos en un pequeno relato sobre la amistad"
+    }
+  },
+  {
+    "bookCandidateKey": "book:cuentos para amara dona bota la burbuja de mar",
+    "authorCandidateKey": "author:1348",
+    "sourceWpPostId": "1348",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1348",
+      "bookCandidateKey": "book:cuentos para amara dona bota la burbuja de mar"
+    }
+  },
+  {
+    "bookCandidateKey": "book:oraculo de la fe el camino del alma",
+    "authorCandidateKey": "author:1358",
+    "sourceWpPostId": "1358",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1358",
+      "bookCandidateKey": "book:oraculo de la fe el camino del alma"
+    }
+  },
+  {
+    "bookCandidateKey": "book:voces del alma el arte de escuchar a traves del tarot",
+    "authorCandidateKey": "author:1361",
+    "sourceWpPostId": "1361",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1361",
+      "bookCandidateKey": "book:voces del alma el arte de escuchar a traves del tarot"
+    }
+  },
+  {
+    "bookCandidateKey": "book:nido de barro haikus",
+    "authorCandidateKey": "author:1365",
+    "sourceWpPostId": "1365",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1365",
+      "bookCandidateKey": "book:nido de barro haikus"
+    }
+  },
+  {
+    "bookCandidateKey": "book:con su permiso don alvaro historias de viso del marques",
+    "authorCandidateKey": "author:1367",
+    "sourceWpPostId": "1367",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1367",
+      "bookCandidateKey": "book:con su permiso don alvaro historias de viso del marques"
+    }
+  },
+  {
+    "bookCandidateKey": "book:r",
+    "authorCandidateKey": "author:1376",
+    "sourceWpPostId": "1376",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Libro relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1376",
+      "bookCandidateKey": "book:r"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el canto de las raices cartografias del ser y existir",
+    "authorCandidateKey": "author:1392",
+    "sourceWpPostId": "1392",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1392",
+      "bookCandidateKey": "book:el canto de las raices cartografias del ser y existir"
+    }
+  },
+  {
+    "bookCandidateKey": "book:zoografias",
+    "authorCandidateKey": "author:1422",
+    "sourceWpPostId": "1422",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1422",
+      "bookCandidateKey": "book:zoografias"
+    }
+  },
+  {
+    "bookCandidateKey": "book:cartas a diego reflexiones sobre un nacimiento",
+    "authorCandidateKey": "author:1431",
+    "sourceWpPostId": "1431",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1431",
+      "bookCandidateKey": "book:cartas a diego reflexiones sobre un nacimiento"
+    }
+  },
+  {
+    "bookCandidateKey": "book:amor amor",
+    "authorCandidateKey": "author:1435",
+    "sourceWpPostId": "1435",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1435",
+      "bookCandidateKey": "book:amor amor"
+    }
+  },
+  {
+    "bookCandidateKey": "book:rodrigo se fue a otro lugar",
+    "authorCandidateKey": "author:1454",
+    "sourceWpPostId": "1454",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1454",
+      "bookCandidateKey": "book:rodrigo se fue a otro lugar"
+    }
+  },
+  {
+    "bookCandidateKey": "book:una escuela de musica",
+    "authorCandidateKey": "author:1457",
+    "sourceWpPostId": "1457",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1457",
+      "bookCandidateKey": "book:una escuela de musica"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la ultima carta",
+    "authorCandidateKey": "author:1473",
+    "sourceWpPostId": "1473",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1473",
+      "bookCandidateKey": "book:la ultima carta"
+    }
+  },
+  {
+    "bookCandidateKey": "book:arcanum la tora de minerva",
+    "authorCandidateKey": "author:1483",
+    "sourceWpPostId": "1483",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1483",
+      "bookCandidateKey": "book:arcanum la tora de minerva"
+    }
+  },
+  {
+    "bookCandidateKey": "book:de origine nostra fatum nostrum",
+    "authorCandidateKey": "author:1518",
+    "sourceWpPostId": "1518",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1518",
+      "bookCandidateKey": "book:de origine nostra fatum nostrum"
+    }
+  },
+  {
+    "bookCandidateKey": "book:estrategias educativas a traves del teatro musical experiencias y propuesta metodologica del taller de musicales volumen 1 seleccion de titulos para el aula analisis cinematografico y escenico",
+    "authorCandidateKey": "author:1526",
+    "sourceWpPostId": "1526",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1526",
+      "bookCandidateKey": "book:estrategias educativas a traves del teatro musical experiencias y propuesta metodologica del taller de musicales volumen 1 seleccion de titulos para el aula analisis cinematografico y escenico"
+    }
+  },
+  {
+    "bookCandidateKey": "book:dias de galerna",
+    "authorCandidateKey": "author:1539",
+    "sourceWpPostId": "1539",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1539",
+      "bookCandidateKey": "book:dias de galerna"
+    }
+  },
+  {
+    "bookCandidateKey": "book:monedas del corazon",
+    "authorCandidateKey": "author:1548",
+    "sourceWpPostId": "1548",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1548",
+      "bookCandidateKey": "book:monedas del corazon"
+    }
+  },
+  {
+    "bookCandidateKey": "book:famosa gabardina azul",
+    "authorCandidateKey": "author:1560",
+    "sourceWpPostId": "1560",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1560",
+      "bookCandidateKey": "book:famosa gabardina azul"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el poderoso sir tristan en la saga del prince valiant 1937 1971 de harold foster la apoteosis medieval de un arte contemporaneo",
+    "authorCandidateKey": "author:1569",
+    "sourceWpPostId": "1569",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1569",
+      "bookCandidateKey": "book:el poderoso sir tristan en la saga del prince valiant 1937 1971 de harold foster la apoteosis medieval de un arte contemporaneo"
+    }
+  },
+  {
+    "bookCandidateKey": "book:la lista de tareas de mi profe jose",
+    "authorCandidateKey": "author:1578",
+    "sourceWpPostId": "1578",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1578",
+      "bookCandidateKey": "book:la lista de tareas de mi profe jose"
+    }
+  },
+  {
+    "bookCandidateKey": "book:christus verbo y verso segun un posadero",
+    "authorCandidateKey": "author:1585",
+    "sourceWpPostId": "1585",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1585",
+      "bookCandidateKey": "book:christus verbo y verso segun un posadero"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el valor de la amistad un viaje al pais de las nubes",
+    "authorCandidateKey": "author:1602",
+    "sourceWpPostId": "1602",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1602",
+      "bookCandidateKey": "book:el valor de la amistad un viaje al pais de las nubes"
+    }
+  },
+  {
+    "bookCandidateKey": "book:planes enlazados",
+    "authorCandidateKey": "author:1614",
+    "sourceWpPostId": "1614",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1614",
+      "bookCandidateKey": "book:planes enlazados"
+    }
+  },
+  {
+    "bookCandidateKey": "book:mariposas en el jardin",
+    "authorCandidateKey": "author:1616",
+    "sourceWpPostId": "1616",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1616",
+      "bookCandidateKey": "book:mariposas en el jardin"
+    }
+  },
+  {
+    "bookCandidateKey": "book:metodo sah g maes 36 caminos de curacion para la mente el cuerpo y el espiritual",
+    "authorCandidateKey": "author:1633",
+    "sourceWpPostId": "1633",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1633",
+      "bookCandidateKey": "book:metodo sah g maes 36 caminos de curacion para la mente el cuerpo y el espiritual"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el musical como vehiculo de aprendizaje",
+    "authorCandidateKey": "author:1644",
+    "sourceWpPostId": "1644",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1644",
+      "bookCandidateKey": "book:el musical como vehiculo de aprendizaje"
+    }
+  },
+  {
+    "bookCandidateKey": "book:entre lineas reflejos de un tiempo convulso",
+    "authorCandidateKey": "author:1649",
+    "sourceWpPostId": "1649",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1649",
+      "bookCandidateKey": "book:entre lineas reflejos de un tiempo convulso"
+    }
+  },
+  {
+    "bookCandidateKey": "book:pajaro en el alambre",
+    "authorCandidateKey": "author:1681",
+    "sourceWpPostId": "1681",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1681",
+      "bookCandidateKey": "book:pajaro en el alambre"
+    }
+  },
+  {
+    "bookCandidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares tomo 2",
+    "authorCandidateKey": "author:1686",
+    "sourceWpPostId": "1686",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1686",
+      "bookCandidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares tomo 2"
+    }
+  },
+  {
+    "bookCandidateKey": "book:otros oficios en moralzarzal",
+    "authorCandidateKey": "author:1712",
+    "sourceWpPostId": "1712",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1712",
+      "bookCandidateKey": "book:otros oficios en moralzarzal"
+    }
+  },
+  {
+    "bookCandidateKey": "book:libero mi alma con 131 angeles",
+    "authorCandidateKey": "author:1722",
+    "sourceWpPostId": "1722",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1722",
+      "bookCandidateKey": "book:libero mi alma con 131 angeles"
+    }
+  },
+  {
+    "bookCandidateKey": "book:monasterio de san lorenzo de el escorial una visita interior",
+    "authorCandidateKey": "author:1730",
+    "sourceWpPostId": "1730",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1730",
+      "bookCandidateKey": "book:monasterio de san lorenzo de el escorial una visita interior"
+    }
+  },
+  {
+    "bookCandidateKey": "book:compendio sobre los ejercicios y el arte militar reunido en tres libros",
+    "authorCandidateKey": "author:1744",
+    "sourceWpPostId": "1744",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1744",
+      "bookCandidateKey": "book:compendio sobre los ejercicios y el arte militar reunido en tres libros"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el dolor de un alma sin memoria",
+    "authorCandidateKey": "author:1750",
+    "sourceWpPostId": "1750",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1750",
+      "bookCandidateKey": "book:el dolor de un alma sin memoria"
+    }
+  },
+  {
+    "bookCandidateKey": "book:mano a mano",
+    "authorCandidateKey": "author:1780",
+    "sourceWpPostId": "1780",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1780",
+      "bookCandidateKey": "book:mano a mano"
+    }
+  },
+  {
+    "bookCandidateKey": "book:perderse encontrarse despertar",
+    "authorCandidateKey": "author:1787",
+    "sourceWpPostId": "1787",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1787",
+      "bookCandidateKey": "book:perderse encontrarse despertar"
+    }
+  },
+  {
+    "bookCandidateKey": "book:los mejores cortos de gomez rosas cualquier parecido con la realidad es pura coincidencia",
+    "authorCandidateKey": "author:1798",
+    "sourceWpPostId": "1798",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1798",
+      "bookCandidateKey": "book:los mejores cortos de gomez rosas cualquier parecido con la realidad es pura coincidencia"
+    }
+  },
+  {
+    "bookCandidateKey": "book:evocacion y sucesos de dolores la tuerta una historia del mundo rural",
+    "authorCandidateKey": "author:1821",
+    "sourceWpPostId": "1821",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1821",
+      "bookCandidateKey": "book:evocacion y sucesos de dolores la tuerta una historia del mundo rural"
+    }
+  },
+  {
+    "bookCandidateKey": "book:azul",
+    "authorCandidateKey": "author:1834",
+    "sourceWpPostId": "1834",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1834",
+      "bookCandidateKey": "book:azul"
+    }
+  },
+  {
+    "bookCandidateKey": "book:memorias de opera",
+    "authorCandidateKey": "author:1851",
+    "sourceWpPostId": "1851",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1851",
+      "bookCandidateKey": "book:memorias de opera"
+    }
+  },
+  {
+    "bookCandidateKey": "book:descartes y su duda hiperbolica",
+    "authorCandidateKey": "author:1858",
+    "sourceWpPostId": "1858",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1858",
+      "bookCandidateKey": "book:descartes y su duda hiperbolica"
+    }
+  },
+  {
+    "bookCandidateKey": "book:ilusiones",
+    "authorCandidateKey": "author:1863",
+    "sourceWpPostId": "1863",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1863",
+      "bookCandidateKey": "book:ilusiones"
+    }
+  },
+  {
+    "bookCandidateKey": "book:cartas a un hombre",
+    "authorCandidateKey": "author:1866",
+    "sourceWpPostId": "1866",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1866",
+      "bookCandidateKey": "book:cartas a un hombre"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el pueblo judio legado y nexo con judea una historia milenaria",
+    "authorCandidateKey": "author:1881",
+    "sourceWpPostId": "1881",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1881",
+      "bookCandidateKey": "book:el pueblo judio legado y nexo con judea una historia milenaria"
+    }
+  },
+  {
+    "bookCandidateKey": "book:fuerteventura luz y silencios",
+    "authorCandidateKey": "author:1893",
+    "sourceWpPostId": "1893",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1893",
+      "bookCandidateKey": "book:fuerteventura luz y silencios"
+    }
+  },
+  {
+    "bookCandidateKey": "book:ndong el jubilado",
+    "authorCandidateKey": "author:1902",
+    "sourceWpPostId": "1902",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1902",
+      "bookCandidateKey": "book:ndong el jubilado"
+    }
+  },
+  {
+    "bookCandidateKey": "book:analisis de errores morfosintacticos en un aula de espanol le el caso del grupo de estudiantes del nivel b2 de secundaria en guinea ecuatorial al expresarse por escrito en espanol",
+    "authorCandidateKey": "author:1917",
+    "sourceWpPostId": "1917",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1917",
+      "bookCandidateKey": "book:analisis de errores morfosintacticos en un aula de espanol le el caso del grupo de estudiantes del nivel b2 de secundaria en guinea ecuatorial al expresarse por escrito en espanol"
+    }
+  },
+  {
+    "bookCandidateKey": "book:confesiones verdaderas de un verdadero cascarrabias",
+    "authorCandidateKey": "author:1932",
+    "sourceWpPostId": "1932",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1932",
+      "bookCandidateKey": "book:confesiones verdaderas de un verdadero cascarrabias"
+    }
+  },
+  {
+    "bookCandidateKey": "book:gris mas bien plomo",
+    "authorCandidateKey": "author:1947",
+    "sourceWpPostId": "1947",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1947",
+      "bookCandidateKey": "book:gris mas bien plomo"
+    }
+  },
+  {
+    "bookCandidateKey": "book:el joven clonado",
+    "authorCandidateKey": "author:1953",
+    "sourceWpPostId": "1953",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "AUTO_CREATE",
+    "status": "READY",
+    "blockingReasons": [],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:1953",
+      "bookCandidateKey": "book:el joven clonado"
+    }
+  },
+  {
+    "bookCandidateKey": "book:viajando ligero",
+    "authorCandidateKey": "author:2089",
+    "sourceWpPostId": "2089",
+    "confidence": "high",
+    "reason": "Relación inferida desde el registro autor legacy y el campo tf_libro.",
+    "action": "BLOCKED",
+    "status": "BLOCKED",
+    "blockingReasons": ["Autor relacionado no tiene mapping READY."],
+    "warnings": [],
+    "resolvedDependencies": {
+      "authorCandidateKey": "author:2089",
+      "bookCandidateKey": "book:viajando ligero"
+    }
+  }
+]

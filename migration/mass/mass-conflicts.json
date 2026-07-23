@@ -1,0 +1,1250 @@
+[
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:556",
+    "sourceWpPostId": "556",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:guillermo m schrem"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:563",
+    "sourceWpPostId": "563",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:ana cordoba del campo"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:623",
+    "sourceWpPostId": "623",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:norberto dominguez jurado"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:628",
+    "sourceWpPostId": "628",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:maria dolores castellon perez"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:633",
+    "sourceWpPostId": "633",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:alonso cruz leon"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:652",
+    "sourceWpPostId": "652",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:teodoro rodriguez martin"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:663",
+    "sourceWpPostId": "663",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:antonio lopez hurtado zarate"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:690",
+    "sourceWpPostId": "690",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:antonio l gomez charlin"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:710",
+    "sourceWpPostId": "710",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:antonio lopez hurtado zarate"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:717",
+    "sourceWpPostId": "717",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:juan antonio valero casado"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:724",
+    "sourceWpPostId": "724",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:teodoro rodriguez martin"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:733",
+    "sourceWpPostId": "733",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:alejandro gonzalez garcia"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:747",
+    "sourceWpPostId": "747",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:alejandro gonzalez garcia"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:765",
+    "sourceWpPostId": "765",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:ignacio luis de orduna puebla"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:797",
+    "sourceWpPostId": "797",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:carlos jose olmedo batista"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:802",
+    "sourceWpPostId": "802",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:gaspar t jimeno diestro"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:813",
+    "sourceWpPostId": "813",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:angel garcia garcia munoz buru"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:819",
+    "sourceWpPostId": "819",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:juan jose velasco sanchez mayoral"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:882",
+    "sourceWpPostId": "882",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:ana cordoba del campo"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:904",
+    "sourceWpPostId": "904",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:jose antonio galante perez"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:921",
+    "sourceWpPostId": "921",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:diego gomez costa"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:938",
+    "sourceWpPostId": "938",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:antonio valdeavero ponce"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:942",
+    "sourceWpPostId": "942",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:manuel gomez rosas"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1017",
+    "sourceWpPostId": "1017",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:jose vte carmona simarro"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1029",
+    "sourceWpPostId": "1029",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:guillermo m schrem"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1040",
+    "sourceWpPostId": "1040",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:julio sanchez alonso"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1088",
+    "sourceWpPostId": "1088",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:alfredo manrique bravo"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1121",
+    "sourceWpPostId": "1121",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:maria dolores castellon perez"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1131",
+    "sourceWpPostId": "1131",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:manuel gomez rosas"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1136",
+    "sourceWpPostId": "1136",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:guillermo martinez schrem"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1167",
+    "sourceWpPostId": "1167",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:francisco marin vargas"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1187",
+    "sourceWpPostId": "1187",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:norberto dominguez jurado"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1209",
+    "sourceWpPostId": "1209",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:francisco marin vargas"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1214",
+    "sourceWpPostId": "1214",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:patxi oyaga"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1219",
+    "sourceWpPostId": "1219",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:julio sanchez alonso"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1230",
+    "sourceWpPostId": "1230",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:guillermo m schrem"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1235",
+    "sourceWpPostId": "1235",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:jose antonio galante perez"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1246",
+    "sourceWpPostId": "1246",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:elga reategui"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1256",
+    "sourceWpPostId": "1256",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:angel garcia garcia munoz buru"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1302",
+    "sourceWpPostId": "1302",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:francisco marin vargas"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1325",
+    "sourceWpPostId": "1325",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:jose antonio galante perez"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1341",
+    "sourceWpPostId": "1341",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:jose vte carmona simarro"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1348",
+    "sourceWpPostId": "1348",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:francisco marin vargas"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1358",
+    "sourceWpPostId": "1358",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:minerva buiza"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1361",
+    "sourceWpPostId": "1361",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:minerva buiza"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1365",
+    "sourceWpPostId": "1365",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:francisco marin vargas"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1422",
+    "sourceWpPostId": "1422",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:guillermo m schrem"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1431",
+    "sourceWpPostId": "1431",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:francisco marin vargas"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1457",
+    "sourceWpPostId": "1457",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:juan jose velasco sanchez mayoral"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1473",
+    "sourceWpPostId": "1473",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:alonso cruz leon"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1483",
+    "sourceWpPostId": "1483",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:minerva buiza"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1526",
+    "sourceWpPostId": "1526",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:sara sanchez prieto"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1560",
+    "sourceWpPostId": "1560",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:guillermo martinez schrem"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1578",
+    "sourceWpPostId": "1578",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:carlos jose olmedo batista"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1585",
+    "sourceWpPostId": "1585",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:ignacio luis de orduna puebla"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1644",
+    "sourceWpPostId": "1644",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:sara sanchez prieto"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1649",
+    "sourceWpPostId": "1649",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:juan antonio valero casado"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1681",
+    "sourceWpPostId": "1681",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:guillermo martinez schrem"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1686",
+    "sourceWpPostId": "1686",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:antonio valdeavero ponce"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1712",
+    "sourceWpPostId": "1712",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:antonio lopez hurtado zarate"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1750",
+    "sourceWpPostId": "1750",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:diego gomez costa"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1780",
+    "sourceWpPostId": "1780",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:guillermo m schrem"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1798",
+    "sourceWpPostId": "1798",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:manuel gomez rosas"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1834",
+    "sourceWpPostId": "1834",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:jose vte carmona simarro"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1858",
+    "sourceWpPostId": "1858",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:alonso cruz leon"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1863",
+    "sourceWpPostId": "1863",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:juan jose velasco sanchez mayoral"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1881",
+    "sourceWpPostId": "1881",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:diego gomez costa"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1902",
+    "sourceWpPostId": "1902",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:manuel ondo ndong"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1917",
+    "sourceWpPostId": "1917",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:manuel ondo ndong"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:1947",
+    "sourceWpPostId": "1947",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:elga reategui"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:2089",
+    "sourceWpPostId": "2089",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:guillermo m schrem"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:2346",
+    "sourceWpPostId": "2346",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:diego gomez costa"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:2406",
+    "sourceWpPostId": "2406",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:gaspar t jimeno diestro"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:2652",
+    "sourceWpPostId": "2652",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:guillermo m schrem"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:2749",
+    "sourceWpPostId": "2749",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:jose vte carmona simarro"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:2756",
+    "sourceWpPostId": "2756",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:patxi oyaga"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:2806",
+    "sourceWpPostId": "2806",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:guillermo m schrem"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:2855",
+    "sourceWpPostId": "2855",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:minerva buiza"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:2860",
+    "sourceWpPostId": "2860",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:minerva buiza"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:2962",
+    "sourceWpPostId": "2962",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:antonio l gomez charlin"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:3046",
+    "sourceWpPostId": "3046",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:jose antonio galante perez"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:3099",
+    "sourceWpPostId": "3099",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:antonio lopez hurtado zarate"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:3141",
+    "sourceWpPostId": "3141",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:alfredo manrique bravo"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:3153",
+    "sourceWpPostId": "3153",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:guillermo m schrem"
+  },
+  {
+    "code": "DUPLICATE_AUTHOR_UNRESOLVED",
+    "entityType": "author",
+    "candidateKey": "author:3166",
+    "sourceWpPostId": "3166",
+    "message": "Autor en grupo de duplicados sin decision.",
+    "details": "possible-author:jose vte carmona simarro"
+  },
+  {
+    "code": "INVALID_DOMAIN_INPUT",
+    "entityType": "book",
+    "candidateKey": "book:r",
+    "sourceWpPostId": "1376",
+    "message": "El libro no valida contra createBookSchema.",
+    "details": "El titulo debe tener al menos 2 caracteres. | El slug debe tener al menos 2 caracteres."
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:el valle de cristal",
+    "sourceWpPostId": "556",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:556"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:cruce de pasos",
+    "sourceWpPostId": "563",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:563"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:el poder de la educacion nos hace infinitos",
+    "sourceWpPostId": "623",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:623"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:julio robles garcia compositor",
+    "sourceWpPostId": "628",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:628"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:banquero de carlos v a emilio botin",
+    "sourceWpPostId": "633",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:633"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:tiendas y abastos en moralzarzal",
+    "sourceWpPostId": "663",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:663"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:nagasaki",
+    "sourceWpPostId": "690",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:690"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:la ganaderia en moralzarzal",
+    "sourceWpPostId": "710",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:710"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:espejos de la realidad",
+    "sourceWpPostId": "717",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:717"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:la pulsera de la princesa yoruba",
+    "sourceWpPostId": "724",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:724"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:los pensamientos olvidados",
+    "sourceWpPostId": "733",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:733"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:la vida sin ti",
+    "sourceWpPostId": "747",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:747"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:going my way en 40 poemas",
+    "sourceWpPostId": "765",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:765"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:la lista de tareas de mi profe jose",
+    "sourceWpPostId": "797",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:797"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:biodiversidad sostenibilidad supervivencia e inmortalidad",
+    "sourceWpPostId": "802",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:802"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:el camino del angel la realidad de un sueno",
+    "sourceWpPostId": "813",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:813"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:sus ojos hablaron",
+    "sourceWpPostId": "819",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:819"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:no te vi venir pues jamas te hubiese dejado entrar",
+    "sourceWpPostId": "882",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:882"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:poesia y whisky",
+    "sourceWpPostId": "904",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:904"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:el rol principal de una pelicula llamada vida",
+    "sourceWpPostId": "921",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:921"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares una narracion audaz para un lector mas inteligente que lerdo belmonte ano 2017 al 2022 libro 1",
+    "sourceWpPostId": "938",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:938"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:humor y prosa de un ajedrecista",
+    "sourceWpPostId": "942",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:942"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:perdoname por los poemas que te escribi",
+    "sourceWpPostId": "1017",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1017"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:el rumor de la marea",
+    "sourceWpPostId": "1029",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1029"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:pollos en la memoria",
+    "sourceWpPostId": "1040",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1040"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:en la recta final",
+    "sourceWpPostId": "1088",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1088"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:entrevistas",
+    "sourceWpPostId": "1121",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1121"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:humor prosa y una jugadora",
+    "sourceWpPostId": "1131",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1131"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:ligero como la brisa",
+    "sourceWpPostId": "1136",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1136"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:de barro y silencio",
+    "sourceWpPostId": "1167",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1167"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:la inteligencia artificial en educacion fisica",
+    "sourceWpPostId": "1187",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1187"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:esferas temporales aforismos meditaciones y otros escritos breve recopilacion",
+    "sourceWpPostId": "1209",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1209"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:la sombra del azar",
+    "sourceWpPostId": "1214",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1214"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:al final de la escapada memoria personal 1951 2011",
+    "sourceWpPostId": "1219",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1219"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:estasimo",
+    "sourceWpPostId": "1230",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1230"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:haikus en el camino",
+    "sourceWpPostId": "1235",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1235"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:la ruta de las mariposas",
+    "sourceWpPostId": "1246",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1246"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:versos de madrugada con sentido",
+    "sourceWpPostId": "1256",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1256"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:cuentos para amara la nieve y amara toca el tambor",
+    "sourceWpPostId": "1302",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1302"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:el cierzo tatuado",
+    "sourceWpPostId": "1325",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1325"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:quedamos para despedirnos pero ella no lo sabia pensamientos en un pequeno relato sobre la amistad",
+    "sourceWpPostId": "1341",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1341"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:cuentos para amara dona bota la burbuja de mar",
+    "sourceWpPostId": "1348",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1348"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:oraculo de la fe el camino del alma",
+    "sourceWpPostId": "1358",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1358"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:voces del alma el arte de escuchar a traves del tarot",
+    "sourceWpPostId": "1361",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1361"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:nido de barro haikus",
+    "sourceWpPostId": "1365",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1365"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:zoografias",
+    "sourceWpPostId": "1422",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1422"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:cartas a diego reflexiones sobre un nacimiento",
+    "sourceWpPostId": "1431",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1431"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:una escuela de musica",
+    "sourceWpPostId": "1457",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1457"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:la ultima carta",
+    "sourceWpPostId": "1473",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1473"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:arcanum la tora de minerva",
+    "sourceWpPostId": "1483",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1483"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:estrategias educativas a traves del teatro musical experiencias y propuesta metodologica del taller de musicales volumen 1 seleccion de titulos para el aula analisis cinematografico y escenico",
+    "sourceWpPostId": "1526",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1526"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:famosa gabardina azul",
+    "sourceWpPostId": "1560",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1560"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:la lista de tareas de mi profe jose",
+    "sourceWpPostId": "1578",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1578"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:christus verbo y verso segun un posadero",
+    "sourceWpPostId": "1585",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1585"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:el musical como vehiculo de aprendizaje",
+    "sourceWpPostId": "1644",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1644"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:entre lineas reflejos de un tiempo convulso",
+    "sourceWpPostId": "1649",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1649"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:pajaro en el alambre",
+    "sourceWpPostId": "1681",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1681"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares tomo 2",
+    "sourceWpPostId": "1686",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1686"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:otros oficios en moralzarzal",
+    "sourceWpPostId": "1712",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1712"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:el dolor de un alma sin memoria",
+    "sourceWpPostId": "1750",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1750"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:mano a mano",
+    "sourceWpPostId": "1780",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1780"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:los mejores cortos de gomez rosas cualquier parecido con la realidad es pura coincidencia",
+    "sourceWpPostId": "1798",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1798"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:azul",
+    "sourceWpPostId": "1834",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1834"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:descartes y su duda hiperbolica",
+    "sourceWpPostId": "1858",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1858"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:ilusiones",
+    "sourceWpPostId": "1863",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1863"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:el pueblo judio legado y nexo con judea una historia milenaria",
+    "sourceWpPostId": "1881",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1881"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:ndong el jubilado",
+    "sourceWpPostId": "1902",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1902"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:analisis de errores morfosintacticos en un aula de espanol le el caso del grupo de estudiantes del nivel b2 de secundaria en guinea ecuatorial al expresarse por escrito en espanol",
+    "sourceWpPostId": "1917",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1917"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:gris mas bien plomo",
+    "sourceWpPostId": "1947",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:1947"
+  },
+  {
+    "code": "MISSING_AUTHOR_MAPPING",
+    "entityType": "relation",
+    "candidateKey": "book:viajando ligero",
+    "sourceWpPostId": "2089",
+    "message": "La relacion no puede aplicarse sin autor READY.",
+    "details": "author:2089"
+  }
+]

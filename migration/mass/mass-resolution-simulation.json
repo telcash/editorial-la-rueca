@@ -1,0 +1,121 @@
+{
+  "simulation": {
+    "before": {
+      "authorsReady": 103,
+      "authorsBlocked": 85,
+      "relationsReady": 87,
+      "relationsBlocked": 71,
+      "booksBlocked": 1
+    },
+    "afterHighConfidence": {
+      "uniqueAuthorsExpected": 179,
+      "authorsReady": 119,
+      "authorsStillManual": 69,
+      "relationsReady": 98,
+      "relationsStillBlocked": 60,
+      "booksReady": 155,
+      "remainingBlockers": 130
+    }
+  },
+  "relationResolution": {
+    "before": {
+      "ready": 87,
+      "blocked": 71,
+      "manual": 0
+    },
+    "causes": {
+      "BLOCKED_BY_AUTHOR_DUPLICATE": 59,
+      "BLOCKED_BY_AUTHOR_DUPLICATE_RESOLVABLE": 11,
+      "INVALID_BOOK_REFERENCE": 1
+    },
+    "afterHighConfidence": {
+      "ready": 98,
+      "stillBlocked": 60,
+      "duplicateBookAuthorRelations": 0,
+      "booksWithZeroAuthors": [
+        "book:el valle de cristal",
+        "book:el poder de la educacion nos hace infinitos",
+        "book:julio robles garcia compositor",
+        "book:banquero de carlos v a emilio botin",
+        "book:tiendas y abastos en moralzarzal",
+        "book:la ganaderia en moralzarzal",
+        "book:espejos de la realidad",
+        "book:la pulsera de la princesa yoruba",
+        "book:los pensamientos olvidados",
+        "book:la vida sin ti",
+        "book:going my way en 40 poemas",
+        "book:la lista de tareas de mi profe jose",
+        "book:el camino del angel la realidad de un sueno",
+        "book:sus ojos hablaron",
+        "book:no te vi venir pues jamas te hubiese dejado entrar",
+        "book:poesia y whisky",
+        "book:de los rollos del mar muerto a los de rodrigo de lares una narracion audaz para un lector mas inteligente que lerdo belmonte ano 2017 al 2022 libro 1",
+        "book:humor y prosa de un ajedrecista",
+        "book:perdoname por los poemas que te escribi",
+        "book:el rumor de la marea",
+        "book:entrevistas",
+        "book:humor prosa y una jugadora",
+        "book:ligero como la brisa",
+        "book:de barro y silencio",
+        "book:la inteligencia artificial en educacion fisica",
+        "book:esferas temporales aforismos meditaciones y otros escritos breve recopilacion",
+        "book:estasimo",
+        "book:haikus en el camino",
+        "book:versos de madrugada con sentido",
+        "book:cuentos para amara la nieve y amara toca el tambor",
+        "book:el cierzo tatuado",
+        "book:quedamos para despedirnos pero ella no lo sabia pensamientos en un pequeno relato sobre la amistad",
+        "book:cuentos para amara dona bota la burbuja de mar",
+        "book:oraculo de la fe el camino del alma",
+        "book:voces del alma el arte de escuchar a traves del tarot",
+        "book:nido de barro haikus",
+        "book:zoografias",
+        "book:cartas a diego reflexiones sobre un nacimiento",
+        "book:una escuela de musica",
+        "book:la ultima carta",
+        "book:arcanum la tora de minerva",
+        "book:estrategias educativas a traves del teatro musical experiencias y propuesta metodologica del taller de musicales volumen 1 seleccion de titulos para el aula analisis cinematografico y escenico",
+        "book:famosa gabardina azul",
+        "book:christus verbo y verso segun un posadero",
+        "book:el musical como vehiculo de aprendizaje",
+        "book:entre lineas reflejos de un tiempo convulso",
+        "book:pajaro en el alambre",
+        "book:de los rollos del mar muerto a los de rodrigo de lares tomo 2",
+        "book:otros oficios en moralzarzal",
+        "book:mano a mano",
+        "book:los mejores cortos de gomez rosas cualquier parecido con la realidad es pura coincidencia",
+        "book:azul",
+        "book:descartes y su duda hiperbolica",
+        "book:ilusiones",
+        "book:ndong el jubilado",
+        "book:analisis de errores morfosintacticos en un aula de espanol le el caso del grupo de estudiantes del nivel b2 de secundaria en guinea ecuatorial al expresarse por escrito en espanol",
+        "book:viajando ligero"
+      ],
+      "multiAuthorBooks": []
+    }
+  },
+  "bookR": {
+    "status": "MANUAL_REVIEW",
+    "sourceWpPostId": "1376",
+    "titleRaw": "R",
+    "tfLibroRaw": "R",
+    "normalizedTitle": "r",
+    "author": "María Isabel Martínez Gilaranz",
+    "rawReviewPreview": "Qué ocurre cuando una mujer que cree que no es capaz de hacer algo, de la noche a la mañana de la forma más inesperada, lo logra? R entra a trabajar como camarero, en una empresa y conoce a una alta ejecutiva, que le revela su gran secreto... Poco a poco enta…",
+    "slug": "r",
+    "attachments": [
+      {
+        "attachmentId": "1379",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_FotoMariaIsabel.jpg",
+        "reason": "thumbnailId en books-candidates.csv"
+      }
+    ],
+    "oldUrl": "https://editoriallarueca.com/autor/maria-isabel-martinez-gilaranz/",
+    "hiddenCharacterEvidence": [],
+    "reasons": [
+      "El libro queda bloqueado porque el titulo normalizado genera slug demasiado corto para createBookSchema.",
+      "tf_libro contiene un unico caracter visible: requiere decision editorial."
+    ]
+  },
+  "otherBookBlockers": []
+}

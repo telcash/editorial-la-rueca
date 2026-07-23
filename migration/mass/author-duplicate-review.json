@@ -1,0 +1,3298 @@
+{
+  "summary": {
+    "duplicateGroups": 29,
+    "affectedRecords": 85,
+    "mergeHighConfidence": 7,
+    "likelyMergeManualConfirmation": 22,
+    "keepSeparate": 0,
+    "manualReview": 0,
+    "expectedUniqueAuthorsAfterHighConfidence": 179,
+    "legacyPattern": {
+      "groupsWithMultipleLegacyBookRows": 24,
+      "distinctBooksAcrossDuplicateGroups": 69
+    },
+    "conflictingAuthorPhotos": 22
+  },
+  "groups": [
+    {
+      "groupId": "possible-author:alejandro gonzalez garcia",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:733",
+      "mergeCandidates": ["author:747"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Alejandro González García",
+        "slug": "alejandro-gonzalez-garcia",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": null
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:733",
+          "sourceWpPostId": "733",
+          "name": "Alejandro González García",
+          "normalizedName": "alejandro gonzalez garcia",
+          "slug": "alejandro-gonzalez-garcia",
+          "oldUrl": "https://editoriallarueca.com/autor/alejandro-gonzalez-garcia/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Los pensamientos olvidados",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Embárcate en un viaje desde el pasado hasta el futuro de un autor que se ha lanzado a la publicación de sus poemarios tras más de 20 años sobre la pluma y que intenta hacerse un h…",
+          "thumbnailId": "735",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAlejandro.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:los pensamientos olvidados",
+              "title": "Los pensamientos olvidados"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:747",
+          "sourceWpPostId": "747",
+          "name": "Alejandro González García",
+          "normalizedName": "alejandro gonzalez garcia",
+          "slug": "alejandro-gonzalez-garcia-2",
+          "oldUrl": "https://editoriallarueca.com/autor/alejandro-gonzalez-garcia-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "La vida sin tí",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "“La Vida Sin Ti” es el segundo Poemario que el autor ha intentado plasmar en base de trazos de tinta de una parte de su vida que tuvo lugar hace algo más de 15 años. Es una llamad…",
+          "thumbnailId": "890",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAlejandroGonzalez.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:la vida sin ti",
+              "title": "La vida sin tí"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:alfredo manrique bravo",
+      "proposal": "MERGE_HIGH_CONFIDENCE",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:3141",
+      "mergeCandidates": ["author:1088"],
+      "confidence": 0.92,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Propuesta calculada: MERGE_HIGH_CONFIDENCE."
+      ],
+      "fieldConflicts": [],
+      "photoClassification": "SAME_IMAGE",
+      "canonicalPhoto": {
+        "authorCandidateKey": "author:1088",
+        "attachmentId": "1090",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Foto-autor-1.jpg",
+        "confidence": "high"
+      },
+      "proposedMergedData": {
+        "name": "Alfredo Manrique Bravo",
+        "slug": "alfredo-manrique-bravo-2",
+        "shortBio": null,
+        "biography": "Alfredo Manrique Bravo nació en Barajas (Madrid) el 23 de abril de 1949. Trabajó durante años en Iberia Líneas Aéreas de España y, movido por el deseo de compartir su historia y sus sentimientos, decidió iniciarse en la escritura.\r\n\r\n\"Cuando te vuelva a encontrar\" es su segundo libro, después de publicar 60 años de mi vida. Su obra nace del amor hacia su familia y de la ilusión de dejar un legado para que las futuras generaciones puedan conocer su historia, sus valores y el cariño que siempre sintió por los suyos.\r\n",
+        "photo": {
+          "authorCandidateKey": "author:1088",
+          "attachmentId": "1090",
+          "url": "https://editoriallarueca.com/wp-content/uploads/w_Foto-autor-1.jpg",
+          "confidence": "high"
+        },
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Un libro cargado de memoria, ternura y humanidad, donde el amor permanece incluso cuando el tiempo pasa. Autor Alfredo Manrique"
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:1088",
+          "sourceWpPostId": "1088",
+          "name": "Alfredo Manrique Bravo",
+          "normalizedName": "alfredo manrique bravo",
+          "slug": "alfredo-manrique-bravo",
+          "oldUrl": "https://editoriallarueca.com/autor/alfredo-manrique-bravo/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "En la recta final",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Alfredo Manrique Bravo nació en Barajas, un pueblo de Madrid un 23 de Abril de 1949, trabajo en Iberia Líneas Aéreas de España y este es el segundo libro que se atreve a escribir.…",
+          "thumbnailId": "1090",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_Foto-autor-1.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:en la recta final",
+              "title": "En la recta final"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:3141",
+          "sourceWpPostId": "3141",
+          "name": "Alfredo Manrique Bravo",
+          "normalizedName": "alfredo manrique bravo",
+          "slug": "alfredo-manrique-bravo-2",
+          "oldUrl": "https://editoriallarueca.com/autor/alfredo-manrique-bravo-2/",
+          "classification": "author_only_candidate",
+          "tfLibro": null,
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": "Alfredo Manrique Bravo nació en Barajas (Madrid) el 23 de abril de 1949. Trabajó durante años en Iberia Líneas Aéreas de España y, movido por el deseo de compartir su historia y s…",
+          "rawReviewPreview": "Alfredo Manrique Bravo nació en Barajas (Madrid) el 23 de abril de 1949. Trabajó durante años en Iberia Líneas Aéreas de España y, movido por el deseo de compartir su historia y s…",
+          "thumbnailId": "3143",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/Autor-Alfredo-Manrique-Bravo_Libro-Cuando-te-vuelva-a-encontrar_Genero-Biografia-BT_Editorial-la-Rueca.jpg",
+          "imageFieldId": "3142",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_MockUp_CuandoTeVuelvaAEncontrar.jpg",
+          "relatedBooks": [],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Un libro cargado de memoria, ternura y humanidad, donde el amor permanece incluso cuando el tiempo pasa. Autor Alfredo Manrique"
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:alonso cruz leon",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:633",
+      "mergeCandidates": ["author:1473", "author:1858"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Alonso Cruz León",
+        "slug": "alonso-cruz-leon",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Trata de una crónica sobre problemas filosóficos sobre Dios, los griegos, sobre el alma, sobre la verdad y la duda y algunos temas fundamentales en mi vida"
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:633",
+          "sourceWpPostId": "633",
+          "name": "Alonso Cruz León",
+          "normalizedName": "alonso cruz leon",
+          "slug": "alonso-cruz-leon",
+          "oldUrl": "https://editoriallarueca.com/autor/alonso-cruz-leon/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "banquero de Carlos V a Emilio Botín",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "La foto de la Tierra desde los confines del sistema solar, saber que la Tierra (la Earth Ship) vuela alrededor del sol a 30 kms. Por segundo, saber que los viajeros han crecido en…",
+          "thumbnailId": "634",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAlonsoOK.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:banquero de carlos v a emilio botin",
+              "title": "banquero de Carlos V a Emilio Botín"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1473",
+          "sourceWpPostId": "1473",
+          "name": "Alonso Cruz León",
+          "normalizedName": "alonso cruz leon",
+          "slug": "alonso-cruz-leon-2",
+          "oldUrl": "https://editoriallarueca.com/autor/alonso-cruz-leon-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "La última carta",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Este libro se titula “La última carta\" precisamente porque el autor no va poder escribir más libros, dado el error de diseño de la especie humana. Le están llamando de Aldebarán a…",
+          "thumbnailId": "1475",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoAutor_Alonso.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:la ultima carta",
+              "title": "La última carta"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Trata de una crónica sobre problemas filosóficos sobre Dios, los griegos, sobre el alma, sobre la verdad y la duda y algunos temas fundamentales en mi vida"
+        },
+        {
+          "candidateKey": "author:1858",
+          "sourceWpPostId": "1858",
+          "name": "Alonso Cruz León",
+          "normalizedName": "alonso cruz leon",
+          "slug": "alonso-cruz-leon-3",
+          "oldUrl": "https://editoriallarueca.com/autor/alonso-cruz-leon-3/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Descartes y su duda  hiperbólica",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Con este libro su autor Alonso Cruz León, hace una reflexión sobre el cambio filosófico de Descartes, quien transitó del mecanicismo al animismo, influenciado por el cardenal Béru…",
+          "thumbnailId": "1475",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoAutor_Alonso.jpg",
+          "imageFieldId": "1862",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/ww_mockup-Descartes.jpg",
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:descartes y su duda hiperbolica",
+              "title": "Descartes y su duda  hiperbólica"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Descartes, el filósofo bifronte entre la máquina y el alma."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:ana cordoba del campo",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:563",
+      "mergeCandidates": ["author:882"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Ana Córdoba del Campo",
+        "slug": "ana-cordoba-del-campo",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": null
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:563",
+          "sourceWpPostId": "563",
+          "name": "Ana Córdoba del Campo",
+          "normalizedName": "ana cordoba del campo",
+          "slug": "ana-cordoba-del-campo",
+          "oldUrl": "https://editoriallarueca.com/autor/ana-cordoba-del-campo/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Cruce de Pasos",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "« Se trata de un libro de poesía, que habla sobre todo del amor, de los sentimientos, de la soledad, de fracasos y éxitos. Sentimientos de cosas vividas en primera y tercera perso…",
+          "thumbnailId": "617",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/fotoAna.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:cruce de pasos",
+              "title": "Cruce de Pasos"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:882",
+          "sourceWpPostId": "882",
+          "name": "Ana Córdoba del Campo",
+          "normalizedName": "ana cordoba del campo",
+          "slug": "ana-cordoba-del-campo-2",
+          "oldUrl": "https://editoriallarueca.com/autor/ana-cordoba-del-campo-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "No te vi venir, pues jamás te hubiese dejado entrar",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "\"No te vi venir, pues jamás te hubiese dejado entrar\" es la tercera obra de poesía y prosa poética de Ana Córdoba del Campo, una autora que escribe desde lo más íntimo. En él plas…",
+          "thumbnailId": "884",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoAnaCordobaparaweb.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:no te vi venir pues jamas te hubiese dejado entrar",
+              "title": "No te vi venir, pues jamás te hubiese dejado entrar"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:angel garcia garcia munoz buru",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:813",
+      "mergeCandidates": ["author:1256"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Ángel García García-Muñoz (BÜRU)",
+        "slug": "angel-garcia-garcia-munoz-buru",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Un viseño errante nacido el siglo pasado que está deseando volver a la tierra de sus padres.Escribo para que el tiempo no pase en balde."
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:813",
+          "sourceWpPostId": "813",
+          "name": "Ángel García García-Muñoz (BÜRU)",
+          "normalizedName": "angel garcia garcia munoz buru",
+          "slug": "angel-garcia-garcia-munoz-buru",
+          "oldUrl": "https://editoriallarueca.com/autor/angel-garcia-garcia-munoz-buru/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "El camino del ángel (La realidad de un sueño)",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Cuando creía que estaba llegando al final del viaje firmé una prórroga para seguir adelante. Esta historia fue una alegría que se convirtió en otra catarsis. “Las heridas heredada…",
+          "thumbnailId": "815",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_Foto-Angel-Garcia.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:el camino del angel la realidad de un sueno",
+              "title": "El camino del ángel (La realidad de un sueño)"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1256",
+          "sourceWpPostId": "1256",
+          "name": "Ángel García  García-Muñoz  (Büru)",
+          "normalizedName": "angel garcia garcia munoz buru",
+          "slug": "angel-garcia-garcia-munoz-buru-2",
+          "oldUrl": "https://editoriallarueca.com/autor/angel-garcia-garcia-munoz-buru-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Versos de madrugada – (Con-sentido)",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "\"Que de mí no quede más que lo que escribo: mi vida, mis decisiones, mi responsabilidad. Cada año es un recordatorio de que el tiempo es breve, pero mi compromiso es hacerlo signi…",
+          "thumbnailId": "1258",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/foto-autor-1.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:versos de madrugada con sentido",
+              "title": "Versos de madrugada – (Con-sentido)"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Un viseño errante nacido el siglo pasado que está deseando volver a la tierra de sus padres.Escribo para que el tiempo no pase en balde."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:antonio l gomez charlin",
+      "proposal": "MERGE_HIGH_CONFIDENCE",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:2962",
+      "mergeCandidates": ["author:690"],
+      "confidence": 0.92,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Propuesta calculada: MERGE_HIGH_CONFIDENCE."
+      ],
+      "fieldConflicts": [],
+      "photoClassification": "SAME_IMAGE",
+      "canonicalPhoto": {
+        "authorCandidateKey": "author:690",
+        "attachmentId": "692",
+        "url": "https://editoriallarueca.com/wp-content/uploads/FotoCharlin-1.jpg",
+        "confidence": "high"
+      },
+      "proposedMergedData": {
+        "name": "Antonio L. Gómez Charlín",
+        "slug": "antonio-l-gomez-charlin-2",
+        "shortBio": null,
+        "biography": "Antonio Lorenzo Gómez Charlín nació en Cambados (Pontevedra).\r\nEs autor de doce libros: \r\n\"El sueño de la noche azul\", \"El camarero está triste\", \"Hay putas que tienen algo de santas\", \"Las bellezas de Kyoto\", \"La vida soñada de las sirenas\", \"La leyenda de Fukaeri\", \"El hombre que se enamoró de Sasha Grey\", \"Nagasaki\", \"Kalifornia\", \"Volverás a Pasadena\", \"Réquiem por un escritor desconocido\" y \"El lenguaje perdido de las nubes\".",
+        "photo": {
+          "authorCandidateKey": "author:690",
+          "attachmentId": "692",
+          "url": "https://editoriallarueca.com/wp-content/uploads/FotoCharlin-1.jpg",
+          "confidence": "high"
+        },
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Una periodista viaja a Cambados para editar los diarios de un novelista maldito. Literatura, memoria y autodestrucción en la costa gallega."
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:690",
+          "sourceWpPostId": "690",
+          "name": "Antonio L.  Gómez Charlín",
+          "normalizedName": "antonio l gomez charlin",
+          "slug": "antonio-l-gomez-charlin",
+          "oldUrl": "https://editoriallarueca.com/autor/antonio-l-gomez-charlin/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Nagasaki",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Nagasaki é a obra de madurez dun escritor galego, Antonio Guzmán, residente na illa de Tenerife, tal como o retrata o literato Óscar Neuman na súa novela Hiroshima . Adicto aos re…",
+          "thumbnailId": "692",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/FotoCharlin-1.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:nagasaki",
+              "title": "Nagasaki"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:2962",
+          "sourceWpPostId": "2962",
+          "name": "Antonio L. Gómez Charlín",
+          "normalizedName": "antonio l gomez charlin",
+          "slug": "antonio-l-gomez-charlin-2",
+          "oldUrl": "https://editoriallarueca.com/autor/antonio-l-gomez-charlin-2/",
+          "classification": "author_only_candidate",
+          "tfLibro": null,
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": "Antonio Lorenzo Gómez Charlín nació en Cambados (Pontevedra). Es autor de doce libros: \"El sueño de la noche azul\", \"El camarero está triste\", \"Hay putas que tienen algo de santas…",
+          "rawReviewPreview": "Antonio Lorenzo Gómez Charlín nació en Cambados (Pontevedra). Es autor de doce libros: \"El sueño de la noche azul\", \"El camarero está triste\", \"Hay putas que tienen algo de santas…",
+          "thumbnailId": "2964",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/Libro_El-lenguaje-perdido-de-las-nubes_Autor_AntonioLCharlin_Genero-FA_Editorial-La-Rueca.jpg",
+          "imageFieldId": "2963",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/MochUP_Libro_El-lenguaje-perdido-de-las-nubesAutor_AntonioL.jpg",
+          "relatedBooks": [],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Una periodista viaja a Cambados para editar los diarios de un novelista maldito. Literatura, memoria y autodestrucción en la costa gallega."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:antonio lopez hurtado zarate",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:3099",
+      "mergeCandidates": ["author:663", "author:710", "author:1712"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Antonio López Hurtado (Zárate)",
+        "slug": "antonio-lopez-hurtado-zarate-4",
+        "shortBio": null,
+        "biography": "Antonio López Hurtado (Madrid, 1943) es Ingeniero de Telecomunicación y trabajó en Standard Eléctrica S.A. hasta su jubilación. Apasionado investigador de la historia y la vida de Moralzarzal, ha dedicado décadas a recopilar y difundir conocimientos sobre sus oficios, costumbres, patrimonio, fauna, flora y tradiciones, plasmados en su web www.conocermoralzarzal.es.\r\nEs autor y coautor de diversas publicaciones, entre ellas Moralzarzal, Crónicas del agua, Recursos Patrimoniales de Moralzarzal y varias obras dedicadas a los oficios tradicionales del pueblo. Casado, padre de tres hijos y abuelo de dos nietos, continúa su labor de investigación y escritura con el objetivo de preservar la memoria colectiva y rendir homenaje a su querido Moralzarzal.\r\n",
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Descubre los oficios que dieron vida a nuestro pueblo"
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:663",
+          "sourceWpPostId": "663",
+          "name": "Antonio López Hurtado Zárate",
+          "normalizedName": "antonio lopez hurtado zarate",
+          "slug": "antonio-lopez-hurtado-zarate",
+          "oldUrl": "https://editoriallarueca.com/autor/antonio-lopez-hurtado-zarate/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Tiendas y abastos en Moralzarzal",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Con este libro pretendo hacer un recorrido por la historia de los tenderos que hubo en nuestro pueblo: los vecinos o forasteros que producían la harina para hacer el pan o el pien…",
+          "thumbnailId": "639",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:tiendas y abastos en moralzarzal",
+              "title": "Tiendas y abastos en Moralzarzal"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:710",
+          "sourceWpPostId": "710",
+          "name": "Antonio López Hurtado \"Zárate\"",
+          "normalizedName": "antonio lopez hurtado zarate",
+          "slug": "antonio-lopez-hurtado-zarate-2",
+          "oldUrl": "https://editoriallarueca.com/autor/antonio-lopez-hurtado-zarate-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "La Ganadería en Moralzarzal",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Este libro es el resultado del trabajo que ha desarrollado el autor dentro del mundo de los oficios y que, por recomendaciones de personas con experiencia y de razonamientos lógic…",
+          "thumbnailId": "639",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:la ganaderia en moralzarzal",
+              "title": "La Ganadería en Moralzarzal"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1712",
+          "sourceWpPostId": "1712",
+          "name": "Antonio López Hurtado (Zárate)",
+          "normalizedName": "antonio lopez hurtado zarate",
+          "slug": "antonio-lopez-hurtado-zarate-3",
+          "oldUrl": "https://editoriallarueca.com/autor/antonio-lopez-hurtado-zarate-3/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Otros Oficios en Moralzarzal",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Antonio López Hurtado, ingeniero de telecomunicaciones nacido en Madrid en 1943, ha dedicado su vida a la investigación sobre Moralzarzal. A través de su web, www.conocermoralzarz…",
+          "thumbnailId": "1714",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/foto1.jpg",
+          "imageFieldId": "2634",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_mockup_oficios.jpg",
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:otros oficios en moralzarzal",
+              "title": "Otros Oficios en Moralzarzal"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Descubre los oficios que dieron vida a nuestro pueblo"
+        },
+        {
+          "candidateKey": "author:3099",
+          "sourceWpPostId": "3099",
+          "name": "Antonio López Hurtado (Zárate)",
+          "normalizedName": "antonio lopez hurtado zarate",
+          "slug": "antonio-lopez-hurtado-zarate-4",
+          "oldUrl": "https://editoriallarueca.com/autor/antonio-lopez-hurtado-zarate-4/",
+          "classification": "author_only_candidate",
+          "tfLibro": null,
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": "Antonio López Hurtado (Madrid, 1943) es Ingeniero de Telecomunicación y trabajó en Standard Eléctrica S.A. hasta su jubilación. Apasionado investigador de la historia y la vida de…",
+          "rawReviewPreview": "Antonio López Hurtado (Madrid, 1943) es Ingeniero de Telecomunicación y trabajó en Standard Eléctrica S.A. hasta su jubilación. Apasionado investigador de la historia y la vida de…",
+          "thumbnailId": "3101",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate_libroLaEnsenanza-en-Moralzarzal_libro-La-Ensenanza-en-Moralzarzal.jpg",
+          "imageFieldId": "3144",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_mockup_Ensenanza.jpg",
+          "relatedBooks": [],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Descubre la historia de la enseñanza en Moralzarzal: maestros, escuelas, posguerra y evolución educativa en un recorrido por la memoria local del municipio."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:antonio valdeavero ponce",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:938",
+      "mergeCandidates": ["author:1686"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Antonio Valdeavero Ponce",
+        "slug": "antonio-valdeavero-ponce",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Una exploración entre la fe, la ficción y el futuro cósmico"
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:938",
+          "sourceWpPostId": "938",
+          "name": "Antonio Valdeavero Ponce",
+          "normalizedName": "antonio valdeavero ponce",
+          "slug": "antonio-valdeavero-ponce",
+          "oldUrl": "https://editoriallarueca.com/autor/antonio-valdeavero-ponce/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "DE LOS ROLLOS DEL MAR MUERTO A LOS DE RODRIGO DE LARES  ”“una narración audaz para un lector más inteligente que lerdo” Belmonte año 2017 al 2022. LIBRO 1",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "“Relatos que sacan pensamientos de siglos acotados que ahora queda a su libre interpretación personal”",
+          "thumbnailId": "940",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoValdeavero-1.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares una narracion audaz para un lector mas inteligente que lerdo belmonte ano 2017 al 2022 libro 1",
+              "title": "DE LOS ROLLOS DEL MAR MUERTO A LOS DE RODRIGO DE LARES  ”“una narración audaz para un lector más inteligente que lerdo” Belmonte año 2017 al 2022. LIBRO 1"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1686",
+          "sourceWpPostId": "1686",
+          "name": "Antonio Valdeavero Ponce",
+          "normalizedName": "antonio valdeavero ponce",
+          "slug": "antonio-valdeavero-ponce-2",
+          "oldUrl": "https://editoriallarueca.com/autor/antonio-valdeavero-ponce-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "DE LOS ROLLOS DEL MAR MUERTO A LOS DE RODRIGO DE LARES  -TOMO 2-",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Es una obra que invita a la reflexión pausada, a la duda constructiva y a una búsqueda incansable del conocimiento, tanto personal como colectivo. Una lectura fascinante para quie…",
+          "thumbnailId": "1690",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAntonioValdeavero2.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares tomo 2",
+              "title": "DE LOS ROLLOS DEL MAR MUERTO A LOS DE RODRIGO DE LARES  -TOMO 2-"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Una exploración entre la fe, la ficción y el futuro cósmico"
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:carlos jose olmedo batista",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:797",
+      "mergeCandidates": ["author:1578"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Carlos José Olmedo Batista",
+        "slug": "carlos-jose-olmedo-batista",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "\"Ángel esperaba un verano de juegos y playas, pero un simple papel lo llevará a descubrir cómo las pequeñas cosas pueden cambiarlo todo.\""
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:797",
+          "sourceWpPostId": "797",
+          "name": "Carlos José Olmedo Batista",
+          "normalizedName": "carlos jose olmedo batista",
+          "slug": "carlos-jose-olmedo-batista",
+          "oldUrl": "https://editoriallarueca.com/autor/carlos-jose-olmedo-batista/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "La lista de tareas de mi profe Jose",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Mi nombre es Ángel, y tanto para mí, como para los demás niños, llegó el final de otro curso, y muy rápidamente, formó parte de mi pasado, pero eso sí, como si fuera consciente de…",
+          "thumbnailId": "799",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/FotoCarlosJ.Olmedo.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:la lista de tareas de mi profe jose",
+              "title": "La lista de tareas de mi profe Jose"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1578",
+          "sourceWpPostId": "1578",
+          "name": "Carlos José Olmedo Batista",
+          "normalizedName": "carlos jose olmedo batista",
+          "slug": "carlos-jose-olmedo-batista-2",
+          "oldUrl": "https://editoriallarueca.com/autor/carlos-jose-olmedo-batista-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "La lista de tareas de mi profe Jose",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "\"Ángel esperaba unas vacaciones perfectas llenas de juegos y playas, pero un simple papel transformará su verano en una aventura inesperada. Descubre cómo las pequeñas cosas puede…",
+          "thumbnailId": "1580",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoCarlosJ.Olmedo.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:la lista de tareas de mi profe jose",
+              "title": "La lista de tareas de mi profe Jose"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "\"Ángel esperaba un verano de juegos y playas, pero un simple papel lo llevará a descubrir cómo las pequeñas cosas pueden cambiarlo todo.\""
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:diego gomez costa",
+      "proposal": "MERGE_HIGH_CONFIDENCE",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:2346",
+      "mergeCandidates": ["author:921", "author:1750", "author:1881"],
+      "confidence": 0.92,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Propuesta calculada: MERGE_HIGH_CONFIDENCE."
+      ],
+      "fieldConflicts": [],
+      "photoClassification": "SAME_IMAGE",
+      "canonicalPhoto": {
+        "authorCandidateKey": "author:921",
+        "attachmentId": "923",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_fotoDiegoGomez.jpg",
+        "confidence": "high"
+      },
+      "proposedMergedData": {
+        "name": "Diego Gómez-Costa",
+        "slug": "diego-gomez-costa-4",
+        "shortBio": null,
+        "biography": "Diego Gómez-Costa\r\nEn este libro presenta un manual redactado en colaboración con otros autores.\r\nEste escrito busca recopilar el manejo odontológico actual en pacientes con necesidades especiales y tener así un referente en diversas patologías.\r\nEste escrito forma parte de una familia literario con fines educativos\r\n",
+        "photo": {
+          "authorCandidateKey": "author:921",
+          "attachmentId": "923",
+          "url": "https://editoriallarueca.com/wp-content/uploads/w_fotoDiegoGomez.jpg",
+          "confidence": "high"
+        },
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Para ser bueno, debes ser bueno… y saber quién eres."
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:921",
+          "sourceWpPostId": "921",
+          "name": "Diego Gómez-Costa",
+          "normalizedName": "diego gomez costa",
+          "slug": "diego-gomez-costa",
+          "oldUrl": "https://editoriallarueca.com/autor/diego-gomez-costa/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "El rol principal de una película llamada VIDA",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "El autor desea que el contenido del relato pueda crear una vinculación con las experiencias descritas en él y con el propio lector. De una forma espontánea y con un lenguaje claro…",
+          "thumbnailId": "923",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_fotoDiegoGomez.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:el rol principal de una pelicula llamada vida",
+              "title": "El rol principal de una película llamada VIDA"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1750",
+          "sourceWpPostId": "1750",
+          "name": "Diego Gómez-Costa",
+          "normalizedName": "diego gomez costa",
+          "slug": "diego-gomez-costa-2",
+          "oldUrl": "https://editoriallarueca.com/autor/diego-gomez-costa-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "El dolor de un alma sin memoria",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Autor: Diego Gómez-Costa Lleva toda una vida cuestionando la existencia de algo más allá de lo evidente. A través de su trayectoria profesional se ha desarrollado en áreas relacio…",
+          "thumbnailId": "2632",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-3.jpg",
+          "imageFieldId": "1749",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_mockup_Diego.jpg",
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:el dolor de un alma sin memoria",
+              "title": "El dolor de un alma sin memoria"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Para ser bueno, debes ser bueno… y saber quién eres."
+        },
+        {
+          "candidateKey": "author:1881",
+          "sourceWpPostId": "1881",
+          "name": "Diego Gómez-Costa",
+          "normalizedName": "diego gomez costa",
+          "slug": "diego-gomez-costa-3",
+          "oldUrl": "https://editoriallarueca.com/autor/diego-gomez-costa-3/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "El pueblo Judío. Legado y nexo con Judea: Una historia Milenaria",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Sin pretender crear polémica, este libro ofrece una mirada documentada sobre la profunda conexión entre el pueblo judío y la tierra de Judea, núcleo de su identidad durante más de…",
+          "thumbnailId": "2617",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-2.jpg",
+          "imageFieldId": "2616",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_MockUp_PuebloJudio2-1.jpg",
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:el pueblo judio legado y nexo con judea una historia milenaria",
+              "title": "El pueblo Judío. Legado y nexo con Judea: Una historia Milenaria"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Explora la milenaria conexión del pueblo judío con la tierra de Judea a través de una mirada histórica y documentada, más allá de ideologías y debates políticos."
+        },
+        {
+          "candidateKey": "author:2346",
+          "sourceWpPostId": "2346",
+          "name": "Diego Gómez-Costa",
+          "normalizedName": "diego gomez costa",
+          "slug": "diego-gomez-costa-4",
+          "oldUrl": "https://editoriallarueca.com/autor/diego-gomez-costa-4/",
+          "classification": "author_only_candidate",
+          "tfLibro": null,
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": "Diego Gómez-Costa En este libro presenta un manual redactado en colaboración con otros autores. Este escrito busca recopilar el manejo odontológico actual en pacientes con necesid…",
+          "rawReviewPreview": "Diego Gómez-Costa En este libro presenta un manual redactado en colaboración con otros autores. Este escrito busca recopilar el manejo odontológico actual en pacientes con necesid…",
+          "thumbnailId": "2606",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w2_fotoDiegoGomezCosta-copia.jpg",
+          "imageFieldId": "2605",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_mockup_manual.jpg",
+          "relatedBooks": [],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Manual de Odontología Geriátrica: guía práctica para el cuidado integral del paciente mayor"
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:elga reategui",
+      "proposal": "MERGE_HIGH_CONFIDENCE",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:1246",
+      "mergeCandidates": ["author:1947"],
+      "confidence": 0.92,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Propuesta calculada: MERGE_HIGH_CONFIDENCE."
+      ],
+      "fieldConflicts": [],
+      "photoClassification": "SAME_IMAGE",
+      "canonicalPhoto": {
+        "authorCandidateKey": "author:1246",
+        "attachmentId": "1248",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Foto-Elga.jpg",
+        "confidence": "high"
+      },
+      "proposedMergedData": {
+        "name": "ELGA REÁTEGUI",
+        "slug": "elga-reategui",
+        "shortBio": null,
+        "biography": null,
+        "photo": {
+          "authorCandidateKey": "author:1246",
+          "attachmentId": "1248",
+          "url": "https://editoriallarueca.com/wp-content/uploads/w_Foto-Elga.jpg",
+          "confidence": "high"
+        },
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "El libro de poemas de Elga Reátegui introduce al lector a un universo íntimo y emocional, destacando la singularidad de la autora."
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:1246",
+          "sourceWpPostId": "1246",
+          "name": "ELGA REÁTEGUI",
+          "normalizedName": "elga reategui",
+          "slug": "elga-reategui",
+          "oldUrl": "https://editoriallarueca.com/autor/elga-reategui/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "La ruta de las mariposas",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Descubre un viaje íntimo y emocional a través de los poemas de Elga Reátegui, donde el duelo, la búsqueda espiritual y la reconciliación se entrelazan en una travesía hacia el ser…",
+          "thumbnailId": "1248",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_Foto-Elga.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:la ruta de las mariposas",
+              "title": "La ruta de las mariposas"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "El libro de poemas de Elga Reátegui introduce al lector a un universo íntimo y emocional, destacando la singularidad de la autora."
+        },
+        {
+          "candidateKey": "author:1947",
+          "sourceWpPostId": "1947",
+          "name": "Elga Reátegui",
+          "normalizedName": "elga reategui",
+          "slug": "elga-reategui-2",
+          "oldUrl": "https://editoriallarueca.com/autor/elga-reategui-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Gris, más bien, plomo",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Es periodista y escritora. Nació en Lima (Perú). Reside en Valencia (España). Laboró en diversos medios de comunicación de la capital peruana. Produce y conduce dos espacios liter…",
+          "thumbnailId": "1949",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/Foto-Elga.jpg",
+          "imageFieldId": "1948",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/2w_mockup_Gris-copia.jpg",
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:gris mas bien plomo",
+              "title": "Gris, más bien, plomo"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "“Gris, más bien, plomo” de Elga Reátegui: una novela intensa sobre identidad, ego y supervivencia. Literatura contemporánea para reflexionar."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:francisco marin vargas",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:1167",
+      "mergeCandidates": [
+        "author:1209",
+        "author:1302",
+        "author:1348",
+        "author:1365",
+        "author:1431"
+      ],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Francisco Marín Vargas",
+        "slug": "francisco-marin-vargas",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Adentrarse en esta obra poética es revivir nuestro nacimiento, el primer barro. En este ejercicio de soltar, en el silencio."
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:1167",
+          "sourceWpPostId": "1167",
+          "name": "Francisco Marín Vargas",
+          "normalizedName": "francisco marin vargas",
+          "slug": "francisco-marin-vargas",
+          "oldUrl": "https://editoriallarueca.com/autor/francisco-marin-vargas/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "De barro y silencio",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Adentrarse en esta obra poética es revivir nuestro nacimiento, el primer barro, ese amanecer que condicionaría la existencia hasta convertirnos en ser. Tomaremos conciencia para i…",
+          "thumbnailId": "1169",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_Foto_FcoMarin.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:de barro y silencio",
+              "title": "De barro y silencio"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Adentrarse en esta obra poética es revivir nuestro nacimiento, el primer barro. En este ejercicio de soltar, en el silencio."
+        },
+        {
+          "candidateKey": "author:1209",
+          "sourceWpPostId": "1209",
+          "name": "Francisco Marín Vargas",
+          "normalizedName": "francisco marin vargas",
+          "slug": "francisco-marin-vargas-2",
+          "oldUrl": "https://editoriallarueca.com/autor/francisco-marin-vargas-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": " ESFERAS TEMPORALES Aforismos, meditaciones y otros escritos (Breve recopilación)",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Esferas temporales es un recorrido en el tiempo que nos condiciona a replantearnos la naturaleza y evolución del propio ser. Una imagen interior como ayuda para entender y dar equ…",
+          "thumbnailId": "1211",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_Foto_FcoMarin-1.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:esferas temporales aforismos meditaciones y otros escritos breve recopilacion",
+              "title": " ESFERAS TEMPORALES Aforismos, meditaciones y otros escritos (Breve recopilación)"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Esferas temporales es un recorrido en el tiempo que nos condiciona a replantearnos la naturaleza y evolución del propio ser."
+        },
+        {
+          "candidateKey": "author:1302",
+          "sourceWpPostId": "1302",
+          "name": "Francisco Marín Vargas",
+          "normalizedName": "francisco marin vargas",
+          "slug": "francisco-marin-vargas-3",
+          "oldUrl": "https://editoriallarueca.com/autor/francisco-marin-vargas-3/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "CUENTOS PARA AMARA - La Nieve y Amara toca el tambor",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "CUENTOS PARA AMARA Es una colección de breves cuentos infantiles, a los que fui dando vida a la vez que mi nieta iba creciendo. En estos, nos encontramos con distintos personajes,…",
+          "thumbnailId": "1312",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_Foto_FcoMarin-2.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:cuentos para amara la nieve y amara toca el tambor",
+              "title": "CUENTOS PARA AMARA - La Nieve y Amara toca el tambor"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "CUENTOS PARA AMARA es una colección de breves cuentos infantiles, a los que fui dando vida a la vez que mi nieta iba creciendo."
+        },
+        {
+          "candidateKey": "author:1348",
+          "sourceWpPostId": "1348",
+          "name": "Francisco Marín Vargas",
+          "normalizedName": "francisco marin vargas",
+          "slug": "francisco-marin-vargas-4",
+          "oldUrl": "https://editoriallarueca.com/autor/francisco-marin-vargas-4/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "CUENTOS PARA AMARA – Doña Bota – La Burbuja de Mar",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "CUENTOS PARA AMARA es una colección de breves cuentos infantiles, a los que fui dando vida a la vez que mi nieta iba creciendo. En estos, nos encontramos con distintos personajes,…",
+          "thumbnailId": "1312",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_Foto_FcoMarin-2.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:cuentos para amara dona bota la burbuja de mar",
+              "title": "CUENTOS PARA AMARA – Doña Bota – La Burbuja de Mar"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "CUENTOS PARA AMARA es una colección de breves cuentos infantiles, a los que fui dando vida a la vez que mi nieta iba creciendo."
+        },
+        {
+          "candidateKey": "author:1365",
+          "sourceWpPostId": "1365",
+          "name": "Francisco Marín Vargas",
+          "normalizedName": "francisco marin vargas",
+          "slug": "francisco-marin-vargas-5",
+          "oldUrl": "https://editoriallarueca.com/autor/francisco-marin-vargas-5/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Nido de Barro – Haikus ",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Adentrarse en la maravillosa escritura poética del HAIKU, no solo es un acontecimiento que nos hace descubrir la grandeza de las pequeñas cosas, sino también el enorme placer de v…",
+          "thumbnailId": "1312",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_Foto_FcoMarin-2.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:nido de barro haikus",
+              "title": "Nido de Barro – Haikus "
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "En este libro comparto algunas de esas vivencias."
+        },
+        {
+          "candidateKey": "author:1431",
+          "sourceWpPostId": "1431",
+          "name": "Francisco Marín Vargas",
+          "normalizedName": "francisco marin vargas",
+          "slug": "francisco-marin-vargas-6",
+          "oldUrl": "https://editoriallarueca.com/autor/francisco-marin-vargas-6/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Cartas a Diego – Reflexiones sobre un nacimiento",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "\"Descubre en 'Cartas a Diego' cómo Francisco Marín nos guía a través de las pequeñas cosas y las profundidades de la naturaleza, revelando los enigmas ocultos de la vida. Un viaje…",
+          "thumbnailId": "1312",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_Foto_FcoMarin-2.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:cartas a diego reflexiones sobre un nacimiento",
+              "title": "Cartas a Diego – Reflexiones sobre un nacimiento"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Ese lugar que siempre me abrazaba desde la necesidad de estar en él, y en el que descubrí al llegar que todo es tan poco necesario..."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:gaspar t jimeno diestro",
+      "proposal": "MERGE_HIGH_CONFIDENCE",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:2406",
+      "mergeCandidates": ["author:802"],
+      "confidence": 0.92,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Propuesta calculada: MERGE_HIGH_CONFIDENCE."
+      ],
+      "fieldConflicts": [],
+      "photoClassification": "SAME_IMAGE",
+      "canonicalPhoto": {
+        "authorCandidateKey": "author:802",
+        "attachmentId": "804",
+        "url": "https://editoriallarueca.com/wp-content/uploads/FotoGaspar.jpg",
+        "confidence": "high"
+      },
+      "proposedMergedData": {
+        "name": "Gaspar T. Jimeno Diestro",
+        "slug": "gaspar-t-jimeno-diestro-2",
+        "shortBio": null,
+        "biography": "GASPAR T. JIMENO DIESTRO, es licenciado en Ciencias Geológicas por la Universidad Complutense de Madrid en el año 1974; Licenciado en Ciencias Ambientales por la Universidad Nacional de Educación a Distancia (UNED) en el año 2015, así como estudioso de Humanidades en esta última Universidad. Catedrático Numerario de Bachillerato. \r\nHa participado en proyectos de investigación educativa galardonados en certámenes a nivel nacional y autonómico. Autor de diversas publicaciones en relación a dichos temas y de textos sobre la materia de la especialidad.\r\n",
+        "photo": {
+          "authorCandidateKey": "author:802",
+          "attachmentId": "804",
+          "url": "https://editoriallarueca.com/wp-content/uploads/FotoGaspar.jpg",
+          "confidence": "high"
+        },
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Reflexión sobre la disidencia crítica como acto de defensa ciudadana frente a los abusos del poder y la degradación política, social y educativa en España. Una mirada lúcida y ocasionalmente mordaz hacia los gobernantes y el fracaso de la Transición en materia de Educación."
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:802",
+          "sourceWpPostId": "802",
+          "name": "GASPAR T. JIMENO DIESTRO",
+          "normalizedName": "gaspar t jimeno diestro",
+          "slug": "gaspar-t-jimeno-diestro",
+          "oldUrl": "https://editoriallarueca.com/autor/gaspar-t-jimeno-diestro/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "BIODIVERSIDAD - Sostenibilidad, Supervivencia e Inmortalidad",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "El título más sencillo y sugerente que hemos encontrado para este libro, después de buscar otros posibles es: Biodiversidad. Pero nos gustaba que, además, en la portada apareciera…",
+          "thumbnailId": "804",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/FotoGaspar.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:biodiversidad sostenibilidad supervivencia e inmortalidad",
+              "title": "BIODIVERSIDAD - Sostenibilidad, Supervivencia e Inmortalidad"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:2406",
+          "sourceWpPostId": "2406",
+          "name": "Gaspar T. Jimeno Diestro",
+          "normalizedName": "gaspar t jimeno diestro",
+          "slug": "gaspar-t-jimeno-diestro-2",
+          "oldUrl": "https://editoriallarueca.com/autor/gaspar-t-jimeno-diestro-2/",
+          "classification": "author_only_candidate",
+          "tfLibro": null,
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": "GASPAR T. JIMENO DIESTRO, es licenciado en Ciencias Geológicas por la Universidad Complutense de Madrid en el año 1974; Licenciado en Ciencias Ambientales por la Universidad Nacio…",
+          "rawReviewPreview": "GASPAR T. JIMENO DIESTRO, es licenciado en Ciencias Geológicas por la Universidad Complutense de Madrid en el año 1974; Licenciado en Ciencias Ambientales por la Universidad Nacio…",
+          "thumbnailId": "2408",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/FotoGaspar-copia.jpg",
+          "imageFieldId": "2405",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_Disilencia.jpg",
+          "relatedBooks": [],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Reflexión sobre la disidencia crítica como acto de defensa ciudadana frente a los abusos del poder y la degradación política, social y educativa en España. Una mirada lúcida y ocasionalmente mordaz hacia los gobernantes y el fracaso de la Transición en materia de Educación."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:guillermo m schrem",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:2652",
+      "mergeCandidates": [
+        "author:556",
+        "author:1029",
+        "author:1230",
+        "author:1422",
+        "author:1780",
+        "author:2089",
+        "author:2806",
+        "author:3153"
+      ],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:biography, MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": [
+        "MANUAL_REVIEW_FIELD_CONFLICT:biography",
+        "MANUAL_REVIEW_FIELD_CONFLICT:photo"
+      ],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Guillermo M. Schrem",
+        "slug": "guillermo-m-schrem-7",
+        "shortBio": null,
+        "biography": "Guillermo Martínez Schrem nace en Barcelona en 1955 para renacer en Leganés en 1995. Después de su jubilación se aventura en el mundo del cine y del teatro, además de sumergirse en la escritura. Ha creado un personaje bebedor, gastrónomo, viajero y diletante que aparece en las novelas: el hombre del año pasado, todo el mundo sabe, parece que hace tanto tiempo, closing time, tú sabes quién soy, dance me to the end of love, esa no es la manera de decir adiós, a mil besos de profundidad, llega la noche, has amado lo suficiente, muéstrame el lugar, el amor te llama por tu nombre, ligero como la brisa, pájaro en el alambre y viajando ligero.\r\nTiene publicadas las novelas: un pez de colores, 1435 mm, el valle de cristal, el rumor de la marea, estásimo, mano a mano y los libros de narraciones breves, fantasmas, abordaje, geografías, cuentos del vacío y el desasosiego y zoografías.\r\n",
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Descubre el oscuro secreto oculto tras la fachada de respetabilidad en nuestra nueva novela policíaca. ¿Estás listo para adentrarte en ella?"
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:556",
+          "sourceWpPostId": "556",
+          "name": "Guillermo M. Schrem",
+          "normalizedName": "guillermo m schrem",
+          "slug": "guillermo-m-schrem",
+          "oldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "El Valle de Cristal",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Una nueva investigación se abre en un valle donde la gente tiene mucho que decir y muy pocas ganas de hablar, así que un inspector con métodos poco ortodoxos llega para hurgar en…",
+          "thumbnailId": "557",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:el valle de cristal",
+              "title": "El Valle de Cristal"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1029",
+          "sourceWpPostId": "1029",
+          "name": "Guillermo M. Schrem",
+          "normalizedName": "guillermo m schrem",
+          "slug": "guillermo-m-schrem-2",
+          "oldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "El rumor de la marea",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Un puñado de huesos y los pétalos de una flor son suficientes para que los intrépidos exploradores de una población marinera se embarquen en una singular aventura para encontrar u…",
+          "thumbnailId": "1031",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:el rumor de la marea",
+              "title": "El rumor de la marea"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1230",
+          "sourceWpPostId": "1230",
+          "name": "Guillermo M. Schrem",
+          "normalizedName": "guillermo m schrem",
+          "slug": "guillermo-m-schrem-3",
+          "oldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem-3/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": " Estásimo",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "\"Descubre el oscuro secreto oculto tras la fachada de respetabilidad en nuestra nueva novela policíaca. ¿Estás listo para adentrarte en una trama llena de misterio y giros inesper…",
+          "thumbnailId": "1232",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-2.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:estasimo",
+              "title": " Estásimo"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Descubre el oscuro secreto oculto tras la fachada de respetabilidad en nuestra nueva novela policíaca. ¿Estás listo para adentrarte en ella?"
+        },
+        {
+          "candidateKey": "author:1422",
+          "sourceWpPostId": "1422",
+          "name": "Guillermo M. Schrem",
+          "normalizedName": "guillermo m schrem",
+          "slug": "guillermo-m-schrem-4",
+          "oldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem-4/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Zoografías",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Descubre encantadoras historias sobre la adopción de animalitos en \"Ponga un animalito en su vida\". Este libro te invita a considerar la compañía de un nuevo amigo peludo, ya sea…",
+          "thumbnailId": "1424",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-3.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:zoografias",
+              "title": "Zoografías"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Este libro te invita a considerar la compañía de un nuevo amigo peludo, ya sea por cariño, protección, conservación o simple sueño."
+        },
+        {
+          "candidateKey": "author:1780",
+          "sourceWpPostId": "1780",
+          "name": "Guillermo M. Schrem",
+          "normalizedName": "guillermo m schrem",
+          "slug": "guillermo-m-schrem-5",
+          "oldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem-5/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Mano a Mano",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Autor: Guillermo M. Schrem Nace en Barcelona en 1955 para renacer en Leganés en 1995. Después de su jubilación se aventura en el mundo del cine y del teatro, además de sumergirse…",
+          "thumbnailId": "1782",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-4.jpg",
+          "imageFieldId": "1781",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_MockUp_ManoAMano.jpg",
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:mano a mano",
+              "title": "Mano a Mano"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Una novela negra con tintes rurales, personajes inolvidables y giros que no verás venir."
+        },
+        {
+          "candidateKey": "author:2089",
+          "sourceWpPostId": "2089",
+          "name": "Guillermo M. Schrem",
+          "normalizedName": "guillermo m schrem",
+          "slug": "guillermo-m-schrem-6",
+          "oldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem-6/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Viajando ligero",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Lo que parece un rutinario trayecto en metro se transforma en una experiencia límite cuando un accidente obliga al protagonista a buscar la salida. Lo que encuentra al otro lado n…",
+          "thumbnailId": "2611",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_Guillermo-2.jpg",
+          "imageFieldId": "2090",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/Mockup_Viajando.jpg",
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:viajando ligero",
+              "title": "Viajando ligero"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Un accidente en el metro conduce al protagonista a un mundo fantástico y absurdo, donde realidad y pesadilla se confunden sin escape."
+        },
+        {
+          "candidateKey": "author:2652",
+          "sourceWpPostId": "2652",
+          "name": "Guillermo M. Schrem",
+          "normalizedName": "guillermo m schrem",
+          "slug": "guillermo-m-schrem-7",
+          "oldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem-7/",
+          "classification": "author_only_candidate",
+          "tfLibro": null,
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": "Guillermo Martínez Schrem nace en Barcelona en 1955 para renacer en Leganés en 1995. Después de su jubilación se aventura en el mundo del cine y del teatro, además de sumergirse e…",
+          "rawReviewPreview": "Guillermo Martínez Schrem nace en Barcelona en 1955 para renacer en Leganés en 1995. Después de su jubilación se aventura en el mundo del cine y del teatro, además de sumergirse e…",
+          "thumbnailId": "2654",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/FotoGuillermo.jpg",
+          "imageFieldId": "2653",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/mockup_22dias.jpg",
+          "relatedBooks": [],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Una maleta con un millón de euros desata persecuciones, engaños y la intervención de un detective poco convencional en una ciudad llena de personajes pintorescos. Suspense, humor y acción en una trepidante búsqueda del tesoro."
+        },
+        {
+          "candidateKey": "author:2806",
+          "sourceWpPostId": "2806",
+          "name": "Guillermo M. Schrem",
+          "normalizedName": "guillermo m schrem",
+          "slug": "guillermo-m-schrem-8",
+          "oldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem-8/",
+          "classification": "author_only_candidate",
+          "tfLibro": null,
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": "Forastero es su nombre, porque se siente forastero en todas las poblaciones en las que, sin echar raíces, va deteniéndose en su viaje hacia el oeste, porque su sueño es llegar al…",
+          "rawReviewPreview": "Forastero es su nombre, porque se siente forastero en todas las poblaciones en las que, sin echar raíces, va deteniéndose en su viaje hacia el oeste, porque su sueño es llegar al…",
+          "thumbnailId": "2808",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-copia.jpg",
+          "imageFieldId": "2807",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_MockUp_Forastero.jpg",
+          "relatedBooks": [],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Forastero emprende un viaje hacia el oeste en busca del mar, recorriendo pueblos sin echar raíces y viviendo en pocos años las experiencias de toda una vida."
+        },
+        {
+          "candidateKey": "author:3153",
+          "sourceWpPostId": "3153",
+          "name": "Guillermo M. Schrem",
+          "normalizedName": "guillermo m schrem",
+          "slug": "guillermo-m-schrem-9",
+          "oldUrl": "https://editoriallarueca.com/autor/guillermo-m-schrem-9/",
+          "classification": "author_only_candidate",
+          "tfLibro": null,
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": "¿Te imaginas un pueblo donde los perales dan naranjas, los vientos traen noticias de lugares remotos y un bardo perdido entre las nubes recita poemas sin parar? Bienvenido a Nueve…",
+          "rawReviewPreview": "¿Te imaginas un pueblo donde los perales dan naranjas, los vientos traen noticias de lugares remotos y un bardo perdido entre las nubes recita poemas sin parar? Bienvenido a Nueve…",
+          "thumbnailId": "3155",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAutor.jpeg",
+          "imageFieldId": "3154",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_mockUp_Rio-copia.jpg",
+          "relatedBooks": [],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "¿Un pueblo sin río, sin cura y con un bardo entre las nubes? En Nuevecincos del Río cualquier cosa puede suceder. Descúbrelo."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:guillermo martinez schrem",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:1136",
+      "mergeCandidates": ["author:1560", "author:1681"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Guillermo Martínez Schrem",
+        "slug": "guillermo-martinez-schrem",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Nuestro protagonista deja atrás su zona de confort, para embarcarse, debido a una conspiración en un crucero por las turbulentas aguas del Mediterráneo."
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:1136",
+          "sourceWpPostId": "1136",
+          "name": "Guillermo Martínez Schrem",
+          "normalizedName": "guillermo martinez schrem",
+          "slug": "guillermo-martinez-schrem",
+          "oldUrl": "https://editoriallarueca.com/autor/guillermo-martinez-schrem/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Ligero como la brisa",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Guillermo Martínez Schrem (Barcelona, 1955) inaugura en 2017, con El hombre del año pasado, las aventuras gastronómicas y geográficas de su diletante personaje, sobre el que desde…",
+          "thumbnailId": "1138",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-1.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:ligero como la brisa",
+              "title": "Ligero como la brisa"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Nuestro protagonista deja atrás su zona de confort, para embarcarse, debido a una conspiración en un crucero por las turbulentas aguas del Mediterráneo."
+        },
+        {
+          "candidateKey": "author:1560",
+          "sourceWpPostId": "1560",
+          "name": "Guillermo Martínez Schrem",
+          "normalizedName": "guillermo martinez schrem",
+          "slug": "guillermo-martinez-schrem-2",
+          "oldUrl": "https://editoriallarueca.com/autor/guillermo-martinez-schrem-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Famosa Gabardina Azul",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "\"Un viaje inesperado lleva a Alex a recorrer las rutas del vino en Castilla y León, siguiendo a su amigo Fernando. Entre aldeas pintorescas, sabores tradicionales y monumentos his…",
+          "thumbnailId": "1562",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_guillermo.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:famosa gabardina azul",
+              "title": "Famosa Gabardina Azul"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Alex y Fernando recorren las rutas del vino en Castilla y León, descubriendo personajes, historia, y la mejor gastronomía local en una aventura inolvidable."
+        },
+        {
+          "candidateKey": "author:1681",
+          "sourceWpPostId": "1681",
+          "name": "Guillermo Martínez Schrem",
+          "normalizedName": "guillermo martinez schrem",
+          "slug": "guillermo-martinez-schrem-3",
+          "oldUrl": "https://editoriallarueca.com/autor/guillermo-martinez-schrem-3/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Pájaro en el alambre",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "&nbsp; El aventurero decide tomarse un día libre en el antiguo Leganés, explorando sus calles, conversando con la gente y redescubriendo monumentos y rincones olvidados. Durante s…",
+          "thumbnailId": "1683",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAutor.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:pajaro en el alambre",
+              "title": "Pájaro en el alambre"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Redescubriendo el antiguo Leganés entre calles, monumentos y buenas viandas"
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:ignacio luis de orduna puebla",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:765",
+      "mergeCandidates": ["author:1585"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Ignacio Luis de Orduña Puebla",
+        "slug": "ignacio-luis-de-orduna-puebla",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "¿Y si haces un flashback espiritual?"
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:765",
+          "sourceWpPostId": "765",
+          "name": "Ignacio Luis de Orduña Puebla",
+          "normalizedName": "ignacio luis de orduna puebla",
+          "slug": "ignacio-luis-de-orduna-puebla",
+          "oldUrl": "https://editoriallarueca.com/autor/ignacio-luis-de-orduna-puebla/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "“Going my way” en 40 poemas ",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "¿Y qué necesita este libro? Un buen lector como tú, que sin ser necesariamente poeta, tenga \"alma de niño\". &nbsp;",
+          "thumbnailId": "768",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/FotoPadreInaki.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:going my way en 40 poemas",
+              "title": "“Going my way” en 40 poemas "
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1585",
+          "sourceWpPostId": "1585",
+          "name": "Ignacio Luis de Orduña Puebla",
+          "normalizedName": "ignacio luis de orduna puebla",
+          "slug": "ignacio-luis-de-orduna-puebla-2",
+          "oldUrl": "https://editoriallarueca.com/autor/ignacio-luis-de-orduna-puebla-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Christus, verbo y verso según un posadero",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Un libro que invita a reflexionar sobre el rechazo y la falta de hospitalidad hacia el Verbo, tanto en el relato bíblico como en nuestra vida. A través de un \" flashback espiritua…",
+          "thumbnailId": "1587",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_fotoPadreInaki.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:christus verbo y verso segun un posadero",
+              "title": "Christus, verbo y verso según un posadero"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "¿Y si haces un flashback espiritual?"
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:jose antonio galante perez",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:3046",
+      "mergeCandidates": ["author:904", "author:1235", "author:1325"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "José Antonio Galante Pérez",
+        "slug": "jose-antonio-galante-perez-4",
+        "shortBio": null,
+        "biography": "José Antonio Galante es un poeta ecléctico y heterodoxo, de voz lírica y sensibilidad marcada, cuyos versos destacan por su potencia visual. Arqueólogo de formación y complutense con alma a medio camino entre lo portugués y lo español, combina su pasión por la poesía con otra de sus grandes devociones: el whisky, el “agua de vida”.\r\nEsa dualidad se refleja en sus poemarios \"Poesía y Whisky\", \"Lágrimas de Whisky\" y \"El cierzo tatuado\", donde lo sensorial y lo poético se entrelazan. Además, comparte su mirada personal sobre este destilado en su canal de YouTube Whisky Bubu, un espacio de cata, reflexión y divulgación.\r\nTambién es autor del libro de haikus \"Haikus en el Camino\". Toda su obra ha sido publicada por la Editorial La Rueca.\r\n",
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "La brevedad y la concisión obligan a condensar, sin un gran ropaje de palabras, un mensaje que no deje indiferente."
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:904",
+          "sourceWpPostId": "904",
+          "name": "José Antonio Galante Pérez",
+          "normalizedName": "jose antonio galante perez",
+          "slug": "jose-antonio-galante-perez",
+          "oldUrl": "https://editoriallarueca.com/autor/jose-antonio-galante-perez/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Poesía y Whisky",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "El whisky sugiere mundos poéticos por el hecho de qué es un arcón lleno de sensaciones, un baúl cerrado del que desconoces que se guarda en el interior, qué secretos se esconden,…",
+          "thumbnailId": "906",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoGalante.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:poesia y whisky",
+              "title": "Poesía y Whisky"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1235",
+          "sourceWpPostId": "1235",
+          "name": "Jose Antonio Galante Pérez",
+          "normalizedName": "jose antonio galante perez",
+          "slug": "jose-antonio-galante-perez-2",
+          "oldUrl": "https://editoriallarueca.com/autor/jose-antonio-galante-perez-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Haikus en el camino",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "¡Descubre la belleza de la simplicidad con \"Haikus en el camino\"! Sumérgete en la poesía japonesa tradicional y deja que sus 17 sílabas te transporten a un mundo de luz y desnudez…",
+          "thumbnailId": "906",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoGalante.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:haikus en el camino",
+              "title": "Haikus en el camino"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "La brevedad y la concisión obligan a condensar, sin un gran ropaje de palabras, un mensaje que no deje indiferente."
+        },
+        {
+          "candidateKey": "author:1325",
+          "sourceWpPostId": "1325",
+          "name": "José Antonio Galante Pérez",
+          "normalizedName": "jose antonio galante perez",
+          "slug": "jose-antonio-galante-perez-3",
+          "oldUrl": "https://editoriallarueca.com/autor/jose-antonio-galante-perez-3/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "El Cierzo Tatuado",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "\"Este poemario de caminante recorre los paisajes del tiempo y la memoria, donde Zaragoza se erige protagonista, siempre arropada por el Ebro y el cierzo. Poemas que dejan marca pr…",
+          "thumbnailId": "1327",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_Foto-JoseAntonioGalante.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:el cierzo tatuado",
+              "title": "El Cierzo Tatuado"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "\"Este poemario de caminante recorre los paisajes del tiempo y la memoria, donde Zaragoza se erige protagonista, siempre arropada por el Ebro y el cierzo\"."
+        },
+        {
+          "candidateKey": "author:3046",
+          "sourceWpPostId": "3046",
+          "name": "José Antonio Galante Pérez",
+          "normalizedName": "jose antonio galante perez",
+          "slug": "jose-antonio-galante-perez-4",
+          "oldUrl": "https://editoriallarueca.com/autor/jose-antonio-galante-perez-4/",
+          "classification": "author_only_candidate",
+          "tfLibro": null,
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": "José Antonio Galante es un poeta ecléctico y heterodoxo, de voz lírica y sensibilidad marcada, cuyos versos destacan por su potencia visual. Arqueólogo de formación y complutense…",
+          "rawReviewPreview": "José Antonio Galante es un poeta ecléctico y heterodoxo, de voz lírica y sensibilidad marcada, cuyos versos destacan por su potencia visual. Arqueólogo de formación y complutense…",
+          "thumbnailId": "3048",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/Autor_JoseAntonioGalante_Libro-Adagio-para-whisky_Genero-Poesia-1.jpg",
+          "imageFieldId": "3049",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_adagioParaWhisky-copia.jpg",
+          "relatedBooks": [],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Con este libro se cierra la trilogía en la que el universo del whisky se funde con la poesía para explorar las profundidades de los sentidos."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:jose vte carmona simarro",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:2749",
+      "mergeCandidates": ["author:1017", "author:1341", "author:1834", "author:3166"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:biography, MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": [
+        "MANUAL_REVIEW_FIELD_CONFLICT:biography",
+        "MANUAL_REVIEW_FIELD_CONFLICT:photo"
+      ],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "José Vte. Carmona Simarro",
+        "slug": "jose-vte-carmona-simarro-3",
+        "shortBio": null,
+        "biography": "José Vte Carmona Simarro es Contratado Doctor en Ciencias de la Salud en la Universidad Europea de Valencia, Grado en Enfermería, y Licenciado en Antropología Social y Cultural. Máster en Urgencias, Emergencias y Catástrofes y Máster en Cuidados al Paciente Crítico. Especialista Universitario en Prevención y Rehabilitación en Conductas Adictivas, Experto en Inteligencia Emocional, Experto en Gestión de Centros Sanitarios para Directores en Enfermería y Experto en Enfermería Pericial.\r\nHa desarrollado su actividad asistencial, principalmente en Unidades de Críticos (UCI, Reanimación y Unidad Coronaria) y Servicios de Enfermería Prehospitalaria (SAMU) y Urgencias Hospitalaria. \r\nDesde hace 25 años, paralela a su actividad asistencial, desarrolla una actividad docente e investigadora Universitaria en el Grado de Enfermería de la Universidad Europea de Valencia y dirige el Máster de Urgencias, Emergencias y Críticos en Enfermería ya en su 10ª edición. Es Coordinador del módulo de Paciente Crítico y de Trabajo Fin de Máster.\r\nEs miembro de número y fundador de la Academia de Doctores de Enfermería de Valencia, y miembro de la Junta de Gobierno (Vocal IV) del Colegio de Enfermería de Valencia. \r\nEn su formación en materia de los Cuidados Críticos y las urgencias posee el Diploma de Transporte Sanitario Medicalizado (EVES), Monitor en Soporte Cardiovascular Avanzado (AHA), Monitor en Soporte Vital Básico (SVB) por SEMICYUC, Monitor en Soporte Vital Avanzado (SVA) por SEMICYUC, Monitor en Soporte Vital Avanzado en Trauma (SVAT) por SEMICYUC, Monitor en Reanimación Cardiopulmonar Pediátrica Básica Instrumentalizada (Sociedad Española de Pediatría), Instructor en Soporte Vital Básico y Desfibrilación, INSTRUCTOR en EMPACT Emergency Medical Patients: Assessment, Care & Transport (EMPACT) CRÍTICO 11-SFPA-F2-0004 por MEDDS Holdinsg LLC, NSTRUCTOR for the Emergency and Care and Safety Institute for: Standard level First Aid, CPR, and AED / Wilderness First Aid ECSI Emergency Care and Safety Institute, MONITOR TCCC Táctical Combat Casualty Care National Association of Emergency Medical Technicians Committee on tactical Combat Casualty Care (posee la Capacitación OTAN para asistencia sanitaria), Diploma de Reanimación Cardiopulmonar Intermedia Pediátrica (Instituto Valenciano de Pediatría), PHERT-A Emergencias, Reanimación y Trauma Prehospitalario Avanzado del Consejo Español de Emergencias, Reanimación y Trauma, Triage Manchester (Grupo Español de Triage Manchester GET), y el Módulo HEMS con vuelo de acomodación 20 horas de BABCOCK.",
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "En Editorial La Rueca, nuevo libro sobre la amistad y los momentos vividos que debemos valorar en su justa medida."
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:1017",
+          "sourceWpPostId": "1017",
+          "name": "José Vte. Carmona Simarro",
+          "normalizedName": "jose vte carmona simarro",
+          "slug": "jose-vte-carmona-simarro",
+          "oldUrl": "https://editoriallarueca.com/autor/jose-vte-carmona-simarro/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Perdóname por los poemas que te escribí",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "“Si no amas, no estás vivo, ni muerto, simplemente no estás” Ha publicado los libros de poesía, ensayo y relatos: Al abrigo de mi memoria (2008) de Redactors y Editors SL. Mil vec…",
+          "thumbnailId": "1019",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_Foto-autor.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:perdoname por los poemas que te escribi",
+              "title": "Perdóname por los poemas que te escribí"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1341",
+          "sourceWpPostId": "1341",
+          "name": "José Vte. Carmona Simarro",
+          "normalizedName": "jose vte carmona simarro",
+          "slug": "jose-vte-carmona-simarro-editorial-la-rueca",
+          "oldUrl": "https://editoriallarueca.com/autor/jose-vte-carmona-simarro-editorial_la_rueca/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Quedamos para despedirnos pero ella no lo sabía – Pensamientos en un pequeño relato sobre la amistad -",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "\"La amistad, idealmente eterna, varía en duración e intensidad. Valoro cada momento vivido y pensado, honrando a quienes nos precedieron. Pese al dolor de perder seres queridos, d…",
+          "thumbnailId": "1344",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoJoseVicente2.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:quedamos para despedirnos pero ella no lo sabia pensamientos en un pequeno relato sobre la amistad",
+              "title": "Quedamos para despedirnos pero ella no lo sabía – Pensamientos en un pequeño relato sobre la amistad -"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "En Editorial La Rueca, nuevo libro sobre la amistad y los momentos vividos que debemos valorar en su justa medida."
+        },
+        {
+          "candidateKey": "author:1834",
+          "sourceWpPostId": "1834",
+          "name": "José Vte. Carmona Simarro",
+          "normalizedName": "jose vte carmona simarro",
+          "slug": "jose-vte-carmona-simarro-2",
+          "oldUrl": "https://editoriallarueca.com/autor/jose-vte-carmona-simarro-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Azul",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Autor: José Vte. Carmona Simarro Ha publicado los libros de poesía, ensayo y relatos: Al abrigo de mi memoria (2008) de Redactors y Editors SL. Mil veces te quiero y más (2009) de…",
+          "thumbnailId": "2622",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/2w_JoseVteCarmona.jpg",
+          "imageFieldId": "2621",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_mokUp_Azul-1.jpg",
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:azul",
+              "title": "Azul"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Relato introspectivo sobre el vacío emocional y la búsqueda del sentido"
+        },
+        {
+          "candidateKey": "author:2749",
+          "sourceWpPostId": "2749",
+          "name": "José Vte. Carmona Simarro",
+          "normalizedName": "jose vte carmona simarro",
+          "slug": "jose-vte-carmona-simarro-3",
+          "oldUrl": "https://editoriallarueca.com/autor/jose-vte-carmona-simarro-3/",
+          "classification": "author_only_candidate",
+          "tfLibro": null,
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": "José Vte Carmona Simarro es Contratado Doctor en Ciencias de la Salud en la Universidad Europea de Valencia, Grado en Enfermería, y Licenciado en Antropología Social y Cultural. M…",
+          "rawReviewPreview": "José Vte Carmona Simarro es Contratado Doctor en Ciencias de la Salud en la Universidad Europea de Valencia, Grado en Enfermería, y Licenciado en Antropología Social y Cultural. M…",
+          "thumbnailId": "2622",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/2w_JoseVteCarmona.jpg",
+          "imageFieldId": "2750",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_MockuP_kATE2-copia.jpg",
+          "relatedBooks": [],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Kate: Cuidados de Enfermería en el Paciente Crítico une ciencia, experiencia real y humanidad para descubrir el verdadero valor del cuidado enfermero en la UCI."
+        },
+        {
+          "candidateKey": "author:3166",
+          "sourceWpPostId": "3166",
+          "name": "José Vte. Carmona Simarro",
+          "normalizedName": "jose vte carmona simarro",
+          "slug": "jose-vte-carmona-simarro-4",
+          "oldUrl": "https://editoriallarueca.com/autor/jose-vte-carmona-simarro-4/",
+          "classification": "author_only_candidate",
+          "tfLibro": null,
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": "Hay quienes luchan por ser vistos. Otros descubren que la verdadera libertad comienza cuando dejan de necesitar la mirada de los demás. De regreso a la invisibilidad es un viaje í…",
+          "rawReviewPreview": "Hay quienes luchan por ser vistos. Otros descubren que la verdadera libertad comienza cuando dejan de necesitar la mirada de los demás. De regreso a la invisibilidad es un viaje í…",
+          "thumbnailId": "3168",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/Autor-Jose-Vte-Carmona_Libro-Regreso-a-la-invisibilidad_Genero-Relatos_Editorial-la-Rueca.jpg",
+          "imageFieldId": "3167",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_MockUp_Invisibilidad.png",
+          "relatedBooks": [],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Descubre De regreso a la invisibilidad, de José Vte. Carmona Simarro, una novela introspectiva sobre la identidad, la memoria y la búsqueda de uno mismo en un mundo obsesionado con la visibilidad."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:juan antonio valero casado",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:717",
+      "mergeCandidates": ["author:1649"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Juan Antonio Valero Casado",
+        "slug": "juan-antonio-valero-casado",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Reflexiones críticas de Juan Antonio Valero sobre nuestra compleja realidad."
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:717",
+          "sourceWpPostId": "717",
+          "name": "Juan Antonio Valero Casado",
+          "normalizedName": "juan antonio valero casado",
+          "slug": "juan-antonio-valero-casado",
+          "oldUrl": "https://editoriallarueca.com/autor/juan-antonio-valero-casado/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "ESPEJOS DE LA REALIDAD",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Mediante la lectura de Espejos de la realidad nos hacemos contemporáneos de todos los hombres y ciudadanos del mundo. &nbsp;",
+          "thumbnailId": "730",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_JuanAntonio_EntrevistaFoto.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:espejos de la realidad",
+              "title": "ESPEJOS DE LA REALIDAD"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1649",
+          "sourceWpPostId": "1649",
+          "name": "Juan Antonio Valero Casado",
+          "normalizedName": "juan antonio valero casado",
+          "slug": "juan-antonio-valero-casado-2",
+          "oldUrl": "https://editoriallarueca.com/autor/juan-antonio-valero-casado-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Entre líneas, reflejos de un tiempo convulso",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Reflexiona, cuestiona y descubre la realidad desde otra perspectiva con Entre líneas, reflejos de un tiempo convulso de Juan Antonio Valero. Una obra que combina profundidad, sens…",
+          "thumbnailId": "1652",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-4.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:entre lineas reflejos de un tiempo convulso",
+              "title": "Entre líneas, reflejos de un tiempo convulso"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Reflexiones críticas de Juan Antonio Valero sobre nuestra compleja realidad."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:juan jose velasco sanchez mayoral",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:819",
+      "mergeCandidates": ["author:1457", "author:1863"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Juan José Velasco Sánchez-Mayoral",
+        "slug": "juan-jose-velasco-sanchez-mayoral",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "No siempre que se lee el título de una novela se intuye cuál es su argumento."
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:819",
+          "sourceWpPostId": "819",
+          "name": "Juan José Velasco Sánchez-Mayoral",
+          "normalizedName": "juan jose velasco sanchez mayoral",
+          "slug": "juan-jose-velasco-sanchez-mayoral",
+          "oldUrl": "https://editoriallarueca.com/autor/juan-jose-velasco-sanchez-mayoral/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Sus ojos hablaron",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "La presente narración, nos sitúa en un ambiente juvenil en el que somos felices, hasta que todo cambia cuando hay que decidir cómo alcanzar una meta que creemos es buena para nues…",
+          "thumbnailId": "821",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/W_Juan-Jose-Velasco-S.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:sus ojos hablaron",
+              "title": "Sus ojos hablaron"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1457",
+          "sourceWpPostId": "1457",
+          "name": "Juan José Velasco Sánchez-Mayoral",
+          "normalizedName": "juan jose velasco sanchez mayoral",
+          "slug": "juan-jose-velasco-sanchez-mayoral-2",
+          "oldUrl": "https://editoriallarueca.com/autor/juan-jose-velasco-sanchez-mayoral-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": " Una escuela de música",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": null,
+          "thumbnailId": "1459",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/W_Juan-Jose-Velasco-S-1.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:una escuela de musica",
+              "title": " Una escuela de música"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "No siempre que se lee el título de una novela se intuye cuál es su argumento."
+        },
+        {
+          "candidateKey": "author:1863",
+          "sourceWpPostId": "1863",
+          "name": "Juan José Velasco Sánchez-Mayoral",
+          "normalizedName": "juan jose velasco sanchez mayoral",
+          "slug": "juan-jose-velasco-sanchez-mayoral-3",
+          "oldUrl": "https://editoriallarueca.com/autor/juan-jose-velasco-sanchez-mayoral-3/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Ilusiones",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Después de leer esta novela, el lector, posiblemente, llegue a la conclusión de que la confianza en sí mismo, puede conseguir metas que, en un principio, nos parezcan insuperables.",
+          "thumbnailId": "1865",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-5.jpg",
+          "imageFieldId": "1864",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_mockUp_Ilusiones2.jpg",
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:ilusiones",
+              "title": "Ilusiones"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Una historia que te inspira a creer en ti."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:julio sanchez alonso",
+      "proposal": "MERGE_HIGH_CONFIDENCE",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:1040",
+      "mergeCandidates": ["author:1219"],
+      "confidence": 0.92,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Propuesta calculada: MERGE_HIGH_CONFIDENCE."
+      ],
+      "fieldConflicts": [],
+      "photoClassification": "SAME_IMAGE",
+      "canonicalPhoto": {
+        "authorCandidateKey": "author:1219",
+        "attachmentId": "1220",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_FotoJulio_solapa.jpg",
+        "confidence": "high"
+      },
+      "proposedMergedData": {
+        "name": "Julio Sánchez Alonso",
+        "slug": "julio-sanchez-alonso",
+        "shortBio": null,
+        "biography": null,
+        "photo": {
+          "authorCandidateKey": "author:1219",
+          "attachmentId": "1220",
+          "url": "https://editoriallarueca.com/wp-content/uploads/w_FotoJulio_solapa.jpg",
+          "confidence": "high"
+        },
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": null
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:1040",
+          "sourceWpPostId": "1040",
+          "name": "Julio Sánchez Alonso",
+          "normalizedName": "julio sanchez alonso",
+          "slug": "julio-sanchez-alonso",
+          "oldUrl": "https://editoriallarueca.com/autor/julio-sanchez-alonso/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Pollos en la memoria",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Julio Sánchez nació en Pollos en 1951. Marchó a estudiar a Valladolid con 11 años y a los 20 se trasladó a Madrid donde se graduó en la Escuela de Radio y Televisión y se licenció…",
+          "thumbnailId": "1042",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/W_Julio.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:pollos en la memoria",
+              "title": "Pollos en la memoria"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1219",
+          "sourceWpPostId": "1219",
+          "name": "Julio Sánchez Alonso",
+          "normalizedName": "julio sanchez alonso",
+          "slug": "julio-sanchez-alonso-2",
+          "oldUrl": "https://editoriallarueca.com/autor/julio-sanchez-alonso-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Al final de la escapada – Memoria personal 1951-2011",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "\"El recuerdo que guardo de muchas cosas es el de la primera vez. Es como si el tiempo no hubiera pasado ni para mí ni para los que me rodean cuando de sobra sé que el tiempo vuela…",
+          "thumbnailId": "1220",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoJulio_solapa.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:al final de la escapada memoria personal 1951 2011",
+              "title": "Al final de la escapada – Memoria personal 1951-2011"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:manuel gomez rosas",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:942",
+      "mergeCandidates": ["author:1131", "author:1798"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Manuel Gómez-Rosas",
+        "slug": "manuel-gomez-rosas",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Nos encontramos con un gran descubrimiento literario que va a hacernos pensar en multitud de aspectos de la vida cotidiana."
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:942",
+          "sourceWpPostId": "942",
+          "name": "Manuel Gómez-Rosas",
+          "normalizedName": "manuel gomez rosas",
+          "slug": "manuel-gomez-rosas",
+          "oldUrl": "https://editoriallarueca.com/autor/manuel-gomez-rosas/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Humor y prosa de un ajedrecista",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Tenemos ante nosotros un libro diferente. Nos encontramos con un gran descubrimiento literario que va a hacernos pensar en multitud de aspectos de la vida cotidiana, presentados d…",
+          "thumbnailId": "943",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_fotoAutorPresentacion.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:humor y prosa de un ajedrecista",
+              "title": "Humor y prosa de un ajedrecista"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1131",
+          "sourceWpPostId": "1131",
+          "name": "Manuel Gómez Rosas",
+          "normalizedName": "manuel gomez rosas",
+          "slug": "manuel-gomez-rosas-2",
+          "oldUrl": "https://editoriallarueca.com/autor/manuel-gomez-rosas-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Humor,  prosa y una jugadora",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "En una sucesión de artículos muy cortos, el autor saca a la palestra cuestiones tan importantes como la eutanasia, el maltrato animal, la educación, la política, el amor, la moda,…",
+          "thumbnailId": "1133",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoManuel-1.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:humor prosa y una jugadora",
+              "title": "Humor,  prosa y una jugadora"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Nos encontramos con un gran descubrimiento literario que va a hacernos pensar en multitud de aspectos de la vida cotidiana."
+        },
+        {
+          "candidateKey": "author:1798",
+          "sourceWpPostId": "1798",
+          "name": "Manuel Gómez Rosas",
+          "normalizedName": "manuel gomez rosas",
+          "slug": "manuel-gomez-rosas-3",
+          "oldUrl": "https://editoriallarueca.com/autor/manuel-gomez-rosas-3/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Los mejores cortos de Gómez Rosas (cualquier parecido con la realidad es pura coincidencia)",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Autor: Manuel Gómez Rosas Nace en Loja (Granada) un 9 de abril de 1953. Después de cursar el Bachiller, tuvo que dedicarse a la agricultura debido al fallecimiento prematuro de su…",
+          "thumbnailId": "1800",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoManuel-2.jpg",
+          "imageFieldId": "1799",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_mockup_LosMejores.jpg",
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:los mejores cortos de gomez rosas cualquier parecido con la realidad es pura coincidencia",
+              "title": "Los mejores cortos de Gómez Rosas (cualquier parecido con la realidad es pura coincidencia)"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Humor inteligente y lenguaje cercano."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:manuel ondo ndong",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:1902",
+      "mergeCandidates": ["author:1917"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Manuel Ondo Ndong",
+        "slug": "manuel-ondo-ndong",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Relato sobre Ndong, sabio fang jubilado, que desde su pueblo narra historia, cultura y tradiciones de Guinea Ecuatorial con mirada crítica"
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:1902",
+          "sourceWpPostId": "1902",
+          "name": "Manuel Ondo Ndong",
+          "normalizedName": "manuel ondo ndong",
+          "slug": "manuel-ondo-ndong",
+          "oldUrl": "https://editoriallarueca.com/autor/manuel-ondo-ndong/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Ndong, el jubilado",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Manuel Ondo Ndong, nacido en Ebibeyin a mediados de los años setenta, es un profesor universitario y escritor ecuatoguineano. Combina con holgura sus conocimientos acumulados en e…",
+          "thumbnailId": "2613",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w2_ManuelOndo.jpg",
+          "imageFieldId": "1903",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_MockuP_Jubidado.jpg",
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:ndong el jubilado",
+              "title": "Ndong, el jubilado"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Relato sobre Ndong, sabio fang jubilado, que desde su pueblo narra historia, cultura y tradiciones de Guinea Ecuatorial con mirada crítica"
+        },
+        {
+          "candidateKey": "author:1917",
+          "sourceWpPostId": "1917",
+          "name": "Manuel Ondo Ndong",
+          "normalizedName": "manuel ondo ndong",
+          "slug": "manuel-ondo-ndong-2",
+          "oldUrl": "https://editoriallarueca.com/autor/manuel-ondo-ndong-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Análisis de errores morfosintácticos en un aula de Español/LE. El caso del grupo de estudiantes del nivel B2 de secundaria en Guinea Ecuatorial al expresarse por escrito en español",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Nacido en el pequeño pueblo de Otet-Nsomo, Ebibeyin, a mediados de los años setenta, Manuel Ondo Ndong es un profesor universitario y escritor ecuatoguineano, que ya ha completado…",
+          "thumbnailId": "1919",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/FOTO-BIOGRAFIA-TESIS-1.jpg",
+          "imageFieldId": "1918",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_mockUp_Tesis.jpg",
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:analisis de errores morfosintacticos en un aula de espanol le el caso del grupo de estudiantes del nivel b2 de secundaria en guinea ecuatorial al expresarse por escrito en espanol",
+              "title": "Análisis de errores morfosintácticos en un aula de Español/LE. El caso del grupo de estudiantes del nivel B2 de secundaria en Guinea Ecuatorial al expresarse por escrito en español"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Tesis pionera sobre la enseñanza del español en Guinea Ecuatorial que analiza errores gramaticales y defiende su estatus como lengua materna."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:maria dolores castellon perez",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:628",
+      "mergeCandidates": ["author:1121"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "María Dolores Castellón Pérez",
+        "slug": "maria-dolores-castellon-perez",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": null
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:628",
+          "sourceWpPostId": "628",
+          "name": "María Dolores Castellón Pérez",
+          "normalizedName": "maria dolores castellon perez",
+          "slug": "maria-dolores-castellon-perez",
+          "oldUrl": "https://editoriallarueca.com/autor/maria-dolores-castellon-perez/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Julio Robles García - Compositor",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Julio Robles García. Compositor , es el resultado de siete años de investigación que dieron como fruto un trabajo de tesis doctoral que tras su defensa obtuvo la calificación de S…",
+          "thumbnailId": "630",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/Loli-Castellon.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:julio robles garcia compositor",
+              "title": "Julio Robles García - Compositor"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1121",
+          "sourceWpPostId": "1121",
+          "name": "María Dolores Castellón Pérez",
+          "normalizedName": "maria dolores castellon perez",
+          "slug": "maria-dolores-castellon-perez-2",
+          "oldUrl": "https://editoriallarueca.com/autor/maria-dolores-castellon-perez-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "ENTREVISTAS",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Entrevistas es el resultado de la investigación realizada sobre el Teatro Real y sus producciones operísticas entre los años 2013 y 2016. En este trabajo se recogen siete entrevis…",
+          "thumbnailId": "1122",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_Loli-Castellon.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:entrevistas",
+              "title": "ENTREVISTAS"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:minerva buiza",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:2855",
+      "mergeCandidates": ["author:1358", "author:1361", "author:1483", "author:2860"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:biography, MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": [
+        "MANUAL_REVIEW_FIELD_CONFLICT:biography",
+        "MANUAL_REVIEW_FIELD_CONFLICT:photo"
+      ],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Minerva Buiza",
+        "slug": "minerva-buiza-4",
+        "shortBio": null,
+        "biography": "Soy Minerva Buiza, médium clarividente y tarotista. Soy una incansable estudiante de las artes mágicas. Mi misión en esta vida es ayudar a las personas a sentirse más felices, a conectar con su maestro interior y a encontrar respuestas que les permitan avanzar por su camino.\r\n\r\nQuiero que me acompañes y te adentres en mi mundo.\r\n\r\nNací en Sevilla en los años 80. Soy del signo Cáncer y crecí en un entorno familiar marcado por el dolor de la pérdida. Desde pequeña me acerqué a la disciplina de la adivinación y al misterio a través de las oraciones de mi abuela. Mi despertar espiritual, a los 14 años, supuso un profundo cambio en mi vida al conectar con el otro lado.\r\n\r\nMi salto a la fama llegó a los 16 años, cuando comencé a aparecer en televisión. Además, cuento con 17 años de experiencia en radio. Hoy en día me seguís en redes sociales por mis predicciones.\r\n\r\nDeseo compartir con vosotros las fórmulas más valiosas que he aprendido a lo largo de mi vida. Esta es, sin duda, la más preciada y honrada para mí.\r\n\r\nEspero que disfrutéis de mi libro tanto como yo he disfrutado creándolo.",
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Cada carta en este libro trae un mensaje que os ayudará a desvelar vuestros problemas y futuros, proporcionando respuestas."
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:1358",
+          "sourceWpPostId": "1358",
+          "name": "Minerva Buiza",
+          "normalizedName": "minerva buiza",
+          "slug": "minerva-buiza",
+          "oldUrl": "https://editoriallarueca.com/autor/minerva-buiza/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "Oráculo de la fe - El camino del alma",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Siempre trabajo para descubrir la belleza del alma y buscar la luz de cada ser, guiado por la verdad y la información que recibo de mis guías espirituales, santos y ángeles. En la…",
+          "thumbnailId": "1364",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/Foto3Minerva.jpeg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:oraculo de la fe el camino del alma",
+              "title": "Oráculo de la fe - El camino del alma"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Cada carta en este libro trae un mensaje que os ayudará a desvelar vuestros problemas y futuros, proporcionando respuestas."
+        },
+        {
+          "candidateKey": "author:1361",
+          "sourceWpPostId": "1361",
+          "name": "Minerva Buiza",
+          "normalizedName": "minerva buiza",
+          "slug": "minerva-buiza-2",
+          "oldUrl": "https://editoriallarueca.com/autor/minerva-buiza-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": " Voces del Alma - El arte de escuchar a través del tarot",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "*Voces del Alma* es la conexión que marcará tu destino a través del tarot. Este libro te guiará en la búsqueda de una visión espiritual del tarot. Desde siempre, la humanidad ha q…",
+          "thumbnailId": "1363",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/Foto5Minerva.jpeg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:voces del alma el arte de escuchar a traves del tarot",
+              "title": " Voces del Alma - El arte de escuchar a través del tarot"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Este libro te guiará en la búsqueda espiritual del tarot"
+        },
+        {
+          "candidateKey": "author:1483",
+          "sourceWpPostId": "1483",
+          "name": "Minerva Buiza",
+          "normalizedName": "minerva buiza",
+          "slug": "minerva-buiza-3",
+          "oldUrl": "https://editoriallarueca.com/autor/minerva-buiza-3/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "ARCANUM – La torá de Minerva",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "\"Sumérgete en el misterioso mundo del tarot con Arcanum y descubre el significado oculto de cada carta a través de mi sabiduría adquirida a lo largo de mi vida. Este libro te reve…",
+          "thumbnailId": "1485",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_Foto-Minerva1.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:arcanum la tora de minerva",
+              "title": "ARCANUM – La torá de Minerva"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Este libro te revelará los símbolos ancestrales que han cautivado a la humanidad por siglos."
+        },
+        {
+          "candidateKey": "author:2855",
+          "sourceWpPostId": "2855",
+          "name": "Minerva Buiza",
+          "normalizedName": "minerva buiza",
+          "slug": "minerva-buiza-4",
+          "oldUrl": "https://editoriallarueca.com/autor/minerva-buiza-4/",
+          "classification": "author_only_candidate",
+          "tfLibro": null,
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": "Soy Minerva Buiza, médium clarividente y tarotista. Soy una incansable estudiante de las artes mágicas. Mi misión en esta vida es ayudar a las personas a sentirse más felices, a c…",
+          "rawReviewPreview": "Soy Minerva Buiza, médium clarividente y tarotista. Soy una incansable estudiante de las artes mágicas. Mi misión en esta vida es ayudar a las personas a sentirse más felices, a c…",
+          "thumbnailId": "2857",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/FotoMinerva.jpeg",
+          "imageFieldId": "2856",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_mockup_Arcanos-copia.jpg",
+          "relatedBooks": [],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Descubre el significado oculto del tarot en Arcanum (Secreto profundo). Aprende a interpretar cada carta, desarrollar tu intuición y aplicar su sabiduría ancestral a tu vida diaria."
+        },
+        {
+          "candidateKey": "author:2860",
+          "sourceWpPostId": "2860",
+          "name": "Minerva Buiza",
+          "normalizedName": "minerva buiza",
+          "slug": "minerva-buiza-5",
+          "oldUrl": "https://editoriallarueca.com/autor/minerva-buiza-5/",
+          "classification": "author_only_candidate",
+          "tfLibro": null,
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": "Soy Minerva, y a lo largo de mis años he descubierto miles de “mundos” que ahora quiero compartir contigo. En este libro aprenderás los secretos del Tarot y sus orígenes más antig…",
+          "rawReviewPreview": "Soy Minerva, y a lo largo de mis años he descubierto miles de “mundos” que ahora quiero compartir contigo. En este libro aprenderás los secretos del Tarot y sus orígenes más antig…",
+          "thumbnailId": "2863",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/Foto4Minerva.jpg",
+          "imageFieldId": "2861",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_mockUp_CursoTarot.jpg",
+          "relatedBooks": [],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Aprende los secretos del Tarot, la magia blanca y la radiestesia con Minerva. Despierta tu poder interior y encuentra paz y equilibrio."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:norberto dominguez jurado",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:623",
+      "mergeCandidates": ["author:1187"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Norberto Domínguez Jurado",
+        "slug": "norberto-dominguez-jurado",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "La IA ofrece herramientas de gran potencial para optimizar la experiencia de enseñanza y promover un estilo de vida saludable."
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:623",
+          "sourceWpPostId": "623",
+          "name": "Norberto Domínguez Jurado",
+          "normalizedName": "norberto dominguez jurado",
+          "slug": "norberto-dominguez-jurado",
+          "oldUrl": "https://editoriallarueca.com/autor/norberto-dominguez-jurado/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "El poder de la educación nos hace infinitos",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Parafrasear a John Muir quizás sea la mejor opción para describir el valor de nuestra educación , de los cimientos de la sociedad . En una realidad que cambia constantemente, plag…",
+          "thumbnailId": "625",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/FotoNorberto.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:el poder de la educacion nos hace infinitos",
+              "title": "El poder de la educación nos hace infinitos"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:1187",
+          "sourceWpPostId": "1187",
+          "name": "Norberto Domínguez Jurado",
+          "normalizedName": "norberto dominguez jurado",
+          "slug": "norberto-dominguez-jurado-y-maria-isabel-martin-aranda",
+          "oldUrl": "https://editoriallarueca.com/autor/norberto-dominguez-jurado-y-maria-isabel-martin-aranda/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "La Inteligencia Artificial en Educación Física",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "\"Nuestro nuevo libro explora la convergencia de la inteligencia artificial y la educación física, ofreciendo una visión integral de las innovaciones que están dando forma al futur…",
+          "thumbnailId": "1193",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/W_FotoNorberto.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:la inteligencia artificial en educacion fisica",
+              "title": "La Inteligencia Artificial en Educación Física"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "La IA ofrece herramientas de gran potencial para optimizar la experiencia de enseñanza y promover un estilo de vida saludable."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:patxi oyaga",
+      "proposal": "MERGE_HIGH_CONFIDENCE",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:2756",
+      "mergeCandidates": ["author:1214"],
+      "confidence": 0.92,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Propuesta calculada: MERGE_HIGH_CONFIDENCE."
+      ],
+      "fieldConflicts": [],
+      "photoClassification": "SAME_IMAGE",
+      "canonicalPhoto": {
+        "authorCandidateKey": "author:1214",
+        "attachmentId": "1216",
+        "url": "https://editoriallarueca.com/wp-content/uploads/W_FOTOpatxi.jpg",
+        "confidence": "high"
+      },
+      "proposedMergedData": {
+        "name": "Patxi Oyaga",
+        "slug": "patxi-oyaga-2",
+        "shortBio": null,
+        "biography": "Patxi Oyaga, Donostia 1961.\r\nTiene estudios inacabados de psicología. Ha publicado las novelas \"Los dragones de Ibiza\", \"Muerto como un tamarindo\", \"La sombra del azar\", y el libro de relatos \"Neptuno no hace prisioneros\". Su primera novela le ha convertido en un autor de culto en la isla de Ibiza. Tiene un poemario inédito que ha ido desperdigando con el paso del tiempo a través de las redes sociales. \r\n\r\n",
+        "photo": {
+          "authorCandidateKey": "author:1214",
+          "attachmentId": "1216",
+          "url": "https://editoriallarueca.com/wp-content/uploads/W_FOTOpatxi.jpg",
+          "confidence": "high"
+        },
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Una historia sobre el destino, la soledad y la búsqueda de uno mismo. ¿Estás listo para sumergirte en los suburbios de la gran ciudad?"
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:1214",
+          "sourceWpPostId": "1214",
+          "name": "Patxi Oyaga",
+          "normalizedName": "patxi oyaga",
+          "slug": "patxi-oyaga",
+          "oldUrl": "https://editoriallarueca.com/autor/patxi-oyaga/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "La sombra del azar",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "\"Una historia sobre el destino, la soledad y la búsqueda de uno mismo. ¿Estás listo para sumergirte en los suburbios de la gran ciudad y descubrir lo que el ciberespacio tiene res…",
+          "thumbnailId": "1216",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/W_FOTOpatxi.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:la sombra del azar",
+              "title": "La sombra del azar"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Una historia sobre el destino, la soledad y la búsqueda de uno mismo. ¿Estás listo para sumergirte en los suburbios de la gran ciudad?"
+        },
+        {
+          "candidateKey": "author:2756",
+          "sourceWpPostId": "2756",
+          "name": "Patxi Oyaga",
+          "normalizedName": "patxi oyaga",
+          "slug": "patxi-oyaga-2",
+          "oldUrl": "https://editoriallarueca.com/autor/patxi-oyaga-2/",
+          "classification": "author_only_candidate",
+          "tfLibro": null,
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": "Patxi Oyaga, Donostia 1961. Tiene estudios inacabados de psicología. Ha publicado las novelas \"Los dragones de Ibiza\", \"Muerto como un tamarindo\", \"La sombra del azar\", y el libro…",
+          "rawReviewPreview": "Patxi Oyaga, Donostia 1961. Tiene estudios inacabados de psicología. Ha publicado las novelas \"Los dragones de Ibiza\", \"Muerto como un tamarindo\", \"La sombra del azar\", y el libro…",
+          "thumbnailId": "2758",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/W_FOTOpatxi-1.jpg",
+          "imageFieldId": "2757",
+          "imageFieldUrl": "https://editoriallarueca.com/wp-content/uploads/w_MockuP_Ilusiones.jpg",
+          "relatedBooks": [],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Relatos breves y crudos sobre la existencia, la soledad y la violencia: vidas que se disuelven, disparos que encogen el alma y verdades que no se edulcoran."
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:sara sanchez prieto",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:1526",
+      "mergeCandidates": ["author:1644"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Sara Sánchez Prieto",
+        "slug": "sara-sanchez-prieto",
+        "shortBio": null,
+        "biography": null,
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": "Un musical no es solo un espectáculo, es una puerta hacia la creatividad y el crecimiento personal."
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:1526",
+          "sourceWpPostId": "1526",
+          "name": "Sara Sánchez Prieto",
+          "normalizedName": "sara sanchez prieto",
+          "slug": "sara-sanchez-prieto",
+          "oldUrl": "https://editoriallarueca.com/autor/sara-sanchez-prieto/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "ESTRATEGIAS EDUCATIVAS A TRAVÉS DEL TEATRO MUSICAL - Experiencias y propuesta metodológica del “Taller de Musicales” Volumen 1 Selección de títulos para el aula: Análisis cinematográfico y escénico.",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Esta reflexión sobre el teatro musical explora la profunda conexión entre el arte escénico y la educación. A partir de la cita de Fields, que destaca la capacidad del teatro music…",
+          "thumbnailId": "1527",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_fotoSara.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:estrategias educativas a traves del teatro musical experiencias y propuesta metodologica del taller de musicales volumen 1 seleccion de titulos para el aula analisis cinematografico y escenico",
+              "title": "ESTRATEGIAS EDUCATIVAS A TRAVÉS DEL TEATRO MUSICAL - Experiencias y propuesta metodológica del “Taller de Musicales” Volumen 1 Selección de títulos para el aula: Análisis cinematográfico y escénico."
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "Un musical no es solo un espectáculo, es una puerta hacia la creatividad y el crecimiento personal."
+        },
+        {
+          "candidateKey": "author:1644",
+          "sourceWpPostId": "1644",
+          "name": "Sara Sánchez Prieto",
+          "normalizedName": "sara sanchez prieto",
+          "slug": "sara-sanchez-prieto-2",
+          "oldUrl": "https://editoriallarueca.com/autor/sara-sanchez-prieto-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "EL MUSICAL COMO VEHÍCULO DE APRENDIZAJE",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "El talento es ese destello único que nos hace vibrar y encontrar nuestra esencia. En este libro, comparto mis experiencias y consejos para crear un musical inspirado en El Rey Leó…",
+          "thumbnailId": "1646",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_fotoSara-1.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:el musical como vehiculo de aprendizaje",
+              "title": "EL MUSICAL COMO VEHÍCULO DE APRENDIZAJE"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": "El talento, la vocación y la creación de un musical inspirado en 'El rey león'"
+        }
+      ]
+    },
+    {
+      "groupId": "possible-author:teodoro rodriguez martin",
+      "proposal": "LIKELY_MERGE_MANUAL_CONFIRMATION",
+      "proposedAction": "merge",
+      "canonicalCandidateKey": "author:652",
+      "mergeCandidates": ["author:724"],
+      "confidence": 0.74,
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldConflicts": ["MANUAL_REVIEW_FIELD_CONFLICT:photo"],
+      "photoClassification": "MULTIPLE_CONFLICTING_IMAGES",
+      "canonicalPhoto": null,
+      "proposedMergedData": {
+        "name": "Teodoro Rodríguez Martín",
+        "slug": "teodoro-rodriguez-martin",
+        "shortBio": null,
+        "biography": "<p>Son los años 50 y 60 del siglo pasado en una zona rural de la provincia de León.</p>\r\n<p>A partir del primer relato, <em>El día de las Candelas</em>, que opera como fundacional, una nueva saga de molineros llega al Molino de la Casería.</p>\r\n<p>A través de los siguientes 18 relatos de una prosa, a veces poética y romántica, otras, realista y cruda, el Protagonista, niño molinero en su pueblo y estudiante adolescente en la ciudad, va descubriendo el mundo que le rodea a la vez que se descubre a sí mismo.</p>",
+        "photo": null,
+        "websiteUrl": null,
+        "instagramUrl": null,
+        "facebookUrl": null,
+        "country": null,
+        "seoMetadata": {
+          "metaTitle": null,
+          "metaDescription": null
+        },
+        "rule": "Propuesta read-only: nunca sobrescribir un valor bueno con null; conflictos no nulos requieren revision humana."
+      },
+      "members": [
+        {
+          "candidateKey": "author:652",
+          "sourceWpPostId": "652",
+          "name": "Teodoro Rodríguez Martín",
+          "normalizedName": "teodoro rodriguez martin",
+          "slug": "teodoro-rodriguez-martin",
+          "oldUrl": "https://editoriallarueca.com/autor/teodoro-rodriguez-martin/",
+          "classification": "author_only_candidate",
+          "tfLibro": null,
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": "Son los años 50 y 60 del siglo pasado en una zona rural de la provincia de León. A partir del primer relato, El día de las Candelas , que opera como fundacional, una nueva saga de…",
+          "rawReviewPreview": "Son los años 50 y 60 del siglo pasado en una zona rural de la provincia de León. A partir del primer relato, El día de las Candelas , que opera como fundacional, una nueva saga de…",
+          "thumbnailId": "654",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/TeodoroRodriguez.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        },
+        {
+          "candidateKey": "author:724",
+          "sourceWpPostId": "724",
+          "name": "Teodoro Rodríguez Martín",
+          "normalizedName": "teodoro rodriguez martin",
+          "slug": "teodoro-rodriguez-martin-2",
+          "oldUrl": "https://editoriallarueca.com/autor/teodoro-rodriguez-martin-2/",
+          "classification": "legacy_author_book_combined",
+          "tfLibro": "La pulsera de la princesa yoruba",
+          "createdAt": null,
+          "modifiedAt": null,
+          "biographyPreview": null,
+          "rawReviewPreview": "Los quince relatos de amor y amistad que conforman La pulsera de la princesa yoruba son sendos paseos en el tiempo por la «educación sentimental» de su protagonista, Mateo Campill…",
+          "thumbnailId": "726",
+          "thumbnailUrl": "https://editoriallarueca.com/wp-content/uploads/w_Teodoro.jpg",
+          "imageFieldId": null,
+          "imageFieldUrl": null,
+          "relatedBooks": [
+            {
+              "bookCandidateKey": "book:la pulsera de la princesa yoruba",
+              "title": "La pulsera de la princesa yoruba"
+            }
+          ],
+          "yoastMetaTitle": null,
+          "yoastMetaDescription": null
+        }
+      ]
+    }
+  ]
+}

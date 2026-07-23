@@ -21,8 +21,5 @@
       "warnings": []
     }
   ],
-  "noChange": [
-    "book:el valle de cristal",
-    "book:requiem por un escritor desconocido"
-  ]
+  "noChange": ["book:el valle de cristal", "book:requiem por un escritor desconocido"]
 }

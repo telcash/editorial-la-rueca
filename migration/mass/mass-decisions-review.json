@@ -1,0 +1,782 @@
+{
+  "generatedAt": "2026-07-23T17:35:44.921Z",
+  "note": "Working file read-only para revision humana. approvedAction debe permanecer null hasta aprobacion explicita.",
+  "authorDuplicateGroups": {
+    "possible-author:alfredo manrique bravo": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:3141",
+      "mergeCandidates": ["author:1088"],
+      "confidence": "high",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Propuesta calculada: MERGE_HIGH_CONFIDENCE."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:3141",
+        "slugFrom": "author:3141",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": "author:1088",
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:antonio l gomez charlin": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:2962",
+      "mergeCandidates": ["author:690"],
+      "confidence": "high",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Propuesta calculada: MERGE_HIGH_CONFIDENCE."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:2962",
+        "slugFrom": "author:2962",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": "author:690",
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:diego gomez costa": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:2346",
+      "mergeCandidates": ["author:921", "author:1750", "author:1881"],
+      "confidence": "high",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Propuesta calculada: MERGE_HIGH_CONFIDENCE."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:2346",
+        "slugFrom": "author:2346",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": "author:921",
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:elga reategui": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:1246",
+      "mergeCandidates": ["author:1947"],
+      "confidence": "high",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Propuesta calculada: MERGE_HIGH_CONFIDENCE."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:1246",
+        "slugFrom": "author:1246",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": "author:1246",
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:gaspar t jimeno diestro": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:2406",
+      "mergeCandidates": ["author:802"],
+      "confidence": "high",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Propuesta calculada: MERGE_HIGH_CONFIDENCE."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:2406",
+        "slugFrom": "author:2406",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": "author:802",
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:julio sanchez alonso": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:1040",
+      "mergeCandidates": ["author:1219"],
+      "confidence": "high",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Propuesta calculada: MERGE_HIGH_CONFIDENCE."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:1040",
+        "slugFrom": "author:1040",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": "author:1219",
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:patxi oyaga": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:2756",
+      "mergeCandidates": ["author:1214"],
+      "confidence": "high",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Propuesta calculada: MERGE_HIGH_CONFIDENCE."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:2756",
+        "slugFrom": "author:2756",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": "author:1214",
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:alejandro gonzalez garcia": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:733",
+      "mergeCandidates": ["author:747"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:733",
+        "slugFrom": "author:733",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:alonso cruz leon": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:633",
+      "mergeCandidates": ["author:1473", "author:1858"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:633",
+        "slugFrom": "author:633",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:ana cordoba del campo": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:563",
+      "mergeCandidates": ["author:882"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:563",
+        "slugFrom": "author:563",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:angel garcia garcia munoz buru": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:813",
+      "mergeCandidates": ["author:1256"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:813",
+        "slugFrom": "author:813",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:antonio lopez hurtado zarate": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:3099",
+      "mergeCandidates": ["author:663", "author:710", "author:1712"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:3099",
+        "slugFrom": "author:3099",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:antonio valdeavero ponce": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:938",
+      "mergeCandidates": ["author:1686"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:938",
+        "slugFrom": "author:938",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:carlos jose olmedo batista": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:797",
+      "mergeCandidates": ["author:1578"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:797",
+        "slugFrom": "author:797",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:francisco marin vargas": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:1167",
+      "mergeCandidates": [
+        "author:1209",
+        "author:1302",
+        "author:1348",
+        "author:1365",
+        "author:1431"
+      ],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:1167",
+        "slugFrom": "author:1167",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:guillermo m schrem": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:2652",
+      "mergeCandidates": [
+        "author:556",
+        "author:1029",
+        "author:1230",
+        "author:1422",
+        "author:1780",
+        "author:2089",
+        "author:2806",
+        "author:3153"
+      ],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:biography, MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:2652",
+        "slugFrom": "author:2652",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:guillermo martinez schrem": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:1136",
+      "mergeCandidates": ["author:1560", "author:1681"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:1136",
+        "slugFrom": "author:1136",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:ignacio luis de orduna puebla": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:765",
+      "mergeCandidates": ["author:1585"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:765",
+        "slugFrom": "author:765",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:jose antonio galante perez": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:3046",
+      "mergeCandidates": ["author:904", "author:1235", "author:1325"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:3046",
+        "slugFrom": "author:3046",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:jose vte carmona simarro": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:2749",
+      "mergeCandidates": ["author:1017", "author:1341", "author:1834", "author:3166"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:biography, MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:2749",
+        "slugFrom": "author:2749",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:juan antonio valero casado": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:717",
+      "mergeCandidates": ["author:1649"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:717",
+        "slugFrom": "author:717",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:juan jose velasco sanchez mayoral": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:819",
+      "mergeCandidates": ["author:1457", "author:1863"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:819",
+        "slugFrom": "author:819",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:manuel gomez rosas": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:942",
+      "mergeCandidates": ["author:1131", "author:1798"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:942",
+        "slugFrom": "author:942",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:manuel ondo ndong": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:1902",
+      "mergeCandidates": ["author:1917"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:1902",
+        "slugFrom": "author:1902",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:maria dolores castellon perez": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:628",
+      "mergeCandidates": ["author:1121"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:628",
+        "slugFrom": "author:628",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:minerva buiza": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:2855",
+      "mergeCandidates": ["author:1358", "author:1361", "author:1483", "author:2860"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:biography, MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:2855",
+        "slugFrom": "author:2855",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:norberto dominguez jurado": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:623",
+      "mergeCandidates": ["author:1187"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:623",
+        "slugFrom": "author:623",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:sara sanchez prieto": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:1526",
+      "mergeCandidates": ["author:1644"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Patron legacy: la misma persona aparece asociada a varios libros.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:1526",
+        "slugFrom": "author:1526",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    },
+    "possible-author:teodoro rodriguez martin": {
+      "recommendedAction": "merge",
+      "approvedAction": null,
+      "canonicalCandidateKey": "author:652",
+      "mergeCandidates": ["author:724"],
+      "confidence": "medium",
+      "reasons": [
+        "Nombre normalizado identico en el grupo.",
+        "Slugs compatibles con familia historica y sufijos numericos.",
+        "Existen varias fotos candidatas no equivalentes; requiere revision visual.",
+        "Conflictos de campo: MANUAL_REVIEW_FIELD_CONFLICT:photo.",
+        "Propuesta calculada: LIKELY_MERGE_MANUAL_CONFIRMATION."
+      ],
+      "fieldResolution": {
+        "nameFrom": "author:652",
+        "slugFrom": "author:652",
+        "shortBioFrom": null,
+        "biographyFrom": null,
+        "photoFrom": null,
+        "websiteFrom": null,
+        "instagramFrom": null,
+        "facebookFrom": null,
+        "countryFrom": null,
+        "requiresFieldDecision": true
+      }
+    }
+  }
+}
