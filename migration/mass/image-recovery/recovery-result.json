@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-07-23T20:46:17.383Z",
+  "mode": "dry-run",
+  "totalPending": 195,
+  "technicalRetry": 6,
+  "safeAuthorPhoto": 60,
+  "safeBookCover": 0,
+  "ambiguous": 26,
+  "noCandidate": 103,
+  "automaticallyRecoverable": 66,
+  "applied": 0,
+  "skippedAlreadyApplied": 149
+}

@@ -1,0 +1,71 @@
+{
+  "generatedAt": "2026-07-23T21:01:20.511Z",
+  "totalBooksAnalyzed": 103,
+  "withoutAnyImage": 0,
+  "onlyAuthorPhoto": 1,
+  "hasStrongCandidate": 3,
+  "hasMultipleCandidates": 103,
+  "hasHtmlImages": 0,
+  "hasExternalImages": 0,
+  "hasRelatedAttachments": 0,
+  "hasFilenameMatch": 5,
+  "hasIsbnMatch": 0,
+  "hasSlugMatch": 0,
+  "hasTitleMatch": 5,
+  "sourceDistribution": {
+    "dfiFeatured": 62,
+    "attachment_same_day": 432,
+    "_thumbnail_id": 103,
+    "custom_field:_thumbnail_id": 103,
+    "custom_field:dfiFeatured": 62,
+    "filename_title_match": 11,
+    "imagen_destacada_2": 4,
+    "custom_field:imagen_destacada_2": 4
+  },
+  "confidenceDistribution": {
+    "high": 5,
+    "medium": 6,
+    "low": 261,
+    "none": 509
+  },
+  "causeDistribution": {
+    "multiple_candidates": 103,
+    "author_photo_signal": 89,
+    "strong_candidate": 3,
+    "title_match": 5
+  },
+  "topOpportunities": [
+    {
+      "rule": "cover_ratio_plus_cover_keyword",
+      "recoverableCovers": 76
+    },
+    {
+      "rule": "filename_or_title_match_without_author_photo_signal",
+      "recoverableCovers": 3
+    },
+    {
+      "rule": "attachment_parent_match",
+      "recoverableCovers": 0
+    },
+    {
+      "rule": "isbn_match",
+      "recoverableCovers": 0
+    },
+    {
+      "rule": "html_or_content_image",
+      "recoverableCovers": 0
+    },
+    {
+      "rule": "woocommerce_related_thumbnail",
+      "recoverableCovers": 0
+    }
+  ],
+  "inspectedSources": {
+    "xmlInput": true,
+    "recoveryPlan": "migration/mass/image-recovery/recovery-plan.json",
+    "attachments": "migration/audit/attachments-candidates.csv",
+    "books": "migration/audit/books-candidates.csv",
+    "editions": "migration/mass/apply/editions.json",
+    "migrationReport": "migration/audit/migration-report.json"
+  }
+}

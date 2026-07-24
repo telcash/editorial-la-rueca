@@ -1,0 +1,2808 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-24T16:32:06.022Z",
+  "decisions": [
+    {
+      "candidateKey": "book:el poderoso sir tristan en la saga del prince valiant 1937 1971 de harold foster la apoteosis medieval de un arte contemporaneo",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1568",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portada-10.jpg",
+        "filename": "w_portada-10.jpg",
+        "width": 500,
+        "height": 713,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1568",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portada-10.jpg",
+        "filename": "w_portada-10.jpg",
+        "width": 500,
+        "height": 713,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:50:56.147Z"
+    },
+    {
+      "candidateKey": "book:esferas temporales aforismos meditaciones y otros escritos breve recopilacion",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1208",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_EsferasPortada003.jpg",
+        "filename": "w_EsferasPortada003.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1208",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_EsferasPortada003.jpg",
+        "filename": "w_EsferasPortada003.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:51:09.837Z"
+    },
+    {
+      "candidateKey": "book:inteligencia artificial en educacion fisica",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1197",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_RosarioPortada.jpg",
+        "filename": "w_RosarioPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T15:51:47.834Z"
+    },
+    {
+      "candidateKey": "book:una inolvidable noche de futbol en la pared",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1083",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_InolvidablePortada.jpg",
+        "filename": "w_InolvidablePortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1083",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_InolvidablePortada.jpg",
+        "filename": "w_InolvidablePortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:51:54.997Z"
+    },
+    {
+      "candidateKey": "book:voces del alma el arte de escuchar a traves del tarot",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1357",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portadaWeb-1.jpg",
+        "filename": "w_portadaWeb-1.jpg",
+        "width": 500,
+        "height": 733,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T15:52:16.271Z"
+    },
+    {
+      "candidateKey": "book:quieres o debes ser feliz darse cuenta de aquello que nos impide ser felices es el primer paso para ser mas feliz",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:806",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_FelizPortada.jpg",
+        "filename": "w_FelizPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:806",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_FelizPortada.jpg",
+        "filename": "w_FelizPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:52:24.011Z"
+    },
+    {
+      "candidateKey": "book:going my way en 40 poemas",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:766",
+        "url": "https://editoriallarueca.com/wp-content/uploads/PadreInaki.jpg",
+        "filename": "PadreInaki.jpg",
+        "width": 900,
+        "height": 1600,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T15:52:42.075Z"
+    },
+    {
+      "candidateKey": "book:al final de la escapada memoria personal 1951 2011",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1218",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_AlFinalPortada.jpg",
+        "filename": "w_AlFinalPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1218",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_AlFinalPortada.jpg",
+        "filename": "w_AlFinalPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:52:47.078Z"
+    },
+    {
+      "candidateKey": "book:al otro lado del rio",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:962",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_RioPortada.jpg",
+        "filename": "w_RioPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:962",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_RioPortada.jpg",
+        "filename": "w_RioPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:52:49.730Z"
+    },
+    {
+      "candidateKey": "book:alma en llamas",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:908",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_EnLlamasPortada.jpg",
+        "filename": "w_EnLlamasPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:908",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_EnLlamasPortada.jpg",
+        "filename": "w_EnLlamasPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:52:56.051Z"
+    },
+    {
+      "candidateKey": "book:amar a fondo perdido y la decision",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:869",
+        "url": "https://editoriallarueca.com/wp-content/uploads/AmarMockup.png",
+        "filename": "AmarMockup-scaled.png",
+        "width": 2560,
+        "height": 1707,
+        "positiveCoverScore": 18,
+        "negativeAuthorScore": 0,
+        "finalScore": 18,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:07:38.877Z"
+    },
+    {
+      "candidateKey": "book:amaremos en libertad",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1203",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_AmaremosPortada002.jpg",
+        "filename": "w_AmaremosPortada002.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1203",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_AmaremosPortada002.jpg",
+        "filename": "w_AmaremosPortada002.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:53:10.643Z"
+    },
+    {
+      "candidateKey": "book:analisis de errores morfosintacticos en un aula de espanol le el caso del grupo de estudiantes del nivel b2 de secundaria en guinea ecuatorial al expresarse por escrito en espanol",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1909",
+        "url": "https://editoriallarueca.com/wp-content/uploads/ww_portada-5.jpg",
+        "filename": "ww_portada-5.jpg",
+        "width": 500,
+        "height": 744,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1916",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portadaWEB-3.jpg",
+        "filename": "w_portadaWEB-3.jpg",
+        "width": 500,
+        "height": 711,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": false
+      },
+      "selectionSource": "editorial-manual",
+      "updatedAt": "2026-07-24T15:53:37.135Z"
+    },
+    {
+      "candidateKey": "book:apuesta personal",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1171",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_InakiPortada.jpg",
+        "filename": "w_InakiPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 35,
+        "finalScore": 40,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1171",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_InakiPortada.jpg",
+        "filename": "w_InakiPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 35,
+        "finalScore": 40,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:53:44.540Z"
+    },
+    {
+      "candidateKey": "book:banquero de carlos v a emilio botin",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:632",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Banquero_AlonsoC.jpg",
+        "filename": "w_Banquero_AlonsoC.jpg",
+        "width": 500,
+        "height": 731,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 35,
+        "finalScore": 48,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:632",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Banquero_AlonsoC.jpg",
+        "filename": "w_Banquero_AlonsoC.jpg",
+        "width": 500,
+        "height": 731,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 35,
+        "finalScore": 48,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:53:50.423Z"
+    },
+    {
+      "candidateKey": "book:beretricce el palacio velado",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1311",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_BerectriccePortada.jpg",
+        "filename": "w_BerectriccePortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1311",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_BerectriccePortada.jpg",
+        "filename": "w_BerectriccePortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:53:57.230Z"
+    },
+    {
+      "candidateKey": "book:biodiversidad sostenibilidad supervivencia e inmortalidad",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:801",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_BiodervisidadPortada.jpg",
+        "filename": "w_BiodervisidadPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:801",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_BiodervisidadPortada.jpg",
+        "filename": "w_BiodervisidadPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:54:01.843Z"
+    },
+    {
+      "candidateKey": "book:con su permiso don alvaro historias de viso del marques",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1357",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portadaWeb-1.jpg",
+        "filename": "w_portadaWeb-1.jpg",
+        "width": 500,
+        "height": 733,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T15:54:24.985Z"
+    },
+    {
+      "candidateKey": "book:cuando su mirada pasaba por halley",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:561",
+        "url": "https://editoriallarueca.com/wp-content/uploads/Imagen7778.jpg",
+        "filename": "Imagen7778-scaled.jpg",
+        "width": 1920,
+        "height": 2560,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T15:54:44.278Z"
+    },
+    {
+      "candidateKey": "book:cuentos para amara la nieve y amara toca el tambor",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1305",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Portadaweb.jpg",
+        "filename": "w_Portadaweb.jpg",
+        "width": 500,
+        "height": 731,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:3010",
+        "url": "https://editoriallarueca.com/wp-content/uploads/Libro_CUENTOS-PARA-AMARA-La-Nieve-–-Amara-toca-el-tambor_Autor_Francisco-Marin-Vargas_Genero-YBCS-Editorial-la-Rueca.jpg",
+        "filename": "Libro_CUENTOS-PARA-AMARA-La-Nieve-–-Amara-toca-el-tambor_Autor_Francisco-Marin-Vargas_Genero-YBCS-Editorial-la-Rueca.jpg",
+        "width": 500,
+        "height": 542,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 100,
+        "finalScore": -25,
+        "origins": ["filename_title_match"],
+        "isAlgorithmSuggestion": false
+      },
+      "selectionSource": "editorial-manual",
+      "updatedAt": "2026-07-24T15:55:30.801Z"
+    },
+    {
+      "candidateKey": "book:cuentos para amara dona bota la burbuja de mar",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1340",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_quedamosPortada.jpg",
+        "filename": "w_quedamosPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1346",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portadaDonaBota.jpg",
+        "filename": "w_portadaDonaBota.jpg",
+        "width": 700,
+        "height": 761,
+        "positiveCoverScore": 71,
+        "negativeAuthorScore": 0,
+        "finalScore": 71,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": false
+      },
+      "selectionSource": "editorial-manual",
+      "updatedAt": "2026-07-24T15:55:37.738Z"
+    },
+    {
+      "candidateKey": "book:de barro y silencio",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1166",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_BarroPortada.jpg",
+        "filename": "w_BarroPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1166",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_BarroPortada.jpg",
+        "filename": "w_BarroPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:55:50.343Z"
+    },
+    {
+      "candidateKey": "book:de estrellas gaviotas y poemas",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1074",
+        "url": "https://editoriallarueca.com/wp-content/uploads/PacoDazaMockup.png",
+        "filename": "PacoDazaMockup-scaled.png",
+        "width": 2560,
+        "height": 2048,
+        "positiveCoverScore": 10,
+        "negativeAuthorScore": 50,
+        "finalScore": -40,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T15:56:01.815Z"
+    },
+    {
+      "candidateKey": "book:de juan a juan el musical el libreto y un relato",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1056",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_DeamonLilithPortada.jpg",
+        "filename": "w_DeamonLilithPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1051",
+        "url": "https://editoriallarueca.com/wp-content/uploads/PortadaJuanAJuan.jpg",
+        "filename": "PortadaJuanAJuan.jpg",
+        "width": 700,
+        "height": 522,
+        "positiveCoverScore": 56,
+        "negativeAuthorScore": 0,
+        "finalScore": 56,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": false
+      },
+      "selectionSource": "editorial-manual",
+      "updatedAt": "2026-07-24T15:56:30.908Z"
+    },
+    {
+      "candidateKey": "book:de kolpino a krasny bor",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:580",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_A-lo-largo-del-Camino_jpg.jpg",
+        "filename": "w_A-lo-largo-del-Camino_jpg.jpg",
+        "width": 500,
+        "height": 715,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T15:56:54.913Z"
+    },
+    {
+      "candidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares tomo 2",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1680",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_PajaroPortada.jpg",
+        "filename": "w_PajaroPortada-scaled.jpg",
+        "width": 1747,
+        "height": 2560,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1685",
+        "url": "https://editoriallarueca.com/wp-content/uploads/ww_portada.jpg",
+        "filename": "ww_portada.jpg",
+        "width": 500,
+        "height": 721,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": false
+      },
+      "selectionSource": "editorial-manual",
+      "updatedAt": "2026-07-24T15:57:08.303Z"
+    },
+    {
+      "candidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares una narracion audaz para un lector mas inteligente que lerdo belmonte ano 2017 al 2022 libro 1",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:937",
+        "url": "https://editoriallarueca.com/wp-content/uploads/W_MarMuertoPortada.jpg",
+        "filename": "W_MarMuertoPortada.jpg",
+        "width": 500,
+        "height": 706,
+        "positiveCoverScore": 95,
+        "negativeAuthorScore": 0,
+        "finalScore": 95,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:937",
+        "url": "https://editoriallarueca.com/wp-content/uploads/W_MarMuertoPortada.jpg",
+        "filename": "W_MarMuertoPortada.jpg",
+        "width": 500,
+        "height": 706,
+        "positiveCoverScore": 95,
+        "negativeAuthorScore": 0,
+        "finalScore": 95,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:57:54.461Z"
+    },
+    {
+      "candidateKey": "book:de origine nostra fatum nostrum",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1517",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Portada-6.jpg",
+        "filename": "w_Portada-6-scaled.jpg",
+        "width": 2009,
+        "height": 2560,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1517",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Portada-6.jpg",
+        "filename": "w_Portada-6-scaled.jpg",
+        "width": 2009,
+        "height": 2560,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:58:05.543Z"
+    },
+    {
+      "candidateKey": "book:detras de la corteza",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:989",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_CortezaPortada.jpg",
+        "filename": "w_CortezaPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:989",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_CortezaPortada.jpg",
+        "filename": "w_CortezaPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:58:11.900Z"
+    },
+    {
+      "candidateKey": "book:diario de un comunero",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:834",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Portada.jpg",
+        "filename": "w_Portada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:834",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Portada.jpg",
+        "filename": "w_Portada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:duns scoto versus tomas de aquino la debilidad del neocalcedonismo tomista",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1093",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_DunsScotoPortada002.jpg",
+        "filename": "w_DunsScotoPortada002.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1093",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_DunsScotoPortada002.jpg",
+        "filename": "w_DunsScotoPortada002.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:58:28.766Z"
+    },
+    {
+      "candidateKey": "book:el camino del angel la realidad de un sueno",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:812",
+        "url": "https://editoriallarueca.com/wp-content/uploads/W_PortadaCaminoDelAngel.jpg",
+        "filename": "W_PortadaCaminoDelAngel.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 35,
+        "finalScore": 56,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:812",
+        "url": "https://editoriallarueca.com/wp-content/uploads/W_PortadaCaminoDelAngel.jpg",
+        "filename": "W_PortadaCaminoDelAngel.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 35,
+        "finalScore": 56,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T15:58:35.708Z"
+    },
+    {
+      "candidateKey": "book:el canto de las raices cartografias del ser y existir",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1391",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portada_ElCantoWeb.jpg",
+        "filename": "w_portada_ElCantoWeb.jpg",
+        "width": 500,
+        "height": 749,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1391",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portada_ElCantoWeb.jpg",
+        "filename": "w_portada_ElCantoWeb.jpg",
+        "width": 500,
+        "height": 749,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:el cierzo tatuado",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:43",
+        "url": "https://editoriallarueca.com/wp-content/uploads/portada-libro.jpg",
+        "filename": "portada-libro.jpg",
+        "width": 500,
+        "height": 707,
+        "positiveCoverScore": 87,
+        "negativeAuthorScore": 0,
+        "finalScore": 87,
+        "origins": ["custom_field:dfiFeatured", "dfiFeatured"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1324",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_CierzoPortada.jpg",
+        "filename": "w_CierzoPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": false
+      },
+      "selectionSource": "editorial-manual",
+      "updatedAt": "2026-07-24T16:00:30.637Z"
+    },
+    {
+      "candidateKey": "book:el delgado hilo de la vida",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:59",
+        "url": "https://editoriallarueca.com/wp-content/uploads/fondo-home-2.jpg",
+        "filename": "fondo-home-2.jpg",
+        "width": 1800,
+        "height": 1199,
+        "positiveCoverScore": 22,
+        "negativeAuthorScore": 0,
+        "finalScore": 22,
+        "origins": ["custom_field:dfiFeatured", "dfiFeatured"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:09:23.401Z"
+    },
+    {
+      "candidateKey": "book:el joven fenix el resurgir de los dioses egipcios",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:658",
+        "url": "https://editoriallarueca.com/wp-content/uploads/MockUp_Fenix_pixe.jpg",
+        "filename": "MockUp_Fenix_pixe.jpg",
+        "width": 900,
+        "height": 1125,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:09:26.922Z"
+    },
+    {
+      "candidateKey": "book:el maestro de salamanca consideracion del derecho internacional humanitario",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:968",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_2portada.jpg",
+        "filename": "w_2portada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:968",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_2portada.jpg",
+        "filename": "w_2portada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:el panuelo de marino",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1023",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_PanueloPortada.jpg",
+        "filename": "w_PanueloPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1023",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_PanueloPortada.jpg",
+        "filename": "w_PanueloPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:01:22.681Z"
+    },
+    {
+      "candidateKey": "book:el perfume de las emociones",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1112",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_PerfumePortada002.jpg",
+        "filename": "w_PerfumePortada002.jpg",
+        "width": 500,
+        "height": 785,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1112",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_PerfumePortada002.jpg",
+        "filename": "w_PerfumePortada002.jpg",
+        "width": 500,
+        "height": 785,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:02:04.282Z"
+    },
+    {
+      "candidateKey": "book:el poder de la educacion nos hace infinitos",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:627",
+        "url": "https://editoriallarueca.com/wp-content/uploads/W_Compositor.jpg",
+        "filename": "W_Compositor.jpg",
+        "width": 500,
+        "height": 733,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:10:09.514Z"
+    },
+    {
+      "candidateKey": "book:el poder de la magia de la comunicacion",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1181",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_InakiDominPortada.jpg",
+        "filename": "w_InakiDominPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 35,
+        "finalScore": 40,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1181",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_InakiDominPortada.jpg",
+        "filename": "w_InakiDominPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 35,
+        "finalScore": 40,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:02:33.906Z"
+    },
+    {
+      "candidateKey": "book:el rol principal de una pelicula llamada vida",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:920",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_peliculaPortadapeq.jpg",
+        "filename": "w_peliculaPortadapeq.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:920",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_peliculaPortadapeq.jpg",
+        "filename": "w_peliculaPortadapeq.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:02:45.854Z"
+    },
+    {
+      "candidateKey": "book:el rumor de la marea",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1028",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_RumordelaMareaPortada.jpg",
+        "filename": "w_RumordelaMareaPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 110,
+        "negativeAuthorScore": 0,
+        "finalScore": 110,
+        "origins": ["attachment_same_day", "filename_title_match"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1028",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_RumordelaMareaPortada.jpg",
+        "filename": "w_RumordelaMareaPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 110,
+        "negativeAuthorScore": 0,
+        "finalScore": 110,
+        "origins": ["attachment_same_day", "filename_title_match"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:el valle de cristal",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:561",
+        "url": "https://editoriallarueca.com/wp-content/uploads/Imagen7778.jpg",
+        "filename": "Imagen7778-scaled.jpg",
+        "width": 1920,
+        "height": 2560,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:11:36.117Z"
+    },
+    {
+      "candidateKey": "book:el viaje aventurero de nico",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1033",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_NicosPortada.jpg",
+        "filename": "w_NicosPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1033",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_NicosPortada.jpg",
+        "filename": "w_NicosPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:03:55.029Z"
+    },
+    {
+      "candidateKey": "book:en la recta final",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1087",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_RectaFinalPortada.jpg",
+        "filename": "w_RectaFinalPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 110,
+        "negativeAuthorScore": 0,
+        "finalScore": 110,
+        "origins": ["attachment_same_day", "filename_title_match"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1087",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_RectaFinalPortada.jpg",
+        "filename": "w_RectaFinalPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 110,
+        "negativeAuthorScore": 0,
+        "finalScore": 110,
+        "origins": ["attachment_same_day", "filename_title_match"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:encuentros campezanos",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:64",
+        "url": "https://editoriallarueca.com/wp-content/uploads/fondo-contacto-trans.png",
+        "filename": "fondo-contacto-trans.png",
+        "width": 1800,
+        "height": 400,
+        "positiveCoverScore": 22,
+        "negativeAuthorScore": 0,
+        "finalScore": 22,
+        "origins": ["custom_field:dfiFeatured", "dfiFeatured"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:12:00.766Z"
+    },
+    {
+      "candidateKey": "book:entre realidades y suenos",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1006",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_EntreRealidadesPortada.jpg",
+        "filename": "w_EntreRealidadesPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1006",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_EntreRealidadesPortada.jpg",
+        "filename": "w_EntreRealidadesPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:estampas de un pueblo andaluz 1960 1974",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:878",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_QueCosasPortada.jpg",
+        "filename": "w_QueCosasPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:13:53.619Z"
+    },
+    {
+      "candidateKey": "book:estrategias educativas a traves del teatro musical experiencias y propuesta metodologica del taller de musicales volumen 1 seleccion de titulos para el aula analisis cinematografico y escenico",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1527",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_fotoSara.jpg",
+        "filename": "w_fotoSara.jpg",
+        "width": 400,
+        "height": 589,
+        "positiveCoverScore": 50,
+        "negativeAuthorScore": 225,
+        "finalScore": -175,
+        "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:14:05.580Z"
+    },
+    {
+      "candidateKey": "book:evocacion y sucesos de dolores la tuerta una historia del mundo rural",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1820",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portadaDoloresTuerta.jpg",
+        "filename": "w_portadaDoloresTuerta.jpg",
+        "width": 500,
+        "height": 728,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1820",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portadaDoloresTuerta.jpg",
+        "filename": "w_portadaDoloresTuerta.jpg",
+        "width": 500,
+        "height": 728,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:14:11.673Z"
+    },
+    {
+      "candidateKey": "book:falsas esperanzas",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:43",
+        "url": "https://editoriallarueca.com/wp-content/uploads/portada-libro.jpg",
+        "filename": "portada-libro.jpg",
+        "width": 500,
+        "height": 707,
+        "positiveCoverScore": 87,
+        "negativeAuthorScore": 0,
+        "finalScore": 87,
+        "origins": ["custom_field:dfiFeatured", "dfiFeatured"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1011",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_GuemesPortada.jpg",
+        "filename": "w_GuemesPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 35,
+        "finalScore": 40,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": false
+      },
+      "selectionSource": "editorial-manual",
+      "updatedAt": "2026-07-24T16:15:59.588Z"
+    },
+    {
+      "candidateKey": "book:haikus en el camino",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:43",
+        "url": "https://editoriallarueca.com/wp-content/uploads/portada-libro.jpg",
+        "filename": "portada-libro.jpg",
+        "width": 500,
+        "height": 707,
+        "positiveCoverScore": 87,
+        "negativeAuthorScore": 0,
+        "finalScore": 87,
+        "origins": ["custom_field:dfiFeatured", "dfiFeatured"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1234",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_HaikusPortada.jpg",
+        "filename": "w_HaikusPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": false
+      },
+      "selectionSource": "editorial-manual",
+      "updatedAt": "2026-07-24T16:16:07.311Z"
+    },
+    {
+      "candidateKey": "book:humor y prosa de un ajedrecista",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:49",
+        "url": "https://editoriallarueca.com/wp-content/uploads/arrow-black-prev.svg",
+        "filename": "arrow-black-prev.svg",
+        "width": 150,
+        "height": 150,
+        "positiveCoverScore": 22,
+        "negativeAuthorScore": 15,
+        "finalScore": 7,
+        "origins": ["custom_field:dfiFeatured", "dfiFeatured"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:16:40.618Z"
+    },
+    {
+      "candidateKey": "book:humor prosa y una jugadora",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1130",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_cub_Humor.jpg",
+        "filename": "w_cub_Humor.jpg",
+        "width": 500,
+        "height": 759,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1130",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_cub_Humor.jpg",
+        "filename": "w_cub_Humor.jpg",
+        "width": 500,
+        "height": 759,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:16:37.708Z"
+    },
+    {
+      "candidateKey": "book:ilogica proposicional aforemas y poerismos",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:771",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Ilogica.jpg",
+        "filename": "w_Ilogica-scaled.jpg",
+        "width": 1806,
+        "height": 2560,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:771",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Ilogica.jpg",
+        "filename": "w_Ilogica-scaled.jpg",
+        "width": 1806,
+        "height": 2560,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:john main apatheia nirvana",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:755",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_JohnMain.jpg",
+        "filename": "w_JohnMain.jpg",
+        "width": 500,
+        "height": 667,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:755",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_JohnMain.jpg",
+        "filename": "w_JohnMain.jpg",
+        "width": 500,
+        "height": 667,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:la barca del portugues",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1068",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_BarcaPortuPortada.jpg",
+        "filename": "w_BarcaPortuPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1068",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_BarcaPortuPortada.jpg",
+        "filename": "w_BarcaPortuPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:la canteria en moralzarzal",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:632",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Banquero_AlonsoC.jpg",
+        "filename": "w_Banquero_AlonsoC.jpg",
+        "width": 500,
+        "height": 731,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:25:18.973Z"
+    },
+    {
+      "candidateKey": "book:la flor malva",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:925",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_MalvaPortada.jpg",
+        "filename": "w_MalvaPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:925",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_MalvaPortada.jpg",
+        "filename": "w_MalvaPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:25:22.977Z"
+    },
+    {
+      "candidateKey": "book:la ganaderia en moralzarzal",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:709",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Ganaderia.jpg",
+        "filename": "w_Ganaderia.jpg",
+        "width": 500,
+        "height": 719,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:709",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Ganaderia.jpg",
+        "filename": "w_Ganaderia.jpg",
+        "width": 500,
+        "height": 719,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:25:28.939Z"
+    },
+    {
+      "candidateKey": "book:la inteligencia artificial en educacion fisica",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1186",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_InteligenciaArtificialPortada.jpg",
+        "filename": "w_InteligenciaArtificialPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1186",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_InteligenciaArtificialPortada.jpg",
+        "filename": "w_InteligenciaArtificialPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:25:34.861Z"
+    },
+    {
+      "candidateKey": "book:la muerte de adonis los impunes",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1176",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portada_lamuerte.jpg",
+        "filename": "w_portada_lamuerte.jpg",
+        "width": 500,
+        "height": 744,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1176",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portada_lamuerte.jpg",
+        "filename": "w_portada_lamuerte.jpg",
+        "width": 500,
+        "height": 744,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:la pulsera de la princesa yoruba",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:723",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Pulsera.jpg",
+        "filename": "w_Pulsera.jpg",
+        "width": 500,
+        "height": 745,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:723",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Pulsera.jpg",
+        "filename": "w_Pulsera.jpg",
+        "width": 500,
+        "height": 745,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:la sombra del azar",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1213",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_PatxiPortada.jpg",
+        "filename": "w_PatxiPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 35,
+        "finalScore": 40,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1213",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_PatxiPortada.jpg",
+        "filename": "w_PatxiPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 35,
+        "finalScore": 40,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:26:11.376Z"
+    },
+    {
+      "candidateKey": "book:la trenza dorada y otros relatos para tiempos nuevos",
+      "decision": "manual",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:561",
+        "url": "https://editoriallarueca.com/wp-content/uploads/Imagen7778.jpg",
+        "filename": "Imagen7778-scaled.jpg",
+        "width": 1920,
+        "height": 2560,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:561",
+        "url": "https://editoriallarueca.com/wp-content/uploads/Imagen7778.jpg",
+        "filename": "Imagen7778-scaled.jpg",
+        "width": 1920,
+        "height": 2560,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "none",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:la vida de adonis la impunidad",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1112",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_PerfumePortada002.jpg",
+        "filename": "w_PerfumePortada002.jpg",
+        "width": 500,
+        "height": 785,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:26:33.763Z"
+    },
+    {
+      "candidateKey": "book:leeme si te atreves",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:931",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_LeemePortada.jpg",
+        "filename": "w_LeemePortada.jpg",
+        "width": 500,
+        "height": 719,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:931",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_LeemePortada.jpg",
+        "filename": "w_LeemePortada.jpg",
+        "width": 500,
+        "height": 719,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:26:38.116Z"
+    },
+    {
+      "candidateKey": "book:libero mi alma con 131 angeles",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1721",
+        "url": "https://editoriallarueca.com/wp-content/uploads/ww_portada-1.jpg",
+        "filename": "ww_portada-1.jpg",
+        "width": 500,
+        "height": 748,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1721",
+        "url": "https://editoriallarueca.com/wp-content/uploads/ww_portada-1.jpg",
+        "filename": "ww_portada-1.jpg",
+        "width": 500,
+        "height": 748,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:ligero como la brisa",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1135",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_LigeroPortada002.jpg",
+        "filename": "w_LigeroPortada002.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1135",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_LigeroPortada002.jpg",
+        "filename": "w_LigeroPortada002.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:los acorralados",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:945",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_AcorraladosPortada.jpg",
+        "filename": "w_AcorraladosPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 110,
+        "negativeAuthorScore": 0,
+        "finalScore": 110,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:945",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_AcorraladosPortada.jpg",
+        "filename": "w_AcorraladosPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 110,
+        "negativeAuthorScore": 0,
+        "finalScore": 110,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:los dictadores y las mujeres adolf hitler",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:893",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_DictadoresPortada1.jpg",
+        "filename": "w_DictadoresPortada1.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:893",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_DictadoresPortada1.jpg",
+        "filename": "w_DictadoresPortada1.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:26:57.341Z"
+    },
+    {
+      "candidateKey": "book:los mejores cortos de gomez rosas cualquier parecido con la realidad es pura coincidencia",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1797",
+        "url": "https://editoriallarueca.com/wp-content/uploads/ww_Portada-4.jpg",
+        "filename": "ww_Portada-4.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1797",
+        "url": "https://editoriallarueca.com/wp-content/uploads/ww_Portada-4.jpg",
+        "filename": "ww_Portada-4.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:27:04.679Z"
+    },
+    {
+      "candidateKey": "book:los pensamientos olvidados",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:732",
+        "url": "https://editoriallarueca.com/wp-content/uploads/W_Pensamientos.jpg",
+        "filename": "W_Pensamientos.jpg",
+        "width": 500,
+        "height": 748,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:732",
+        "url": "https://editoriallarueca.com/wp-content/uploads/W_Pensamientos.jpg",
+        "filename": "W_Pensamientos.jpg",
+        "width": 500,
+        "height": 748,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:mariposas en el jardin",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1617",
+        "url": "https://editoriallarueca.com/wp-content/uploads/MockUp_mariposas_sandra.jpg",
+        "filename": "MockUp_mariposas_sandra.jpg",
+        "width": 900,
+        "height": 900,
+        "positiveCoverScore": 18,
+        "negativeAuthorScore": 50,
+        "finalScore": -32,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:27:14.846Z"
+    },
+    {
+      "candidateKey": "book:metodo sah g maes 36 caminos de curacion para la mente el cuerpo y el espiritual",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1632",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portadaMalva.jpg",
+        "filename": "w_portadaMalva.jpg",
+        "width": 500,
+        "height": 773,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 35,
+        "finalScore": 40,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1632",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portadaMalva.jpg",
+        "filename": "w_portadaMalva.jpg",
+        "width": 500,
+        "height": 773,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 35,
+        "finalScore": 40,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:27:19.617Z"
+    },
+    {
+      "candidateKey": "book:monedas del corazon",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1547",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portadaOKpequena.jpg",
+        "filename": "w_portadaOKpequena.jpg",
+        "width": 500,
+        "height": 697,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1547",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portadaOKpequena.jpg",
+        "filename": "w_portadaOKpequena.jpg",
+        "width": 500,
+        "height": 697,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:27:25.501Z"
+    },
+    {
+      "candidateKey": "book:ndong el jubilado",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1901",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portada150x210.jpg",
+        "filename": "w_portada150x210.jpg",
+        "width": 500,
+        "height": 807,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1901",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portada150x210.jpg",
+        "filename": "w_portada150x210.jpg",
+        "width": 500,
+        "height": 807,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:nido de barro haikus",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1357",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portadaWeb-1.jpg",
+        "filename": "w_portadaWeb-1.jpg",
+        "width": 500,
+        "height": 733,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:27:46.843Z"
+    },
+    {
+      "candidateKey": "book:no te vi venir pues jamas te hubiese dejado entrar",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:878",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_QueCosasPortada.jpg",
+        "filename": "w_QueCosasPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:27:59.082Z"
+    },
+    {
+      "candidateKey": "book:oraculo de la fe el camino del alma",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1357",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portadaWeb-1.jpg",
+        "filename": "w_portadaWeb-1.jpg",
+        "width": 500,
+        "height": 733,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1357",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_portadaWeb-1.jpg",
+        "filename": "w_portadaWeb-1.jpg",
+        "width": 500,
+        "height": 733,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:28:08.499Z"
+    },
+    {
+      "candidateKey": "book:perdoname por los poemas que te escribi",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1016",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_PerdonamePortada.jpg",
+        "filename": "w_PerdonamePortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1016",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_PerdonamePortada.jpg",
+        "filename": "w_PerdonamePortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:placa blanca dignidad sobre el pecho",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1098",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_PlacaBlancaPortada.jpg",
+        "filename": "w_PlacaBlancaPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1098",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_PlacaBlancaPortada.jpg",
+        "filename": "w_PlacaBlancaPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:28:25.836Z"
+    },
+    {
+      "candidateKey": "book:poesia y whisky",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:908",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_EnLlamasPortada.jpg",
+        "filename": "w_EnLlamasPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:908",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_EnLlamasPortada.jpg",
+        "filename": "w_EnLlamasPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:28:37.311Z"
+    },
+    {
+      "candidateKey": "book:pollos en la memoria",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1039",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_POLLOS_maq2_portada_OK2_sinmarcas.jpg",
+        "filename": "w_POLLOS_maq2_portada_OK2_sinmarcas.jpg",
+        "width": 500,
+        "height": 731,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1039",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_POLLOS_maq2_portada_OK2_sinmarcas.jpg",
+        "filename": "w_POLLOS_maq2_portada_OK2_sinmarcas.jpg",
+        "width": 500,
+        "height": 731,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:28:41.843Z"
+    },
+    {
+      "candidateKey": "book:prestoses xaranes de folixes y xordes nel conceyu de mieres",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:43",
+        "url": "https://editoriallarueca.com/wp-content/uploads/portada-libro.jpg",
+        "filename": "portada-libro.jpg",
+        "width": 500,
+        "height": 707,
+        "positiveCoverScore": 87,
+        "negativeAuthorScore": 0,
+        "finalScore": 87,
+        "origins": ["custom_field:dfiFeatured", "dfiFeatured"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1160",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_ConchaPortada002.jpg",
+        "filename": "w_ConchaPortada002.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 35,
+        "finalScore": 40,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": false
+      },
+      "selectionSource": "editorial-manual",
+      "updatedAt": "2026-07-24T16:29:12.478Z"
+    },
+    {
+      "candidateKey": "book:quedamos para despedirnos pero ella no lo sabia pensamientos en un pequeno relato sobre la amistad",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1340",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_quedamosPortada.jpg",
+        "filename": "w_quedamosPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1340",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_quedamosPortada.jpg",
+        "filename": "w_quedamosPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:quiero estar contigo",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1001",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_EstarContigoPortada.jpg",
+        "filename": "w_EstarContigoPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1001",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_EstarContigoPortada.jpg",
+        "filename": "w_EstarContigoPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:29:21.793Z"
+    },
+    {
+      "candidateKey": "book:relatos de agua dulce",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:752",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_2MockUp_ElRemanso.jpg",
+        "filename": "w_2MockUp_ElRemanso.jpg",
+        "width": 900,
+        "height": 601,
+        "positiveCoverScore": 40,
+        "negativeAuthorScore": 0,
+        "finalScore": 40,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:29:29.149Z"
+    },
+    {
+      "candidateKey": "book:requiem por un escritor desconocido",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:580",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_A-lo-largo-del-Camino_jpg.jpg",
+        "filename": "w_A-lo-largo-del-Camino_jpg.jpg",
+        "width": 500,
+        "height": 715,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:29:41.888Z"
+    },
+    {
+      "candidateKey": "book:rodrigo se fue a otro lugar",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1453",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Portada_EscuelaMusica.jpg",
+        "filename": "w_Portada_EscuelaMusica.jpg",
+        "width": 500,
+        "height": 741,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:30:02.247Z"
+    },
+    {
+      "candidateKey": "book:santa cruz de posguerra conversaciones en blanco y negro",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:977",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_MarMuerto004Portada.jpg",
+        "filename": "w_MarMuerto004Portada.jpg",
+        "width": 500,
+        "height": 706,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:30:12.182Z"
+    },
+    {
+      "candidateKey": "book:sus ojos hablaron",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:43",
+        "url": "https://editoriallarueca.com/wp-content/uploads/portada-libro.jpg",
+        "filename": "portada-libro.jpg",
+        "width": 500,
+        "height": 707,
+        "positiveCoverScore": 87,
+        "negativeAuthorScore": 0,
+        "finalScore": 87,
+        "origins": ["custom_field:dfiFeatured", "dfiFeatured"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:818",
+        "url": "https://editoriallarueca.com/wp-content/uploads/W_OjosPortada.jpg",
+        "filename": "W_OjosPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": false
+      },
+      "selectionSource": "editorial-manual",
+      "updatedAt": "2026-07-24T16:30:19.618Z"
+    },
+    {
+      "candidateKey": "book:sutiles percepciones de una realidad",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1197",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_RosarioPortada.jpg",
+        "filename": "w_RosarioPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 35,
+        "finalScore": 40,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1197",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_RosarioPortada.jpg",
+        "filename": "w_RosarioPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 35,
+        "finalScore": 40,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:30:23.409Z"
+    },
+    {
+      "candidateKey": "book:teoria metaforica del bestiaro romanico proposito revolucionario la educacion sexual",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:580",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_A-lo-largo-del-Camino_jpg.jpg",
+        "filename": "w_A-lo-largo-del-Camino_jpg.jpg",
+        "width": 500,
+        "height": 715,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:30:39.864Z"
+    },
+    {
+      "candidateKey": "book:thailandia el viaje que cambio el rumbo de mi vida como inverti los obstaculos y mis limitaciones en valores gracias a mi experiencia de vida y al coaching",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:777",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_PortadaCoaching.jpg",
+        "filename": "w_PortadaCoaching-scaled.jpg",
+        "width": 1829,
+        "height": 2560,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:777",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_PortadaCoaching.jpg",
+        "filename": "w_PortadaCoaching-scaled.jpg",
+        "width": 1829,
+        "height": 2560,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:30:54.177Z"
+    },
+    {
+      "candidateKey": "book:tiendas y abastos en moralzarzal",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:662",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Tiendas_Zarate.jpg",
+        "filename": "w_Tiendas_Zarate.jpg",
+        "width": 500,
+        "height": 727,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 35,
+        "finalScore": 48,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:662",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_Tiendas_Zarate.jpg",
+        "filename": "w_Tiendas_Zarate.jpg",
+        "width": 500,
+        "height": 727,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 35,
+        "finalScore": 48,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:30:59.198Z"
+    },
+    {
+      "candidateKey": "book:tratado de la ausencia y otros relatos",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:914",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_AusenciaPortada.jpg",
+        "filename": "w_AusenciaPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:914",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_AusenciaPortada.jpg",
+        "filename": "w_AusenciaPortada.jpg",
+        "width": 500,
+        "height": 750,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:31:02.305Z"
+    },
+    {
+      "candidateKey": "book:un ameno curso introductorio a la ecologia humana",
+      "decision": "rejected",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:703",
+        "url": "https://editoriallarueca.com/wp-content/uploads/MockUP_Guiripa.jpg",
+        "filename": "MockUP_Guiripa.jpg",
+        "width": 900,
+        "height": 506,
+        "positiveCoverScore": 10,
+        "negativeAuthorScore": 0,
+        "finalScore": 10,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": null,
+      "selectionSource": "none",
+      "updatedAt": "2026-07-24T16:31:10.100Z"
+    },
+    {
+      "candidateKey": "book:un siglo de ferrocarril en ecija memorias del marchenilla",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:43",
+        "url": "https://editoriallarueca.com/wp-content/uploads/portada-libro.jpg",
+        "filename": "portada-libro.jpg",
+        "width": 500,
+        "height": 707,
+        "positiveCoverScore": 87,
+        "negativeAuthorScore": 0,
+        "finalScore": 87,
+        "origins": ["custom_field:dfiFeatured", "dfiFeatured"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:761",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_978-84-18924-63-7Cub.jpg",
+        "filename": "w_978-84-18924-63-7Cub-scaled.jpg",
+        "width": 1818,
+        "height": 2560,
+        "positiveCoverScore": 75,
+        "negativeAuthorScore": 0,
+        "finalScore": 75,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": false
+      },
+      "selectionSource": "editorial-manual",
+      "updatedAt": "2026-07-24T16:31:23.462Z"
+    },
+    {
+      "candidateKey": "book:versos de madrugada con sentido",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1253",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w2_Versos-de-madrugada.jpg",
+        "filename": "w2_Versos-de-madrugada.jpg",
+        "width": 500,
+        "height": 701,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1253",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w2_Versos-de-madrugada.jpg",
+        "filename": "w2_Versos-de-madrugada.jpg",
+        "width": 500,
+        "height": 701,
+        "positiveCoverScore": 91,
+        "negativeAuthorScore": 0,
+        "finalScore": 91,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": null
+    },
+    {
+      "candidateKey": "book:y la vida sigue",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:1077",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_LaVidaPortada.jpg",
+        "filename": "w_LaVidaPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:1077",
+        "url": "https://editoriallarueca.com/wp-content/uploads/w_LaVidaPortada.jpg",
+        "filename": "w_LaVidaPortada.jpg",
+        "width": 500,
+        "height": 700,
+        "positiveCoverScore": 83,
+        "negativeAuthorScore": 0,
+        "finalScore": 83,
+        "origins": ["attachment_same_day"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:31:30.639Z"
+    },
+    {
+      "candidateKey": "book:yoga volumen 1 2 3 4 5 evolucion integral y evolucion universal",
+      "decision": "approved",
+      "algorithmSuggestion": {
+        "groupKey": "attachment:3038",
+        "url": "https://editoriallarueca.com/wp-content/uploads/Libro-Yoga-–-Volumen-5-–-Evolucion-integral-Y-evolucion-universal-–-Naturalmente-meditando-Miguel-Gomez-Aregana.jpg",
+        "filename": "Libro-Yoga-–-Volumen-5-–-Evolucion-integral-Y-evolucion-universal-–-Naturalmente-meditando-Miguel-Gomez-Aregana.jpg",
+        "width": 500,
+        "height": 762,
+        "positiveCoverScore": 110,
+        "negativeAuthorScore": 35,
+        "finalScore": 75,
+        "origins": ["filename_title_match"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectedImage": {
+        "groupKey": "attachment:3038",
+        "url": "https://editoriallarueca.com/wp-content/uploads/Libro-Yoga-–-Volumen-5-–-Evolucion-integral-Y-evolucion-universal-–-Naturalmente-meditando-Miguel-Gomez-Aregana.jpg",
+        "filename": "Libro-Yoga-–-Volumen-5-–-Evolucion-integral-Y-evolucion-universal-–-Naturalmente-meditando-Miguel-Gomez-Aregana.jpg",
+        "width": 500,
+        "height": 762,
+        "positiveCoverScore": 110,
+        "negativeAuthorScore": 35,
+        "finalScore": 75,
+        "origins": ["filename_title_match"],
+        "isAlgorithmSuggestion": true
+      },
+      "selectionSource": "algorithm",
+      "updatedAt": "2026-07-24T16:31:33.138Z"
+    }
+  ],
+  "statistics": {
+    "total": 103,
+    "pending": 0,
+    "approved": 75,
+    "approvedWithAlgorithm": 64,
+    "manuallyCorrected": 11,
+    "rejected": 27,
+    "manual": 1
+  }
+}

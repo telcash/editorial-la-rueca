@@ -1,0 +1,3152 @@
+[
+  {
+    "candidateKey": "book:el poderoso sir tristan en la saga del prince valiant 1937 1971 de harold foster la apoteosis medieval de un arte contemporaneo",
+    "title": " El poderoso Sir Tristán en la Saga del Prince Valiant (1937-1971) de Harold Foster. La apoteosis medieval de un arte contemporáneo.",
+    "author": "José Carlos Ríos Camacho",
+    "candidate": {
+      "groupKey": "attachment:1571",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1571"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_fotoautor-3.jpg"],
+      "filenames": ["w_fotoautor-3.jpg"],
+      "width": 400,
+      "height": 467,
+      "ratio": 0.857,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 190,
+      "finalScore": -160,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:esferas temporales aforismos meditaciones y otros escritos breve recopilacion",
+    "title": " ESFERAS TEMPORALES Aforismos, meditaciones y otros escritos (Breve recopilación)",
+    "author": "Francisco Marín Vargas",
+    "candidate": {
+      "groupKey": "attachment:1211",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1211"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Foto_FcoMarin-1.jpg"],
+      "filenames": ["w_Foto_FcoMarin-1.jpg"],
+      "width": 485,
+      "height": 508,
+      "ratio": 0.955,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:inteligencia artificial en educacion fisica",
+    "title": " Inteligencia Artificial en Educación Física",
+    "author": "María Isabel Martín Aranda",
+    "candidate": {
+      "groupKey": "attachment:1195",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1195"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/W_Foto-Maria-Isabel-Martin.jpg"],
+      "filenames": ["W_Foto-Maria-Isabel-Martin.jpg"],
+      "width": 667,
+      "height": 889,
+      "ratio": 0.75,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 225,
+      "finalScore": -160,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:una inolvidable noche de futbol en la pared",
+    "title": " Una inolvidable noche de fútbol en La Pared",
+    "author": "Luis Marcelo Carboni",
+    "candidate": {
+      "groupKey": "attachment:1086",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1086"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoMarcelo.jpg"],
+      "filenames": ["w_FotoMarcelo.jpg"],
+      "width": 264,
+      "height": 417,
+      "ratio": 0.633,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:voces del alma el arte de escuchar a traves del tarot",
+    "title": " Voces del Alma - El arte de escuchar a través del tarot",
+    "author": "Minerva Buiza",
+    "candidate": {
+      "groupKey": "attachment:1363",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1363"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/Foto5Minerva.jpeg"],
+      "filenames": ["Foto5Minerva.jpeg"],
+      "width": 1591,
+      "height": 2048,
+      "ratio": 0.777,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 225,
+      "finalScore": -160,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:quieres o debes ser feliz darse cuenta de aquello que nos impide ser felices es el primer paso para ser mas feliz",
+    "title": "¿Quieres o debes ser feliz? - Darse cuenta de aquello que nos impide ser felices, es el primer paso para ser más feliz",
+    "author": "Gregorio Muñoz Gómez",
+    "candidate": {
+      "groupKey": "attachment:809",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["809"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FOTO-gregorio.jpg"],
+      "filenames": ["w_FOTO-gregorio.jpg"],
+      "width": 498,
+      "height": 502,
+      "ratio": 0.992,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:going my way en 40 poemas",
+    "title": "“Going my way” en 40 poemas ",
+    "author": "Ignacio Luis de Orduña Puebla",
+    "candidate": {
+      "groupKey": "attachment:768",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["768"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/FotoPadreInaki.jpg"],
+      "filenames": ["FotoPadreInaki.jpg"],
+      "width": 320,
+      "height": 672,
+      "ratio": 0.476,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 190,
+      "finalScore": -160,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:al final de la escapada memoria personal 1951 2011",
+    "title": "Al final de la escapada – Memoria personal 1951-2011",
+    "author": "Julio Sánchez Alonso",
+    "candidate": {
+      "groupKey": "attachment:1220",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1220"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoJulio_solapa.jpg"],
+      "filenames": ["w_FotoJulio_solapa.jpg"],
+      "width": 400,
+      "height": 751,
+      "ratio": 0.533,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:al otro lado del rio",
+    "title": "Al otro lado del río",
+    "author": "Ana Ortega Romanillos",
+    "candidate": {
+      "groupKey": "attachment:965",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["965"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoAnaOrtega.jpg"],
+      "filenames": ["w_FotoAnaOrtega.jpg"],
+      "width": 397,
+      "height": 513,
+      "ratio": 0.774,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:alma en llamas",
+    "title": "Alma en llamas",
+    "author": "David Supertramp",
+    "candidate": {
+      "groupKey": "attachment:911",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["911"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoDavidNavarro1.jpg"],
+      "filenames": ["w_FotoDavidNavarro1.jpg"],
+      "width": 400,
+      "height": 585,
+      "ratio": 0.684,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:amar a fondo perdido y la decision",
+    "title": "Amar a fondo perdido y La Decisión",
+    "author": "Fernando Ruiz Grijalba",
+    "candidate": {
+      "groupKey": "attachment:870",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["870"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/FotoFernando.jpg"],
+      "filenames": ["FotoFernando.jpg"],
+      "width": 400,
+      "height": 533,
+      "ratio": 0.75,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:amaremos en libertad",
+    "title": "Amaremos en libertad",
+    "author": "Andrés Pinar Godoy",
+    "candidate": {
+      "groupKey": "attachment:1206",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1206"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_fotoAndres.jpg"],
+      "filenames": ["w_fotoAndres.jpg"],
+      "width": 243,
+      "height": 433,
+      "ratio": 0.561,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:analisis de errores morfosintacticos en un aula de espanol le el caso del grupo de estudiantes del nivel b2 de secundaria en guinea ecuatorial al expresarse por escrito en espanol",
+    "title": "Análisis de errores morfosintácticos en un aula de Español/LE. El caso del grupo de estudiantes del nivel B2 de secundaria en Guinea Ecuatorial al expresarse por escrito en español",
+    "author": "Manuel Ondo Ndong",
+    "candidate": {
+      "groupKey": "attachment:1919",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1919"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/FOTO-BIOGRAFIA-TESIS-1.jpg"],
+      "filenames": ["FOTO-BIOGRAFIA-TESIS-1-scaled.jpg"],
+      "width": 1847,
+      "height": 2560,
+      "ratio": 0.721,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 190,
+      "finalScore": -125,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:apuesta personal",
+    "title": "APUESTA PERSONAL",
+    "author": "Iñaki Azkona",
+    "candidate": {
+      "groupKey": "attachment:1174",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1174"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/W_FOTO-INAKI-AZONA.jpg"],
+      "filenames": ["W_FOTO-INAKI-AZONA.jpg"],
+      "width": 400,
+      "height": 654,
+      "ratio": 0.612,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:banquero de carlos v a emilio botin",
+    "title": "banquero de Carlos V a Emilio Botín",
+    "author": "Alonso Cruz León",
+    "candidate": {
+      "groupKey": "attachment:634",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["634"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/FotoAlonsoOK.jpg"],
+      "filenames": ["FotoAlonsoOK.jpg"],
+      "width": 400,
+      "height": 556,
+      "ratio": 0.719,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:beretricce el palacio velado",
+    "title": "BERETRICCE – El palacio Velado",
+    "author": "Melchor Albrig",
+    "candidate": {
+      "groupKey": "attachment:1315",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1315"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoJoaquin.jpg"],
+      "filenames": ["w_FotoJoaquin.jpg"],
+      "width": 1575,
+      "height": 2100,
+      "ratio": 0.75,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 190,
+      "finalScore": -125,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:biodiversidad sostenibilidad supervivencia e inmortalidad",
+    "title": "BIODIVERSIDAD - Sostenibilidad, Supervivencia e Inmortalidad",
+    "author": "GASPAR T. JIMENO DIESTRO",
+    "candidate": {
+      "groupKey": "attachment:804",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["804"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/FotoGaspar.jpg"],
+      "filenames": ["FotoGaspar.jpg"],
+      "width": 552,
+      "height": 648,
+      "ratio": 0.852,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:con su permiso don alvaro historias de viso del marques",
+    "title": "Con su permiso Don Álvaro – Historias de Viso del Marqués",
+    "author": "Andrés Morales y Ana Córdoba del Campo",
+    "candidate": {
+      "groupKey": "attachment:1373",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1373"],
+      "urls": [
+        "https://editoriallarueca.com/wp-content/uploads/w_AndresYAnaCon_su_permiso_don_alvaro.jpg"
+      ],
+      "filenames": ["w_AndresYAnaCon_su_permiso_don_alvaro.jpg"],
+      "width": 400,
+      "height": 533,
+      "ratio": 0.75,
+      "positiveCoverScore": 70,
+      "negativeAuthorScore": 160,
+      "finalScore": -90,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "partial_significant_title_word_match",
+        "typical_vertical_cover_ratio"
+      ],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:cuando su mirada pasaba por halley",
+    "title": "Cuando su mirada pasaba por Halley",
+    "author": "Jaime Caba",
+    "candidate": {
+      "groupKey": "attachment:604",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["604"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/JaimeCaba.jpg"],
+      "filenames": ["JaimeCaba.jpg"],
+      "width": 500,
+      "height": 530,
+      "ratio": 0.943,
+      "positiveCoverScore": 0,
+      "negativeAuthorScore": 175,
+      "finalScore": -175,
+      "positiveSignals": [],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "portrait_photo_ratio_without_cover_keyword"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:cuentos para amara la nieve y amara toca el tambor",
+    "title": "CUENTOS PARA AMARA - La Nieve y Amara toca el tambor",
+    "author": "Francisco Marín Vargas",
+    "candidate": {
+      "groupKey": "attachment:1312",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1312"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Foto_FcoMarin-2.jpg"],
+      "filenames": ["w_Foto_FcoMarin-2.jpg"],
+      "width": 485,
+      "height": 508,
+      "ratio": 0.955,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:cuentos para amara dona bota la burbuja de mar",
+    "title": "CUENTOS PARA AMARA – Doña Bota – La Burbuja de Mar",
+    "author": "Francisco Marín Vargas",
+    "candidate": {
+      "groupKey": "attachment:1312",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1312"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Foto_FcoMarin-2.jpg"],
+      "filenames": ["w_Foto_FcoMarin-2.jpg"],
+      "width": 485,
+      "height": 508,
+      "ratio": 0.955,
+      "positiveCoverScore": 38,
+      "negativeAuthorScore": 225,
+      "finalScore": -187,
+      "positiveSignals": ["filename_has_cover_keyword", "partial_significant_title_word_match"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:de barro y silencio",
+    "title": "De barro y silencio",
+    "author": "Francisco Marín Vargas",
+    "candidate": {
+      "groupKey": "attachment:1169",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1169"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Foto_FcoMarin.jpg"],
+      "filenames": ["w_Foto_FcoMarin.jpg"],
+      "width": 485,
+      "height": 508,
+      "ratio": 0.955,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:de estrellas gaviotas y poemas",
+    "title": "De estrellas, gaviotas y poemas",
+    "author": "Paco Daza Selma",
+    "candidate": {
+      "groupKey": "attachment:1075",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1075"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_foto-PacoDaza.jpg"],
+      "filenames": ["w_foto-PacoDaza.jpg"],
+      "width": 496,
+      "height": 692,
+      "ratio": 0.717,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 225,
+      "finalScore": -160,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:de juan a juan el musical el libreto y un relato",
+    "title": "De Juan a Juan: El musical – El Libreto y un Relato",
+    "author": "Ricardo Rodríguez López",
+    "candidate": {
+      "groupKey": "attachment:1054",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1054"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_RicardoRodriguez.jpg"],
+      "filenames": ["w_RicardoRodriguez.jpg"],
+      "width": 400,
+      "height": 300,
+      "ratio": 1.333,
+      "positiveCoverScore": 0,
+      "negativeAuthorScore": 175,
+      "finalScore": -175,
+      "positiveSignals": [],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "portrait_photo_ratio_without_cover_keyword"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:de kolpino a krasny bor",
+    "title": "DE KOLPINO A KRASNY BOR, ",
+    "author": "José Argimiro Cordobés Pérez",
+    "candidate": {
+      "groupKey": "attachment:594",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["594"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/FotoArgimiroPortada.jpg"],
+      "filenames": ["FotoArgimiroPortada.jpg"],
+      "width": 500,
+      "height": 500,
+      "ratio": 1,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares tomo 2",
+    "title": "DE LOS ROLLOS DEL MAR MUERTO A LOS DE RODRIGO DE LARES  -TOMO 2-",
+    "author": "Antonio Valdeavero Ponce",
+    "candidate": {
+      "groupKey": "attachment:1688",
+      "origins": ["attachment_same_day"],
+      "attachmentIds": ["1688"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/FotoAntonioValdeavero2.tif"],
+      "filenames": ["FotoAntonioValdeavero2.tif"],
+      "width": null,
+      "height": null,
+      "ratio": null,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares tomo 2",
+    "title": "DE LOS ROLLOS DEL MAR MUERTO A LOS DE RODRIGO DE LARES  -TOMO 2-",
+    "author": "Antonio Valdeavero Ponce",
+    "candidate": {
+      "groupKey": "attachment:1690",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1690"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/FotoAntonioValdeavero2.jpg"],
+      "filenames": ["FotoAntonioValdeavero2.jpg"],
+      "width": 400,
+      "height": 421,
+      "ratio": 0.95,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares una narracion audaz para un lector mas inteligente que lerdo belmonte ano 2017 al 2022 libro 1",
+    "title": "DE LOS ROLLOS DEL MAR MUERTO A LOS DE RODRIGO DE LARES  ”“una narración audaz para un lector más inteligente que lerdo” Belmonte año 2017 al 2022. LIBRO 1",
+    "author": "Antonio Valdeavero Ponce",
+    "candidate": {
+      "groupKey": "attachment:940",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["940"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoValdeavero-1.jpg"],
+      "filenames": ["w_FotoValdeavero-1.jpg"],
+      "width": 500,
+      "height": 330,
+      "ratio": 1.515,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:de origine nostra fatum nostrum",
+    "title": "De Origine Nostra Fatum Nostrum",
+    "author": "Raimundo del Valle",
+    "candidate": {
+      "groupKey": "attachment:1520",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1520"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/IMG_20230912_Cazorla.jpg"],
+      "filenames": ["IMG_20230912_Cazorla-scaled.jpg"],
+      "width": 1920,
+      "height": 2560,
+      "ratio": 0.75,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 80,
+      "finalScore": -15,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": ["candidate_matches_author_photo"],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:detras de la corteza",
+    "title": "Detrás de la corteza",
+    "author": "Jerónimo Campoy Muñoz",
+    "candidate": {
+      "groupKey": "attachment:992",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["992"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoJeronimo.jpg"],
+      "filenames": ["w_FotoJeronimo.jpg"],
+      "width": 556,
+      "height": 987,
+      "ratio": 0.563,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 225,
+      "finalScore": -160,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:diario de un comunero",
+    "title": "Diario de un Comunero",
+    "author": "José Ignacio Miguelsanz",
+    "candidate": {
+      "groupKey": "attachment:837",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["837"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Foto-Nacho-Miguelsanz.jpg"],
+      "filenames": ["w_Foto-Nacho-Miguelsanz.jpg"],
+      "width": 400,
+      "height": 369,
+      "ratio": 1.084,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:duns scoto versus tomas de aquino la debilidad del neocalcedonismo tomista",
+    "title": "Duns Scoto versus Tomás de Aquino: La debilidad del Neocalcedonismo Tomista",
+    "author": "Marcelino Valiño Vidal",
+    "candidate": {
+      "groupKey": "attachment:1096",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1096"],
+      "urls": [
+        "https://editoriallarueca.com/wp-content/uploads/w_Foto-Marcelino-Valino-Vidal-Escoto-vs.-Aquino.jpg"
+      ],
+      "filenames": ["w_Foto-Marcelino-Valino-Vidal-Escoto-vs.-Aquino.jpg"],
+      "width": 400,
+      "height": 804,
+      "ratio": 0.498,
+      "positiveCoverScore": 46,
+      "negativeAuthorScore": 225,
+      "finalScore": -179,
+      "positiveSignals": ["filename_has_cover_keyword", "partial_significant_title_word_match"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:el camino del angel la realidad de un sueno",
+    "title": "El camino del ángel (La realidad de un sueño)",
+    "author": "Ángel García García-Muñoz (BÜRU)",
+    "candidate": {
+      "groupKey": "attachment:815",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["815"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Foto-Angel-Garcia.jpg"],
+      "filenames": ["w_Foto-Angel-Garcia.jpg"],
+      "width": 400,
+      "height": 520,
+      "ratio": 0.769,
+      "positiveCoverScore": 58,
+      "negativeAuthorScore": 225,
+      "finalScore": -167,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "partial_significant_title_word_match",
+        "typical_vertical_cover_ratio"
+      ],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:el canto de las raices cartografias del ser y existir",
+    "title": "El canto de las raíces – Cartografías del ser y existir",
+    "author": "Inés Cañal",
+    "candidate": {
+      "groupKey": "attachment:1394",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1394"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Foto-Ines.jpg"],
+      "filenames": ["w_Foto-Ines.jpg"],
+      "width": 400,
+      "height": 342,
+      "ratio": 1.17,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:el cierzo tatuado",
+    "title": "El Cierzo Tatuado",
+    "author": "José Antonio Galante Pérez",
+    "candidate": {
+      "groupKey": "attachment:1327",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1327"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Foto-JoseAntonioGalante.jpg"],
+      "filenames": ["w_Foto-JoseAntonioGalante.jpg"],
+      "width": 400,
+      "height": 346,
+      "ratio": 1.156,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:el delgado hilo de la vida",
+    "title": "El delgado hilo de la vida",
+    "author": "JChamCri",
+    "candidate": {
+      "groupKey": "attachment:642",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["642"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/JuanaChamorro.jpg"],
+      "filenames": ["JuanaChamorro.jpg"],
+      "width": 400,
+      "height": 371,
+      "ratio": 1.078,
+      "positiveCoverScore": 0,
+      "negativeAuthorScore": 95,
+      "finalScore": -95,
+      "positiveSignals": [],
+      "negativeSignals": [
+        "candidate_matches_author_photo",
+        "portrait_photo_ratio_without_cover_keyword"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:el joven fenix el resurgir de los dioses egipcios",
+    "title": "El Joven Fénix (El resurgir de los dioses egipcios)",
+    "author": "Marta Susana Pecaric",
+    "candidate": {
+      "groupKey": "attachment:659",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["659"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/MartaSusanaPecaric.jpg"],
+      "filenames": ["MartaSusanaPecaric.jpg"],
+      "width": 400,
+      "height": 376,
+      "ratio": 1.064,
+      "positiveCoverScore": 0,
+      "negativeAuthorScore": 175,
+      "finalScore": -175,
+      "positiveSignals": [],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "portrait_photo_ratio_without_cover_keyword"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:el maestro de salamanca consideracion del derecho internacional humanitario",
+    "title": "El maestro de Salamanca. Consideración del Derecho Internacional Humanitario.",
+    "author": "Juana Hernández Conesa",
+    "candidate": {
+      "groupKey": "attachment:971",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["971"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Juana-Hdez-Conesa.jpg"],
+      "filenames": ["w_Juana-Hdez-Conesa.jpg"],
+      "width": 400,
+      "height": 601,
+      "ratio": 0.666,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 160,
+      "finalScore": -110,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:el panuelo de marino",
+    "title": "El pañuelo de Marino",
+    "author": "Anta Pemyné",
+    "candidate": {
+      "groupKey": "attachment:1026",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1026"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoIsabel-1.jpg"],
+      "filenames": ["w_FotoIsabel-1.jpg"],
+      "width": 400,
+      "height": 533,
+      "ratio": 0.75,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 190,
+      "finalScore": -140,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:el perfume de las emociones",
+    "title": "El perfume de las emociones",
+    "author": "Luz Stella",
+    "candidate": {
+      "groupKey": "attachment:1115",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1115"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/W_FotoLuzStella.jpg"],
+      "filenames": ["W_FotoLuzStella.jpg"],
+      "width": 296,
+      "height": 481,
+      "ratio": 0.615,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:el poder de la educacion nos hace infinitos",
+    "title": "El poder de la educación nos hace infinitos",
+    "author": "Norberto Domínguez Jurado",
+    "candidate": {
+      "groupKey": "attachment:625",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["625"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/FotoNorberto.jpg"],
+      "filenames": ["FotoNorberto.jpg"],
+      "width": 400,
+      "height": 414,
+      "ratio": 0.966,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:el poder de la magia de la comunicacion",
+    "title": "El poder de la magia de la comunicación",
+    "author": "Iñaki Domínguez Ledo",
+    "candidate": {
+      "groupKey": "attachment:1183",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1183"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_foto-inaki.jpg"],
+      "filenames": ["w_foto-inaki.jpg"],
+      "width": 400,
+      "height": 392,
+      "ratio": 1.02,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:el rol principal de una pelicula llamada vida",
+    "title": "El rol principal de una película llamada VIDA",
+    "author": "Diego Gómez-Costa",
+    "candidate": {
+      "groupKey": "attachment:923",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["923"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_fotoDiegoGomez.jpg"],
+      "filenames": ["w_fotoDiegoGomez.jpg"],
+      "width": 400,
+      "height": 621,
+      "ratio": 0.644,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:el rumor de la marea",
+    "title": "El rumor de la marea",
+    "author": "Guillermo M. Schrem",
+    "candidate": {
+      "groupKey": "attachment:1031",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1031"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo.jpg"],
+      "filenames": ["w_FotoGuillermo.jpg"],
+      "width": 400,
+      "height": 823,
+      "ratio": 0.486,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:el valle de cristal",
+    "title": "El Valle de Cristal",
+    "author": "Guillermo M. Schrem",
+    "candidate": {
+      "groupKey": "attachment:557",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["557"],
+      "urls": [
+        "https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg"
+      ],
+      "filenames": ["WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg"],
+      "width": 777,
+      "height": 1600,
+      "ratio": 0.486,
+      "positiveCoverScore": 15,
+      "negativeAuthorScore": 80,
+      "finalScore": -65,
+      "positiveSignals": ["cover_sized_dimensions"],
+      "negativeSignals": ["candidate_matches_author_photo"],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:el viaje aventurero de nico",
+    "title": "El viaje aventurero de Nico",
+    "author": "Niklas Höfinger",
+    "candidate": {
+      "groupKey": "attachment:1036",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1036"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/W_FOTO-AUTOR-NIKLAS.jpg"],
+      "filenames": ["W_FOTO-AUTOR-NIKLAS.jpg"],
+      "width": 400,
+      "height": 267,
+      "ratio": 1.498,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:en la recta final",
+    "title": "En la recta final",
+    "author": "Alfredo Manrique Bravo",
+    "candidate": {
+      "groupKey": "attachment:1090",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1090"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Foto-autor-1.jpg"],
+      "filenames": ["w_Foto-autor-1.jpg"],
+      "width": 368,
+      "height": 368,
+      "ratio": 1,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 190,
+      "finalScore": -160,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:encuentros campezanos",
+    "title": "Encuentros Campezanos",
+    "author": "José Antonio Rodrigo Alonso",
+    "candidate": {
+      "groupKey": "attachment:959",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["959"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoJoseAntonio.jpg"],
+      "filenames": ["w_FotoJoseAntonio.jpg"],
+      "width": 400,
+      "height": 597,
+      "ratio": 0.67,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:entre realidades y suenos",
+    "title": "Entre realidades y sueños",
+    "author": "Benedicto Cuervo Álvarez",
+    "candidate": {
+      "groupKey": "attachment:1009",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1009"],
+      "urls": [
+        "https://editoriallarueca.com/wp-content/uploads/w_FOTO-DEL-AUTOR-BENEDICTO-CUERVO.jpg"
+      ],
+      "filenames": ["w_FOTO-DEL-AUTOR-BENEDICTO-CUERVO.jpg"],
+      "width": 400,
+      "height": 560,
+      "ratio": 0.714,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:estampas de un pueblo andaluz 1960 1974",
+    "title": "Estampas de un pueblo andaluz (1960-1974) ",
+    "author": "Jesús Ezequiel Pérez Dorado",
+    "candidate": {
+      "groupKey": "attachment:887",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["887"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoEzequiel.jpg"],
+      "filenames": ["w_FotoEzequiel.jpg"],
+      "width": 400,
+      "height": 533,
+      "ratio": 0.75,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:estrategias educativas a traves del teatro musical experiencias y propuesta metodologica del taller de musicales volumen 1 seleccion de titulos para el aula analisis cinematografico y escenico",
+    "title": "ESTRATEGIAS EDUCATIVAS A TRAVÉS DEL TEATRO MUSICAL - Experiencias y propuesta metodológica del “Taller de Musicales” Volumen 1 Selección de títulos para el aula: Análisis cinematográfico y escénico.",
+    "author": "Sara Sánchez Prieto",
+    "candidate": {
+      "groupKey": "attachment:1527",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1527"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_fotoSara.jpg"],
+      "filenames": ["w_fotoSara.jpg"],
+      "width": 400,
+      "height": 589,
+      "ratio": 0.679,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": [
+        "positiveCoverScore insuficiente.",
+        "negativeAuthorScore demasiado alto.",
+        "Diferencia frente a la segunda candidata insuficiente.",
+        "Existen senales contradictorias graves de foto de autor."
+      ],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": true,
+      "gapToNextCandidate": -175
+    }
+  },
+  {
+    "candidateKey": "book:evocacion y sucesos de dolores la tuerta una historia del mundo rural",
+    "title": "Evocación y sucesos de Dolores la Tuerta (Una historia del mundo rural)",
+    "author": "José Herruzo Orejuela",
+    "candidate": {
+      "groupKey": "attachment:2623",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["2623"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_JoseHerruzo.jpg"],
+      "filenames": ["w_JoseHerruzo.jpg"],
+      "width": 1512,
+      "height": 2268,
+      "ratio": 0.667,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 160,
+      "finalScore": -95,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:falsas esperanzas",
+    "title": "Falsas esperanzas",
+    "author": "Miguel Ángel Güemes Pérez",
+    "candidate": {
+      "groupKey": "attachment:1014",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1014"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoMiguelAngelGuemes.jpg"],
+      "filenames": ["w_FotoMiguelAngelGuemes.jpg"],
+      "width": 400,
+      "height": 446,
+      "ratio": 0.897,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:haikus en el camino",
+    "title": "Haikus en el camino",
+    "author": "Jose Antonio Galante Pérez",
+    "candidate": {
+      "groupKey": "attachment:906",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["906"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoGalante.jpg"],
+      "filenames": ["w_FotoGalante.jpg"],
+      "width": 400,
+      "height": 274,
+      "ratio": 1.46,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:humor y prosa de un ajedrecista",
+    "title": "Humor y prosa de un ajedrecista",
+    "author": "Manuel Gómez-Rosas",
+    "candidate": {
+      "groupKey": "attachment:943",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["943"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_fotoAutorPresentacion.jpg"],
+      "filenames": ["w_fotoAutorPresentacion.jpg"],
+      "width": 529,
+      "height": 427,
+      "ratio": 1.239,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 190,
+      "finalScore": -160,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:humor prosa y una jugadora",
+    "title": "Humor,  prosa y una jugadora",
+    "author": "Manuel Gómez Rosas",
+    "candidate": {
+      "groupKey": "attachment:1133",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1133"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoManuel-1.jpg"],
+      "filenames": ["w_FotoManuel-1.jpg"],
+      "width": 400,
+      "height": 533,
+      "ratio": 0.75,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:ilogica proposicional aforemas y poerismos",
+    "title": "Ilógica Proposicional – Aforemas y Poerismos",
+    "author": "Richard Pazos",
+    "candidate": {
+      "groupKey": "attachment:775",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["775"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/RicharPazos.jpg"],
+      "filenames": ["RicharPazos.jpg"],
+      "width": 400,
+      "height": 658,
+      "ratio": 0.608,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 160,
+      "finalScore": -110,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:john main apatheia nirvana",
+    "title": "John Main: Apatheia-Nirvana",
+    "author": "Carlos Miramontes Seijas",
+    "candidate": {
+      "groupKey": "attachment:758",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["758"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/Foto-Carlos.jpg"],
+      "filenames": ["Foto-Carlos.jpg"],
+      "width": 130,
+      "height": 170,
+      "ratio": 0.765,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:la barca del portugues",
+    "title": "La barca del portugués",
+    "author": "José Luis Mozo Gayo",
+    "candidate": {
+      "groupKey": "attachment:1071",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1071"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoJose-Luis.jpg"],
+      "filenames": ["w_FotoJose-Luis.jpg"],
+      "width": 400,
+      "height": 598,
+      "ratio": 0.669,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:la canteria en moralzarzal",
+    "title": "La cantería en Moralzarzal",
+    "author": "Antonio López Hurtado",
+    "candidate": {
+      "groupKey": "attachment:639",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["639"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg"],
+      "filenames": ["Antonio-Zarate.jpg"],
+      "width": 400,
+      "height": 300,
+      "ratio": 1.333,
+      "positiveCoverScore": 0,
+      "negativeAuthorScore": 175,
+      "finalScore": -175,
+      "positiveSignals": [],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "portrait_photo_ratio_without_cover_keyword"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:la flor malva",
+    "title": "La Flor Malva",
+    "author": "Eva María Riber Herráez",
+    "candidate": {
+      "groupKey": "attachment:928",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["928"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoEvaRiber.jpg"],
+      "filenames": ["w_FotoEvaRiber.jpg"],
+      "width": 400,
+      "height": 464,
+      "ratio": 0.862,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:la ganaderia en moralzarzal",
+    "title": "La Ganadería en Moralzarzal",
+    "author": "Antonio López Hurtado \"Zárate\"",
+    "candidate": {
+      "groupKey": "attachment:639",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["639"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg"],
+      "filenames": ["Antonio-Zarate.jpg"],
+      "width": 400,
+      "height": 300,
+      "ratio": 1.333,
+      "positiveCoverScore": 0,
+      "negativeAuthorScore": 175,
+      "finalScore": -175,
+      "positiveSignals": [],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "portrait_photo_ratio_without_cover_keyword"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:la inteligencia artificial en educacion fisica",
+    "title": "La Inteligencia Artificial en Educación Física",
+    "author": "Norberto Domínguez Jurado",
+    "candidate": {
+      "groupKey": "attachment:1193",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1193"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/W_FotoNorberto.jpg"],
+      "filenames": ["W_FotoNorberto.jpg"],
+      "width": 400,
+      "height": 414,
+      "ratio": 0.966,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:la muerte de adonis los impunes",
+    "title": "La muerte de Adonis - Los impunes",
+    "author": "Mauro Escobar Parada",
+    "candidate": {
+      "groupKey": "attachment:1179",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1179"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/foto-Mauro-OK.jpeg"],
+      "filenames": ["foto-Mauro-OK.jpeg"],
+      "width": 682,
+      "height": 1024,
+      "ratio": 0.666,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 225,
+      "finalScore": -160,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:la pulsera de la princesa yoruba",
+    "title": "La pulsera de la princesa yoruba",
+    "author": "Teodoro Rodríguez Martín",
+    "candidate": {
+      "groupKey": "attachment:726",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["726"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Teodoro.jpg"],
+      "filenames": ["w_Teodoro.jpg"],
+      "width": 354,
+      "height": 488,
+      "ratio": 0.725,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 160,
+      "finalScore": -110,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:la sombra del azar",
+    "title": "La sombra del azar",
+    "author": "Patxi Oyaga",
+    "candidate": {
+      "groupKey": "attachment:1216",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1216"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/W_FOTOpatxi.jpg"],
+      "filenames": ["W_FOTOpatxi.jpg"],
+      "width": 833,
+      "height": 833,
+      "ratio": 1,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:la trenza dorada y otros relatos para tiempos nuevos",
+    "title": "LA TRENZA DORADA Y OTROS RELATOS PARA TIEMPOS NUEVOS",
+    "author": "Carlos Ríos Camacho",
+    "candidate": {
+      "groupKey": "attachment:595",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["595"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/FotoCarlosRios.jpg"],
+      "filenames": ["FotoCarlosRios.jpg"],
+      "width": 500,
+      "height": 887,
+      "ratio": 0.564,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 225,
+      "finalScore": -160,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:la vida de adonis la impunidad",
+    "title": "La vida de Adonis - La impunidad",
+    "author": "MAURO",
+    "candidate": {
+      "groupKey": "attachment:1110",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1110"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FOTO-MAURO.jpg"],
+      "filenames": ["w_FOTO-MAURO.jpg"],
+      "width": 400,
+      "height": 404,
+      "ratio": 0.99,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:leeme si te atreves",
+    "title": "Léeme… si te atreves",
+    "author": "Agustín Eguíluz , Julia Carou, M.ª Goretti Ausín, Fe Pajares y Fernando López",
+    "candidate": {
+      "groupKey": "attachment:935",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["935"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/fotoGrupo.jpg"],
+      "filenames": ["fotoGrupo.jpg"],
+      "width": 437,
+      "height": 543,
+      "ratio": 0.805,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 190,
+      "finalScore": -160,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:libero mi alma con 131 angeles",
+    "title": "Libero Mi Alma con 131 Ángeles",
+    "author": "Javier Galván Macarrón",
+    "candidate": {
+      "groupKey": "attachment:1724",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1724"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/FotoAutor-1.jpg"],
+      "filenames": ["FotoAutor-1.jpg"],
+      "width": 1080,
+      "height": 1159,
+      "ratio": 0.932,
+      "positiveCoverScore": 45,
+      "negativeAuthorScore": 190,
+      "finalScore": -145,
+      "positiveSignals": ["filename_has_cover_keyword", "cover_sized_dimensions"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:ligero como la brisa",
+    "title": "Ligero como la brisa",
+    "author": "Guillermo Martínez Schrem",
+    "candidate": {
+      "groupKey": "attachment:1138",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1138"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-1.jpg"],
+      "filenames": ["w_FotoGuillermo-1-scaled.jpg"],
+      "width": 1442,
+      "height": 2560,
+      "ratio": 0.563,
+      "positiveCoverScore": 73,
+      "negativeAuthorScore": 225,
+      "finalScore": -152,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "partial_significant_title_word_match",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:los acorralados",
+    "title": "Los acorralados",
+    "author": "Fidel Vela",
+    "candidate": {
+      "groupKey": "attachment:948",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["948"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoFidel.jpg"],
+      "filenames": ["w_FotoFidel.jpg"],
+      "width": 400,
+      "height": 519,
+      "ratio": 0.771,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:los dictadores y las mujeres adolf hitler",
+    "title": "Los Dictadores y las Mujeres -  Adolf Hitler",
+    "author": "Rosa Gómez",
+    "candidate": {
+      "groupKey": "attachment:896",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["896"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoRosa.jpg"],
+      "filenames": ["w_FotoRosa.jpg"],
+      "width": 382,
+      "height": 492,
+      "ratio": 0.776,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:los mejores cortos de gomez rosas cualquier parecido con la realidad es pura coincidencia",
+    "title": "Los mejores cortos de Gómez Rosas (cualquier parecido con la realidad es pura coincidencia)",
+    "author": "Manuel Gómez Rosas",
+    "candidate": {
+      "groupKey": "attachment:1800",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1800"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoManuel-2.jpg"],
+      "filenames": ["w_FotoManuel-2.jpg"],
+      "width": 400,
+      "height": 533,
+      "ratio": 0.75,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:los pensamientos olvidados",
+    "title": "Los pensamientos olvidados",
+    "author": "Alejandro González García",
+    "candidate": {
+      "groupKey": "attachment:735",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["735"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/FotoAlejandro.jpg"],
+      "filenames": ["FotoAlejandro.jpg"],
+      "width": 240,
+      "height": 240,
+      "ratio": 1,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:mariposas en el jardin",
+    "title": "Mariposas en el jardín",
+    "author": "Sandra Sepúlveda López",
+    "candidate": {
+      "groupKey": "attachment:1618",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1618"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_fotoSandra.jpg"],
+      "filenames": ["w_fotoSandra.jpg"],
+      "width": 400,
+      "height": 526,
+      "ratio": 0.76,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:metodo sah g maes 36 caminos de curacion para la mente el cuerpo y el espiritual",
+    "title": "Método Sah-G-Maes - 36 caminos de curación para la mente, el cuerpo y el espiritual",
+    "author": "Malva Luz",
+    "candidate": {
+      "groupKey": "attachment:1635",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1635"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Malva.jpg"],
+      "filenames": ["w_Malva.jpg"],
+      "width": 1134,
+      "height": 1512,
+      "ratio": 0.75,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 160,
+      "finalScore": -95,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:monedas del corazon",
+    "title": "Monedas del corazón",
+    "author": "Jesús Adame Ardila",
+    "candidate": {
+      "groupKey": "attachment:1551",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1551"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_fotoJesus.jpg"],
+      "filenames": ["w_fotoJesus.jpg"],
+      "width": 400,
+      "height": 600,
+      "ratio": 0.667,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:ndong el jubilado",
+    "title": "Ndong, el jubilado",
+    "author": "Manuel Ondo Ndong",
+    "candidate": {
+      "groupKey": "attachment:2613",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["2613"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w2_ManuelOndo.jpg"],
+      "filenames": ["w2_ManuelOndo.jpg"],
+      "width": 1512,
+      "height": 2268,
+      "ratio": 0.667,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 160,
+      "finalScore": -95,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:nido de barro haikus",
+    "title": "Nido de Barro – Haikus ",
+    "author": "Francisco Marín Vargas",
+    "candidate": {
+      "groupKey": "attachment:1312",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1312"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Foto_FcoMarin-2.jpg"],
+      "filenames": ["w_Foto_FcoMarin-2.jpg"],
+      "width": 485,
+      "height": 508,
+      "ratio": 0.955,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:no te vi venir pues jamas te hubiese dejado entrar",
+    "title": "No te vi venir, pues jamás te hubiese dejado entrar",
+    "author": "Ana Córdoba del Campo",
+    "candidate": {
+      "groupKey": "attachment:884",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["884"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoAnaCordobaparaweb.jpg"],
+      "filenames": ["w_FotoAnaCordobaparaweb.jpg"],
+      "width": 533,
+      "height": 667,
+      "ratio": 0.799,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 225,
+      "finalScore": -160,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:oraculo de la fe el camino del alma",
+    "title": "Oráculo de la fe - El camino del alma",
+    "author": "Minerva Buiza",
+    "candidate": {
+      "groupKey": "attachment:1364",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1364"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/Foto3Minerva.jpeg"],
+      "filenames": ["Foto3Minerva.jpeg"],
+      "width": 1536,
+      "height": 2048,
+      "ratio": 0.75,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 225,
+      "finalScore": -160,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:perdoname por los poemas que te escribi",
+    "title": "Perdóname por los poemas que te escribí",
+    "author": "José Vte. Carmona Simarro",
+    "candidate": {
+      "groupKey": "attachment:1019",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1019"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Foto-autor.jpg"],
+      "filenames": ["w_Foto-autor.jpg"],
+      "width": 833,
+      "height": 1592,
+      "ratio": 0.523,
+      "positiveCoverScore": 45,
+      "negativeAuthorScore": 190,
+      "finalScore": -145,
+      "positiveSignals": ["filename_has_cover_keyword", "cover_sized_dimensions"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:placa blanca dignidad sobre el pecho",
+    "title": "Placa blanca, dignidad sobre el pecho",
+    "author": "José Antonio Muñoz Fañanás",
+    "candidate": {
+      "groupKey": "attachment:1101",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1101"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoAutor-1.jpg"],
+      "filenames": ["w_FotoAutor-1.jpg"],
+      "width": 1080,
+      "height": 1422,
+      "ratio": 0.759,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 190,
+      "finalScore": -125,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:poesia y whisky",
+    "title": "Poesía y Whisky",
+    "author": "José Antonio Galante Pérez",
+    "candidate": {
+      "groupKey": "attachment:906",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["906"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoGalante.jpg"],
+      "filenames": ["w_FotoGalante.jpg"],
+      "width": 400,
+      "height": 274,
+      "ratio": 1.46,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:pollos en la memoria",
+    "title": "Pollos en la memoria",
+    "author": "Julio Sánchez Alonso",
+    "candidate": {
+      "groupKey": "attachment:1042",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1042"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/W_Julio.jpg"],
+      "filenames": ["W_Julio.jpg"],
+      "width": 556,
+      "height": 396,
+      "ratio": 1.404,
+      "positiveCoverScore": 0,
+      "negativeAuthorScore": 160,
+      "finalScore": -160,
+      "positiveSignals": [],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:prestoses xaranes de folixes y xordes nel conceyu de mieres",
+    "title": "PRESTOSES XARANES - De folixes y xordes nel Conceyu de Mieres",
+    "author": "Concha Magdalena García",
+    "candidate": {
+      "groupKey": "attachment:1162",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1162"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Foto-Conchi.jpg"],
+      "filenames": ["w_Foto-Conchi.jpg"],
+      "width": 521,
+      "height": 386,
+      "ratio": 1.35,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 190,
+      "finalScore": -160,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:quedamos para despedirnos pero ella no lo sabia pensamientos en un pequeno relato sobre la amistad",
+    "title": "Quedamos para despedirnos pero ella no lo sabía – Pensamientos en un pequeño relato sobre la amistad -",
+    "author": "José Vte. Carmona Simarro",
+    "candidate": {
+      "groupKey": "attachment:1344",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1344"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoJoseVicente2.jpg"],
+      "filenames": ["w_FotoJoseVicente2.jpg"],
+      "width": 332,
+      "height": 604,
+      "ratio": 0.55,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:quiero estar contigo",
+    "title": "Quiero estar contigo",
+    "author": "Patricia Domínguez Martínez",
+    "candidate": {
+      "groupKey": "attachment:1004",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1004"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoPatricia1.jpg"],
+      "filenames": ["w_FotoPatricia1.jpg"],
+      "width": 556,
+      "height": 511,
+      "ratio": 1.088,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:relatos de agua dulce",
+    "title": "Relatos de agua dulce",
+    "author": "Sara Ramiro",
+    "candidate": {
+      "groupKey": "attachment:753",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["753"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Sara-Ramiro_El-Remanso.jpg"],
+      "filenames": ["w_Sara-Ramiro_El-Remanso.jpg"],
+      "width": 400,
+      "height": 512,
+      "ratio": 0.781,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 160,
+      "finalScore": -110,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:requiem por un escritor desconocido",
+    "title": "Réquiem por un escritor desconocido",
+    "author": "Antonio Lorenzo Gómez Charlín",
+    "candidate": {
+      "groupKey": "attachment:591",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["591"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/FotoCharlin.jpg"],
+      "filenames": ["FotoCharlin.jpg"],
+      "width": 400,
+      "height": 511,
+      "ratio": 0.783,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:rodrigo se fue a otro lugar",
+    "title": "Rodrigo se fue a otro lugar",
+    "author": "Daniela Corao y Bárbara Mila",
+    "candidate": {
+      "groupKey": "attachment:1456",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1456"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/Daniela-Corao.jpg"],
+      "filenames": ["Daniela-Corao.jpg"],
+      "width": 1134,
+      "height": 1512,
+      "ratio": 0.75,
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 160,
+      "finalScore": -95,
+      "positiveSignals": [
+        "filename_has_cover_keyword",
+        "typical_vertical_cover_ratio",
+        "cover_sized_dimensions"
+      ],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:santa cruz de posguerra conversaciones en blanco y negro",
+    "title": "SANTA CRUZ DE POSGUERRA: CONVERSACIONES EN BLANCO Y NEGRO",
+    "author": "Rafael López Ruz",
+    "candidate": {
+      "groupKey": "attachment:982",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["982"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoRafael-2.jpg"],
+      "filenames": ["w_FotoRafael-2.jpg"],
+      "width": 236,
+      "height": 267,
+      "ratio": 0.884,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:sus ojos hablaron",
+    "title": "Sus ojos hablaron",
+    "author": "Juan José Velasco Sánchez-Mayoral",
+    "candidate": {
+      "groupKey": "attachment:821",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["821"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/W_Juan-Jose-Velasco-S.jpg"],
+      "filenames": ["W_Juan-Jose-Velasco-S.jpg"],
+      "width": 400,
+      "height": 559,
+      "ratio": 0.716,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 160,
+      "finalScore": -110,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:sutiles percepciones de una realidad",
+    "title": "Sutiles percepciones de una realidad",
+    "author": "Rosario Real Calama",
+    "candidate": {
+      "groupKey": "attachment:1200",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1200"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_fOTO_RosarioReal.jpg"],
+      "filenames": ["w_fOTO_RosarioReal.jpg"],
+      "width": 189,
+      "height": 340,
+      "ratio": 0.556,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 225,
+      "finalScore": -175,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:teoria metaforica del bestiaro romanico proposito revolucionario la educacion sexual",
+    "title": "Teoría Metafórica del «Bestiaro Románico». Propósito revolucionario: la educación sexual",
+    "author": "Francisca Martín-Cano Abreu",
+    "candidate": {
+      "groupKey": "attachment:603",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["603"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/fotoFrancisca-1.jpg"],
+      "filenames": ["fotoFrancisca-1.jpg"],
+      "width": 500,
+      "height": 590,
+      "ratio": 0.847,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:thailandia el viaje que cambio el rumbo de mi vida como inverti los obstaculos y mis limitaciones en valores gracias a mi experiencia de vida y al coaching",
+    "title": "Thailandia, el viaje que cambió el rumbo de mi vida - Como Invertí los Obstáculos y mis Limitaciones, en Valores: Gracias a Mi Experiencia de Vida y al Coaching",
+    "author": "Jorge González González",
+    "candidate": {
+      "groupKey": "attachment:780",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["780"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/JorgeGonzalez.jpg"],
+      "filenames": ["JorgeGonzalez.jpg"],
+      "width": 1024,
+      "height": 768,
+      "ratio": 1.333,
+      "positiveCoverScore": 0,
+      "negativeAuthorScore": 175,
+      "finalScore": -175,
+      "positiveSignals": [],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "portrait_photo_ratio_without_cover_keyword"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:tiendas y abastos en moralzarzal",
+    "title": "Tiendas y abastos en Moralzarzal",
+    "author": "Antonio López Hurtado Zárate",
+    "candidate": {
+      "groupKey": "attachment:639",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["639"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg"],
+      "filenames": ["Antonio-Zarate.jpg"],
+      "width": 400,
+      "height": 300,
+      "ratio": 1.333,
+      "positiveCoverScore": 0,
+      "negativeAuthorScore": 175,
+      "finalScore": -175,
+      "positiveSignals": [],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "portrait_photo_ratio_without_cover_keyword"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:tratado de la ausencia y otros relatos",
+    "title": "Tratado de la ausencia y otros relatos",
+    "author": "Juan Alberto Campoy Cervera",
+    "candidate": {
+      "groupKey": "attachment:917",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["917"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_juan5.jpg"],
+      "filenames": ["w_juan5.jpg"],
+      "width": 400,
+      "height": 300,
+      "ratio": 1.333,
+      "positiveCoverScore": 0,
+      "negativeAuthorScore": 175,
+      "finalScore": -175,
+      "positiveSignals": [],
+      "negativeSignals": [
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "portrait_photo_ratio_without_cover_keyword"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:un ameno curso introductorio a la ecologia humana",
+    "title": "Un ameno curso introductorio a la Ecología Humana ",
+    "author": "José Balbino  León Quijada",
+    "candidate": {
+      "groupKey": "attachment:704",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["704"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Foto-JBLQ.jpg"],
+      "filenames": ["w_Foto-JBLQ.jpg"],
+      "width": 400,
+      "height": 382,
+      "ratio": 1.047,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 190,
+      "finalScore": -160,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:un siglo de ferrocarril en ecija memorias del marchenilla",
+    "title": "Un siglo de ferrocarril en Écija - Memorias del Marchenilla",
+    "author": "Rosa Laguna Boza",
+    "candidate": {
+      "groupKey": "attachment:764",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["764"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_Foto-carnet-Rosi-Laguna.jpg"],
+      "filenames": ["w_Foto-carnet-Rosi-Laguna.jpg"],
+      "width": 1134,
+      "height": 1402,
+      "ratio": 0.809,
+      "positiveCoverScore": 45,
+      "negativeAuthorScore": 225,
+      "finalScore": -180,
+      "positiveSignals": ["filename_has_cover_keyword", "cover_sized_dimensions"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:versos de madrugada con sentido",
+    "title": "Versos de madrugada – (Con-sentido)",
+    "author": "Ángel García  García-Muñoz  (Büru)",
+    "candidate": {
+      "groupKey": "attachment:1258",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1258"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/foto-autor-1.jpg"],
+      "filenames": ["foto-autor-1.jpg"],
+      "width": 309,
+      "height": 363,
+      "ratio": 0.851,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 190,
+      "finalScore": -160,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:y la vida sigue",
+    "title": "Y… la vida sigue",
+    "author": "Dolores Benito Arroyo",
+    "candidate": {
+      "groupKey": "attachment:1080",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["1080"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/w_FotoLola.jpg"],
+      "filenames": ["w_FotoLola.jpg"],
+      "width": 400,
+      "height": 681,
+      "ratio": 0.587,
+      "positiveCoverScore": 50,
+      "negativeAuthorScore": 190,
+      "finalScore": -140,
+      "positiveSignals": ["filename_has_cover_keyword", "typical_vertical_cover_ratio"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  },
+  {
+    "candidateKey": "book:yoga volumen 1 2 3 4 5 evolucion integral y evolucion universal",
+    "title": "Yoga Volumen 1,2,3,4,5 evolución integral y evolución universal",
+    "author": "Miguel Gómez Aránega",
+    "candidate": {
+      "groupKey": "attachment:686",
+      "origins": ["_thumbnail_id", "custom_field:_thumbnail_id"],
+      "attachmentIds": ["686"],
+      "urls": ["https://editoriallarueca.com/wp-content/uploads/FotoMiguelVestido.jpg"],
+      "filenames": ["FotoMiguelVestido.jpg"],
+      "width": 400,
+      "height": 335,
+      "ratio": 1.194,
+      "positiveCoverScore": 30,
+      "negativeAuthorScore": 225,
+      "finalScore": -195,
+      "positiveSignals": ["filename_has_cover_keyword"],
+      "negativeSignals": [
+        "filename_has_author_photo_keyword",
+        "filename_matches_author_name",
+        "candidate_matches_author_photo",
+        "candidate_appears_as_safe_author_photo",
+        "author_photo_signal_from_previous_metadata"
+      ],
+      "discardReasons": ["No es la candidata con mayor finalScore."],
+      "isEquivalentToAuthorPhoto": true,
+      "isWinner": false,
+      "gapToNextCandidate": null
+    }
+  }
+]

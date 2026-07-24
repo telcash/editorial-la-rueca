@@ -1,0 +1,485 @@
+{
+  "generatedAt": "2026-07-23T21:11:16.941Z",
+  "totalBooksAdjudicated": 103,
+  "safeBookCover": 53,
+  "ambiguous": 50,
+  "noSafeCandidate": 0,
+  "rejectedByAuthorPhotoConflict": 103,
+  "scoreDistribution": {
+    "<0": 219,
+    "0-24": 196,
+    "25-49": 62,
+    "50-74": 7,
+    "75-99": 118,
+    "100+": 3
+  },
+  "winnerGapDistribution": {
+    "<0": 1,
+    "0-24": 37,
+    "25-49": 19,
+    "50-74": 31,
+    "75-99": 8,
+    "100+": 7
+  },
+  "thresholdSimulation": [
+    {
+      "positiveCoverScore": 65,
+      "negativeAuthorScore": 45,
+      "minimumWinnerGap": 20,
+      "safeBookCover": 63
+    },
+    {
+      "positiveCoverScore": 75,
+      "negativeAuthorScore": 45,
+      "minimumWinnerGap": 25,
+      "safeBookCover": 61
+    },
+    {
+      "positiveCoverScore": 85,
+      "negativeAuthorScore": 35,
+      "minimumWinnerGap": 30,
+      "safeBookCover": 9
+    }
+  ],
+  "changedByThreshold": [
+    {
+      "candidateKey": "book:apuesta personal",
+      "title": "APUESTA PERSONAL",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "65/45/20"
+    },
+    {
+      "candidateKey": "book:banquero de carlos v a emilio botin",
+      "title": "banquero de Carlos V a Emilio Botín",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "65/45/20"
+    },
+    {
+      "candidateKey": "book:el camino del angel la realidad de un sueno",
+      "title": "El camino del ángel (La realidad de un sueño)",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "65/45/20"
+    },
+    {
+      "candidateKey": "book:el poder de la magia de la comunicacion",
+      "title": "El poder de la magia de la comunicación",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "65/45/20"
+    },
+    {
+      "candidateKey": "book:evocacion y sucesos de dolores la tuerta una historia del mundo rural",
+      "title": "Evocación y sucesos de Dolores la Tuerta (Una historia del mundo rural)",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "65/45/20"
+    },
+    {
+      "candidateKey": "book:la sombra del azar",
+      "title": "La sombra del azar",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "65/45/20"
+    },
+    {
+      "candidateKey": "book:metodo sah g maes 36 caminos de curacion para la mente el cuerpo y el espiritual",
+      "title": "Método Sah-G-Maes - 36 caminos de curación para la mente, el cuerpo y el espiritual",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "65/45/20"
+    },
+    {
+      "candidateKey": "book:sutiles percepciones de una realidad",
+      "title": "Sutiles percepciones de una realidad",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "65/45/20"
+    },
+    {
+      "candidateKey": "book:tiendas y abastos en moralzarzal",
+      "title": "Tiendas y abastos en Moralzarzal",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "65/45/20"
+    },
+    {
+      "candidateKey": "book:yoga volumen 1 2 3 4 5 evolucion integral y evolucion universal",
+      "title": "Yoga Volumen 1,2,3,4,5 evolución integral y evolución universal",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "65/45/20"
+    },
+    {
+      "candidateKey": "book:apuesta personal",
+      "title": "APUESTA PERSONAL",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "75/45/25"
+    },
+    {
+      "candidateKey": "book:banquero de carlos v a emilio botin",
+      "title": "banquero de Carlos V a Emilio Botín",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "75/45/25"
+    },
+    {
+      "candidateKey": "book:el camino del angel la realidad de un sueno",
+      "title": "El camino del ángel (La realidad de un sueño)",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "75/45/25"
+    },
+    {
+      "candidateKey": "book:el poder de la magia de la comunicacion",
+      "title": "El poder de la magia de la comunicación",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "75/45/25"
+    },
+    {
+      "candidateKey": "book:la sombra del azar",
+      "title": "La sombra del azar",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "75/45/25"
+    },
+    {
+      "candidateKey": "book:sutiles percepciones de una realidad",
+      "title": "Sutiles percepciones de una realidad",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "75/45/25"
+    },
+    {
+      "candidateKey": "book:tiendas y abastos en moralzarzal",
+      "title": "Tiendas y abastos en Moralzarzal",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "75/45/25"
+    },
+    {
+      "candidateKey": "book:yoga volumen 1 2 3 4 5 evolucion integral y evolucion universal",
+      "title": "Yoga Volumen 1,2,3,4,5 evolución integral y evolución universal",
+      "currentDecision": "ambiguous",
+      "alternativeDecision": "safe_book_cover",
+      "thresholdLabel": "75/45/25"
+    },
+    {
+      "candidateKey": "book:el poderoso sir tristan en la saga del prince valiant 1937 1971 de harold foster la apoteosis medieval de un arte contemporaneo",
+      "title": " El poderoso Sir Tristán en la Saga del Prince Valiant (1937-1971) de Harold Foster. La apoteosis medieval de un arte contemporáneo.",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:esferas temporales aforismos meditaciones y otros escritos breve recopilacion",
+      "title": " ESFERAS TEMPORALES Aforismos, meditaciones y otros escritos (Breve recopilación)",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:inteligencia artificial en educacion fisica",
+      "title": " Inteligencia Artificial en Educación Física",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:una inolvidable noche de futbol en la pared",
+      "title": " Una inolvidable noche de fútbol en La Pared",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:going my way en 40 poemas",
+      "title": "“Going my way” en 40 poemas ",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:al final de la escapada memoria personal 1951 2011",
+      "title": "Al final de la escapada – Memoria personal 1951-2011",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:al otro lado del rio",
+      "title": "Al otro lado del río",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:amaremos en libertad",
+      "title": "Amaremos en libertad",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:beretricce el palacio velado",
+      "title": "BERETRICCE – El palacio Velado",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:cuentos para amara la nieve y amara toca el tambor",
+      "title": "CUENTOS PARA AMARA - La Nieve y Amara toca el tambor",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:de barro y silencio",
+      "title": "De barro y silencio",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:de kolpino a krasny bor",
+      "title": "DE KOLPINO A KRASNY BOR, ",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:de origine nostra fatum nostrum",
+      "title": "De Origine Nostra Fatum Nostrum",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:diario de un comunero",
+      "title": "Diario de un Comunero",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:el canto de las raices cartografias del ser y existir",
+      "title": "El canto de las raíces – Cartografías del ser y existir",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:el joven fenix el resurgir de los dioses egipcios",
+      "title": "El Joven Fénix (El resurgir de los dioses egipcios)",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:el maestro de salamanca consideracion del derecho internacional humanitario",
+      "title": "El maestro de Salamanca. Consideración del Derecho Internacional Humanitario.",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:el poder de la educacion nos hace infinitos",
+      "title": "El poder de la educación nos hace infinitos",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:el rol principal de una pelicula llamada vida",
+      "title": "El rol principal de una película llamada VIDA",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:el viaje aventurero de nico",
+      "title": "El viaje aventurero de Nico",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:ilogica proposicional aforemas y poerismos",
+      "title": "Ilógica Proposicional – Aforemas y Poerismos",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:la barca del portugues",
+      "title": "La barca del portugués",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:la canteria en moralzarzal",
+      "title": "La cantería en Moralzarzal",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:la ganaderia en moralzarzal",
+      "title": "La Ganadería en Moralzarzal",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:la muerte de adonis los impunes",
+      "title": "La muerte de Adonis - Los impunes",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:la pulsera de la princesa yoruba",
+      "title": "La pulsera de la princesa yoruba",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:la vida de adonis la impunidad",
+      "title": "La vida de Adonis - La impunidad",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:libero mi alma con 131 angeles",
+      "title": "Libero Mi Alma con 131 Ángeles",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:ligero como la brisa",
+      "title": "Ligero como la brisa",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:los mejores cortos de gomez rosas cualquier parecido con la realidad es pura coincidencia",
+      "title": "Los mejores cortos de Gómez Rosas (cualquier parecido con la realidad es pura coincidencia)",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:los pensamientos olvidados",
+      "title": "Los pensamientos olvidados",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:monedas del corazon",
+      "title": "Monedas del corazón",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:ndong el jubilado",
+      "title": "Ndong, el jubilado",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:no te vi venir pues jamas te hubiese dejado entrar",
+      "title": "No te vi venir, pues jamás te hubiese dejado entrar",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:perdoname por los poemas que te escribi",
+      "title": "Perdóname por los poemas que te escribí",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:poesia y whisky",
+      "title": "Poesía y Whisky",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:pollos en la memoria",
+      "title": "Pollos en la memoria",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:quedamos para despedirnos pero ella no lo sabia pensamientos en un pequeno relato sobre la amistad",
+      "title": "Quedamos para despedirnos pero ella no lo sabía – Pensamientos en un pequeño relato sobre la amistad -",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:requiem por un escritor desconocido",
+      "title": "Réquiem por un escritor desconocido",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:rodrigo se fue a otro lugar",
+      "title": "Rodrigo se fue a otro lugar",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:santa cruz de posguerra conversaciones en blanco y negro",
+      "title": "SANTA CRUZ DE POSGUERRA: CONVERSACIONES EN BLANCO Y NEGRO",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:teoria metaforica del bestiaro romanico proposito revolucionario la educacion sexual",
+      "title": "Teoría Metafórica del «Bestiaro Románico». Propósito revolucionario: la educación sexual",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:tratado de la ausencia y otros relatos",
+      "title": "Tratado de la ausencia y otros relatos",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    },
+    {
+      "candidateKey": "book:y la vida sigue",
+      "title": "Y… la vida sigue",
+      "currentDecision": "safe_book_cover",
+      "alternativeDecision": "ambiguous",
+      "thresholdLabel": "85/35/30"
+    }
+  ],
+  "thresholds": {
+    "positiveCoverScore": 75,
+    "negativeAuthorScore": 45,
+    "minimumWinnerGap": 25
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-07-24T17:01:28.052Z",
+  "mode": "preflight",
+  "bookCoversUploaded": 0,
+  "authorPhotosUploaded": 0,
+  "alreadyApplied": 27,
+  "skippedRejected": 27,
+  "manualActionRequired": 1,
+  "technicalRetriesRecovered": 0,
+  "partial": 0,
+  "failed": 0,
+  "blockers": 0,
+  "totalOperationsToApply": 139,
+  "bookCovers": {
+    "approvedTotal": 75,
+    "algorithmSelections": 64,
+    "editorialManualSelections": 11,
+    "rejected": 27,
+    "manualReview": 1,
+    "readyToApply": 75,
+    "blocked": 0
+  },
+  "authorPhotos": {
+    "safeReady": 60,
+    "technicalRetries": 4,
+    "alreadyMigrated": 0,
+    "manualOrAmbiguous": 0,
+    "blocked": 0
+  }
+}

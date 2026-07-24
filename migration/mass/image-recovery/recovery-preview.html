@@ -1,0 +1,3555 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Recovery Preview</title>
+    <style>
+      body {
+        margin: 24px;
+        background: #f7f7f5;
+        color: #111;
+        font-family: system-ui, sans-serif;
+      }
+      h1 {
+        font-family: Georgia, serif;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+      }
+      th,
+      td {
+        padding: 8px;
+        border-bottom: 1px solid #e6e6e2;
+        text-align: left;
+        vertical-align: top;
+      }
+      img {
+        width: 72px;
+        height: 96px;
+        object-fit: cover;
+        border: 1px solid #ddd;
+        background: #f3f3f0;
+      }
+      code {
+        padding: 2px 4px;
+        border-radius: 4px;
+        background: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image Recovery Preview</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Entidad</th>
+          <th>Titulo/nombre</th>
+          <th>Candidato</th>
+          <th>Imagen</th>
+          <th>URL</th>
+          <th>Origen</th>
+          <th>Dimensiones</th>
+          <th>Señales</th>
+          <th>Confianza</th>
+          <th>Decisión</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>author</code><br />author:556</td>
+          <td>Guillermo M. Schrem</td>
+          <td>WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg"
+              >https://editoriallarueca.com/wp-content/uploads/WhatsApp-Image-2022-07-21-at-7.21.26-PM.jpeg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>777x1600</td>
+          <td>_thumbnail_id no tiene evidencias fuertes de foto de autor.</td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:568</td>
+          <td>Jaime Caba</td>
+          <td>JaimeCaba.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/JaimeCaba.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/JaimeCaba.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/JaimeCaba.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>500x530</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | portrait_or_square_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:571</td>
+          <td>Antoñita la Fantástica</td>
+          <td>w_DesdeBCNconAmor_dibujo-1-scaled.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/w_DesdeBCNconAmor_dibujo-1.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_DesdeBCNconAmor_dibujo-1.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_DesdeBCNconAmor_dibujo-1.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1394x2560</td>
+          <td>_thumbnail_id no tiene evidencias fuertes de foto de autor.</td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:628</td>
+          <td>María Dolores Castellón Pérez</td>
+          <td>Loli-Castellon.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/Loli-Castellon.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/Loli-Castellon.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Loli-Castellon.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x488</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | portrait_or_square_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:637</td>
+          <td>Antonio López Hurtado</td>
+          <td>Antonio-Zarate.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x300</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. |
+            filename_matches_author_or_photo
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:640</td>
+          <td>JChamCri</td>
+          <td>JuanaChamorro.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/JuanaChamorro.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/JuanaChamorro.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/JuanaChamorro.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x371</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | portrait_or_square_ratio |
+            portrait_or_square_ratio
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:652</td>
+          <td>Teodoro Rodríguez Martín</td>
+          <td>TeodoroRodriguez.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/TeodoroRodriguez.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/TeodoroRodriguez.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/TeodoroRodriguez.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x476</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | portrait_or_square_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:657</td>
+          <td>Marta Susana Pecaric</td>
+          <td>MartaSusanaPecaric.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/MartaSusanaPecaric.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/MartaSusanaPecaric.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/MartaSusanaPecaric.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x376</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | portrait_or_square_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:663</td>
+          <td>Antonio López Hurtado Zárate</td>
+          <td>Antonio-Zarate.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x300</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. |
+            filename_matches_author_or_photo
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:710</td>
+          <td>Antonio López Hurtado &quot;Zárate&quot;</td>
+          <td>Antonio-Zarate.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x300</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. |
+            filename_matches_author_or_photo
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:724</td>
+          <td>Teodoro Rodríguez Martín</td>
+          <td>w_Teodoro.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w_Teodoro.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_Teodoro.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_Teodoro.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>354x488</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | cover_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:747</td>
+          <td>Alejandro González García</td>
+          <td>FotoAlejandroGonzalez-scaled.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/FotoAlejandroGonzalez.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/FotoAlejandroGonzalez.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/FotoAlejandroGonzalez.jpg</a
+            >
+          </td>
+          <td>mass_apply_retry</td>
+          <td>1709x2560</td>
+          <td>
+            _thumbnail_id tiene señales de foto de autor. | cover_ratio | strong_author_photo_signal
+          </td>
+          <td>high</td>
+          <td><code>technical_retry</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:751</td>
+          <td>Sara Ramiro</td>
+          <td>w_Sara-Ramiro_El-Remanso.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/w_Sara-Ramiro_El-Remanso.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_Sara-Ramiro_El-Remanso.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_Sara-Ramiro_El-Remanso.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x512</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | portrait_or_square_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:772</td>
+          <td>Richard Pazos</td>
+          <td>RicharPazos.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/RicharPazos.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/RicharPazos.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/RicharPazos.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x658</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | cover_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:778</td>
+          <td>Jorge González González</td>
+          <td>JorgeGonzalez.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/JorgeGonzalez.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/JorgeGonzalez.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/JorgeGonzalez.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1024x768</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. |
+            filename_matches_author_or_photo
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:793</td>
+          <td>Tamara Chenel</td>
+          <td>Tamara.jpg</td>
+          <td><img src="https://editoriallarueca.com/wp-content/uploads/Tamara.jpg" alt="" /></td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/Tamara.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Tamara.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>500x597</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | portrait_or_square_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:819</td>
+          <td>Juan José Velasco Sánchez-Mayoral</td>
+          <td>W_Juan-Jose-Velasco-S.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/W_Juan-Jose-Velasco-S.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/W_Juan-Jose-Velasco-S.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/W_Juan-Jose-Velasco-S.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x559</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | cover_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:879</td>
+          <td>Santiago Balmaseda Ramírez de Arellano</td>
+          <td>FotoSantiagoBalmaseda-scaled.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/FotoSantiagoBalmaseda.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/FotoSantiagoBalmaseda.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/FotoSantiagoBalmaseda.jpg</a
+            >
+          </td>
+          <td>mass_apply_retry</td>
+          <td>2560x1920</td>
+          <td>_thumbnail_id tiene señales de foto de autor. | strong_author_photo_signal</td>
+          <td>high</td>
+          <td><code>technical_retry</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:915</td>
+          <td>Juan Alberto Campoy Cervera</td>
+          <td>w_juan5.jpg</td>
+          <td><img src="https://editoriallarueca.com/wp-content/uploads/w_juan5.jpg" alt="" /></td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_juan5.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_juan5.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x300</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. |
+            filename_matches_author_or_photo
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:969</td>
+          <td>Juana Hernández Conesa</td>
+          <td>w_Juana-Hdez-Conesa.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/w_Juana-Hdez-Conesa.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_Juana-Hdez-Conesa.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_Juana-Hdez-Conesa.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x601</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | cover_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1040</td>
+          <td>Julio Sánchez Alonso</td>
+          <td>W_Julio.jpg</td>
+          <td><img src="https://editoriallarueca.com/wp-content/uploads/W_Julio.jpg" alt="" /></td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/W_Julio.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/W_Julio.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>556x396</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. |
+            filename_matches_author_or_photo
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1052</td>
+          <td>Ricardo Rodríguez López</td>
+          <td>w_RicardoRodriguez.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/w_RicardoRodriguez.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_RicardoRodriguez.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_RicardoRodriguez.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x300</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. |
+            filename_matches_author_or_photo
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1121</td>
+          <td>María Dolores Castellón Pérez</td>
+          <td>w_Loli-Castellon.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/w_Loli-Castellon.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_Loli-Castellon.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_Loli-Castellon.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>407x497</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | portrait_or_square_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1136</td>
+          <td>Guillermo Martínez Schrem</td>
+          <td>w_FotoGuillermo-1-scaled.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-1.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-1.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-1.jpg</a
+            >
+          </td>
+          <td>mass_apply_retry</td>
+          <td>1442x2560</td>
+          <td>_thumbnail_id tiene señales de foto de autor. | strong_author_photo_signal</td>
+          <td>high</td>
+          <td><code>technical_retry</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1367</td>
+          <td>Andrés Morales y Ana Córdoba del Campo</td>
+          <td>w_AndresYAnaCon_su_permiso_don_alvaro.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/w_AndresYAnaCon_su_permiso_don_alvaro.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/w_AndresYAnaCon_su_permiso_don_alvaro.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_AndresYAnaCon_su_permiso_don_alvaro.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x533</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | cover_ratio |
+            portrait_or_square_ratio | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1382</td>
+          <td>Carmen Piguillem</td>
+          <td>w_CarmenPinguillen-1.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/w_CarmenPinguillen-1.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_CarmenPinguillen-1.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_CarmenPinguillen-1.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>200x282</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | cover_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1454</td>
+          <td>Daniela Corao y Bárbara Mila</td>
+          <td>Daniela-Corao.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/Daniela-Corao.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/Daniela-Corao.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Daniela-Corao.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1134x1512</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | cover_ratio |
+            portrait_or_square_ratio | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1457</td>
+          <td>Juan José Velasco Sánchez-Mayoral</td>
+          <td>W_Juan-Jose-Velasco-S-1.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/W_Juan-Jose-Velasco-S-1.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/W_Juan-Jose-Velasco-S-1.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/W_Juan-Jose-Velasco-S-1.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x559</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | cover_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1518</td>
+          <td>Raimundo del Valle</td>
+          <td>IMG_20230912_Cazorla-scaled.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/IMG_20230912_Cazorla.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/IMG_20230912_Cazorla.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/IMG_20230912_Cazorla.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1920x2560</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | cover_ratio |
+            portrait_or_square_ratio | portrait_or_square_ratio
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1560</td>
+          <td>Guillermo Martínez Schrem</td>
+          <td>w_guillermo.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w_guillermo.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_guillermo.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_guillermo.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x301</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. |
+            filename_matches_author_or_photo
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1633</td>
+          <td>Malva Luz</td>
+          <td>w_Malva.jpg</td>
+          <td><img src="https://editoriallarueca.com/wp-content/uploads/w_Malva.jpg" alt="" /></td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_Malva.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_Malva.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1134x1512</td>
+          <td>
+            _thumbnail_id no tiene evidencias fuertes de foto de autor. | cover_ratio |
+            portrait_or_square_ratio | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1681</td>
+          <td>Guillermo Martínez Schrem</td>
+          <td>FotoAutor-scaled.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/FotoAutor.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/FotoAutor.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/FotoAutor.jpg</a
+            >
+          </td>
+          <td>mass_apply_retry</td>
+          <td>1442x2560</td>
+          <td>_thumbnail_id tiene señales de foto de autor. | strong_author_photo_signal</td>
+          <td>high</td>
+          <td><code>technical_retry</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1712</td>
+          <td>Antonio López Hurtado (Zárate)</td>
+          <td>foto1.jpg</td>
+          <td><img src="https://editoriallarueca.com/wp-content/uploads/foto1.jpg" alt="" /></td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/foto1.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/foto1.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>746x990</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            portrait_or_square_ratio | strong_author_photo_signal | filename_matches_author_or_photo
+            | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1730</td>
+          <td>Santiago Javier García González</td>
+          <td>FotoAutor-2.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/FotoAutor-2.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/FotoAutor-2.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/FotoAutor-2.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1190x1605</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1744</td>
+          <td>Elena Miramontes Seijas</td>
+          <td>FotoElenaMiramontes.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/FotoElenaMiramontes.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/FotoElenaMiramontes.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/FotoElenaMiramontes.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x393</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | portrait_or_square_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1750</td>
+          <td>Diego Gómez-Costa</td>
+          <td>w2_fotoAutor-3.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-3.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-3.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-3.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1512x2268</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1780</td>
+          <td>Guillermo M. Schrem</td>
+          <td>w_FotoGuillermo-4.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-4.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-4.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-4.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>236x419</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | strong_author_photo_signal |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1787</td>
+          <td>Marina Alejandra Domínguez</td>
+          <td>w_FotoMarina.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w_FotoMarina.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_FotoMarina.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_FotoMarina.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>354x361</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | portrait_or_square_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1798</td>
+          <td>Manuel Gómez Rosas</td>
+          <td>w_FotoManuel-2.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w_FotoManuel-2.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_FotoManuel-2.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_FotoManuel-2.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x533</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            portrait_or_square_ratio | strong_author_photo_signal | filename_matches_author_or_photo
+            | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1821</td>
+          <td>José Herruzo Orejuela</td>
+          <td>w_JoseHerruzo.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w_JoseHerruzo.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_JoseHerruzo.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_JoseHerruzo.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1512x2268</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1834</td>
+          <td>José Vte. Carmona Simarro</td>
+          <td>2w_JoseVteCarmona.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/2w_JoseVteCarmona.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/2w_JoseVteCarmona.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/2w_JoseVteCarmona.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1512x2268</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1851</td>
+          <td>Piero Poggialini</td>
+          <td>w_fotoPiero-1.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w_fotoPiero-1.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_fotoPiero-1.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_fotoPiero-1.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1512x2268</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1858</td>
+          <td>Alonso Cruz León</td>
+          <td>w_FotoAutor_Alonso.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/w_FotoAutor_Alonso.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_FotoAutor_Alonso.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_FotoAutor_Alonso.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x542</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1863</td>
+          <td>Juan José Velasco Sánchez-Mayoral</td>
+          <td>w_fotoAutor-5.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-5.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-5.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-5.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>326x466</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1866</td>
+          <td>Rosa María Escudero</td>
+          <td>w_fotoAutora-1.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w_fotoAutora-1.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_fotoAutora-1.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_fotoAutora-1.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1512x2268</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1881</td>
+          <td>Diego Gómez-Costa</td>
+          <td>w2_fotoAutor-2.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-2.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-2.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-2.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1512x2268</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1893</td>
+          <td>Antonio Olmedo Manzanares</td>
+          <td>w2_Olmedo.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w2_Olmedo.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w2_Olmedo.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w2_Olmedo.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1512x2268</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1902</td>
+          <td>Manuel Ondo Ndong</td>
+          <td>w2_ManuelOndo.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w2_ManuelOndo.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w2_ManuelOndo.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w2_ManuelOndo.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1512x2268</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1917</td>
+          <td>Manuel Ondo Ndong</td>
+          <td>FOTO-BIOGRAFIA-TESIS-1-scaled.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/FOTO-BIOGRAFIA-TESIS-1.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/FOTO-BIOGRAFIA-TESIS-1.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/FOTO-BIOGRAFIA-TESIS-1.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1847x2560</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1932</td>
+          <td>Francisco R. Breijo Márquez</td>
+          <td>w2_Breijo.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w2_Breijo.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w2_Breijo.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w2_Breijo.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1512x2268</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1947</td>
+          <td>Elga Reátegui</td>
+          <td>Foto-Elga.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/Foto-Elga.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/Foto-Elga.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Foto-Elga.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x441</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | portrait_or_square_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:1953</td>
+          <td>Luis Gausachs Pont</td>
+          <td>w_fotoAutor-7.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-7.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-7.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-7.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x528</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            portrait_or_square_ratio | strong_author_photo_signal | filename_matches_author_or_photo
+            | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2089</td>
+          <td>Guillermo M. Schrem</td>
+          <td>w_Guillermo-2.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w_Guillermo-2.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_Guillermo-2.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_Guillermo-2.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1512x2268</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2232</td>
+          <td>J. Emilio Romero</td>
+          <td>w2_fotoAutor-1.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-1.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-1.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-1.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1512x2268</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2303</td>
+          <td>Aedos Modernos</td>
+          <td>w2_fotoAutoresAEDOS-scaled.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/w2_fotoAutoresAEDOS.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w2_fotoAutoresAEDOS.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w2_fotoAutoresAEDOS.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1441x2560</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | strong_author_photo_signal |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2346</td>
+          <td>Diego Gómez-Costa</td>
+          <td>w2_fotoDiegoGomezCosta-copia.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/w2_fotoDiegoGomezCosta-copia.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/w2_fotoDiegoGomezCosta-copia.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w2_fotoDiegoGomezCosta-copia.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>2362x2332</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | portrait_or_square_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2406</td>
+          <td>Gaspar T. Jimeno Diestro</td>
+          <td>FotoGaspar-copia.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/FotoGaspar-copia.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/FotoGaspar-copia.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/FotoGaspar-copia.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>264x327</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | portrait_or_square_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2625</td>
+          <td>Rossy de Juan</td>
+          <td>w_fotoRosario.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w_fotoRosario.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_fotoRosario.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_fotoRosario.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>302x309</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | portrait_or_square_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2638</td>
+          <td>Teresa Sánchez Sánchez</td>
+          <td>w_FotoAutora-2.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/w_FotoAutora-2.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_FotoAutora-2.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_FotoAutora-2.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>200x258</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            portrait_or_square_ratio | strong_author_photo_signal | filename_matches_author_or_photo
+            | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2652</td>
+          <td>Guillermo M. Schrem</td>
+          <td>FotoGuillermo.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/FotoGuillermo.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/FotoGuillermo.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/FotoGuillermo.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1181x2099</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | strong_author_photo_signal |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2749</td>
+          <td>José Vte. Carmona Simarro</td>
+          <td>2w_JoseVteCarmona.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/2w_JoseVteCarmona.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/2w_JoseVteCarmona.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/2w_JoseVteCarmona.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1512x2268</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2756</td>
+          <td>Patxi Oyaga</td>
+          <td>W_FOTOpatxi-1.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/W_FOTOpatxi-1.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/W_FOTOpatxi-1.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/W_FOTOpatxi-1.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>833x833</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | portrait_or_square_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2798</td>
+          <td>José Manuel Velázquez</td>
+          <td>W_portada_andanzas-1.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/W_portada_andanzas-1.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/W_portada_andanzas-1.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/W_portada_andanzas-1.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>500x754</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            cover_signal_in_filename | cover_signal_in_filename | portrait_or_square_ratio
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2806</td>
+          <td>Guillermo M. Schrem</td>
+          <td>w_fotoAutor-copia.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-copia.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-copia.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-copia.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1181x2097</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | strong_author_photo_signal |
+            filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2824</td>
+          <td>Abel de Lamo Rubio</td>
+          <td>FotoAbel.jpeg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/FotoAbel.jpeg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/FotoAbel.jpeg"
+              >https://editoriallarueca.com/wp-content/uploads/FotoAbel.jpeg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1076x1600</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2855</td>
+          <td>Minerva Buiza</td>
+          <td>FotoMinerva.jpeg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/FotoMinerva.jpeg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/FotoMinerva.jpeg"
+              >https://editoriallarueca.com/wp-content/uploads/FotoMinerva.jpeg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>959x1600</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2860</td>
+          <td>Minerva Buiza</td>
+          <td>Foto4Minerva.jpg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/Foto4Minerva.jpg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/Foto4Minerva.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Foto4Minerva.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>600x710</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | portrait_or_square_ratio |
+            strong_author_photo_signal | filename_matches_author_or_photo | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2933</td>
+          <td>Guillermo Mayayo García</td>
+          <td>
+            Autor_Guillermo-Mayayo-Garcia_Libro_-Trabajas-demasiado-para-ganar-tan-poco_Genero-BusinessManagement.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Autor_Guillermo-Mayayo-Garcia_Libro_-Trabajas-demasiado-para-ganar-tan-poco_Genero-BusinessManagement.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Autor_Guillermo-Mayayo-Garcia_Libro_-Trabajas-demasiado-para-ganar-tan-poco_Genero-BusinessManagement.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Autor_Guillermo-Mayayo-Garcia_Libro_-Trabajas-demasiado-para-ganar-tan-poco_Genero-BusinessManagement.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x601</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            cover_signal_in_filename | strong_author_photo_signal | filename_matches_author_or_photo
+            | cover_signal_in_filename | portrait_or_square_ratio
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:2962</td>
+          <td>Antonio L. Gómez Charlín</td>
+          <td>
+            Libro_El-lenguaje-perdido-de-las-nubes_Autor_AntonioLCharlin_Genero-FA_Editorial-La-Rueca.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Libro_El-lenguaje-perdido-de-las-nubes_Autor_AntonioLCharlin_Genero-FA_Editorial-La-Rueca.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Libro_El-lenguaje-perdido-de-las-nubes_Autor_AntonioLCharlin_Genero-FA_Editorial-La-Rueca.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Libro_El-lenguaje-perdido-de-las-nubes_Autor_AntonioLCharlin_Genero-FA_Editorial-La-Rueca.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>177x226</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | portrait_or_square_ratio |
+            cover_signal_in_filename | strong_author_photo_signal | filename_matches_author_or_photo
+            | cover_signal_in_filename | portrait_or_square_ratio
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:3046</td>
+          <td>José Antonio Galante Pérez</td>
+          <td>Autor_JoseAntonioGalante_Libro-Adagio-para-whisky_Genero-Poesia-1.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Autor_JoseAntonioGalante_Libro-Adagio-para-whisky_Genero-Poesia-1.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Autor_JoseAntonioGalante_Libro-Adagio-para-whisky_Genero-Poesia-1.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Autor_JoseAntonioGalante_Libro-Adagio-para-whisky_Genero-Poesia-1.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>556x480</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | portrait_or_square_ratio |
+            cover_signal_in_filename | strong_author_photo_signal | filename_matches_author_or_photo
+            | cover_signal_in_filename | portrait_or_square_ratio
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:3099</td>
+          <td>Antonio López Hurtado (Zárate)</td>
+          <td>
+            Antonio-Zarate_libroLaEnsenanza-en-Moralzarzal_libro-La-Ensenanza-en-Moralzarzal.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate_libroLaEnsenanza-en-Moralzarzal_libro-La-Ensenanza-en-Moralzarzal.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate_libroLaEnsenanza-en-Moralzarzal_libro-La-Ensenanza-en-Moralzarzal.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate_libroLaEnsenanza-en-Moralzarzal_libro-La-Ensenanza-en-Moralzarzal.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x307</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_signal_in_filename |
+            filename_matches_author_or_photo | cover_signal_in_filename
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:3135</td>
+          <td>Victoria Huelin Izquierdo</td>
+          <td>
+            Autora-Victoria-Huelin-_Titulo-Por-lo-Pindio_Genero-DNF-ensayo-literario_Editorial-la-Rueca.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Autora-Victoria-Huelin-_Titulo-Por-lo-Pindio_Genero-DNF-ensayo-literario_Editorial-la-Rueca.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Autora-Victoria-Huelin-_Titulo-Por-lo-Pindio_Genero-DNF-ensayo-literario_Editorial-la-Rueca.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Autora-Victoria-Huelin-_Titulo-Por-lo-Pindio_Genero-DNF-ensayo-literario_Editorial-la-Rueca.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x268</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | strong_author_photo_signal |
+            filename_matches_author_or_photo
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:3141</td>
+          <td>Alfredo Manrique Bravo</td>
+          <td>
+            Autor-Alfredo-Manrique-Bravo_Libro-Cuando-te-vuelva-a-encontrar_Genero-Biografia-BT_Editorial-la-Rueca.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Autor-Alfredo-Manrique-Bravo_Libro-Cuando-te-vuelva-a-encontrar_Genero-Biografia-BT_Editorial-la-Rueca.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Autor-Alfredo-Manrique-Bravo_Libro-Cuando-te-vuelva-a-encontrar_Genero-Biografia-BT_Editorial-la-Rueca.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Autor-Alfredo-Manrique-Bravo_Libro-Cuando-te-vuelva-a-encontrar_Genero-Biografia-BT_Editorial-la-Rueca.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x428</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | portrait_or_square_ratio |
+            cover_signal_in_filename | strong_author_photo_signal | filename_matches_author_or_photo
+            | cover_signal_in_filename | portrait_or_square_ratio
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:3153</td>
+          <td>Guillermo M. Schrem</td>
+          <td>FotoAutor.jpeg</td>
+          <td>
+            <img src="https://editoriallarueca.com/wp-content/uploads/FotoAutor.jpeg" alt="" />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/FotoAutor.jpeg"
+              >https://editoriallarueca.com/wp-content/uploads/FotoAutor.jpeg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>1536x2048</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_ratio |
+            portrait_or_square_ratio | strong_author_photo_signal | filename_matches_author_or_photo
+            | portrait_or_square_ratio
+          </td>
+          <td>high</td>
+          <td><code>safe_author_photo</code><br />upload_author_photo</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:3159</td>
+          <td>Osian R. Vaquero</td>
+          <td>
+            autor-OsianRodriguez_Libro-El-arte-de-Cosplay_Genero-AKLC-–-Comic-y-caricatura_Editorial-la-Rueca-copia.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/autor-OsianRodriguez_Libro-El-arte-de-Cosplay_Genero-AKLC-–-Comic-y-caricatura_Editorial-la-Rueca-copia.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/autor-OsianRodriguez_Libro-El-arte-de-Cosplay_Genero-AKLC-–-Comic-y-caricatura_Editorial-la-Rueca-copia.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/autor-OsianRodriguez_Libro-El-arte-de-Cosplay_Genero-AKLC-–-Comic-y-caricatura_Editorial-la-Rueca-copia.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>400x509</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | portrait_or_square_ratio |
+            cover_signal_in_filename | strong_author_photo_signal | filename_matches_author_or_photo
+            | cover_signal_in_filename | portrait_or_square_ratio
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>author</code><br />author:3166</td>
+          <td>José Vte. Carmona Simarro</td>
+          <td>
+            Autor-Jose-Vte-Carmona_Libro-Regreso-a-la-invisibilidad_Genero-Relatos_Editorial-la-Rueca.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Autor-Jose-Vte-Carmona_Libro-Regreso-a-la-invisibilidad_Genero-Relatos_Editorial-la-Rueca.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Autor-Jose-Vte-Carmona_Libro-Regreso-a-la-invisibilidad_Genero-Relatos_Editorial-la-Rueca.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Autor-Jose-Vte-Carmona_Libro-Regreso-a-la-invisibilidad_Genero-Relatos_Editorial-la-Rueca.jpg</a
+            >
+          </td>
+          <td>_thumbnail_id</td>
+          <td>346x629</td>
+          <td>
+            _thumbnail_id e imagen_destacada_2 difieren; rol ambiguo. | cover_signal_in_filename |
+            strong_author_photo_signal | filename_matches_author_or_photo | cover_signal_in_filename
+            | portrait_or_square_ratio
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:el valle de cristal</td>
+          <td>El Valle de Cristal</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:cuando su mirada pasaba por halley</td>
+          <td>Cuando su mirada pasaba por Halley</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:la trenza dorada y otros relatos para tiempos nuevos</td>
+          <td>LA TRENZA DORADA Y OTROS RELATOS PARA TIEMPOS NUEVOS</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:requiem por un escritor desconocido</td>
+          <td>Réquiem por un escritor desconocido</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:de kolpino a krasny bor</td>
+          <td>DE KOLPINO A KRASNY BOR,</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:teoria metaforica del bestiaro romanico proposito
+            revolucionario la educacion sexual
+          </td>
+          <td>
+            Teoría Metafórica del «Bestiaro Románico». Propósito revolucionario: la educación sexual
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:el poder de la educacion nos hace infinitos</td>
+          <td>El poder de la educación nos hace infinitos</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:banquero de carlos v a emilio botin</td>
+          <td>banquero de Carlos V a Emilio Botín</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:la canteria en moralzarzal</td>
+          <td>La cantería en Moralzarzal</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:el delgado hilo de la vida</td>
+          <td>El delgado hilo de la vida</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:el joven fenix el resurgir de los dioses egipcios</td>
+          <td>El Joven Fénix (El resurgir de los dioses egipcios)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:tiendas y abastos en moralzarzal</td>
+          <td>Tiendas y abastos en Moralzarzal</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:yoga volumen 1 2 3 4 5 evolucion integral y evolucion
+            universal
+          </td>
+          <td>Yoga Volumen 1,2,3,4,5 evolución integral y evolución universal</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:un ameno curso introductorio a la ecologia humana</td>
+          <td>Un ameno curso introductorio a la Ecología Humana</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:la ganaderia en moralzarzal</td>
+          <td>La Ganadería en Moralzarzal</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:la pulsera de la princesa yoruba</td>
+          <td>La pulsera de la princesa yoruba</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:los pensamientos olvidados</td>
+          <td>Los pensamientos olvidados</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:relatos de agua dulce</td>
+          <td>Relatos de agua dulce</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:john main apatheia nirvana</td>
+          <td>John Main: Apatheia-Nirvana</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:un siglo de ferrocarril en ecija memorias del marchenilla
+          </td>
+          <td>Un siglo de ferrocarril en Écija - Memorias del Marchenilla</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:going my way en 40 poemas</td>
+          <td>“Going my way” en 40 poemas</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:ilogica proposicional aforemas y poerismos</td>
+          <td>Ilógica Proposicional – Aforemas y Poerismos</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:thailandia el viaje que cambio el rumbo de mi vida como
+            inverti los obstaculos y mis limitaciones en valores gracias a mi experiencia de vida y
+            al coaching
+          </td>
+          <td>
+            Thailandia, el viaje que cambió el rumbo de mi vida - Como Invertí los Obstáculos y mis
+            Limitaciones, en Valores: Gracias a Mi Experiencia de Vida y al Coaching
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:biodiversidad sostenibilidad supervivencia e inmortalidad
+          </td>
+          <td>BIODIVERSIDAD - Sostenibilidad, Supervivencia e Inmortalidad</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:quieres o debes ser feliz darse cuenta de aquello que nos
+            impide ser felices es el primer paso para ser mas feliz
+          </td>
+          <td>
+            ¿Quieres o debes ser feliz? - Darse cuenta de aquello que nos impide ser felices, es el
+            primer paso para ser más feliz
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:el camino del angel la realidad de un sueno</td>
+          <td>El camino del ángel (La realidad de un sueño)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:sus ojos hablaron</td>
+          <td>Sus ojos hablaron</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:diario de un comunero</td>
+          <td>Diario de un Comunero</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:amar a fondo perdido y la decision</td>
+          <td>Amar a fondo perdido y La Decisión</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:no te vi venir pues jamas te hubiese dejado entrar</td>
+          <td>No te vi venir, pues jamás te hubiese dejado entrar</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:estampas de un pueblo andaluz 1960 1974</td>
+          <td>Estampas de un pueblo andaluz (1960-1974)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:los dictadores y las mujeres adolf hitler</td>
+          <td>Los Dictadores y las Mujeres - Adolf Hitler</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:poesia y whisky</td>
+          <td>Poesía y Whisky</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:alma en llamas</td>
+          <td>Alma en llamas</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:tratado de la ausencia y otros relatos</td>
+          <td>Tratado de la ausencia y otros relatos</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:el rol principal de una pelicula llamada vida</td>
+          <td>El rol principal de una película llamada VIDA</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:la flor malva</td>
+          <td>La Flor Malva</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:leeme si te atreves</td>
+          <td>Léeme… si te atreves</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:de los rollos del mar muerto a los de rodrigo de lares una
+            narracion audaz para un lector mas inteligente que lerdo belmonte ano 2017 al 2022 libro
+            1
+          </td>
+          <td>
+            DE LOS ROLLOS DEL MAR MUERTO A LOS DE RODRIGO DE LARES ”“una narración audaz para un
+            lector más inteligente que lerdo” Belmonte año 2017 al 2022. LIBRO 1
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:humor y prosa de un ajedrecista</td>
+          <td>Humor y prosa de un ajedrecista</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:los acorralados</td>
+          <td>Los acorralados</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:encuentros campezanos</td>
+          <td>Encuentros Campezanos</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:al otro lado del rio</td>
+          <td>Al otro lado del río</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:el maestro de salamanca consideracion del derecho
+            internacional humanitario
+          </td>
+          <td>El maestro de Salamanca. Consideración del Derecho Internacional Humanitario.</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:santa cruz de posguerra conversaciones en blanco y negro
+          </td>
+          <td>SANTA CRUZ DE POSGUERRA: CONVERSACIONES EN BLANCO Y NEGRO</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:detras de la corteza</td>
+          <td>Detrás de la corteza</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:quiero estar contigo</td>
+          <td>Quiero estar contigo</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:entre realidades y suenos</td>
+          <td>Entre realidades y sueños</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:falsas esperanzas</td>
+          <td>Falsas esperanzas</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:perdoname por los poemas que te escribi</td>
+          <td>Perdóname por los poemas que te escribí</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:el panuelo de marino</td>
+          <td>El pañuelo de Marino</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:el rumor de la marea</td>
+          <td>El rumor de la marea</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:el viaje aventurero de nico</td>
+          <td>El viaje aventurero de Nico</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:pollos en la memoria</td>
+          <td>Pollos en la memoria</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:de juan a juan el musical el libreto y un relato</td>
+          <td>De Juan a Juan: El musical – El Libreto y un Relato</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:daemon lilith</td>
+          <td>Daemon Lilith</td>
+          <td>DaemonLilithMockup-scaled.png</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/DaemonLilithMockup.png"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/DaemonLilithMockup.png"
+              >https://editoriallarueca.com/wp-content/uploads/DaemonLilithMockup.png</a
+            >
+          </td>
+          <td>mass_apply_retry</td>
+          <td>2560x1708</td>
+          <td>
+            filename contiene el titulo del libro | attachment title contiene el titulo del libro |
+            slug contiene el titulo del libro | imagen horizontal o panoramica
+          </td>
+          <td>high</td>
+          <td><code>technical_retry</code><br />upload_book_cover</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:la barca del portugues</td>
+          <td>La barca del portugués</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:de estrellas gaviotas y poemas</td>
+          <td>De estrellas, gaviotas y poemas</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:y la vida sigue</td>
+          <td>Y… la vida sigue</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:una inolvidable noche de futbol en la pared</td>
+          <td>Una inolvidable noche de fútbol en La Pared</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:en la recta final</td>
+          <td>En la recta final</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:duns scoto versus tomas de aquino la debilidad del
+            neocalcedonismo tomista
+          </td>
+          <td>Duns Scoto versus Tomás de Aquino: La debilidad del Neocalcedonismo Tomista</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:placa blanca dignidad sobre el pecho</td>
+          <td>Placa blanca, dignidad sobre el pecho</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:la vida de adonis la impunidad</td>
+          <td>La vida de Adonis - La impunidad</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:el perfume de las emociones</td>
+          <td>El perfume de las emociones</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:humor prosa y una jugadora</td>
+          <td>Humor, prosa y una jugadora</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:ligero como la brisa</td>
+          <td>Ligero como la brisa</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:prestoses xaranes de folixes y xordes nel conceyu de mieres
+          </td>
+          <td>PRESTOSES XARANES - De folixes y xordes nel Conceyu de Mieres</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:de barro y silencio</td>
+          <td>De barro y silencio</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:apuesta personal</td>
+          <td>APUESTA PERSONAL</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:la muerte de adonis los impunes</td>
+          <td>La muerte de Adonis - Los impunes</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:el poder de la magia de la comunicacion</td>
+          <td>El poder de la magia de la comunicación</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:la inteligencia artificial en educacion fisica</td>
+          <td>La Inteligencia Artificial en Educación Física</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:inteligencia artificial en educacion fisica</td>
+          <td>Inteligencia Artificial en Educación Física</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:sutiles percepciones de una realidad</td>
+          <td>Sutiles percepciones de una realidad</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:amaremos en libertad</td>
+          <td>Amaremos en libertad</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:esferas temporales aforismos meditaciones y otros escritos
+            breve recopilacion
+          </td>
+          <td>ESFERAS TEMPORALES Aforismos, meditaciones y otros escritos (Breve recopilación)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:la sombra del azar</td>
+          <td>La sombra del azar</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:al final de la escapada memoria personal 1951 2011</td>
+          <td>Al final de la escapada – Memoria personal 1951-2011</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:haikus en el camino</td>
+          <td>Haikus en el camino</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:versos de madrugada con sentido</td>
+          <td>Versos de madrugada – (Con-sentido)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:cuentos para amara la nieve y amara toca el tambor</td>
+          <td>CUENTOS PARA AMARA - La Nieve y Amara toca el tambor</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:beretricce el palacio velado</td>
+          <td>BERETRICCE – El palacio Velado</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:el cierzo tatuado</td>
+          <td>El Cierzo Tatuado</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:quedamos para despedirnos pero ella no lo sabia pensamientos
+            en un pequeno relato sobre la amistad
+          </td>
+          <td>
+            Quedamos para despedirnos pero ella no lo sabía – Pensamientos en un pequeño relato
+            sobre la amistad -
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:cuentos para amara dona bota la burbuja de mar</td>
+          <td>CUENTOS PARA AMARA – Doña Bota – La Burbuja de Mar</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:oraculo de la fe el camino del alma</td>
+          <td>Oráculo de la fe - El camino del alma</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:voces del alma el arte de escuchar a traves del tarot</td>
+          <td>Voces del Alma - El arte de escuchar a través del tarot</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:nido de barro haikus</td>
+          <td>Nido de Barro – Haikus</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:con su permiso don alvaro historias de viso del marques
+          </td>
+          <td>Con su permiso Don Álvaro – Historias de Viso del Marqués</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:r</td>
+          <td>R</td>
+          <td>w_POLLOS_maq2_portada_OK2_sinmarcas.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/w_POLLOS_maq2_portada_OK2_sinmarcas.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/w_POLLOS_maq2_portada_OK2_sinmarcas.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_POLLOS_maq2_portada_OK2_sinmarcas.jpg</a
+            >
+          </td>
+          <td>mass_book_cover_plan</td>
+          <td>500x731</td>
+          <td>
+            filename contiene el titulo del libro | attachment title contiene el titulo del libro |
+            slug contiene el titulo del libro | filename/title contiene señal de portada: portada |
+            proporcion vertical compatible con portada | dimensiones razonables para cover |
+            cover_ratio | cover_signal_in_filename
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:el canto de las raices cartografias del ser y existir</td>
+          <td>El canto de las raíces – Cartografías del ser y existir</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:rodrigo se fue a otro lugar</td>
+          <td>Rodrigo se fue a otro lugar</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:de origine nostra fatum nostrum</td>
+          <td>De Origine Nostra Fatum Nostrum</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:estrategias educativas a traves del teatro musical
+            experiencias y propuesta metodologica del taller de musicales volumen 1 seleccion de
+            titulos para el aula analisis cinematografico y escenico
+          </td>
+          <td>
+            ESTRATEGIAS EDUCATIVAS A TRAVÉS DEL TEATRO MUSICAL - Experiencias y propuesta
+            metodológica del “Taller de Musicales” Volumen 1 Selección de títulos para el aula:
+            Análisis cinematográfico y escénico.
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:dias de galerna</td>
+          <td>Días de Galerna</td>
+          <td>
+            Libro_Dias-de-Galerna_Autor_Rodrigo-Vazquez_Genero-WT-Editorial-la-Rueca--scaled.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Libro_Dias-de-Galerna_Autor_Rodrigo-Vazquez_Genero-WT-Editorial-la-Rueca-.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Libro_Dias-de-Galerna_Autor_Rodrigo-Vazquez_Genero-WT-Editorial-la-Rueca-.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Libro_Dias-de-Galerna_Autor_Rodrigo-Vazquez_Genero-WT-Editorial-la-Rueca-.jpg</a
+            >
+          </td>
+          <td>mass_apply_retry</td>
+          <td>1812x2560</td>
+          <td>
+            filename contiene el titulo del libro | attachment title contiene el titulo del libro |
+            slug contiene el titulo del libro | filename/title contiene señal de portada: libro |
+            proporcion vertical compatible con portada | dimensiones razonables para cover |
+            contiene señal de foto de autor: autor | cover_ratio | cover_signal_in_filename |
+            strong_author_photo_signal
+          </td>
+          <td>high</td>
+          <td><code>technical_retry</code><br />upload_book_cover</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:monedas del corazon</td>
+          <td>Monedas del corazón</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:famosa gabardina azul</td>
+          <td>Famosa Gabardina Azul</td>
+          <td>
+            Libro_Famosa-gabardina-azul_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Libro_Famosa-gabardina-azul_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Libro_Famosa-gabardina-azul_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Libro_Famosa-gabardina-azul_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca.jpg</a
+            >
+          </td>
+          <td>mass_book_cover_plan</td>
+          <td>500x700</td>
+          <td>
+            filename contiene el titulo del libro | filename/title contiene señal de portada: libro
+            | proporcion vertical compatible con portada | dimensiones razonables para cover |
+            contiene señal de foto de autor: autor | cover_ratio | cover_signal_in_filename |
+            strong_author_photo_signal
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:el poderoso sir tristan en la saga del prince valiant 1937
+            1971 de harold foster la apoteosis medieval de un arte contemporaneo
+          </td>
+          <td>
+            El poderoso Sir Tristán en la Saga del Prince Valiant (1937-1971) de Harold Foster. La
+            apoteosis medieval de un arte contemporáneo.
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:christus verbo y verso segun un posadero</td>
+          <td>Christus, verbo y verso según un posadero</td>
+          <td>w_fotoPadreInaki.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/w_fotoPadreInaki.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a href="https://editoriallarueca.com/wp-content/uploads/w_fotoPadreInaki.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/w_fotoPadreInaki.jpg</a
+            >
+          </td>
+          <td>mass_book_cover_plan</td>
+          <td>400x704</td>
+          <td>
+            filename/title contiene señal de portada: portada | coincide con _thumbnail_id del
+            registro legacy | proporcion vertical compatible con portada | dimensiones razonables
+            para cover | strong_author_photo_signal
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:mariposas en el jardin</td>
+          <td>Mariposas en el jardín</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:metodo sah g maes 36 caminos de curacion para la mente el
+            cuerpo y el espiritual
+          </td>
+          <td>
+            Método Sah-G-Maes - 36 caminos de curación para la mente, el cuerpo y el espiritual
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:entre lineas reflejos de un tiempo convulso</td>
+          <td>Entre líneas, reflejos de un tiempo convulso</td>
+          <td>
+            Libro_Entre-lineas-reflejos-de-un-tiempo-convulso_Autor_Juan-Antonio-Valero-Casado_Genero-DN-Editorioal-La-Rueca.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Libro_Entre-lineas-reflejos-de-un-tiempo-convulso_Autor_Juan-Antonio-Valero-Casado_Genero-DN-Editorioal-La-Rueca.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Libro_Entre-lineas-reflejos-de-un-tiempo-convulso_Autor_Juan-Antonio-Valero-Casado_Genero-DN-Editorioal-La-Rueca.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Libro_Entre-lineas-reflejos-de-un-tiempo-convulso_Autor_Juan-Antonio-Valero-Casado_Genero-DN-Editorioal-La-Rueca.jpg</a
+            >
+          </td>
+          <td>mass_book_cover_plan</td>
+          <td>1103x1701</td>
+          <td>
+            filename contiene el titulo del libro | filename/title contiene señal de portada: libro
+            | proporcion vertical compatible con portada | dimensiones razonables para cover |
+            contiene señal de foto de autor: autor | cover_ratio | cover_signal_in_filename |
+            strong_author_photo_signal
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:pajaro en el alambre</td>
+          <td>Pájaro en el alambre</td>
+          <td>
+            Libro_Pajaro-en-el-Alambre_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca-scaled.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Libro_Pajaro-en-el-Alambre_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Libro_Pajaro-en-el-Alambre_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Libro_Pajaro-en-el-Alambre_Autor_Guillermo-M.-Schrem_Genero-FA-Editorial-la-Rueca.jpg</a
+            >
+          </td>
+          <td>mass_book_cover_plan</td>
+          <td>1747x2560</td>
+          <td>
+            filename contiene el titulo del libro | filename/title contiene señal de portada: libro
+            | proporcion vertical compatible con portada | dimensiones razonables para cover |
+            contiene señal de foto de autor: autor | cover_ratio | cover_signal_in_filename |
+            strong_author_photo_signal
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:de los rollos del mar muerto a los de rodrigo de lares tomo
+            2
+          </td>
+          <td>DE LOS ROLLOS DEL MAR MUERTO A LOS DE RODRIGO DE LARES -TOMO 2-</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:otros oficios en moralzarzal</td>
+          <td>Otros Oficios en Moralzarzal</td>
+          <td>
+            Libro_Otros-Oficios-en-Moralzarzal_Autor_Antonio-Lopez-Hurtado_genero-GP-Editorial-la-Rueca.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Libro_Otros-Oficios-en-Moralzarzal_Autor_Antonio-Lopez-Hurtado_genero-GP-Editorial-la-Rueca.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Libro_Otros-Oficios-en-Moralzarzal_Autor_Antonio-Lopez-Hurtado_genero-GP-Editorial-la-Rueca.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Libro_Otros-Oficios-en-Moralzarzal_Autor_Antonio-Lopez-Hurtado_genero-GP-Editorial-la-Rueca.jpg</a
+            >
+          </td>
+          <td>mass_book_cover_plan</td>
+          <td>1184x1710</td>
+          <td>
+            filename contiene el titulo del libro | filename/title contiene señal de portada: libro
+            | proporcion vertical compatible con portada | dimensiones razonables para cover |
+            contiene señal de foto de autor: autor | cover_ratio | cover_signal_in_filename |
+            strong_author_photo_signal
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:libero mi alma con 131 angeles</td>
+          <td>Libero Mi Alma con 131 Ángeles</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:monasterio de san lorenzo de el escorial una visita interior
+          </td>
+          <td>Monasterio de San Lorenzo de El Escorial – Una visita interior</td>
+          <td>
+            Libro_Monasterio-de-San-Lorenzo-de-El-Escorial-–-Una-visita-interior_Autor_Santiago-Garcia-Gonzalez_Genero-WTGC_Editorial-la-Rueca.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Libro_Monasterio-de-San-Lorenzo-de-El-Escorial-–-Una-visita-interior_Autor_Santiago-Garcia-Gonzalez_Genero-WTGC_Editorial-la-Rueca.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Libro_Monasterio-de-San-Lorenzo-de-El-Escorial-–-Una-visita-interior_Autor_Santiago-Garcia-Gonzalez_Genero-WTGC_Editorial-la-Rueca.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Libro_Monasterio-de-San-Lorenzo-de-El-Escorial-–-Una-visita-interior_Autor_Santiago-Garcia-Gonzalez_Genero-WTGC_Editorial-la-Rueca.jpg</a
+            >
+          </td>
+          <td>mass_book_cover_plan</td>
+          <td>1270x1937</td>
+          <td>
+            filename contiene el titulo del libro | filename/title contiene señal de portada: libro
+            | proporcion vertical compatible con portada | dimensiones razonables para cover |
+            contiene señal de foto de autor: autor | cover_ratio | cover_signal_in_filename |
+            strong_author_photo_signal
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:el dolor de un alma sin memoria</td>
+          <td>El dolor de un alma sin memoria</td>
+          <td>
+            Libro_El-dolor-de-un-alma-sin-memoria_Autor_Diego-Gomez-Costa_Fenero-FA-Editorial-la-Rueca-copia.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Libro_El-dolor-de-un-alma-sin-memoria_Autor_Diego-Gomez-Costa_Fenero-FA-Editorial-la-Rueca-copia.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Libro_El-dolor-de-un-alma-sin-memoria_Autor_Diego-Gomez-Costa_Fenero-FA-Editorial-la-Rueca-copia.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Libro_El-dolor-de-un-alma-sin-memoria_Autor_Diego-Gomez-Costa_Fenero-FA-Editorial-la-Rueca-copia.jpg</a
+            >
+          </td>
+          <td>mass_book_cover_plan</td>
+          <td>500x793</td>
+          <td>
+            filename contiene el titulo del libro | filename/title contiene señal de portada: libro
+            | proporcion vertical compatible con portada | dimensiones razonables para cover |
+            contiene señal de foto de autor: autor | cover_ratio | cover_signal_in_filename |
+            strong_author_photo_signal
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:los mejores cortos de gomez rosas cualquier parecido con la
+            realidad es pura coincidencia
+          </td>
+          <td>
+            Los mejores cortos de Gómez Rosas (cualquier parecido con la realidad es pura
+            coincidencia)
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:evocacion y sucesos de dolores la tuerta una historia del
+            mundo rural
+          </td>
+          <td>Evocación y sucesos de Dolores la Tuerta (Una historia del mundo rural)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:memorias de opera</td>
+          <td>Memorias de Ópera</td>
+          <td>Libro_Memorias-de-Opera_Autor_PIERO-POGGIALINI_Genero_BG_EditorialLaRueca.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Libro_Memorias-de-Opera_Autor_PIERO-POGGIALINI_Genero_BG_EditorialLaRueca.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Libro_Memorias-de-Opera_Autor_PIERO-POGGIALINI_Genero_BG_EditorialLaRueca.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Libro_Memorias-de-Opera_Autor_PIERO-POGGIALINI_Genero_BG_EditorialLaRueca.jpg</a
+            >
+          </td>
+          <td>mass_book_cover_plan</td>
+          <td>500x690</td>
+          <td>
+            filename contiene el titulo del libro | filename/title contiene señal de portada: libro
+            | proporcion vertical compatible con portada | contiene señal de foto de autor: autor |
+            cover_ratio | cover_signal_in_filename | strong_author_photo_signal
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:descartes y su duda hiperbolica</td>
+          <td>Descartes y su duda hiperbólica</td>
+          <td>
+            Libro_-Descartes-y-su-duda-hiperbolica_Autor_AlonsoCruz_GeneroDNF_EditorialLaRueca.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Libro_-Descartes-y-su-duda-hiperbolica_Autor_AlonsoCruz_GeneroDNF_EditorialLaRueca.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Libro_-Descartes-y-su-duda-hiperbolica_Autor_AlonsoCruz_GeneroDNF_EditorialLaRueca.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Libro_-Descartes-y-su-duda-hiperbolica_Autor_AlonsoCruz_GeneroDNF_EditorialLaRueca.jpg</a
+            >
+          </td>
+          <td>mass_book_cover_plan</td>
+          <td>500x722</td>
+          <td>
+            filename contiene el titulo del libro | filename/title contiene señal de portada:
+            portada, libro | proporcion vertical compatible con portada | dimensiones razonables
+            para cover | contiene señal de foto de autor: autor | cover_ratio |
+            cover_signal_in_filename | strong_author_photo_signal
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:cartas a un hombre</td>
+          <td>Cartas a un hombre</td>
+          <td>
+            Libro_Cartas-a-un-hombre_Autor_Rosa-Ma-Escudero_Genero-DNF_Editorial-la-Rueca-.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Libro_Cartas-a-un-hombre_Autor_Rosa-Ma-Escudero_Genero-DNF_Editorial-la-Rueca-.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Libro_Cartas-a-un-hombre_Autor_Rosa-Ma-Escudero_Genero-DNF_Editorial-la-Rueca-.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Libro_Cartas-a-un-hombre_Autor_Rosa-Ma-Escudero_Genero-DNF_Editorial-la-Rueca-.jpg</a
+            >
+          </td>
+          <td>mass_book_cover_plan</td>
+          <td>500x710</td>
+          <td>
+            filename contiene el titulo del libro | filename/title contiene señal de portada: libro
+            | proporcion vertical compatible con portada | dimensiones razonables para cover |
+            contiene señal de foto de autor: autor | cover_ratio | cover_signal_in_filename |
+            strong_author_photo_signal
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:el pueblo judio legado y nexo con judea una historia
+            milenaria
+          </td>
+          <td>El pueblo Judío. Legado y nexo con Judea: Una historia Milenaria</td>
+          <td>
+            Libro_El-pueblo-Judio.-Legado-y-nexo-con-Judea-Una-historia-Milenaria_Autor_DiegoGomezCosta_GeneroHBJF1_EditorialLaRueca.jpg
+          </td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Libro_El-pueblo-Judio.-Legado-y-nexo-con-Judea-Una-historia-Milenaria_Autor_DiegoGomezCosta_GeneroHBJF1_EditorialLaRueca.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Libro_El-pueblo-Judio.-Legado-y-nexo-con-Judea-Una-historia-Milenaria_Autor_DiegoGomezCosta_GeneroHBJF1_EditorialLaRueca.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Libro_El-pueblo-Judio.-Legado-y-nexo-con-Judea-Una-historia-Milenaria_Autor_DiegoGomezCosta_GeneroHBJF1_EditorialLaRueca.jpg</a
+            >
+          </td>
+          <td>mass_book_cover_plan</td>
+          <td>500x815</td>
+          <td>
+            filename contiene el titulo del libro | filename/title contiene señal de portada: libro
+            | proporcion vertical compatible con portada | dimensiones razonables para cover |
+            contiene señal de foto de autor: autor | cover_ratio | cover_signal_in_filename |
+            strong_author_photo_signal
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:ndong el jubilado</td>
+          <td>Ndong, el jubilado</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td>
+            <code>book</code><br />book:analisis de errores morfosintacticos en un aula de espanol
+            le el caso del grupo de estudiantes del nivel b2 de secundaria en guinea ecuatorial al
+            expresarse por escrito en espanol
+          </td>
+          <td>
+            Análisis de errores morfosintácticos en un aula de Español/LE. El caso del grupo de
+            estudiantes del nivel B2 de secundaria en Guinea Ecuatorial al expresarse por escrito en
+            español
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>No existe candidato de portada utilizable.</td>
+          <td>none</td>
+          <td><code>no_candidate</code><br />skip</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:el joven clonado</td>
+          <td>El joven clonado</td>
+          <td>libro_El-joven-clonado_Autor_LuisGausach_Genero-FA-Ficcion-contemporanea.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/libro_El-joven-clonado_Autor_LuisGausach_Genero-FA-Ficcion-contemporanea.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/libro_El-joven-clonado_Autor_LuisGausach_Genero-FA-Ficcion-contemporanea.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/libro_El-joven-clonado_Autor_LuisGausach_Genero-FA-Ficcion-contemporanea.jpg</a
+            >
+          </td>
+          <td>mass_book_cover_plan</td>
+          <td>500x728</td>
+          <td>
+            filename contiene el titulo del libro | filename/title contiene señal de portada: libro
+            | proporcion vertical compatible con portada | dimensiones razonables para cover |
+            contiene señal de foto de autor: autor | cover_ratio | cover_signal_in_filename |
+            strong_author_photo_signal
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+        <tr>
+          <td><code>book</code><br />book:viajando ligero</td>
+          <td>Viajando ligero</td>
+          <td>Libro_ViajandoLigero_Autor_GuillermoM.Schrem_Genero-FA-Ficcion-contemporanea.jpg</td>
+          <td>
+            <img
+              src="https://editoriallarueca.com/wp-content/uploads/Libro_ViajandoLigero_Autor_GuillermoM.Schrem_Genero-FA-Ficcion-contemporanea.jpg"
+              alt=""
+            />
+          </td>
+          <td>
+            <a
+              href="https://editoriallarueca.com/wp-content/uploads/Libro_ViajandoLigero_Autor_GuillermoM.Schrem_Genero-FA-Ficcion-contemporanea.jpg"
+              >https://editoriallarueca.com/wp-content/uploads/Libro_ViajandoLigero_Autor_GuillermoM.Schrem_Genero-FA-Ficcion-contemporanea.jpg</a
+            >
+          </td>
+          <td>mass_book_cover_plan</td>
+          <td>500x732</td>
+          <td>
+            filename contiene el titulo del libro | filename/title contiene señal de portada: libro
+            | proporcion vertical compatible con portada | dimensiones razonables para cover |
+            contiene señal de foto de autor: autor | cover_ratio | cover_signal_in_filename |
+            strong_author_photo_signal
+          </td>
+          <td>low</td>
+          <td><code>ambiguous</code><br />manual_review</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,3182 @@
+{
+  "generatedAt": "2026-07-24T17:01:28.052Z",
+  "mode": "preflight",
+  "batchSize": 20,
+  "currentBatchIndex": 0,
+  "completedBatches": [],
+  "entries": [
+    {
+      "operationKey": "book_cover:book:el poderoso sir tristan en la saga del prince valiant 1937 1971 de harold foster la apoteosis medieval de un arte contemporaneo",
+      "entityType": "book_cover",
+      "candidateKey": "book:el poderoso sir tristan en la saga del prince valiant 1937 1971 de harold foster la apoteosis medieval de un arte contemporaneo",
+      "targetId": "27e4583b-abcd-44b1-b21f-062edd24a09e",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_portada-10.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:esferas temporales aforismos meditaciones y otros escritos breve recopilacion",
+      "entityType": "book_cover",
+      "candidateKey": "book:esferas temporales aforismos meditaciones y otros escritos breve recopilacion",
+      "targetId": "51c360f7-640c-4abe-8701-72b4868a97b0",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_EsferasPortada003.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:inteligencia artificial en educacion fisica",
+      "entityType": "book_cover",
+      "candidateKey": "book:inteligencia artificial en educacion fisica",
+      "targetId": "0f0cf26d-10f9-402f-a47f-65787417df8b",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:una inolvidable noche de futbol en la pared",
+      "entityType": "book_cover",
+      "candidateKey": "book:una inolvidable noche de futbol en la pared",
+      "targetId": "7485710e-a383-47df-854b-7b9280d91f0b",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_InolvidablePortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:voces del alma el arte de escuchar a traves del tarot",
+      "entityType": "book_cover",
+      "candidateKey": "book:voces del alma el arte de escuchar a traves del tarot",
+      "targetId": "972af837-ad34-489b-9056-6460a7971d1f",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:quieres o debes ser feliz darse cuenta de aquello que nos impide ser felices es el primer paso para ser mas feliz",
+      "entityType": "book_cover",
+      "candidateKey": "book:quieres o debes ser feliz darse cuenta de aquello que nos impide ser felices es el primer paso para ser mas feliz",
+      "targetId": "9d1729af-9c63-41ac-bc94-0157501d9eea",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_FelizPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:going my way en 40 poemas",
+      "entityType": "book_cover",
+      "candidateKey": "book:going my way en 40 poemas",
+      "targetId": "3fa40717-e517-405a-9421-9c8bd0a50795",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:al final de la escapada memoria personal 1951 2011",
+      "entityType": "book_cover",
+      "candidateKey": "book:al final de la escapada memoria personal 1951 2011",
+      "targetId": "f927689d-4770-4acf-ad5c-79139efa5cb0",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_AlFinalPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:al otro lado del rio",
+      "entityType": "book_cover",
+      "candidateKey": "book:al otro lado del rio",
+      "targetId": "f92930c9-ee59-48be-a0a1-2839d1a88508",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_RioPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:alma en llamas",
+      "entityType": "book_cover",
+      "candidateKey": "book:alma en llamas",
+      "targetId": "cf5b4c7a-3c4d-4968-9ea7-44116e00064d",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_EnLlamasPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:amar a fondo perdido y la decision",
+      "entityType": "book_cover",
+      "candidateKey": "book:amar a fondo perdido y la decision",
+      "targetId": "2134c104-ee7f-44b0-ac4d-78dd10ec6a72",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:amaremos en libertad",
+      "entityType": "book_cover",
+      "candidateKey": "book:amaremos en libertad",
+      "targetId": "2c779f2f-3e7d-41ba-8d0a-252fa73c57fa",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_AmaremosPortada002.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:analisis de errores morfosintacticos en un aula de espanol le el caso del grupo de estudiantes del nivel b2 de secundaria en guinea ecuatorial al expresarse por escrito en espanol",
+      "entityType": "book_cover",
+      "candidateKey": "book:analisis de errores morfosintacticos en un aula de espanol le el caso del grupo de estudiantes del nivel b2 de secundaria en guinea ecuatorial al expresarse por escrito en espanol",
+      "targetId": "b08a5b59-1469-45fe-a0d7-04325e6571aa",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_portadaWEB-3.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "editorial-manual"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:apuesta personal",
+      "entityType": "book_cover",
+      "candidateKey": "book:apuesta personal",
+      "targetId": "27cf7c5a-aa15-425c-90d2-7eda7b5ded5d",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_InakiPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:banquero de carlos v a emilio botin",
+      "entityType": "book_cover",
+      "candidateKey": "book:banquero de carlos v a emilio botin",
+      "targetId": "7b19e1af-f059-41de-a46c-e5a17cd6047b",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_Banquero_AlonsoC.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:beretricce el palacio velado",
+      "entityType": "book_cover",
+      "candidateKey": "book:beretricce el palacio velado",
+      "targetId": "103eee13-702b-4eaf-a565-2f95fe517928",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_BerectriccePortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:biodiversidad sostenibilidad supervivencia e inmortalidad",
+      "entityType": "book_cover",
+      "candidateKey": "book:biodiversidad sostenibilidad supervivencia e inmortalidad",
+      "targetId": "a41dabfd-3135-4da1-912f-2bfbec3449a9",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_BiodervisidadPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:con su permiso don alvaro historias de viso del marques",
+      "entityType": "book_cover",
+      "candidateKey": "book:con su permiso don alvaro historias de viso del marques",
+      "targetId": "61beace7-147e-4937-9c34-19e60e5a842d",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:cuando su mirada pasaba por halley",
+      "entityType": "book_cover",
+      "candidateKey": "book:cuando su mirada pasaba por halley",
+      "targetId": "455a3eee-51e6-465a-8b53-b655db86f1b1",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:cuentos para amara la nieve y amara toca el tambor",
+      "entityType": "book_cover",
+      "candidateKey": "book:cuentos para amara la nieve y amara toca el tambor",
+      "targetId": "b0bba485-e01e-4cdb-a5ba-2f4d0e1a92c9",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/Libro_CUENTOS-PARA-AMARA-La-Nieve-–-Amara-toca-el-tambor_Autor_Francisco-Marin-Vargas_Genero-YBCS-Editorial-la-Rueca.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "editorial-manual"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:cuentos para amara dona bota la burbuja de mar",
+      "entityType": "book_cover",
+      "candidateKey": "book:cuentos para amara dona bota la burbuja de mar",
+      "targetId": "faa16674-87fb-45e1-8e54-cd6bcbca0aaa",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_portadaDonaBota.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "editorial-manual"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:de barro y silencio",
+      "entityType": "book_cover",
+      "candidateKey": "book:de barro y silencio",
+      "targetId": "827f19b1-9972-481d-b44e-4fef7407e4cc",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_BarroPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:de estrellas gaviotas y poemas",
+      "entityType": "book_cover",
+      "candidateKey": "book:de estrellas gaviotas y poemas",
+      "targetId": "4e2bb503-7e1f-4903-90d9-8288d358d44b",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:de juan a juan el musical el libreto y un relato",
+      "entityType": "book_cover",
+      "candidateKey": "book:de juan a juan el musical el libreto y un relato",
+      "targetId": "a0d75d6c-0357-41d4-a0bd-cdaf02d175f1",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/PortadaJuanAJuan.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "editorial-manual"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:de kolpino a krasny bor",
+      "entityType": "book_cover",
+      "candidateKey": "book:de kolpino a krasny bor",
+      "targetId": "0f73fb8f-28d2-4d98-a007-e1c766821c1f",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:de los rollos del mar muerto a los de rodrigo de lares tomo 2",
+      "entityType": "book_cover",
+      "candidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares tomo 2",
+      "targetId": "31fd2c86-c52f-46e6-a6ea-7f0d928a09cf",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/ww_portada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "editorial-manual"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:de los rollos del mar muerto a los de rodrigo de lares una narracion audaz para un lector mas inteligente que lerdo belmonte ano 2017 al 2022 libro 1",
+      "entityType": "book_cover",
+      "candidateKey": "book:de los rollos del mar muerto a los de rodrigo de lares una narracion audaz para un lector mas inteligente que lerdo belmonte ano 2017 al 2022 libro 1",
+      "targetId": "b071dfa2-2897-46d2-a4db-83c4be957e15",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/W_MarMuertoPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:de origine nostra fatum nostrum",
+      "entityType": "book_cover",
+      "candidateKey": "book:de origine nostra fatum nostrum",
+      "targetId": "83ba4193-bc3d-439e-b2de-7468f4bcceb9",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_Portada-6.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:detras de la corteza",
+      "entityType": "book_cover",
+      "candidateKey": "book:detras de la corteza",
+      "targetId": "39e265c9-bddb-4c6e-a36a-cddb7245de07",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_CortezaPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:diario de un comunero",
+      "entityType": "book_cover",
+      "candidateKey": "book:diario de un comunero",
+      "targetId": "164d7dc4-c635-43fe-bd5d-4a8daea0a811",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_Portada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:duns scoto versus tomas de aquino la debilidad del neocalcedonismo tomista",
+      "entityType": "book_cover",
+      "candidateKey": "book:duns scoto versus tomas de aquino la debilidad del neocalcedonismo tomista",
+      "targetId": "f2808d7c-2661-4e51-b25c-34e3f4e088b5",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_DunsScotoPortada002.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:el camino del angel la realidad de un sueno",
+      "entityType": "book_cover",
+      "candidateKey": "book:el camino del angel la realidad de un sueno",
+      "targetId": "e4253bec-8af0-434f-a60c-de70aa9db72f",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/W_PortadaCaminoDelAngel.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:el canto de las raices cartografias del ser y existir",
+      "entityType": "book_cover",
+      "candidateKey": "book:el canto de las raices cartografias del ser y existir",
+      "targetId": "dbf11469-8875-4b9e-bd42-55a496595d1b",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_portada_ElCantoWeb.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:el cierzo tatuado",
+      "entityType": "book_cover",
+      "candidateKey": "book:el cierzo tatuado",
+      "targetId": "a968a939-cbe1-4bb0-89b5-eea252069f5b",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_CierzoPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "editorial-manual"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:el delgado hilo de la vida",
+      "entityType": "book_cover",
+      "candidateKey": "book:el delgado hilo de la vida",
+      "targetId": "c46d6fe2-36ec-4b50-86fc-74160d45678a",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:el joven fenix el resurgir de los dioses egipcios",
+      "entityType": "book_cover",
+      "candidateKey": "book:el joven fenix el resurgir de los dioses egipcios",
+      "targetId": "89e1ae48-674e-4829-88dd-d547d0813e4d",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:el maestro de salamanca consideracion del derecho internacional humanitario",
+      "entityType": "book_cover",
+      "candidateKey": "book:el maestro de salamanca consideracion del derecho internacional humanitario",
+      "targetId": "4aee27f2-ac84-483d-a5d4-959c3d50696c",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_2portada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:el panuelo de marino",
+      "entityType": "book_cover",
+      "candidateKey": "book:el panuelo de marino",
+      "targetId": "ce87380a-26c9-4e04-bca3-3526e5f8653f",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_PanueloPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:el perfume de las emociones",
+      "entityType": "book_cover",
+      "candidateKey": "book:el perfume de las emociones",
+      "targetId": "01d57dbc-dd37-435e-8020-7d78ae11f072",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_PerfumePortada002.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:el poder de la educacion nos hace infinitos",
+      "entityType": "book_cover",
+      "candidateKey": "book:el poder de la educacion nos hace infinitos",
+      "targetId": "360b3f6f-ce31-4021-add3-ad58b8c378e9",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:el poder de la magia de la comunicacion",
+      "entityType": "book_cover",
+      "candidateKey": "book:el poder de la magia de la comunicacion",
+      "targetId": "db4dbb57-b76b-4150-9c57-7645d469f828",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_InakiDominPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:el rol principal de una pelicula llamada vida",
+      "entityType": "book_cover",
+      "candidateKey": "book:el rol principal de una pelicula llamada vida",
+      "targetId": "4886defe-fb01-402c-8fa0-565834e22622",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_peliculaPortadapeq.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:el rumor de la marea",
+      "entityType": "book_cover",
+      "candidateKey": "book:el rumor de la marea",
+      "targetId": "32b86cbc-3dca-4012-a5b3-74a4b188ba87",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_RumordelaMareaPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:el valle de cristal",
+      "entityType": "book_cover",
+      "candidateKey": "book:el valle de cristal",
+      "targetId": "38f4596b-3c42-42cb-b453-a02834e050c7",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:el viaje aventurero de nico",
+      "entityType": "book_cover",
+      "candidateKey": "book:el viaje aventurero de nico",
+      "targetId": "645eda2f-9ba7-4af6-9721-5e210f3dbbfb",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_NicosPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:en la recta final",
+      "entityType": "book_cover",
+      "candidateKey": "book:en la recta final",
+      "targetId": "214c9f1c-c4c0-4bbc-be09-bcec590845d3",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_RectaFinalPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:encuentros campezanos",
+      "entityType": "book_cover",
+      "candidateKey": "book:encuentros campezanos",
+      "targetId": "94cd5d6d-5f1c-435c-af73-b0c62e36631f",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:entre realidades y suenos",
+      "entityType": "book_cover",
+      "candidateKey": "book:entre realidades y suenos",
+      "targetId": "30778e49-f894-4859-b789-72571d7ed755",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_EntreRealidadesPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:estampas de un pueblo andaluz 1960 1974",
+      "entityType": "book_cover",
+      "candidateKey": "book:estampas de un pueblo andaluz 1960 1974",
+      "targetId": "ae82d37b-5bbf-4bef-9d98-26e1a9b13c10",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:estrategias educativas a traves del teatro musical experiencias y propuesta metodologica del taller de musicales volumen 1 seleccion de titulos para el aula analisis cinematografico y escenico",
+      "entityType": "book_cover",
+      "candidateKey": "book:estrategias educativas a traves del teatro musical experiencias y propuesta metodologica del taller de musicales volumen 1 seleccion de titulos para el aula analisis cinematografico y escenico",
+      "targetId": "fb2ddb8c-1a06-4e14-be71-a38e29dd6c7e",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:evocacion y sucesos de dolores la tuerta una historia del mundo rural",
+      "entityType": "book_cover",
+      "candidateKey": "book:evocacion y sucesos de dolores la tuerta una historia del mundo rural",
+      "targetId": "b60b9ae0-9503-4669-9204-56e355268851",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_portadaDoloresTuerta.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:falsas esperanzas",
+      "entityType": "book_cover",
+      "candidateKey": "book:falsas esperanzas",
+      "targetId": "20aa60ba-37a3-4471-870a-44ba0e5e710c",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_GuemesPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "editorial-manual"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:haikus en el camino",
+      "entityType": "book_cover",
+      "candidateKey": "book:haikus en el camino",
+      "targetId": "99341113-c9bb-477c-b58f-a5fd9396c5ff",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_HaikusPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "editorial-manual"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:humor y prosa de un ajedrecista",
+      "entityType": "book_cover",
+      "candidateKey": "book:humor y prosa de un ajedrecista",
+      "targetId": "1ea85fc8-bdf1-4cb5-a21f-127e6fbcae82",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:humor prosa y una jugadora",
+      "entityType": "book_cover",
+      "candidateKey": "book:humor prosa y una jugadora",
+      "targetId": "879fc3c9-07bb-416f-ae16-54334846259a",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_cub_Humor.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:ilogica proposicional aforemas y poerismos",
+      "entityType": "book_cover",
+      "candidateKey": "book:ilogica proposicional aforemas y poerismos",
+      "targetId": "c6d9c892-c544-4353-a595-b339925a9487",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_Ilogica.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:john main apatheia nirvana",
+      "entityType": "book_cover",
+      "candidateKey": "book:john main apatheia nirvana",
+      "targetId": "9c46c4fe-5faa-41d0-85ee-388b4e36fcb9",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_JohnMain.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:la barca del portugues",
+      "entityType": "book_cover",
+      "candidateKey": "book:la barca del portugues",
+      "targetId": "c522b4fe-2fc1-4d3e-b416-303d5eb16230",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_BarcaPortuPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:la canteria en moralzarzal",
+      "entityType": "book_cover",
+      "candidateKey": "book:la canteria en moralzarzal",
+      "targetId": "fb54520a-be2e-4f51-a5f9-81cb8d3c4cff",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:la flor malva",
+      "entityType": "book_cover",
+      "candidateKey": "book:la flor malva",
+      "targetId": "0c831f58-ccc3-4eeb-887d-75858d816d3e",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_MalvaPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:la ganaderia en moralzarzal",
+      "entityType": "book_cover",
+      "candidateKey": "book:la ganaderia en moralzarzal",
+      "targetId": "86dec774-4493-4d06-8678-1792449b24cd",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_Ganaderia.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:la inteligencia artificial en educacion fisica",
+      "entityType": "book_cover",
+      "candidateKey": "book:la inteligencia artificial en educacion fisica",
+      "targetId": "44d72766-6ff2-4cc2-8294-487a332d097a",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_InteligenciaArtificialPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:la muerte de adonis los impunes",
+      "entityType": "book_cover",
+      "candidateKey": "book:la muerte de adonis los impunes",
+      "targetId": "8f0ca084-45f4-40d3-ae3d-68c6f24f2017",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_portada_lamuerte.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:la pulsera de la princesa yoruba",
+      "entityType": "book_cover",
+      "candidateKey": "book:la pulsera de la princesa yoruba",
+      "targetId": "9b2dc517-c083-448a-bc3f-31ceb6c67e8c",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_Pulsera.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:la sombra del azar",
+      "entityType": "book_cover",
+      "candidateKey": "book:la sombra del azar",
+      "targetId": "c9e7cb6c-d20c-463c-bd3e-5673717f12a0",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_PatxiPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:la trenza dorada y otros relatos para tiempos nuevos",
+      "entityType": "book_cover",
+      "candidateKey": "book:la trenza dorada y otros relatos para tiempos nuevos",
+      "targetId": "8ab48ce5-38a0-45a0-a5ba-0986dc3bd980",
+      "status": "manual_action_required",
+      "checkpoint": "manual_action_required",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "manual",
+        "decision": "manual",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:la vida de adonis la impunidad",
+      "entityType": "book_cover",
+      "candidateKey": "book:la vida de adonis la impunidad",
+      "targetId": "c28cab19-1937-4d2a-a871-affbc2027043",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:leeme si te atreves",
+      "entityType": "book_cover",
+      "candidateKey": "book:leeme si te atreves",
+      "targetId": "952c699c-b704-4017-aa38-d13fe292a6a1",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_LeemePortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:libero mi alma con 131 angeles",
+      "entityType": "book_cover",
+      "candidateKey": "book:libero mi alma con 131 angeles",
+      "targetId": "263cc61c-f926-4024-83f6-0ae91376339d",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/ww_portada-1.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:ligero como la brisa",
+      "entityType": "book_cover",
+      "candidateKey": "book:ligero como la brisa",
+      "targetId": "04f75410-5508-4eae-8b26-5ee96673e220",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_LigeroPortada002.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:los acorralados",
+      "entityType": "book_cover",
+      "candidateKey": "book:los acorralados",
+      "targetId": "0be6cdf5-ef96-4079-a2e0-b61d49f41563",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_AcorraladosPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:los dictadores y las mujeres adolf hitler",
+      "entityType": "book_cover",
+      "candidateKey": "book:los dictadores y las mujeres adolf hitler",
+      "targetId": "6258fbb4-2f6f-452e-bd6b-87e6fffe4617",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_DictadoresPortada1.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:los mejores cortos de gomez rosas cualquier parecido con la realidad es pura coincidencia",
+      "entityType": "book_cover",
+      "candidateKey": "book:los mejores cortos de gomez rosas cualquier parecido con la realidad es pura coincidencia",
+      "targetId": "30bce206-8471-485c-a53e-fab3ee96e096",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/ww_Portada-4.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:los pensamientos olvidados",
+      "entityType": "book_cover",
+      "candidateKey": "book:los pensamientos olvidados",
+      "targetId": "a2cfc5a2-adcf-4515-9c12-c07cfbcddada",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/W_Pensamientos.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:mariposas en el jardin",
+      "entityType": "book_cover",
+      "candidateKey": "book:mariposas en el jardin",
+      "targetId": "904f1d9c-e983-4e2c-b380-d10b930f06ba",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:metodo sah g maes 36 caminos de curacion para la mente el cuerpo y el espiritual",
+      "entityType": "book_cover",
+      "candidateKey": "book:metodo sah g maes 36 caminos de curacion para la mente el cuerpo y el espiritual",
+      "targetId": "35916c85-e7e4-46cf-af95-62cef32efd32",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_portadaMalva.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:monedas del corazon",
+      "entityType": "book_cover",
+      "candidateKey": "book:monedas del corazon",
+      "targetId": "9d9a3e5a-0988-4147-a77c-22deddada16a",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_portadaOKpequena.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:ndong el jubilado",
+      "entityType": "book_cover",
+      "candidateKey": "book:ndong el jubilado",
+      "targetId": "87c74e33-c410-4341-8727-8107061d3ed3",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_portada150x210.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:nido de barro haikus",
+      "entityType": "book_cover",
+      "candidateKey": "book:nido de barro haikus",
+      "targetId": "0df5c336-7c28-43bf-894f-b4485cf10d57",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:no te vi venir pues jamas te hubiese dejado entrar",
+      "entityType": "book_cover",
+      "candidateKey": "book:no te vi venir pues jamas te hubiese dejado entrar",
+      "targetId": "43c0a54a-2778-499c-bb0e-d55d0ebf9f6f",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:oraculo de la fe el camino del alma",
+      "entityType": "book_cover",
+      "candidateKey": "book:oraculo de la fe el camino del alma",
+      "targetId": "0d54887c-eb82-4bb1-895f-249c56f3b390",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_portadaWeb-1.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:perdoname por los poemas que te escribi",
+      "entityType": "book_cover",
+      "candidateKey": "book:perdoname por los poemas que te escribi",
+      "targetId": "6532871c-34ab-447a-b37a-8d643df0eca0",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_PerdonamePortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:placa blanca dignidad sobre el pecho",
+      "entityType": "book_cover",
+      "candidateKey": "book:placa blanca dignidad sobre el pecho",
+      "targetId": "f05870f1-59b2-46b3-99e3-e28fec17c452",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_PlacaBlancaPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:poesia y whisky",
+      "entityType": "book_cover",
+      "candidateKey": "book:poesia y whisky",
+      "targetId": "502ba7c2-55c9-404f-beb1-6ec1344ef76d",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_EnLlamasPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:pollos en la memoria",
+      "entityType": "book_cover",
+      "candidateKey": "book:pollos en la memoria",
+      "targetId": "cda49362-8eee-45a8-bf0d-b6f608c41784",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_POLLOS_maq2_portada_OK2_sinmarcas.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:prestoses xaranes de folixes y xordes nel conceyu de mieres",
+      "entityType": "book_cover",
+      "candidateKey": "book:prestoses xaranes de folixes y xordes nel conceyu de mieres",
+      "targetId": "6ea16fdf-14ff-4c00-aef3-2cdd17e66952",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_ConchaPortada002.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "editorial-manual"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:quedamos para despedirnos pero ella no lo sabia pensamientos en un pequeno relato sobre la amistad",
+      "entityType": "book_cover",
+      "candidateKey": "book:quedamos para despedirnos pero ella no lo sabia pensamientos en un pequeno relato sobre la amistad",
+      "targetId": "c767c2cb-50f7-4583-9fcb-8a29a24b62c7",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_quedamosPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:quiero estar contigo",
+      "entityType": "book_cover",
+      "candidateKey": "book:quiero estar contigo",
+      "targetId": "d2dc47a0-5645-4e23-8c44-d969b3f0b57d",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_EstarContigoPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:relatos de agua dulce",
+      "entityType": "book_cover",
+      "candidateKey": "book:relatos de agua dulce",
+      "targetId": "fbb1062f-1043-4ed4-99ec-463e21bad9c9",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:requiem por un escritor desconocido",
+      "entityType": "book_cover",
+      "candidateKey": "book:requiem por un escritor desconocido",
+      "targetId": "11f50eec-ca48-47c5-8d61-38bd573554ba",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:rodrigo se fue a otro lugar",
+      "entityType": "book_cover",
+      "candidateKey": "book:rodrigo se fue a otro lugar",
+      "targetId": "85393434-7382-41e2-8afd-e77294a585fe",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:santa cruz de posguerra conversaciones en blanco y negro",
+      "entityType": "book_cover",
+      "candidateKey": "book:santa cruz de posguerra conversaciones en blanco y negro",
+      "targetId": "d14f1024-1120-418f-b42e-9c10bcb1ebef",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:sus ojos hablaron",
+      "entityType": "book_cover",
+      "candidateKey": "book:sus ojos hablaron",
+      "targetId": "546f7df4-e99c-4dda-b024-0e2628171fb5",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/W_OjosPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "editorial-manual"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:sutiles percepciones de una realidad",
+      "entityType": "book_cover",
+      "candidateKey": "book:sutiles percepciones de una realidad",
+      "targetId": "ae5ccaec-efda-4141-a741-f1521f5f34fe",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_RosarioPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:teoria metaforica del bestiaro romanico proposito revolucionario la educacion sexual",
+      "entityType": "book_cover",
+      "candidateKey": "book:teoria metaforica del bestiaro romanico proposito revolucionario la educacion sexual",
+      "targetId": "b95bf178-49fc-40bd-b89a-2e69459530ba",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:thailandia el viaje que cambio el rumbo de mi vida como inverti los obstaculos y mis limitaciones en valores gracias a mi experiencia de vida y al coaching",
+      "entityType": "book_cover",
+      "candidateKey": "book:thailandia el viaje que cambio el rumbo de mi vida como inverti los obstaculos y mis limitaciones en valores gracias a mi experiencia de vida y al coaching",
+      "targetId": "62b595c0-f111-454e-9f48-3260654f6a58",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_PortadaCoaching.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:tiendas y abastos en moralzarzal",
+      "entityType": "book_cover",
+      "candidateKey": "book:tiendas y abastos en moralzarzal",
+      "targetId": "1ec77d12-c1b8-45eb-9e1c-820ed23bee9f",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_Tiendas_Zarate.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:tratado de la ausencia y otros relatos",
+      "entityType": "book_cover",
+      "candidateKey": "book:tratado de la ausencia y otros relatos",
+      "targetId": "cb1ed6d0-9af8-453b-8942-b6ae6ebc3421",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_AusenciaPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:un ameno curso introductorio a la ecologia humana",
+      "entityType": "book_cover",
+      "candidateKey": "book:un ameno curso introductorio a la ecologia humana",
+      "targetId": "75204dae-f65b-4be1-81b9-f43b6c793ed2",
+      "status": "skipped",
+      "checkpoint": "skipped",
+      "sourceUrl": null,
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "rejected",
+        "decision": "rejected",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:un siglo de ferrocarril en ecija memorias del marchenilla",
+      "entityType": "book_cover",
+      "candidateKey": "book:un siglo de ferrocarril en ecija memorias del marchenilla",
+      "targetId": "e1e0eae1-d236-4a6a-bc83-5e4d614e7258",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_978-84-18924-63-7Cub.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "editorial-manual"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:versos de madrugada con sentido",
+      "entityType": "book_cover",
+      "candidateKey": "book:versos de madrugada con sentido",
+      "targetId": "3621fc29-b894-4a5d-ad73-3a663eae467e",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w2_Versos-de-madrugada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:y la vida sigue",
+      "entityType": "book_cover",
+      "candidateKey": "book:y la vida sigue",
+      "targetId": "028d19a9-5e53-42df-be6a-2d614f7f6a7f",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_LaVidaPortada.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "book_cover:book:yoga volumen 1 2 3 4 5 evolucion integral y evolucion universal",
+      "entityType": "book_cover",
+      "candidateKey": "book:yoga volumen 1 2 3 4 5 evolucion integral y evolucion universal",
+      "targetId": "d6911847-50ca-4ff8-9cf3-558c9f7f5b82",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/Libro-Yoga-–-Volumen-5-–-Evolucion-integral-Y-evolucion-universal-–-Naturalmente-meditando-Miguel-Gomez-Aregana.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "editorial-review",
+        "category": "approved_book_cover",
+        "decision": "approved",
+        "selectionSource": "algorithm"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:568",
+      "entityType": "author_photo",
+      "candidateKey": "author:568",
+      "targetId": "2b2e2a57-7f74-4e40-990f-488f220dda38",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/JaimeCaba.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:628",
+      "entityType": "author_photo",
+      "candidateKey": "author:628",
+      "targetId": "90ab8837-3864-4fe3-8a4b-b6f0d6a89e55",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/Loli-Castellon.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:637",
+      "entityType": "author_photo",
+      "candidateKey": "author:637",
+      "targetId": "f9cd949c-bddb-47ee-8215-a99993e13a97",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:652",
+      "entityType": "author_photo",
+      "candidateKey": "author:652",
+      "targetId": "d94280e4-5a18-4adf-9e9f-9f727e6ae7ec",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/TeodoroRodriguez.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:657",
+      "entityType": "author_photo",
+      "candidateKey": "author:657",
+      "targetId": "ca012acb-89aa-4709-84b5-be0d7e5c45ac",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/MartaSusanaPecaric.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:663",
+      "entityType": "author_photo",
+      "candidateKey": "author:663",
+      "targetId": "1ae9b8a0-bcea-476d-98b5-864165874efe",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:710",
+      "entityType": "author_photo",
+      "candidateKey": "author:710",
+      "targetId": "a6b000b5-007f-4ea7-a7a3-7df42235cb7a",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/Antonio-Zarate.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:724",
+      "entityType": "author_photo",
+      "candidateKey": "author:724",
+      "targetId": "0f994897-5c2a-40d9-b3de-ba3ad4ff4dc2",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_Teodoro.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:747",
+      "entityType": "author_photo",
+      "candidateKey": "author:747",
+      "targetId": "8cc22564-0351-408e-a140-73784e3d8132",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAlejandroGonzalez.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "technical_retry",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:751",
+      "entityType": "author_photo",
+      "candidateKey": "author:751",
+      "targetId": "98bcde63-6331-4fe3-af2b-d24e52e3dddc",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_Sara-Ramiro_El-Remanso.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:772",
+      "entityType": "author_photo",
+      "candidateKey": "author:772",
+      "targetId": "d3cca9e4-cde8-4b56-9078-4a7b26b28edd",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/RicharPazos.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:778",
+      "entityType": "author_photo",
+      "candidateKey": "author:778",
+      "targetId": "ce17d36e-0cfa-4b1a-9ece-ccac0086c44b",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/JorgeGonzalez.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:793",
+      "entityType": "author_photo",
+      "candidateKey": "author:793",
+      "targetId": "a69b0693-8769-4522-88c3-0cbd184da17c",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/Tamara.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:819",
+      "entityType": "author_photo",
+      "candidateKey": "author:819",
+      "targetId": "b90554ef-761a-4260-9b74-9db0b5732b37",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/W_Juan-Jose-Velasco-S.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:879",
+      "entityType": "author_photo",
+      "candidateKey": "author:879",
+      "targetId": "bbb7e265-d850-4ab0-9ad8-71bbe65c9339",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/FotoSantiagoBalmaseda.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "technical_retry",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:915",
+      "entityType": "author_photo",
+      "candidateKey": "author:915",
+      "targetId": "f2ec3f2b-7fcf-40a1-85a6-b856958e1ad3",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_juan5.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:969",
+      "entityType": "author_photo",
+      "candidateKey": "author:969",
+      "targetId": "fc5d3321-92e3-48b0-8439-68ff950d8407",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_Juana-Hdez-Conesa.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1040",
+      "entityType": "author_photo",
+      "candidateKey": "author:1040",
+      "targetId": "62b500f9-08aa-45b2-985c-8b092d09550e",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/W_Julio.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1052",
+      "entityType": "author_photo",
+      "candidateKey": "author:1052",
+      "targetId": "b5bb386a-1a9a-462a-a87a-9b7e5e91afad",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_RicardoRodriguez.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1121",
+      "entityType": "author_photo",
+      "candidateKey": "author:1121",
+      "targetId": "5a8b1b18-33a5-464f-92e9-1d5470ebd80c",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_Loli-Castellon.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1136",
+      "entityType": "author_photo",
+      "candidateKey": "author:1136",
+      "targetId": "5c3852a7-6573-4db4-8305-f4857e0f4637",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-1.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "technical_retry",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1367",
+      "entityType": "author_photo",
+      "candidateKey": "author:1367",
+      "targetId": "d6d4dbf1-d0cc-4be8-9d7a-e006410b3ced",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_AndresYAnaCon_su_permiso_don_alvaro.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1382",
+      "entityType": "author_photo",
+      "candidateKey": "author:1382",
+      "targetId": "a1f4312c-80f6-4ec7-8fbb-c475cf1f331a",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_CarmenPinguillen-1.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1454",
+      "entityType": "author_photo",
+      "candidateKey": "author:1454",
+      "targetId": "05907148-dfda-4729-8aec-b20ad371f6f6",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/Daniela-Corao.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1457",
+      "entityType": "author_photo",
+      "candidateKey": "author:1457",
+      "targetId": "da5f6bf3-9efc-49bf-a9ac-6c58d64cdb36",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/W_Juan-Jose-Velasco-S-1.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1560",
+      "entityType": "author_photo",
+      "candidateKey": "author:1560",
+      "targetId": "722e3bbb-b84e-41d2-9ed9-bd3504045c04",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_guillermo.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1633",
+      "entityType": "author_photo",
+      "candidateKey": "author:1633",
+      "targetId": "29b2d149-ff22-40dc-b64a-a2cbb2762547",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_Malva.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1681",
+      "entityType": "author_photo",
+      "candidateKey": "author:1681",
+      "targetId": "438c96f0-1096-4403-8dae-2ac45fefba54",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAutor.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "technical_retry",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1712",
+      "entityType": "author_photo",
+      "candidateKey": "author:1712",
+      "targetId": "41be7a29-44d6-4f30-9508-4367a489f8e7",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/foto1.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1730",
+      "entityType": "author_photo",
+      "candidateKey": "author:1730",
+      "targetId": "de9fd0e9-8f5f-46ba-a68b-f00c65b79f93",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAutor-2.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1744",
+      "entityType": "author_photo",
+      "candidateKey": "author:1744",
+      "targetId": "a680926b-288d-4aae-b9b0-42a126291bf1",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/FotoElenaMiramontes.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1750",
+      "entityType": "author_photo",
+      "candidateKey": "author:1750",
+      "targetId": "72ef42d9-6289-43c4-8daf-46905820f074",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-3.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1780",
+      "entityType": "author_photo",
+      "candidateKey": "author:1780",
+      "targetId": "30216d1f-08bb-4fd9-a285-36d3e87e891a",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-4.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1787",
+      "entityType": "author_photo",
+      "candidateKey": "author:1787",
+      "targetId": "299c8a92-1372-4dd5-8a49-4a6141a2db9c",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoMarina.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1798",
+      "entityType": "author_photo",
+      "candidateKey": "author:1798",
+      "targetId": "df56ed12-1b7b-4bb5-9c89-f2a9b4bacd02",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoManuel-2.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1821",
+      "entityType": "author_photo",
+      "candidateKey": "author:1821",
+      "targetId": "36c3668a-b7ce-4f89-8765-72ce45b14ce4",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_JoseHerruzo.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1834",
+      "entityType": "author_photo",
+      "candidateKey": "author:1834",
+      "targetId": "3d548b55-cc98-4891-8d04-4597cca2afa9",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/2w_JoseVteCarmona.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1851",
+      "entityType": "author_photo",
+      "candidateKey": "author:1851",
+      "targetId": "abd1d15c-4c42-4f26-b11e-eea312283452",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_fotoPiero-1.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1858",
+      "entityType": "author_photo",
+      "candidateKey": "author:1858",
+      "targetId": "d77c0c68-3c5c-4b4f-8dd5-ec8b0ff8ee6b",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoAutor_Alonso.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1863",
+      "entityType": "author_photo",
+      "candidateKey": "author:1863",
+      "targetId": "1d59a6bf-bc45-4fb1-ab5c-beaea7cf988d",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-5.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1866",
+      "entityType": "author_photo",
+      "candidateKey": "author:1866",
+      "targetId": "bf6ac9aa-bc0a-4e09-bafb-45a38c8384da",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_fotoAutora-1.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1881",
+      "entityType": "author_photo",
+      "candidateKey": "author:1881",
+      "targetId": "4e026da7-f7c6-442c-b657-9b270a702cee",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-2.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1893",
+      "entityType": "author_photo",
+      "candidateKey": "author:1893",
+      "targetId": "2cc7a424-44d1-4f93-840f-7070935853f4",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w2_Olmedo.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1902",
+      "entityType": "author_photo",
+      "candidateKey": "author:1902",
+      "targetId": "74f94358-25ff-4681-a009-3d4086531a0f",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w2_ManuelOndo.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1917",
+      "entityType": "author_photo",
+      "candidateKey": "author:1917",
+      "targetId": "a9596106-6638-4f4c-912c-ef431811741d",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/FOTO-BIOGRAFIA-TESIS-1.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1932",
+      "entityType": "author_photo",
+      "candidateKey": "author:1932",
+      "targetId": "3a50a950-7243-4b65-96bb-f058ee1f78db",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w2_Breijo.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1947",
+      "entityType": "author_photo",
+      "candidateKey": "author:1947",
+      "targetId": "27d2a262-938a-4e74-a751-deb81d4c490e",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/Foto-Elga.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:1953",
+      "entityType": "author_photo",
+      "candidateKey": "author:1953",
+      "targetId": "0d21bfff-0cdb-432b-ac13-eaa7ac8f842e",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-7.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:2089",
+      "entityType": "author_photo",
+      "candidateKey": "author:2089",
+      "targetId": "2a6813aa-baf8-492b-b18c-83e49c18eb64",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_Guillermo-2.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:2232",
+      "entityType": "author_photo",
+      "candidateKey": "author:2232",
+      "targetId": "5882fe02-445b-4171-b285-3f25e04fddbe",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w2_fotoAutor-1.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:2303",
+      "entityType": "author_photo",
+      "candidateKey": "author:2303",
+      "targetId": "2cbca12f-2c7d-4d45-822a-0c16c9262ec0",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w2_fotoAutoresAEDOS.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:2346",
+      "entityType": "author_photo",
+      "candidateKey": "author:2346",
+      "targetId": "d5400984-fb1b-4b86-9613-937444cf02a0",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w2_fotoDiegoGomezCosta-copia.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:2406",
+      "entityType": "author_photo",
+      "candidateKey": "author:2406",
+      "targetId": "3c1ed264-0158-47a0-be49-ca0cd423fc0b",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/FotoGaspar-copia.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:2625",
+      "entityType": "author_photo",
+      "candidateKey": "author:2625",
+      "targetId": "3f86d2ea-2efd-4e14-954d-1fd0b8790f6c",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_fotoRosario.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:2638",
+      "entityType": "author_photo",
+      "candidateKey": "author:2638",
+      "targetId": "80b9c8ef-e440-44d8-8461-0ab01286f647",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_FotoAutora-2.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:2652",
+      "entityType": "author_photo",
+      "candidateKey": "author:2652",
+      "targetId": "ffbf5717-ff63-456a-930a-61c80ff84ec7",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/FotoGuillermo.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:2749",
+      "entityType": "author_photo",
+      "candidateKey": "author:2749",
+      "targetId": "432d5ffa-5755-45bf-8b38-fbd0a5cd9535",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/2w_JoseVteCarmona.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:2756",
+      "entityType": "author_photo",
+      "candidateKey": "author:2756",
+      "targetId": "7f7b9eb4-f706-47f9-b1f0-1d54d3403cdb",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/W_FOTOpatxi-1.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:2806",
+      "entityType": "author_photo",
+      "candidateKey": "author:2806",
+      "targetId": "7c99f6ff-4bd9-431c-9ab0-0b081d165a8e",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/w_fotoAutor-copia.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:2824",
+      "entityType": "author_photo",
+      "candidateKey": "author:2824",
+      "targetId": "6f6f5c3d-b998-4650-9ef0-50cdeede101d",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAbel.jpeg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:2855",
+      "entityType": "author_photo",
+      "candidateKey": "author:2855",
+      "targetId": "a10ad1ce-7b1b-4a1c-8e84-f60dbac69122",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/FotoMinerva.jpeg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:2860",
+      "entityType": "author_photo",
+      "candidateKey": "author:2860",
+      "targetId": "9e96feb6-d431-439a-a0d2-2c5c7d357b25",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/Foto4Minerva.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:3135",
+      "entityType": "author_photo",
+      "candidateKey": "author:3135",
+      "targetId": "c412a1bc-54da-44fb-83cf-677facbaa9c6",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/Autora-Victoria-Huelin-_Titulo-Por-lo-Pindio_Genero-DNF-ensayo-literario_Editorial-la-Rueca.jpg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    },
+    {
+      "operationKey": "author_photo:author:3153",
+      "entityType": "author_photo",
+      "candidateKey": "author:3153",
+      "targetId": "ba02d2c3-2cc2-4f81-97aa-36b0e977cb20",
+      "status": "ready",
+      "checkpoint": "planned",
+      "sourceUrl": "https://editoriallarueca.com/wp-content/uploads/FotoAutor.jpeg",
+      "storagePath": null,
+      "publicUrl": null,
+      "previousUrl": null,
+      "updatedAt": "2026-07-24T17:01:28.052Z",
+      "sourceMetadata": {
+        "source": "image-recovery-plan",
+        "category": "safe_author_photo",
+        "decision": "upload_author_photo",
+        "selectionSource": "none"
+      }
+    }
+  ]
+}

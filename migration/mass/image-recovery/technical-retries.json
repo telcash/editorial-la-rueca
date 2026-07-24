@@ -1,0 +1,247 @@
+[
+  {
+    "entityType": "author",
+    "candidateKey": "author:747",
+    "sourceWpPostId": "747",
+    "targetId": null,
+    "title": "Alejandro González García",
+    "category": "technical_retry",
+    "decision": "upload_author_photo",
+    "confidence": "high",
+    "migrationErrorCode": "DOWNLOAD_FAILED",
+    "candidate": {
+      "attachmentId": "890",
+      "url": "https://editoriallarueca.com/wp-content/uploads/FotoAlejandroGonzalez.jpg",
+      "filename": "FotoAlejandroGonzalez-scaled.jpg",
+      "title": "FotoAlejandroGonzalez",
+      "origin": "mass_apply_retry",
+      "width": 1709,
+      "height": 2560,
+      "mimeType": "image/jpeg",
+      "signals": [
+        "_thumbnail_id tiene señales de foto de autor.",
+        "cover_ratio",
+        "strong_author_photo_signal"
+      ]
+    },
+    "transform": {
+      "required": false,
+      "format": null,
+      "maxWidth": null,
+      "maxHeight": null,
+      "quality": null,
+      "correctExifOrientation": false,
+      "reason": null
+    },
+    "reasons": [
+      "Error tecnico recuperable: DOWNLOAD_FAILED",
+      "_thumbnail_id tiene señales de foto de autor."
+    ],
+    "alreadyApplied": false
+  },
+  {
+    "entityType": "author",
+    "candidateKey": "author:879",
+    "sourceWpPostId": "879",
+    "targetId": null,
+    "title": "Santiago Balmaseda Ramírez de Arellano",
+    "category": "technical_retry",
+    "decision": "upload_author_photo",
+    "confidence": "high",
+    "migrationErrorCode": "DOWNLOAD_FAILED",
+    "candidate": {
+      "attachmentId": "881",
+      "url": "https://editoriallarueca.com/wp-content/uploads/FotoSantiagoBalmaseda.jpg",
+      "filename": "FotoSantiagoBalmaseda-scaled.jpg",
+      "title": "FotoSantiagoBalmaseda",
+      "origin": "mass_apply_retry",
+      "width": 2560,
+      "height": 1920,
+      "mimeType": "image/jpeg",
+      "signals": ["_thumbnail_id tiene señales de foto de autor.", "strong_author_photo_signal"]
+    },
+    "transform": {
+      "required": false,
+      "format": null,
+      "maxWidth": null,
+      "maxHeight": null,
+      "quality": null,
+      "correctExifOrientation": false,
+      "reason": null
+    },
+    "reasons": [
+      "Error tecnico recuperable: DOWNLOAD_FAILED",
+      "_thumbnail_id tiene señales de foto de autor."
+    ],
+    "alreadyApplied": false
+  },
+  {
+    "entityType": "author",
+    "candidateKey": "author:1136",
+    "sourceWpPostId": "1136",
+    "targetId": null,
+    "title": "Guillermo Martínez Schrem",
+    "category": "technical_retry",
+    "decision": "upload_author_photo",
+    "confidence": "high",
+    "migrationErrorCode": "DOWNLOAD_FAILED",
+    "candidate": {
+      "attachmentId": "1138",
+      "url": "https://editoriallarueca.com/wp-content/uploads/w_FotoGuillermo-1.jpg",
+      "filename": "w_FotoGuillermo-1-scaled.jpg",
+      "title": "w_FotoGuillermo",
+      "origin": "mass_apply_retry",
+      "width": 1442,
+      "height": 2560,
+      "mimeType": "image/jpeg",
+      "signals": ["_thumbnail_id tiene señales de foto de autor.", "strong_author_photo_signal"]
+    },
+    "transform": {
+      "required": false,
+      "format": null,
+      "maxWidth": null,
+      "maxHeight": null,
+      "quality": null,
+      "correctExifOrientation": false,
+      "reason": null
+    },
+    "reasons": [
+      "Error tecnico recuperable: DOWNLOAD_FAILED",
+      "_thumbnail_id tiene señales de foto de autor."
+    ],
+    "alreadyApplied": false
+  },
+  {
+    "entityType": "author",
+    "candidateKey": "author:1681",
+    "sourceWpPostId": "1681",
+    "targetId": null,
+    "title": "Guillermo Martínez Schrem",
+    "category": "technical_retry",
+    "decision": "upload_author_photo",
+    "confidence": "high",
+    "migrationErrorCode": "DOWNLOAD_FAILED",
+    "candidate": {
+      "attachmentId": "1683",
+      "url": "https://editoriallarueca.com/wp-content/uploads/FotoAutor.jpg",
+      "filename": "FotoAutor-scaled.jpg",
+      "title": "FotoAutor",
+      "origin": "mass_apply_retry",
+      "width": 1442,
+      "height": 2560,
+      "mimeType": "image/jpeg",
+      "signals": ["_thumbnail_id tiene señales de foto de autor.", "strong_author_photo_signal"]
+    },
+    "transform": {
+      "required": false,
+      "format": null,
+      "maxWidth": null,
+      "maxHeight": null,
+      "quality": null,
+      "correctExifOrientation": false,
+      "reason": null
+    },
+    "reasons": [
+      "Error tecnico recuperable: DOWNLOAD_FAILED",
+      "_thumbnail_id tiene señales de foto de autor."
+    ],
+    "alreadyApplied": false
+  },
+  {
+    "entityType": "book",
+    "candidateKey": "book:daemon lilith",
+    "sourceWpPostId": "1057",
+    "targetId": null,
+    "title": " Daemon Lilith",
+    "category": "technical_retry",
+    "decision": "upload_book_cover",
+    "confidence": "high",
+    "migrationErrorCode": "DOWNLOAD_FAILED",
+    "candidate": {
+      "attachmentId": "1058",
+      "url": "https://editoriallarueca.com/wp-content/uploads/DaemonLilithMockup.png",
+      "filename": "DaemonLilithMockup-scaled.png",
+      "title": "DaemonLilithMockup",
+      "origin": "mass_apply_retry",
+      "width": 2560,
+      "height": 1708,
+      "mimeType": "image/png",
+      "signals": [
+        "filename contiene el titulo del libro",
+        "attachment title contiene el titulo del libro",
+        "slug contiene el titulo del libro",
+        "imagen horizontal o panoramica"
+      ]
+    },
+    "transform": {
+      "required": false,
+      "format": null,
+      "maxWidth": null,
+      "maxHeight": null,
+      "quality": null,
+      "correctExifOrientation": false,
+      "reason": null
+    },
+    "reasons": [
+      "Error tecnico recuperable: DOWNLOAD_FAILED",
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "imagen horizontal o panoramica"
+    ],
+    "alreadyApplied": false
+  },
+  {
+    "entityType": "book",
+    "candidateKey": "book:dias de galerna",
+    "sourceWpPostId": "1539",
+    "targetId": null,
+    "title": "Días de Galerna",
+    "category": "technical_retry",
+    "decision": "upload_book_cover",
+    "confidence": "high",
+    "migrationErrorCode": "DOWNLOAD_FAILED",
+    "candidate": {
+      "attachmentId": "3003",
+      "url": "https://editoriallarueca.com/wp-content/uploads/Libro_Dias-de-Galerna_Autor_Rodrigo-Vazquez_Genero-WT-Editorial-la-Rueca-.jpg",
+      "filename": "Libro_Dias-de-Galerna_Autor_Rodrigo-Vazquez_Genero-WT-Editorial-la-Rueca--scaled.jpg",
+      "title": "Libro_Dias de Galerna_Autor_Rodrigo Vázquez_Género (WT) Editorial la Rueca",
+      "origin": "mass_apply_retry",
+      "width": 1812,
+      "height": 2560,
+      "mimeType": "image/jpeg",
+      "signals": [
+        "filename contiene el titulo del libro",
+        "attachment title contiene el titulo del libro",
+        "slug contiene el titulo del libro",
+        "filename/title contiene señal de portada: libro",
+        "proporcion vertical compatible con portada",
+        "dimensiones razonables para cover",
+        "contiene señal de foto de autor: autor",
+        "cover_ratio",
+        "cover_signal_in_filename",
+        "strong_author_photo_signal"
+      ]
+    },
+    "transform": {
+      "required": false,
+      "format": null,
+      "maxWidth": null,
+      "maxHeight": null,
+      "quality": null,
+      "correctExifOrientation": false,
+      "reason": null
+    },
+    "reasons": [
+      "Error tecnico recuperable: DOWNLOAD_FAILED",
+      "filename contiene el titulo del libro",
+      "attachment title contiene el titulo del libro",
+      "slug contiene el titulo del libro",
+      "filename/title contiene señal de portada: libro",
+      "proporcion vertical compatible con portada",
+      "dimensiones razonables para cover",
+      "contiene señal de foto de autor: autor"
+    ],
+    "alreadyApplied": false
+  }
+]
