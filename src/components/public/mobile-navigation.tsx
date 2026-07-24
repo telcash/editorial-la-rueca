@@ -19,8 +19,6 @@ import { cn } from '@/lib/utils';
 import { PublicButton } from './public-button';
 import { publicNavigation } from './public-navigation';
 
-const mobileNavigation = [...publicNavigation, { label: 'Contacto', href: '#contacto' }];
-
 export function MobileNavigation() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
@@ -55,7 +53,7 @@ export function MobileNavigation() {
           </SheetDescription>
         </SheetHeader>
         <nav aria-label="Navegación móvil" className="flex flex-col px-3 py-4">
-          {mobileNavigation.map((item) => {
+          {publicNavigation.map((item) => {
             const isActive = item.href === '/' ? pathname === '/' : pathname.startsWith(item.href);
 
             return (
@@ -75,7 +73,7 @@ export function MobileNavigation() {
         </nav>
         <div className="mt-auto border-t border-public-border p-5">
           <SheetClose asChild>
-            <PublicButton href="#contacto" className="w-full">
+            <PublicButton href="/#contacto" className="w-full">
               Solicitar asesoría
             </PublicButton>
           </SheetClose>

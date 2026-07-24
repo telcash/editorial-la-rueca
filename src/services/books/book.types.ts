@@ -58,6 +58,13 @@ export interface BookAdminListOptions {
   pageSize: number;
 }
 
+export interface BookPublicListOptions {
+  query?: string;
+  categorySlug?: string;
+  page: number;
+  pageSize: number;
+}
+
 export interface BookRepository {
   findById(id: string): Promise<BookWithDetails | null>;
   findBySlug(slug: string): Promise<BookWithDetails | null>;
@@ -72,6 +79,15 @@ export interface BookRepository {
   findArchived(): Promise<BookWithDetails[]>;
   findPublished(): Promise<BookWithDetails[]>;
   findFeaturedPublished(): Promise<BookWithDetails[]>;
+  findPublishedPaginated(options: BookPublicListOptions): Promise<PaginatedResult<BookWithDetails>>;
+  findPublishedBySlug(slug: string): Promise<BookWithDetails | null>;
+  findPublishedByAuthorId(authorId: string, limit?: number): Promise<BookWithDetails[]>;
+  findRelatedPublishedByAuthorIds(
+    authorIds: string[],
+    excludeBookId: string,
+    limit?: number,
+  ): Promise<BookWithDetails[]>;
+  findHomeFeaturedPublished(limit?: number): Promise<BookWithDetails[]>;
   existsBySlug(slug: string, excludeId?: string): Promise<boolean>;
   existsByIsbn10(
     isbn10: string,

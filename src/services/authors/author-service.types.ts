@@ -25,6 +25,12 @@ export interface AuthorAdminListOptions {
   pageSize: number;
 }
 
+export interface AuthorPublicListOptions {
+  query?: string;
+  page: number;
+  pageSize: number;
+}
+
 export interface AuthorRepository {
   findById(id: string): Promise<Author | null>;
   findBySlug(slug: string): Promise<Author | null>;
@@ -40,6 +46,8 @@ export interface AuthorRepository {
   findActive(): Promise<Author[]>;
   findArchived(): Promise<Author[]>;
   findPublished(): Promise<Author[]>;
+  findPublishedPaginated(options: AuthorPublicListOptions): Promise<PaginatedResult<Author>>;
+  findPublishedBySlug(slug: string): Promise<Author | null>;
   countBooksByAuthorId(authorId: string): Promise<number>;
   existsBySlug(slug: string, excludeId?: string): Promise<boolean>;
   create(data: CreateAuthorInput): Promise<Author>;

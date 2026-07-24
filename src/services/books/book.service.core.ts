@@ -196,6 +196,48 @@ export function createBookService(
       return bookRepository.findFeaturedPublished();
     },
 
+    async listPublishedBooksPaginated(
+      options: Parameters<BookRepository['findPublishedPaginated']>[0],
+    ) {
+      return bookRepository.findPublishedPaginated(options);
+    },
+
+    async getPublishedBookBySlug(slug: string) {
+      const validSlug = bookSlugSchema.parse(slug);
+      const book = await bookRepository.findPublishedBySlug(validSlug);
+
+      if (!book) {
+        throw new BookNotFoundError(validSlug);
+      }
+
+      return book;
+    },
+
+    async listPublishedBooksByAuthorId(authorId: string, limit?: number) {
+      const validAuthorId = bookIdSchema.parse(authorId);
+
+      return bookRepository.findPublishedByAuthorId(validAuthorId, limit);
+    },
+
+    async listRelatedPublishedBooksByAuthorIds(
+      authorIds: string[],
+      excludeBookId: string,
+      limit?: number,
+    ) {
+      const validAuthorIds = authorIds.map((authorId) => bookIdSchema.parse(authorId));
+      const validExcludeBookId = bookIdSchema.parse(excludeBookId);
+
+      return bookRepository.findRelatedPublishedByAuthorIds(
+        validAuthorIds,
+        validExcludeBookId,
+        limit,
+      );
+    },
+
+    async listHomeFeaturedPublishedBooks(limit?: number) {
+      return bookRepository.findHomeFeaturedPublished(limit);
+    },
+
     async createBook(input: unknown) {
       const data = createBookSchema.parse(input);
       const { bookData, authorIds, categoryIds, editions } = splitCreateInput(data);

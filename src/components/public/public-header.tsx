@@ -38,7 +38,7 @@ export function PublicHeader() {
               {siteConfig.contact.phone}
             </a>
           ) : null}
-          <PublicButton href="#contacto" className="min-h-10 whitespace-nowrap rounded-full px-5">
+          <PublicButton href="/#contacto" className="min-h-10 whitespace-nowrap rounded-full px-5">
             Solicitar asesoría
           </PublicButton>
         </div>
@@ -51,7 +51,7 @@ export function PublicHeader() {
         </div>
         <div className="flex shrink-0 justify-end">
           <PublicButton
-            href="#contacto"
+            href="/#contacto"
             className="min-h-9 whitespace-nowrap rounded-lg px-2 text-[11px] sm:min-h-10 sm:px-3.5 sm:text-sm"
           >
             Solicitar asesoría

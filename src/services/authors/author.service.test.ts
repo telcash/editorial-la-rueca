@@ -58,6 +58,8 @@ function createRepositoryMock(): MockAuthorRepository {
     findActive: vi.fn<AuthorRepository['findActive']>(),
     findArchived: vi.fn<AuthorRepository['findArchived']>(),
     findPublished: vi.fn<AuthorRepository['findPublished']>(),
+    findPublishedPaginated: vi.fn<AuthorRepository['findPublishedPaginated']>(),
+    findPublishedBySlug: vi.fn<AuthorRepository['findPublishedBySlug']>(),
     countBooksByAuthorId: vi.fn<AuthorRepository['countBooksByAuthorId']>(),
     existsBySlug: vi.fn<AuthorRepository['existsBySlug']>(),
     create: vi.fn<AuthorRepository['create']>(),
@@ -186,6 +188,31 @@ describe('createAuthorService', () => {
 
     await expect(service.listPublishedAuthors()).resolves.toBe(authors);
     expect(repository.findPublished).toHaveBeenCalledOnce();
+  });
+
+  it('listPublishedAuthorsPaginated delegates to the public paginated list', async () => {
+    const result = {
+      items: [baseAuthor],
+      totalItems: 1,
+      page: 1,
+      pageSize: 12,
+      totalPages: 1,
+    };
+    const options = { query: 'ana', page: 1, pageSize: 12 };
+    repository.findPublishedPaginated.mockResolvedValue(result);
+
+    await expect(service.listPublishedAuthorsPaginated(options)).resolves.toBe(result);
+    expect(repository.findPublishedPaginated).toHaveBeenCalledWith(options);
+  });
+
+  it('getPublishedAuthorBySlug returns only public authors and throws when missing', async () => {
+    repository.findPublishedBySlug.mockResolvedValueOnce(baseAuthor).mockResolvedValueOnce(null);
+
+    await expect(service.getPublishedAuthorBySlug(' Ana__Autora ')).resolves.toBe(baseAuthor);
+    expect(repository.findPublishedBySlug).toHaveBeenCalledWith('ana-autora');
+    await expect(service.getPublishedAuthorBySlug('ana-autora')).rejects.toBeInstanceOf(
+      AuthorNotFoundError,
+    );
   });
 
   describe('createAuthor', () => {

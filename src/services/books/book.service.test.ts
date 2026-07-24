@@ -145,6 +145,11 @@ function createBookRepositoryMock(): MockBookRepository {
     findArchived: vi.fn<BookRepository['findArchived']>(),
     findPublished: vi.fn<BookRepository['findPublished']>(),
     findFeaturedPublished: vi.fn<BookRepository['findFeaturedPublished']>(),
+    findPublishedPaginated: vi.fn<BookRepository['findPublishedPaginated']>(),
+    findPublishedBySlug: vi.fn<BookRepository['findPublishedBySlug']>(),
+    findPublishedByAuthorId: vi.fn<BookRepository['findPublishedByAuthorId']>(),
+    findRelatedPublishedByAuthorIds: vi.fn<BookRepository['findRelatedPublishedByAuthorIds']>(),
+    findHomeFeaturedPublished: vi.fn<BookRepository['findHomeFeaturedPublished']>(),
     existsBySlug: vi.fn<BookRepository['existsBySlug']>(),
     existsByIsbn10: vi.fn<BookRepository['existsByIsbn10']>(),
     existsByIsbn13: vi.fn<BookRepository['existsByIsbn13']>(),
@@ -172,6 +177,8 @@ function createAuthorRepositoryMock(): MockAuthorRepository {
     findActive: vi.fn<AuthorRepository['findActive']>(),
     findArchived: vi.fn<AuthorRepository['findArchived']>(),
     findPublished: vi.fn<AuthorRepository['findPublished']>(),
+    findPublishedPaginated: vi.fn<AuthorRepository['findPublishedPaginated']>(),
+    findPublishedBySlug: vi.fn<AuthorRepository['findPublishedBySlug']>(),
     countBooksByAuthorId: vi.fn<AuthorRepository['countBooksByAuthorId']>(),
     existsBySlug: vi.fn<AuthorRepository['existsBySlug']>(),
     create: vi.fn<AuthorRepository['create']>(),
@@ -302,6 +309,73 @@ describe('createBookService', () => {
 
     await expect(service.listFeaturedPublishedBooks()).resolves.toEqual([featuredBook]);
     expect(bookRepository.findFeaturedPublished).toHaveBeenCalledOnce();
+  });
+
+  it('delegates public catalog listing to the repository', async () => {
+    const result = {
+      items: [{ ...baseBook, isPublished: true }],
+      totalItems: 1,
+      page: 1,
+      pageSize: 12,
+      totalPages: 1,
+    };
+    const options = {
+      query: 'ana',
+      categorySlug: 'narrativa',
+      page: 1,
+      pageSize: 12,
+    };
+    bookRepository.findPublishedPaginated.mockResolvedValue(result);
+
+    await expect(service.listPublishedBooksPaginated(options)).resolves.toBe(result);
+    expect(bookRepository.findPublishedPaginated).toHaveBeenCalledWith(options);
+  });
+
+  it('returns a public book by slug and rejects unpublished missing results', async () => {
+    const publishedBook = { ...baseBook, isPublished: true };
+    bookRepository.findPublishedBySlug
+      .mockResolvedValueOnce(publishedBook)
+      .mockResolvedValueOnce(null);
+
+    await expect(service.getPublishedBookBySlug(' El Jardin Perdido ')).resolves.toBe(
+      publishedBook,
+    );
+    expect(bookRepository.findPublishedBySlug).toHaveBeenCalledWith('el-jardin-perdido');
+    await expect(service.getPublishedBookBySlug('el-jardin-perdido')).rejects.toBeInstanceOf(
+      BookNotFoundError,
+    );
+  });
+
+  it('delegates public books by author preserving the author id', async () => {
+    const publishedBook = { ...baseBook, isPublished: true };
+    bookRepository.findPublishedByAuthorId.mockResolvedValue([publishedBook]);
+
+    await expect(service.listPublishedBooksByAuthorId(authorId, 6)).resolves.toEqual([
+      publishedBook,
+    ]);
+    expect(bookRepository.findPublishedByAuthorId).toHaveBeenCalledWith(authorId, 6);
+  });
+
+  it('delegates related public books by author ids', async () => {
+    const relatedBook = { ...baseBook, id: '64089830-d46b-49d4-b3d0-4a8be22f6992' };
+    bookRepository.findRelatedPublishedByAuthorIds.mockResolvedValue([relatedBook]);
+
+    await expect(
+      service.listRelatedPublishedBooksByAuthorIds([authorId, secondAuthorId], bookId, 4),
+    ).resolves.toEqual([relatedBook]);
+    expect(bookRepository.findRelatedPublishedByAuthorIds).toHaveBeenCalledWith(
+      [authorId, secondAuthorId],
+      bookId,
+      4,
+    );
+  });
+
+  it('delegates public home books to featured-first repository logic', async () => {
+    const publishedBook = { ...baseBook, isFeatured: true, isPublished: true };
+    bookRepository.findHomeFeaturedPublished.mockResolvedValue([publishedBook]);
+
+    await expect(service.listHomeFeaturedPublishedBooks(8)).resolves.toEqual([publishedBook]);
+    expect(bookRepository.findHomeFeaturedPublished).toHaveBeenCalledWith(8);
   });
 
   describe('createBook', () => {

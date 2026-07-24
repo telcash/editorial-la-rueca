@@ -118,7 +118,7 @@ export function PublicFooter() {
               Hablemos de tu proyecto y preparemos juntos el camino para que tu historia llegue más
               lejos.
             </p>
-            <PublicButton href="#contacto" className="mt-5 w-full md:w-auto">
+            <PublicButton href="/#contacto" className="mt-5 w-full md:w-auto">
               Solicitar asesoría
             </PublicButton>
           </div>

@@ -78,6 +78,23 @@ export function createAuthorService(repository: AuthorRepository) {
       return repository.findPublished();
     },
 
+    async listPublishedAuthorsPaginated(
+      options: Parameters<AuthorRepository['findPublishedPaginated']>[0],
+    ) {
+      return repository.findPublishedPaginated(options);
+    },
+
+    async getPublishedAuthorBySlug(slug: string) {
+      const validSlug = authorSlugSchema.parse(slug);
+      const author = await repository.findPublishedBySlug(validSlug);
+
+      if (!author) {
+        throw new AuthorNotFoundError(validSlug);
+      }
+
+      return author;
+    },
+
     async createAuthor(input: unknown) {
       const data: CreateAuthorInput = createAuthorSchema.parse(input);
       const slugExists = await repository.existsBySlug(data.slug);

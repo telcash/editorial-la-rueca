@@ -1,6 +1,6 @@
 import 'server-only';
 
-import { and, asc, desc, eq, ilike, inArray, ne, or, sql } from 'drizzle-orm';
+import { and, asc, desc, eq, ilike, inArray, ne, not, or, sql } from 'drizzle-orm';
 
 import { db } from '@/db';
 import {
@@ -24,6 +24,7 @@ import type {
   BookDataCreateInput,
   BookDataUpdateInput,
   BookEditionDetails,
+  BookPublicListOptions,
   BookRecentItem,
   BookRecentRow,
   BookWithDetails,
@@ -144,7 +145,10 @@ function getArchiveCondition(status: ArchiveStatus = 'active') {
   return eq(books.isArchived, status === 'archived');
 }
 
-function getBookSearchCondition(query: string | undefined) {
+function getBookSearchCondition(
+  query: string | undefined,
+  options: { includeAuthors?: boolean } = {},
+) {
   const normalizedQuery = query?.trim();
 
   if (!normalizedQuery) {
@@ -155,12 +159,15 @@ function getBookSearchCondition(query: string | undefined) {
   const pattern = `%${normalizedQuery}%`;
   const compactPattern = `%${compactQuery}%`;
 
-  return or(
+  const conditions = [
     ilike(books.title, pattern),
     ilike(books.slug, pattern),
+    options.includeAuthors ? ilike(authors.name, pattern) : undefined,
     ilike(bookEditions.isbn10, compactPattern),
     ilike(bookEditions.isbn13, compactPattern),
-  );
+  ].filter((condition) => condition !== undefined);
+
+  return or(...conditions);
 }
 
 function getBookListCondition(status: ArchiveStatus, query: string | undefined) {
@@ -169,6 +176,21 @@ function getBookListCondition(status: ArchiveStatus, query: string | undefined) 
   );
 
   return conditions.length > 0 ? and(...conditions) : undefined;
+}
+
+function getPublicBookListCondition(
+  options: Pick<BookPublicListOptions, 'query' | 'categorySlug'>,
+) {
+  const conditions = [
+    eq(books.isPublished, true),
+    eq(books.isArchived, false),
+    getBookSearchCondition(options.query, { includeAuthors: true }),
+    options.categorySlug ? eq(categories.slug, options.categorySlug) : undefined,
+    options.categorySlug ? eq(categories.isPublished, true) : undefined,
+    options.categorySlug ? eq(categories.isArchived, false) : undefined,
+  ].filter((condition) => condition !== undefined);
+
+  return and(...conditions);
 }
 
 async function findDetailsByBookIds(bookIds: string[], onlyAvailableEditions = false) {
@@ -222,6 +244,65 @@ async function findDetailsByBookIds(bookIds: string[], onlyAvailableEditions = f
   return { authorRows, categoryRows, editionRows };
 }
 
+async function findPublicDetailsByBookIds(bookIds: string[]) {
+  if (bookIds.length === 0) {
+    return {
+      authorRows: [],
+      categoryRows: [],
+      editionRows: [],
+    };
+  }
+
+  const authorRows = await db
+    .select({
+      bookId: bookAuthors.bookId,
+      id: authors.id,
+      name: authors.name,
+      slug: authors.slug,
+      photoUrl: authors.photoUrl,
+      isArchived: authors.isArchived,
+      sortOrder: bookAuthors.sortOrder,
+    })
+    .from(bookAuthors)
+    .innerJoin(authors, eq(authors.id, bookAuthors.authorId))
+    .where(
+      and(
+        inArray(bookAuthors.bookId, bookIds),
+        eq(authors.isPublished, true),
+        eq(authors.isArchived, false),
+      ),
+    )
+    .orderBy(asc(bookAuthors.bookId), asc(bookAuthors.sortOrder), asc(authors.name));
+
+  const categoryRows = await db
+    .select({
+      bookId: bookCategories.bookId,
+      id: categories.id,
+      name: categories.name,
+      slug: categories.slug,
+      isArchived: categories.isArchived,
+      sortOrder: bookCategories.sortOrder,
+    })
+    .from(bookCategories)
+    .innerJoin(categories, eq(categories.id, bookCategories.categoryId))
+    .where(
+      and(
+        inArray(bookCategories.bookId, bookIds),
+        eq(categories.isPublished, true),
+        eq(categories.isArchived, false),
+      ),
+    )
+    .orderBy(asc(bookCategories.bookId), asc(bookCategories.sortOrder), asc(categories.name));
+
+  const editionRows = await db
+    .select()
+    .from(bookEditions)
+    .where(and(inArray(bookEditions.bookId, bookIds), eq(bookEditions.isAvailable, true)))
+    .orderBy(asc(bookEditions.bookId), asc(bookEditions.sortOrder), asc(bookEditions.createdAt));
+
+  return { authorRows, categoryRows, editionRows };
+}
+
 async function findAuthorSummariesByBookIds(bookIds: string[]) {
   if (bookIds.length === 0) {
     return [];
@@ -252,6 +333,17 @@ async function findOneByBook(book: BookRow | null, onlyAvailableEditions = false
     [book.id],
     onlyAvailableEditions,
   );
+  const [bookWithDetails] = assembleBooks([book], authorRows, categoryRows, editionRows);
+
+  return bookWithDetails ?? null;
+}
+
+async function findOnePublicByBook(book: BookRow | null) {
+  if (!book) {
+    return null;
+  }
+
+  const { authorRows, categoryRows, editionRows } = await findPublicDetailsByBookIds([book.id]);
   const [bookWithDetails] = assembleBooks([book], authorRows, categoryRows, editionRows);
 
   return bookWithDetails ?? null;
@@ -316,6 +408,119 @@ export async function findAllPaginated(
     safePage,
     options.pageSize,
   );
+}
+
+export async function findPublishedPaginated(
+  options: BookPublicListOptions,
+): Promise<PaginatedResult<BookWithDetails>> {
+  const whereCondition = getPublicBookListCondition(options);
+  const [{ totalItems = 0 } = {}] = await db
+    .select({
+      totalItems: sql<number>`count(distinct ${books.id})`.mapWith(Number),
+    })
+    .from(books)
+    .leftJoin(bookEditions, eq(bookEditions.bookId, books.id))
+    .leftJoin(bookAuthors, eq(bookAuthors.bookId, books.id))
+    .leftJoin(authors, eq(authors.id, bookAuthors.authorId))
+    .leftJoin(bookCategories, eq(bookCategories.bookId, books.id))
+    .leftJoin(categories, eq(categories.id, bookCategories.categoryId))
+    .where(whereCondition);
+  const totalPages = Math.max(1, Math.ceil(totalItems / options.pageSize));
+  const safePage = Math.min(Math.max(options.page, 1), totalPages);
+  const rows = await db
+    .select({ book: books })
+    .from(books)
+    .leftJoin(bookEditions, eq(bookEditions.bookId, books.id))
+    .leftJoin(bookAuthors, eq(bookAuthors.bookId, books.id))
+    .leftJoin(authors, eq(authors.id, bookAuthors.authorId))
+    .leftJoin(bookCategories, eq(bookCategories.bookId, books.id))
+    .leftJoin(categories, eq(categories.id, bookCategories.categoryId))
+    .where(whereCondition)
+    .groupBy(books.id)
+    .orderBy(desc(books.isFeatured), asc(books.sortOrder), desc(books.createdAt), asc(books.title))
+    .limit(options.pageSize)
+    .offset(getOffset(safePage, options.pageSize));
+  const bookRows = rows.map((row) => row.book);
+  const { authorRows, categoryRows, editionRows } = await findPublicDetailsByBookIds(
+    bookRows.map((book) => book.id),
+  );
+
+  return createPaginatedResult(
+    assembleBooks(bookRows, authorRows, categoryRows, editionRows),
+    totalItems,
+    safePage,
+    options.pageSize,
+  );
+}
+
+export async function findPublishedBySlug(slug: string): Promise<BookWithDetails | null> {
+  const [book] = await db
+    .select()
+    .from(books)
+    .where(and(eq(books.slug, slug), eq(books.isPublished, true), eq(books.isArchived, false)))
+    .limit(1);
+
+  return findOnePublicByBook(book ?? null);
+}
+
+export async function findPublishedByAuthorId(
+  authorId: string,
+  limit = 12,
+): Promise<BookWithDetails[]> {
+  const safeLimit = Math.min(Math.max(Math.trunc(limit), 1), 48);
+  const rows = await db
+    .select({ book: books })
+    .from(books)
+    .innerJoin(bookAuthors, eq(bookAuthors.bookId, books.id))
+    .where(
+      and(
+        eq(bookAuthors.authorId, authorId),
+        eq(books.isPublished, true),
+        eq(books.isArchived, false),
+      ),
+    )
+    .groupBy(books.id, bookAuthors.sortOrder)
+    .orderBy(asc(books.sortOrder), desc(books.createdAt), asc(books.title))
+    .limit(safeLimit);
+  const bookRows = rows.map((row) => row.book);
+  const { authorRows, categoryRows, editionRows } = await findPublicDetailsByBookIds(
+    bookRows.map((book) => book.id),
+  );
+
+  return assembleBooks(bookRows, authorRows, categoryRows, editionRows);
+}
+
+export async function findRelatedPublishedByAuthorIds(
+  authorIds: string[],
+  excludeBookId: string,
+  limit = 4,
+): Promise<BookWithDetails[]> {
+  if (authorIds.length === 0) {
+    return [];
+  }
+
+  const safeLimit = Math.min(Math.max(Math.trunc(limit), 1), 12);
+  const rows = await db
+    .select({ book: books })
+    .from(books)
+    .innerJoin(bookAuthors, eq(bookAuthors.bookId, books.id))
+    .where(
+      and(
+        inArray(bookAuthors.authorId, authorIds),
+        ne(books.id, excludeBookId),
+        eq(books.isPublished, true),
+        eq(books.isArchived, false),
+      ),
+    )
+    .groupBy(books.id)
+    .orderBy(desc(books.isFeatured), asc(books.sortOrder), desc(books.createdAt), asc(books.title))
+    .limit(safeLimit);
+  const bookRows = rows.map((row) => row.book);
+  const { authorRows, categoryRows, editionRows } = await findPublicDetailsByBookIds(
+    bookRows.map((book) => book.id),
+  );
+
+  return assembleBooks(bookRows, authorRows, categoryRows, editionRows);
 }
 
 export async function getDashboardCounts(): Promise<BookDashboardCounts> {
@@ -401,6 +606,43 @@ export async function findFeaturedPublished(): Promise<BookWithDetails[]> {
   const { authorRows, categoryRows, editionRows } = await findDetailsByBookIds(
     bookRows.map((book) => book.id),
     true,
+  );
+
+  return assembleBooks(bookRows, authorRows, categoryRows, editionRows);
+}
+
+export async function findHomeFeaturedPublished(limit = 8): Promise<BookWithDetails[]> {
+  const safeLimit = Math.min(Math.max(Math.trunc(limit), 1), 16);
+  const featuredRows = await db
+    .select()
+    .from(books)
+    .where(
+      and(eq(books.isFeatured, true), eq(books.isPublished, true), eq(books.isArchived, false)),
+    )
+    .orderBy(asc(books.sortOrder), desc(books.createdAt), asc(books.title))
+    .limit(safeLimit);
+
+  const featuredIds = featuredRows.map((book) => book.id);
+  const remainingLimit = safeLimit - featuredRows.length;
+  const recentRows =
+    remainingLimit > 0
+      ? await db
+          .select()
+          .from(books)
+          .where(
+            and(
+              eq(books.isPublished, true),
+              eq(books.isArchived, false),
+              featuredIds.length > 0 ? not(inArray(books.id, featuredIds)) : undefined,
+            ),
+          )
+          .orderBy(desc(books.createdAt), asc(books.title))
+          .limit(remainingLimit)
+      : [];
+
+  const bookRows = [...featuredRows, ...recentRows];
+  const { authorRows, categoryRows, editionRows } = await findPublicDetailsByBookIds(
+    bookRows.map((book) => book.id),
   );
 
   return assembleBooks(bookRows, authorRows, categoryRows, editionRows);

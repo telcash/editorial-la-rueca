@@ -1,6 +1,7 @@
 import { connection } from 'next/server';
 import { ArrowRight, BookOpen, UsersRound } from 'lucide-react';
 
+import { AuthorCard } from '@/components/public/author-card';
 import {
   FeaturedBooksCarousel,
   type FeaturedBook,
@@ -16,12 +17,15 @@ import { TestimonialsSection } from '@/components/public/testimonials-section';
 import { editorialVideoContent, testimonials } from '@/content/public-home';
 import { PublicContactForm } from '@/features/public/contact/components/public-contact-form';
 import { toFeaturedBook } from '@/features/public/home/lib/featured-books';
+import type { Author } from '@/db/schema';
+import * as AuthorService from '@/services/authors/author.service';
 import * as BookService from '@/services/books/book.service';
 import * as PublicHomeService from '@/services/public-home/public-home.service';
 import type { PublicHomeMetrics } from '@/services/public-home/public-home.types';
 
 interface HomeData {
   featuredBooks: FeaturedBook[];
+  featuredAuthors: Author[];
   metrics: PublicHomeMetrics | null;
 }
 
@@ -30,8 +34,9 @@ function getErrorMessage(error: unknown) {
 }
 
 async function getHomeData(): Promise<HomeData> {
-  const [featuredBooksResult, metricsResult] = await Promise.allSettled([
-    BookService.listFeaturedPublishedBooks(),
+  const [featuredBooksResult, featuredAuthorsResult, metricsResult] = await Promise.allSettled([
+    BookService.listHomeFeaturedPublishedBooks(8),
+    AuthorService.listPublishedAuthors(),
     PublicHomeService.getPublicHomeMetrics(),
   ]);
 
@@ -47,11 +52,19 @@ async function getHomeData(): Promise<HomeData> {
     });
   }
 
+  if (featuredAuthorsResult.status === 'rejected') {
+    console.error('[PublicHome] Featured authors query failed', {
+      message: getErrorMessage(featuredAuthorsResult.reason),
+    });
+  }
+
   return {
     featuredBooks:
       featuredBooksResult.status === 'fulfilled'
         ? featuredBooksResult.value.map(toFeaturedBook)
         : [],
+    featuredAuthors:
+      featuredAuthorsResult.status === 'fulfilled' ? featuredAuthorsResult.value.slice(0, 3) : [],
     metrics: metricsResult.status === 'fulfilled' ? metricsResult.value : null,
   };
 }
@@ -96,7 +109,7 @@ function HeroMetrics({ metrics }: { metrics: PublicHomeMetrics | null }) {
 export default async function PublicHomePage() {
   await connection();
 
-  const { featuredBooks, metrics } = await getHomeData();
+  const { featuredBooks, featuredAuthors, metrics } = await getHomeData();
 
   return (
     <>
@@ -120,8 +133,8 @@ export default async function PublicHomePage() {
                       Quiero publicar mi libro
                       <ArrowRight className="size-4" aria-hidden="true" />
                     </PublicButton>
-                    <PublicButton href="/servicios-editoriales" variant="secondary">
-                      Conocer servicios editoriales
+                    <PublicButton href="/libros" variant="secondary">
+                      Ver catálogo
                     </PublicButton>
                   </div>
                 </div>
@@ -164,6 +177,23 @@ export default async function PublicHomePage() {
       </PublicSection>
 
       <TestimonialsSection testimonials={testimonials} />
+
+      {featuredAuthors.length > 0 ? (
+        <PublicSection variant="compact">
+          <PublicContainer>
+            <SectionHeading
+              title="Autores de La Rueca"
+              description="Voces publicadas y acompañadas por la editorial."
+              action={<PublicCtaLink href="/autores">Ver autores</PublicCtaLink>}
+            />
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {featuredAuthors.map((author) => (
+                <AuthorCard key={author.id} author={author} />
+              ))}
+            </div>
+          </PublicContainer>
+        </PublicSection>
+      ) : null}
 
       <PublicSection variant="compact" className="pt-0">
         <PublicContainer>

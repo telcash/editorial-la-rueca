@@ -9,6 +9,7 @@ import type {
   AuthorAdminListOptions,
   AuthorAdminListItem,
   AuthorDashboardCounts,
+  AuthorPublicListOptions,
   AuthorRecentItem,
 } from '@/services/authors/author-service.types';
 import type { PaginatedResult } from '@/features/admin/lib/list-query';
@@ -169,6 +170,44 @@ export async function findPublished(): Promise<Author[]> {
     .from(authors)
     .where(and(eq(authors.isPublished, true), eq(authors.isArchived, false)))
     .orderBy(desc(authors.isFeatured), asc(authors.sortOrder), asc(authors.name));
+}
+
+export async function findPublishedPaginated(
+  options: AuthorPublicListOptions,
+): Promise<PaginatedResult<Author>> {
+  const conditions = [
+    eq(authors.isPublished, true),
+    eq(authors.isArchived, false),
+    getAuthorSearchCondition(options.query),
+  ].filter((condition) => condition !== undefined);
+  const whereCondition = and(...conditions);
+  const [{ totalItems = 0 } = {}] = await db
+    .select({ totalItems: count() })
+    .from(authors)
+    .where(whereCondition);
+  const totalPages = Math.max(1, Math.ceil(totalItems / options.pageSize));
+  const safePage = Math.min(Math.max(options.page, 1), totalPages);
+  const rows = await db
+    .select()
+    .from(authors)
+    .where(whereCondition)
+    .orderBy(desc(authors.isFeatured), asc(authors.sortOrder), asc(authors.name))
+    .limit(options.pageSize)
+    .offset(getOffset(safePage, options.pageSize));
+
+  return createPaginatedResult(rows, totalItems, safePage, options.pageSize);
+}
+
+export async function findPublishedBySlug(slug: string): Promise<Author | null> {
+  const [author] = await db
+    .select()
+    .from(authors)
+    .where(
+      and(eq(authors.slug, slug), eq(authors.isPublished, true), eq(authors.isArchived, false)),
+    )
+    .limit(1);
+
+  return author ?? null;
 }
 
 export async function countBooksByAuthorId(authorId: string): Promise<number> {
