@@ -35,6 +35,7 @@ function createCategoryRepositoryMock(): MockCategoryRepository {
     findByIds: vi.fn<CategoryRepository['findByIds']>(),
     findAll: vi.fn<CategoryRepository['findAll']>(),
     findAllWithBookCount: vi.fn<CategoryRepository['findAllWithBookCount']>(),
+    findAllWithBookCountPaginated: vi.fn<CategoryRepository['findAllWithBookCountPaginated']>(),
     findActive: vi.fn<CategoryRepository['findActive']>(),
     findArchived: vi.fn<CategoryRepository['findArchived']>(),
     findPublished: vi.fn<CategoryRepository['findPublished']>(),
@@ -134,6 +135,30 @@ describe('createCategoryService', () => {
     ]);
     await expect(service.listActiveCategories()).resolves.toEqual([baseCategory]);
     await expect(service.listPublishedCategories()).resolves.toEqual([baseCategory]);
+  });
+
+  it('delegates paginated category listing to the repository', async () => {
+    const result = {
+      items: [{ category: baseCategory, bookCount: 2 }],
+      totalItems: 1,
+      page: 1,
+      pageSize: 20,
+      totalPages: 1,
+    };
+    repository.findAllWithBookCountPaginated.mockResolvedValue(result);
+
+    await expect(
+      service.listCategoriesPaginated('active', {
+        query: 'narrativa',
+        page: 1,
+        pageSize: 20,
+      }),
+    ).resolves.toBe(result);
+    expect(repository.findAllWithBookCountPaginated).toHaveBeenCalledWith('active', {
+      query: 'narrativa',
+      page: 1,
+      pageSize: 20,
+    });
   });
 
   it('archives and restores categories idempotently', async () => {

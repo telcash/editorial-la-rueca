@@ -168,5 +168,5 @@ export async function updateAuthor(
 
   revalidatePath('/admin/authors');
   revalidatePath(`/admin/authors/${authorId}`);
-  redirect('/admin/authors');
+  redirect('/admin/authors?feedback=authorUpdated');
 }

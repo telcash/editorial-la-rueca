@@ -1,5 +1,6 @@
 import type { Category } from '@/db/schema';
 import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
+import type { PaginatedResult } from '@/features/admin/lib/list-query';
 import type {
   CreateCategoryInput,
   UpdateCategoryInput,
@@ -18,12 +19,22 @@ export interface CategorySummary {
   sortOrder: number;
 }
 
+export interface CategoryAdminListOptions {
+  query?: string;
+  page: number;
+  pageSize: number;
+}
+
 export interface CategoryRepository {
   findById(id: string): Promise<Category | null>;
   findBySlug(slug: string): Promise<Category | null>;
   findByIds(ids: string[]): Promise<Category[]>;
   findAll(status?: ArchiveStatus): Promise<Category[]>;
   findAllWithBookCount(status?: ArchiveStatus): Promise<CategoryAdminListItem[]>;
+  findAllWithBookCountPaginated(
+    status: ArchiveStatus,
+    options: CategoryAdminListOptions,
+  ): Promise<PaginatedResult<CategoryAdminListItem>>;
   findActive(): Promise<Category[]>;
   findArchived(): Promise<Category[]>;
   findPublished(): Promise<Category[]>;

@@ -52,6 +52,7 @@ function createRepositoryMock(): MockAuthorRepository {
     findByIds: vi.fn<AuthorRepository['findByIds']>(),
     findAll: vi.fn<AuthorRepository['findAll']>(),
     findAllWithBookCount: vi.fn<AuthorRepository['findAllWithBookCount']>(),
+    findAllWithBookCountPaginated: vi.fn<AuthorRepository['findAllWithBookCountPaginated']>(),
     getDashboardCounts: vi.fn<AuthorRepository['getDashboardCounts']>(),
     findRecent: vi.fn<AuthorRepository['findRecent']>(),
     findActive: vi.fn<AuthorRepository['findActive']>(),
@@ -143,6 +144,30 @@ describe('createAuthorService', () => {
 
     await expect(service.listAuthorsForAdmin('all')).resolves.toBe(adminRows);
     expect(repository.findAllWithBookCount).toHaveBeenCalledWith('all');
+  });
+
+  it('listAuthorsForAdminPaginated delegates to the paginated admin list', async () => {
+    const result = {
+      items: [{ author: baseAuthor, bookCount: 2 }],
+      totalItems: 1,
+      page: 1,
+      pageSize: 20,
+      totalPages: 1,
+    };
+    repository.findAllWithBookCountPaginated.mockResolvedValue(result);
+
+    await expect(
+      service.listAuthorsForAdminPaginated('active', {
+        query: 'ana',
+        page: 1,
+        pageSize: 20,
+      }),
+    ).resolves.toBe(result);
+    expect(repository.findAllWithBookCountPaginated).toHaveBeenCalledWith('active', {
+      query: 'ana',
+      page: 1,
+      pageSize: 20,
+    });
   });
 
   it('listActiveAuthors and listArchivedAuthors delegate to explicit repository methods', async () => {

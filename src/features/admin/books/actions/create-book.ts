@@ -114,16 +114,11 @@ export async function createBookAction(
         }
       }
 
-      return {
-        success: false,
-        pathErrors: {},
-        formError: 'No se pudo guardar la portada del libro. Inténtalo de nuevo.',
-        authorsError: null,
-        editionsError: null,
-      };
+      revalidatePath('/admin/books');
+      redirect(`/admin/books/${createdBook.id}?coverUpload=failed`);
     }
   }
 
   revalidatePath('/admin/books');
-  redirect('/admin/books');
+  redirect('/admin/books?feedback=bookCreated');
 }

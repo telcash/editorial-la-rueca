@@ -1,6 +1,6 @@
 import 'server-only';
 
-import { and, asc, desc, eq, inArray, ne, sql } from 'drizzle-orm';
+import { and, asc, desc, eq, ilike, inArray, ne, or, sql } from 'drizzle-orm';
 
 import { db } from '@/db';
 import {
@@ -17,6 +17,7 @@ import {
 import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
 import type { BookEditionInput } from '@/schemas/books/book.schema';
 import type {
+  BookAdminListOptions,
   BookAuthorSummary,
   BookCategorySummary,
   BookDashboardCounts,
@@ -27,6 +28,8 @@ import type {
   BookRecentRow,
   BookWithDetails,
 } from '@/services/books/book.types';
+import type { PaginatedResult } from '@/features/admin/lib/list-query';
+import { createPaginatedResult, getOffset } from '@/features/admin/lib/list-query';
 
 type BookRow = Book;
 
@@ -141,6 +144,33 @@ function getArchiveCondition(status: ArchiveStatus = 'active') {
   return eq(books.isArchived, status === 'archived');
 }
 
+function getBookSearchCondition(query: string | undefined) {
+  const normalizedQuery = query?.trim();
+
+  if (!normalizedQuery) {
+    return undefined;
+  }
+
+  const compactQuery = normalizedQuery.replace(/[\s-]+/g, '');
+  const pattern = `%${normalizedQuery}%`;
+  const compactPattern = `%${compactQuery}%`;
+
+  return or(
+    ilike(books.title, pattern),
+    ilike(books.slug, pattern),
+    ilike(bookEditions.isbn10, compactPattern),
+    ilike(bookEditions.isbn13, compactPattern),
+  );
+}
+
+function getBookListCondition(status: ArchiveStatus, query: string | undefined) {
+  const conditions = [getArchiveCondition(status), getBookSearchCondition(query)].filter(
+    (condition) => condition !== undefined,
+  );
+
+  return conditions.length > 0 ? and(...conditions) : undefined;
+}
+
 async function findDetailsByBookIds(bookIds: string[], onlyAvailableEditions = false) {
   if (bookIds.length === 0) {
     return {
@@ -252,6 +282,42 @@ export async function findAll(status: ArchiveStatus = 'active'): Promise<BookWit
   return assembleBooks(bookRows, authorRows, categoryRows, editionRows);
 }
 
+export async function findAllPaginated(
+  status: ArchiveStatus = 'active',
+  options: BookAdminListOptions,
+): Promise<PaginatedResult<BookWithDetails>> {
+  const whereCondition = getBookListCondition(status, options.query);
+  const [{ totalItems = 0 } = {}] = await db
+    .select({
+      totalItems: sql<number>`count(distinct ${books.id})`.mapWith(Number),
+    })
+    .from(books)
+    .leftJoin(bookEditions, eq(bookEditions.bookId, books.id))
+    .where(whereCondition);
+  const totalPages = Math.max(1, Math.ceil(totalItems / options.pageSize));
+  const safePage = Math.min(Math.max(options.page, 1), totalPages);
+  const rows = await db
+    .select({ book: books })
+    .from(books)
+    .leftJoin(bookEditions, eq(bookEditions.bookId, books.id))
+    .where(whereCondition)
+    .groupBy(books.id)
+    .orderBy(asc(books.sortOrder), desc(books.createdAt))
+    .limit(options.pageSize)
+    .offset(getOffset(safePage, options.pageSize));
+  const bookRows = rows.map((row) => row.book);
+  const { authorRows, categoryRows, editionRows } = await findDetailsByBookIds(
+    bookRows.map((book) => book.id),
+  );
+
+  return createPaginatedResult(
+    assembleBooks(bookRows, authorRows, categoryRows, editionRows),
+    totalItems,
+    safePage,
+    options.pageSize,
+  );
+}
+
 export async function getDashboardCounts(): Promise<BookDashboardCounts> {
   const [result] = await db
     .select({
@@ -265,6 +331,10 @@ export async function getDashboardCounts(): Promise<BookDashboardCounts> {
           Number,
         ),
       archived: sql<number>`count(*) filter (where ${books.isArchived} = true)`.mapWith(Number),
+      withoutCover:
+        sql<number>`count(*) filter (where ${books.isArchived} = false and ${books.coverUrl} is null)`.mapWith(
+          Number,
+        ),
     })
     .from(books);
 
@@ -273,6 +343,7 @@ export async function getDashboardCounts(): Promise<BookDashboardCounts> {
     published: result?.published ?? 0,
     drafts: result?.drafts ?? 0,
     archived: result?.archived ?? 0,
+    withoutCover: result?.withoutCover ?? 0,
   };
 }
 
@@ -286,10 +357,11 @@ export async function findRecent(limit = 5): Promise<BookRecentItem[]> {
       coverUrl: books.coverUrl,
       isPublished: books.isPublished,
       createdAt: books.createdAt,
+      updatedAt: books.updatedAt,
     })
     .from(books)
     .where(eq(books.isArchived, false))
-    .orderBy(desc(books.createdAt))
+    .orderBy(desc(books.updatedAt), desc(books.createdAt))
     .limit(safeLimit);
   const authorRows = await findAuthorSummariesByBookIds(bookRows.map((book) => book.id));
 

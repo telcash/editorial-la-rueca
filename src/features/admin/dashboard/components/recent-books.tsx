@@ -18,7 +18,7 @@ export function RecentBooks({ books }: RecentBooksProps) {
   return (
     <Card className="border-border bg-card">
       <CardHeader className="border-b border-border">
-        <CardTitle>Últimos libros añadidos</CardTitle>
+        <CardTitle>Últimos libros creados o modificados</CardTitle>
       </CardHeader>
       <CardContent className="space-y-3">
         {books.length === 0 ? (
@@ -61,8 +61,8 @@ export function RecentBooks({ books }: RecentBooksProps) {
                       <PublicationStatusBadge isPublished={book.isPublished} />
                     </div>
                     <div className="mt-3 flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
-                      <time dateTime={book.createdAt.toISOString()}>
-                        {formatAdminDate(book.createdAt)}
+                      <time dateTime={book.updatedAt.toISOString()}>
+                        {formatAdminDate(book.updatedAt)}
                       </time>
                       <Link
                         href={`/admin/books/${book.id}`}

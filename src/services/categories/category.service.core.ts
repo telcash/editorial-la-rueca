@@ -46,6 +46,13 @@ export function createCategoryService(repository: CategoryRepository) {
       return repository.findAllWithBookCount(status);
     },
 
+    async listCategoriesPaginated(
+      status: ArchiveStatus = 'active',
+      options: Parameters<CategoryRepository['findAllWithBookCountPaginated']>[1],
+    ) {
+      return repository.findAllWithBookCountPaginated(status, options);
+    },
+
     async listActiveCategories() {
       return repository.findActive();
     },

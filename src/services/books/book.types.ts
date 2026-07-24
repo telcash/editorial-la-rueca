@@ -1,5 +1,6 @@
 import type { Author, Book, BookEdition } from '@/db/schema';
 import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
+import type { PaginatedResult } from '@/features/admin/lib/list-query';
 import type {
   BookEditionInput,
   CreateBookInput,
@@ -39,21 +40,32 @@ export interface BookDashboardCounts {
   published: number;
   drafts: number;
   archived: number;
+  withoutCover: number;
 }
 
 export type BookRecentRow = Pick<
   Book,
-  'id' | 'title' | 'slug' | 'coverUrl' | 'isPublished' | 'createdAt'
+  'id' | 'title' | 'slug' | 'coverUrl' | 'isPublished' | 'createdAt' | 'updatedAt'
 >;
 
 export type BookRecentItem = BookRecentRow & {
   authors: BookAuthorSummary[];
 };
 
+export interface BookAdminListOptions {
+  query?: string;
+  page: number;
+  pageSize: number;
+}
+
 export interface BookRepository {
   findById(id: string): Promise<BookWithDetails | null>;
   findBySlug(slug: string): Promise<BookWithDetails | null>;
   findAll(status?: ArchiveStatus): Promise<BookWithDetails[]>;
+  findAllPaginated(
+    status: ArchiveStatus,
+    options: BookAdminListOptions,
+  ): Promise<PaginatedResult<BookWithDetails>>;
   getDashboardCounts(): Promise<BookDashboardCounts>;
   findRecent(limit?: number): Promise<BookRecentItem[]>;
   findActive(): Promise<BookWithDetails[]>;

@@ -19,6 +19,7 @@ export const {
   getBookById,
   getBookBySlug,
   listBooks,
+  listBooksPaginated,
   listActiveBooks,
   listArchivedBooks,
   listPublishedBooks,

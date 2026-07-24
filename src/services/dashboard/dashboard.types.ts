@@ -19,10 +19,12 @@ export interface AdminDashboardData {
   metrics: {
     authorsActive: number;
     authorsArchived: number;
+    authorsWithoutPhoto: number;
     booksActive: number;
     booksPublished: number;
     booksDraft: number;
     booksArchived: number;
+    booksWithoutCover: number;
   };
   recentBooks: BookRecentItem[];
   recentAuthors: AuthorRecentItem[];

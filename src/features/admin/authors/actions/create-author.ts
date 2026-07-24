@@ -97,35 +97,20 @@ export async function createAuthor(
         photoUrl: uploadedImage.publicUrl,
       });
     } catch (error) {
-      if (error instanceof InvalidAuthorImageError) {
-        return {
-          success: false,
-          fieldErrors: {
-            photo: [error.message],
-          },
-          formError: 'El autor fue creado, pero no se pudo subir la imagen.',
-          values,
-        };
+      if (
+        error instanceof InvalidAuthorImageError ||
+        error instanceof AuthorImageUploadError ||
+        error instanceof Error
+      ) {
+        revalidatePath('/admin/authors');
+        redirect(`/admin/authors/${createdAuthor.id}?feedback=authorPhotoUploadFailed`);
       }
 
-      if (error instanceof AuthorImageUploadError) {
-        return {
-          success: false,
-          fieldErrors: {},
-          formError: 'El autor fue creado, pero no se pudo subir la imagen.',
-          values,
-        };
-      }
-
-      return {
-        success: false,
-        fieldErrors: {},
-        formError: 'El autor fue creado, pero no se pudo subir la imagen.',
-        values,
-      };
+      revalidatePath('/admin/authors');
+      redirect(`/admin/authors/${createdAuthor.id}?feedback=authorPhotoUploadFailed`);
     }
   }
 
   revalidatePath('/admin/authors');
-  redirect('/admin/authors');
+  redirect('/admin/authors?feedback=authorCreated');
 }

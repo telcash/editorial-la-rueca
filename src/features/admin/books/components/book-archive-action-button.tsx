@@ -3,6 +3,7 @@
 import { useTransition } from 'react';
 
 import { Button } from '@/components/ui/button';
+import { navigateWithFeedback } from '@/features/admin/lib/client-feedback-navigation';
 import { archiveBookAction, restoreBookAction } from '../actions/archive-book';
 
 interface BookArchiveActionButtonProps {
@@ -17,6 +18,7 @@ export function BookArchiveActionButton({ bookId, isArchived }: BookArchiveActio
     if (isArchived) {
       startTransition(async () => {
         await restoreBookAction(bookId);
+        navigateWithFeedback('bookRestored');
       });
       return;
     }
@@ -31,6 +33,7 @@ export function BookArchiveActionButton({ bookId, isArchived }: BookArchiveActio
 
     startTransition(async () => {
       await archiveBookAction(bookId);
+      navigateWithFeedback('bookArchived');
     });
   }
 

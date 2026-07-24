@@ -39,12 +39,17 @@ describe('createDashboardService', () => {
     bookRepository = createBookRepositoryMock();
     service = createDashboardService(authorRepository, bookRepository);
 
-    authorRepository.getDashboardCounts.mockResolvedValue({ active: 3, archived: 1 });
+    authorRepository.getDashboardCounts.mockResolvedValue({
+      active: 3,
+      archived: 1,
+      withoutPhoto: 2,
+    });
     bookRepository.getDashboardCounts.mockResolvedValue({
       active: 7,
       published: 5,
       drafts: 2,
       archived: 4,
+      withoutCover: 3,
     });
     bookRepository.findRecent.mockResolvedValue([
       {
@@ -54,6 +59,7 @@ describe('createDashboardService', () => {
         coverUrl: null,
         isPublished: true,
         createdAt,
+        updatedAt: createdAt,
         authors: [
           {
             id: authorId,
@@ -74,6 +80,7 @@ describe('createDashboardService', () => {
         photoUrl: null,
         isPublished: true,
         createdAt,
+        updatedAt: createdAt,
       },
     ]);
   });
@@ -83,10 +90,12 @@ describe('createDashboardService', () => {
       metrics: {
         authorsActive: 3,
         authorsArchived: 1,
+        authorsWithoutPhoto: 2,
         booksActive: 7,
         booksPublished: 5,
         booksDraft: 2,
         booksArchived: 4,
+        booksWithoutCover: 3,
       },
       recentBooks: expect.arrayContaining([expect.objectContaining({ title: 'Libro reciente' })]),
       recentAuthors: expect.arrayContaining([expect.objectContaining({ name: 'Ana Autora' })]),
@@ -101,12 +110,17 @@ describe('createDashboardService', () => {
   });
 
   it('supports empty recent lists and zero counts', async () => {
-    authorRepository.getDashboardCounts.mockResolvedValue({ active: 0, archived: 0 });
+    authorRepository.getDashboardCounts.mockResolvedValue({
+      active: 0,
+      archived: 0,
+      withoutPhoto: 0,
+    });
     bookRepository.getDashboardCounts.mockResolvedValue({
       active: 0,
       published: 0,
       drafts: 0,
       archived: 0,
+      withoutCover: 0,
     });
     bookRepository.findRecent.mockResolvedValue([]);
     authorRepository.findRecent.mockResolvedValue([]);
@@ -115,10 +129,12 @@ describe('createDashboardService', () => {
       metrics: {
         authorsActive: 0,
         authorsArchived: 0,
+        authorsWithoutPhoto: 0,
         booksActive: 0,
         booksPublished: 0,
         booksDraft: 0,
         booksArchived: 0,
+        booksWithoutCover: 0,
       },
       recentBooks: [],
       recentAuthors: [],

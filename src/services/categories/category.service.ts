@@ -12,6 +12,7 @@ export const {
   getCategoryById,
   getCategoryBySlug,
   listCategories,
+  listCategoriesPaginated,
   listActiveCategories,
   listArchivedCategories,
   listPublishedCategories,

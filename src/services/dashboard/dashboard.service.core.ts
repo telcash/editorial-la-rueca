@@ -23,10 +23,12 @@ export function createDashboardService(
         metrics: {
           authorsActive: authorCounts.active,
           authorsArchived: authorCounts.archived,
+          authorsWithoutPhoto: authorCounts.withoutPhoto,
           booksActive: bookCounts.active,
           booksPublished: bookCounts.published,
           booksDraft: bookCounts.drafts,
           booksArchived: bookCounts.archived,
+          booksWithoutCover: bookCounts.withoutCover,
         },
         recentBooks,
         recentAuthors,

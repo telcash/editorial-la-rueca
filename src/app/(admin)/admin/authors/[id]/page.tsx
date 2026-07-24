@@ -6,13 +6,18 @@ import { Button } from '@/components/ui/button';
 import { AuthorForm } from '@/features/admin/authors/components/author-form';
 import { getAuthorFormValuesFromAuthor } from '@/features/admin/authors/lib/author-form-data';
 import { ArchivedBadge } from '@/features/admin/components/data-display/archived-badge';
+import { AdminFeedbackBanner } from '@/features/admin/components/feedback/admin-feedback-banner';
 import { AdminPageHeader } from '@/features/admin/components/admin-page-header';
+import { getAdminFeedbackMessage } from '@/features/admin/lib/feedback-messages';
 import { AuthorNotFoundError } from '@/services/authors/author.errors';
 import * as AuthorService from '@/services/authors/author.service';
 
 interface EditAuthorPageProps {
   params: Promise<{
     id: string;
+  }>;
+  searchParams: Promise<{
+    feedback?: string;
   }>;
 }
 
@@ -28,8 +33,10 @@ async function getAuthorForEdit(id: string) {
   }
 }
 
-export default async function EditAuthorPage({ params }: EditAuthorPageProps) {
+export default async function EditAuthorPage({ params, searchParams }: EditAuthorPageProps) {
   const { id } = await params;
+  const { feedback } = await searchParams;
+  const feedbackMessage = getAdminFeedbackMessage(feedback);
   const author = await getAuthorForEdit(id);
 
   return (
@@ -46,6 +53,12 @@ export default async function EditAuthorPage({ params }: EditAuthorPageProps) {
           </Button>
         }
       />
+      {feedbackMessage ? (
+        <AdminFeedbackBanner
+          tone={feedback === 'authorPhotoUploadFailed' ? 'warning' : 'success'}
+          message={feedbackMessage}
+        />
+      ) : null}
       {author.isArchived ? (
         <div className="flex items-center gap-3 rounded-md border border-border bg-muted/40 px-4 py-3 text-sm text-muted-foreground">
           <ArchivedBadge isArchived={author.isArchived} />

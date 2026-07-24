@@ -61,5 +61,5 @@ export async function createCategoryAction(
   }
 
   revalidatePath('/admin/categories');
-  redirect('/admin/categories');
+  redirect('/admin/categories?feedback=categoryCreated');
 }

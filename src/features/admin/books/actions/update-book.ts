@@ -162,5 +162,5 @@ export async function updateBookAction(
 
   revalidatePath('/admin/books');
   revalidatePath(`/admin/books/${parsedBookId.data}`);
-  redirect('/admin/books');
+  redirect('/admin/books?feedback=bookUpdated');
 }

@@ -1,15 +1,18 @@
 import 'server-only';
 
-import { and, asc, count, desc, eq, inArray, ne, sql } from 'drizzle-orm';
+import { and, asc, count, desc, eq, ilike, inArray, ne, or, sql } from 'drizzle-orm';
 
 import { db } from '@/db';
 import { authors, bookAuthors, type Author, type NewAuthor } from '@/db/schema';
 import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
 import type {
+  AuthorAdminListOptions,
   AuthorAdminListItem,
   AuthorDashboardCounts,
   AuthorRecentItem,
 } from '@/services/authors/author-service.types';
+import type { PaginatedResult } from '@/features/admin/lib/list-query';
+import { createPaginatedResult, getOffset } from '@/features/admin/lib/list-query';
 
 type AuthorCreateData = NewAuthor;
 type AuthorUpdateData = Partial<Omit<NewAuthor, 'id' | 'createdAt' | 'updatedAt'>>;
@@ -42,6 +45,26 @@ function getArchiveCondition(status: ArchiveStatus = 'active') {
   return eq(authors.isArchived, status === 'archived');
 }
 
+function getAuthorSearchCondition(query: string | undefined) {
+  const normalizedQuery = query?.trim();
+
+  if (!normalizedQuery) {
+    return undefined;
+  }
+
+  const pattern = `%${normalizedQuery}%`;
+
+  return or(ilike(authors.name, pattern), ilike(authors.slug, pattern));
+}
+
+function getAuthorListCondition(status: ArchiveStatus, query: string | undefined) {
+  const conditions = [getArchiveCondition(status), getAuthorSearchCondition(query)].filter(
+    (condition) => condition !== undefined,
+  );
+
+  return conditions.length > 0 ? and(...conditions) : undefined;
+}
+
 export async function findAll(status: ArchiveStatus = 'active'): Promise<Author[]> {
   return db
     .select()
@@ -67,17 +90,49 @@ export async function findAllWithBookCount(
   return rows;
 }
 
+export async function findAllWithBookCountPaginated(
+  status: ArchiveStatus = 'active',
+  options: AuthorAdminListOptions,
+): Promise<PaginatedResult<AuthorAdminListItem>> {
+  const whereCondition = getAuthorListCondition(status, options.query);
+  const [{ totalItems = 0 } = {}] = await db
+    .select({ totalItems: count() })
+    .from(authors)
+    .where(whereCondition);
+  const totalPages = Math.max(1, Math.ceil(totalItems / options.pageSize));
+  const safePage = Math.min(Math.max(options.page, 1), totalPages);
+  const rows = await db
+    .select({
+      author: authors,
+      bookCount: count(bookAuthors.bookId),
+    })
+    .from(authors)
+    .leftJoin(bookAuthors, eq(bookAuthors.authorId, authors.id))
+    .where(whereCondition)
+    .groupBy(authors.id)
+    .orderBy(asc(authors.sortOrder), asc(authors.name))
+    .limit(options.pageSize)
+    .offset(getOffset(safePage, options.pageSize));
+
+  return createPaginatedResult(rows, totalItems, safePage, options.pageSize);
+}
+
 export async function getDashboardCounts(): Promise<AuthorDashboardCounts> {
   const [result] = await db
     .select({
       active: sql<number>`count(*) filter (where ${authors.isArchived} = false)`.mapWith(Number),
       archived: sql<number>`count(*) filter (where ${authors.isArchived} = true)`.mapWith(Number),
+      withoutPhoto:
+        sql<number>`count(*) filter (where ${authors.isArchived} = false and ${authors.photoUrl} is null)`.mapWith(
+          Number,
+        ),
     })
     .from(authors);
 
   return {
     active: result?.active ?? 0,
     archived: result?.archived ?? 0,
+    withoutPhoto: result?.withoutPhoto ?? 0,
   };
 }
 
@@ -92,10 +147,11 @@ export async function findRecent(limit = 5): Promise<AuthorRecentItem[]> {
       photoUrl: authors.photoUrl,
       isPublished: authors.isPublished,
       createdAt: authors.createdAt,
+      updatedAt: authors.updatedAt,
     })
     .from(authors)
     .where(eq(authors.isArchived, false))
-    .orderBy(desc(authors.createdAt))
+    .orderBy(desc(authors.updatedAt), desc(authors.createdAt))
     .limit(safeLimit);
 }
 

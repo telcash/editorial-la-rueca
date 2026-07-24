@@ -6,6 +6,7 @@ import type { ArchiveStatus } from '../lib/archive-status';
 interface ArchiveStatusFilterProps {
   baseHref: string;
   currentStatus: ArchiveStatus;
+  query?: string;
 }
 
 const options: Array<{ status: ArchiveStatus; label: string }> = [
@@ -14,12 +15,28 @@ const options: Array<{ status: ArchiveStatus; label: string }> = [
   { status: 'all', label: 'Todos' },
 ];
 
-export function ArchiveStatusFilter({ baseHref, currentStatus }: ArchiveStatusFilterProps) {
+function buildHref(baseHref: string, status: ArchiveStatus, query: string | undefined) {
+  const params = new URLSearchParams();
+
+  if (status !== 'active') {
+    params.set('status', status);
+  }
+
+  if (query) {
+    params.set('q', query);
+  }
+
+  const search = params.toString();
+
+  return search ? `${baseHref}?${search}` : baseHref;
+}
+
+export function ArchiveStatusFilter({ baseHref, currentStatus, query }: ArchiveStatusFilterProps) {
   return (
     <nav className="flex flex-wrap gap-2" aria-label="Filtrar por estado de archivo">
       {options.map((option) => {
         const isActive = option.status === currentStatus;
-        const href = option.status === 'active' ? baseHref : `${baseHref}?status=${option.status}`;
+        const href = buildHref(baseHref, option.status, query);
 
         return (
           <Link

@@ -75,5 +75,5 @@ export async function updateCategoryAction(
 
   revalidatePath('/admin/categories');
   revalidatePath(`/admin/categories/${categoryId}`);
-  redirect('/admin/categories');
+  redirect('/admin/categories?feedback=categoryUpdated');
 }

@@ -173,6 +173,13 @@ export function createBookService(
       return bookRepository.findAll(status);
     },
 
+    async listBooksPaginated(
+      status: ArchiveStatus = 'active',
+      options: Parameters<BookRepository['findAllPaginated']>[1],
+    ) {
+      return bookRepository.findAllPaginated(status, options);
+    },
+
     async listActiveBooks() {
       return bookRepository.findActive();
     },

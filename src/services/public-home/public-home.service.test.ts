@@ -27,12 +27,17 @@ describe('createPublicHomeService', () => {
   });
 
   it('returns public metrics from aggregated repository counts', async () => {
-    authorRepository.getDashboardCounts.mockResolvedValue({ active: 12, archived: 2 });
+    authorRepository.getDashboardCounts.mockResolvedValue({
+      active: 12,
+      archived: 2,
+      withoutPhoto: 3,
+    });
     bookRepository.getDashboardCounts.mockResolvedValue({
       active: 20,
       published: 15,
       drafts: 5,
       archived: 1,
+      withoutCover: 4,
     });
 
     await expect(service.getPublicHomeMetrics()).resolves.toEqual({

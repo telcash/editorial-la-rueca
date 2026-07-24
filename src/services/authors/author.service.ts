@@ -13,6 +13,7 @@ export const {
   getAuthorBySlug,
   listAuthors,
   listAuthorsForAdmin,
+  listAuthorsForAdminPaginated,
   listActiveAuthors,
   listArchivedAuthors,
   listPublishedAuthors,

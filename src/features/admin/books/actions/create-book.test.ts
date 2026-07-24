@@ -109,7 +109,7 @@ describe('createBookAction', () => {
       }),
     );
     expect(mocks.revalidatePath).toHaveBeenCalledWith('/admin/books');
-    expect(mocks.redirect).toHaveBeenCalledWith('/admin/books');
+    expect(mocks.redirect).toHaveBeenCalledWith('/admin/books?feedback=bookCreated');
   });
 
   it('creates the book, uploads a cover and persists its public URL', async () => {
@@ -122,7 +122,7 @@ describe('createBookAction', () => {
     expect(mocks.updateBook).toHaveBeenCalledWith(createdBook.id, {
       coverUrl: 'https://project.supabase.co/storage/v1/object/public/book-covers/new.jpg',
     });
-    expect(mocks.redirect).toHaveBeenCalledWith('/admin/books');
+    expect(mocks.redirect).toHaveBeenCalledWith('/admin/books?feedback=bookCreated');
   });
 
   it('returns a cover field error for invalid files before creating', async () => {
@@ -157,25 +157,30 @@ describe('createBookAction', () => {
     expect(mocks.createBook).toHaveBeenCalledTimes(1);
   });
 
-  it('deletes the new cover when persisting its URL fails', async () => {
+  it('deletes the new cover and redirects to edit when persisting its URL fails', async () => {
     mocks.updateBook.mockRejectedValueOnce(new Error('database error'));
 
-    const state = await createBookAction(createBookActionFormData(payload, createImageFile()));
+    await expect(
+      createBookAction(createBookActionFormData(payload, createImageFile())),
+    ).rejects.toThrow('NEXT_REDIRECT');
 
     expect(mocks.deleteBookCover).toHaveBeenCalledWith(
       'https://project.supabase.co/storage/v1/object/public/book-covers/new.jpg',
     );
-    expect(state.formError).toBe('No se pudo guardar la portada del libro. Inténtalo de nuevo.');
+    expect(mocks.redirect).toHaveBeenCalledWith(
+      `/admin/books/${createdBook.id}?coverUpload=failed`,
+    );
   });
 
-  it('keeps the main persistence error when cleanup also fails', async () => {
+  it('redirects to edit when cleanup also fails after cover URL persistence fails', async () => {
     const consoleErrorSpy = vi.spyOn(console, 'error').mockImplementation(() => undefined);
     mocks.updateBook.mockRejectedValueOnce(new Error('database error'));
     mocks.deleteBookCover.mockRejectedValueOnce(new BookCoverDeleteError());
 
-    const state = await createBookAction(createBookActionFormData(payload, createImageFile()));
+    await expect(
+      createBookAction(createBookActionFormData(payload, createImageFile())),
+    ).rejects.toThrow('NEXT_REDIRECT');
 
-    expect(state.formError).toBe('No se pudo guardar la portada del libro. Inténtalo de nuevo.');
     expect(consoleErrorSpy).toHaveBeenCalledWith(
       '[BookCoverService] Cleanup after cover persistence failure failed',
       expect.objectContaining({

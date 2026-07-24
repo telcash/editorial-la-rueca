@@ -3,6 +3,7 @@
 import { useTransition } from 'react';
 
 import { Button } from '@/components/ui/button';
+import { navigateWithFeedback } from '@/features/admin/lib/client-feedback-navigation';
 import { archiveCategoryAction, restoreCategoryAction } from '../actions/archive-category';
 
 interface CategoryArchiveActionButtonProps {
@@ -20,6 +21,7 @@ export function CategoryArchiveActionButton({
     if (isArchived) {
       startTransition(async () => {
         await restoreCategoryAction(categoryId);
+        navigateWithFeedback('categoryRestored');
       });
       return;
     }
@@ -34,6 +36,7 @@ export function CategoryArchiveActionButton({
 
     startTransition(async () => {
       await archiveCategoryAction(categoryId);
+      navigateWithFeedback('categoryArchived');
     });
   }
 

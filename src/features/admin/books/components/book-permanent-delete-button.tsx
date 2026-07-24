@@ -4,6 +4,7 @@ import { useState, useTransition } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { PermanentDeleteDialog } from '@/features/admin/components/permanent-delete-dialog';
+import { navigateWithFeedback } from '@/features/admin/lib/client-feedback-navigation';
 import { deleteBookPermanentlyAction } from '../actions/delete-book-permanently';
 
 interface BookPermanentDeleteButtonProps {
@@ -31,6 +32,7 @@ export function BookPermanentDeleteButton({ bookId, bookTitle }: BookPermanentDe
       }
 
       setIsOpen(false);
+      navigateWithFeedback('bookDeleted');
     });
   }
 

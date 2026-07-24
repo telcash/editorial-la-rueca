@@ -135,15 +135,17 @@ describe('author server actions', () => {
     });
   });
 
-  it('returns a clear error when image upload fails after creating an author', async () => {
+  it('redirects to edit with feedback when image upload fails after creating an author', async () => {
     const formData = createValidFormData();
     formData.set('photo', createImageFile());
     mocks.uploadAuthorImage.mockRejectedValueOnce(new AuthorImageUploadError());
 
-    const state = await createAuthor({} as never, formData);
+    await expect(createAuthor({} as never, formData)).rejects.toThrow('NEXT_REDIRECT');
 
     expect(mocks.createAuthor).toHaveBeenCalledOnce();
-    expect(state.formError).toBe('El autor fue creado, pero no se pudo subir la imagen.');
+    expect(mocks.redirect).toHaveBeenCalledWith(
+      `/admin/authors/${authorId}?feedback=authorPhotoUploadFailed`,
+    );
   });
 
   it('treats an empty file as no image', async () => {

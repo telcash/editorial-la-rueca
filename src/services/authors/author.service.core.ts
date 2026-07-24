@@ -59,6 +59,13 @@ export function createAuthorService(repository: AuthorRepository) {
       return repository.findAllWithBookCount(status);
     },
 
+    async listAuthorsForAdminPaginated(
+      status: ArchiveStatus = 'active',
+      options: Parameters<AuthorRepository['findAllWithBookCountPaginated']>[1],
+    ) {
+      return repository.findAllWithBookCountPaginated(status, options);
+    },
+
     async listActiveAuthors() {
       return repository.findActive();
     },

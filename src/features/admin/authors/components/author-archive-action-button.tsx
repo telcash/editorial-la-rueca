@@ -3,6 +3,7 @@
 import { useTransition } from 'react';
 
 import { Button } from '@/components/ui/button';
+import { navigateWithFeedback } from '@/features/admin/lib/client-feedback-navigation';
 import { archiveAuthorAction, restoreAuthorAction } from '../actions/archive-author';
 
 interface AuthorArchiveActionButtonProps {
@@ -20,6 +21,7 @@ export function AuthorArchiveActionButton({
     if (isArchived) {
       startTransition(async () => {
         await restoreAuthorAction(authorId);
+        navigateWithFeedback('authorRestored');
       });
       return;
     }
@@ -34,6 +36,7 @@ export function AuthorArchiveActionButton({
 
     startTransition(async () => {
       await archiveAuthorAction(authorId);
+      navigateWithFeedback('authorArchived');
     });
   }
 

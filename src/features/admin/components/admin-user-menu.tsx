@@ -1,6 +1,7 @@
 'use client';
 
 import { UserRound } from 'lucide-react';
+import Link from 'next/link';
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
@@ -50,6 +51,10 @@ export function AdminUserMenu({ displayName, role, avatarUrl }: AdminUserMenuPro
           <span className="block truncate text-sm font-medium text-foreground">{displayName}</span>
           <span className="block text-xs text-muted-foreground">{role}</span>
         </DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem asChild>
+          <Link href="/admin/account/password">Cambiar contraseña</Link>
+        </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild>
           <LogoutButton />

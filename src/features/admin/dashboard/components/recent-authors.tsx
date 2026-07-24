@@ -17,7 +17,7 @@ export function RecentAuthors({ authors }: RecentAuthorsProps) {
   return (
     <Card className="border-border bg-card">
       <CardHeader className="border-b border-border">
-        <CardTitle>Últimos autores añadidos</CardTitle>
+        <CardTitle>Últimos autores creados o modificados</CardTitle>
       </CardHeader>
       <CardContent className="space-y-3">
         {authors.length === 0 ? (
@@ -51,8 +51,8 @@ export function RecentAuthors({ authors }: RecentAuthorsProps) {
                     <PublicationStatusBadge isPublished={author.isPublished} />
                   </div>
                   <div className="mt-3 flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
-                    <time dateTime={author.createdAt.toISOString()}>
-                      {formatAdminDate(author.createdAt)}
+                    <time dateTime={author.updatedAt.toISOString()}>
+                      {formatAdminDate(author.updatedAt)}
                     </time>
                     <Link
                       href={`/admin/authors/${author.id}`}

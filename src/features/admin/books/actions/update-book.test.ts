@@ -113,7 +113,7 @@ describe('updateBookAction', () => {
     );
     expect(mocks.revalidatePath).toHaveBeenCalledWith('/admin/books');
     expect(mocks.revalidatePath).toHaveBeenCalledWith(`/admin/books/${bookId}`);
-    expect(mocks.redirect).toHaveBeenCalledWith('/admin/books');
+    expect(mocks.redirect).toHaveBeenCalledWith('/admin/books?feedback=bookUpdated');
   });
 
   it('updates the book and uploads a new cover before deleting the previous one', async () => {
@@ -166,7 +166,7 @@ describe('updateBookAction', () => {
     expect(mocks.updateBook).toHaveBeenNthCalledWith(2, bookId, {
       coverUrl: 'https://project.supabase.co/storage/v1/object/public/book-covers/new.jpg',
     });
-    expect(mocks.redirect).toHaveBeenCalledWith('/admin/books');
+    expect(mocks.redirect).toHaveBeenCalledWith('/admin/books?feedback=bookUpdated');
   });
 
   it('deletes the new cover and keeps the previous one when persisting the new URL fails', async () => {

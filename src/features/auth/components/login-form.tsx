@@ -1,6 +1,7 @@
 'use client';
 
 import { useActionState } from 'react';
+import Link from 'next/link';
 
 import { signIn } from '@/features/auth/actions/sign-in';
 import { initialSignInState } from '@/features/auth/types/sign-in-state';
@@ -28,9 +29,17 @@ export function LoginForm() {
       </div>
 
       <div className="space-y-2">
-        <label htmlFor="password" className="block text-sm font-medium text-neutral-900">
-          Contrasena
-        </label>
+        <div className="flex items-center justify-between gap-3">
+          <label htmlFor="password" className="block text-sm font-medium text-neutral-900">
+            Contraseña
+          </label>
+          <Link
+            href="/login/forgot-password"
+            className="text-xs font-medium text-neutral-700 underline-offset-4 hover:underline"
+          >
+            ¿Has olvidado tu contraseña?
+          </Link>
+        </div>
         <input
           id="password"
           name="password"

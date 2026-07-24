@@ -138,6 +138,7 @@ function createBookRepositoryMock(): MockBookRepository {
     findById: vi.fn<BookRepository['findById']>(),
     findBySlug: vi.fn<BookRepository['findBySlug']>(),
     findAll: vi.fn<BookRepository['findAll']>(),
+    findAllPaginated: vi.fn<BookRepository['findAllPaginated']>(),
     getDashboardCounts: vi.fn<BookRepository['getDashboardCounts']>(),
     findRecent: vi.fn<BookRepository['findRecent']>(),
     findActive: vi.fn<BookRepository['findActive']>(),
@@ -165,6 +166,7 @@ function createAuthorRepositoryMock(): MockAuthorRepository {
     findByIds: vi.fn<AuthorRepository['findByIds']>(),
     findAll: vi.fn<AuthorRepository['findAll']>(),
     findAllWithBookCount: vi.fn<AuthorRepository['findAllWithBookCount']>(),
+    findAllWithBookCountPaginated: vi.fn<AuthorRepository['findAllWithBookCountPaginated']>(),
     getDashboardCounts: vi.fn<AuthorRepository['getDashboardCounts']>(),
     findRecent: vi.fn<AuthorRepository['findRecent']>(),
     findActive: vi.fn<AuthorRepository['findActive']>(),
@@ -187,6 +189,7 @@ function createCategoryRepositoryMock(): MockCategoryRepository {
     findByIds: vi.fn<CategoryRepository['findByIds']>(),
     findAll: vi.fn<CategoryRepository['findAll']>(),
     findAllWithBookCount: vi.fn<CategoryRepository['findAllWithBookCount']>(),
+    findAllWithBookCountPaginated: vi.fn<CategoryRepository['findAllWithBookCountPaginated']>(),
     findActive: vi.fn<CategoryRepository['findActive']>(),
     findArchived: vi.fn<CategoryRepository['findArchived']>(),
     findPublished: vi.fn<CategoryRepository['findPublished']>(),
@@ -253,6 +256,30 @@ describe('createBookService', () => {
     await expect(service.listBooks('all')).resolves.toEqual([baseBook]);
     expect(bookRepository.findAll).toHaveBeenCalledWith('all');
     await expect(service.listPublishedBooks()).resolves.toEqual([baseBook]);
+  });
+
+  it('delegates paginated listing to the repository', async () => {
+    const result = {
+      items: [baseBook],
+      totalItems: 1,
+      page: 1,
+      pageSize: 20,
+      totalPages: 1,
+    };
+    bookRepository.findAllPaginated.mockResolvedValue(result);
+
+    await expect(
+      service.listBooksPaginated('active', {
+        query: 'isbn',
+        page: 1,
+        pageSize: 20,
+      }),
+    ).resolves.toBe(result);
+    expect(bookRepository.findAllPaginated).toHaveBeenCalledWith('active', {
+      query: 'isbn',
+      page: 1,
+      pageSize: 20,
+    });
   });
 
   it('delegates active and archived listings to explicit repository methods', async () => {

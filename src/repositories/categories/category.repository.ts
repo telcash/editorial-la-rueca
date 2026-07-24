@@ -1,11 +1,16 @@
 import 'server-only';
 
-import { and, asc, count, desc, eq, inArray, ne } from 'drizzle-orm';
+import { and, asc, count, desc, eq, ilike, inArray, ne, or } from 'drizzle-orm';
 
 import { db } from '@/db';
 import { bookCategories, categories, type Category, type NewCategory } from '@/db/schema';
 import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
-import type { CategoryAdminListItem } from '@/services/categories/category.types';
+import type { PaginatedResult } from '@/features/admin/lib/list-query';
+import { createPaginatedResult, getOffset } from '@/features/admin/lib/list-query';
+import type {
+  CategoryAdminListItem,
+  CategoryAdminListOptions,
+} from '@/services/categories/category.types';
 
 type CategoryCreateData = NewCategory;
 type CategoryUpdateData = Partial<Omit<NewCategory, 'id' | 'createdAt' | 'updatedAt'>>;
@@ -16,6 +21,26 @@ function getArchiveCondition(status: ArchiveStatus = 'active') {
   }
 
   return eq(categories.isArchived, status === 'archived');
+}
+
+function getCategorySearchCondition(query: string | undefined) {
+  const normalizedQuery = query?.trim();
+
+  if (!normalizedQuery) {
+    return undefined;
+  }
+
+  const pattern = `%${normalizedQuery}%`;
+
+  return or(ilike(categories.name, pattern), ilike(categories.slug, pattern));
+}
+
+function getCategoryListCondition(status: ArchiveStatus, query: string | undefined) {
+  const conditions = [getArchiveCondition(status), getCategorySearchCondition(query)].filter(
+    (condition) => condition !== undefined,
+  );
+
+  return conditions.length > 0 ? and(...conditions) : undefined;
 }
 
 export async function findById(id: string): Promise<Category | null> {
@@ -59,6 +84,33 @@ export async function findAllWithBookCount(
     .where(getArchiveCondition(status))
     .groupBy(categories.id)
     .orderBy(asc(categories.name));
+}
+
+export async function findAllWithBookCountPaginated(
+  status: ArchiveStatus = 'active',
+  options: CategoryAdminListOptions,
+): Promise<PaginatedResult<CategoryAdminListItem>> {
+  const whereCondition = getCategoryListCondition(status, options.query);
+  const [{ totalItems = 0 } = {}] = await db
+    .select({ totalItems: count() })
+    .from(categories)
+    .where(whereCondition);
+  const totalPages = Math.max(1, Math.ceil(totalItems / options.pageSize));
+  const safePage = Math.min(Math.max(options.page, 1), totalPages);
+  const rows = await db
+    .select({
+      category: categories,
+      bookCount: count(bookCategories.bookId),
+    })
+    .from(categories)
+    .leftJoin(bookCategories, eq(bookCategories.categoryId, categories.id))
+    .where(whereCondition)
+    .groupBy(categories.id)
+    .orderBy(asc(categories.name))
+    .limit(options.pageSize)
+    .offset(getOffset(safePage, options.pageSize));
+
+  return createPaginatedResult(rows, totalItems, safePage, options.pageSize);
 }
 
 export async function findActive(): Promise<Category[]> {
