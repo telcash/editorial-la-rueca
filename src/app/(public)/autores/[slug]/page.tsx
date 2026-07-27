@@ -9,6 +9,7 @@ import { PublicCard } from '@/components/public/public-card';
 import { PublicContainer } from '@/components/public/public-container';
 import { PublicSection } from '@/components/public/public-section';
 import { SectionHeading } from '@/components/public/section-heading';
+import { BOOK_CARD_GRID_GAP, BOOK_CARD_WIDTH } from '@/features/public/books/book-card.helpers';
 import { toPlainPublicText } from '@/features/public/lib/text-format';
 import { AuthorNotFoundError } from '@/services/authors/author.errors';
 import * as AuthorService from '@/services/authors/author.service';
@@ -137,7 +138,13 @@ export default async function PublicAuthorDetailPage({ params }: PublicAuthorDet
         <PublicContainer>
           <SectionHeading title="Libros del autor" />
           {books.length > 0 ? (
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <div
+              className="mt-8 grid justify-center"
+              style={{
+                gridTemplateColumns: `repeat(auto-fill, minmax(${BOOK_CARD_WIDTH}px, ${BOOK_CARD_WIDTH}px))`,
+                gap: BOOK_CARD_GRID_GAP,
+              }}
+            >
               {books.map((book) => (
                 <BookCard key={book.id} book={book} />
               ))}

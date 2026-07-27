@@ -2,10 +2,7 @@ import { connection } from 'next/server';
 import { ArrowRight, BookOpen, UsersRound } from 'lucide-react';
 
 import { AuthorCard } from '@/components/public/author-card';
-import {
-  FeaturedBooksCarousel,
-  type FeaturedBook,
-} from '@/components/public/featured-books-carousel';
+import { FeaturedBooksCarousel } from '@/components/public/featured-books-carousel';
 import { EditorialVideo } from '@/components/public/editorial-video';
 import { PublicButton } from '@/components/public/public-button';
 import { PublicCard } from '@/components/public/public-card';
@@ -16,15 +13,15 @@ import { SectionHeading } from '@/components/public/section-heading';
 import { TestimonialsSection } from '@/components/public/testimonials-section';
 import { editorialVideoContent, testimonials } from '@/content/public-home';
 import { PublicContactForm } from '@/features/public/contact/components/public-contact-form';
-import { toFeaturedBook } from '@/features/public/home/lib/featured-books';
 import type { Author } from '@/db/schema';
 import * as AuthorService from '@/services/authors/author.service';
 import * as BookService from '@/services/books/book.service';
+import type { BookWithDetails } from '@/services/books/book.types';
 import * as PublicHomeService from '@/services/public-home/public-home.service';
 import type { PublicHomeMetrics } from '@/services/public-home/public-home.types';
 
 interface HomeData {
-  featuredBooks: FeaturedBook[];
+  featuredBooks: BookWithDetails[];
   featuredAuthors: Author[];
   metrics: PublicHomeMetrics | null;
 }
@@ -59,10 +56,7 @@ async function getHomeData(): Promise<HomeData> {
   }
 
   return {
-    featuredBooks:
-      featuredBooksResult.status === 'fulfilled'
-        ? featuredBooksResult.value.map(toFeaturedBook)
-        : [],
+    featuredBooks: featuredBooksResult.status === 'fulfilled' ? featuredBooksResult.value : [],
     featuredAuthors:
       featuredAuthorsResult.status === 'fulfilled' ? featuredAuthorsResult.value.slice(0, 3) : [],
     metrics: metricsResult.status === 'fulfilled' ? metricsResult.value : null,

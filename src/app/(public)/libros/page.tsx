@@ -8,6 +8,7 @@ import { PublicPagination, PublicResultCount } from '@/components/public/public-
 import { PublicSearchForm } from '@/components/public/public-search-form';
 import { PublicSection } from '@/components/public/public-section';
 import { SectionHeading } from '@/components/public/section-heading';
+import { BOOK_CARD_GRID_GAP, BOOK_CARD_WIDTH } from '@/features/public/books/book-card.helpers';
 import {
   parsePublicPage,
   parsePublicSearchParam,
@@ -74,7 +75,13 @@ export default async function PublicBooksPage({ searchParams }: PublicBooksPageP
 
         {books.items.length > 0 ? (
           <>
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div
+              className="mt-8 grid justify-center"
+              style={{
+                gridTemplateColumns: `repeat(auto-fill, minmax(${BOOK_CARD_WIDTH}px, ${BOOK_CARD_WIDTH}px))`,
+                gap: BOOK_CARD_GRID_GAP,
+              }}
+            >
               {books.items.map((book) => (
                 <BookCard key={book.id} book={book} />
               ))}
