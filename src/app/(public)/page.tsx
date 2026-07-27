@@ -1,7 +1,7 @@
 import { connection } from 'next/server';
 import { ArrowRight, BookOpen, UsersRound } from 'lucide-react';
 
-import { AuthorCard } from '@/components/public/author-card';
+import { FeaturedAuthorsCarousel } from '@/components/public/featured-authors-carousel';
 import { FeaturedBooksCarousel } from '@/components/public/featured-books-carousel';
 import { EditorialVideo } from '@/components/public/editorial-video';
 import { PublicButton } from '@/components/public/public-button';
@@ -58,7 +58,9 @@ async function getHomeData(): Promise<HomeData> {
   return {
     featuredBooks: featuredBooksResult.status === 'fulfilled' ? featuredBooksResult.value : [],
     featuredAuthors:
-      featuredAuthorsResult.status === 'fulfilled' ? featuredAuthorsResult.value.slice(0, 3) : [],
+      featuredAuthorsResult.status === 'fulfilled'
+        ? featuredAuthorsResult.value.filter((author) => author.isFeatured)
+        : [],
     metrics: metricsResult.status === 'fulfilled' ? metricsResult.value : null,
   };
 }
@@ -180,11 +182,7 @@ export default async function PublicHomePage() {
               description="Voces publicadas y acompañadas por la editorial."
               action={<PublicCtaLink href="/autores">Ver autores</PublicCtaLink>}
             />
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {featuredAuthors.map((author) => (
-                <AuthorCard key={author.id} author={author} />
-              ))}
-            </div>
+            <FeaturedAuthorsCarousel authors={featuredAuthors} className="mt-8" />
           </PublicContainer>
         </PublicSection>
       ) : null}

@@ -45,19 +45,22 @@ export async function generateMetadata({ params }: PublicAuthorDetailPageProps):
 
 function AuthorPhoto({ name, photoUrl }: { name: string; photoUrl: string | null }) {
   return (
-    <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-public-border bg-public-surface-subtle shadow-[0_18px_50px_rgba(23,23,23,0.08)]">
+    <div
+      data-author-detail-photo="true"
+      className="relative mx-auto aspect-[4/5] w-[72%] max-w-[18rem] overflow-hidden rounded-2xl border border-public-border bg-public-surface-subtle shadow-[0_18px_50px_rgba(23,23,23,0.08)] sm:w-full lg:max-w-none"
+    >
       {photoUrl ? (
         <Image
           src={photoUrl}
           alt={`Foto de ${name}`}
           fill
-          sizes="(min-width: 1024px) 33vw, 90vw"
+          sizes="(min-width: 1024px) 288px, (min-width: 640px) 288px, 72vw"
           className="object-cover"
           priority
         />
       ) : (
         <div className="flex h-full items-center justify-center text-public-muted">
-          <UserRound className="size-20" aria-hidden="true" />
+          <UserRound className="size-16" aria-hidden="true" />
         </div>
       )}
     </div>
@@ -101,7 +104,7 @@ export default async function PublicAuthorDetailPage({ params }: PublicAuthorDet
             Volver a autores
           </Link>
 
-          <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(16rem,24rem)_1fr] lg:items-start">
+          <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(14rem,18rem)_1fr] lg:items-start">
             <AuthorPhoto name={author.name} photoUrl={author.photoUrl} />
 
             <div>

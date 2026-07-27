@@ -61,7 +61,7 @@ export default async function PublicAuthorsPage({ searchParams }: PublicAuthorsP
 
         {authors.items.length > 0 ? (
           <>
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-8 grid grid-cols-[minmax(0,min(82vw,17.5rem))] justify-center gap-5 sm:grid-cols-[repeat(2,13.75rem)] md:grid-cols-[repeat(3,13.75rem)] lg:grid-cols-[repeat(4,14rem)] xl:grid-cols-[repeat(5,14rem)]">
               {authors.items.map((author) => (
                 <AuthorCard key={author.id} author={author} />
               ))}

@@ -1,5 +1,5 @@
 export const PUBLIC_BOOKS_PAGE_SIZE = 12;
-export const PUBLIC_AUTHORS_PAGE_SIZE = 12;
+export const PUBLIC_AUTHORS_PAGE_SIZE = 20;
 
 export function parsePublicPage(value: string | string[] | undefined) {
   const rawValue = Array.isArray(value) ? value[0] : value;
