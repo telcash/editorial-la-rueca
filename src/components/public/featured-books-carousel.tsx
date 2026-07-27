@@ -3,7 +3,6 @@
 import { useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-import { BOOK_CARD_GRID_GAP, BOOK_CARD_WIDTH } from '@/features/public/books/book-card.helpers';
 import type { BookWithDetails } from '@/services/books/book.types';
 import { cn } from '@/lib/utils';
 import { BookCard } from './book-card';
@@ -51,12 +50,19 @@ export function FeaturedBooksCarousel({ books, className }: FeaturedBooksCarouse
 
       <div
         ref={scrollContainerRef}
-        className="flex snap-x snap-mandatory overflow-x-auto scroll-smooth pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-        style={{ gap: BOOK_CARD_GRID_GAP }}
+        data-carousel-track="featured-books"
+        className="-mx-4 flex snap-x snap-mandatory gap-3.5 overflow-x-auto scroll-px-4 px-4 pb-3 scroll-smooth [scrollbar-width:none] sm:mx-0 sm:gap-5 sm:scroll-px-0 sm:px-0 [&::-webkit-scrollbar]:hidden"
       >
         {books.map((book) => (
-          <div key={book.id} className="shrink-0 snap-start" style={{ flexBasis: BOOK_CARD_WIDTH }}>
-            <BookCard book={book} />
+          <div
+            key={book.id}
+            data-carousel-slide="featured-book"
+            className="flex max-w-[calc(100vw-32px)] shrink-0 basis-[calc(100vw-32px)] snap-center justify-center sm:max-w-none sm:basis-[170px] sm:snap-start"
+          >
+            <BookCard
+              book={book}
+              className="max-sm:!h-auto max-sm:!w-full max-sm:[&_article>div:first-child>div]:!h-auto max-sm:[&_article>div:last-child]:!h-[96px] max-sm:[&_h2]:!h-[42px] max-sm:[&_h2]:!text-[18px] max-sm:[&_h2]:!leading-[21px] max-sm:[&_p]:!h-[36px] max-sm:[&_p]:!text-[15px] max-sm:[&_p]:!leading-[18px]"
+            />
           </div>
         ))}
       </div>
