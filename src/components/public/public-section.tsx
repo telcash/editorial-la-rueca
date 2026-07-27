@@ -10,7 +10,9 @@ export function PublicSection({ className, variant = 'default', ...props }: Publ
   return (
     <section
       className={cn(
-        variant === 'default' ? 'py-12 md:py-20 lg:py-24' : 'py-8 md:py-12 lg:py-16',
+        variant === 'default'
+          ? 'pt-7 pb-12 md:pt-10 md:pb-20 lg:pt-12 lg:pb-24'
+          : 'pt-6 pb-8 md:pt-8 md:pb-12 lg:pt-10 lg:pb-16',
         className,
       )}
       {...props}

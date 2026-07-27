@@ -4,10 +4,10 @@ import { BookCard } from '@/components/public/book-card';
 import { PublicButton } from '@/components/public/public-button';
 import { PublicContainer } from '@/components/public/public-container';
 import { PublicEmptyState } from '@/components/public/public-empty-state';
+import { PublicPageHeader } from '@/components/public/public-page-header';
 import { PublicPagination, PublicResultCount } from '@/components/public/public-pagination';
 import { PublicSearchForm } from '@/components/public/public-search-form';
 import { PublicSection } from '@/components/public/public-section';
-import { SectionHeading } from '@/components/public/section-heading';
 import { BOOK_CARD_GRID_GAP, BOOK_CARD_WIDTH } from '@/features/public/books/book-card.helpers';
 import {
   parsePublicPage,
@@ -48,12 +48,12 @@ export default async function PublicBooksPage({ searchParams }: PublicBooksPageP
   return (
     <PublicSection>
       <PublicContainer>
-        <SectionHeading
+        <PublicPageHeader
           title="Libros"
           description="Explora el catálogo editorial de La Rueca por título, autor o categoría."
         />
 
-        <div className="mt-8 space-y-5">
+        <div className="space-y-5">
           <PublicSearchForm
             action="/libros"
             query={query}

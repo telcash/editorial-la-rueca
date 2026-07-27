@@ -4,10 +4,10 @@ import { AuthorCard } from '@/components/public/author-card';
 import { PublicButton } from '@/components/public/public-button';
 import { PublicContainer } from '@/components/public/public-container';
 import { PublicEmptyState } from '@/components/public/public-empty-state';
+import { PublicPageHeader } from '@/components/public/public-page-header';
 import { PublicPagination, PublicResultCount } from '@/components/public/public-pagination';
 import { PublicSearchForm } from '@/components/public/public-search-form';
 import { PublicSection } from '@/components/public/public-section';
-import { SectionHeading } from '@/components/public/section-heading';
 import {
   parsePublicPage,
   parsePublicSearchParam,
@@ -40,12 +40,12 @@ export default async function PublicAuthorsPage({ searchParams }: PublicAuthorsP
   return (
     <PublicSection>
       <PublicContainer>
-        <SectionHeading
+        <PublicPageHeader
           title="Autores"
           description="Conoce a las voces que forman parte del catálogo de Editorial La Rueca."
         />
 
-        <div className="mt-8 space-y-5">
+        <div className="space-y-5">
           <PublicSearchForm
             action="/autores"
             query={query}
