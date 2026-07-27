@@ -33,5 +33,6 @@ export const {
   updateBook,
   archiveBook,
   restoreBook,
+  bulkUpdateBooks,
   deleteBookPermanently,
 } = bookService;

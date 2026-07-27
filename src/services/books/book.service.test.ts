@@ -157,6 +157,7 @@ function createBookRepositoryMock(): MockBookRepository {
     update: vi.fn<BookRepository['update']>(),
     archive: vi.fn<BookRepository['archive']>(),
     restore: vi.fn<BookRepository['restore']>(),
+    bulkUpdate: vi.fn<BookRepository['bulkUpdate']>(),
     deletePermanently: vi.fn<BookRepository['deletePermanently']>(),
     findAuthorsByBookId: vi.fn<BookRepository['findAuthorsByBookId']>(),
     findCategoriesByBookId: vi.fn<BookRepository['findCategoriesByBookId']>(),
@@ -185,6 +186,7 @@ function createAuthorRepositoryMock(): MockAuthorRepository {
     update: vi.fn<AuthorRepository['update']>(),
     archive: vi.fn<AuthorRepository['archive']>(),
     restore: vi.fn<AuthorRepository['restore']>(),
+    bulkUpdate: vi.fn<AuthorRepository['bulkUpdate']>(),
     deleteById: vi.fn<AuthorRepository['deleteById']>(),
   };
 }
@@ -376,6 +378,20 @@ describe('createBookService', () => {
 
     await expect(service.listHomeFeaturedPublishedBooks(8)).resolves.toEqual([publishedBook]);
     expect(bookRepository.findHomeFeaturedPublished).toHaveBeenCalledWith(8);
+  });
+
+  it('validates and delegates bulk book updates', async () => {
+    const result = { requested: 1, updated: 1, skipped: 0, errors: 0 };
+    bookRepository.bulkUpdate.mockResolvedValue(result);
+
+    await expect(service.bulkUpdateBooks([bookId], 'publish')).resolves.toBe(result);
+    expect(bookRepository.bulkUpdate).toHaveBeenCalledWith([bookId], 'publish');
+  });
+
+  it('does not allow unsupported bulk book actions', async () => {
+    await expect(service.bulkUpdateBooks([bookId], 'delete')).rejects.toThrow();
+
+    expect(bookRepository.bulkUpdate).not.toHaveBeenCalled();
   });
 
   describe('createBook', () => {

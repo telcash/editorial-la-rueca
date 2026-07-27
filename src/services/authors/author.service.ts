@@ -23,5 +23,6 @@ export const {
   updateAuthor,
   archiveAuthor,
   restoreAuthor,
+  bulkUpdateAuthors,
   deleteAuthorPermanently,
 } = authorService;

@@ -1,6 +1,19 @@
 import 'server-only';
 
-import { and, asc, desc, eq, ilike, inArray, ne, not, or, sql } from 'drizzle-orm';
+import {
+  and,
+  asc,
+  desc,
+  eq,
+  ilike,
+  inArray,
+  isNotNull,
+  isNull,
+  ne,
+  not,
+  or,
+  sql,
+} from 'drizzle-orm';
 
 import { db } from '@/db';
 import {
@@ -19,6 +32,8 @@ import type { BookEditionInput } from '@/schemas/books/book.schema';
 import type {
   BookAdminListOptions,
   BookAuthorSummary,
+  BookBulkAction,
+  BookBulkUpdateResult,
   BookCategorySummary,
   BookDashboardCounts,
   BookDataCreateInput,
@@ -33,6 +48,9 @@ import type { PaginatedResult } from '@/features/admin/lib/list-query';
 import { createPaginatedResult, getOffset } from '@/features/admin/lib/list-query';
 
 type BookRow = Book;
+type BookBulkUpdateData = Partial<
+  Pick<Book, 'isPublished' | 'isFeatured' | 'isArchived' | 'archivedAt' | 'updatedAt'>
+>;
 
 interface AuthorSummaryRow extends BookAuthorSummary {
   bookId: string;
@@ -170,10 +188,27 @@ function getBookSearchCondition(
   return or(...conditions);
 }
 
-function getBookListCondition(status: ArchiveStatus, query: string | undefined) {
-  const conditions = [getArchiveCondition(status), getBookSearchCondition(query)].filter(
-    (condition) => condition !== undefined,
-  );
+function getCoverCondition(value: boolean | undefined) {
+  if (value === undefined) {
+    return undefined;
+  }
+
+  return value ? isNotNull(books.coverUrl) : isNull(books.coverUrl);
+}
+
+function getBookListCondition(status: ArchiveStatus, options: BookAdminListOptions) {
+  const conditions = [
+    getArchiveCondition(status),
+    getBookSearchCondition(options.query),
+    options.filters?.published === undefined
+      ? undefined
+      : eq(books.isPublished, options.filters.published),
+    options.filters?.featured === undefined
+      ? undefined
+      : eq(books.isFeatured, options.filters.featured),
+    getCoverCondition(options.filters?.withCover),
+    options.filters?.categorySlug ? eq(categories.slug, options.filters.categorySlug) : undefined,
+  ].filter((condition) => condition !== undefined);
 
   return conditions.length > 0 ? and(...conditions) : undefined;
 }
@@ -378,13 +413,15 @@ export async function findAllPaginated(
   status: ArchiveStatus = 'active',
   options: BookAdminListOptions,
 ): Promise<PaginatedResult<BookWithDetails>> {
-  const whereCondition = getBookListCondition(status, options.query);
+  const whereCondition = getBookListCondition(status, options);
   const [{ totalItems = 0 } = {}] = await db
     .select({
       totalItems: sql<number>`count(distinct ${books.id})`.mapWith(Number),
     })
     .from(books)
     .leftJoin(bookEditions, eq(bookEditions.bookId, books.id))
+    .leftJoin(bookCategories, eq(bookCategories.bookId, books.id))
+    .leftJoin(categories, eq(categories.id, bookCategories.categoryId))
     .where(whereCondition);
   const totalPages = Math.max(1, Math.ceil(totalItems / options.pageSize));
   const safePage = Math.min(Math.max(options.page, 1), totalPages);
@@ -392,6 +429,8 @@ export async function findAllPaginated(
     .select({ book: books })
     .from(books)
     .leftJoin(bookEditions, eq(bookEditions.bookId, books.id))
+    .leftJoin(bookCategories, eq(bookCategories.bookId, books.id))
+    .leftJoin(categories, eq(categories.id, bookCategories.categoryId))
     .where(whereCondition)
     .groupBy(books.id)
     .orderBy(asc(books.sortOrder), desc(books.createdAt))
@@ -821,6 +860,62 @@ export async function restore(id: string): Promise<BookWithDetails | null> {
     .returning({ id: books.id });
 
   return book ? findById(book.id) : null;
+}
+
+export async function bulkUpdate(
+  ids: string[],
+  action: BookBulkAction,
+): Promise<BookBulkUpdateResult> {
+  const uniqueIds = [...new Set(ids)];
+
+  if (uniqueIds.length === 0) {
+    return { requested: 0, updated: 0, skipped: 0, errors: 0 };
+  }
+
+  const now = new Date();
+  const baseCondition = inArray(books.id, uniqueIds);
+  const actionConfig: Record<
+    BookBulkAction,
+    { condition: ReturnType<typeof and>; values: BookBulkUpdateData }
+  > = {
+    publish: {
+      condition: and(baseCondition, ne(books.isPublished, true)),
+      values: { isPublished: true, updatedAt: now },
+    },
+    unpublish: {
+      condition: and(baseCondition, ne(books.isPublished, false)),
+      values: { isPublished: false, updatedAt: now },
+    },
+    feature: {
+      condition: and(baseCondition, ne(books.isFeatured, true)),
+      values: { isFeatured: true, updatedAt: now },
+    },
+    unfeature: {
+      condition: and(baseCondition, ne(books.isFeatured, false)),
+      values: { isFeatured: false, updatedAt: now },
+    },
+    archive: {
+      condition: and(baseCondition, ne(books.isArchived, true)),
+      values: { isArchived: true, archivedAt: now, updatedAt: now },
+    },
+    restore: {
+      condition: and(baseCondition, ne(books.isArchived, false)),
+      values: { isArchived: false, archivedAt: null, updatedAt: now },
+    },
+  };
+  const config = actionConfig[action];
+  const updatedRows = await db
+    .update(books)
+    .set(config.values)
+    .where(config.condition)
+    .returning({ id: books.id });
+
+  return {
+    requested: uniqueIds.length,
+    updated: updatedRows.length,
+    skipped: uniqueIds.length - updatedRows.length,
+    errors: 0,
+  };
 }
 
 export async function deletePermanently(id: string): Promise<BookWithDetails | null> {

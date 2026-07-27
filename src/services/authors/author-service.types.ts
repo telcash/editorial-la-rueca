@@ -23,6 +23,23 @@ export interface AuthorAdminListOptions {
   query?: string;
   page: number;
   pageSize: number;
+  filters?: AuthorAdminListFilters;
+}
+
+export interface AuthorAdminListFilters {
+  published?: boolean;
+  featured?: boolean;
+  withPhoto?: boolean;
+}
+
+export type AuthorBulkAction =
+  'publish' | 'unpublish' | 'feature' | 'unfeature' | 'archive' | 'restore';
+
+export interface AuthorBulkUpdateResult {
+  requested: number;
+  updated: number;
+  skipped: number;
+  errors: number;
 }
 
 export interface AuthorPublicListOptions {
@@ -54,5 +71,6 @@ export interface AuthorRepository {
   update(id: string, data: UpdateAuthorInput): Promise<Author | null>;
   archive(id: string): Promise<Author | null>;
   restore(id: string): Promise<Author | null>;
+  bulkUpdate(ids: string[], action: AuthorBulkAction): Promise<AuthorBulkUpdateResult>;
   deleteById(id: string): Promise<Author | null>;
 }

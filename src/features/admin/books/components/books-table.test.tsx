@@ -4,6 +4,14 @@ import { describe, expect, it, vi } from 'vitest';
 import type { BookWithDetails } from '@/services/books/book.types';
 import { BooksTable } from './books-table';
 
+vi.mock('next/navigation', () => ({
+  useRouter: () => ({ refresh: vi.fn() }),
+}));
+
+vi.mock('@/features/admin/books/actions/bulk-book-actions', () => ({
+  bulkUpdateBooksAction: vi.fn(),
+}));
+
 vi.mock('./book-archive-action-button', () => ({
   BookArchiveActionButton: ({ isArchived }: { isArchived: boolean }) => (
     <button type="button">{isArchived ? 'Restaurar' : 'Archivar'}</button>

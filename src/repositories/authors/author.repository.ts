@@ -1,12 +1,27 @@
 import 'server-only';
 
-import { and, asc, count, desc, eq, ilike, inArray, ne, or, sql } from 'drizzle-orm';
+import {
+  and,
+  asc,
+  count,
+  desc,
+  eq,
+  ilike,
+  inArray,
+  isNotNull,
+  isNull,
+  ne,
+  or,
+  sql,
+} from 'drizzle-orm';
 
 import { db } from '@/db';
 import { authors, bookAuthors, type Author, type NewAuthor } from '@/db/schema';
 import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
 import type {
   AuthorAdminListOptions,
+  AuthorBulkAction,
+  AuthorBulkUpdateResult,
   AuthorAdminListItem,
   AuthorDashboardCounts,
   AuthorPublicListOptions,
@@ -17,6 +32,9 @@ import { createPaginatedResult, getOffset } from '@/features/admin/lib/list-quer
 
 type AuthorCreateData = NewAuthor;
 type AuthorUpdateData = Partial<Omit<NewAuthor, 'id' | 'createdAt' | 'updatedAt'>>;
+type AuthorBulkUpdateData = Partial<
+  Pick<Author, 'isPublished' | 'isFeatured' | 'isArchived' | 'archivedAt' | 'updatedAt'>
+>;
 
 export async function findById(id: string): Promise<Author | null> {
   const [author] = await db.select().from(authors).where(eq(authors.id, id)).limit(1);
@@ -58,10 +76,26 @@ function getAuthorSearchCondition(query: string | undefined) {
   return or(ilike(authors.name, pattern), ilike(authors.slug, pattern));
 }
 
-function getAuthorListCondition(status: ArchiveStatus, query: string | undefined) {
-  const conditions = [getArchiveCondition(status), getAuthorSearchCondition(query)].filter(
-    (condition) => condition !== undefined,
-  );
+function getPhotoCondition(value: boolean | undefined) {
+  if (value === undefined) {
+    return undefined;
+  }
+
+  return value ? isNotNull(authors.photoUrl) : isNull(authors.photoUrl);
+}
+
+function getAuthorListCondition(status: ArchiveStatus, options: AuthorAdminListOptions) {
+  const conditions = [
+    getArchiveCondition(status),
+    getAuthorSearchCondition(options.query),
+    options.filters?.published === undefined
+      ? undefined
+      : eq(authors.isPublished, options.filters.published),
+    options.filters?.featured === undefined
+      ? undefined
+      : eq(authors.isFeatured, options.filters.featured),
+    getPhotoCondition(options.filters?.withPhoto),
+  ].filter((condition) => condition !== undefined);
 
   return conditions.length > 0 ? and(...conditions) : undefined;
 }
@@ -95,7 +129,7 @@ export async function findAllWithBookCountPaginated(
   status: ArchiveStatus = 'active',
   options: AuthorAdminListOptions,
 ): Promise<PaginatedResult<AuthorAdminListItem>> {
-  const whereCondition = getAuthorListCondition(status, options.query);
+  const whereCondition = getAuthorListCondition(status, options);
   const [{ totalItems = 0 } = {}] = await db
     .select({ totalItems: count() })
     .from(authors)
@@ -280,6 +314,62 @@ export async function restore(id: string): Promise<Author | null> {
     .returning();
 
   return author ?? null;
+}
+
+export async function bulkUpdate(
+  ids: string[],
+  action: AuthorBulkAction,
+): Promise<AuthorBulkUpdateResult> {
+  const uniqueIds = [...new Set(ids)];
+
+  if (uniqueIds.length === 0) {
+    return { requested: 0, updated: 0, skipped: 0, errors: 0 };
+  }
+
+  const now = new Date();
+  const baseCondition = inArray(authors.id, uniqueIds);
+  const actionConfig: Record<
+    AuthorBulkAction,
+    { condition: ReturnType<typeof and>; values: AuthorBulkUpdateData }
+  > = {
+    publish: {
+      condition: and(baseCondition, ne(authors.isPublished, true)),
+      values: { isPublished: true, updatedAt: now },
+    },
+    unpublish: {
+      condition: and(baseCondition, ne(authors.isPublished, false)),
+      values: { isPublished: false, updatedAt: now },
+    },
+    feature: {
+      condition: and(baseCondition, ne(authors.isFeatured, true)),
+      values: { isFeatured: true, updatedAt: now },
+    },
+    unfeature: {
+      condition: and(baseCondition, ne(authors.isFeatured, false)),
+      values: { isFeatured: false, updatedAt: now },
+    },
+    archive: {
+      condition: and(baseCondition, ne(authors.isArchived, true)),
+      values: { isArchived: true, archivedAt: now, updatedAt: now },
+    },
+    restore: {
+      condition: and(baseCondition, ne(authors.isArchived, false)),
+      values: { isArchived: false, archivedAt: null, updatedAt: now },
+    },
+  };
+  const config = actionConfig[action];
+  const updatedRows = await db
+    .update(authors)
+    .set(config.values)
+    .where(config.condition)
+    .returning({ id: authors.id });
+
+  return {
+    requested: uniqueIds.length,
+    updated: updatedRows.length,
+    skipped: uniqueIds.length - updatedRows.length,
+    errors: 0,
+  };
 }
 
 export async function deleteById(id: string): Promise<Author | null> {

@@ -17,6 +17,14 @@ import type { AuthorRepository } from './author-service.types';
 
 const authorIdSchema = z.string().uuid('El id del autor debe ser un UUID valido.');
 const authorSlugSchema = createAuthorSchema.shape.slug;
+const authorBulkActionSchema = z.enum([
+  'publish',
+  'unpublish',
+  'feature',
+  'unfeature',
+  'archive',
+  'restore',
+]);
 
 function isForeignKeyViolation(error: unknown) {
   return (
@@ -172,6 +180,13 @@ export function createAuthorService(repository: AuthorRepository) {
       }
 
       return restoredAuthor;
+    },
+
+    async bulkUpdateAuthors(ids: string[], action: unknown) {
+      const validIds = ids.map((id) => authorIdSchema.parse(id));
+      const validAction = authorBulkActionSchema.parse(action);
+
+      return repository.bulkUpdate(validIds, validAction);
     },
 
     async deleteAuthorPermanently(id: string) {

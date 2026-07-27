@@ -19,6 +19,7 @@ interface AdminCategoriesPageProps {
     status?: string;
     q?: string;
     page?: string;
+    pageSize?: string;
     feedback?: string;
   }>;
 }
@@ -70,6 +71,7 @@ export default async function AdminCategoriesPage({ searchParams }: AdminCategor
             status={status}
             query={query}
             page={categories.page}
+            pageSize={categories.pageSize}
             totalPages={categories.totalPages}
             totalItems={categories.totalItems}
           />

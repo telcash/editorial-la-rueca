@@ -66,6 +66,7 @@ function createRepositoryMock(): MockAuthorRepository {
     update: vi.fn<AuthorRepository['update']>(),
     archive: vi.fn<AuthorRepository['archive']>(),
     restore: vi.fn<AuthorRepository['restore']>(),
+    bulkUpdate: vi.fn<AuthorRepository['bulkUpdate']>(),
     deleteById: vi.fn<AuthorRepository['deleteById']>(),
   };
 }
@@ -213,6 +214,22 @@ describe('createAuthorService', () => {
     await expect(service.getPublishedAuthorBySlug('ana-autora')).rejects.toBeInstanceOf(
       AuthorNotFoundError,
     );
+  });
+
+  it('validates and delegates bulk author updates', async () => {
+    const result = { requested: 2, updated: 1, skipped: 1, errors: 0 };
+    repository.bulkUpdate.mockResolvedValue(result);
+
+    await expect(service.bulkUpdateAuthors([authorId, secondAuthorId], 'archive')).resolves.toBe(
+      result,
+    );
+    expect(repository.bulkUpdate).toHaveBeenCalledWith([authorId, secondAuthorId], 'archive');
+  });
+
+  it('rejects invalid bulk actions before calling the repository', async () => {
+    await expect(service.bulkUpdateAuthors([authorId], 'delete')).rejects.toThrow();
+
+    expect(repository.bulkUpdate).not.toHaveBeenCalled();
   });
 
   describe('createAuthor', () => {

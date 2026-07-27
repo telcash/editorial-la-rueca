@@ -28,6 +28,14 @@ import type { BookDataCreateInput, BookDataUpdateInput, BookRepository } from '.
 
 const bookIdSchema = z.string().uuid('El id del libro debe ser un UUID valido.');
 const bookSlugSchema = createBookSchema.shape.slug;
+const bookBulkActionSchema = z.enum([
+  'publish',
+  'unpublish',
+  'feature',
+  'unfeature',
+  'archive',
+  'restore',
+]);
 
 function assertUniqueAuthorIds(authorIds: string[]) {
   if (authorIds.length === 0) {
@@ -363,6 +371,13 @@ export function createBookService(
       }
 
       return restoredBook;
+    },
+
+    async bulkUpdateBooks(ids: string[], action: unknown) {
+      const validIds = ids.map((id) => bookIdSchema.parse(id));
+      const validAction = bookBulkActionSchema.parse(action);
+
+      return bookRepository.bulkUpdate(validIds, validAction);
     },
 
     async deleteBookPermanently(id: string) {

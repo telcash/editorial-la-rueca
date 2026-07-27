@@ -56,6 +56,24 @@ export interface BookAdminListOptions {
   query?: string;
   page: number;
   pageSize: number;
+  filters?: BookAdminListFilters;
+}
+
+export interface BookAdminListFilters {
+  published?: boolean;
+  featured?: boolean;
+  withCover?: boolean;
+  categorySlug?: string;
+}
+
+export type BookBulkAction =
+  'publish' | 'unpublish' | 'feature' | 'unfeature' | 'archive' | 'restore';
+
+export interface BookBulkUpdateResult {
+  requested: number;
+  updated: number;
+  skipped: number;
+  errors: number;
 }
 
 export interface BookPublicListOptions {
@@ -114,6 +132,7 @@ export interface BookRepository {
   ): Promise<BookWithDetails | null>;
   archive(id: string): Promise<BookWithDetails | null>;
   restore(id: string): Promise<BookWithDetails | null>;
+  bulkUpdate(ids: string[], action: BookBulkAction): Promise<BookBulkUpdateResult>;
   deletePermanently(id: string): Promise<BookWithDetails | null>;
   findAuthorsByBookId(bookId: string): Promise<BookAuthorSummary[]>;
   findCategoriesByBookId(bookId: string): Promise<BookCategorySummary[]>;

@@ -5,6 +5,14 @@ import type { Author } from '@/db/schema';
 import type { AuthorAdminListItem } from '@/services/authors/author-service.types';
 import { AuthorsTable } from './authors-table';
 
+vi.mock('next/navigation', () => ({
+  useRouter: () => ({ refresh: vi.fn() }),
+}));
+
+vi.mock('@/features/admin/authors/actions/bulk-author-actions', () => ({
+  bulkUpdateAuthorsAction: vi.fn(),
+}));
+
 vi.mock('./author-archive-action-button', () => ({
   AuthorArchiveActionButton: ({ isArchived }: { isArchived: boolean }) => (
     <button type="button">{isArchived ? 'Restaurar' : 'Archivar'}</button>

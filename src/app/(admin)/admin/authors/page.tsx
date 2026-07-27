@@ -4,13 +4,12 @@ import { Plus } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { EmptyAuthorsState } from '@/features/admin/authors/components/empty-authors-state';
 import { AuthorsTable } from '@/features/admin/authors/components/authors-table';
-import { ArchiveStatusFilter } from '@/features/admin/components/archive-status-filter';
+import { CatalogFilters } from '@/features/admin/components/catalog-filters';
 import { AdminFeedbackBanner } from '@/features/admin/components/feedback/admin-feedback-banner';
 import { ListPagination } from '@/features/admin/components/list-pagination';
-import { ListSearchForm } from '@/features/admin/components/list-search-form';
 import { AdminPageHeader } from '@/features/admin/components/admin-page-header';
 import { getAdminFeedbackMessage } from '@/features/admin/lib/feedback-messages';
-import { parseAdminListQuery } from '@/features/admin/lib/list-query';
+import { parseAdminListQuery, parseTriStateFilter } from '@/features/admin/lib/list-query';
 import { requireEditorialStaff } from '@/services/auth/access.service';
 import * as AuthorService from '@/services/authors/author.service';
 
@@ -19,19 +18,39 @@ interface AdminAuthorsPageProps {
     status?: string;
     q?: string;
     page?: string;
+    pageSize?: string;
+    published?: string;
+    featured?: string;
+    image?: string;
     feedback?: string;
   }>;
+}
+
+function toBooleanFilter(value: 'all' | 'true' | 'false') {
+  if (value === 'all') {
+    return undefined;
+  }
+
+  return value === 'true';
 }
 
 export default async function AdminAuthorsPage({ searchParams }: AdminAuthorsPageProps) {
   const params = await searchParams;
   const { status, query, page, pageSize } = parseAdminListQuery(params);
+  const published = parseTriStateFilter(params.published);
+  const featured = parseTriStateFilter(params.featured);
+  const image = parseTriStateFilter(params.image);
   const feedbackMessage = getAdminFeedbackMessage(params.feedback);
   const staff = await requireEditorialStaff();
   const authors = await AuthorService.listAuthorsForAdminPaginated(status, {
     query,
     page,
     pageSize,
+    filters: {
+      published: toBooleanFilter(published),
+      featured: toBooleanFilter(featured),
+      withPhoto: toBooleanFilter(image),
+    },
   });
 
   return (
@@ -51,12 +70,16 @@ export default async function AdminAuthorsPage({ searchParams }: AdminAuthorsPag
         }
       />
 
-      <ArchiveStatusFilter baseHref="/admin/authors" currentStatus={status} query={query} />
-      <ListSearchForm
+      <CatalogFilters
         action="/admin/authors"
         status={status}
         query={query}
-        placeholder="Buscar por nombre o slug..."
+        published={published}
+        featured={featured}
+        image={image}
+        imageLabel="Foto"
+        searchPlaceholder="Buscar por nombre o slug..."
+        pageSize={pageSize}
       />
 
       {authors.items.length > 0 ? (
@@ -67,8 +90,14 @@ export default async function AdminAuthorsPage({ searchParams }: AdminAuthorsPag
             status={status}
             query={query}
             page={authors.page}
+            pageSize={authors.pageSize}
             totalPages={authors.totalPages}
             totalItems={authors.totalItems}
+            params={{
+              published,
+              featured,
+              image,
+            }}
           />
         </>
       ) : (
