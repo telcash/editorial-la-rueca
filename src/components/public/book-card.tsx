@@ -138,7 +138,7 @@ function BookCardPreview({
     >
       <div className="grid grid-cols-[0.4fr_0.6fr] gap-4">
         <BookCover
-          title={book.title}
+          title={'book.title'}
           coverUrl={book.coverUrl}
           imageSizes="190px"
           className="rounded-lg border-public-border/80"

@@ -49,6 +49,34 @@ describe('book card helpers', () => {
     expect(selectPrimaryBookEdition([baseEdition, recentEdition])).toBe(recentEdition);
   });
 
+  it('selects an available edition before a newer unavailable edition', () => {
+    const unavailableRecentEdition = {
+      ...baseEdition,
+      id: '4739e9ff-39ea-4f85-9686-66ff93815e8a',
+      publicationDate: '2026-03-01',
+      isAvailable: false,
+    };
+
+    expect(selectPrimaryBookEdition([unavailableRecentEdition, baseEdition])).toBe(baseEdition);
+  });
+
+  it('selects lower sort order before recency when availability is tied', () => {
+    const recentEdition = {
+      ...baseEdition,
+      id: 'a7882ac7-7d0e-4265-ac52-e56e3343a741',
+      publicationDate: '2026-03-01',
+      sortOrder: 5,
+    };
+    const orderedEdition = {
+      ...baseEdition,
+      id: 'e92ad0dc-04df-4036-a0f6-373480d39709',
+      publicationDate: '2020-01-01',
+      sortOrder: 1,
+    };
+
+    expect(selectPrimaryBookEdition([recentEdition, orderedEdition])).toBe(orderedEdition);
+  });
+
   it('builds a short preview description from excerpt or clean synopsis', () => {
     expect(
       getBookPreviewDescription({ excerpt: 'Texto breve', description: '<p>Sinopsis</p>' }),

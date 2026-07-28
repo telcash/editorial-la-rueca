@@ -1,6 +1,8 @@
-import type { BookEditionDetails, BookWithDetails } from '@/services/books/book.types';
 import { formatEditionFormat, formatPublicationYear } from '@/features/public/lib/book-format';
 import { toPlainPublicText } from '@/features/public/lib/text-format';
+import type { BookEditionDetails, BookWithDetails } from '@/services/books/book.types';
+
+export { selectPrimaryBookEdition } from './book-edition.helpers';
 
 export const BOOK_CARD_WIDTH = 170;
 export const BOOK_COVER_HEIGHT = 248;
@@ -42,36 +44,6 @@ interface RectLike {
 interface ViewportLike {
   width: number;
   height: number;
-}
-
-function getEditionDateValue(edition: BookEditionDetails) {
-  if (!edition.publicationDate) {
-    return 0;
-  }
-
-  return new Date(edition.publicationDate).getTime() || 0;
-}
-
-export function selectPrimaryBookEdition(editions: BookEditionDetails[]) {
-  if (editions.length === 0) {
-    return null;
-  }
-
-  const featuredEdition = editions.find((edition) => edition.isFeatured);
-
-  if (featuredEdition) {
-    return featuredEdition;
-  }
-
-  return [...editions].sort((firstEdition, secondEdition) => {
-    const dateDifference = getEditionDateValue(secondEdition) - getEditionDateValue(firstEdition);
-
-    if (dateDifference !== 0) {
-      return dateDifference;
-    }
-
-    return firstEdition.sortOrder - secondEdition.sortOrder;
-  })[0];
 }
 
 export function getBookPreviewDescription(book: Pick<BookWithDetails, 'excerpt' | 'description'>) {
