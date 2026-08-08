@@ -24,13 +24,73 @@
   --color-public-ink: var(--public-ink);
   --color-public-muted: var(--public-muted);
   --color-public-border: var(--public-border);
+  --color-public-border-soft: var(--public-border-soft);
+  --color-public-border-interactive: var(--public-border-interactive);
   --color-public-surface: var(--public-surface);
   --color-public-surface-subtle: var(--public-surface-subtle);
+  --color-public-surface-neutral: var(--public-surface-neutral);
+  --color-public-surface-warm: var(--public-surface-warm);
   --color-public-red: var(--brand-red);
   --color-public-red-hover: var(--brand-red-hover);
   --color-public-red-soft: var(--brand-red-soft);
+  --color-public-brand: var(--public-brand);
+  --color-public-brand-hover: var(--public-brand-hover);
+  --color-public-brand-soft: var(--public-brand-soft);
+  --color-public-foreground: var(--public-foreground);
+  --color-public-muted-foreground: var(--public-muted-foreground);
+  --color-public-focus-ring: var(--public-focus-ring);
+  --color-public-focus-halo: var(--public-focus-halo);
+  --color-public-cover-background: var(--public-cover-background);
+  --color-public-photo-background: var(--public-photo-background);
+  --color-public-placeholder-background: var(--public-placeholder-background);
   --font-public: var(--font-poppins);
   --font-serif-public: var(--font-source-serif-4);
+  --font-public-functional: var(--font-functional);
+  --font-public-editorial: var(--font-editorial);
+  --text-public-display: clamp(2.375rem, 5vw, 3.75rem);
+  --text-public-display--line-height: 0.98;
+  --text-public-page-title: clamp(2.25rem, 5vw, 4rem);
+  --text-public-page-title--line-height: 1;
+  --text-public-detail-title: clamp(2rem, 2.75vw, 3.625rem);
+  --text-public-detail-title--line-height: 1.02;
+  --text-public-section-title: clamp(1.75rem, 4vw, 2.625rem);
+  --text-public-section-title--line-height: 1.08;
+  --text-public-card-title: 1rem;
+  --text-public-card-title--line-height: 1.35;
+  --text-public-lead: 1.0625rem;
+  --text-public-lead--line-height: 1.7;
+  --text-public-body: 1rem;
+  --text-public-body--line-height: 1.65;
+  --text-public-body-small: 0.875rem;
+  --text-public-body-small--line-height: 1.55;
+  --text-public-label: 0.75rem;
+  --text-public-label--line-height: 1.4;
+  --text-public-badge: 0.75rem;
+  --text-public-badge--line-height: 1.3;
+  --spacing-public-section-hero: var(--public-section-hero);
+  --spacing-public-section-lg: var(--public-section-lg);
+  --spacing-public-section-md: var(--public-section-md);
+  --spacing-public-section-sm: var(--public-section-sm);
+  --spacing-public-heading-gap: var(--public-heading-gap);
+  --spacing-public-content-gap-sm: var(--public-content-gap-sm);
+  --spacing-public-content-gap-md: var(--public-content-gap-md);
+  --spacing-public-content-gap-lg: var(--public-content-gap-lg);
+  --spacing-public-grid-gap: var(--public-grid-gap);
+  --spacing-public-card-padding: var(--public-card-padding);
+  --container-public-wide: var(--public-container-wide);
+  --container-public-default: var(--public-container-default);
+  --container-public-reading: var(--public-container-reading);
+  --container-public-narrow: var(--public-container-narrow);
+  --radius-public-sm: 0.375rem;
+  --radius-public-md: 0.5rem;
+  --radius-public-lg: 1rem;
+  --radius-public-xl: 1.75rem;
+  --radius-public-pill: 9999px;
+  --radius-public-book: 10px;
+  --shadow-public-subtle: 0 10px 30px rgb(23 23 23 / 0.04);
+  --shadow-public-card: 0 14px 40px rgb(23 23 23 / 0.06);
+  --shadow-public-elevated: 0 18px 50px rgb(23 23 23 / 0.08);
+  --shadow-public-preview: 0 24px 80px rgb(23 23 23 / 0.24);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -64,11 +124,73 @@
   --public-ink: #151515;
   --public-muted: #6f6a62;
   --public-border: #e6e1da;
+  --public-border-soft: #efe9e2;
+  --public-border-interactive: #d8d1c8;
   --public-surface: #ffffff;
   --public-surface-subtle: #f8f5f1;
+  --public-surface-neutral: #f7f7f5;
+  --public-surface-warm: #fffaf5;
+  --public-brand: var(--brand-red);
+  --public-brand-hover: var(--brand-red-hover);
+  --public-brand-soft: var(--brand-red-soft);
+  --public-foreground: var(--public-ink);
+  --public-muted-foreground: var(--public-muted);
+  --public-focus-ring: var(--brand-red);
+  --public-focus-halo: rgb(224 43 32 / 0.16);
+  --public-cover-background: #f4f0eb;
+  --public-photo-background: var(--public-surface-subtle);
+  --public-placeholder-background: #f5f0e8;
+  --font-functional: var(--font-poppins);
+  --font-editorial: var(--font-source-serif-4);
+  --public-section-hero: 3.5rem;
+  --public-section-lg: 3rem;
+  --public-section-md: 2.5rem;
+  --public-section-sm: 2rem;
+  --public-heading-gap: 1rem;
+  --public-content-gap-sm: 1rem;
+  --public-content-gap-md: 1.5rem;
+  --public-content-gap-lg: 2rem;
+  --public-grid-gap: 1.25rem;
+  --public-card-padding: 1.25rem;
+  --public-container-wide: 90rem;
+  --public-container-default: 80rem;
+  --public-container-reading: 48rem;
+  --public-container-narrow: 40rem;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --public-section-hero: 4.5rem;
+    --public-section-lg: 4rem;
+    --public-section-md: 3rem;
+    --public-section-sm: 2.5rem;
+    --public-grid-gap: 1.5rem;
+    --public-card-padding: 1.5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --public-section-hero: 5rem;
+    --public-section-lg: 4.5rem;
+    --public-section-md: 3.5rem;
+    --public-section-sm: 3rem;
+    --public-content-gap-lg: 2.5rem;
+    --public-grid-gap: 2rem;
+  }
+}
+
+.public-focus-ring {
+  outline: none;
+}
+
+.public-focus-ring:focus-visible {
+  outline: 2px solid var(--public-focus-ring);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px var(--public-focus-halo);
 }

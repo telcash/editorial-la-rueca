@@ -104,23 +104,25 @@ export default async function PublicAuthorDetailPage({ params }: PublicAuthorDet
             Volver a autores
           </Link>
 
-          <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(14rem,18rem)_1fr] lg:items-start">
+          <div className="mt-public-content-gap-lg grid gap-public-content-gap-lg lg:grid-cols-[minmax(14rem,18rem)_1fr] lg:items-start">
             <AuthorPhoto name={author.name} photoUrl={author.photoUrl} />
 
             <div>
               {author.country ? (
-                <p className="text-sm font-bold uppercase tracking-normal text-public-red">
+                <p className="text-public-label font-bold uppercase tracking-normal text-public-red">
                   {author.country}
                 </p>
               ) : null}
-              <h1 className="mt-3 font-serif-public text-[clamp(2.5rem,7vw,4.75rem)] font-semibold leading-[0.95] tracking-normal text-public-ink">
+              <h1 className="mt-3 font-serif-public text-public-detail-title font-semibold tracking-normal text-public-ink">
                 {author.name}
               </h1>
               {shortBio ? (
-                <p className="mt-5 max-w-3xl text-xl leading-8 text-public-muted">{shortBio}</p>
+                <p className="mt-public-heading-gap max-w-public-reading text-public-lead text-public-muted">
+                  {shortBio}
+                </p>
               ) : null}
               {biography ? (
-                <div className="mt-8 max-w-3xl whitespace-pre-line text-base leading-8 text-public-ink/80">
+                <div className="mt-public-content-gap-lg max-w-public-reading whitespace-pre-line text-public-body text-public-ink/80 md:text-public-lead">
                   {biography}
                 </div>
               ) : null}
@@ -139,7 +141,7 @@ export default async function PublicAuthorDetailPage({ params }: PublicAuthorDet
 
       <PublicSection variant="compact">
         <PublicContainer>
-          <SectionHeading title="Libros del autor" />
+          <SectionHeading title="Libros del autor" variant="compact" />
           {books.length > 0 ? (
             <div
               className="mt-8 grid justify-center"

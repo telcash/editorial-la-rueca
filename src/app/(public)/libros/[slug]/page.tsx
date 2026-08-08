@@ -78,12 +78,9 @@ export default async function PublicBookDetailPage({ params }: PublicBookDetailP
       {synopsis ? (
         <PublicSection variant="compact">
           <PublicContainer>
-            <div className="mx-auto max-w-[48rem] border-l-2 border-public-red/25 pl-5 md:pl-7">
-              <SectionHeading
-                title="Sinopsis"
-                titleClassName="text-[clamp(1.75rem,2.8vw,2.375rem)] leading-[1.15]"
-              />
-              <div className="mt-6 whitespace-pre-line text-base leading-7 text-public-ink/80 md:text-[1.0625rem] md:leading-8">
+            <div className="mx-auto max-w-public-reading border-l-2 border-public-red/25 pl-5 md:pl-7">
+              <SectionHeading title="Sinopsis" variant="compact" />
+              <div className="mt-public-content-gap-md whitespace-pre-line text-public-body text-public-ink/80 md:text-public-lead">
                 {synopsis}
               </div>
             </div>
@@ -97,8 +94,7 @@ export default async function PublicBookDetailPage({ params }: PublicBookDetailP
             <SectionHeading
               title="Ficha editorial"
               description="Datos principales del libro y de su edición de referencia."
-              titleClassName="text-[clamp(1.75rem,2.8vw,2.375rem)] leading-[1.15]"
-              descriptionClassName="text-[0.9375rem] leading-6 md:text-base md:leading-7"
+              variant="compact"
             />
             <BookMetaGrid
               items={editorialFactItems}

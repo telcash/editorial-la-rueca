@@ -18,7 +18,7 @@ export function BookMetaGrid({ items, className, itemClassName }: BookMetaGridPr
         <div
           key={`${item.label}-${item.value}`}
           className={cn(
-            'rounded-xl border border-public-border bg-white/72 px-4 py-3 shadow-[0_10px_30px_rgba(23,23,23,0.04)]',
+            'rounded-public-md border border-public-border bg-white/72 px-4 py-3 shadow-public-subtle',
             itemClassName,
           )}
         >

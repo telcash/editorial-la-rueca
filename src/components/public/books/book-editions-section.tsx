@@ -21,7 +21,7 @@ export function BookEditionsSection({ editions, primaryEditionId }: BookEditions
       <PublicContainer>
         <SectionHeading
           title={hasAvailableEdition ? 'Ediciones disponibles' : 'Ediciones'}
-          titleClassName="text-[clamp(1.75rem,2.8vw,2.375rem)] leading-[1.15]"
+          variant="compact"
         />
         <div className="mt-8 grid items-stretch gap-5 md:grid-cols-2 xl:grid-cols-3">
           {editions.map((edition) => (

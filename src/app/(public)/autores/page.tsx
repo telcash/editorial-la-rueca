@@ -43,9 +43,10 @@ export default async function PublicAuthorsPage({ searchParams }: PublicAuthorsP
         <PublicPageHeader
           title="Autores"
           description="Conoce a las voces que forman parte del catálogo de Editorial La Rueca."
+          variant="compact"
         />
 
-        <div className="space-y-5">
+        <div className="space-y-public-content-gap-sm">
           <PublicSearchForm
             action="/autores"
             query={query}
@@ -61,7 +62,7 @@ export default async function PublicAuthorsPage({ searchParams }: PublicAuthorsP
 
         {authors.items.length > 0 ? (
           <>
-            <div className="mt-8 grid grid-cols-[minmax(0,min(82vw,17.5rem))] justify-center gap-5 sm:grid-cols-[repeat(2,13.75rem)] md:grid-cols-[repeat(3,13.75rem)] lg:grid-cols-[repeat(4,14rem)] xl:grid-cols-[repeat(5,14rem)]">
+            <div className="mt-public-content-gap-lg grid grid-cols-[minmax(0,min(82vw,17.5rem))] justify-center gap-5 sm:grid-cols-[repeat(2,13.75rem)] md:grid-cols-[repeat(3,13.75rem)] lg:grid-cols-[repeat(4,14rem)] xl:grid-cols-[repeat(5,14rem)]">
               {authors.items.map((author) => (
                 <AuthorCard key={author.id} author={author} />
               ))}
@@ -74,7 +75,7 @@ export default async function PublicAuthorsPage({ searchParams }: PublicAuthorsP
             />
           </>
         ) : (
-          <div className="mt-8">
+          <div className="mt-public-content-gap-lg">
             <PublicEmptyState
               title="No hay autores para esta búsqueda"
               description="Prueba con otro nombre para seguir explorando el catálogo de autores."

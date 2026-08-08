@@ -19,7 +19,7 @@ export function PublicBookCover({
   return (
     <div
       className={cn(
-        'relative mx-auto aspect-[2/3] w-[68%] max-w-[20rem] overflow-hidden rounded-2xl border border-public-border bg-[#f5f0e8] p-3 shadow-[0_22px_60px_rgba(23,23,23,0.12)] sm:w-[62%] lg:w-full lg:max-w-[21rem]',
+        'relative mx-auto aspect-[2/3] w-[68%] max-w-[20rem] overflow-hidden rounded-public-lg border border-public-border bg-public-placeholder-background p-3 shadow-[0_22px_60px_rgba(23,23,23,0.12)] sm:w-[62%] lg:w-full lg:max-w-[21rem]',
         className,
       )}
     >

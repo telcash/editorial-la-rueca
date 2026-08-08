@@ -17,10 +17,7 @@ export function BookRelatedSection({ books }: BookRelatedSectionProps) {
   return (
     <PublicSection variant="compact">
       <PublicContainer>
-        <SectionHeading
-          title="También te puede interesar"
-          titleClassName="text-[clamp(1.75rem,2.8vw,2.375rem)] leading-[1.15]"
-        />
+        <SectionHeading title="También te puede interesar" variant="compact" />
         <div
           className="mt-8 grid justify-center"
           style={{

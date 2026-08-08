@@ -96,6 +96,7 @@ describe('public book detail components', () => {
 
     expect(coverHtml).toContain('data-src="https://example.com/cover.jpg"');
     expect(coverHtml).toContain('object-contain');
+    expect(coverHtml).toContain('bg-public-placeholder-background');
     expect(placeholderHtml).toContain('Portada no disponible');
     expect(placeholderHtml).toContain('aria-label="Portada no disponible para Cruce de Pasos"');
   });
@@ -126,6 +127,7 @@ describe('public book detail components', () => {
     expect(html).toContain('<dl');
     expect(html).toContain('<dt');
     expect(html).toContain('<dd');
+    expect(html).toContain('shadow-public-subtle');
     expect(emptyHtml).toBe('');
   });
 

@@ -30,7 +30,7 @@ function BackToCatalogLink() {
 
 export function BookDetailHero({ book, primaryEdition, summary, metaItems }: BookDetailHeroProps) {
   return (
-    <div className="rounded-[1.75rem] border border-public-border bg-[linear-gradient(135deg,#fffaf5_0%,#ffffff_52%,#f7f2ed_100%)] px-4 py-5 shadow-[0_24px_80px_rgba(23,23,23,0.08)] sm:px-6 sm:py-7 lg:px-8 lg:py-8">
+    <div className="rounded-public-xl border border-public-border bg-[linear-gradient(135deg,#fffaf5_0%,#ffffff_52%,#f7f2ed_100%)] px-4 py-5 shadow-[0_24px_80px_rgba(23,23,23,0.08)] sm:px-6 sm:py-7 lg:px-8 lg:py-8">
       <div className="lg:hidden">
         <BackToCatalogLink />
         <BookCategoryBadges book={book} primaryEdition={primaryEdition} className="mt-5" />
@@ -45,11 +45,11 @@ export function BookDetailHero({ book, primaryEdition, summary, metaItems }: Boo
             <BookCategoryBadges book={book} primaryEdition={primaryEdition} className="mt-6" />
           </div>
 
-          <h1 className="mt-5 font-serif-public text-[clamp(2rem,2.75vw,3.625rem)] font-semibold leading-[1.04] tracking-normal text-public-ink lg:mt-6">
+          <h1 className="mt-5 font-serif-public text-public-detail-title font-semibold tracking-normal text-public-ink lg:mt-6">
             {book.title}
           </h1>
           {book.subtitle ? (
-            <p className="mt-3 max-w-3xl text-[1.0625rem] leading-7 text-public-muted md:text-[1.25rem] md:leading-8">
+            <p className="mt-3 max-w-public-reading text-public-lead text-public-muted">
               {book.subtitle}
             </p>
           ) : null}
@@ -59,7 +59,7 @@ export function BookDetailHero({ book, primaryEdition, summary, metaItems }: Boo
           </div>
 
           {summary ? (
-            <p className="mt-6 max-w-3xl text-base leading-7 text-public-ink/78 md:text-[1.0625rem] md:leading-8">
+            <p className="mt-6 max-w-public-reading text-public-body text-public-ink/78 md:text-public-lead">
               {summary}
             </p>
           ) : null}

@@ -115,11 +115,11 @@ export default async function PublicHomePage() {
             <div className="overflow-hidden rounded-2xl border border-public-border bg-white shadow-[0_18px_50px_rgba(23,23,23,0.08)]">
               <div className="grid min-h-[24rem] items-center gap-8 bg-[radial-gradient(circle_at_18%_22%,rgba(224,43,32,0.10),transparent_28%),linear-gradient(110deg,#ffffff_0%,#fbf4ec_100%)] p-6 sm:p-8 lg:p-12">
                 <div className="max-w-2xl">
-                  <h1 className="font-serif-public text-[clamp(2.35rem,6vw,3.75rem)] font-semibold leading-[0.95] tracking-normal text-public-ink">
+                  <h1 className="font-serif-public text-public-display font-semibold tracking-normal text-public-ink">
                     Publicamos libros.
                     <span className="block text-public-red">Acompañamos autores.</span>
                   </h1>
-                  <p className="mt-5 max-w-xl text-base leading-7 text-public-ink/80 md:text-lg">
+                  <p className="mt-public-heading-gap max-w-xl text-public-lead text-public-ink/80">
                     Te acompañamos durante todo el proceso editorial, con claridad, cercanía y un
                     equipo que cuida tu obra como merece.
                   </p>
@@ -141,7 +141,7 @@ export default async function PublicHomePage() {
               <h2 className="font-serif-public text-3xl font-semibold leading-tight text-public-ink">
                 Cuéntanos sobre tu libro
               </h2>
-              <p className="mt-3 text-sm leading-6 text-public-muted">
+              <p className="mt-3 text-public-body-small text-public-muted">
                 Déjanos tus datos y te orientamos sobre el proceso editorial más adecuado para tu
                 proyecto.
               </p>
@@ -159,7 +159,7 @@ export default async function PublicHomePage() {
             <SectionHeading
               title="Libros destacados"
               action={<PublicCtaLink href="/libros">Ver catálogo completo</PublicCtaLink>}
-              align="center"
+              variant="centered"
             />
             <FeaturedBooksCarousel books={featuredBooks} className="mt-8" />
           </PublicContainer>
@@ -187,14 +187,14 @@ export default async function PublicHomePage() {
         </PublicSection>
       ) : null}
 
-      <PublicSection variant="compact" className="pt-0">
+      <PublicSection variant="flushTop">
         <PublicContainer>
           <PublicCard className="flex flex-col gap-5 p-6 sm:p-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-2xl">
-              <h2 className="font-serif-public text-[clamp(1.75rem,4vw,2.5rem)] leading-tight text-public-ink">
+              <h2 className="font-serif-public text-public-section-title text-public-ink">
                 ¿Quieres publicar tu libro con acompañamiento editorial?
               </h2>
-              <p className="mt-3 text-base leading-7 text-public-muted">
+              <p className="mt-3 text-public-body text-public-muted">
                 Cuéntanos en qué punto está tu proyecto y te orientaremos sobre el camino más
                 adecuado.
               </p>

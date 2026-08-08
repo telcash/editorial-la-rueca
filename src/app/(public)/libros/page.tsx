@@ -51,9 +51,10 @@ export default async function PublicBooksPage({ searchParams }: PublicBooksPageP
         <PublicPageHeader
           title="Libros"
           description="Explora el catálogo editorial de La Rueca por título, autor o categoría."
+          variant="compact"
         />
 
-        <div className="space-y-5">
+        <div className="space-y-public-content-gap-sm">
           <PublicSearchForm
             action="/libros"
             query={query}
@@ -76,7 +77,7 @@ export default async function PublicBooksPage({ searchParams }: PublicBooksPageP
         {books.items.length > 0 ? (
           <>
             <div
-              className="mt-8 grid justify-center"
+              className="mt-public-content-gap-lg grid justify-center"
               style={{
                 gridTemplateColumns: `repeat(auto-fill, minmax(${BOOK_CARD_WIDTH}px, ${BOOK_CARD_WIDTH}px))`,
                 gap: BOOK_CARD_GRID_GAP,
@@ -95,7 +96,7 @@ export default async function PublicBooksPage({ searchParams }: PublicBooksPageP
             />
           </>
         ) : (
-          <div className="mt-8">
+          <div className="mt-public-content-gap-lg">
             <PublicEmptyState
               title="No hay libros para esta búsqueda"
               description="Prueba con otro título, autor o categoría para seguir explorando el catálogo."

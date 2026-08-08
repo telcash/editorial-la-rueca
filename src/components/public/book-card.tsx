@@ -65,7 +65,7 @@ function BookCover({
   return (
     <div
       className={cn(
-        'relative aspect-[2/3] overflow-hidden rounded-[10px] border border-public-border bg-[#f4f0eb]',
+        'relative aspect-[2/3] overflow-hidden rounded-public-book border border-public-border bg-public-cover-background',
         className,
       )}
       style={{
@@ -327,7 +327,7 @@ export function BookCard({ book, className }: BookCardProps) {
           className="flex h-full flex-col overflow-hidden"
           style={{ borderRadius: BOOK_CARD_RADIUS }}
         >
-          <div className="bg-[#f4f0eb]">
+          <div className="bg-public-cover-background">
             <BookCover
               title={book.title}
               coverUrl={book.coverUrl}
