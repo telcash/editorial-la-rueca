@@ -22,7 +22,7 @@ export function PublicLogo({ variant = 'header', className }: PublicLogoProps) {
       )}
     >
       <Image
-        src="/brand/logo.webp"
+        src="/brand/logo-la-rueca.webp"
         alt="Editorial La Rueca"
         width={500}
         height={182}
