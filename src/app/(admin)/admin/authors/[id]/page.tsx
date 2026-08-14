@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
+import { AuthorBooksSection } from '@/features/admin/authors/components/author-books-section';
 import { AuthorForm } from '@/features/admin/authors/components/author-form';
 import { getAuthorFormValuesFromAuthor } from '@/features/admin/authors/lib/author-form-data';
 import { ArchivedBadge } from '@/features/admin/components/data-display/archived-badge';
@@ -38,6 +39,7 @@ export default async function EditAuthorPage({ params, searchParams }: EditAutho
   const { feedback } = await searchParams;
   const feedbackMessage = getAdminFeedbackMessage(feedback);
   const author = await getAuthorForEdit(id);
+  const authorBooks = await AuthorService.listBooksByAuthorId(author.id);
 
   return (
     <section className="space-y-6">
@@ -70,6 +72,7 @@ export default async function EditAuthorPage({ params, searchParams }: EditAutho
         authorId={author.id}
         initialValues={getAuthorFormValuesFromAuthor(author)}
       />
+      <AuthorBooksSection books={authorBooks} />
     </section>
   );
 }

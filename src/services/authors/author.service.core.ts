@@ -103,6 +103,12 @@ export function createAuthorService(repository: AuthorRepository) {
       return author;
     },
 
+    async listBooksByAuthorId(id: string) {
+      const validId = authorIdSchema.parse(id);
+
+      return repository.findBooksByAuthorId(validId);
+    },
+
     async createAuthor(input: unknown) {
       const data: CreateAuthorInput = createAuthorSchema.parse(input);
       const slugExists = await repository.existsBySlug(data.slug);

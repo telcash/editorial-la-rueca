@@ -47,8 +47,22 @@ const baseAuthor: Author = {
   updatedAt: new Date('2026-01-01T00:00:00.000Z'),
 };
 
-function renderAuthorsTable(author: Author, bookCount: number, canDeletePermanently: boolean) {
-  const authors: AuthorAdminListItem[] = [{ author, bookCount }];
+function renderAuthorsTable({
+  author,
+  bookCount,
+  canDeletePermanently,
+  publishedBooksCount = 0,
+  publishedBooksPreview = [],
+}: {
+  author: Author;
+  bookCount: number;
+  canDeletePermanently: boolean;
+  publishedBooksCount?: number;
+  publishedBooksPreview?: AuthorAdminListItem['publishedBooksPreview'];
+}) {
+  const authors: AuthorAdminListItem[] = [
+    { author, bookCount, publishedBooksCount, publishedBooksPreview },
+  ];
 
   return renderToStaticMarkup(
     <AuthorsTable authors={authors} canDeletePermanently={canDeletePermanently} />,
@@ -57,7 +71,11 @@ function renderAuthorsTable(author: Author, bookCount: number, canDeletePermanen
 
 describe('AuthorsTable permanent delete UI', () => {
   it('does not show hard delete for active authors when the user is admin', () => {
-    const html = renderAuthorsTable(baseAuthor, 0, true);
+    const html = renderAuthorsTable({
+      author: baseAuthor,
+      bookCount: 0,
+      canDeletePermanently: true,
+    });
 
     expect(html).toContain('Editar');
     expect(html).toContain('Archivar');
@@ -65,7 +83,11 @@ describe('AuthorsTable permanent delete UI', () => {
   });
 
   it('shows hard delete for archived authors when the user is admin', () => {
-    const html = renderAuthorsTable({ ...baseAuthor, isArchived: true }, 0, true);
+    const html = renderAuthorsTable({
+      author: { ...baseAuthor, isArchived: true },
+      bookCount: 0,
+      canDeletePermanently: true,
+    });
 
     expect(html).toContain('Editar');
     expect(html).toContain('Restaurar');
@@ -73,17 +95,57 @@ describe('AuthorsTable permanent delete UI', () => {
   });
 
   it('does not show hard delete for archived authors when the user is editor', () => {
-    const html = renderAuthorsTable({ ...baseAuthor, isArchived: true }, 0, false);
+    const html = renderAuthorsTable({
+      author: { ...baseAuthor, isArchived: true },
+      bookCount: 0,
+      canDeletePermanently: false,
+    });
 
     expect(html).toContain('Restaurar');
     expect(html).not.toContain('Eliminar definitivamente');
   });
 
   it('blocks hard delete and shows a reason when the archived author has books', () => {
-    const html = renderAuthorsTable({ ...baseAuthor, isArchived: true }, 2, true);
+    const html = renderAuthorsTable({
+      author: { ...baseAuthor, isArchived: true },
+      bookCount: 2,
+      canDeletePermanently: true,
+    });
 
     expect(html).toContain('disabled=""');
     expect(html).toContain('No se puede eliminar porque está relacionado con');
     expect(html).toContain('2 libros');
+  });
+});
+
+describe('AuthorsTable published books UI', () => {
+  it('shows published book links and the remaining count', () => {
+    const html = renderAuthorsTable({
+      author: baseAuthor,
+      bookCount: 5,
+      canDeletePermanently: false,
+      publishedBooksCount: 5,
+      publishedBooksPreview: [
+        { id: 'book-1', title: 'Cruce de Pasos' },
+        { id: 'book-2', title: 'El Valle de Cristal' },
+        { id: 'book-3', title: 'La luz después' },
+      ],
+    });
+
+    expect(html).toContain('Libros publicados');
+    expect(html).toContain('/admin/books/book-1');
+    expect(html).toContain('Cruce de Pasos');
+    expect(html).toContain('+ 2 más');
+  });
+
+  it('shows an empty message when an author has no published books', () => {
+    const html = renderAuthorsTable({
+      author: baseAuthor,
+      bookCount: 2,
+      canDeletePermanently: false,
+      publishedBooksCount: 0,
+    });
+
+    expect(html).toContain('Sin libros publicados');
   });
 });

@@ -40,16 +40,20 @@ function AuthorSearchResults({
   }
 
   return (
-    <ul className="grid gap-2" aria-label="Resultados de búsqueda de autores">
+    <ul
+      className="grid max-h-[30rem] min-w-0 gap-2 overflow-y-auto overflow-x-hidden pr-1"
+      aria-label="Resultados de búsqueda de autores"
+      data-layout="author-search-results"
+    >
       {authors.map((author) => (
         <li
           key={author.id}
-          className="flex items-center gap-3 rounded-lg border border-border px-3 py-3"
+          className="grid w-full min-w-0 grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 rounded-lg border border-border px-3 py-3"
         >
           <EntityThumbnail src={author.photoUrl} alt={`Foto de ${author.name}`} variant="avatar" />
           <div className="min-w-0 flex-1">
-            <p className="truncate text-sm font-medium text-foreground">{author.name}</p>
-            <div className="flex flex-wrap items-center gap-2">
+            <p className="break-words text-sm font-medium text-foreground">{author.name}</p>
+            <div className="flex min-w-0 flex-wrap items-center gap-2">
               <p className="truncate text-xs text-muted-foreground">{author.slug}</p>
               <ArchivedBadge isArchived={author.isArchived} />
             </div>
@@ -58,6 +62,7 @@ function AuthorSearchResults({
             type="button"
             variant="outline"
             size="sm"
+            className="shrink-0"
             disabled={disabled}
             onClick={() => onAddAuthor(author)}
             aria-label={`Añadir ${author.name}`}
@@ -89,53 +94,57 @@ function SelectedAuthorCard({
   onRemoveAuthor: (authorId: string) => void;
 }) {
   return (
-    <li className="flex flex-col gap-3 rounded-lg border border-border px-3 py-3 sm:flex-row sm:items-center">
-      <div className="flex items-center gap-3">
-        <div className="flex size-7 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-semibold text-primary-foreground">
-          {index + 1}
-        </div>
-        <EntityThumbnail src={author.photoUrl} alt={`Foto de ${author.name}`} variant="avatar" />
-        <div className="min-w-0">
-          <p className="truncate text-sm font-medium text-foreground">{author.name}</p>
-          <div className="flex flex-wrap items-center gap-2">
-            <p className="truncate text-xs text-muted-foreground">{author.slug}</p>
-            <ArchivedBadge isArchived={author.isArchived} />
-          </div>
+    <li
+      className="grid w-full min-w-0 grid-cols-[auto_auto_minmax(0,1fr)_auto_auto_auto] items-center gap-2 rounded-lg border border-border px-3 py-3"
+      data-layout="selected-author-row"
+    >
+      <div className="flex size-7 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-semibold text-primary-foreground">
+        {index + 1}
+      </div>
+      <EntityThumbnail src={author.photoUrl} alt={`Foto de ${author.name}`} variant="avatar" />
+      <div className="min-w-0">
+        <p className="line-clamp-2 break-words text-sm font-medium text-foreground">
+          {author.name}
+        </p>
+        <div className="flex min-w-0 flex-wrap items-center gap-2">
+          <p className="truncate text-xs text-muted-foreground">{author.slug}</p>
+          <ArchivedBadge isArchived={author.isArchived} />
         </div>
       </div>
 
-      <div className="flex gap-2 sm:ml-auto">
-        <Button
-          type="button"
-          variant="outline"
-          size="icon-sm"
-          disabled={disabled || index === 0}
-          aria-label={`Subir ${author.name}`}
-          onClick={() => onMoveAuthorUp(author.id)}
-        >
-          <ArrowUp className="size-3.5" aria-hidden="true" />
-        </Button>
-        <Button
-          type="button"
-          variant="outline"
-          size="icon-sm"
-          disabled={disabled || index === totalAuthors - 1}
-          aria-label={`Bajar ${author.name}`}
-          onClick={() => onMoveAuthorDown(author.id)}
-        >
-          <ArrowDown className="size-3.5" aria-hidden="true" />
-        </Button>
-        <Button
-          type="button"
-          variant="outline"
-          size="icon-sm"
-          disabled={disabled}
-          aria-label={`Eliminar ${author.name}`}
-          onClick={() => onRemoveAuthor(author.id)}
-        >
-          <X className="size-3.5" aria-hidden="true" />
-        </Button>
-      </div>
+      <Button
+        type="button"
+        variant="outline"
+        size="icon-sm"
+        className="shrink-0"
+        disabled={disabled || index === 0}
+        aria-label={`Subir ${author.name}`}
+        onClick={() => onMoveAuthorUp(author.id)}
+      >
+        <ArrowUp className="size-3.5" aria-hidden="true" />
+      </Button>
+      <Button
+        type="button"
+        variant="outline"
+        size="icon-sm"
+        className="shrink-0"
+        disabled={disabled || index === totalAuthors - 1}
+        aria-label={`Bajar ${author.name}`}
+        onClick={() => onMoveAuthorDown(author.id)}
+      >
+        <ArrowDown className="size-3.5" aria-hidden="true" />
+      </Button>
+      <Button
+        type="button"
+        variant="outline"
+        size="icon-sm"
+        className="shrink-0"
+        disabled={disabled}
+        aria-label={`Eliminar ${author.name}`}
+        onClick={() => onRemoveAuthor(author.id)}
+      >
+        <X className="size-3.5" aria-hidden="true" />
+      </Button>
     </li>
   );
 }
@@ -157,7 +166,7 @@ export function BookAuthorsSection({
       title="Autores"
       description="Selecciona uno o varios autores y define el orden en el que aparecerán."
     >
-      <div className="grid gap-5">
+      <div className="grid min-w-0 gap-6">
         <div className="space-y-2">
           <Label htmlFor="author-search">Buscar autor</Label>
           <Input
@@ -171,13 +180,16 @@ export function BookAuthorsSection({
           />
         </div>
 
-        <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-          <div className="space-y-3">
+        <div
+          className="grid min-w-0 gap-6 xl:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]"
+          data-layout="book-authors-responsive-grid"
+        >
+          <div className="min-w-0 space-y-3 overflow-x-hidden">
             <h3 className="text-sm font-medium text-foreground">Resultados</h3>
             <AuthorSearchResults authors={authors} disabled={disabled} onAddAuthor={onAddAuthor} />
           </div>
 
-          <div className="space-y-3">
+          <div className="min-w-0 space-y-3 overflow-x-hidden">
             <div>
               <h3 className="text-sm font-medium text-foreground">Autores seleccionados</h3>
               <p className="text-xs text-muted-foreground">
@@ -185,7 +197,11 @@ export function BookAuthorsSection({
               </p>
             </div>
             {selectedAuthors.length > 0 ? (
-              <ol className="grid gap-2" aria-label="Autores seleccionados">
+              <ol
+                className="grid min-w-0 gap-2 overflow-x-hidden"
+                aria-label="Autores seleccionados"
+                data-layout="selected-authors-list"
+              >
                 {selectedAuthors.map((author, index) => (
                   <SelectedAuthorCard
                     key={author.id}

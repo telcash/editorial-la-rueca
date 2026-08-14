@@ -60,6 +60,7 @@ function createRepositoryMock(): MockAuthorRepository {
     findPublished: vi.fn<AuthorRepository['findPublished']>(),
     findPublishedPaginated: vi.fn<AuthorRepository['findPublishedPaginated']>(),
     findPublishedBySlug: vi.fn<AuthorRepository['findPublishedBySlug']>(),
+    findBooksByAuthorId: vi.fn<AuthorRepository['findBooksByAuthorId']>(),
     countBooksByAuthorId: vi.fn<AuthorRepository['countBooksByAuthorId']>(),
     existsBySlug: vi.fn<AuthorRepository['existsBySlug']>(),
     create: vi.fn<AuthorRepository['create']>(),
@@ -142,7 +143,9 @@ describe('createAuthorService', () => {
   });
 
   it('listAuthorsForAdmin delegates to the aggregated admin list', async () => {
-    const adminRows = [{ author: baseAuthor, bookCount: 2 }];
+    const adminRows = [
+      { author: baseAuthor, bookCount: 2, publishedBooksCount: 1, publishedBooksPreview: [] },
+    ];
     repository.findAllWithBookCount.mockResolvedValue(adminRows);
 
     await expect(service.listAuthorsForAdmin('all')).resolves.toBe(adminRows);
@@ -151,7 +154,9 @@ describe('createAuthorService', () => {
 
   it('listAuthorsForAdminPaginated delegates to the paginated admin list', async () => {
     const result = {
-      items: [{ author: baseAuthor, bookCount: 2 }],
+      items: [
+        { author: baseAuthor, bookCount: 2, publishedBooksCount: 1, publishedBooksPreview: [] },
+      ],
       totalItems: 1,
       page: 1,
       pageSize: 20,
@@ -164,12 +169,14 @@ describe('createAuthorService', () => {
         query: 'ana',
         page: 1,
         pageSize: 20,
+        sort: 'published-books-desc',
       }),
     ).resolves.toBe(result);
     expect(repository.findAllWithBookCountPaginated).toHaveBeenCalledWith('active', {
       query: 'ana',
       page: 1,
       pageSize: 20,
+      sort: 'published-books-desc',
     });
   });
 
@@ -214,6 +221,43 @@ describe('createAuthorService', () => {
     await expect(service.getPublishedAuthorBySlug('ana-autora')).rejects.toBeInstanceOf(
       AuthorNotFoundError,
     );
+  });
+
+  describe('listBooksByAuthorId', () => {
+    it('validates UUIDs before calling the repository', async () => {
+      await expect(service.listBooksByAuthorId('not-a-uuid')).rejects.toThrow();
+
+      expect(repository.findBooksByAuthorId).not.toHaveBeenCalled();
+    });
+
+    it('delegates to the repository with the requested author id', async () => {
+      const books = [
+        {
+          id: 'a5c5e7a9-e5c6-45e4-b359-bd83656690d2',
+          title: 'Cruce de Pasos',
+          slug: 'cruce-de-pasos',
+          coverUrl: null,
+          isPublished: true,
+          isArchived: false,
+          isFeatured: true,
+          updatedAt: new Date('2026-02-01T00:00:00.000Z'),
+        },
+        {
+          id: '41e35db4-e4b9-4fd6-bd10-c5cc85fdc94d',
+          title: 'No te vi venir',
+          slug: 'no-te-vi-venir',
+          coverUrl: null,
+          isPublished: false,
+          isArchived: false,
+          isFeatured: false,
+          updatedAt: new Date('2026-02-02T00:00:00.000Z'),
+        },
+      ];
+      repository.findBooksByAuthorId.mockResolvedValue(books);
+
+      await expect(service.listBooksByAuthorId(authorId)).resolves.toBe(books);
+      expect(repository.findBooksByAuthorId).toHaveBeenCalledWith(authorId);
+    });
   });
 
   it('validates and delegates bulk author updates', async () => {

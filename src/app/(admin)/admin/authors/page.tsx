@@ -12,6 +12,11 @@ import { getAdminFeedbackMessage } from '@/features/admin/lib/feedback-messages'
 import { parseAdminListQuery, parseTriStateFilter } from '@/features/admin/lib/list-query';
 import { requireEditorialStaff } from '@/services/auth/access.service';
 import * as AuthorService from '@/services/authors/author.service';
+import {
+  AUTHOR_ADMIN_SORT_VALUES,
+  DEFAULT_AUTHOR_ADMIN_SORT,
+  type AuthorAdminSort,
+} from '@/services/authors/author-service.types';
 
 interface AdminAuthorsPageProps {
   searchParams: Promise<{
@@ -22,8 +27,24 @@ interface AdminAuthorsPageProps {
     published?: string;
     featured?: string;
     image?: string;
+    sort?: string;
     feedback?: string;
   }>;
+}
+
+const authorSortOptions: Array<{ value: AuthorAdminSort; label: string }> = [
+  { value: 'name-asc', label: 'Nombre A-Z' },
+  { value: 'name-desc', label: 'Nombre Z-A' },
+  { value: 'updated-desc', label: 'Actualizados recientemente' },
+  { value: 'created-asc', label: 'Más antiguos' },
+  { value: 'published-books-desc', label: 'Más libros publicados' },
+  { value: 'published-books-asc', label: 'Menos libros publicados' },
+];
+
+function parseAuthorAdminSort(value: string | undefined): AuthorAdminSort {
+  return AUTHOR_ADMIN_SORT_VALUES.includes(value as AuthorAdminSort)
+    ? (value as AuthorAdminSort)
+    : DEFAULT_AUTHOR_ADMIN_SORT;
 }
 
 function toBooleanFilter(value: 'all' | 'true' | 'false') {
@@ -40,12 +61,14 @@ export default async function AdminAuthorsPage({ searchParams }: AdminAuthorsPag
   const published = parseTriStateFilter(params.published);
   const featured = parseTriStateFilter(params.featured);
   const image = parseTriStateFilter(params.image);
+  const sort = parseAuthorAdminSort(params.sort);
   const feedbackMessage = getAdminFeedbackMessage(params.feedback);
   const staff = await requireEditorialStaff();
   const authors = await AuthorService.listAuthorsForAdminPaginated(status, {
     query,
     page,
     pageSize,
+    sort,
     filters: {
       published: toBooleanFilter(published),
       featured: toBooleanFilter(featured),
@@ -79,6 +102,9 @@ export default async function AdminAuthorsPage({ searchParams }: AdminAuthorsPag
         image={image}
         imageLabel="Foto"
         searchPlaceholder="Buscar por nombre o slug..."
+        sort={sort}
+        sortOptions={authorSortOptions}
+        defaultSort={DEFAULT_AUTHOR_ADMIN_SORT}
         pageSize={pageSize}
       />
 
@@ -97,6 +123,7 @@ export default async function AdminAuthorsPage({ searchParams }: AdminAuthorsPag
               published,
               featured,
               image,
+              sort,
             }}
           />
         </>

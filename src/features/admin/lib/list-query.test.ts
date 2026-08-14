@@ -48,10 +48,11 @@ describe('admin list query helpers', () => {
         q: 'poesia',
         status: 'active',
         published: 'true',
+        sort: 'published-books-desc',
         page: 1,
         pageSize: 20,
       }),
-    ).toBe('/admin/books?q=poesia&published=true');
+    ).toBe('/admin/books?q=poesia&published=true&sort=published-books-desc');
   });
 
   it('returns compact visible page numbers for numbered pagination', () => {

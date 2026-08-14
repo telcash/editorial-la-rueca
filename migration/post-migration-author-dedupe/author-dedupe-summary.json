@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-11T17:36:12.178Z",
+  "totalAuthors": 189,
+  "duplicateGroupsDetected": 29,
+  "affectedAuthors": 85,
+  "highConfidenceDuplicate": 2,
+  "likelyDuplicate": 26,
+  "manualReview": 1,
+  "keepSeparate": 0,
+  "affectedBooks": 69,
+  "groupsWithPhotoConflicts": 27,
+  "groupsWithBiographyConflicts": 3,
+  "relationsToConsolidate": 69
+}

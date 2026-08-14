@@ -21,6 +21,9 @@ interface CatalogFiltersProps {
   searchPlaceholder: string;
   category?: string;
   categoryOptions?: CatalogFilterOption[];
+  sort?: string;
+  sortOptions?: CatalogFilterOption[];
+  defaultSort?: string;
   pageSize: number;
 }
 
@@ -44,9 +47,21 @@ function getActiveFilterLabels({
   imageLabel,
   category,
   categoryOptions = [],
+  sort,
+  sortOptions = [],
+  defaultSort,
 }: Pick<
   CatalogFiltersProps,
-  'status' | 'published' | 'featured' | 'image' | 'imageLabel' | 'category' | 'categoryOptions'
+  | 'status'
+  | 'published'
+  | 'featured'
+  | 'image'
+  | 'imageLabel'
+  | 'category'
+  | 'categoryOptions'
+  | 'sort'
+  | 'sortOptions'
+  | 'defaultSort'
 >) {
   const labels: string[] = [];
 
@@ -70,6 +85,12 @@ function getActiveFilterLabels({
     labels.push(categoryOptions.find((option) => option.value === category)?.label ?? category);
   }
 
+  if (sort && sort !== defaultSort) {
+    const sortLabel = sortOptions.find((option) => option.value === sort)?.label;
+
+    labels.push(sortLabel ? `Orden: ${sortLabel}` : `Orden: ${sort}`);
+  }
+
   return labels;
 }
 
@@ -84,6 +105,9 @@ export function CatalogFilters({
   searchPlaceholder,
   category,
   categoryOptions = [],
+  sort,
+  sortOptions = [],
+  defaultSort,
   pageSize,
 }: CatalogFiltersProps) {
   const activeLabels = getActiveFilterLabels({
@@ -94,6 +118,9 @@ export function CatalogFilters({
     imageLabel,
     category,
     categoryOptions,
+    sort,
+    sortOptions,
+    defaultSort,
   });
 
   return (
@@ -198,6 +225,26 @@ export function CatalogFilters({
             >
               <option value="">Todas</option>
               {categoryOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </div>
+        ) : null}
+
+        {sortOptions.length > 0 ? (
+          <div className="grid gap-1.5">
+            <label htmlFor="admin-catalog-sort" className="text-sm font-medium text-foreground">
+              Orden
+            </label>
+            <select
+              id="admin-catalog-sort"
+              name="sort"
+              defaultValue={sort ?? defaultSort}
+              className="min-h-10 rounded-md border border-input bg-background px-3 text-sm"
+            >
+              {sortOptions.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}
                 </option>

@@ -19,6 +19,7 @@ export const {
   listPublishedAuthors,
   listPublishedAuthorsPaginated,
   getPublishedAuthorBySlug,
+  listBooksByAuthorId,
   createAuthor,
   updateAuthor,
   archiveAuthor,

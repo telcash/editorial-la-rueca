@@ -28,6 +28,10 @@ interface AuthorsTableProps {
 export function AuthorsTable({ authors, canDeletePermanently }: AuthorsTableProps) {
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const visibleAuthorIds = useMemo(() => authors.map(({ author }) => author.id), [authors]);
+  const visibleSelectedIds = useMemo(
+    () => visibleAuthorIds.filter((id) => selectedIds.has(id)),
+    [selectedIds, visibleAuthorIds],
+  );
   const allVisibleSelected =
     visibleAuthorIds.length > 0 && visibleAuthorIds.every((id) => selectedIds.has(id));
   const bulkActions: Array<BulkActionOption<AuthorBulkAction>> = [
@@ -77,14 +81,14 @@ export function AuthorsTable({ authors, canDeletePermanently }: AuthorsTableProp
   return (
     <div className="space-y-3">
       <BulkActionToolbar
-        selectedCount={selectedIds.size}
+        selectedCount={visibleSelectedIds.length}
         actions={bulkActions}
         onClearSelection={() => setSelectedIds(new Set())}
-        onAction={(action) => bulkUpdateAuthorsAction([...selectedIds], action)}
+        onAction={(action) => bulkUpdateAuthorsAction(visibleSelectedIds, action)}
       />
       <div className="overflow-hidden rounded-lg border border-border bg-card">
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[840px] text-left text-sm">
+          <table className="w-full min-w-[1040px] text-left text-sm">
             <thead className="border-b border-border bg-muted/60 text-xs font-medium uppercase text-muted-foreground">
               <tr>
                 <th scope="col" className="w-12 px-4 py-3">
@@ -106,6 +110,9 @@ export function AuthorsTable({ authors, canDeletePermanently }: AuthorsTableProp
                   País
                 </th>
                 <th scope="col" className="px-4 py-3">
+                  Libros publicados
+                </th>
+                <th scope="col" className="px-4 py-3">
                   Publicado
                 </th>
                 <th scope="col" className="px-4 py-3">
@@ -117,8 +124,9 @@ export function AuthorsTable({ authors, canDeletePermanently }: AuthorsTableProp
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
-              {authors.map(({ author, bookCount }) => {
+              {authors.map(({ author, bookCount, publishedBooksCount, publishedBooksPreview }) => {
                 const showPermanentDelete = canDeletePermanently && author.isArchived;
+                const remainingPublishedBooks = publishedBooksCount - publishedBooksPreview.length;
 
                 return (
                   <tr key={author.id} className="bg-card">
@@ -144,6 +152,31 @@ export function AuthorsTable({ authors, canDeletePermanently }: AuthorsTableProp
                     </td>
                     <td className="px-4 py-3 text-muted-foreground">
                       {author.country ?? 'Sin país'}
+                    </td>
+                    <td className="px-4 py-3">
+                      {publishedBooksCount > 0 ? (
+                        <div className="max-w-64 space-y-1">
+                          <ul className="space-y-1">
+                            {publishedBooksPreview.map((book) => (
+                              <li key={book.id}>
+                                <Link
+                                  href={`/admin/books/${book.id}`}
+                                  className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
+                                >
+                                  {book.title}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                          {remainingPublishedBooks > 0 ? (
+                            <p className="text-xs text-muted-foreground">
+                              + {remainingPublishedBooks} más
+                            </p>
+                          ) : null}
+                        </div>
+                      ) : (
+                        <span className="text-muted-foreground">Sin libros publicados</span>
+                      )}
                     </td>
                     <td className="px-4 py-3">
                       <div className="flex flex-wrap gap-2">

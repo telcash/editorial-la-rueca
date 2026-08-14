@@ -180,6 +180,7 @@ function createAuthorRepositoryMock(): MockAuthorRepository {
     findPublished: vi.fn<AuthorRepository['findPublished']>(),
     findPublishedPaginated: vi.fn<AuthorRepository['findPublishedPaginated']>(),
     findPublishedBySlug: vi.fn<AuthorRepository['findPublishedBySlug']>(),
+    findBooksByAuthorId: vi.fn<AuthorRepository['findBooksByAuthorId']>(),
     countBooksByAuthorId: vi.fn<AuthorRepository['countBooksByAuthorId']>(),
     existsBySlug: vi.fn<AuthorRepository['existsBySlug']>(),
     create: vi.fn<AuthorRepository['create']>(),

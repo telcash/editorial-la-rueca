@@ -1,0 +1,3388 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Revisión de autores duplicados - Editorial La Rueca</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #171717;
+        background: #f7f4f1;
+      }
+      main {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 32px 20px;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: Georgia, serif;
+      }
+      .summary,
+      .group,
+      .author {
+        border: 1px solid #ded8d2;
+        border-radius: 8px;
+        background: #fff;
+      }
+      .summary {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 12px;
+        padding: 16px;
+      }
+      .metric {
+        padding: 12px;
+        border-radius: 6px;
+        background: #f7f4f1;
+      }
+      .metric strong {
+        display: block;
+        font-size: 24px;
+      }
+      .group {
+        margin-top: 24px;
+        padding: 20px;
+      }
+      .badge {
+        display: inline-block;
+        border-radius: 999px;
+        padding: 4px 10px;
+        font-size: 12px;
+        font-weight: 700;
+        background: #e02b20;
+        color: #fff;
+      }
+      .authors {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 14px;
+        margin-top: 14px;
+      }
+      .author {
+        padding: 14px;
+      }
+      .author img {
+        width: 72px;
+        height: 72px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1px solid #ded8d2;
+      }
+      .placeholder {
+        width: 72px;
+        height: 72px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: #eee;
+        color: #777;
+      }
+      .meta,
+      .books,
+      .conflicts {
+        font-size: 13px;
+        line-height: 1.45;
+        color: #555;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 12px;
+        font-size: 13px;
+      }
+      th,
+      td {
+        border-top: 1px solid #eee;
+        padding: 8px;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        color: #666;
+        background: #fafafa;
+      }
+      code {
+        background: #f2efec;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Revisión de autores duplicados</h1>
+      <p>Informe read-only generado desde PostgreSQL. No realiza cambios en datos ni Storage.</p>
+      <section class="summary">
+        <div class="metric"><strong>189</strong>Autores totales</div>
+        <div class="metric"><strong>29</strong>Grupos duplicados</div>
+        <div class="metric"><strong>85</strong>Autores afectados</div>
+        <div class="metric"><strong>69</strong>Libros afectados</div>
+        <div class="metric"><strong>2</strong>Alta confianza</div>
+        <div class="metric"><strong>26</strong>Probables</div>
+        <div class="metric"><strong>1</strong>Revisión manual</div>
+        <div class="metric"><strong>27</strong>Conflictos foto</div>
+        <div class="metric"><strong>3</strong>Conflictos biografía</div>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-001 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>be762ecc-3a56-4465-a5f3-652f2f3c2948</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/be762ecc-3a56-4465-a5f3-652f2f3c2948/5eeba0fd-2766-4d03-876f-b5dc0c829e02.jpg"
+              alt="Foto de Alejandro González García"
+              loading="lazy"
+            />
+            <h3>Alejandro González García (canónico)</h3>
+            <p class="meta">
+              <code>alejandro-gonzalez-garcia</code><br />
+              ID: <code>be762ecc-3a56-4465-a5f3-652f2f3c2948</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:23.359Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Los pensamientos olvidados <code>los-pensamientos-olvidados</code> publicado
+                  activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/8cc22564-0351-408e-a140-73784e3d8132/a23ec268-b48e-4bc4-847a-cdf1b1fdb9c9.jpg"
+              alt="Foto de Alejandro González García"
+              loading="lazy"
+            />
+            <h3>Alejandro González García</h3>
+            <p class="meta">
+              <code>alejandro-gonzalez-garcia-2</code><br />
+              ID: <code>8cc22564-0351-408e-a140-73784e3d8132</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:23.576Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>La vida sin tí <code>la-vida-sin-t</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Los pensamientos olvidados</td>
+              <td><code>a2cfc5a2-adcf-4515-9c12-c07cfbcddada</code></td>
+              <td>be762ecc-3a56-4465-a5f3-652f2f3c2948</td>
+            </tr>
+            <tr>
+              <td>La vida sin tí</td>
+              <td><code>29502f7c-6de8-47e8-91e1-93d0fe8f1ad0</code></td>
+              <td>8cc22564-0351-408e-a140-73784e3d8132</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-002 <span class="badge">HIGH_CONFIDENCE_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>40e7551d-0507-4900-93dc-4fe8246f0631</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> Sin conflictos detectados</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/40e7551d-0507-4900-93dc-4fe8246f0631/770b3a0b-4af0-4fb4-8458-6924c75fa614.jpg"
+              alt="Foto de Alfredo Manrique Bravo"
+              loading="lazy"
+            />
+            <h3>Alfredo Manrique Bravo (canónico)</h3>
+            <p class="meta">
+              <code>alfredo-manrique-bravo</code><br />
+              ID: <code>40e7551d-0507-4900-93dc-4fe8246f0631</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:32.104Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>En la recta final <code>en-la-recta-final</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <div class="placeholder">Sin foto</div>
+            <h3>Alfredo Manrique Bravo</h3>
+            <p class="meta">
+              <code>alfredo-manrique-bravo-2</code><br />
+              ID: <code>2afe4f99-fb57-4e42-b955-beda631c589c</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:49.440Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta">
+              <strong>Biografía:</strong> Alfredo Manrique Bravo nació en Barajas (Madrid) el 23 de
+              abril de 1949. Trabajó durante años en Iberia Líneas Aéreas de España y, movido por el
+              deseo de compartir su historia y sus sentimientos, decidió iniciarse en la ...
+            </p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul></ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>En la recta final</td>
+              <td><code>214c9f1c-c4c0-4bbc-be09-bcec590845d3</code></td>
+              <td>40e7551d-0507-4900-93dc-4fe8246f0631</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-003 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>20e726be-e3e9-4e3f-a4a3-91d1ae0e23ef</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/20e726be-e3e9-4e3f-a4a3-91d1ae0e23ef/ab3ca00e-81cc-40a4-89a0-089097ea7f2f.jpg"
+              alt="Foto de Alonso Cruz León"
+              loading="lazy"
+            />
+            <h3>Alonso Cruz León (canónico)</h3>
+            <p class="meta">
+              <code>alonso-cruz-leon</code><br />
+              ID: <code>20e726be-e3e9-4e3f-a4a3-91d1ae0e23ef</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:21.130Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  banquero de Carlos V a Emilio Botín
+                  <code>banquero-de-carlos-v-a-emilio-botn</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/3e635624-60bf-42ef-8ec8-f836d910a217/075a2454-78a3-427c-8553-19b7e634b660.jpg"
+              alt="Foto de Alonso Cruz León"
+              loading="lazy"
+            />
+            <h3>Alonso Cruz León</h3>
+            <p class="meta">
+              <code>alonso-cruz-leon-2</code><br />
+              ID: <code>3e635624-60bf-42ef-8ec8-f836d910a217</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:39.000Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>La última carta <code>la-ltima-carta</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/d77c0c68-3c5c-4b4f-8dd5-ec8b0ff8ee6b/a4820334-e081-4a77-827b-2afe41670b59.jpg"
+              alt="Foto de Alonso Cruz León"
+              loading="lazy"
+            />
+            <h3>Alonso Cruz León</h3>
+            <p class="meta">
+              <code>alonso-cruz-leon-3</code><br />
+              ID: <code>d77c0c68-3c5c-4b4f-8dd5-ec8b0ff8ee6b</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:44.129Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Descartes y su duda hiperbólica
+                  <code>descartes-y-su-duda-hiperblica</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>banquero de Carlos V a Emilio Botín</td>
+              <td><code>7b19e1af-f059-41de-a46c-e5a17cd6047b</code></td>
+              <td>20e726be-e3e9-4e3f-a4a3-91d1ae0e23ef</td>
+            </tr>
+            <tr>
+              <td>La última carta</td>
+              <td><code>2ff75c37-a4ae-4cfd-ab7b-12d6dbfef391</code></td>
+              <td>3e635624-60bf-42ef-8ec8-f836d910a217</td>
+            </tr>
+            <tr>
+              <td>Descartes y su duda hiperbólica</td>
+              <td><code>52de6206-db2d-4066-86f4-422b8bab02bf</code></td>
+              <td>d77c0c68-3c5c-4b4f-8dd5-ec8b0ff8ee6b</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-004 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>ddc02801-7185-4902-a353-304247dfe612</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/ddc02801-7185-4902-a353-304247dfe612/263c61b4-a53e-4d4a-8245-a93409615df7.jpg"
+              alt="Foto de Ana Córdoba del Campo"
+              loading="lazy"
+            />
+            <h3>Ana Córdoba del Campo (canónico)</h3>
+            <p class="meta">
+              <code>ana-cordoba-del-campo</code><br />
+              ID: <code>ddc02801-7185-4902-a353-304247dfe612</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T12:45:16.252Z<br />
+              Actualizado: 2026-07-24T19:22:20.119Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Cruce de Pasos <code>cruce-de-pasos</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/10c300bc-c089-43c6-ab8d-b9a605d03112/694c7772-752d-41fa-8ed6-d6cef3c688d4.jpg"
+              alt="Foto de Ana Córdoba del Campo"
+              loading="lazy"
+            />
+            <h3>Ana Córdoba del Campo</h3>
+            <p class="meta">
+              <code>ana-cordoba-del-campo-2</code><br />
+              ID: <code>10c300bc-c089-43c6-ab8d-b9a605d03112</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:26.447Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  No te vi venir, pues jamás te hubiese dejado entrar
+                  <code>no-te-vi-venir-pues-jams-te-hubiese-dejado-entrar</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cruce de Pasos</td>
+              <td><code>9dc918df-8c99-473f-90be-a672fbc74803</code></td>
+              <td>ddc02801-7185-4902-a353-304247dfe612</td>
+            </tr>
+            <tr>
+              <td>No te vi venir, pues jamás te hubiese dejado entrar</td>
+              <td><code>43c0a54a-2778-499c-bb0e-d55d0ebf9f6f</code></td>
+              <td>10c300bc-c089-43c6-ab8d-b9a605d03112</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-005 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>588e277a-5ec3-4e3e-8223-2fc85bb7a760</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/588e277a-5ec3-4e3e-8223-2fc85bb7a760/8ff94689-9931-4931-8daf-51847830681b.jpg"
+              alt="Foto de Ángel García García-Muñoz (BÜRU)"
+              loading="lazy"
+            />
+            <h3>Ángel García García-Muñoz (BÜRU) (canónico)</h3>
+            <p class="meta">
+              <code>angel-garcia-garcia-munoz-buru</code><br />
+              ID: <code>588e277a-5ec3-4e3e-8223-2fc85bb7a760</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:25.561Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  El camino del ángel (La realidad de un sueño)
+                  <code>el-camino-del-ngel-la-realidad-de-un-sueo</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/2c78a9d3-afb1-4be5-b267-440f785a8b3a/ad29b24f-130c-4ba8-8dbb-55e885bfb6c7.jpg"
+              alt="Foto de Ángel García  García-Muñoz  (Büru)"
+              loading="lazy"
+            />
+            <h3>Ángel García García-Muñoz (Büru)</h3>
+            <p class="meta">
+              <code>angel-garcia-garcia-munoz-buru-2</code><br />
+              ID: <code>2c78a9d3-afb1-4be5-b267-440f785a8b3a</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:35.906Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Versos de madrugada – (Con-sentido)
+                  <code>versos-de-madrugada-con-sentido</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>El camino del ángel (La realidad de un sueño)</td>
+              <td><code>e4253bec-8af0-434f-a60c-de70aa9db72f</code></td>
+              <td>588e277a-5ec3-4e3e-8223-2fc85bb7a760</td>
+            </tr>
+            <tr>
+              <td>Versos de madrugada – (Con-sentido)</td>
+              <td><code>3621fc29-b894-4a5d-ad73-3a663eae467e</code></td>
+              <td>2c78a9d3-afb1-4be5-b267-440f785a8b3a</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-006 <span class="badge">HIGH_CONFIDENCE_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>54a7bd3c-b01a-426a-8520-d92407084306</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> Sin conflictos detectados</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/54a7bd3c-b01a-426a-8520-d92407084306/cac61f25-28bf-4a70-86e3-c12431a80529.jpg"
+              alt="Foto de Antonio L.  Gómez Charlín"
+              loading="lazy"
+            />
+            <h3>Antonio L. Gómez Charlín (canónico)</h3>
+            <p class="meta">
+              <code>antonio-l-gomez-charlin</code><br />
+              ID: <code>54a7bd3c-b01a-426a-8520-d92407084306</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:22.556Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Nagasaki <code>nagasaki</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <div class="placeholder">Sin foto</div>
+            <h3>Antonio L. Gómez Charlín</h3>
+            <p class="meta">
+              <code>antonio-l-gomez-charlin-2</code><br />
+              ID: <code>8c0b7900-6f88-4e43-9867-b7df101136f1</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:48.564Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta">
+              <strong>Biografía:</strong> Antonio Lorenzo Gómez Charlín nació en Cambados
+              (Pontevedra). Es autor de doce libros: &quot;El sueño de la noche azul&quot;, &quot;El
+              camarero está triste&quot;, &quot;Hay putas que tienen algo de santas&quot;, &quot;Las
+              bellezas de Kyoto&quot;, &quot;La vida soña...
+            </p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul></ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nagasaki</td>
+              <td><code>c4f08c83-9111-4bcb-911d-0fab5899b60f</code></td>
+              <td>54a7bd3c-b01a-426a-8520-d92407084306</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-007 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>1ae9b8a0-bcea-476d-98b5-864165874efe</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/1ae9b8a0-bcea-476d-98b5-864165874efe/544be062-df8f-43ad-88ed-97d161d4180b.jpg"
+              alt="Foto de Antonio López Hurtado Zárate"
+              loading="lazy"
+            />
+            <h3>Antonio López Hurtado Zárate (canónico)</h3>
+            <p class="meta">
+              <code>antonio-lopez-hurtado-zarate</code><br />
+              ID: <code>1ae9b8a0-bcea-476d-98b5-864165874efe</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:22.183Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Tiendas y abastos en Moralzarzal
+                  <code>tiendas-y-abastos-en-moralzarzal</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/a6b000b5-007f-4ea7-a7a3-7df42235cb7a/82708b25-8864-4a56-801c-a8fb82e7d4cd.jpg"
+              alt='Foto de Antonio López Hurtado "Zárate"'
+              loading="lazy"
+            />
+            <h3>Antonio López Hurtado &quot;Zárate&quot;</h3>
+            <p class="meta">
+              <code>antonio-lopez-hurtado-zarate-2</code><br />
+              ID: <code>a6b000b5-007f-4ea7-a7a3-7df42235cb7a</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:22.835Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  La Ganadería en Moralzarzal <code>la-ganadera-en-moralzarzal</code> publicado
+                  activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/41be7a29-44d6-4f30-9508-4367a489f8e7/124ef539-3643-4a02-9c77-52e57325ec8f.jpg"
+              alt="Foto de Antonio López Hurtado (Zárate)"
+              loading="lazy"
+            />
+            <h3>Antonio López Hurtado (Zárate)</h3>
+            <p class="meta">
+              <code>antonio-lopez-hurtado-zarate-3</code><br />
+              ID: <code>41be7a29-44d6-4f30-9508-4367a489f8e7</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T12:45:15.431Z<br />
+              Actualizado: 2026-07-24T19:22:20.119Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Otros Oficios en Moralzarzal <code>otros-oficios-en-moralzarzal</code> publicado
+                  activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <div class="placeholder">Sin foto</div>
+            <h3>Antonio López Hurtado (Zárate)</h3>
+            <p class="meta">
+              <code>antonio-lopez-hurtado-zarate-4</code><br />
+              ID: <code>c5f9058f-c3d6-48a4-ba52-b62e30fbcc07</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:49.080Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta">
+              <strong>Biografía:</strong> Antonio López Hurtado (Madrid, 1943) es Ingeniero de
+              Telecomunicación y trabajó en Standard Eléctrica S.A. hasta su jubilación. Apasionado
+              investigador de la historia y la vida de Moralzarzal, ha dedicado décadas a recop...
+            </p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul></ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tiendas y abastos en Moralzarzal</td>
+              <td><code>1ec77d12-c1b8-45eb-9e1c-820ed23bee9f</code></td>
+              <td>1ae9b8a0-bcea-476d-98b5-864165874efe</td>
+            </tr>
+            <tr>
+              <td>La Ganadería en Moralzarzal</td>
+              <td><code>86dec774-4493-4d06-8678-1792449b24cd</code></td>
+              <td>a6b000b5-007f-4ea7-a7a3-7df42235cb7a</td>
+            </tr>
+            <tr>
+              <td>Otros Oficios en Moralzarzal</td>
+              <td><code>86c556d0-eb13-4f94-97b2-5e9008fe7610</code></td>
+              <td>41be7a29-44d6-4f30-9508-4367a489f8e7</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-008 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>5cc4fcee-932a-4d79-976d-bb48dd2d2228</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/5cc4fcee-932a-4d79-976d-bb48dd2d2228/45182bd2-e9e3-4886-8999-cc36cd85c66c.jpg"
+              alt="Foto de Antonio Valdeavero Ponce"
+              loading="lazy"
+            />
+            <h3>Antonio Valdeavero Ponce (canónico)</h3>
+            <p class="meta">
+              <code>antonio-valdeavero-ponce</code><br />
+              ID: <code>5cc4fcee-932a-4d79-976d-bb48dd2d2228</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:27.942Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  DE LOS ROLLOS DEL MAR MUERTO A LOS DE RODRIGO DE LARES ”“una narración audaz para
+                  un lector más inteligente que lerdo” Belmonte año 2017 al 2022. LIBRO 1
+                  <code
+                    >de-los-rollos-del-mar-muerto-a-los-de-rodrigo-de-lares-una-narracin-audaz-para-un-lector-ms-inteligente-que-lerdo-belmonte-ao-2017-al-2022-libro-1</code
+                  >
+                  publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/70453231-8ea8-41c8-8560-69e26d2c81ba/0f0527b3-8e3e-49bd-8541-e8fb4b764e96.jpg"
+              alt="Foto de Antonio Valdeavero Ponce"
+              loading="lazy"
+            />
+            <h3>Antonio Valdeavero Ponce</h3>
+            <p class="meta">
+              <code>antonio-valdeavero-ponce-2</code><br />
+              ID: <code>70453231-8ea8-41c8-8560-69e26d2c81ba</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:42.174Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  DE LOS ROLLOS DEL MAR MUERTO A LOS DE RODRIGO DE LARES -TOMO 2-
+                  <code>de-los-rollos-del-mar-muerto-a-los-de-rodrigo-de-lares-tomo-2</code>
+                  publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                DE LOS ROLLOS DEL MAR MUERTO A LOS DE RODRIGO DE LARES ”“una narración audaz para un
+                lector más inteligente que lerdo” Belmonte año 2017 al 2022. LIBRO 1
+              </td>
+              <td><code>b071dfa2-2897-46d2-a4db-83c4be957e15</code></td>
+              <td>5cc4fcee-932a-4d79-976d-bb48dd2d2228</td>
+            </tr>
+            <tr>
+              <td>DE LOS ROLLOS DEL MAR MUERTO A LOS DE RODRIGO DE LARES -TOMO 2-</td>
+              <td><code>31fd2c86-c52f-46e6-a6ea-7f0d928a09cf</code></td>
+              <td>70453231-8ea8-41c8-8560-69e26d2c81ba</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-009 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>a87b9700-5ec6-45e4-bf2b-b8aa2328e118</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/a87b9700-5ec6-45e4-bf2b-b8aa2328e118/dcf2538c-085f-4a8f-8bf6-3063a9c611ba.jpg"
+              alt="Foto de Carlos José Olmedo Batista"
+              loading="lazy"
+            />
+            <h3>Carlos José Olmedo Batista (canónico)</h3>
+            <p class="meta">
+              <code>carlos-jose-olmedo-batista</code><br />
+              ID: <code>a87b9700-5ec6-45e4-bf2b-b8aa2328e118</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:25.045Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  La lista de tareas de mi profe Jose
+                  <code>la-lista-de-tareas-de-mi-profe-jose</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/6f1f69a3-1534-41fa-83ba-8ded83e9be3c/4e3a16ac-6220-4673-8b29-f453e3dcc8d6.jpg"
+              alt="Foto de Carlos José Olmedo Batista"
+              loading="lazy"
+            />
+            <h3>Carlos José Olmedo Batista</h3>
+            <p class="meta">
+              <code>carlos-jose-olmedo-batista-2</code><br />
+              ID: <code>6f1f69a3-1534-41fa-83ba-8ded83e9be3c</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:40.549Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  La lista de tareas de mi profe Jose
+                  <code>la-lista-de-tareas-de-mi-profe-jose</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>La lista de tareas de mi profe Jose</td>
+              <td><code>d3673390-b80c-486b-b21f-31b3915f8c42</code></td>
+              <td>
+                a87b9700-5ec6-45e4-bf2b-b8aa2328e118<br />6f1f69a3-1534-41fa-83ba-8ded83e9be3c
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-010 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>e132c0b1-5a6e-4d1f-b0c1-2aba31005e49</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/e132c0b1-5a6e-4d1f-b0c1-2aba31005e49/ba81b71d-42f1-4b8e-8a62-9ab7dbf87c8b.jpg"
+              alt="Foto de Diego Gómez-Costa"
+              loading="lazy"
+            />
+            <h3>Diego Gómez-Costa (canónico)</h3>
+            <p class="meta">
+              <code>diego-gomez-costa</code><br />
+              ID: <code>e132c0b1-5a6e-4d1f-b0c1-2aba31005e49</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:27.447Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  El rol principal de una película llamada VIDA
+                  <code>el-rol-principal-de-una-pelcula-llamada-vida</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/72ef42d9-6289-43c4-8daf-46905820f074/fd5aa12a-4b30-4991-8c07-3f394f6d5905.jpg"
+              alt="Foto de Diego Gómez-Costa"
+              loading="lazy"
+            />
+            <h3>Diego Gómez-Costa</h3>
+            <p class="meta">
+              <code>diego-gomez-costa-2</code><br />
+              ID: <code>72ef42d9-6289-43c4-8daf-46905820f074</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:42.970Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  El dolor de un alma sin memoria
+                  <code>el-dolor-de-un-alma-sin-memoria</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/4e026da7-f7c6-442c-b657-9b270a702cee/feab0445-b33e-4be0-8c43-fe217efeae62.jpg"
+              alt="Foto de Diego Gómez-Costa"
+              loading="lazy"
+            />
+            <h3>Diego Gómez-Costa</h3>
+            <p class="meta">
+              <code>diego-gomez-costa-3</code><br />
+              ID: <code>4e026da7-f7c6-442c-b657-9b270a702cee</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:44.626Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  El pueblo Judío. Legado y nexo con Judea: Una historia Milenaria
+                  <code>el-pueblo-judo-legado-y-nexo-con-judea-una-historia-milenaria</code>
+                  publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/d5400984-fb1b-4b86-9613-937444cf02a0/cf5bf052-1a91-4963-8d12-cef6dc1e4c77.jpg"
+              alt="Foto de Diego Gómez-Costa"
+              loading="lazy"
+            />
+            <h3>Diego Gómez-Costa</h3>
+            <p class="meta">
+              <code>diego-gomez-costa-4</code><br />
+              ID: <code>d5400984-fb1b-4b86-9613-937444cf02a0</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:46.368Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta">
+              <strong>Biografía:</strong> Diego Gómez-Costa En este libro presenta un manual
+              redactado en colaboración con otros autores. Este escrito busca recopilar el manejo
+              odontológico actual en pacientes con necesidades especiales y tener así un referente
+              ...
+            </p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul></ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>El rol principal de una película llamada VIDA</td>
+              <td><code>4886defe-fb01-402c-8fa0-565834e22622</code></td>
+              <td>e132c0b1-5a6e-4d1f-b0c1-2aba31005e49</td>
+            </tr>
+            <tr>
+              <td>El dolor de un alma sin memoria</td>
+              <td><code>03f7cd93-6fb2-4304-bf54-72e896364aa0</code></td>
+              <td>72ef42d9-6289-43c4-8daf-46905820f074</td>
+            </tr>
+            <tr>
+              <td>El pueblo Judío. Legado y nexo con Judea: Una historia Milenaria</td>
+              <td><code>1d03b6ad-e888-411d-b754-586a7596e56e</code></td>
+              <td>4e026da7-f7c6-442c-b657-9b270a702cee</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-011 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>9e55c5da-3e70-4660-981a-2d13d09f526d</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/9e55c5da-3e70-4660-981a-2d13d09f526d/15ac14dd-a6f2-437a-8e51-b2dc73a1094d.jpg"
+              alt="Foto de ELGA REÁTEGUI"
+              loading="lazy"
+            />
+            <h3>ELGA REÁTEGUI (canónico)</h3>
+            <p class="meta">
+              <code>elga-reategui</code><br />
+              ID: <code>9e55c5da-3e70-4660-981a-2d13d09f526d</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:35.747Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  La ruta de las mariposas <code>la-ruta-de-las-mariposas</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/27d2a262-938a-4e74-a751-deb81d4c490e/6fa43c2c-b9fd-4429-87ef-059eae08d19a.jpg"
+              alt="Foto de Elga Reátegui"
+              loading="lazy"
+            />
+            <h3>Elga Reátegui</h3>
+            <p class="meta">
+              <code>elga-reategui-2</code><br />
+              ID: <code>27d2a262-938a-4e74-a751-deb81d4c490e</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:45.444Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Gris, más bien, plomo <code>gris-ms-bien-plomo</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>La ruta de las mariposas</td>
+              <td><code>e4451b29-09d1-409b-b5dd-7b09bc46d018</code></td>
+              <td>9e55c5da-3e70-4660-981a-2d13d09f526d</td>
+            </tr>
+            <tr>
+              <td>Gris, más bien, plomo</td>
+              <td><code>b20d4297-6904-45ec-b76d-c476b36e28cc</code></td>
+              <td>27d2a262-938a-4e74-a751-deb81d4c490e</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-012 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>2a28f79f-5610-4876-be14-81eccb1fa5c7</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/2a28f79f-5610-4876-be14-81eccb1fa5c7/ddf1b5ba-e9a2-4471-8765-d6d8ce503706.jpg"
+              alt="Foto de Francisco Marín Vargas"
+              loading="lazy"
+            />
+            <h3>Francisco Marín Vargas (canónico)</h3>
+            <p class="meta">
+              <code>francisco-marin-vargas</code><br />
+              ID: <code>2a28f79f-5610-4876-be14-81eccb1fa5c7</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:33.566Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>De barro y silencio <code>de-barro-y-silencio</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/b98b786c-6a77-40e5-85ff-3ce4f0efc42a/bd690e48-d1f7-40a0-8fc1-b4db919ffafa.jpg"
+              alt="Foto de Francisco Marín Vargas"
+              loading="lazy"
+            />
+            <h3>Francisco Marín Vargas</h3>
+            <p class="meta">
+              <code>francisco-marin-vargas-2</code><br />
+              ID: <code>b98b786c-6a77-40e5-85ff-3ce4f0efc42a</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:34.871Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  ESFERAS TEMPORALES Aforismos, meditaciones y otros escritos (Breve recopilación)
+                  <code
+                    >esferas-temporales-aforismos-meditaciones-y-otros-escritos-breve-recopilacin</code
+                  >
+                  publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/22391a10-129e-4e5a-ae2f-c02c2dbc213b/9a4bffbf-f813-4cae-89df-91488b984e9b.jpg"
+              alt="Foto de Francisco Marín Vargas"
+              loading="lazy"
+            />
+            <h3>Francisco Marín Vargas</h3>
+            <p class="meta">
+              <code>francisco-marin-vargas-3</code><br />
+              ID: <code>22391a10-129e-4e5a-ae2f-c02c2dbc213b</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:36.044Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  CUENTOS PARA AMARA - La Nieve y Amara toca el tambor
+                  <code>cuentos-para-amara-la-nieve-y-amara-toca-el-tambor</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/d1c2428e-1e82-402c-be0b-1b6ffd7a8645/af361546-4274-479b-8a21-403f5610e0f0.jpg"
+              alt="Foto de Francisco Marín Vargas"
+              loading="lazy"
+            />
+            <h3>Francisco Marín Vargas</h3>
+            <p class="meta">
+              <code>francisco-marin-vargas-4</code><br />
+              ID: <code>d1c2428e-1e82-402c-be0b-1b6ffd7a8645</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:36.821Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  CUENTOS PARA AMARA – Doña Bota – La Burbuja de Mar
+                  <code>cuentos-para-amara-doa-bota-la-burbuja-de-mar</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/3952fad3-4cea-4cf4-b41a-d098e1bd590b/90edeb9e-2026-4b48-8056-67ba1a51219c.jpg"
+              alt="Foto de Francisco Marín Vargas"
+              loading="lazy"
+            />
+            <h3>Francisco Marín Vargas</h3>
+            <p class="meta">
+              <code>francisco-marin-vargas-5</code><br />
+              ID: <code>3952fad3-4cea-4cf4-b41a-d098e1bd590b</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:37.324Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Nido de Barro – Haikus <code>nido-de-barro-haikus</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/4d820dff-f595-49e6-a06f-e847f9c6041f/ef3df177-4190-4465-870b-94d8cc3519c9.jpg"
+              alt="Foto de Francisco Marín Vargas"
+              loading="lazy"
+            />
+            <h3>Francisco Marín Vargas</h3>
+            <p class="meta">
+              <code>francisco-marin-vargas-6</code><br />
+              ID: <code>4d820dff-f595-49e6-a06f-e847f9c6041f</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:38.332Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Cartas a Diego – Reflexiones sobre un nacimiento
+                  <code>cartas-a-diego-reflexiones-sobre-un-nacimiento</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>De barro y silencio</td>
+              <td><code>827f19b1-9972-481d-b44e-4fef7407e4cc</code></td>
+              <td>2a28f79f-5610-4876-be14-81eccb1fa5c7</td>
+            </tr>
+            <tr>
+              <td>
+                ESFERAS TEMPORALES Aforismos, meditaciones y otros escritos (Breve recopilación)
+              </td>
+              <td><code>51c360f7-640c-4abe-8701-72b4868a97b0</code></td>
+              <td>b98b786c-6a77-40e5-85ff-3ce4f0efc42a</td>
+            </tr>
+            <tr>
+              <td>CUENTOS PARA AMARA - La Nieve y Amara toca el tambor</td>
+              <td><code>b0bba485-e01e-4cdb-a5ba-2f4d0e1a92c9</code></td>
+              <td>22391a10-129e-4e5a-ae2f-c02c2dbc213b</td>
+            </tr>
+            <tr>
+              <td>CUENTOS PARA AMARA – Doña Bota – La Burbuja de Mar</td>
+              <td><code>faa16674-87fb-45e1-8e54-cd6bcbca0aaa</code></td>
+              <td>d1c2428e-1e82-402c-be0b-1b6ffd7a8645</td>
+            </tr>
+            <tr>
+              <td>Nido de Barro – Haikus</td>
+              <td><code>0df5c336-7c28-43bf-894f-b4485cf10d57</code></td>
+              <td>3952fad3-4cea-4cf4-b41a-d098e1bd590b</td>
+            </tr>
+            <tr>
+              <td>Cartas a Diego – Reflexiones sobre un nacimiento</td>
+              <td><code>dac35324-731a-4592-aadc-d05ade664f1a</code></td>
+              <td>4d820dff-f595-49e6-a06f-e847f9c6041f</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-013 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>e04b8ed7-627a-4460-967f-24ad36765075</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/e04b8ed7-627a-4460-967f-24ad36765075/419a45c4-731c-4131-8aa1-68d896d3dab4.jpg"
+              alt="Foto de GASPAR T. JIMENO DIESTRO"
+              loading="lazy"
+            />
+            <h3>GASPAR T. JIMENO DIESTRO (canónico)</h3>
+            <p class="meta">
+              <code>gaspar-t-jimeno-diestro</code><br />
+              ID: <code>e04b8ed7-627a-4460-967f-24ad36765075</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:25.261Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  BIODIVERSIDAD - Sostenibilidad, Supervivencia e Inmortalidad
+                  <code>biodiversidad-sostenibilidad-supervivencia-e-inmortalidad</code> publicado
+                  activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/3c1ed264-0158-47a0-be49-ca0cd423fc0b/f7ce7024-5d4c-4375-8fd2-a2572518e720.jpg"
+              alt="Foto de Gaspar T. Jimeno Diestro"
+              loading="lazy"
+            />
+            <h3>Gaspar T. Jimeno Diestro</h3>
+            <p class="meta">
+              <code>gaspar-t-jimeno-diestro-2</code><br />
+              ID: <code>3c1ed264-0158-47a0-be49-ca0cd423fc0b</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:46.528Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta">
+              <strong>Biografía:</strong> GASPAR T. JIMENO DIESTRO, es licenciado en Ciencias
+              Geológicas por la Universidad Complutense de Madrid en el año 1974; Licenciado en
+              Ciencias Ambientales por la Universidad Nacional de Educación a Distancia (UNED) en
+              el...
+            </p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul></ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BIODIVERSIDAD - Sostenibilidad, Supervivencia e Inmortalidad</td>
+              <td><code>a41dabfd-3135-4da1-912f-2bfbec3449a9</code></td>
+              <td>e04b8ed7-627a-4460-967f-24ad36765075</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-014 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>86d71b66-740f-4712-b87e-7a61e05acc38</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl, biography.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl, biography</p>
+        <div class="authors">
+          <article class="author">
+            <div class="placeholder">Sin foto</div>
+            <h3>Guillermo M. Schrem (canónico)</h3>
+            <p class="meta">
+              <code>guillermo-m-schrem</code><br />
+              ID: <code>86d71b66-740f-4712-b87e-7a61e05acc38</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T12:45:15.665Z<br />
+              Actualizado: 2026-07-24T19:22:20.119Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>El Valle de Cristal <code>el-valle-de-cristal</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/d78841ec-5181-444a-950a-a9d78cf63d85/6fbf19af-d510-4e70-852e-31a35cfd8995.jpg"
+              alt="Foto de Guillermo M. Schrem"
+              loading="lazy"
+            />
+            <h3>Guillermo M. Schrem</h3>
+            <p class="meta">
+              <code>guillermo-m-schrem-2</code><br />
+              ID: <code>d78841ec-5181-444a-950a-a9d78cf63d85</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:30.189Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>El rumor de la marea <code>el-rumor-de-la-marea</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/84fbe027-ccd1-431e-9fa9-2d2abc255f3d/e6a68254-0c82-4f69-8161-9f58fd5581f1.jpg"
+              alt="Foto de Guillermo M. Schrem"
+              loading="lazy"
+            />
+            <h3>Guillermo M. Schrem</h3>
+            <p class="meta">
+              <code>guillermo-m-schrem-3</code><br />
+              ID: <code>84fbe027-ccd1-431e-9fa9-2d2abc255f3d</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:35.393Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Estásimo <code>estsimo</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/14430727-5eaa-4f37-beec-e7eaa4bd3687/d1f9b8c1-9b35-4219-8d87-09afb9858539.jpg"
+              alt="Foto de Guillermo M. Schrem"
+              loading="lazy"
+            />
+            <h3>Guillermo M. Schrem</h3>
+            <p class="meta">
+              <code>guillermo-m-schrem-4</code><br />
+              ID: <code>14430727-5eaa-4f37-beec-e7eaa4bd3687</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:38.123Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Zoografías <code>zoografas</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/30216d1f-08bb-4fd9-a285-36d3e87e891a/dd3fa086-2bda-4935-8e4b-98fc15b9a34a.jpg"
+              alt="Foto de Guillermo M. Schrem"
+              loading="lazy"
+            />
+            <h3>Guillermo M. Schrem</h3>
+            <p class="meta">
+              <code>guillermo-m-schrem-5</code><br />
+              ID: <code>30216d1f-08bb-4fd9-a285-36d3e87e891a</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:43.118Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Mano a Mano <code>mano-a-mano</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/2a6813aa-baf8-492b-b18c-83e49c18eb64/d5faa9df-9523-4d2b-8907-bd195d77ce04.jpg"
+              alt="Foto de Guillermo M. Schrem"
+              loading="lazy"
+            />
+            <h3>Guillermo M. Schrem</h3>
+            <p class="meta">
+              <code>guillermo-m-schrem-6</code><br />
+              ID: <code>2a6813aa-baf8-492b-b18c-83e49c18eb64</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:45.833Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Viajando ligero <code>viajando-ligero</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/ffbf5717-ff63-456a-930a-61c80ff84ec7/d2484182-a805-429a-8cc8-e6dfadffb5a6.jpg"
+              alt="Foto de Guillermo M. Schrem"
+              loading="lazy"
+            />
+            <h3>Guillermo M. Schrem</h3>
+            <p class="meta">
+              <code>guillermo-m-schrem-7</code><br />
+              ID: <code>ffbf5717-ff63-456a-930a-61c80ff84ec7</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:47.043Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta">
+              <strong>Biografía:</strong> Guillermo Martínez Schrem nace en Barcelona en 1955 para
+              renacer en Leganés en 1995. Después de su jubilación se aventura en el mundo del cine
+              y del teatro, además de sumergirse en la escritura. Ha creado un personaje be...
+            </p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul></ul>
+            </div>
+          </article>
+          <article class="author">
+            <div class="placeholder">Sin foto</div>
+            <h3>Guillermo M. Schrem</h3>
+            <p class="meta">
+              <code>guillermo-m-schrem-8</code><br />
+              ID: <code>7c99f6ff-4bd9-431c-9ab0-0b081d165a8e</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:47.749Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta">
+              <strong>Biografía:</strong> Forastero es su nombre, porque se siente forastero en
+              todas las poblaciones en las que, sin echar raíces, va deteniéndose en su viaje hacia
+              el oeste, porque su sueño es llegar al mar. Un viaje lleno de experiencias que l...
+            </p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul></ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/ba02d2c3-2cc2-4f81-97aa-36b0e977cb20/cc4a26f5-204f-4446-8ceb-263dfb32409c.jpg"
+              alt="Foto de Guillermo M. Schrem"
+              loading="lazy"
+            />
+            <h3>Guillermo M. Schrem</h3>
+            <p class="meta">
+              <code>guillermo-m-schrem-9</code><br />
+              ID: <code>ba02d2c3-2cc2-4f81-97aa-36b0e977cb20</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:49.593Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta">
+              <strong>Biografía:</strong> ¿Te imaginas un pueblo donde los perales dan naranjas, los
+              vientos traen noticias de lugares remotos y un bardo perdido entre las nubes recita
+              poemas sin parar? Bienvenido a Nuevecincos del Río, un lugar donde la imagina...
+            </p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul></ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>El Valle de Cristal</td>
+              <td><code>38f4596b-3c42-42cb-b453-a02834e050c7</code></td>
+              <td>86d71b66-740f-4712-b87e-7a61e05acc38</td>
+            </tr>
+            <tr>
+              <td>El rumor de la marea</td>
+              <td><code>32b86cbc-3dca-4012-a5b3-74a4b188ba87</code></td>
+              <td>d78841ec-5181-444a-950a-a9d78cf63d85</td>
+            </tr>
+            <tr>
+              <td>Estásimo</td>
+              <td><code>6e4bc77c-85f0-4caa-94e5-98d66d4cde8c</code></td>
+              <td>84fbe027-ccd1-431e-9fa9-2d2abc255f3d</td>
+            </tr>
+            <tr>
+              <td>Zoografías</td>
+              <td><code>71f30f6d-f24f-40af-8737-10aa5fcf35d4</code></td>
+              <td>14430727-5eaa-4f37-beec-e7eaa4bd3687</td>
+            </tr>
+            <tr>
+              <td>Mano a Mano</td>
+              <td><code>d7d2de10-6fbb-4769-8bed-7d451dbd0837</code></td>
+              <td>30216d1f-08bb-4fd9-a285-36d3e87e891a</td>
+            </tr>
+            <tr>
+              <td>Viajando ligero</td>
+              <td><code>9b71bc8b-d526-4ecd-b875-4e134695ef5f</code></td>
+              <td>2a6813aa-baf8-492b-b18c-83e49c18eb64</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-015 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>5c3852a7-6573-4db4-8305-f4857e0f4637</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/5c3852a7-6573-4db4-8305-f4857e0f4637/7d065d0b-6efe-405e-8354-3c76a3a7c2f4.jpg"
+              alt="Foto de Guillermo Martínez Schrem"
+              loading="lazy"
+            />
+            <h3>Guillermo Martínez Schrem (canónico)</h3>
+            <p class="meta">
+              <code>guillermo-martinez-schrem</code><br />
+              ID: <code>5c3852a7-6573-4db4-8305-f4857e0f4637</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:33.199Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Ligero como la brisa <code>ligero-como-la-brisa</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/722e3bbb-b84e-41d2-9ed9-bd3504045c04/bb526c04-8896-4124-8450-e0164a314f41.jpg"
+              alt="Foto de Guillermo Martínez Schrem"
+              loading="lazy"
+            />
+            <h3>Guillermo Martínez Schrem</h3>
+            <p class="meta">
+              <code>guillermo-martinez-schrem-2</code><br />
+              ID: <code>722e3bbb-b84e-41d2-9ed9-bd3504045c04</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:40.159Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Famosa Gabardina Azul <code>famosa-gabardina-azul</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/438c96f0-1096-4403-8dae-2ac45fefba54/40ec3194-fe81-4d68-85c2-61c519c02264.jpg"
+              alt="Foto de Guillermo Martínez Schrem"
+              loading="lazy"
+            />
+            <h3>Guillermo Martínez Schrem</h3>
+            <p class="meta">
+              <code>guillermo-martinez-schrem-3</code><br />
+              ID: <code>438c96f0-1096-4403-8dae-2ac45fefba54</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:42.028Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Pájaro en el alambre <code>pjaro-en-el-alambre</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ligero como la brisa</td>
+              <td><code>04f75410-5508-4eae-8b26-5ee96673e220</code></td>
+              <td>5c3852a7-6573-4db4-8305-f4857e0f4637</td>
+            </tr>
+            <tr>
+              <td>Famosa Gabardina Azul</td>
+              <td><code>b446f391-1a70-461b-a70f-e13ed0e3ba99</code></td>
+              <td>722e3bbb-b84e-41d2-9ed9-bd3504045c04</td>
+            </tr>
+            <tr>
+              <td>Pájaro en el alambre</td>
+              <td><code>ba3c8bd0-16f8-4605-8d58-17a51fdad047</code></td>
+              <td>438c96f0-1096-4403-8dae-2ac45fefba54</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-016 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>569edd2b-c4d2-40a9-b812-a0fd0f9598e2</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/569edd2b-c4d2-40a9-b812-a0fd0f9598e2/da64d47d-3693-42c3-8f09-bd8e1e266ad1.jpg"
+              alt="Foto de Ignacio Luis de Orduña Puebla"
+              loading="lazy"
+            />
+            <h3>Ignacio Luis de Orduña Puebla (canónico)</h3>
+            <p class="meta">
+              <code>ignacio-luis-de-orduna-puebla</code><br />
+              ID: <code>569edd2b-c4d2-40a9-b812-a0fd0f9598e2</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:24.230Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  “Going my way” en 40 poemas <code>going-my-way-en-40-poemas</code> publicado
+                  activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/fe3d31c4-3593-4040-ab04-ee8abbcee288/725e7b3f-d136-4f91-824f-9c9149e2ba71.jpg"
+              alt="Foto de Ignacio Luis de Orduña Puebla"
+              loading="lazy"
+            />
+            <h3>Ignacio Luis de Orduña Puebla</h3>
+            <p class="meta">
+              <code>ignacio-luis-de-orduna-puebla-2</code><br />
+              ID: <code>fe3d31c4-3593-4040-ab04-ee8abbcee288</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:40.694Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Christus, verbo y verso según un posadero
+                  <code>christus-verbo-y-verso-segn-un-posadero</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>“Going my way” en 40 poemas</td>
+              <td><code>3fa40717-e517-405a-9421-9c8bd0a50795</code></td>
+              <td>569edd2b-c4d2-40a9-b812-a0fd0f9598e2</td>
+            </tr>
+            <tr>
+              <td>Christus, verbo y verso según un posadero</td>
+              <td><code>99874460-e503-4a72-8a2e-4b1853dfa1db</code></td>
+              <td>fe3d31c4-3593-4040-ab04-ee8abbcee288</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-017 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>c790d190-b896-4275-89be-89d7f55ff989</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/c790d190-b896-4275-89be-89d7f55ff989/a0a7f7fc-4249-4185-813c-0a9f463bd650.jpg"
+              alt="Foto de José Antonio Galante Pérez"
+              loading="lazy"
+            />
+            <h3>José Antonio Galante Pérez (canónico)</h3>
+            <p class="meta">
+              <code>jose-antonio-galante-perez</code><br />
+              ID: <code>c790d190-b896-4275-89be-89d7f55ff989</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:26.946Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Poesía y Whisky <code>poesa-y-whisky</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/45e07b93-cecb-41ff-b87f-e40f7724770e/8e7956fd-d485-44d8-8368-d1ce41835b3b.jpg"
+              alt="Foto de Jose Antonio Galante Pérez"
+              loading="lazy"
+            />
+            <h3>Jose Antonio Galante Pérez</h3>
+            <p class="meta">
+              <code>jose-antonio-galante-perez-2</code><br />
+              ID: <code>45e07b93-cecb-41ff-b87f-e40f7724770e</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:35.531Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Haikus en el camino <code>haikus-en-el-camino</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/d3f34b1f-fef0-46ab-934d-3d1d7535cf89/5dc54071-8eac-4242-8029-3c79e7ae3840.jpg"
+              alt="Foto de José Antonio Galante Pérez"
+              loading="lazy"
+            />
+            <h3>José Antonio Galante Pérez</h3>
+            <p class="meta">
+              <code>jose-antonio-galante-perez-3</code><br />
+              ID: <code>d3f34b1f-fef0-46ab-934d-3d1d7535cf89</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:36.447Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>El Cierzo Tatuado <code>el-cierzo-tatuado</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <div class="placeholder">Sin foto</div>
+            <h3>José Antonio Galante Pérez</h3>
+            <p class="meta">
+              <code>jose-antonio-galante-perez-4</code><br />
+              ID: <code>5ecffe2a-e1ac-4090-a650-7d421aa1ad9f</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:48.940Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta">
+              <strong>Biografía:</strong> José Antonio Galante es un poeta ecléctico y heterodoxo,
+              de voz lírica y sensibilidad marcada, cuyos versos destacan por su potencia visual.
+              Arqueólogo de formación y complutense con alma a medio camino entre lo portugué...
+            </p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul></ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Poesía y Whisky</td>
+              <td><code>502ba7c2-55c9-404f-beb1-6ec1344ef76d</code></td>
+              <td>c790d190-b896-4275-89be-89d7f55ff989</td>
+            </tr>
+            <tr>
+              <td>Haikus en el camino</td>
+              <td><code>99341113-c9bb-477c-b58f-a5fd9396c5ff</code></td>
+              <td>45e07b93-cecb-41ff-b87f-e40f7724770e</td>
+            </tr>
+            <tr>
+              <td>El Cierzo Tatuado</td>
+              <td><code>a968a939-cbe1-4bb0-89b5-eea252069f5b</code></td>
+              <td>d3f34b1f-fef0-46ab-934d-3d1d7535cf89</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-018 <span class="badge">MANUAL_REVIEW</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>404c547b-3bbf-467b-88d3-de6ed2abef9f</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Existe patrón de slug con sufijo
+          numérico. Metadata con conflicto: photoUrl, biography. La evidencia no basta para fusionar
+          sin revisión humana.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl, biography</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/404c547b-3bbf-467b-88d3-de6ed2abef9f/291408c4-1d72-44a2-8117-95b251b15b37.jpg"
+              alt="Foto de José Vte. Carmona Simarro"
+              loading="lazy"
+            />
+            <h3>José Vte. Carmona Simarro (canónico)</h3>
+            <p class="meta">
+              <code>jose-vte-carmona-simarro</code><br />
+              ID: <code>404c547b-3bbf-467b-88d3-de6ed2abef9f</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:29.895Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Perdóname por los poemas que te escribí
+                  <code>perdname-por-los-poemas-que-te-escrib</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/3d548b55-cc98-4891-8d04-4597cca2afa9/b4e95242-2dd7-4fac-86df-3b1cd444fcd1.jpg"
+              alt="Foto de José Vte. Carmona Simarro"
+              loading="lazy"
+            />
+            <h3>José Vte. Carmona Simarro</h3>
+            <p class="meta">
+              <code>jose-vte-carmona-simarro-2</code><br />
+              ID: <code>3d548b55-cc98-4891-8d04-4597cca2afa9</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:43.770Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Azul <code>azul</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/432d5ffa-5755-45bf-8b38-fbd0a5cd9535/59bb815d-3eb8-445b-8409-5a313a1db33e.jpg"
+              alt="Foto de José Vte. Carmona Simarro"
+              loading="lazy"
+            />
+            <h3>José Vte. Carmona Simarro</h3>
+            <p class="meta">
+              <code>jose-vte-carmona-simarro-3</code><br />
+              ID: <code>432d5ffa-5755-45bf-8b38-fbd0a5cd9535</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:47.248Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta">
+              <strong>Biografía:</strong> José Vte Carmona Simarro es Contratado Doctor en Ciencias
+              de la Salud en la Universidad Europea de Valencia, Grado en Enfermería, y Licenciado
+              en Antropología Social y Cultural. Máster en Urgencias, Emergencias y Catástr...
+            </p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul></ul>
+            </div>
+          </article>
+          <article class="author">
+            <div class="placeholder">Sin foto</div>
+            <h3>José Vte. Carmona Simarro</h3>
+            <p class="meta">
+              <code>jose-vte-carmona-simarro-4</code><br />
+              ID: <code>99deb473-177c-463d-8a52-bde8f1482651</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:49.960Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta">
+              <strong>Biografía:</strong> Hay quienes luchan por ser vistos. Otros descubren que la
+              verdadera libertad comienza cuando dejan de necesitar la mirada de los demás. De
+              regreso a la invisibilidad es un viaje íntimo por los silencios, las ausencias y ...
+            </p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul></ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/c321aa38-cc93-4fe8-a1d8-5866afb00259/dc2b628f-ac25-4a49-8f47-01f438f4e6e9.jpg"
+              alt="Foto de José Vte. Carmona Simarro"
+              loading="lazy"
+            />
+            <h3>José Vte. Carmona Simarro</h3>
+            <p class="meta">
+              <code>jose-vte-carmona-simarro-editorial-la-rueca</code><br />
+              ID: <code>c321aa38-cc93-4fe8-a1d8-5866afb00259</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:36.586Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Quedamos para despedirnos pero ella no lo sabía – Pensamientos en un pequeño
+                  relato sobre la amistad -
+                  <code
+                    >quedamos-para-despedirnos-pero-ella-no-lo-saba-pensamientos-en-un-pequeo-relato-sobre-la-amistad</code
+                  >
+                  publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Perdóname por los poemas que te escribí</td>
+              <td><code>6532871c-34ab-447a-b37a-8d643df0eca0</code></td>
+              <td>404c547b-3bbf-467b-88d3-de6ed2abef9f</td>
+            </tr>
+            <tr>
+              <td>Azul</td>
+              <td><code>f5d292ef-047e-4941-bb53-8659af5a146b</code></td>
+              <td>3d548b55-cc98-4891-8d04-4597cca2afa9</td>
+            </tr>
+            <tr>
+              <td>
+                Quedamos para despedirnos pero ella no lo sabía – Pensamientos en un pequeño relato
+                sobre la amistad -
+              </td>
+              <td><code>c767c2cb-50f7-4583-9fcb-8a29a24b62c7</code></td>
+              <td>c321aa38-cc93-4fe8-a1d8-5866afb00259</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-019 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>b288ae48-97cb-4c38-8728-f48a4c502348</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/b288ae48-97cb-4c38-8728-f48a4c502348/ce9c427c-7938-4fd7-82f4-67d1f4d6b9eb.jpg"
+              alt="Foto de Juan Antonio Valero Casado"
+              loading="lazy"
+            />
+            <h3>Juan Antonio Valero Casado (canónico)</h3>
+            <p class="meta">
+              <code>juan-antonio-valero-casado</code><br />
+              ID: <code>b288ae48-97cb-4c38-8728-f48a4c502348</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:23.049Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>ESPEJOS DE LA REALIDAD <code>espejos-de-la-realidad</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/bac73ba8-e804-4295-b5e5-c8466820d75d/d39774e8-266a-4996-8e9b-121e6fcc1330.jpg"
+              alt="Foto de Juan Antonio Valero Casado"
+              loading="lazy"
+            />
+            <h3>Juan Antonio Valero Casado</h3>
+            <p class="meta">
+              <code>juan-antonio-valero-casado-2</code><br />
+              ID: <code>bac73ba8-e804-4295-b5e5-c8466820d75d</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:41.789Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Entre líneas, reflejos de un tiempo convulso
+                  <code>entre-lneas-reflejos-de-un-tiempo-convulso</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ESPEJOS DE LA REALIDAD</td>
+              <td><code>343724c4-18b0-4c40-b438-9c5c5d038ec6</code></td>
+              <td>b288ae48-97cb-4c38-8728-f48a4c502348</td>
+            </tr>
+            <tr>
+              <td>Entre líneas, reflejos de un tiempo convulso</td>
+              <td><code>11852551-2110-4d74-a208-b171114c450d</code></td>
+              <td>bac73ba8-e804-4295-b5e5-c8466820d75d</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-020 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>b90554ef-761a-4260-9b74-9db0b5732b37</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/b90554ef-761a-4260-9b74-9db0b5732b37/40e27d11-c172-416d-804d-049a2dd92133.jpg"
+              alt="Foto de Juan José Velasco Sánchez-Mayoral"
+              loading="lazy"
+            />
+            <h3>Juan José Velasco Sánchez-Mayoral (canónico)</h3>
+            <p class="meta">
+              <code>juan-jose-velasco-sanchez-mayoral</code><br />
+              ID: <code>b90554ef-761a-4260-9b74-9db0b5732b37</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:25.792Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Sus ojos hablaron <code>sus-ojos-hablaron</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/da5f6bf3-9efc-49bf-a9ac-6c58d64cdb36/0809ddce-b5e4-4512-8089-2494020692ec.jpg"
+              alt="Foto de Juan José Velasco Sánchez-Mayoral"
+              loading="lazy"
+            />
+            <h3>Juan José Velasco Sánchez-Mayoral</h3>
+            <p class="meta">
+              <code>juan-jose-velasco-sanchez-mayoral-2</code><br />
+              ID: <code>da5f6bf3-9efc-49bf-a9ac-6c58d64cdb36</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:38.861Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Una escuela de música <code>una-escuela-de-msica</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/1d59a6bf-bc45-4fb1-ab5c-beaea7cf988d/a1605f65-5f49-4c87-8ee6-09428b54baaa.jpg"
+              alt="Foto de Juan José Velasco Sánchez-Mayoral"
+              loading="lazy"
+            />
+            <h3>Juan José Velasco Sánchez-Mayoral</h3>
+            <p class="meta">
+              <code>juan-jose-velasco-sanchez-mayoral-3</code><br />
+              ID: <code>1d59a6bf-bc45-4fb1-ab5c-beaea7cf988d</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:44.266Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Ilusiones <code>ilusiones</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sus ojos hablaron</td>
+              <td><code>546f7df4-e99c-4dda-b024-0e2628171fb5</code></td>
+              <td>b90554ef-761a-4260-9b74-9db0b5732b37</td>
+            </tr>
+            <tr>
+              <td>Una escuela de música</td>
+              <td><code>787fcf7c-6410-4e3b-b697-4f9b3d239e5f</code></td>
+              <td>da5f6bf3-9efc-49bf-a9ac-6c58d64cdb36</td>
+            </tr>
+            <tr>
+              <td>Ilusiones</td>
+              <td><code>ff700d7b-7d1c-4021-82f8-0baf708f86df</code></td>
+              <td>1d59a6bf-bc45-4fb1-ab5c-beaea7cf988d</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-021 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>62b500f9-08aa-45b2-985c-8b092d09550e</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/62b500f9-08aa-45b2-985c-8b092d09550e/c298cee0-9f34-49ca-8c65-88ca7fa840e5.jpg"
+              alt="Foto de Julio Sánchez Alonso"
+              loading="lazy"
+            />
+            <h3>Julio Sánchez Alonso (canónico)</h3>
+            <p class="meta">
+              <code>julio-sanchez-alonso</code><br />
+              ID: <code>62b500f9-08aa-45b2-985c-8b092d09550e</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:30.530Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Pollos en la memoria <code>pollos-en-la-memoria</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/7cdf6c07-7c2a-4456-ac08-8b4d2adae7c8/ea2ecd2f-5cc2-4105-841a-cd487731f98d.jpg"
+              alt="Foto de Julio Sánchez Alonso"
+              loading="lazy"
+            />
+            <h3>Julio Sánchez Alonso</h3>
+            <p class="meta">
+              <code>julio-sanchez-alonso-2</code><br />
+              ID: <code>7cdf6c07-7c2a-4456-ac08-8b4d2adae7c8</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:35.251Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Al final de la escapada – Memoria personal 1951-2011
+                  <code>al-final-de-la-escapada-memoria-personal-1951-2011</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pollos en la memoria</td>
+              <td><code>cda49362-8eee-45a8-bf0d-b6f608c41784</code></td>
+              <td>62b500f9-08aa-45b2-985c-8b092d09550e</td>
+            </tr>
+            <tr>
+              <td>Al final de la escapada – Memoria personal 1951-2011</td>
+              <td><code>f927689d-4770-4acf-ad5c-79139efa5cb0</code></td>
+              <td>7cdf6c07-7c2a-4456-ac08-8b4d2adae7c8</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-022 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>61e2db84-f413-47d7-b8cd-83d2a6d802f6</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/61e2db84-f413-47d7-b8cd-83d2a6d802f6/eaf4ab88-90c2-476a-861b-13e9f26b782f.jpg"
+              alt="Foto de Manuel Gómez-Rosas"
+              loading="lazy"
+            />
+            <h3>Manuel Gómez-Rosas (canónico)</h3>
+            <p class="meta">
+              <code>manuel-gomez-rosas</code><br />
+              ID: <code>61e2db84-f413-47d7-b8cd-83d2a6d802f6</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:28.082Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Humor y prosa de un ajedrecista
+                  <code>humor-y-prosa-de-un-ajedrecista</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/32c427dc-b943-4ecc-87c8-60b2645b252c/0dbc9e53-88cb-4f5c-81d9-3425e81b43ab.jpg"
+              alt="Foto de Manuel Gómez Rosas"
+              loading="lazy"
+            />
+            <h3>Manuel Gómez Rosas</h3>
+            <p class="meta">
+              <code>manuel-gomez-rosas-2</code><br />
+              ID: <code>32c427dc-b943-4ecc-87c8-60b2645b252c</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:33.052Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Humor, prosa y una jugadora <code>humor-prosa-y-una-jugadora</code> publicado
+                  activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/df56ed12-1b7b-4bb5-9c89-f2a9b4bacd02/ec85328d-d102-4b67-8192-85345fe6c9e5.jpg"
+              alt="Foto de Manuel Gómez Rosas"
+              loading="lazy"
+            />
+            <h3>Manuel Gómez Rosas</h3>
+            <p class="meta">
+              <code>manuel-gomez-rosas-3</code><br />
+              ID: <code>df56ed12-1b7b-4bb5-9c89-f2a9b4bacd02</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:43.398Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Los mejores cortos de Gómez Rosas (cualquier parecido con la realidad es pura
+                  coincidencia)
+                  <code
+                    >los-mejores-cortos-de-gmez-rosas-cualquier-parecido-con-la-realidad-es-pura-coincidencia</code
+                  >
+                  publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Humor y prosa de un ajedrecista</td>
+              <td><code>1ea85fc8-bdf1-4cb5-a21f-127e6fbcae82</code></td>
+              <td>61e2db84-f413-47d7-b8cd-83d2a6d802f6</td>
+            </tr>
+            <tr>
+              <td>Humor, prosa y una jugadora</td>
+              <td><code>879fc3c9-07bb-416f-ae16-54334846259a</code></td>
+              <td>32c427dc-b943-4ecc-87c8-60b2645b252c</td>
+            </tr>
+            <tr>
+              <td>
+                Los mejores cortos de Gómez Rosas (cualquier parecido con la realidad es pura
+                coincidencia)
+              </td>
+              <td><code>30bce206-8471-485c-a53e-fab3ee96e096</code></td>
+              <td>df56ed12-1b7b-4bb5-9c89-f2a9b4bacd02</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-023 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>74f94358-25ff-4681-a009-3d4086531a0f</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/74f94358-25ff-4681-a009-3d4086531a0f/2d9c42d7-d747-4803-8a10-71b5e0907534.jpg"
+              alt="Foto de Manuel Ondo Ndong"
+              loading="lazy"
+            />
+            <h3>Manuel Ondo Ndong (canónico)</h3>
+            <p class="meta">
+              <code>manuel-ondo-ndong</code><br />
+              ID: <code>74f94358-25ff-4681-a009-3d4086531a0f</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:44.905Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>Ndong, el jubilado <code>ndong-el-jubilado</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/a9596106-6638-4f4c-912c-ef431811741d/dee04e1a-c863-4512-8e50-bec844a0c4e5.jpg"
+              alt="Foto de Manuel Ondo Ndong"
+              loading="lazy"
+            />
+            <h3>Manuel Ondo Ndong</h3>
+            <p class="meta">
+              <code>manuel-ondo-ndong-2</code><br />
+              ID: <code>a9596106-6638-4f4c-912c-ef431811741d</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:45.128Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Análisis de errores morfosintácticos en un aula de Español/LE. El caso del grupo
+                  de estudiantes del nivel B2 de secundaria en Guinea Ecuatorial al expresarse por
+                  escrito en español
+                  <code
+                    >anlisis-de-errores-morfosintcticos-en-un-aula-de-espaolle-el-caso-del-grupo-de-estudiantes-del-nivel-b2-de-secundaria-en-guinea-ecuatorial-al-expresarse-por-escrito-en-espaol</code
+                  >
+                  publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ndong, el jubilado</td>
+              <td><code>87c74e33-c410-4341-8727-8107061d3ed3</code></td>
+              <td>74f94358-25ff-4681-a009-3d4086531a0f</td>
+            </tr>
+            <tr>
+              <td>
+                Análisis de errores morfosintácticos en un aula de Español/LE. El caso del grupo de
+                estudiantes del nivel B2 de secundaria en Guinea Ecuatorial al expresarse por
+                escrito en español
+              </td>
+              <td><code>b08a5b59-1469-45fe-a0d7-04325e6571aa</code></td>
+              <td>a9596106-6638-4f4c-912c-ef431811741d</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-024 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>90ab8837-3864-4fe3-8a4b-b6f0d6a89e55</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/90ab8837-3864-4fe3-8a4b-b6f0d6a89e55/7da392a3-c94b-4b1f-8fb5-bb6d674b10a8.jpg"
+              alt="Foto de María Dolores Castellón Pérez"
+              loading="lazy"
+            />
+            <h3>María Dolores Castellón Pérez (canónico)</h3>
+            <p class="meta">
+              <code>maria-dolores-castellon-perez</code><br />
+              ID: <code>90ab8837-3864-4fe3-8a4b-b6f0d6a89e55</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:20.954Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Julio Robles García - Compositor
+                  <code>julio-robles-garca-compositor</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/5a8b1b18-33a5-464f-92e9-1d5470ebd80c/ac774a5f-637d-45b8-8cde-3c710a2c3757.jpg"
+              alt="Foto de María Dolores Castellón Pérez"
+              loading="lazy"
+            />
+            <h3>María Dolores Castellón Pérez</h3>
+            <p class="meta">
+              <code>maria-dolores-castellon-perez-2</code><br />
+              ID: <code>5a8b1b18-33a5-464f-92e9-1d5470ebd80c</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:32.830Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>ENTREVISTAS <code>entrevistas</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Julio Robles García - Compositor</td>
+              <td><code>40f2777e-f0ec-48fc-8621-5f4721d65bc3</code></td>
+              <td>90ab8837-3864-4fe3-8a4b-b6f0d6a89e55</td>
+            </tr>
+            <tr>
+              <td>ENTREVISTAS</td>
+              <td><code>b6119d6a-20b4-4592-b5df-1bab3eb8eae7</code></td>
+              <td>5a8b1b18-33a5-464f-92e9-1d5470ebd80c</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-025 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>4ff29b1f-b6d3-495e-8906-acb44323deb8</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl, biography.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl, biography</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/4ff29b1f-b6d3-495e-8906-acb44323deb8/dc9d7821-22a9-4cb4-8c88-f61d426f965d.jpg"
+              alt="Foto de Minerva Buiza"
+              loading="lazy"
+            />
+            <h3>Minerva Buiza (canónico)</h3>
+            <p class="meta">
+              <code>minerva-buiza</code><br />
+              ID: <code>4ff29b1f-b6d3-495e-8906-acb44323deb8</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:36.961Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Oráculo de la fe - El camino del alma
+                  <code>orculo-de-la-fe-el-camino-del-alma</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/8d7f8a29-f365-417d-b609-8122844aca55/11bf2fde-3912-4a55-8701-3c0bf1d9d46b.jpg"
+              alt="Foto de Minerva Buiza"
+              loading="lazy"
+            />
+            <h3>Minerva Buiza</h3>
+            <p class="meta">
+              <code>minerva-buiza-2</code><br />
+              ID: <code>8d7f8a29-f365-417d-b609-8122844aca55</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:37.115Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  Voces del Alma - El arte de escuchar a través del tarot
+                  <code>voces-del-alma-el-arte-de-escuchar-a-travs-del-tarot</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/6c12797b-aada-47a8-a105-94f4506ce1d1/a8a339c8-83f1-4194-8390-747e720b3bde.jpg"
+              alt="Foto de Minerva Buiza"
+              loading="lazy"
+            />
+            <h3>Minerva Buiza</h3>
+            <p class="meta">
+              <code>minerva-buiza-3</code><br />
+              ID: <code>6c12797b-aada-47a8-a105-94f4506ce1d1</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:39.137Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  ARCANUM – La torá de Minerva <code>arcanum-la-tor-de-minerva</code> publicado
+                  activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/a10ad1ce-7b1b-4a1c-8e84-f60dbac69122/8f9614ad-412b-45fc-8b92-6cf34740664c.jpg"
+              alt="Foto de Minerva Buiza"
+              loading="lazy"
+            />
+            <h3>Minerva Buiza</h3>
+            <p class="meta">
+              <code>minerva-buiza-4</code><br />
+              ID: <code>a10ad1ce-7b1b-4a1c-8e84-f60dbac69122</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:48.056Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta">
+              <strong>Biografía:</strong> Soy Minerva Buiza, médium clarividente y tarotista. Soy
+              una incansable estudiante de las artes mágicas. Mi misión en esta vida es ayudar a las
+              personas a sentirse más felices, a conectar con su maestro interior y a encon...
+            </p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul></ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/9e96feb6-d431-439a-a0d2-2c5c7d357b25/edbc4cb6-c9a8-4e0a-83e8-c92f0be3614c.jpg"
+              alt="Foto de Minerva Buiza"
+              loading="lazy"
+            />
+            <h3>Minerva Buiza</h3>
+            <p class="meta">
+              <code>minerva-buiza-5</code><br />
+              ID: <code>9e96feb6-d431-439a-a0d2-2c5c7d357b25</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:48.276Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta">
+              <strong>Biografía:</strong> Soy Minerva, y a lo largo de mis años he descubierto miles
+              de “mundos” que ahora quiero compartir contigo. En este libro aprenderás los secretos
+              del Tarot y sus orígenes más antiguos, los inicios del péndulo, la kinesiol...
+            </p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul></ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Oráculo de la fe - El camino del alma</td>
+              <td><code>0d54887c-eb82-4bb1-895f-249c56f3b390</code></td>
+              <td>4ff29b1f-b6d3-495e-8906-acb44323deb8</td>
+            </tr>
+            <tr>
+              <td>Voces del Alma - El arte de escuchar a través del tarot</td>
+              <td><code>972af837-ad34-489b-9056-6460a7971d1f</code></td>
+              <td>8d7f8a29-f365-417d-b609-8122844aca55</td>
+            </tr>
+            <tr>
+              <td>ARCANUM – La torá de Minerva</td>
+              <td><code>c67bb68e-ca48-439e-b7b8-4681e7236008</code></td>
+              <td>6c12797b-aada-47a8-a105-94f4506ce1d1</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-026 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>8473c184-8d3d-42c3-b54e-a777c1851222</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Metadata con conflicto: photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/8473c184-8d3d-42c3-b54e-a777c1851222/11d53c79-aa54-4a79-81cf-edc4ea31a6f6.jpg"
+              alt="Foto de Norberto Domínguez Jurado"
+              loading="lazy"
+            />
+            <h3>Norberto Domínguez Jurado (canónico)</h3>
+            <p class="meta">
+              <code>norberto-dominguez-jurado</code><br />
+              ID: <code>8473c184-8d3d-42c3-b54e-a777c1851222</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:20.743Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  El poder de la educación nos hace infinitos
+                  <code>el-poder-de-la-educacin-nos-hace-infinitos</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/1286c255-ad35-4c36-8193-7726449ad6f6/338c084b-4084-44fa-8f56-d96c91c1c576.jpg"
+              alt="Foto de Norberto Domínguez Jurado"
+              loading="lazy"
+            />
+            <h3>Norberto Domínguez Jurado</h3>
+            <p class="meta">
+              <code>norberto-dominguez-jurado-y-maria-isabel-martin-aranda</code><br />
+              ID: <code>1286c255-ad35-4c36-8193-7726449ad6f6</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:34.229Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  La Inteligencia Artificial en Educación Física
+                  <code>la-inteligencia-artificial-en-educacin-fsica</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>El poder de la educación nos hace infinitos</td>
+              <td><code>360b3f6f-ce31-4021-add3-ad58b8c378e9</code></td>
+              <td>8473c184-8d3d-42c3-b54e-a777c1851222</td>
+            </tr>
+            <tr>
+              <td>La Inteligencia Artificial en Educación Física</td>
+              <td><code>44d72766-6ff2-4cc2-8294-487a332d097a</code></td>
+              <td>1286c255-ad35-4c36-8193-7726449ad6f6</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-027 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>6db0fa6b-d7f9-44fa-b40f-3626a402b116</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/6db0fa6b-d7f9-44fa-b40f-3626a402b116/292fe6c3-569d-462d-8cf5-5372e6dc3a6d.jpg"
+              alt="Foto de Patxi Oyaga"
+              loading="lazy"
+            />
+            <h3>Patxi Oyaga (canónico)</h3>
+            <p class="meta">
+              <code>patxi-oyaga</code><br />
+              ID: <code>6db0fa6b-d7f9-44fa-b40f-3626a402b116</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:35.107Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>La sombra del azar <code>la-sombra-del-azar</code> publicado activo</li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/7f7b9eb4-f706-47f9-b1f0-1d54d3403cdb/c18643a6-7c21-48fc-8aaf-2566067e6442.jpg"
+              alt="Foto de Patxi Oyaga"
+              loading="lazy"
+            />
+            <h3>Patxi Oyaga</h3>
+            <p class="meta">
+              <code>patxi-oyaga-2</code><br />
+              ID: <code>7f7b9eb4-f706-47f9-b1f0-1d54d3403cdb</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:47.389Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta">
+              <strong>Biografía:</strong> Patxi Oyaga, Donostia 1961. Tiene estudios inacabados de
+              psicología. Ha publicado las novelas &quot;Los dragones de Ibiza&quot;, &quot;Muerto
+              como un tamarindo&quot;, &quot;La sombra del azar&quot;, y el libro de relatos
+              &quot;Neptuno no hace prisioneros&quot;...
+            </p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul></ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>La sombra del azar</td>
+              <td><code>c9e7cb6c-d20c-463c-bd3e-5673717f12a0</code></td>
+              <td>6db0fa6b-d7f9-44fa-b40f-3626a402b116</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-028 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>4ab0fad0-9ad3-44e0-a465-dcdda6637562</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/4ab0fad0-9ad3-44e0-a465-dcdda6637562/482ab9f2-63ff-4eb0-8b62-04768314fc60.jpg"
+              alt="Foto de Sara Sánchez Prieto"
+              loading="lazy"
+            />
+            <h3>Sara Sánchez Prieto (canónico)</h3>
+            <p class="meta">
+              <code>sara-sanchez-prieto</code><br />
+              ID: <code>4ab0fad0-9ad3-44e0-a465-dcdda6637562</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:39.501Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  ESTRATEGIAS EDUCATIVAS A TRAVÉS DEL TEATRO MUSICAL - Experiencias y propuesta
+                  metodológica del “Taller de Musicales” Volumen 1 Selección de títulos para el
+                  aula: Análisis cinematográfico y escénico.
+                  <code
+                    >estrategias-educativas-a-travs-del-teatro-musical-experiencias-y-propuesta-metodolgica-del-taller-de-musicales-volumen-1-seleccin-de-ttulos-para-el-aula-anlisis-cinematogrfico-y-escnico</code
+                  >
+                  publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/a7e26c9c-f5ab-4b8d-92c7-f0dea65d1b3c/b252083f-474c-488a-8267-fbe6f92dd6ca.jpg"
+              alt="Foto de Sara Sánchez Prieto"
+              loading="lazy"
+            />
+            <h3>Sara Sánchez Prieto</h3>
+            <p class="meta">
+              <code>sara-sanchez-prieto-2</code><br />
+              ID: <code>a7e26c9c-f5ab-4b8d-92c7-f0dea65d1b3c</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:41.651Z<br />
+              Actualizado: 2026-07-24T19:22:35.605Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  EL MUSICAL COMO VEHÍCULO DE APRENDIZAJE
+                  <code>el-musical-como-vehculo-de-aprendizaje</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                ESTRATEGIAS EDUCATIVAS A TRAVÉS DEL TEATRO MUSICAL - Experiencias y propuesta
+                metodológica del “Taller de Musicales” Volumen 1 Selección de títulos para el aula:
+                Análisis cinematográfico y escénico.
+              </td>
+              <td><code>fb2ddb8c-1a06-4e14-be71-a38e29dd6c7e</code></td>
+              <td>4ab0fad0-9ad3-44e0-a465-dcdda6637562</td>
+            </tr>
+            <tr>
+              <td>EL MUSICAL COMO VEHÍCULO DE APRENDIZAJE</td>
+              <td><code>c66fbb42-dd7e-462b-b3a8-53e35fbb188f</code></td>
+              <td>a7e26c9c-f5ab-4b8d-92c7-f0dea65d1b3c</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="group">
+        <h2>author-duplicate-029 <span class="badge">LIKELY_DUPLICATE</span></h2>
+        <p>
+          <strong>Autor canónico propuesto:</strong>
+          <code>d94280e4-5a18-4adf-9e9f-9f727e6ae7ec</code>
+        </p>
+        <p class="meta">
+          <strong>Razones:</strong> Nombre normalizado idéntico. Slug base idéntico tras retirar
+          sufijos numéricos. Existe patrón de slug con sufijo numérico. Metadata con conflicto:
+          photoUrl.
+        </p>
+        <p class="conflicts"><strong>Conflictos:</strong> photoUrl</p>
+        <div class="authors">
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/d94280e4-5a18-4adf-9e9f-9f727e6ae7ec/9dcec016-a7a4-44eb-83ba-078d04d3be11.jpg"
+              alt="Foto de Teodoro Rodríguez Martín"
+              loading="lazy"
+            />
+            <h3>Teodoro Rodríguez Martín (canónico)</h3>
+            <p class="meta">
+              <code>teodoro-rodriguez-martin</code><br />
+              ID: <code>d94280e4-5a18-4adf-9e9f-9f727e6ae7ec</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:21.815Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta">
+              <strong>Biografía:</strong> Son los años 50 y 60 del siglo pasado en una zona rural de
+              la provincia de León. A partir del primer relato, El día de las Candelas , que opera
+              como fundacional, una nueva saga de molineros llega al Molino de la Casería....
+            </p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul></ul>
+            </div>
+          </article>
+          <article class="author">
+            <img
+              src="https://yewtaedqcqpooozagvad.supabase.co/storage/v1/object/public/authors/0f994897-5c2a-40d9-b3de-ba3ad4ff4dc2/bd3b726f-b00a-432d-81f9-f88baa598e54.jpg"
+              alt="Foto de Teodoro Rodríguez Martín"
+              loading="lazy"
+            />
+            <h3>Teodoro Rodríguez Martín</h3>
+            <p class="meta">
+              <code>teodoro-rodriguez-martin-2</code><br />
+              ID: <code>0f994897-5c2a-40d9-b3de-ba3ad4ff4dc2</code><br />
+              País: Sin país<br />
+              Publicado: sí · Destacado: no · Archivado: no<br />
+              Creado: 2026-07-23T20:22:23.192Z<br />
+              Actualizado: 2026-07-24T19:22:28.123Z
+            </p>
+            <p class="meta"><strong>Biografía:</strong> null</p>
+            <div class="books">
+              <strong>Libros:</strong>
+              <ul>
+                <li>
+                  La pulsera de la princesa yoruba
+                  <code>la-pulsera-de-la-princesa-yoruba</code> publicado activo
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <h3>Relaciones finales propuestas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Libro</th>
+              <th>Book ID</th>
+              <th>Autores origen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>La pulsera de la princesa yoruba</td>
+              <td><code>9b2dc517-c083-448a-bc3f-31ceb6c67e8c</code></td>
+              <td>0f994897-5c2a-40d9-b3de-ba3ad4ff4dc2</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

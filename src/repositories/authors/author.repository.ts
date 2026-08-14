@@ -16,16 +16,20 @@ import {
 } from 'drizzle-orm';
 
 import { db } from '@/db';
-import { authors, bookAuthors, type Author, type NewAuthor } from '@/db/schema';
+import { authors, bookAuthors, books, type Author, type NewAuthor } from '@/db/schema';
 import type { ArchiveStatus } from '@/features/admin/lib/archive-status';
-import type {
-  AuthorAdminListOptions,
-  AuthorBulkAction,
-  AuthorBulkUpdateResult,
-  AuthorAdminListItem,
-  AuthorDashboardCounts,
-  AuthorPublicListOptions,
-  AuthorRecentItem,
+import {
+  DEFAULT_AUTHOR_ADMIN_SORT,
+  type AuthorAdminListItem,
+  type AuthorAdminListOptions,
+  type AuthorAdminSort,
+  type AuthorBulkAction,
+  type AuthorBulkUpdateResult,
+  type AuthorPublishedBookPreview,
+  type AuthorDashboardCounts,
+  type AuthorRelatedBook,
+  type AuthorPublicListOptions,
+  type AuthorRecentItem,
 } from '@/services/authors/author-service.types';
 import type { PaginatedResult } from '@/features/admin/lib/list-query';
 import { createPaginatedResult, getOffset } from '@/features/admin/lib/list-query';
@@ -35,6 +39,7 @@ type AuthorUpdateData = Partial<Omit<NewAuthor, 'id' | 'createdAt' | 'updatedAt'
 type AuthorBulkUpdateData = Partial<
   Pick<Author, 'isPublished' | 'isFeatured' | 'isArchived' | 'archivedAt' | 'updatedAt'>
 >;
+type AuthorAdminListRow = Omit<AuthorAdminListItem, 'publishedBooksPreview'>;
 
 export async function findById(id: string): Promise<Author | null> {
   const [author] = await db.select().from(authors).where(eq(authors.id, id)).limit(1);
@@ -100,6 +105,93 @@ function getAuthorListCondition(status: ArchiveStatus, options: AuthorAdminListO
   return conditions.length > 0 ? and(...conditions) : undefined;
 }
 
+function getPublishedBooksCountSql() {
+  return sql<number>`coalesce((
+    select count(*)
+    from ${bookAuthors}
+    inner join ${books} on ${books.id} = ${bookAuthors.bookId}
+    where ${bookAuthors.authorId} = ${authors.id}
+      and ${books.isPublished} = true
+      and ${books.isArchived} = false
+  ), 0)`.mapWith(Number);
+}
+
+function getAuthorAdminOrderBy(sort: AuthorAdminSort = DEFAULT_AUTHOR_ADMIN_SORT) {
+  switch (sort) {
+    case 'name-desc':
+      return [desc(authors.name), desc(authors.id)];
+    case 'updated-desc':
+      return [desc(authors.updatedAt), desc(authors.createdAt), asc(authors.id)];
+    case 'created-asc':
+      return [asc(authors.createdAt), asc(authors.id)];
+    case 'published-books-desc':
+      return [desc(getPublishedBooksCountSql()), asc(authors.name), asc(authors.id)];
+    case 'published-books-asc':
+      return [asc(getPublishedBooksCountSql()), asc(authors.name), asc(authors.id)];
+    case 'name-asc':
+    default:
+      return [asc(authors.name), asc(authors.id)];
+  }
+}
+
+async function getPublishedBookPreviewsByAuthorId(authorIds: string[]) {
+  const previewsByAuthorId = new Map<string, AuthorPublishedBookPreview[]>();
+
+  if (authorIds.length === 0) {
+    return previewsByAuthorId;
+  }
+
+  const rows = await db
+    .select({
+      authorId: bookAuthors.authorId,
+      book: {
+        id: books.id,
+        title: books.title,
+      },
+    })
+    .from(bookAuthors)
+    .innerJoin(books, eq(books.id, bookAuthors.bookId))
+    .where(
+      and(
+        inArray(bookAuthors.authorId, authorIds),
+        eq(books.isPublished, true),
+        eq(books.isArchived, false),
+      ),
+    )
+    .orderBy(
+      asc(bookAuthors.authorId),
+      asc(bookAuthors.sortOrder),
+      asc(books.title),
+      asc(books.id),
+    );
+
+  for (const row of rows) {
+    const currentPreviews = previewsByAuthorId.get(row.authorId) ?? [];
+
+    if (currentPreviews.length < 3) {
+      currentPreviews.push(row.book);
+      previewsByAuthorId.set(row.authorId, currentPreviews);
+    }
+  }
+
+  return previewsByAuthorId;
+}
+
+async function attachPublishedBookPreviews(
+  rows: AuthorAdminListRow[],
+): Promise<AuthorAdminListItem[]> {
+  const previewsByAuthorId = await getPublishedBookPreviewsByAuthorId(
+    rows.map((row) => row.author.id),
+  );
+
+  return rows.map((row) => ({
+    ...row,
+    bookCount: Number(row.bookCount),
+    publishedBooksCount: Number(row.publishedBooksCount),
+    publishedBooksPreview: previewsByAuthorId.get(row.author.id) ?? [],
+  }));
+}
+
 export async function findAll(status: ArchiveStatus = 'active'): Promise<Author[]> {
   return db
     .select()
@@ -115,14 +207,15 @@ export async function findAllWithBookCount(
     .select({
       author: authors,
       bookCount: count(bookAuthors.bookId),
+      publishedBooksCount: getPublishedBooksCountSql(),
     })
     .from(authors)
     .leftJoin(bookAuthors, eq(bookAuthors.authorId, authors.id))
     .where(getArchiveCondition(status))
     .groupBy(authors.id)
-    .orderBy(asc(authors.sortOrder), asc(authors.name));
+    .orderBy(...getAuthorAdminOrderBy());
 
-  return rows;
+  return attachPublishedBookPreviews(rows);
 }
 
 export async function findAllWithBookCountPaginated(
@@ -140,16 +233,19 @@ export async function findAllWithBookCountPaginated(
     .select({
       author: authors,
       bookCount: count(bookAuthors.bookId),
+      publishedBooksCount: getPublishedBooksCountSql(),
     })
     .from(authors)
     .leftJoin(bookAuthors, eq(bookAuthors.authorId, authors.id))
     .where(whereCondition)
     .groupBy(authors.id)
-    .orderBy(asc(authors.sortOrder), asc(authors.name))
+    .orderBy(...getAuthorAdminOrderBy(options.sort))
     .limit(options.pageSize)
     .offset(getOffset(safePage, options.pageSize));
 
-  return createPaginatedResult(rows, totalItems, safePage, options.pageSize);
+  const items = await attachPublishedBookPreviews(rows);
+
+  return createPaginatedResult(items, totalItems, safePage, options.pageSize);
 }
 
 export async function getDashboardCounts(): Promise<AuthorDashboardCounts> {
@@ -242,6 +338,24 @@ export async function findPublishedBySlug(slug: string): Promise<Author | null> 
     .limit(1);
 
   return author ?? null;
+}
+
+export async function findBooksByAuthorId(authorId: string): Promise<AuthorRelatedBook[]> {
+  return db
+    .select({
+      id: books.id,
+      title: books.title,
+      slug: books.slug,
+      coverUrl: books.coverUrl,
+      isPublished: books.isPublished,
+      isArchived: books.isArchived,
+      isFeatured: books.isFeatured,
+      updatedAt: books.updatedAt,
+    })
+    .from(bookAuthors)
+    .innerJoin(books, eq(books.id, bookAuthors.bookId))
+    .where(eq(bookAuthors.authorId, authorId))
+    .orderBy(asc(books.isArchived), desc(books.isPublished), asc(books.title), asc(books.id));
 }
 
 export async function countBooksByAuthorId(authorId: string): Promise<number> {
