@@ -86,8 +86,14 @@ export function getLanguageLabel(language: string | null) {
 
   const languageLabels: Record<string, string> = {
     es: 'Español',
-    en: 'Inglés',
+    gl: 'Gallego',
+    ast: 'Asturiano',
+    ca: 'Catalán',
+    eu: 'Euskera',
+    pt: 'Portugués',
     fr: 'Francés',
+    en: 'Inglés',
+    la: 'Latín',
   };
   const normalizedLanguage = language.trim();
 

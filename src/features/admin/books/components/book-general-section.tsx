@@ -214,8 +214,14 @@ function LanguageField({
       >
         <option value="">Selecciona un idioma</option>
         <option value="es">Español</option>
-        <option value="en">English</option>
-        <option value="fr">Français</option>
+        <option value="gl">Gallego</option>
+        <option value="ast">Asturiano</option>
+        <option value="ca">Catalán</option>
+        <option value="eu">Euskera</option>
+        <option value="pt">Portugués</option>
+        <option value="fr">Francés</option>
+        <option value="en">Inglés</option>
+        <option value="la">Latín</option>
       </select>
       <div id={`${id}-error`}>
         <FieldError message={error} />

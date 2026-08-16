@@ -77,11 +77,33 @@ describe('createBookSchema', () => {
 
   it('rejects invalid book fields', () => {
     expect(() => createBookSchema.parse({ ...validBookInput, title: '' })).toThrow();
+    expect(() => createBookSchema.parse({ ...validBookInput, title: '   ' })).toThrow();
     expect(() => createBookSchema.parse({ ...validBookInput, slug: '!!!' })).toThrow();
     expect(() => createBookSchema.parse({ ...validBookInput, language: 'spanish' })).toThrow();
     expect(() =>
       createBookSchema.parse({ ...validBookInput, canonicalUrl: 'not-a-url' }),
     ).toThrow();
+  });
+
+  it('allows one-character book titles and slugs for legacy cases like book:r', () => {
+    const result = createBookSchema.parse({
+      ...validBookInput,
+      title: '  R  ',
+      slug: ' R ',
+    });
+
+    expect(result.title).toBe('R');
+    expect(result.slug).toBe('r');
+    expect(() =>
+      createBookSchema.parse({ ...validBookInput, title: 'A', slug: 'a' }),
+    ).not.toThrow();
+    expect(() => createBookSchema.parse({ ...validBookInput, slug: '' })).toThrow();
+  });
+
+  it('accepts Galician, Asturian and Latin language codes', () => {
+    expect(createBookSchema.parse({ ...validBookInput, language: ' gl ' }).language).toBe('gl');
+    expect(createBookSchema.parse({ ...validBookInput, language: ' AST ' }).language).toBe('ast');
+    expect(createBookSchema.parse({ ...validBookInput, language: ' la ' }).language).toBe('la');
   });
 
   it('requires authors and editions without duplicates', () => {
@@ -211,6 +233,11 @@ describe('updateBookSchema', () => {
   it('allows partial updates and rejects empty payloads', () => {
     expect(updateBookSchema.parse({ title: ' Nuevo titulo ' })).toMatchObject({
       title: 'Nuevo titulo',
+    });
+    expect(updateBookSchema.parse({ title: ' R ', slug: ' R ', language: ' gl ' })).toMatchObject({
+      title: 'R',
+      slug: 'r',
+      language: 'gl',
     });
     expect(() => updateBookSchema.parse({})).toThrow();
   });

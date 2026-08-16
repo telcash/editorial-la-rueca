@@ -89,6 +89,9 @@ describe('book edition helpers', () => {
 
   it('maps common language codes and preserves readable values', () => {
     expect(getLanguageLabel('es')).toBe('Español');
+    expect(getLanguageLabel('gl')).toBe('Gallego');
+    expect(getLanguageLabel('ast')).toBe('Asturiano');
+    expect(getLanguageLabel('la')).toBe('Latín');
     expect(getLanguageLabel('en')).toBe('Inglés');
     expect(getLanguageLabel('fr')).toBe('Francés');
     expect(getLanguageLabel('Italiano')).toBe('Italiano');

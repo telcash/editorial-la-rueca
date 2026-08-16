@@ -56,6 +56,13 @@ describe('bookGeneralFormSchema adaptation', () => {
     expect(
       validateBookGeneralForm({
         ...initialBookGeneralFormValues,
+        title: 'R',
+        slug: 'r',
+      }),
+    ).toEqual({});
+    expect(
+      validateBookGeneralForm({
+        ...initialBookGeneralFormValues,
         title: ' Libro ',
         slug: 'libro',
         canonicalUrl: 'not-a-url',

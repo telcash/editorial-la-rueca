@@ -107,7 +107,7 @@ const slugSchema = z.preprocess(
   (value) => (typeof value === 'string' ? normalizeBookSlug(value) : value),
   z
     .string()
-    .min(2, 'El slug debe tener al menos 2 caracteres.')
+    .min(1, 'El slug debe tener al menos 1 caracter.')
     .max(220, 'El slug no puede superar los 220 caracteres.')
     .regex(slugPattern, 'El slug solo puede contener letras minusculas, numeros y guiones.'),
 );
@@ -190,7 +190,7 @@ const bookInputFields = {
   title: z
     .string()
     .trim()
-    .min(2, 'El titulo debe tener al menos 2 caracteres.')
+    .min(1, 'El titulo debe tener al menos 1 caracter.')
     .max(220, 'El titulo no puede superar los 220 caracteres.'),
   subtitle: optionalTrimmedStringAsNull(220),
   slug: slugSchema,
