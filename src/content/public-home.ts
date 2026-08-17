@@ -7,14 +7,6 @@ export interface EditorialVideoContent {
   videoUrl: string | null;
 }
 
-export interface Testimonial {
-  id: string;
-  quote: string;
-  authorName: string;
-  authorRole?: string;
-  authorImage?: string | null;
-}
-
 export const editorialVideoContent: EditorialVideoContent = {
   title: 'Conoce a Almudena',
   subtitle: 'Directora de Editorial La Rueca',
@@ -24,32 +16,3 @@ export const editorialVideoContent: EditorialVideoContent = {
   posterUrl: null,
   videoUrl: null,
 };
-
-export const testimonials: Testimonial[] = [
-  {
-    id: 'testimonial-placeholder-1',
-    quote:
-      'Placeholder temporal pendiente de sustituir por un testimonio aprobado por la editorial.',
-    authorName: 'Testimonio pendiente',
-    authorRole: 'Autor/a',
-    authorImage: null,
-  },
-  {
-    id: 'testimonial-placeholder-2',
-    quote:
-      'Placeholder temporal pendiente de sustituir por un testimonio aprobado por la editorial.',
-    authorName: 'Testimonio pendiente',
-    authorRole: 'Autor/a',
-    authorImage: null,
-  },
-  {
-    id: 'testimonial-placeholder-3',
-    quote:
-      'Placeholder temporal pendiente de sustituir por un testimonio aprobado por la editorial.',
-    authorName: 'Testimonio pendiente',
-    authorRole: 'Autor/a',
-    authorImage: null,
-  },
-];
-
-// TODO: Sustituir estos testimonios placeholder por testimonios reales aprobados.

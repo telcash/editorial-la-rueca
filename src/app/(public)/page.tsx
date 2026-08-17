@@ -11,9 +11,11 @@ import { PublicCtaLink } from '@/components/public/public-cta-link';
 import { PublicSection } from '@/components/public/public-section';
 import { SectionHeading } from '@/components/public/section-heading';
 import { TestimonialsSection } from '@/components/public/testimonials-section';
-import { editorialVideoContent, testimonials } from '@/content/public-home';
+import { editorialVideoContent } from '@/content/public-home';
 import { PublicContactForm } from '@/features/public/contact/components/public-contact-form';
 import type { Author } from '@/db/schema';
+import * as AuthorTestimonialService from '@/services/author-testimonials/author-testimonial.service';
+import type { AuthorTestimonialPublicItem } from '@/services/author-testimonials/author-testimonial.types';
 import * as AuthorService from '@/services/authors/author.service';
 import * as BookService from '@/services/books/book.service';
 import type { BookWithDetails } from '@/services/books/book.types';
@@ -23,6 +25,7 @@ import type { PublicHomeMetrics } from '@/services/public-home/public-home.types
 interface HomeData {
   featuredBooks: BookWithDetails[];
   featuredAuthors: Author[];
+  featuredTestimonials: AuthorTestimonialPublicItem[];
   metrics: PublicHomeMetrics | null;
 }
 
@@ -31,11 +34,13 @@ function getErrorMessage(error: unknown) {
 }
 
 async function getHomeData(): Promise<HomeData> {
-  const [featuredBooksResult, featuredAuthorsResult, metricsResult] = await Promise.allSettled([
-    BookService.listHomeFeaturedPublishedBooks(8),
-    AuthorService.listPublishedAuthors(),
-    PublicHomeService.getPublicHomeMetrics(),
-  ]);
+  const [featuredBooksResult, featuredAuthorsResult, metricsResult, featuredTestimonialsResult] =
+    await Promise.allSettled([
+      BookService.listHomeFeaturedPublishedBooks(8),
+      AuthorService.listPublishedAuthors(),
+      PublicHomeService.getPublicHomeMetrics(),
+      AuthorTestimonialService.listFeaturedPublishedTestimonials(),
+    ]);
 
   if (featuredBooksResult.status === 'rejected') {
     console.error('[PublicHome] Featured books query failed', {
@@ -55,12 +60,20 @@ async function getHomeData(): Promise<HomeData> {
     });
   }
 
+  if (featuredTestimonialsResult.status === 'rejected') {
+    console.error('[PublicHome] Featured testimonials query failed', {
+      message: getErrorMessage(featuredTestimonialsResult.reason),
+    });
+  }
+
   return {
     featuredBooks: featuredBooksResult.status === 'fulfilled' ? featuredBooksResult.value : [],
     featuredAuthors:
       featuredAuthorsResult.status === 'fulfilled'
         ? featuredAuthorsResult.value.filter((author) => author.isFeatured)
         : [],
+    featuredTestimonials:
+      featuredTestimonialsResult.status === 'fulfilled' ? featuredTestimonialsResult.value : [],
     metrics: metricsResult.status === 'fulfilled' ? metricsResult.value : null,
   };
 }
@@ -105,7 +118,7 @@ function HeroMetrics({ metrics }: { metrics: PublicHomeMetrics | null }) {
 export default async function PublicHomePage() {
   await connection();
 
-  const { featuredBooks, featuredAuthors, metrics } = await getHomeData();
+  const { featuredBooks, featuredAuthors, featuredTestimonials, metrics } = await getHomeData();
 
   return (
     <>
@@ -172,7 +185,7 @@ export default async function PublicHomePage() {
         </PublicContainer>
       </PublicSection>
 
-      <TestimonialsSection testimonials={testimonials} />
+      <TestimonialsSection testimonials={featuredTestimonials} />
 
       {featuredAuthors.length > 0 ? (
         <PublicSection variant="compact">
