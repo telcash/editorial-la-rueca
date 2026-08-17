@@ -125,139 +125,161 @@ export function CatalogFilters({
 
   return (
     <div className="space-y-3 rounded-lg border border-border bg-card p-4">
-      <form action={action} className="grid gap-3 md:grid-cols-2 xl:grid-cols-6">
+      <form action={action} className="space-y-4">
         <input type="hidden" name="pageSize" value={pageSize} />
-        <div className="grid gap-1.5 xl:col-span-2">
-          <label htmlFor="admin-catalog-query" className="text-sm font-medium text-foreground">
-            Buscar
-          </label>
-          <Input
-            id="admin-catalog-query"
-            type="search"
-            name="q"
-            defaultValue={query}
-            placeholder={searchPlaceholder}
-          />
-        </div>
 
-        <div className="grid gap-1.5">
-          <label htmlFor="admin-catalog-status" className="text-sm font-medium text-foreground">
-            Estado
-          </label>
-          <select
-            id="admin-catalog-status"
-            name="status"
-            defaultValue={status}
-            className="min-h-10 rounded-md border border-input bg-background px-3 text-sm"
-          >
-            {archiveOptions.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-        </div>
+        <div
+          data-layout="catalog-filters-primary"
+          className="grid gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6"
+        >
+          <div className="grid gap-1.5 xl:col-span-2">
+            <label htmlFor="admin-catalog-query" className="text-sm font-medium text-foreground">
+              Buscar
+            </label>
+            <Input
+              id="admin-catalog-query"
+              type="search"
+              name="q"
+              defaultValue={query}
+              placeholder={searchPlaceholder}
+            />
+          </div>
 
-        <div className="grid gap-1.5">
-          <label htmlFor="admin-catalog-published" className="text-sm font-medium text-foreground">
-            Publicado
-          </label>
-          <select
-            id="admin-catalog-published"
-            name="published"
-            defaultValue={published}
-            className="min-h-10 rounded-md border border-input bg-background px-3 text-sm"
-          >
-            {triStateOptions.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <div className="grid gap-1.5">
-          <label htmlFor="admin-catalog-featured" className="text-sm font-medium text-foreground">
-            Destacado
-          </label>
-          <select
-            id="admin-catalog-featured"
-            name="featured"
-            defaultValue={featured}
-            className="min-h-10 rounded-md border border-input bg-background px-3 text-sm"
-          >
-            {triStateOptions.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <div className="grid gap-1.5">
-          <label htmlFor="admin-catalog-image" className="text-sm font-medium text-foreground">
-            {imageLabel}
-          </label>
-          <select
-            id="admin-catalog-image"
-            name="image"
-            defaultValue={image}
-            className="min-h-10 rounded-md border border-input bg-background px-3 text-sm"
-          >
-            {triStateOptions.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        {categoryOptions.length > 0 ? (
           <div className="grid gap-1.5">
-            <label htmlFor="admin-catalog-category" className="text-sm font-medium text-foreground">
-              Categoría
+            <label htmlFor="admin-catalog-status" className="text-sm font-medium text-foreground">
+              Estado
             </label>
             <select
-              id="admin-catalog-category"
-              name="category"
-              defaultValue={category}
+              id="admin-catalog-status"
+              name="status"
+              defaultValue={status}
               className="min-h-10 rounded-md border border-input bg-background px-3 text-sm"
             >
-              <option value="">Todas</option>
-              {categoryOptions.map((option) => (
+              {archiveOptions.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}
                 </option>
               ))}
             </select>
           </div>
-        ) : null}
 
-        {sortOptions.length > 0 ? (
           <div className="grid gap-1.5">
-            <label htmlFor="admin-catalog-sort" className="text-sm font-medium text-foreground">
-              Orden
+            <label
+              htmlFor="admin-catalog-published"
+              className="text-sm font-medium text-foreground"
+            >
+              Publicado
             </label>
             <select
-              id="admin-catalog-sort"
-              name="sort"
-              defaultValue={sort ?? defaultSort}
+              id="admin-catalog-published"
+              name="published"
+              defaultValue={published}
               className="min-h-10 rounded-md border border-input bg-background px-3 text-sm"
             >
-              {sortOptions.map((option) => (
+              {triStateOptions.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}
                 </option>
               ))}
             </select>
           </div>
-        ) : null}
 
-        <div className="flex items-end gap-2">
-          <Button type="submit">Aplicar filtros</Button>
-          <Button asChild variant="outline">
-            <Link href={buildListHref(action, { pageSize })}>Limpiar filtros</Link>
-          </Button>
+          <div className="grid gap-1.5">
+            <label htmlFor="admin-catalog-featured" className="text-sm font-medium text-foreground">
+              Destacado
+            </label>
+            <select
+              id="admin-catalog-featured"
+              name="featured"
+              defaultValue={featured}
+              className="min-h-10 rounded-md border border-input bg-background px-3 text-sm"
+            >
+              {triStateOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="grid gap-1.5">
+            <label htmlFor="admin-catalog-image" className="text-sm font-medium text-foreground">
+              {imageLabel}
+            </label>
+            <select
+              id="admin-catalog-image"
+              name="image"
+              defaultValue={image}
+              className="min-h-10 rounded-md border border-input bg-background px-3 text-sm"
+            >
+              {triStateOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {categoryOptions.length > 0 ? (
+            <div className="grid gap-1.5">
+              <label
+                htmlFor="admin-catalog-category"
+                className="text-sm font-medium text-foreground"
+              >
+                Categoría
+              </label>
+              <select
+                id="admin-catalog-category"
+                name="category"
+                defaultValue={category}
+                className="min-h-10 rounded-md border border-input bg-background px-3 text-sm"
+              >
+                <option value="">Todas</option>
+                {categoryOptions.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+          ) : null}
+        </div>
+
+        <div
+          data-layout="catalog-filters-secondary"
+          className="grid gap-3 lg:grid-cols-[minmax(16rem,24rem)_minmax(0,1fr)] lg:items-end"
+        >
+          {sortOptions.length > 0 ? (
+            <div className="grid min-w-0 gap-1.5">
+              <label htmlFor="admin-catalog-sort" className="text-sm font-medium text-foreground">
+                Orden
+              </label>
+              <select
+                id="admin-catalog-sort"
+                name="sort"
+                defaultValue={sort ?? defaultSort}
+                className="min-h-10 w-full rounded-md border border-input bg-background px-3 text-sm"
+              >
+                {sortOptions.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+          ) : null}
+
+          <div
+            data-layout="catalog-filters-actions"
+            className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center lg:col-start-2 lg:justify-end"
+          >
+            <Button type="submit" className="shrink-0">
+              Aplicar filtros
+            </Button>
+            <Button asChild variant="outline" className="shrink-0">
+              <Link href={buildListHref(action, { pageSize })}>Limpiar filtros</Link>
+            </Button>
+          </div>
         </div>
       </form>
 
