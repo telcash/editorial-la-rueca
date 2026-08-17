@@ -25,7 +25,8 @@
     "migration:mass-review": "tsx scripts/migration-mass-review.ts",
     "migration:mass": "node --import ./scripts/register-server-only.mjs --import tsx scripts/migration-mass.ts",
     "migration:images": "node --import ./scripts/register-server-only.mjs --import tsx scripts/migration-images.ts",
-    "migration:author-dedupe": "node --import ./scripts/register-server-only.mjs --import tsx scripts/migration-author-dedupe.ts"
+    "migration:author-dedupe": "node --import ./scripts/register-server-only.mjs --import tsx scripts/migration-author-dedupe.ts",
+    "testimonials:seed": "node --import ./scripts/register-server-only.mjs --import tsx scripts/testimonials-seed.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.3",

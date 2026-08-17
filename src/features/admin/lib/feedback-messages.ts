@@ -16,6 +16,8 @@ const feedbackMessages = {
   categoryArchived: 'Categoría archivada correctamente.',
   categoryRestored: 'Categoría restaurada correctamente.',
   categoryDeleted: 'Categoría eliminada definitivamente.',
+  testimonialCreated: 'Testimonio creado correctamente.',
+  testimonialUpdated: 'Testimonio actualizado correctamente.',
   passwordUpdated: 'Contraseña actualizada correctamente.',
 } as const;
 

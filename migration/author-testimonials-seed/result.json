@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-08-17T16:32:49.552Z",
+  "total": 27,
+  "inserted": 19,
+  "alreadyExisting": 0,
+  "manual": 8,
+  "failed": 0,
+  "createdIds": [
+    "0f83db7d-07bb-4b25-b6a9-e39edb518e8b",
+    "ccc19df2-d6c9-40d4-bb57-3e1fa96ffa3e",
+    "510535b7-5c0c-455b-8e34-5b2c84431170",
+    "6de039f0-673a-4528-ad87-734ec8316a93",
+    "6155c00e-becb-45b1-a3d6-2db014d065e4",
+    "2d610110-6efa-4f17-b343-8a83c8c24ba8",
+    "84a1dd6f-f8c0-494f-b7f8-1ddb467a8c04",
+    "071450ec-1a5f-4f9a-97cb-bd104133066b",
+    "ca5633a6-1f51-4a69-84a7-a1a9cb4f9537",
+    "9dd3e712-14e1-4860-a366-880b72c83443",
+    "c1bbf322-507a-423c-8620-5a14b08bd8e1",
+    "31a2db6e-5758-43f6-8ecd-bac3f592afa8",
+    "3a1d87f3-9ef0-4a1a-8aad-6b2b8687ba70",
+    "a923dfc6-dece-40a1-9639-ad74dbbb2969",
+    "176aa670-560c-4377-9c4e-7e7d2380a69d",
+    "b4c25a32-221d-4c5b-9aca-07ff037a6f42",
+    "b0bfb864-efce-4556-a9e2-727f9fdbd2b2",
+    "9341c97f-0337-4578-a1f1-9622a0b4b1cb",
+    "2bd6061f-a0a0-4dad-a38b-692182fb0dbc"
+  ]
+}

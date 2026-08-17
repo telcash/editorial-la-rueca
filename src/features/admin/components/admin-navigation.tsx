@@ -3,6 +3,7 @@ import {
   FolderTree,
   LayoutDashboard,
   LibraryBig,
+  MessageSquareQuote,
   Settings,
   UsersRound,
   type LucideIcon,
@@ -35,6 +36,11 @@ export const adminNavigationItems: AdminNavigationItem[] = [
     href: '/admin/categories',
     label: 'Categorías',
     icon: FolderTree,
+  },
+  {
+    href: '/admin/testimonials',
+    label: 'Testimonios',
+    icon: MessageSquareQuote,
   },
   {
     href: '/admin/settings',
