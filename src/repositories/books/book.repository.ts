@@ -46,6 +46,10 @@ import type {
 } from '@/services/books/book.types';
 import type { PaginatedResult } from '@/features/admin/lib/list-query';
 import { createPaginatedResult, getOffset } from '@/features/admin/lib/list-query';
+import {
+  getEffectivePublicationDateSql,
+  getPublicCatalogOrderByExpressions,
+} from './book-public-order';
 
 type BookRow = Book;
 type BookBulkUpdateData = Partial<
@@ -453,6 +457,7 @@ export async function findPublishedPaginated(
   options: BookPublicListOptions,
 ): Promise<PaginatedResult<BookWithDetails>> {
   const whereCondition = getPublicBookListCondition(options);
+  const effectivePublicationDate = getEffectivePublicationDateSql();
   const [{ totalItems = 0 } = {}] = await db
     .select({
       totalItems: sql<number>`count(distinct ${books.id})`.mapWith(Number),
@@ -476,7 +481,7 @@ export async function findPublishedPaginated(
     .leftJoin(categories, eq(categories.id, bookCategories.categoryId))
     .where(whereCondition)
     .groupBy(books.id)
-    .orderBy(desc(books.isFeatured), asc(books.sortOrder), desc(books.createdAt), asc(books.title))
+    .orderBy(...getPublicCatalogOrderByExpressions(effectivePublicationDate))
     .limit(options.pageSize)
     .offset(getOffset(safePage, options.pageSize));
   const bookRows = rows.map((row) => row.book);
