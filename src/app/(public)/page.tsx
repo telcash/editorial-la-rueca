@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { connection } from 'next/server';
 import { ArrowRight, BookOpen, UsersRound } from 'lucide-react';
 
@@ -126,8 +127,22 @@ export default async function PublicHomePage() {
         <PublicContainer>
           <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr]">
             <div className="overflow-hidden rounded-2xl border border-public-border bg-white shadow-[0_18px_50px_rgba(23,23,23,0.08)]">
-              <div className="grid min-h-[24rem] items-center gap-8 bg-[radial-gradient(circle_at_18%_22%,rgba(224,43,32,0.10),transparent_28%),linear-gradient(110deg,#ffffff_0%,#fbf4ec_100%)] p-6 sm:p-8 lg:p-12">
-                <div className="max-w-2xl">
+              <div className="relative grid min-h-[24rem] items-center gap-8 overflow-hidden p-6 sm:p-8 lg:p-12">
+                <Image
+                  src="/brand/home-hero-editorial.png"
+                  alt=""
+                  aria-hidden="true"
+                  fill
+                  priority
+                  quality={88}
+                  sizes="(min-width: 1024px) 60vw, 100vw"
+                  className="z-0 object-cover object-[68%_center] md:object-[60%_center] lg:object-[55%_center]"
+                />
+                <div
+                  className="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(255,255,255,0.82)_0%,rgba(255,255,255,0.68)_48%,rgba(255,255,255,0.45)_100%)] md:bg-[linear-gradient(90deg,rgba(255,255,255,0.8)_0%,rgba(255,255,255,0.65)_45%,rgba(255,255,255,0.4)_100%)] lg:bg-[linear-gradient(90deg,rgba(255,255,255,0.78)_0%,rgba(255,255,255,0.62)_45%,rgba(255,255,255,0.35)_100%)]"
+                  aria-hidden="true"
+                />
+                <div className="relative z-20 max-w-2xl">
                   <h1 className="font-serif-public text-public-display font-semibold tracking-normal text-public-ink">
                     Publicamos libros.
                     <span className="block text-public-red">Acompañamos autores.</span>
