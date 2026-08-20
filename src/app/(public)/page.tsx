@@ -214,26 +214,6 @@ export default async function PublicHomePage() {
           </PublicContainer>
         </PublicSection>
       ) : null}
-
-      <PublicSection variant="flushTop">
-        <PublicContainer>
-          <PublicCard className="flex flex-col gap-5 p-6 sm:p-8 lg:flex-row lg:items-center lg:justify-between">
-            <div className="max-w-2xl">
-              <h2 className="font-serif-public text-public-section-title text-public-ink">
-                ¿Quieres publicar tu libro con acompañamiento editorial?
-              </h2>
-              <p className="mt-3 text-public-body text-public-muted">
-                Cuéntanos en qué punto está tu proyecto y te orientaremos sobre el camino más
-                adecuado.
-              </p>
-            </div>
-            <PublicButton href="#contacto" className="shrink-0">
-              Solicitar asesoría
-              <ArrowRight className="size-4" aria-hidden="true" />
-            </PublicButton>
-          </PublicCard>
-        </PublicContainer>
-      </PublicSection>
     </>
   );
 }
