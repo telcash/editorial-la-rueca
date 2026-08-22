@@ -2,8 +2,11 @@ export interface PublicContactFormValues {
   name: string;
   email: string;
   phone: string;
+  province: string;
+  serviceId: string;
   message: string;
   privacyAccepted: boolean;
+  company: string;
 }
 
 export interface PublicContactFormState {
@@ -17,8 +20,11 @@ export const initialPublicContactFormValues: PublicContactFormValues = {
   name: '',
   email: '',
   phone: '',
+  province: '',
+  serviceId: '',
   message: '',
   privacyAccepted: false,
+  company: '',
 };
 
 export const initialPublicContactFormState: PublicContactFormState = {

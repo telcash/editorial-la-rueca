@@ -8,9 +8,10 @@ import { PublicCard } from './public-card';
 
 interface AuthorCardProps {
   author: Author;
+  imagePriority?: boolean;
 }
 
-export function AuthorCard({ author }: AuthorCardProps) {
+export function AuthorCard({ author, imagePriority = false }: AuthorCardProps) {
   const shortBio = toPlainPublicText(author.shortBio ?? author.biography);
 
   return (
@@ -30,6 +31,7 @@ export function AuthorCard({ author }: AuthorCardProps) {
               fill
               sizes="(min-width: 1024px) 240px, (min-width: 640px) 220px, 82vw"
               className="object-cover transition duration-300 group-hover:scale-[1.03]"
+              priority={imagePriority}
             />
           ) : (
             <div className="flex h-full items-center justify-center text-public-muted">

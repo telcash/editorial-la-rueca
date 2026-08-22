@@ -88,9 +88,9 @@ describe('FeaturedAuthorsCarousel', () => {
     expect(homePage).toContain('author.isFeatured');
     expect(homePage).not.toContain('slice(0, 3)');
     expect(homePage).not.toContain('limit(3)');
-    expect(homePage).toContain(
-      '<FeaturedAuthorsCarousel authors={featuredAuthors} className="mt-8" />',
-    );
+    expect(homePage).toContain('<FeaturedAuthorsCarousel');
+    expect(homePage).toContain('authors={featuredAuthors}');
+    expect(homePage).toContain('firstImagePriority');
     expect(homePage).toContain('<PublicCtaLink href="/autores">Ver autores</PublicCtaLink>');
   });
 

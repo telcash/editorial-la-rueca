@@ -1,9 +1,11 @@
 import {
   BookOpenText,
   FolderTree,
+  Inbox,
   LayoutDashboard,
   LibraryBig,
   MessageSquareQuote,
+  NotebookTabs,
   Settings,
   UsersRound,
   type LucideIcon,
@@ -36,6 +38,16 @@ export const adminNavigationItems: AdminNavigationItem[] = [
     href: '/admin/categories',
     label: 'Categorías',
     icon: FolderTree,
+  },
+  {
+    href: '/admin/services',
+    label: 'Servicios',
+    icon: NotebookTabs,
+  },
+  {
+    href: '/admin/contact-requests',
+    label: 'Solicitudes',
+    icon: Inbox,
   },
   {
     href: '/admin/testimonials',

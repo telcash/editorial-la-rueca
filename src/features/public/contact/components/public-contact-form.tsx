@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { useActionState } from 'react';
 import { useFormStatus } from 'react-dom';
 import { Send } from 'lucide-react';
@@ -24,27 +23,37 @@ function FieldError({ id, message }: { id: string; message?: string }) {
   );
 }
 
-function SubmitButton() {
+interface PublicContactFormServiceOption {
+  id: string;
+  name: string;
+}
+
+interface PublicContactFormProps {
+  services: PublicContactFormServiceOption[];
+}
+
+function SubmitButton({ disabled }: { disabled: boolean }) {
   const { pending } = useFormStatus();
 
   return (
     <button
       type="submit"
-      disabled={pending}
+      disabled={pending || disabled}
       className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-public-red px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-public-red-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-70"
     >
-      {pending ? 'Enviando…' : 'Solicitar asesoría'}
+      {pending ? 'Enviando…' : 'Solicitar información'}
       <Send className="size-4" aria-hidden="true" />
     </button>
   );
 }
 
-export function PublicContactForm() {
+export function PublicContactForm({ services }: PublicContactFormProps) {
   const [state, formAction] = useActionState(
     submitPublicContactAction,
     initialPublicContactFormState,
   );
   const formKey = state.success ? 'success' : JSON.stringify(state.values);
+  const hasServices = services.length > 0;
 
   return (
     <form key={formKey} action={formAction} className="space-y-5" noValidate>
@@ -53,7 +62,7 @@ export function PublicContactForm() {
           role="status"
           className="rounded-xl border border-public-red/20 bg-public-red-soft px-4 py-3 text-sm font-medium text-public-red"
         >
-          Hemos recibido correctamente los datos del formulario.
+          Gracias. Hemos recibido tu consulta y nos pondremos en contacto contigo.
         </div>
       ) : null}
 
@@ -63,6 +72,26 @@ export function PublicContactForm() {
           className="rounded-xl border border-destructive/20 bg-destructive/10 px-4 py-3 text-sm font-medium text-destructive"
         >
           {state.formError}
+        </div>
+      ) : null}
+
+      <div className="hidden" aria-hidden="true">
+        <Label htmlFor="public-contact-company">Empresa</Label>
+        <Input
+          id="public-contact-company"
+          name="company"
+          defaultValue={state.values.company}
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
+
+      {!hasServices ? (
+        <div
+          role="status"
+          className="rounded-xl border border-public-border bg-public-paper px-4 py-3 text-sm font-medium text-public-muted"
+        >
+          En este momento no hay servicios publicados para recibir solicitudes.
         </div>
       ) : null}
 
@@ -99,18 +128,64 @@ export function PublicContactForm() {
         </div>
       </div>
 
+      <div className="grid gap-4 sm:grid-cols-2">
+        <div className="space-y-2">
+          <Label htmlFor="public-contact-phone">Teléfono</Label>
+          <Input
+            id="public-contact-phone"
+            name="phone"
+            defaultValue={state.values.phone}
+            aria-invalid={Boolean(state.fieldErrors.phone?.[0])}
+            aria-describedby={
+              state.fieldErrors.phone?.[0] ? 'public-contact-phone-error' : undefined
+            }
+            className="h-11 bg-white"
+            autoComplete="tel"
+          />
+          <FieldError id="public-contact-phone-error" message={state.fieldErrors.phone?.[0]} />
+        </div>
+
+        <div className="space-y-2">
+          <Label htmlFor="public-contact-province">Provincia</Label>
+          <Input
+            id="public-contact-province"
+            name="province"
+            defaultValue={state.values.province}
+            aria-invalid={Boolean(state.fieldErrors.province?.[0])}
+            aria-describedby={
+              state.fieldErrors.province?.[0] ? 'public-contact-province-error' : undefined
+            }
+            className="h-11 bg-white"
+            autoComplete="address-level2"
+          />
+          <FieldError
+            id="public-contact-province-error"
+            message={state.fieldErrors.province?.[0]}
+          />
+        </div>
+      </div>
+
       <div className="space-y-2">
-        <Label htmlFor="public-contact-phone">Teléfono</Label>
-        <Input
-          id="public-contact-phone"
-          name="phone"
-          defaultValue={state.values.phone}
-          aria-invalid={Boolean(state.fieldErrors.phone?.[0])}
-          aria-describedby={state.fieldErrors.phone?.[0] ? 'public-contact-phone-error' : undefined}
-          className="h-11 bg-white"
-          autoComplete="tel"
-        />
-        <FieldError id="public-contact-phone-error" message={state.fieldErrors.phone?.[0]} />
+        <Label htmlFor="public-contact-service">Servicio de interés</Label>
+        <select
+          id="public-contact-service"
+          name="serviceId"
+          defaultValue={state.values.serviceId}
+          disabled={!hasServices}
+          aria-invalid={Boolean(state.fieldErrors.serviceId?.[0])}
+          aria-describedby={
+            state.fieldErrors.serviceId?.[0] ? 'public-contact-service-error' : undefined
+          }
+          className="min-h-11 w-full rounded-md border border-input bg-white px-3 text-sm shadow-xs focus-visible:border-ring focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          <option value="">Selecciona un servicio</option>
+          {services.map((service) => (
+            <option key={service.id} value={service.id}>
+              {service.name}
+            </option>
+          ))}
+        </select>
+        <FieldError id="public-contact-service-error" message={state.fieldErrors.serviceId?.[0]} />
       </div>
 
       <div className="space-y-2">
@@ -144,16 +219,7 @@ export function PublicContactForm() {
               state.fieldErrors.privacyAccepted?.[0] && 'border-destructive',
             )}
           />
-          <span>
-            He leído y acepto la{' '}
-            <Link
-              href="/politica-de-privacidad"
-              className="font-semibold text-public-red underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red"
-            >
-              política de privacidad
-            </Link>
-            .
-          </span>
+          <span>He leído y acepto la política de privacidad.</span>
         </label>
         <FieldError
           id="public-contact-privacy-error"
@@ -161,7 +227,7 @@ export function PublicContactForm() {
         />
       </div>
 
-      <SubmitButton />
+      <SubmitButton disabled={!hasServices} />
     </form>
   );
 }

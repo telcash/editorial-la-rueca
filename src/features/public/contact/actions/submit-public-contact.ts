@@ -1,8 +1,17 @@
 'use server';
 
 import { publicContactSchema } from '@/schemas/contact/contact.schema';
+import {
+  getContactRequestNotificationErrorMessage,
+  sendContactRequestNotification,
+} from '@/services/contact-requests/contact-request-notification';
+import { ContactRequestInvalidServiceError } from '@/services/contact-requests/contact-request.errors';
+import * as ContactRequestService from '@/services/contact-requests/contact-request.service';
 import { getPublicContactFormValues, getPublicContactInput } from '../lib/contact-form-data';
-import type { PublicContactFormState } from '../types/contact-form-state';
+import {
+  initialPublicContactFormValues,
+  type PublicContactFormState,
+} from '../types/contact-form-state';
 
 export async function submitPublicContactAction(
   _previousState: PublicContactFormState,
@@ -10,6 +19,15 @@ export async function submitPublicContactAction(
 ): Promise<PublicContactFormState> {
   const values = getPublicContactFormValues(formData);
   const parsedInput = publicContactSchema.safeParse(getPublicContactInput(formData));
+
+  if (values.company.trim()) {
+    return {
+      success: true,
+      fieldErrors: {},
+      formError: null,
+      values: initialPublicContactFormValues,
+    };
+  }
 
   if (!parsedInput.success) {
     return {
@@ -20,17 +38,76 @@ export async function submitPublicContactAction(
     };
   }
 
-  // TODO: Integrar persistencia definitiva de leads y notificaciones cuando exista ese backend.
+  let createdContactRequestId: string;
+
+  try {
+    const contactRequest = await ContactRequestService.createContactRequest({
+      name: parsedInput.data.name,
+      email: parsedInput.data.email,
+      phone: parsedInput.data.phone,
+      province: parsedInput.data.province,
+      serviceId: parsedInput.data.serviceId,
+      message: parsedInput.data.message,
+      source: 'website',
+    });
+
+    createdContactRequestId = contactRequest.id;
+  } catch (error) {
+    if (error instanceof ContactRequestInvalidServiceError) {
+      return {
+        success: false,
+        fieldErrors: {
+          serviceId: ['Selecciona un servicio disponible.'],
+        },
+        formError: null,
+        values,
+      };
+    }
+
+    return {
+      success: false,
+      fieldErrors: {},
+      formError: 'No hemos podido enviar tu consulta. Inténtalo de nuevo.',
+      values,
+    };
+  }
+
+  try {
+    const contactRequest =
+      await ContactRequestService.getContactRequestById(createdContactRequestId);
+    const notificationResult = await sendContactRequestNotification(contactRequest);
+
+    if (notificationResult.status === 'sent' && notificationResult.sentAt) {
+      await ContactRequestService.markContactRequestEmailNotificationSent(
+        createdContactRequestId,
+        notificationResult.sentAt,
+      );
+    }
+  } catch (error) {
+    const emailError = getContactRequestNotificationErrorMessage(error);
+
+    try {
+      await ContactRequestService.markContactRequestEmailNotificationFailed(
+        createdContactRequestId,
+        emailError,
+      );
+    } catch (markError) {
+      console.error('[PublicContact] Contact request notification status update failed', {
+        contactRequestId: createdContactRequestId,
+        message: getContactRequestNotificationErrorMessage(markError),
+      });
+    }
+
+    console.error('[PublicContact] Contact request notification failed', {
+      contactRequestId: createdContactRequestId,
+      message: emailError,
+    });
+  }
+
   return {
     success: true,
     fieldErrors: {},
     formError: null,
-    values: {
-      name: '',
-      email: '',
-      phone: '',
-      message: '',
-      privacyAccepted: false,
-    },
+    values: initialPublicContactFormValues,
   };
 }

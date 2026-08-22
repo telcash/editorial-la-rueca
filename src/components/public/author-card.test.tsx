@@ -53,6 +53,14 @@ describe('AuthorCard', () => {
     expect(html).not.toContain('uppercase');
   });
 
+  it('keeps author images lazy by default and prioritizes only when requested', () => {
+    const defaultHtml = renderToStaticMarkup(<AuthorCard author={author} />);
+    const priorityHtml = renderToStaticMarkup(<AuthorCard author={author} imagePriority />);
+
+    expect(defaultHtml).not.toContain('rel="preload"');
+    expect(priorityHtml).toContain('rel="preload"');
+  });
+
   it('is reused by Home and the public authors index', () => {
     const homePage = readFileSync(join(projectRoot, 'src/app/(public)/page.tsx'), 'utf8');
     const authorsPage = readFileSync(
@@ -73,7 +81,8 @@ describe('AuthorCard', () => {
       'utf8',
     );
 
-    expect(homePage).toContain('<FeaturedAuthorsCarousel authors={featuredAuthors}');
+    expect(homePage).toContain('<FeaturedAuthorsCarousel');
+    expect(homePage).toContain('firstImagePriority');
     expect(authorsPage).toContain('md:grid-cols-[repeat(3,13.75rem)]');
     expect(authorsPage).toContain('xl:grid-cols-[repeat(5,14rem)]');
     expect(authorsPage).toContain('<PublicSearchForm');

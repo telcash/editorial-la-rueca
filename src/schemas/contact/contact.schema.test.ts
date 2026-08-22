@@ -6,8 +6,11 @@ const validPayload = {
   name: 'María López',
   email: 'maria@example.com',
   phone: '+34 600 000 000',
+  province: 'Madrid',
+  serviceId: 'f3f6a49f-c418-4522-b311-a70b88aab7f4',
   message: 'Quiero recibir orientación editorial para publicar mi primer libro.',
   privacyAccepted: true,
+  company: '',
 };
 
 describe('publicContactSchema', () => {
@@ -16,7 +19,7 @@ describe('publicContactSchema', () => {
   });
 
   it('rejects an invalid name', () => {
-    expect(publicContactSchema.safeParse({ ...validPayload, name: 'A' }).success).toBe(false);
+    expect(publicContactSchema.safeParse({ ...validPayload, name: '' }).success).toBe(false);
   });
 
   it('rejects an invalid email', () => {
@@ -29,13 +32,25 @@ describe('publicContactSchema', () => {
     );
   });
 
+  it('rejects missing province and serviceId', () => {
+    expect(publicContactSchema.safeParse({ ...validPayload, province: '' }).success).toBe(false);
+    expect(publicContactSchema.safeParse({ ...validPayload, serviceId: '' }).success).toBe(false);
+  });
+
   it('rejects privacyAccepted false', () => {
     expect(publicContactSchema.safeParse({ ...validPayload, privacyAccepted: false }).success).toBe(
       false,
     );
   });
 
-  it('normalizes an empty phone as null', () => {
-    expect(publicContactSchema.parse({ ...validPayload, phone: '' }).phone).toBeNull();
+  it('rejects an empty phone because the business requires it', () => {
+    expect(publicContactSchema.safeParse({ ...validPayload, phone: '' }).success).toBe(false);
+  });
+
+  it('rejects admin fields and filled honeypot values', () => {
+    expect(publicContactSchema.safeParse({ ...validPayload, status: 'won' }).success).toBe(false);
+    expect(publicContactSchema.safeParse({ ...validPayload, company: 'Bot Corp' }).success).toBe(
+      false,
+    );
   });
 });

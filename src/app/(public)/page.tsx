@@ -20,6 +20,8 @@ import type { AuthorTestimonialPublicItem } from '@/services/author-testimonials
 import * as AuthorService from '@/services/authors/author.service';
 import * as BookService from '@/services/books/book.service';
 import type { BookWithDetails } from '@/services/books/book.types';
+import * as EditorialServiceService from '@/services/editorial-services/editorial-service.service';
+import type { EditorialServicePublicItem } from '@/services/editorial-services/editorial-service.types';
 import * as PublicHomeService from '@/services/public-home/public-home.service';
 import type { PublicHomeMetrics } from '@/services/public-home/public-home.types';
 
@@ -27,6 +29,7 @@ interface HomeData {
   featuredBooks: BookWithDetails[];
   featuredAuthors: Author[];
   featuredTestimonials: AuthorTestimonialPublicItem[];
+  publishedServices: Pick<EditorialServicePublicItem, 'id' | 'name'>[];
   metrics: PublicHomeMetrics | null;
 }
 
@@ -35,13 +38,19 @@ function getErrorMessage(error: unknown) {
 }
 
 async function getHomeData(): Promise<HomeData> {
-  const [featuredBooksResult, featuredAuthorsResult, metricsResult, featuredTestimonialsResult] =
-    await Promise.allSettled([
-      BookService.listHomeFeaturedPublishedBooks(8),
-      AuthorService.listPublishedAuthors(),
-      PublicHomeService.getPublicHomeMetrics(),
-      AuthorTestimonialService.listFeaturedPublishedTestimonials(),
-    ]);
+  const [
+    featuredBooksResult,
+    featuredAuthorsResult,
+    metricsResult,
+    featuredTestimonialsResult,
+    publishedServicesResult,
+  ] = await Promise.allSettled([
+    BookService.listHomeFeaturedPublishedBooks(8),
+    AuthorService.listPublishedAuthors(),
+    PublicHomeService.getPublicHomeMetrics(),
+    AuthorTestimonialService.listFeaturedPublishedTestimonials(),
+    EditorialServiceService.listPublishedServices(),
+  ]);
 
   if (featuredBooksResult.status === 'rejected') {
     console.error('[PublicHome] Featured books query failed', {
@@ -67,6 +76,12 @@ async function getHomeData(): Promise<HomeData> {
     });
   }
 
+  if (publishedServicesResult.status === 'rejected') {
+    console.error('[PublicHome] Published services query failed', {
+      message: getErrorMessage(publishedServicesResult.reason),
+    });
+  }
+
   return {
     featuredBooks: featuredBooksResult.status === 'fulfilled' ? featuredBooksResult.value : [],
     featuredAuthors:
@@ -75,6 +90,13 @@ async function getHomeData(): Promise<HomeData> {
         : [],
     featuredTestimonials:
       featuredTestimonialsResult.status === 'fulfilled' ? featuredTestimonialsResult.value : [],
+    publishedServices:
+      publishedServicesResult.status === 'fulfilled'
+        ? publishedServicesResult.value.map((service) => ({
+            id: service.id,
+            name: service.name,
+          }))
+        : [],
     metrics: metricsResult.status === 'fulfilled' ? metricsResult.value : null,
   };
 }
@@ -119,7 +141,8 @@ function HeroMetrics({ metrics }: { metrics: PublicHomeMetrics | null }) {
 export default async function PublicHomePage() {
   await connection();
 
-  const { featuredBooks, featuredAuthors, featuredTestimonials, metrics } = await getHomeData();
+  const { featuredBooks, featuredAuthors, featuredTestimonials, publishedServices, metrics } =
+    await getHomeData();
 
   return (
     <>
@@ -134,7 +157,6 @@ export default async function PublicHomePage() {
                   aria-hidden="true"
                   fill
                   priority
-                  quality={88}
                   sizes="(min-width: 1024px) 60vw, 100vw"
                   className="z-0 object-cover object-[68%_center] md:object-[60%_center] lg:object-[55%_center]"
                 />
@@ -174,7 +196,7 @@ export default async function PublicHomePage() {
                 proyecto.
               </p>
               <div className="mt-7">
-                <PublicContactForm />
+                <PublicContactForm services={publishedServices} />
               </div>
             </PublicCard>
           </div>
@@ -210,7 +232,11 @@ export default async function PublicHomePage() {
               description="Voces publicadas y acompañadas por la editorial."
               action={<PublicCtaLink href="/autores">Ver autores</PublicCtaLink>}
             />
-            <FeaturedAuthorsCarousel authors={featuredAuthors} className="mt-8" />
+            <FeaturedAuthorsCarousel
+              authors={featuredAuthors}
+              className="mt-8"
+              firstImagePriority
+            />
           </PublicContainer>
         </PublicSection>
       ) : null}

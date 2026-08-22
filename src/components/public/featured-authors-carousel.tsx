@@ -10,9 +10,14 @@ import { AuthorCard } from './author-card';
 interface FeaturedAuthorsCarouselProps {
   authors: Author[];
   className?: string;
+  firstImagePriority?: boolean;
 }
 
-export function FeaturedAuthorsCarousel({ authors, className }: FeaturedAuthorsCarouselProps) {
+export function FeaturedAuthorsCarousel({
+  authors,
+  className,
+  firstImagePriority = false,
+}: FeaturedAuthorsCarouselProps) {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [canScrollPrevious, setCanScrollPrevious] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
@@ -91,13 +96,13 @@ export function FeaturedAuthorsCarousel({ authors, className }: FeaturedAuthorsC
         data-carousel-track="featured-authors"
         className="-mx-4 flex snap-x snap-mandatory gap-3.5 overflow-x-auto scroll-px-4 px-4 pb-3 scroll-smooth [scrollbar-width:none] sm:mx-0 sm:gap-5 sm:scroll-px-0 sm:px-0 lg:gap-6 [&::-webkit-scrollbar]:hidden"
       >
-        {authors.map((author) => (
+        {authors.map((author, index) => (
           <div
             key={author.id}
             data-carousel-slide="featured-author"
             className="flex max-w-[calc(100vw-32px)] shrink-0 basis-[calc(100vw-32px)] snap-center justify-center sm:max-w-none sm:basis-[13.75rem] sm:snap-start lg:basis-[15rem] [&>div]:w-full"
           >
-            <AuthorCard author={author} />
+            <AuthorCard author={author} imagePriority={firstImagePriority && index === 0} />
           </div>
         ))}
       </div>
