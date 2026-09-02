@@ -2,13 +2,33 @@ import Link from 'next/link';
 import { Phone } from 'lucide-react';
 
 import { siteConfig } from '@/config/site';
+import * as SalesService from '@/services/sales/sales.service';
 import { PublicButton } from './public-button';
 import { PublicContainer } from './public-container';
 import { PublicLogo } from './public-logo';
 import { publicNavigation } from './public-navigation';
 import { MobileNavigation } from './mobile-navigation';
+import { PublicStoreDropdown } from './public-store-dropdown';
 
-export function PublicHeader() {
+function getErrorMessage(error: unknown) {
+  return error instanceof Error ? error.message : 'Unknown error';
+}
+
+async function getPublicStoreMarkets() {
+  try {
+    return await SalesService.getPublicChannelMarkets('quares');
+  } catch (error) {
+    console.error('[PublicHeader] Store markets query failed', {
+      message: getErrorMessage(error),
+    });
+
+    return [];
+  }
+}
+
+export async function PublicHeader() {
+  const storeMarkets = await getPublicStoreMarkets();
+
   return (
     <header className="sticky top-0 z-40 border-b border-public-border bg-white/95 backdrop-blur-sm">
       <PublicContainer className="hidden h-16 items-center justify-between gap-8 xl:flex">
@@ -25,6 +45,7 @@ export function PublicHeader() {
                 {item.label}
               </Link>
             ))}
+            <PublicStoreDropdown markets={storeMarkets} />
           </nav>
         </div>
 
@@ -46,7 +67,7 @@ export function PublicHeader() {
 
       <PublicContainer className="flex h-16 items-center justify-between gap-4 xl:hidden">
         <div className="flex min-w-0 items-center gap-2.5">
-          <MobileNavigation />
+          <MobileNavigation storeMarkets={storeMarkets} />
           <PublicLogo className="shrink-0" />
         </div>
         <div className="flex shrink-0 justify-end">

@@ -65,6 +65,23 @@ export interface PublicPurchaseChannel {
   options: PublicPurchaseOption[];
 }
 
+export interface PublicSalesChannelMarketRow {
+  id: string;
+  name: string;
+  countryCode: string | null;
+  baseUrl: string;
+  sortOrder: number;
+  channelIsActive: boolean;
+  marketIsActive: boolean;
+}
+
+export interface PublicSalesChannelMarket {
+  name: string;
+  countryCode: string | null;
+  baseUrl: string;
+  sortOrder: number;
+}
+
 export interface BookSalesPublicRow {
   productId: string;
   productExternalProductId: string | null;
@@ -92,5 +109,6 @@ export interface SalesRepository {
   findProductsByBookId(bookId: string): Promise<BookSalesProduct[]>;
   findAvailabilityByProductId(bookSalesProductId: string): Promise<BookSalesMarketAvailability[]>;
   findPublicPurchaseRowsByBookId(bookId: string): Promise<BookSalesPublicRow[]>;
+  findPublicMarketsByChannelSlug(slug: string): Promise<PublicSalesChannelMarketRow[]>;
   saveBookSalesConfiguration(input: BookSalesConfigurationPersistenceInput): Promise<void>;
 }

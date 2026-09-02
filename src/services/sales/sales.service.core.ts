@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
 import { updateBookSalesConfigurationSchema } from '@/schemas/sales/sales.schema';
-import { resolvePurchaseUrl } from './purchase-url-resolver';
+import { isValidHttpUrl, resolvePurchaseUrl } from './purchase-url-resolver';
 import {
   SalesChannelNotFoundError,
   SalesMarketChannelMismatchError,
@@ -19,12 +19,20 @@ import type {
   ManagedSalesChannelSlug,
   PublicPurchaseChannel,
   PublicPurchaseOption,
+  PublicSalesChannelMarket,
+  PublicSalesChannelMarketRow,
   SalesRepository,
 } from './sales.types';
 
 const uuidSchema = z.string().uuid('El id debe ser un UUID valido.');
 const QUARES_CHANNEL_SLUG = 'quares';
 const AMAZON_CHANNEL_SLUG = 'amazon';
+const channelSlugSchema = z
+  .string()
+  .trim()
+  .min(1)
+  .max(140)
+  .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 
 function assertSameSalesChannel(productSalesChannelId: string, marketSalesChannelId: string) {
   if (productSalesChannelId !== marketSalesChannelId) {
@@ -88,6 +96,27 @@ export function buildPublicPurchaseOptions(rows: BookSalesPublicRow[]): PublicPu
   return Array.from(channels.values()).filter((channel) => channel.options.length > 0);
 }
 
+export function buildPublicChannelMarkets(
+  rows: PublicSalesChannelMarketRow[],
+): PublicSalesChannelMarket[] {
+  return rows
+    .filter(
+      (row) => row.channelIsActive && row.marketIsActive && isValidHttpUrl(row.baseUrl.trim()),
+    )
+    .sort(
+      (left, right) =>
+        left.sortOrder - right.sortOrder ||
+        left.name.localeCompare(right.name, 'es') ||
+        left.id.localeCompare(right.id),
+    )
+    .map((row) => ({
+      name: row.name,
+      countryCode: row.countryCode,
+      baseUrl: row.baseUrl.trim(),
+      sortOrder: row.sortOrder,
+    }));
+}
+
 function buildAdminChannelConfiguration(
   slug: ManagedSalesChannelSlug,
   channelName: string,
@@ -148,6 +177,13 @@ export function createSalesService(repository: SalesRepository) {
       const rows = await repository.findPublicPurchaseRowsByBookId(validBookId);
 
       return buildPublicPurchaseOptions(rows);
+    },
+
+    async getPublicChannelMarkets(slug: string): Promise<PublicSalesChannelMarket[]> {
+      const validSlug = channelSlugSchema.parse(slug);
+      const rows = await repository.findPublicMarketsByChannelSlug(validSlug);
+
+      return buildPublicChannelMarkets(rows);
     },
 
     async getBookSalesAdminConfiguration(bookId: string): Promise<BookSalesAdminConfiguration> {

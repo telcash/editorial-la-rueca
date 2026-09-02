@@ -12,8 +12,16 @@ import {
   SalesMarketInactiveError,
   SalesMarketNotFoundError,
 } from './sales.errors';
-import { buildPublicPurchaseOptions, createSalesService } from './sales.service.core';
-import type { BookSalesPublicRow, SalesRepository } from './sales.types';
+import {
+  buildPublicChannelMarkets,
+  buildPublicPurchaseOptions,
+  createSalesService,
+} from './sales.service.core';
+import type {
+  BookSalesPublicRow,
+  PublicSalesChannelMarketRow,
+  SalesRepository,
+} from './sales.types';
 
 type MockSalesRepository = {
   [Key in keyof SalesRepository]: Mock<SalesRepository[Key]>;
@@ -123,6 +131,21 @@ function createBaseRow(overrides: Partial<BookSalesPublicRow> = {}): BookSalesPu
   };
 }
 
+function createPublicMarketRow(
+  overrides: Partial<PublicSalesChannelMarketRow> = {},
+): PublicSalesChannelMarketRow {
+  return {
+    id: '97fe21b2-1f6c-4e29-ae02-e6d57d87c037',
+    name: 'España',
+    countryCode: 'ES',
+    baseUrl: 'https://tienda.editoriallarueca.com',
+    sortOrder: 0,
+    channelIsActive: true,
+    marketIsActive: true,
+    ...overrides,
+  };
+}
+
 function createRepositoryMock(): MockSalesRepository {
   return {
     findChannels: vi.fn<SalesRepository['findChannels']>(),
@@ -131,6 +154,7 @@ function createRepositoryMock(): MockSalesRepository {
     findProductsByBookId: vi.fn<SalesRepository['findProductsByBookId']>(),
     findAvailabilityByProductId: vi.fn<SalesRepository['findAvailabilityByProductId']>(),
     findPublicPurchaseRowsByBookId: vi.fn<SalesRepository['findPublicPurchaseRowsByBookId']>(),
+    findPublicMarketsByChannelSlug: vi.fn<SalesRepository['findPublicMarketsByChannelSlug']>(),
     saveBookSalesConfiguration: vi.fn<SalesRepository['saveBookSalesConfiguration']>(),
   };
 }
@@ -220,6 +244,46 @@ describe('buildPublicPurchaseOptions', () => {
   });
 });
 
+describe('buildPublicChannelMarkets', () => {
+  it('returns active Quares markets in repository order using base URLs', () => {
+    expect(
+      buildPublicChannelMarkets([
+        createPublicMarketRow({
+          id: '7185f789-16f4-42b7-bb8d-42ad5384f326',
+          name: 'Argentina',
+          countryCode: 'AR',
+          baseUrl: 'https://argentina.editoriallarueca.com',
+          sortOrder: 10,
+        }),
+        createPublicMarketRow(),
+      ]),
+    ).toEqual([
+      {
+        name: 'España',
+        countryCode: 'ES',
+        baseUrl: 'https://tienda.editoriallarueca.com',
+        sortOrder: 0,
+      },
+      {
+        name: 'Argentina',
+        countryCode: 'AR',
+        baseUrl: 'https://argentina.editoriallarueca.com',
+        sortOrder: 10,
+      },
+    ]);
+  });
+
+  it('excludes inactive channels, inactive markets and unsafe URLs', () => {
+    expect(
+      buildPublicChannelMarkets([
+        createPublicMarketRow({ channelIsActive: false }),
+        createPublicMarketRow({ marketIsActive: false }),
+        createPublicMarketRow({ baseUrl: 'javascript:alert(1)' }),
+      ]),
+    ).toEqual([]);
+  });
+});
+
 describe('createSalesService', () => {
   let repository: MockSalesRepository;
   let service: ReturnType<typeof createSalesService>;
@@ -233,6 +297,7 @@ describe('createSalesService', () => {
     repository.findMarketsByChannelId.mockResolvedValue([createMarket()]);
     repository.findProductsByBookId.mockResolvedValue([]);
     repository.findAvailabilityByProductId.mockResolvedValue([]);
+    repository.findPublicMarketsByChannelSlug.mockResolvedValue([]);
     repository.saveBookSalesConfiguration.mockResolvedValue(undefined);
   });
 
@@ -241,6 +306,19 @@ describe('createSalesService', () => {
 
     await expect(service.getPublicPurchaseOptionsByBookId(bookId)).resolves.toHaveLength(1);
     expect(repository.findPublicPurchaseRowsByBookId).toHaveBeenCalledWith(bookId);
+  });
+
+  it('loads public markets by channel slug without exposing Amazon data', async () => {
+    repository.findPublicMarketsByChannelSlug.mockResolvedValue([createPublicMarketRow()]);
+
+    await expect(service.getPublicChannelMarkets('quares')).resolves.toHaveLength(1);
+    expect(repository.findPublicMarketsByChannelSlug).toHaveBeenCalledWith('quares');
+    expect(repository.findPublicMarketsByChannelSlug).not.toHaveBeenCalledWith('amazon');
+  });
+
+  it('rejects invalid public channel slugs before querying', async () => {
+    await expect(service.getPublicChannelMarkets('../amazon')).rejects.toThrow();
+    expect(repository.findPublicMarketsByChannelSlug).not.toHaveBeenCalled();
   });
 
   it('rejects invalid UUIDs before querying', async () => {

@@ -7,6 +7,7 @@ import { BookDetailHero } from '@/components/public/books/book-detail-hero';
 import { BookEditionCard } from '@/components/public/books/book-edition-card';
 import { BookEditionsSection } from '@/components/public/books/book-editions-section';
 import { BookMetaGrid } from '@/components/public/books/book-meta-grid';
+import { BookPurchaseSection } from '@/components/public/books/book-purchase-section';
 import { BookRelatedSection } from '@/components/public/books/book-related-section';
 import { PublicBookCover } from '@/components/public/books/public-book-cover';
 import type { BookEditionDetails, BookWithDetails } from '@/services/books/book.types';
@@ -163,5 +164,95 @@ describe('public book detail components', () => {
   it('omits editions and related sections when there is no data', () => {
     expect(renderToStaticMarkup(<BookEditionsSection editions={[]} />)).toBe('');
     expect(renderToStaticMarkup(<BookRelatedSection books={[]} />)).toBe('');
+  });
+
+  it('omits the purchase section when there are no public options', () => {
+    expect(renderToStaticMarkup(<BookPurchaseSection channels={[]} />)).toBe('');
+  });
+
+  it('renders multiple resolved Quares markets as secure external links', () => {
+    const html = renderToStaticMarkup(
+      <BookPurchaseSection
+        channels={[
+          {
+            channel: { slug: 'quares', name: 'Quares' },
+            options: [
+              {
+                marketName: 'España',
+                countryCode: 'ES',
+                url: 'https://tienda.editoriallarueca.com/book/67778',
+              },
+              {
+                marketName: 'Colombia',
+                countryCode: 'CO',
+                url: 'https://colombia.editoriallarueca.com/book/67778',
+              },
+            ],
+          },
+        ]}
+      />,
+    );
+
+    expect(html).toContain('Comprar');
+    expect(html).toContain('Quares');
+    expect(html).toContain('España');
+    expect(html).toContain('Colombia');
+    expect(html).toContain('href="https://tienda.editoriallarueca.com/book/67778"');
+    expect(html).toContain('target="_blank"');
+    expect(html).toContain('rel="noopener noreferrer"');
+  });
+
+  it('renders the Amazon purchase URL without assuming a marketplace domain', () => {
+    const html = renderToStaticMarkup(
+      <BookPurchaseSection
+        channels={[
+          {
+            channel: { slug: 'amazon', name: 'Amazon' },
+            options: [
+              {
+                marketName: null,
+                countryCode: null,
+                url: 'https://www.amazon.com/dp/example',
+              },
+            ],
+          },
+        ]}
+      />,
+    );
+
+    expect(html).toContain('Comprar en Amazon');
+    expect(html).toContain('href="https://www.amazon.com/dp/example"');
+  });
+
+  it('renders Quares and Amazon together without reconstructing their URLs', () => {
+    const html = renderToStaticMarkup(
+      <BookPurchaseSection
+        channels={[
+          {
+            channel: { slug: 'quares', name: 'Quares' },
+            options: [
+              {
+                marketName: 'México',
+                countryCode: 'MX',
+                url: 'https://mexico.editoriallarueca.com/resolved-book',
+              },
+            ],
+          },
+          {
+            channel: { slug: 'amazon', name: 'Amazon' },
+            options: [
+              {
+                marketName: null,
+                countryCode: null,
+                url: 'https://amazon.example/resolved-book',
+              },
+            ],
+          },
+        ]}
+      />,
+    );
+
+    expect(html).toContain('https://mexico.editoriallarueca.com/resolved-book');
+    expect(html).toContain('https://amazon.example/resolved-book');
   });
 });

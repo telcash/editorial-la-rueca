@@ -16,6 +16,7 @@ export type {
   BookSalesAdminMarket,
   PublicPurchaseChannel,
   PublicPurchaseOption,
+  PublicSalesChannelMarket,
   SalesRepository,
 } from './sales.types';
 
@@ -28,6 +29,7 @@ export const {
   listBookSalesMarketAvailability,
   assertMarketBelongsToProductChannel,
   getPublicPurchaseOptionsByBookId,
+  getPublicChannelMarkets,
   getBookSalesAdminConfiguration,
   updateBookSalesConfiguration,
 } = salesService;

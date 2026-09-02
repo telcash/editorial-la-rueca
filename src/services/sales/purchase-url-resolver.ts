@@ -1,6 +1,6 @@
 export const SALES_PRODUCT_EXTERNAL_ID_PLACEHOLDER = '{externalId}';
 
-function isValidHttpUrl(value: string): boolean {
+export function isValidHttpUrl(value: string): boolean {
   try {
     const url = new URL(value);
 

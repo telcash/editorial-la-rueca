@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Menu } from 'lucide-react';
+import { ChevronDown, ExternalLink, Menu } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { useId, useState } from 'react';
 
@@ -18,11 +18,18 @@ import {
 import { cn } from '@/lib/utils';
 import { PublicButton } from './public-button';
 import { publicNavigation } from './public-navigation';
+import type { PublicSalesChannelMarket } from '@/services/sales/sales.types';
 
-export function MobileNavigation() {
+interface MobileNavigationProps {
+  storeMarkets?: PublicSalesChannelMarket[];
+}
+
+export function MobileNavigation({ storeMarkets = [] }: MobileNavigationProps) {
   const [open, setOpen] = useState(false);
+  const [storeOpen, setStoreOpen] = useState(false);
   const pathname = usePathname();
   const menuId = useId();
+  const storeMenuId = useId();
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -42,7 +49,7 @@ export function MobileNavigation() {
       <SheetContent
         id={menuId}
         side="left"
-        className="w-[min(21rem,86vw)] border-public-border bg-white p-0 text-public-ink"
+        className="w-[min(21rem,86vw)] overflow-y-auto border-public-border bg-white p-0 text-public-ink"
       >
         <SheetHeader className="border-b border-public-border px-5 py-5 text-left">
           <SheetTitle className="font-serif-public text-2xl text-public-ink">
@@ -70,6 +77,40 @@ export function MobileNavigation() {
               </SheetClose>
             );
           })}
+          {storeMarkets.length > 0 ? (
+            <div className="border-t border-public-border-soft pt-2">
+              <button
+                type="button"
+                aria-expanded={storeOpen}
+                aria-controls={storeMenuId}
+                onClick={() => setStoreOpen((currentValue) => !currentValue)}
+                className="flex min-h-12 w-full items-center justify-between rounded-lg px-3 py-3 text-left text-base font-medium transition hover:bg-public-red-soft hover:text-public-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red"
+              >
+                Tienda
+                <ChevronDown
+                  className={cn('size-5 transition-transform', storeOpen && 'rotate-180')}
+                  aria-hidden="true"
+                />
+              </button>
+              {storeOpen ? (
+                <div id={storeMenuId} className="grid gap-1 pb-2 pl-3">
+                  {storeMarkets.map((market) => (
+                    <SheetClose key={`${market.countryCode ?? 'market'}-${market.name}`} asChild>
+                      <a
+                        href={market.baseUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex min-h-11 items-center justify-between rounded-lg px-3 py-2.5 text-sm text-public-ink transition hover:bg-public-red-soft hover:text-public-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red"
+                      >
+                        {market.name}
+                        <ExternalLink className="size-4 text-public-muted" aria-hidden="true" />
+                      </a>
+                    </SheetClose>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+          ) : null}
         </nav>
         <div className="mt-auto border-t border-public-border p-5">
           <SheetClose asChild>

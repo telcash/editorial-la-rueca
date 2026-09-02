@@ -21,6 +21,7 @@ import type {
   BookSalesChannelPersistenceInput,
   BookSalesConfigurationPersistenceInput,
   BookSalesPublicRow,
+  PublicSalesChannelMarketRow,
 } from '@/services/sales/sales.types';
 import type { BookSalesProductStatus } from '@/services/sales/sales-product-status';
 import type { SalesSeedApplyResult, SalesSeedPlan } from '@/features/sales-seed/types';
@@ -56,6 +57,35 @@ export async function findChannelBySlug(slug: string): Promise<SalesChannel | nu
     .limit(1);
 
   return channel ?? null;
+}
+
+export async function findPublicMarketsByChannelSlug(
+  slug: string,
+): Promise<PublicSalesChannelMarketRow[]> {
+  return db
+    .select({
+      id: salesChannelMarkets.id,
+      name: salesChannelMarkets.name,
+      countryCode: salesChannelMarkets.countryCode,
+      baseUrl: salesChannelMarkets.baseUrl,
+      sortOrder: salesChannelMarkets.sortOrder,
+      channelIsActive: salesChannels.isActive,
+      marketIsActive: salesChannelMarkets.isActive,
+    })
+    .from(salesChannelMarkets)
+    .innerJoin(salesChannels, eq(salesChannels.id, salesChannelMarkets.salesChannelId))
+    .where(
+      and(
+        eq(salesChannels.slug, slug),
+        eq(salesChannels.isActive, true),
+        eq(salesChannelMarkets.isActive, true),
+      ),
+    )
+    .orderBy(
+      asc(salesChannelMarkets.sortOrder),
+      asc(salesChannelMarkets.name),
+      asc(salesChannelMarkets.id),
+    );
 }
 
 async function applyChannel(

@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { BookDetailHero } from '@/components/public/books/book-detail-hero';
 import { BookEditionsSection } from '@/components/public/books/book-editions-section';
 import { BookMetaGrid } from '@/components/public/books/book-meta-grid';
+import { BookPurchaseSection } from '@/components/public/books/book-purchase-section';
 import { BookRelatedSection } from '@/components/public/books/book-related-section';
 import { PublicContainer } from '@/components/public/public-container';
 import { PublicSection } from '@/components/public/public-section';
@@ -18,6 +19,7 @@ import {
 import { toPlainPublicText } from '@/features/public/lib/text-format';
 import { BookNotFoundError } from '@/services/books/book.errors';
 import * as BookService from '@/services/books/book.service';
+import * as SalesService from '@/services/sales/sales.service';
 
 interface PublicBookDetailPageProps {
   params: Promise<{
@@ -34,6 +36,19 @@ async function getPublicBook(slug: string) {
     }
 
     throw error;
+  }
+}
+
+async function getPublicPurchaseOptions(bookId: string) {
+  try {
+    return await SalesService.getPublicPurchaseOptionsByBookId(bookId);
+  } catch (error) {
+    console.error('[PublicBookDetail] Purchase options query failed', {
+      bookId,
+      message: error instanceof Error ? error.message : 'Unknown error',
+    });
+
+    return [];
   }
 }
 
@@ -56,11 +71,14 @@ export default async function PublicBookDetailPage({ params }: PublicBookDetailP
   const synopsis = getBookSynopsis(book);
   const heroMetaItems = getPrimaryEditionMetaItems(book, primaryEdition);
   const editorialFactItems = getBookEditorialFactItems(book, primaryEdition);
-  const relatedBooks = await BookService.listRelatedPublishedBooksByAuthorIds(
-    book.authors.map((author) => author.id),
-    book.id,
-    4,
-  );
+  const [relatedBooks, purchaseOptions] = await Promise.all([
+    BookService.listRelatedPublishedBooksByAuthorIds(
+      book.authors.map((author) => author.id),
+      book.id,
+      4,
+    ),
+    getPublicPurchaseOptions(book.id),
+  ]);
 
   return (
     <>
@@ -105,6 +123,7 @@ export default async function PublicBookDetailPage({ params }: PublicBookDetailP
         </PublicSection>
       ) : null}
 
+      <BookPurchaseSection channels={purchaseOptions} />
       <BookEditionsSection editions={book.editions} primaryEditionId={primaryEdition?.id} />
       <BookRelatedSection books={relatedBooks} />
     </>
