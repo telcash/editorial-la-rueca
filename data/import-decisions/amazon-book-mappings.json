@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "mappings": [
+    {
+      "asin": "B0GWRLN97Y",
+      "action": "MAP",
+      "bookId": "e8e67c5c-0c8a-455a-bb23-2102bb8f5324",
+      "reason": "Same work and author; source includes subtitle Caminar el tiempo."
+    },
+    {
+      "asin": "B0GBVX22N3",
+      "action": "MAP",
+      "bookId": "260ffb28-17dc-4151-b599-4ab9448eb9be",
+      "reason": "Same work and author; minor singular/plural title variation."
+    },
+    {
+      "asin": "B0G3QJQ891",
+      "action": "MAP",
+      "bookId": "7ecc45d5-8087-4694-a26a-fcd6ad5c5b19",
+      "reason": "Same work and author; Amazon source includes subtitle El cuarenta de mayo."
+    },
+    {
+      "asin": "B0FV9YN7C7",
+      "action": "MAP",
+      "bookId": "fb5cfcd1-fb00-47ba-82aa-9fbe1b2c70b1",
+      "reason": "Same work and author; Amazon source contains an extended subtitle."
+    },
+    {
+      "asin": "B0FKH719K6",
+      "action": "MAP",
+      "bookId": "87c74e33-c410-4341-8727-8107061d3ed3",
+      "reason": "Same work and author; source contains typo Nodong instead of Ndong."
+    },
+    {
+      "asin": "B0FMWNB32N",
+      "action": "MAP",
+      "bookId": "2ce4713d-cb78-4aea-87bb-21848cb89d2d",
+      "reason": "Same work and author; punctuation variation."
+    },
+    {
+      "asin": "8419865990",
+      "action": "MAP",
+      "bookId": "1100417e-af3a-4b15-8fd5-45a326a1c8f1",
+      "reason": "English Fuerteventura edition."
+    },
+    {
+      "asin": "B0FFSGQ3WG",
+      "action": "MAP",
+      "bookId": "62047ad7-a64a-4c45-bbd3-554ff903d7bf",
+      "reason": "Ilusiones by Juan José Velasco Sánchez-Mayoral."
+    },
+    {
+      "asin": "B0G52Y787R",
+      "action": "MAP",
+      "bookId": "112d9dc0-6c07-4379-a777-15e168d5e880",
+      "reason": "Same work and author; numeric versus written-number variation."
+    },
+    {
+      "asin": "B0DNXDD4BB",
+      "action": "MAP",
+      "bookId": "27e4583b-abcd-44b1-b21f-062edd24a09e",
+      "reason": "Same work and author; internal catalog contains extended title."
+    },
+    {
+      "asin": "8419865842",
+      "action": "MAP",
+      "bookId": "8967ef9b-31f3-40a3-a39f-08b1b79d1a9a",
+      "reason": "Same work and author; whitespace variation."
+    },
+    {
+      "asin": "8419865907",
+      "action": "MAP",
+      "bookId": "dac35324-731a-4592-aadc-d05ade664f1a",
+      "reason": "Same work and author; Amazon source contains subtitle."
+    },
+    {
+      "asin": "8419865664",
+      "action": "MAP",
+      "bookId": "98ef64d9-c7f6-46de-8fb8-a84993091a93",
+      "reason": "Same work and author; internal title includes author name."
+    },
+    {
+      "asin": "8419865737",
+      "action": "MAP",
+      "bookId": "0df5c336-7c28-43bf-894f-b4485cf10d57",
+      "reason": "Same work and author; internal catalog includes Haikus subtitle."
+    },
+    {
+      "asin": "8419865176",
+      "action": "MAP",
+      "bookId": "d14f1024-1120-418f-b42e-9c10bcb1ebef",
+      "reason": "Same work and author; internal catalog contains extended subtitle."
+    },
+    {
+      "asin": "8418924985",
+      "action": "MAP",
+      "bookId": "ae82d37b-5bbf-4bef-9d98-26e1a9b13c10",
+      "reason": "Same work and author; internal catalog includes date range."
+    },
+    {
+      "asin": "8418924500",
+      "action": "MAP",
+      "bookId": "0bb0b23e-cbbd-47f7-b3e1-4c11496ef107",
+      "reason": "Amazon source explicitly identifies Yoga volumen 4."
+    },
+    {
+      "asin": "8418924527",
+      "action": "MAP",
+      "bookId": "b74cb5e9-2916-4966-8387-9179f705a488",
+      "reason": "Amazon source explicitly identifies Yoga volumen 3."
+    },
+    {
+      "asin": "8418924497",
+      "action": "MAP",
+      "bookId": "ac5c70bb-10f2-4929-bf65-973f0458d946",
+      "reason": "Amazon source explicitly identifies Yoga volumen 2."
+    },
+    {
+      "asin": "8418924403",
+      "action": "MAP",
+      "bookId": "40f2777e-f0ec-48fc-8621-5f4721d65bc3",
+      "reason": "Same work and author; punctuation variation."
+    },
+    {
+      "asin": "8418924381",
+      "action": "MAP",
+      "bookId": "360b3f6f-ce31-4021-add3-ad58b8c378e9",
+      "reason": "Same work and author; Amazon source contains subtitle."
+    },
+    {
+      "asin": "8418924179",
+      "action": "MAP",
+      "bookId": "f54951e3-e0b6-448f-aba8-14bcdf1dd31e",
+      "reason": "Same work and author; Amazon source contains extended subtitle."
+    },
+    {
+      "asin": "841892411X",
+      "action": "MAP",
+      "bookId": "b95bf178-49fc-40bd-b89a-2e69459530ba",
+      "reason": "Same work and author; internal catalog contains shortened title."
+    }
+  ]
+}

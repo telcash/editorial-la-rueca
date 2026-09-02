@@ -27,7 +27,13 @@
     "migration:images": "node --import ./scripts/register-server-only.mjs --import tsx scripts/migration-images.ts",
     "migration:author-dedupe": "node --import ./scripts/register-server-only.mjs --import tsx scripts/migration-author-dedupe.ts",
     "testimonials:seed": "node --import ./scripts/register-server-only.mjs --import tsx scripts/testimonials-seed.ts",
-    "sales:seed": "node --import ./scripts/register-server-only.mjs --import tsx scripts/sales-seed.ts"
+    "sales:seed": "node --import ./scripts/register-server-only.mjs --import tsx scripts/sales-seed.ts",
+    "sales:import:quares:audit": "node --import ./scripts/register-server-only.mjs --import tsx scripts/quares-import-audit.ts",
+    "sales:import:quares:match": "node --import ./scripts/register-server-only.mjs --import tsx scripts/quares-import-match.ts",
+    "sales:import:quares": "node --import ./scripts/register-server-only.mjs --import tsx scripts/quares-import.ts",
+    "sales:import:amazon:audit": "node --import ./scripts/register-server-only.mjs --import tsx scripts/amazon-import-audit.ts",
+    "sales:import:amazon:match": "node --import ./scripts/register-server-only.mjs --import tsx scripts/amazon-import-match.ts",
+    "sales:import:amazon": "node --import ./scripts/register-server-only.mjs --import tsx scripts/amazon-import.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.3",
@@ -35,7 +41,9 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "drizzle-orm": "^0.45.2",
+    "exceljs": "^4.4.0",
     "lucide-react": "^1.25.0",
+    "mammoth": "^1.12.2",
     "next": "16.2.10",
     "nodemailer": "^9.0.5",
     "postgres": "^3.4.9",

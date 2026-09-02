@@ -1,0 +1,180 @@
+{
+  "version": 2,
+  "mappings": {
+    "65567": {
+      "action": "MAP",
+      "bookId": "e8e67c5c-0c8a-455a-bb23-2102bb8f5324",
+      "reason": "Título y slug verifican Adagio para Whisky - Caminar el tiempo."
+    },
+    "62717": {
+      "action": "MAP",
+      "bookId": "c67bb68e-ca48-439e-b7b8-4681e7236008",
+      "reason": "Misma obra ARCANUM - La torá de Minerva; diferencia tipográfica en el título."
+    },
+    "47913": {
+      "action": "MAP",
+      "bookId": "61beace7-147e-4937-9c34-19e60e5a842d",
+      "reason": "El título base coincide y el slug conserva el subtítulo Historias de Viso del Marqués."
+    },
+    "43069": {
+      "action": "MAP",
+      "bookId": "f2808d7c-2661-4e51-b25c-34e3f4e088b5",
+      "reason": "El título base coincide y el slug conserva el subtítulo La debilidad del Neocalcedonismo Tomista."
+    },
+    "68094": {
+      "action": "MAP",
+      "bookId": "c324df11-e675-4324-be80-48a93fe6fe92",
+      "reason": "Misma obra El arte del cosplay; diferencia menor de redacción."
+    },
+    "47945": {
+      "action": "MAP",
+      "bookId": "dbf11469-8875-4b9e-bd42-55a496595d1b",
+      "reason": "El título base coincide y el slug conserva Cartografías del ser y existir."
+    },
+    "43717": {
+      "action": "MAP",
+      "bookId": "89e1ae48-674e-4829-88dd-d547d0813e4d",
+      "reason": "Misma obra El Joven Fénix; diferencia ortográfica y subtítulo conservado en el catálogo."
+    },
+    "51211": {
+      "action": "MAP",
+      "bookId": "c66fbb42-dd7e-462b-b3a8-53e35fbb188f",
+      "reason": "El slug coincide exactamente con El musical como vehículo de aprendizaje."
+    },
+    "50469": {
+      "action": "MAP",
+      "bookId": "27e4583b-abcd-44b1-b21f-062edd24a09e",
+      "reason": "El título principal coincide y el slug conserva el subtítulo completo de la fuente Quares."
+    },
+    "58549": {
+      "action": "MAP",
+      "bookId": "1d03b6ad-e888-411d-b754-586a7596e56e",
+      "reason": "El título principal coincide y el slug conserva Una historia milenaria."
+    },
+    "45802": {
+      "action": "MAP",
+      "bookId": "51c360f7-640c-4abe-8701-72b4868a97b0",
+      "reason": "El título principal Esferas Temporales coincide y el slug conserva el subtítulo de la fuente."
+    },
+    "50305": {
+      "action": "MAP",
+      "bookId": "fb2ddb8c-1a06-4e14-be71-a38e29dd6c7e",
+      "reason": "Misma obra Estrategias Educativas a través del Teatro Musical; la fuente añade descripción o subtítulo."
+    },
+    "43713": {
+      "action": "MAP",
+      "bookId": "3fa40717-e517-405a-9421-9c8bd0a50795",
+      "reason": "Coincidencia inequívoca de Going my way en 40 poemas."
+    },
+    "62121": {
+      "action": "MAP",
+      "bookId": "69a17173-5d6e-49fa-aa11-9ce0a52577a0",
+      "reason": "El título principal Kalaallit Nunaat Groenlandia coincide; la fuente añade el subtítulo."
+    },
+    "60750": {
+      "action": "MAP",
+      "bookId": "fb5cfcd1-fb00-47ba-82aa-9fbe1b2c70b1",
+      "reason": "El título principal El futuro político de Guinea Ecuatorial coincide; la fuente incluye un subtítulo."
+    },
+    "59498": {
+      "action": "MAP",
+      "bookId": "e7a88f33-b7dc-4b32-a2ca-cd98defbae81",
+      "reason": "El título principal La Seguridad Ciudadana en el Ámbito Local coincide; la fuente añade el subtítulo."
+    },
+    "51122": {
+      "action": "MAP",
+      "bookId": "35916c85-e7e4-46cf-af95-62cef32efd32",
+      "reason": "Misma obra Método Sah-G-Maes; diferencia final entre espiritual y espíritu."
+    },
+    "50277": {
+      "action": "MAP",
+      "bookId": "322f95b9-21bb-4400-87e2-38e400651410",
+      "reason": "Misma obra Morir todos los días; la fuente añade La historia real de Gabriela Yordanova."
+    },
+    "47931": {
+      "action": "MAP",
+      "bookId": "0d54887c-eb82-4bb1-895f-249c56f3b390",
+      "reason": "Misma obra El Oráculo de la fe; el slug conserva El camino del alma."
+    },
+    "59496": {
+      "action": "MAP",
+      "bookId": "2ce4713d-cb78-4aea-87bb-21848cb89d2d",
+      "reason": "Coincidencia inequívoca de Penúltimo verso - Me rindo; diferencias únicamente tipográficas."
+    },
+    "47929": {
+      "action": "MAP",
+      "bookId": "c767c2cb-50f7-4583-9fcb-8a29a24b62c7",
+      "reason": "El título principal Quedamos para despedirnos pero ella no lo sabía coincide; la fuente añade un subtítulo."
+    },
+    "62122": {
+      "action": "MAP",
+      "bookId": "7ecc45d5-8087-4694-a26a-fcd6ad5c5b19",
+      "reason": "El título principal Recordando mis recuerdos coincide; la fuente añade El cuarenta de mayo."
+    },
+    "47944": {
+      "action": "MAP",
+      "bookId": "98ef64d9-c7f6-46de-8fb8-a84993091a93",
+      "reason": "Coincidencia inequívoca de Recuerdos de mi infancia y juventud; el catálogo añade el nombre de la autora."
+    },
+    "43733": {
+      "action": "MAP",
+      "bookId": "d14f1024-1120-418f-b42e-9c10bcb1ebef",
+      "reason": "El título principal Santa Cruz de Posguerra coincide; el catálogo contiene el subtítulo Conversaciones en blanco y negro."
+    },
+    "51647": {
+      "action": "MAP",
+      "bookId": "da9ed4c6-06ad-443b-a16f-38309f3ef59e",
+      "reason": "El título principal Sapiens, Hechiceros y Dioses coincide; la fuente añade el subtítulo."
+    },
+    "43710": {
+      "action": "MAP",
+      "bookId": "b95bf178-49fc-40bd-b89a-2e69459530ba",
+      "reason": "El título principal coincide y el slug conserva el subtítulo Propósito revolucionario: la educación sexual."
+    },
+    "65096": {
+      "action": "MAP",
+      "bookId": "98aa296f-014b-4035-ba43-896a4803f710",
+      "reason": "El título principal Terrores propios y ajenos coincide; la fuente añade Galería de relatos."
+    },
+    "64596": {
+      "action": "MAP",
+      "bookId": "47af054b-a570-4267-8041-779a8dc6fbed",
+      "reason": "El título principal Trabajas demasiado para ganar tan poco coincide; la fuente añade un subtítulo."
+    },
+    "47930": {
+      "action": "MAP",
+      "bookId": "972af837-ad34-489b-9056-6460a7971d1f",
+      "reason": "El título principal Voces del Alma coincide y el slug conserva El arte de escuchar a través del tarot."
+    },
+    "62931": {
+      "action": "MAP",
+      "bookId": "ff700d7b-7d1c-4021-82f8-0baf708f86df",
+      "reason": "Confirmación editorial: Quares 62931 corresponde a Ilusiones de Patxi Oyaga."
+    },
+    "57229": {
+      "action": "MAP",
+      "bookId": "62047ad7-a64a-4c45-bbd3-554ff903d7bf",
+      "reason": "Confirmación editorial: Quares 57229 corresponde a Ilusiones de Juan José Velasco Sánchez-Mayoral."
+    },
+    "53612": {
+      "action": "MAP",
+      "bookId": "31fd2c86-c52f-46e6-a6ea-7f0d928a09cf",
+      "reason": "Confirmación editorial: Quares 53612 corresponde a De los Rollos del Mar Muerto a los de Rodrigo de Lares - Tomo 2."
+    },
+    "43741": {
+      "action": "MAP",
+      "bookId": "e4253bec-8af0-434f-a60c-de70aa9db72f",
+      "reason": "Confirmación editorial: Quares 43741 corresponde a El camino del ángel. El libro ya está desarchivado."
+    },
+    "43443": {
+      "action": "MAP",
+      "bookId": "aab8b2a6-650e-4c75-ae41-4e75d7383783",
+      "reason": "Confirmación editorial: Quares 43443 corresponde a La vida de Adonis. El registro archivado duplicado fue eliminado."
+    },
+    "61243": {
+      "action": "MAP",
+      "bookId": "06bc8457-1c3a-4971-9a57-932a498ba3a0",
+      "reason": "Correspondencia verificada: Quares 61243 corresponde a Manual de Clínica Odontológica Integral del Adulto - Tomo 1."
+    }
+  }
+}

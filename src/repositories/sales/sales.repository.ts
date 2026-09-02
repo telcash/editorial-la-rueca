@@ -203,6 +203,7 @@ export async function applyInitialSalesConfiguration(
 
   return db.transaction(async (transaction) => {
     const channelsBySlug = new Map<string, SalesChannel>();
+
     const result: SalesSeedApplyResult = {
       channelsCreated: 0,
       channelsUpdated: 0,
@@ -214,6 +215,7 @@ export async function applyInitialSalesConfiguration(
 
     for (const channelPlan of plan.channels) {
       const channel = await applyChannel(transaction, channelPlan);
+
       channelsBySlug.set(channelPlan.slug, channel);
 
       if (channelPlan.operation === 'create') {
@@ -304,6 +306,7 @@ async function persistBookSalesChannel(
     status: configuration.status,
     isActive: true,
   };
+
   const [product] = await transaction
     .insert(bookSalesProducts)
     .values(values)
@@ -335,6 +338,7 @@ async function syncBookSalesMarkets(
 
   if (marketIds.length === 0) {
     await transaction.delete(bookSalesMarketAvailability).where(availabilityForProduct);
+
     return;
   }
 
@@ -346,6 +350,7 @@ async function syncBookSalesMarkets(
         notInArray(bookSalesMarketAvailability.salesChannelMarketId, marketIds),
       ),
     );
+
   await transaction
     .insert(bookSalesMarketAvailability)
     .values(
@@ -426,4 +431,230 @@ export async function findPublicPurchaseRowsByBookId(
       asc(salesChannelMarkets.name),
       asc(salesChannelMarkets.id),
     );
+}
+
+export async function findProductsByChannelId(salesChannelId: string): Promise<BookSalesProduct[]> {
+  return db
+    .select()
+    .from(bookSalesProducts)
+    .where(eq(bookSalesProducts.salesChannelId, salesChannelId))
+    .orderBy(asc(bookSalesProducts.bookId), asc(bookSalesProducts.id));
+}
+
+export interface QuaresImportPersistenceRow {
+  bookId: string;
+  salesChannelId: string;
+  externalProductId: string;
+  marketIds: string[];
+}
+
+export async function applyQuaresImportRows(rows: QuaresImportPersistenceRow[]): Promise<number> {
+  return db.transaction(async (transaction) => {
+    let applied = 0;
+
+    for (const row of rows) {
+      /*
+       * Protect external identity at apply time.
+       */
+      const [externalOwner] = await transaction
+        .select()
+        .from(bookSalesProducts)
+        .where(
+          and(
+            eq(bookSalesProducts.salesChannelId, row.salesChannelId),
+            eq(bookSalesProducts.externalProductId, row.externalProductId),
+          ),
+        )
+        .limit(1);
+
+      if (externalOwner && externalOwner.bookId !== row.bookId) {
+        throw new Error(`Quares ID ${row.externalProductId} already belongs to another book.`);
+      }
+
+      const [existing] = await transaction
+        .select()
+        .from(bookSalesProducts)
+        .where(
+          and(
+            eq(bookSalesProducts.bookId, row.bookId),
+            eq(bookSalesProducts.salesChannelId, row.salesChannelId),
+          ),
+        )
+        .limit(1);
+
+      let product: BookSalesProduct;
+
+      if (existing) {
+        if (!existing.isActive || existing.status !== 'available') {
+          throw new Error(
+            `Existing Quares product for book ${row.bookId} is inactive or non-available.`,
+          );
+        }
+
+        const existingExternalId = existing.externalProductId?.trim();
+
+        if (existingExternalId && existingExternalId !== row.externalProductId) {
+          throw new Error(
+            `Existing Quares ID ${existingExternalId} for book ${row.bookId} conflicts with ${row.externalProductId}.`,
+          );
+        }
+
+        const [updated] = await transaction
+          .update(bookSalesProducts)
+          .set({
+            externalProductId: row.externalProductId,
+            updatedAt: new Date(),
+          })
+          .where(eq(bookSalesProducts.id, existing.id))
+          .returning();
+
+        if (!updated) {
+          throw new Error(`Failed updating Quares product for book ${row.bookId}.`);
+        }
+
+        product = updated;
+      } else {
+        const [created] = await transaction
+          .insert(bookSalesProducts)
+          .values({
+            bookId: row.bookId,
+            salesChannelId: row.salesChannelId,
+            externalProductId: row.externalProductId,
+            purchaseUrl: null,
+            status: 'available',
+            isActive: true,
+          })
+          .returning();
+
+        if (!created) {
+          throw new Error(`Failed creating Quares product for book ${row.bookId}.`);
+        }
+
+        product = created;
+      }
+
+      await syncBookSalesMarkets(transaction, product.id, row.marketIds);
+
+      applied += 1;
+    }
+
+    return applied;
+  });
+}
+
+export interface AmazonImportPersistenceRow {
+  bookId: string;
+  salesChannelId: string;
+  externalProductId: string;
+  purchaseUrl: string;
+}
+
+export async function applyAmazonImportRows(rows: AmazonImportPersistenceRow[]): Promise<number> {
+  return db.transaction(async (transaction) => {
+    let applied = 0;
+
+    for (const row of rows) {
+      const externalProductId = row.externalProductId.trim().toUpperCase();
+
+      const purchaseUrl = row.purchaseUrl.trim();
+
+      if (!externalProductId) {
+        throw new Error(`Amazon product for book ${row.bookId} has an empty ASIN.`);
+      }
+
+      if (!purchaseUrl) {
+        throw new Error(`Amazon product for book ${row.bookId} has an empty purchase URL.`);
+      }
+
+      /*
+       * Protect Amazon external identity at apply time.
+       *
+       * One ASIN must never be silently assigned to another
+       * internal book.
+       */
+      const [externalOwner] = await transaction
+        .select()
+        .from(bookSalesProducts)
+        .where(
+          and(
+            eq(bookSalesProducts.salesChannelId, row.salesChannelId),
+            eq(bookSalesProducts.externalProductId, externalProductId),
+          ),
+        )
+        .limit(1);
+
+      if (externalOwner && externalOwner.bookId !== row.bookId) {
+        throw new Error(`Amazon ASIN ${externalProductId} already belongs to another book.`);
+      }
+
+      const [existing] = await transaction
+        .select()
+        .from(bookSalesProducts)
+        .where(
+          and(
+            eq(bookSalesProducts.bookId, row.bookId),
+            eq(bookSalesProducts.salesChannelId, row.salesChannelId),
+          ),
+        )
+        .limit(1);
+
+      if (existing) {
+        if (!existing.isActive || existing.status !== 'available') {
+          throw new Error(
+            `Existing Amazon product for book ${row.bookId} is inactive or non-available.`,
+          );
+        }
+
+        const existingExternalId = existing.externalProductId?.trim().toUpperCase() || null;
+
+        const existingPurchaseUrl = existing.purchaseUrl?.trim() || null;
+
+        if (existingExternalId && existingExternalId !== externalProductId) {
+          throw new Error(
+            `Existing Amazon ASIN ${existingExternalId} for book ${row.bookId} conflicts with ${externalProductId}.`,
+          );
+        }
+
+        if (existingPurchaseUrl && existingPurchaseUrl !== purchaseUrl) {
+          throw new Error(
+            `Existing Amazon purchase URL for book ${row.bookId} conflicts with source URL.`,
+          );
+        }
+
+        const [updated] = await transaction
+          .update(bookSalesProducts)
+          .set({
+            externalProductId,
+            purchaseUrl,
+            updatedAt: new Date(),
+          })
+          .where(eq(bookSalesProducts.id, existing.id))
+          .returning();
+
+        if (!updated) {
+          throw new Error(`Failed updating Amazon product for book ${row.bookId}.`);
+        }
+      } else {
+        const [created] = await transaction
+          .insert(bookSalesProducts)
+          .values({
+            bookId: row.bookId,
+            salesChannelId: row.salesChannelId,
+            externalProductId,
+            purchaseUrl,
+            status: 'available',
+            isActive: true,
+          })
+          .returning();
+
+        if (!created) {
+          throw new Error(`Failed creating Amazon product for book ${row.bookId}.`);
+        }
+      }
+
+      applied += 1;
+    }
+
+    return applied;
+  });
 }
