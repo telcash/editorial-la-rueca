@@ -4,6 +4,7 @@ import { ArrowLeft } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { BookForm } from '@/features/admin/books/components/book-form';
+import { BookSalesForm } from '@/features/admin/books/components/book-sales-form';
 import {
   mapBookToFormInitialValues,
   mergeAvailableAuthors,
@@ -15,6 +16,7 @@ import * as AuthorService from '@/services/authors/author.service';
 import { BookNotFoundError } from '@/services/books/book.errors';
 import * as BookService from '@/services/books/book.service';
 import * as CategoryService from '@/services/categories/category.service';
+import * as SalesService from '@/services/sales/sales.service';
 
 interface EditBookPageProps {
   params: Promise<{
@@ -40,10 +42,11 @@ async function getBookForEdit(id: string) {
 export default async function AdminEditBookPage({ params, searchParams }: EditBookPageProps) {
   const { id } = await params;
   const { coverUpload } = await searchParams;
-  const [book, authors, categories] = await Promise.all([
+  const [book, authors, categories, salesConfiguration] = await Promise.all([
     getBookForEdit(id),
     AuthorService.listAuthors(),
     CategoryService.listActiveCategories(),
+    SalesService.getBookSalesAdminConfiguration(id),
   ]);
   const initialValues = mapBookToFormInitialValues(book);
   const authorOptions = mergeAvailableAuthors(
@@ -105,6 +108,8 @@ export default async function AdminEditBookPage({ params, searchParams }: EditBo
         categories={categoryOptions}
         initialValues={initialValues}
       />
+
+      <BookSalesForm bookId={book.id} configuration={salesConfiguration} />
     </section>
   );
 }

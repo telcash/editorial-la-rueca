@@ -5,3 +5,4 @@ export * from './catalog/books';
 export * from './catalog/categories';
 export * from './catalog/services';
 export * from './catalog/contact-requests';
+export * from './catalog/sales';
