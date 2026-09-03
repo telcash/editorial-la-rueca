@@ -114,7 +114,7 @@ export function MobileNavigation({ storeMarkets = [] }: MobileNavigationProps) {
         </nav>
         <div className="mt-auto border-t border-public-border p-5">
           <SheetClose asChild>
-            <PublicButton href="/#contacto" className="w-full">
+            <PublicButton href="/#publica-tu-libro" className="w-full">
               Solicitar asesoría
             </PublicButton>
           </SheetClose>

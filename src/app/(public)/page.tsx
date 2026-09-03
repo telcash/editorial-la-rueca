@@ -175,7 +175,7 @@ export default async function PublicHomePage() {
                   </p>
                   <HeroMetrics metrics={metrics} />
                   <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                    <PublicButton href="#contacto">
+                    <PublicButton href="#publica-tu-libro">
                       Quiero publicar mi libro
                       <ArrowRight className="size-4" aria-hidden="true" />
                     </PublicButton>
@@ -187,7 +187,7 @@ export default async function PublicHomePage() {
               </div>
             </div>
 
-            <PublicCard id="contacto" className="scroll-mt-24 p-6 sm:p-8 lg:p-10">
+            <PublicCard id="publica-tu-libro" className="scroll-mt-24 p-6 sm:p-8 lg:p-10">
               <h2 className="font-serif-public text-3xl font-semibold leading-tight text-public-ink">
                 Cuéntanos sobre tu libro
               </h2>

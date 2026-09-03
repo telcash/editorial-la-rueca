@@ -194,3 +194,18 @@ body {
   outline-offset: 3px;
   box-shadow: 0 0 0 4px var(--public-focus-halo);
 }
+
+.public-contact-highlight {
+  outline: 3px solid rgb(224 43 32 / 0.2);
+  outline-offset: 3px;
+  box-shadow: var(--shadow-public-elevated);
+  transition:
+    outline-color 150ms ease-out,
+    box-shadow 150ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .public-contact-highlight {
+    transition: none;
+  }
+}

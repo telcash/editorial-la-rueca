@@ -65,7 +65,7 @@ export function BookDetailHero({ book, primaryEdition, summary, metaItems }: Boo
           ) : null}
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <PublicButton href="/#contacto" className="w-full sm:w-auto">
+            <PublicButton href="/#publica-tu-libro" className="w-full sm:w-auto">
               Solicitar información
               <ArrowRight className="size-4" aria-hidden="true" />
             </PublicButton>

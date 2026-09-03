@@ -146,7 +146,7 @@ describe('public book detail components', () => {
     expect(html).toContain('Cruce de Pasos');
     expect(html).toContain('Memoria y viaje');
     expect(html).toContain('Solicitar información');
-    expect(html).toContain('href="/#contacto"');
+    expect(html).toContain('href="/#publica-tu-libro"');
     expect(html).toContain('Ver catálogo');
     expect(html).toContain('9788412345678');
   });
