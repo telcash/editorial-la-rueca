@@ -33,7 +33,8 @@
     "sales:import:quares": "node --import ./scripts/register-server-only.mjs --import tsx scripts/quares-import.ts",
     "sales:import:amazon:audit": "node --import ./scripts/register-server-only.mjs --import tsx scripts/amazon-import-audit.ts",
     "sales:import:amazon:match": "node --import ./scripts/register-server-only.mjs --import tsx scripts/amazon-import-match.ts",
-    "sales:import:amazon": "node --import ./scripts/register-server-only.mjs --import tsx scripts/amazon-import.ts"
+    "sales:import:amazon": "node --import ./scripts/register-server-only.mjs --import tsx scripts/amazon-import.ts",
+    "sales:qa": "node --import ./scripts/register-server-only.mjs --import tsx scripts/sales-qa.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.3",
