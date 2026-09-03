@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { PublicContainer } from '@/components/public/public-container';
 import { PublicPageHeader } from '@/components/public/public-page-header';
 import { PublicSection } from '@/components/public/public-section';
+import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
   title: 'Política de cookies | Editorial La Rueca',
@@ -22,29 +23,29 @@ export default function CookiePolicyPage() {
           <PolicySection title="1. Responsable">
             <p>
               La responsable de este sitio web y del tratamiento relacionado con las tecnologías
-              descritas en esta política es Almudena Jiménez Fernández, que desarrolla su actividad
-              bajo el nombre comercial Editorial La Rueca.
+              descritas en esta política es {siteConfig.legalData.owner}, que desarrolla su
+              actividad bajo el nombre comercial {siteConfig.legalData.companyName}.
             </p>
 
             <dl className="mt-4 space-y-2">
               <div>
                 <dt className="inline font-semibold text-public-ink">DNI/NIF: </dt>
-                <dd className="inline">50308893G</dd>
+                <dd className="inline">{siteConfig.legalData.nif}</dd>
               </div>
 
               <div>
                 <dt className="inline font-semibold text-public-ink">Domicilio: </dt>
-                <dd className="inline">C/ Duque de Sesto , 23 bajo C, 28006 Madrid</dd>
+                <dd className="inline">{siteConfig.legalData.address}</dd>
               </div>
 
               <div>
                 <dt className="inline font-semibold text-public-ink">Correo electrónico: </dt>
                 <dd className="inline">
                   <a
-                    href="mailto:ajimenez@editoriallarueca.com"
+                    href={`mailto:${siteConfig.legalData.email}`}
                     className="font-semibold text-public-red underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red"
                   >
-                    ajimenez@editoriallarueca.com
+                    {siteConfig.legalData.email}
                   </a>
                 </dd>
               </div>
@@ -67,8 +68,8 @@ export default function CookiePolicyPage() {
 
           <PolicySection title="3. Cookies estrictamente necesarias">
             <p>
-              Editorial La Rueca utiliza las tecnologías necesarias para permitir el funcionamiento
-              técnico y seguro del sitio.
+              {siteConfig.legalData.companyName} utiliza las tecnologías necesarias para permitir el
+              funcionamiento técnico y seguro del sitio.
             </p>
 
             <p className="mt-3">
@@ -165,8 +166,8 @@ export default function CookiePolicyPage() {
 
           <PolicySection title="10. Sitios externos">
             <p>
-              Algunos enlaces de editoriallarueca.com pueden dirigir a páginas externas, como Amazon
-              o las tiendas Quares.
+              Algunos enlaces de {siteConfig.legalData.website} pueden dirigir a páginas externas,
+              como Amazon o las tiendas Quares.
             </p>
 
             <p className="mt-3">
@@ -178,8 +179,8 @@ export default function CookiePolicyPage() {
 
           <PolicySection title="11. Cambios en esta política">
             <p>
-              Editorial La Rueca podrá actualizar esta Política de cookies cuando cambien las
-              tecnologías utilizadas, sus finalidades o los requisitos aplicables.
+              {siteConfig.legalData.companyName} podrá actualizar esta Política de cookies cuando
+              cambien las tecnologías utilizadas, sus finalidades o los requisitos aplicables.
             </p>
 
             <p className="mt-3">
@@ -191,7 +192,8 @@ export default function CookiePolicyPage() {
 
           <PolicySection title="12. Más información">
             <p>
-              Para conocer cómo Editorial La Rueca trata los datos personales, puedes consultar la{' '}
+              Para conocer cómo {siteConfig.legalData.companyName} trata los datos personales,
+              puedes consultar la{' '}
               <a
                 href="/politica-de-privacidad"
                 className="font-semibold text-public-red underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red"

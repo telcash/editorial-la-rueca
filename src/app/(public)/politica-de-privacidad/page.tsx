@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { PublicContainer } from '@/components/public/public-container';
 import { PublicPageHeader } from '@/components/public/public-page-header';
 import { PublicSection } from '@/components/public/public-section';
+import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
   title: 'Política de privacidad | Editorial La Rueca',
@@ -29,32 +30,32 @@ export default function PrivacyPolicyPage() {
             <dl className="mt-4 space-y-2">
               <div>
                 <dt className="inline font-semibold text-public-ink">Nombre comercial: </dt>
-                <dd className="inline">Editorial La Rueca</dd>
+                <dd className="inline">{siteConfig.legalData.companyName}</dd>
               </div>
 
               <div>
                 <dt className="inline font-semibold text-public-ink">Responsable: </dt>
-                <dd className="inline">Almudena Jiménez Fernández</dd>
+                <dd className="inline">{siteConfig.legalData.owner}</dd>
               </div>
 
               <div>
                 <dt className="inline font-semibold text-public-ink">DNI/NIF: </dt>
-                <dd className="inline">50308893G</dd>
+                <dd className="inline">{siteConfig.legalData.nif}</dd>
               </div>
 
               <div>
                 <dt className="inline font-semibold text-public-ink">Domicilio: </dt>
-                <dd className="inline">C/ Duque de Sesto , 23 bajo C, 28006 Madrid</dd>
+                <dd className="inline">{siteConfig.legalData.address}</dd>
               </div>
 
               <div>
                 <dt className="inline font-semibold text-public-ink">Teléfono: </dt>
                 <dd className="inline">
                   <a
-                    href="tel:+34639289535"
+                    href={`tel:+34${siteConfig.legalData.phone}`}
                     className="font-semibold text-public-red underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red"
                   >
-                    639 289 535
+                    {siteConfig.legalData.phone}
                   </a>
                 </dd>
               </div>
@@ -63,10 +64,10 @@ export default function PrivacyPolicyPage() {
                 <dt className="inline font-semibold text-public-ink">Correo electrónico: </dt>
                 <dd className="inline">
                   <a
-                    href="mailto:ajimenez@editoriallarueca.com"
+                    href={`mailto:${siteConfig.legalData.email}`}
                     className="font-semibold text-public-red underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red"
                   >
-                    ajimenez@editoriallarueca.com
+                    {siteConfig.legalData.email}
                   </a>
                 </dd>
               </div>
@@ -75,9 +76,9 @@ export default function PrivacyPolicyPage() {
 
           <PrivacySection title="2. Datos personales que tratamos">
             <p>
-              A través del formulario público “Cuéntanos sobre tu libro”, Editorial La Rueca puede
-              recibir los datos que la persona interesada introduce voluntariamente para solicitar
-              información sobre servicios editoriales.
+              A través del formulario público “Cuéntanos sobre tu libro”,{' '}
+              {siteConfig.legalData.companyName} puede recibir los datos que la persona interesada
+              introduce voluntariamente para solicitar información sobre servicios editoriales.
             </p>
 
             <p className="mt-3">Actualmente el formulario puede recoger:</p>
@@ -116,8 +117,8 @@ export default function PrivacyPolicyPage() {
               </li>
               <li>gestionar internamente las solicitudes recibidas y su seguimiento;</li>
               <li>
-                enviar al equipo de Editorial La Rueca las notificaciones operativas necesarias para
-                atender la solicitud;
+                enviar al equipo de {siteConfig.legalData.companyName} las notificaciones operativas
+                necesarias para atender la solicitud;
               </li>
               <li>
                 gestionar, cuando corresponda, actuaciones previas a una eventual contratación de
@@ -129,16 +130,16 @@ export default function PrivacyPolicyPage() {
 
           <PrivacySection title="4. Base jurídica">
             <p>
-              Cuando una persona contacta con Editorial La Rueca para solicitar información sobre
-              servicios editoriales o sobre la posible publicación de una obra, el tratamiento de
-              los datos resulta necesario para atender la solicitud realizada por la propia persona
-              interesada y, cuando corresponda, para adoptar medidas previas a una eventual relación
-              contractual.
+              Cuando una persona contacta con {siteConfig.legalData.companyName} para solicitar
+              información sobre servicios editoriales o sobre la posible publicación de una obra, el
+              tratamiento de los datos resulta necesario para atender la solicitud realizada por la
+              propia persona interesada y, cuando corresponda, para adoptar medidas previas a una
+              eventual relación contractual.
             </p>
 
             <p className="mt-3">
-              Cuando exista una obligación legal aplicable a Editorial La Rueca, los datos también
-              podrán tratarse en la medida necesaria para cumplir dicha obligación.
+              Cuando exista una obligación legal aplicable a {siteConfig.legalData.companyName}, los
+              datos también podrán tratarse en la medida necesaria para cumplir dicha obligación.
             </p>
 
             <p className="mt-3">
@@ -178,8 +179,8 @@ export default function PrivacyPolicyPage() {
 
           <PrivacySection title="7. Destinatarios y proveedores">
             <p>
-              Editorial La Rueca no comunica los datos personales del formulario a terceros con
-              fines comerciales por el mero hecho de recibir una consulta.
+              {siteConfig.legalData.companyName} no comunica los datos personales del formulario a
+              terceros con fines comerciales por el mero hecho de recibir una consulta.
             </p>
 
             <p className="mt-3">
@@ -259,10 +260,10 @@ export default function PrivacyPolicyPage() {
             <p>
               Para ejercer tus derechos puedes escribir a{' '}
               <a
-                href="mailto:ajimenez@editoriallarueca.com"
+                href={`mailto:${siteConfig.legalData.email}`}
                 className="font-semibold text-public-red underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red"
               >
-                ajimenez@editoriallarueca.com
+                {siteConfig.legalData.email}
               </a>{' '}
               indicando qué derecho deseas ejercer y aportando, cuando sea necesario, la información
               que permita verificar tu identidad y localizar los datos relacionados con tu
@@ -270,8 +271,8 @@ export default function PrivacyPolicyPage() {
             </p>
 
             <p className="mt-3">
-              También puedes dirigirte por escrito a Editorial La Rueca, Peñazarzal Norte 27, 28411,
-              Madrid, España.
+              También puedes dirigirte por escrito a {siteConfig.legalData.companyName},{' '}
+              {siteConfig.legalData.address}
             </p>
           </PrivacySection>
 
@@ -312,8 +313,9 @@ export default function PrivacyPolicyPage() {
 
           <PrivacySection title="15. Modificación de esta política">
             <p>
-              Editorial La Rueca podrá actualizar esta Política de privacidad cuando cambien los
-              tratamientos realizados, los servicios utilizados o los requisitos legales aplicables.
+              {siteConfig.legalData.companyName} podrá actualizar esta Política de privacidad cuando
+              cambien los tratamientos realizados, los servicios utilizados o los requisitos legales
+              aplicables.
             </p>
 
             <p className="mt-3">

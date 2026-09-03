@@ -15,6 +15,15 @@ interface SiteConfig {
     x: string | null;
     youtube: string | null;
   };
+  legalData: {
+    nif: string | null;
+    companyName: string | null;
+    address: string | null;
+    website: string | null;
+    phone: string | null;
+    owner: string | null;
+    email: string | null;
+  };
 }
 
 export const siteConfig: SiteConfig = {
@@ -34,6 +43,15 @@ export const siteConfig: SiteConfig = {
     linkedin: 'https://www.linkedin.com/in/almudenajimenezfernandez',
     x: 'https://twitter.com/editorial_rueca',
     youtube: 'https://www.youtube.com/@editoriallarueca',
+  },
+  legalData: {
+    nif: '50308893G',
+    companyName: 'Editorial La Rueca S.L.',
+    address: 'Calle Duque de Sesto 43, bajo C, 28006, Madrid, España',
+    website: 'https://www.editoriallarueca.com',
+    phone: '639 289 535',
+    owner: 'Almudena Jiménez Fernández',
+    email: 'ajimenez@editoriallarueca.com',
   },
 };
 

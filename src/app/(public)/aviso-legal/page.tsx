@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { PublicContainer } from '@/components/public/public-container';
 import { PublicPageHeader } from '@/components/public/public-page-header';
 import { PublicSection } from '@/components/public/public-section';
+import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
   title: 'Aviso legal | Editorial La Rueca',
@@ -30,32 +31,32 @@ export default function LegalNoticePage() {
             <dl className="mt-4 space-y-2">
               <div>
                 <dt className="inline font-semibold text-public-ink">Nombre comercial: </dt>
-                <dd className="inline">Editorial La Rueca</dd>
+                <dd className="inline">{siteConfig.legalData.companyName}</dd>
               </div>
 
               <div>
                 <dt className="inline font-semibold text-public-ink">Titular: </dt>
-                <dd className="inline">Almudena Jiménez Fernández</dd>
+                <dd className="inline">{siteConfig.legalData.owner}</dd>
               </div>
 
               <div>
                 <dt className="inline font-semibold text-public-ink">DNI/NIF: </dt>
-                <dd className="inline">50308893G</dd>
+                <dd className="inline">{siteConfig.legalData.nif}</dd>
               </div>
 
               <div>
                 <dt className="inline font-semibold text-public-ink">Domicilio: </dt>
-                <dd className="inline">C/ Duque de Sesto , 23 bajo C, 28006 Madrid</dd>
+                <dd className="inline">{siteConfig.legalData.address}</dd>
               </div>
 
               <div>
                 <dt className="inline font-semibold text-public-ink">Teléfono: </dt>
                 <dd className="inline">
                   <a
-                    href="tel:+34639289535"
+                    href={`tel:${siteConfig.legalData.phone?.replace(/\s+/g, '')}`}
                     className="font-semibold text-public-red underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red"
                   >
-                    639 289 535
+                    {siteConfig.legalData.phone}
                   </a>
                 </dd>
               </div>
@@ -64,32 +65,32 @@ export default function LegalNoticePage() {
                 <dt className="inline font-semibold text-public-ink">Correo electrónico: </dt>
                 <dd className="inline">
                   <a
-                    href="mailto:ajimenez@editoriallarueca.com"
+                    href={`mailto:${siteConfig.legalData.email}`}
                     className="font-semibold text-public-red underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red"
                   >
-                    ajimenez@editoriallarueca.com
+                    {siteConfig.legalData.email}
                   </a>
                 </dd>
               </div>
 
               <div>
                 <dt className="inline font-semibold text-public-ink">Sitio web: </dt>
-                <dd className="inline">editoriallarueca.com</dd>
+                <dd className="inline">{siteConfig.legalData.website}</dd>
               </div>
             </dl>
           </LegalSection>
 
           <LegalSection title="2. Objeto del sitio web">
             <p>
-              Este sitio web tiene como finalidad ofrecer información sobre Editorial La Rueca, su
-              catálogo, autores, publicaciones, actividades y servicios editoriales, así como
-              facilitar el contacto de personas interesadas en recibir información o iniciar un
-              proyecto editorial.
+              Este sitio web tiene como finalidad ofrecer información sobre{' '}
+              {siteConfig.legalData.companyName}, su catálogo, autores, publicaciones, actividades y
+              servicios editoriales, así como facilitar el contacto de personas interesadas en
+              recibir información o iniciar un proyecto editorial.
             </p>
 
             <p className="mt-3">
               El acceso al sitio web no implica por sí mismo el establecimiento de una relación
-              contractual o comercial entre la persona usuaria y Editorial La Rueca.
+              contractual o comercial entre la persona usuaria y {siteConfig.legalData.companyName}.
             </p>
           </LegalSection>
 
@@ -112,8 +113,8 @@ export default function LegalNoticePage() {
             <p>
               La estructura, diseño, programación, selección y presentación de contenidos del sitio,
               así como los textos, elementos gráficos, signos distintivos y demás materiales propios
-              de Editorial La Rueca, pueden estar protegidos por la normativa sobre propiedad
-              intelectual e industrial.
+              de {siteConfig.legalData.companyName}, pueden estar protegidos por la normativa sobre
+              propiedad intelectual e industrial.
             </p>
 
             <p className="mt-3">
@@ -137,15 +138,15 @@ export default function LegalNoticePage() {
 
           <LegalSection title="5. Contenidos y disponibilidad">
             <p>
-              Editorial La Rueca procura que la información publicada sea correcta y esté
-              actualizada. No obstante, pueden producirse errores, omisiones, cambios editoriales o
-              interrupciones temporales en el funcionamiento del sitio.
+              {siteConfig.legalData.companyName} procura que la información publicada sea correcta y
+              esté actualizada. No obstante, pueden producirse errores, omisiones, cambios
+              editoriales o interrupciones temporales en el funcionamiento del sitio.
             </p>
 
             <p className="mt-3">
-              Editorial La Rueca podrá modificar, actualizar, suspender o retirar contenidos,
-              servicios o funcionalidades cuando resulte necesario, sin perjuicio de los derechos
-              que correspondan a las personas usuarias conforme a la legislación aplicable.
+              {siteConfig.legalData.companyName} podrá modificar, actualizar, suspender o retirar
+              contenidos, servicios o funcionalidades cuando resulte necesario, sin perjuicio de los
+              derechos que correspondan a las personas usuarias conforme a la legislación aplicable.
             </p>
           </LegalSection>
 
@@ -165,10 +166,10 @@ export default function LegalNoticePage() {
             </p>
 
             <p className="mt-3">
-              Editorial La Rueca no controla con carácter general el contenido, disponibilidad ni
-              funcionamiento de sitios web de terceros y no asume responsabilidad por actuaciones
-              realizadas fuera de editoriallarueca.com, sin perjuicio de las responsabilidades que
-              legalmente pudieran corresponderle.
+              {siteConfig.legalData.companyName} no controla con carácter general el contenido,
+              disponibilidad ni funcionamiento de sitios web de terceros y no asume responsabilidad
+              por actuaciones realizadas fuera de editoriallarueca.com, sin perjuicio de las
+              responsabilidades que legalmente pudieran corresponderle.
             </p>
           </LegalSection>
 
@@ -199,9 +200,10 @@ export default function LegalNoticePage() {
 
           <LegalSection title="8. Seguridad">
             <p>
-              Editorial La Rueca adopta medidas técnicas y organizativas orientadas a proteger la
-              información y reducir los riesgos de acceso no autorizado, pérdida, alteración o
-              divulgación indebida, teniendo en cuenta la naturaleza de los tratamientos realizados.
+              {siteConfig.legalData.companyName} adopta medidas técnicas y organizativas orientadas
+              a proteger la información y reducir los riesgos de acceso no autorizado, pérdida,
+              alteración o divulgación indebida, teniendo en cuenta la naturaleza de los
+              tratamientos realizados.
             </p>
 
             <p className="mt-3">
@@ -214,19 +216,19 @@ export default function LegalNoticePage() {
           <LegalSection title="9. Comunicaciones y reclamaciones">
             <p>
               Para consultas relacionadas con este sitio web, sus contenidos o los servicios de
-              Editorial La Rueca, puede utilizarse el correo electrónico{' '}
+              {siteConfig.legalData.companyName}, puede utilizarse el correo electrónico{' '}
               <a
-                href="mailto:ajimenez@editoriallarueca.com"
+                href={`mailto:${siteConfig.legalData.email}`}
                 className="font-semibold text-public-red underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red"
               >
-                ajimenez@editoriallarueca.com
+                {siteConfig.legalData.email}
               </a>{' '}
               o el teléfono{' '}
               <a
-                href="tel:+34639289535"
+                href={`tel:${siteConfig.legalData.phone?.replace(/\s+/g, '')}`}
                 className="font-semibold text-public-red underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red"
               >
-                639 289 535
+                {siteConfig.legalData.phone}
               </a>
               .
             </p>
@@ -242,9 +244,9 @@ export default function LegalNoticePage() {
 
           <LegalSection title="11. Modificaciones">
             <p>
-              Editorial La Rueca podrá actualizar este Aviso legal para adaptarlo a cambios en el
-              sitio web, en sus servicios o en la normativa aplicable. La versión publicada en esta
-              página será la vigente en cada momento.
+              {siteConfig.legalData.companyName} podrá actualizar este Aviso legal para adaptarlo a
+              cambios en el sitio web, en sus servicios o en la normativa aplicable. La versión
+              publicada en esta página será la vigente en cada momento.
             </p>
           </LegalSection>
 
