@@ -150,9 +150,9 @@ export default async function PublicHomePage() {
         <PublicContainer>
           <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr]">
             <div className="overflow-hidden rounded-2xl border border-public-border bg-white shadow-[0_18px_50px_rgba(23,23,23,0.08)]">
-              <div className="relative grid min-h-[24rem] items-center gap-8 overflow-hidden p-6 sm:p-8 lg:p-12">
+              <div className="relative grid h-full min-h-[24rem] items-center gap-8 overflow-hidden p-6 sm:p-8 lg:p-12">
                 <Image
-                  src="/brand/home-hero-editorial.png"
+                  src="/brand/home-hero.png"
                   alt=""
                   aria-hidden="true"
                   fill
@@ -161,7 +161,7 @@ export default async function PublicHomePage() {
                   className="z-0 object-cover object-[68%_center] md:object-[60%_center] lg:object-[55%_center]"
                 />
                 <div
-                  className="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(255,255,255,0.82)_0%,rgba(255,255,255,0.68)_48%,rgba(255,255,255,0.45)_100%)] md:bg-[linear-gradient(90deg,rgba(255,255,255,0.8)_0%,rgba(255,255,255,0.65)_45%,rgba(255,255,255,0.4)_100%)] lg:bg-[linear-gradient(90deg,rgba(255,255,255,0.78)_0%,rgba(255,255,255,0.62)_45%,rgba(255,255,255,0.35)_100%)]"
+                  className="absolute inset-0 z-10 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.95)_0%,rgba(255,255,255,0.9)_45%,rgba(255,255,255,0.85)_100%)]"
                   aria-hidden="true"
                 />
                 <div className="relative z-20 max-w-2xl">
@@ -169,7 +169,7 @@ export default async function PublicHomePage() {
                     Publicamos libros.
                     <span className="block text-public-red">Acompañamos autores.</span>
                   </h1>
-                  <p className="mt-public-heading-gap max-w-xl text-public-lead text-public-ink/80">
+                  <p className="mt-public-heading-gap max-w-xl text-xl font-medium leading-relaxed text-public-ink/85 md:text-2xl">
                     Te acompañamos durante todo el proceso editorial, con claridad, cercanía y un
                     equipo que cuida tu obra como merece.
                   </p>
