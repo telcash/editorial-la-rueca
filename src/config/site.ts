@@ -12,6 +12,7 @@ interface SiteConfig {
     instagram: string | null;
     facebook: string | null;
     linkedin: string | null;
+    x: string | null;
     youtube: string | null;
   };
 }
@@ -28,10 +29,11 @@ export const siteConfig: SiteConfig = {
     schedule: null,
   },
   socialLinks: {
-    instagram: null,
-    facebook: null,
-    linkedin: null,
-    youtube: null,
+    instagram: 'https://www.instagram.com/editoriallarueca',
+    facebook: 'https://www.facebook.com/EditorialLaRueca/',
+    linkedin: 'https://www.linkedin.com/in/almudenajimenezfernandez',
+    x: 'https://twitter.com/editorial_rueca',
+    youtube: 'https://www.youtube.com/@editoriallarueca',
   },
 };
 

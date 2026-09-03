@@ -11,6 +11,7 @@ const socialItems = [
   { label: 'Instagram', href: siteConfig.socialLinks.instagram, mark: 'IG' },
   { label: 'Facebook', href: siteConfig.socialLinks.facebook, mark: 'f' },
   { label: 'LinkedIn', href: siteConfig.socialLinks.linkedin, mark: 'in' },
+  { label: 'X', href: siteConfig.socialLinks.x, mark: 'X' },
   { label: 'YouTube', href: siteConfig.socialLinks.youtube, mark: '▶' },
 ];
 
@@ -92,6 +93,7 @@ export function PublicFooter() {
                     key={item.label}
                     href={item.href}
                     aria-label={item.label}
+                    target="_blank"
                     className="inline-flex size-10 items-center justify-center rounded-full bg-public-ink text-xs font-bold text-white transition hover:bg-public-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red focus-visible:ring-offset-2"
                   >
                     {item.mark}
