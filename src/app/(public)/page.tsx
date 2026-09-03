@@ -166,8 +166,8 @@ export default async function PublicHomePage() {
                 />
                 <div className="relative z-20 max-w-2xl">
                   <h1 className="font-serif-public text-public-display font-semibold tracking-normal text-public-ink">
-                    Publicamos libros.
-                    <span className="block text-public-red">Acompañamos autores.</span>
+                    Publicamos libros
+                    <span className="block text-public-red">Acompañamos autores</span>
                   </h1>
                   <p className="mt-public-heading-gap max-w-xl text-xl font-medium leading-relaxed text-public-ink/85 md:text-2xl">
                     Te acompañamos durante todo el proceso editorial, con claridad, cercanía y un

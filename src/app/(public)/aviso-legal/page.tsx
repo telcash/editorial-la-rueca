@@ -45,7 +45,7 @@ export default function LegalNoticePage() {
 
               <div>
                 <dt className="inline font-semibold text-public-ink">Domicilio: </dt>
-                <dd className="inline">Peñazarzal Norte 27, 28411, Madrid, España</dd>
+                <dd className="inline">C/ Duque de Sesto , 23 bajo C, 28006 Madrid</dd>
               </div>
 
               <div>

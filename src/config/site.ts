@@ -23,7 +23,7 @@ export const siteConfig: SiteConfig = {
     'Editorial independiente que acompaña a autores en la publicación de sus libros con cercanía, claridad y cuidado editorial.',
   positioning: 'Publicamos libros con honestidad, claridad y cercanía en cada etapa del proceso.',
   contact: {
-    phone: null,
+    phone: '639 289 535',
     email: 'ajimenez@editoriallarueca.com',
     address: null,
     schedule: null,
