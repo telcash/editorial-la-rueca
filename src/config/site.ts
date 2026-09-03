@@ -24,7 +24,7 @@ export const siteConfig: SiteConfig = {
   positioning: 'Publicamos libros con honestidad, claridad y cercanía en cada etapa del proceso.',
   contact: {
     phone: null,
-    email: null,
+    email: 'ajimenez@editoriallarueca.com',
     address: null,
     schedule: null,
   },
