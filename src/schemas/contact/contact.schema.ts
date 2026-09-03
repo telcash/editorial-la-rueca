@@ -12,9 +12,6 @@ export const publicContactSchema = createContactRequestSchema
     message: true,
   })
   .extend({
-    privacyAccepted: z.literal(true, {
-      error: 'Debes aceptar la política de privacidad.',
-    }),
     company: z.string().max(0).optional(),
   })
   .strict();

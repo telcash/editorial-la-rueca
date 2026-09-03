@@ -38,7 +38,6 @@ function createValidFormData() {
   formData.set('province', 'Madrid');
   formData.set('serviceId', serviceId);
   formData.set('message', 'Quiero recibir orientación editorial para publicar mi primer libro.');
-  formData.set('privacyAccepted', 'true');
 
   return formData;
 }
@@ -121,9 +120,18 @@ describe('submitPublicContactAction', () => {
       province: ['La provincia es obligatoria.'],
       serviceId: ['Selecciona un servicio válido.'],
       message: ['El mensaje debe tener al menos 10 caracteres.'],
-      privacyAccepted: ['Debes aceptar la política de privacidad.'],
     });
     expect(mocks.createContactRequest).not.toHaveBeenCalled();
+  });
+
+  it('processes a valid request without privacyAccepted', async () => {
+    const result = await submitPublicContactAction(
+      initialPublicContactFormState,
+      createValidFormData(),
+    );
+
+    expect(result.success).toBe(true);
+    expect(mocks.createContactRequest).toHaveBeenCalledOnce();
   });
 
   it('returns a service field error for unavailable services', async () => {

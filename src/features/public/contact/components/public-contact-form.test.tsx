@@ -29,6 +29,8 @@ describe('PublicContactForm', () => {
     expect(html).toContain('Ghostwriting');
     expect(html).toContain('Provincia');
     expect(html).toContain('Solicitar información');
+    expect(html).toContain('href="/politica-de-privacidad"');
+    expect(html).not.toContain('name="privacyAccepted"');
   });
 
   it('renders a safe empty state when there are no published services', () => {

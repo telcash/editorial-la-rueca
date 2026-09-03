@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useActionState } from 'react';
 import { useFormStatus } from 'react-dom';
 import { Send } from 'lucide-react';
@@ -7,7 +8,6 @@ import { Send } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { cn } from '@/lib/utils';
 import { submitPublicContactAction } from '../actions/submit-public-contact';
 import { initialPublicContactFormState } from '../types/contact-form-state';
 
@@ -203,29 +203,26 @@ export function PublicContactForm({ services }: PublicContactFormProps) {
         <FieldError id="public-contact-message-error" message={state.fieldErrors.message?.[0]} />
       </div>
 
-      <div className="space-y-2">
-        <label className="flex items-start gap-3 text-sm leading-6 text-public-muted">
-          <input
-            type="checkbox"
-            name="privacyAccepted"
-            value="true"
-            defaultChecked={state.values.privacyAccepted}
-            aria-invalid={Boolean(state.fieldErrors.privacyAccepted?.[0])}
-            aria-describedby={
-              state.fieldErrors.privacyAccepted?.[0] ? 'public-contact-privacy-error' : undefined
-            }
-            className={cn(
-              'mt-1 size-4 rounded border-public-border text-public-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red focus-visible:ring-offset-2',
-              state.fieldErrors.privacyAccepted?.[0] && 'border-destructive',
-            )}
-          />
-          <span>He leído y acepto la política de privacidad.</span>
-        </label>
-        <FieldError
-          id="public-contact-privacy-error"
-          message={state.fieldErrors.privacyAccepted?.[0]}
-        />
-      </div>
+      <p className="text-xs leading-5 text-public-muted">
+        <span className="font-semibold text-public-ink">Protección de datos:</span> Responsable:
+        Almudena Jiménez Fernández (Editorial La Rueca). Usaremos tus datos para gestionar y
+        responder tu solicitud sobre servicios editoriales. Puedes ejercer tus derechos escribiendo
+        a{' '}
+        <a
+          href="mailto:ajimenez@editoriallarueca.com"
+          className="font-semibold text-public-red underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red"
+        >
+          ajimenez@editoriallarueca.com
+        </a>
+        . Más información en la{' '}
+        <Link
+          href="/politica-de-privacidad"
+          className="font-semibold text-public-red underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red"
+        >
+          Política de privacidad
+        </Link>
+        .
+      </p>
 
       <SubmitButton disabled={!hasServices} />
     </form>

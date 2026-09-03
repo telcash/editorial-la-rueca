@@ -216,11 +216,11 @@ export default async function PublicHomePage() {
         </PublicSection>
       ) : null}
 
-      <PublicSection variant="compact">
+      {/* <PublicSection variant="compact">
         <PublicContainer>
           <EditorialVideo content={editorialVideoContent} />
         </PublicContainer>
-      </PublicSection>
+      </PublicSection> */}
 
       <TestimonialsSection testimonials={featuredTestimonials} />
 

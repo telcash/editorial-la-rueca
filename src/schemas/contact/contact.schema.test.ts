@@ -9,7 +9,6 @@ const validPayload = {
   province: 'Madrid',
   serviceId: 'f3f6a49f-c418-4522-b311-a70b88aab7f4',
   message: 'Quiero recibir orientación editorial para publicar mi primer libro.',
-  privacyAccepted: true,
   company: '',
 };
 
@@ -37,10 +36,8 @@ describe('publicContactSchema', () => {
     expect(publicContactSchema.safeParse({ ...validPayload, serviceId: '' }).success).toBe(false);
   });
 
-  it('rejects privacyAccepted false', () => {
-    expect(publicContactSchema.safeParse({ ...validPayload, privacyAccepted: false }).success).toBe(
-      false,
-    );
+  it('does not require a privacy acceptance field', () => {
+    expect(publicContactSchema.safeParse(validPayload).success).toBe(true);
   });
 
   it('rejects an empty phone because the business requires it', () => {

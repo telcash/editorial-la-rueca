@@ -6,6 +6,7 @@ import { PublicButton } from './public-button';
 import { PublicContainer } from './public-container';
 import { PublicLogo } from './public-logo';
 import { publicFooterNavigation } from './public-navigation';
+import { CookieSettingsButton } from './cookie-consent/cookie-settings-button';
 
 const socialItems = [
   { label: 'Instagram', href: siteConfig.socialLinks.instagram, mark: 'IG' },
@@ -45,6 +46,33 @@ export function PublicFooter() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/aviso-legal"
+                  className="transition hover:text-public-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red focus-visible:ring-offset-2"
+                >
+                  Aviso legal
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/politica-de-privacidad"
+                  className="transition hover:text-public-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red focus-visible:ring-offset-2"
+                >
+                  Política de privacidad
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/politica-de-cookies"
+                  className="transition hover:text-public-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red focus-visible:ring-offset-2"
+                >
+                  Política de cookies
+                </Link>
+              </li>
+              <li>
+                <CookieSettingsButton />
+              </li>
             </ul>
           </nav>
 

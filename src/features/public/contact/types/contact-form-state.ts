@@ -5,7 +5,6 @@ export interface PublicContactFormValues {
   province: string;
   serviceId: string;
   message: string;
-  privacyAccepted: boolean;
   company: string;
 }
 
@@ -23,7 +22,6 @@ export const initialPublicContactFormValues: PublicContactFormValues = {
   province: '',
   serviceId: '',
   message: '',
-  privacyAccepted: false,
   company: '',
 };
 
