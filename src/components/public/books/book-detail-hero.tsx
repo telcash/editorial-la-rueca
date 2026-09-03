@@ -14,6 +14,7 @@ interface BookDetailHeroProps {
   primaryEdition: BookEditionDetails | null;
   summary: string | null;
   metaItems: BookMetaItem[];
+  hasPurchaseOptions: boolean;
 }
 
 function BackToCatalogLink() {
@@ -28,7 +29,13 @@ function BackToCatalogLink() {
   );
 }
 
-export function BookDetailHero({ book, primaryEdition, summary, metaItems }: BookDetailHeroProps) {
+export function BookDetailHero({
+  book,
+  primaryEdition,
+  summary,
+  metaItems,
+  hasPurchaseOptions,
+}: BookDetailHeroProps) {
   return (
     <div className="rounded-public-xl border border-public-border bg-[linear-gradient(135deg,#fffaf5_0%,#ffffff_52%,#f7f2ed_100%)] px-4 py-5 shadow-[0_24px_80px_rgba(23,23,23,0.08)] sm:px-6 sm:py-7 lg:px-8 lg:py-8">
       <div className="lg:hidden">
@@ -65,10 +72,11 @@ export function BookDetailHero({ book, primaryEdition, summary, metaItems }: Boo
           ) : null}
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <PublicButton href="/#publica-tu-libro" className="w-full sm:w-auto">
-              Solicitar información
-              <ArrowRight className="size-4" aria-hidden="true" />
-            </PublicButton>
+            {hasPurchaseOptions ? (
+              <PublicButton href="#comprar" className="w-full sm:w-auto">
+                Comprar
+              </PublicButton>
+            ) : null}
             <PublicButton href="/libros" variant="secondary" className="w-full sm:w-auto">
               Ver catálogo
             </PublicButton>

@@ -9,6 +9,10 @@ interface BookPurchaseSectionProps {
   channels: PublicPurchaseChannel[];
 }
 
+export function hasPublicPurchaseOptions(channels: PublicPurchaseChannel[]) {
+  return channels.some((channel) => channel.options.length > 0);
+}
+
 function getPurchaseLabel(channel: PublicPurchaseChannel, marketName: string | null) {
   if (channel.channel.slug === 'amazon') {
     return 'Comprar en Amazon';
@@ -25,7 +29,7 @@ export function BookPurchaseSection({ channels }: BookPurchaseSectionProps) {
   }
 
   return (
-    <PublicSection variant="compact" className="bg-public-surface-subtle">
+    <PublicSection id="comprar" variant="compact" className="scroll-mt-24 bg-public-surface-subtle">
       <PublicContainer>
         <SectionHeading title="Comprar" variant="compact" />
         <div className="mt-7 grid gap-7 md:grid-cols-2">

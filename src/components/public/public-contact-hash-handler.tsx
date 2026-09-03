@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 
 const PUBLIC_CONTACT_ANCHOR = 'publica-tu-libro';
+const PUBLIC_PURCHASE_ANCHOR = 'comprar';
 const PUBLIC_CONTACT_FOCUS_FLAG = 'public-contact-focus-requested';
 const HIGHLIGHT_DURATION_MS = 1000;
 
@@ -24,19 +25,24 @@ function consumeContactCtaActivation() {
   }
 }
 
-function focusContactSection(shouldFocusName: boolean, formWasInteractedWith: boolean) {
-  if (window.location.hash !== `#${PUBLIC_CONTACT_ANCHOR}`) {
+function highlightHashSection(
+  anchor: string,
+  highlightClass: string,
+  shouldFocusName = false,
+  formWasInteractedWith = false,
+) {
+  if (window.location.hash !== `#${anchor}`) {
     return undefined;
   }
 
-  const section = document.getElementById(PUBLIC_CONTACT_ANCHOR);
+  const section = document.getElementById(anchor);
   if (!section) {
     return undefined;
   }
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   section.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
-  section.classList.add('public-contact-highlight');
+  section.classList.add(highlightClass);
 
   const shouldAvoidKeyboard =
     window.matchMedia('(pointer: coarse)').matches || window.matchMedia('(hover: none)').matches;
@@ -55,12 +61,12 @@ function focusContactSection(shouldFocusName: boolean, formWasInteractedWith: bo
   }
 
   const timeoutId = window.setTimeout(() => {
-    section.classList.remove('public-contact-highlight');
+    section.classList.remove(highlightClass);
   }, HIGHLIGHT_DURATION_MS);
 
   return () => {
     window.clearTimeout(timeoutId);
-    section.classList.remove('public-contact-highlight');
+    section.classList.remove(highlightClass);
   };
 }
 
@@ -73,7 +79,16 @@ export function PublicContactHashHandler() {
     const handleHashChange = () => {
       cleanup?.();
       samePageFocusPending = false;
-      cleanup = focusContactSection(consumeContactCtaActivation(), formWasInteractedWith);
+      const shouldFocusName = consumeContactCtaActivation();
+      cleanup =
+        window.location.hash === `#${PUBLIC_CONTACT_ANCHOR}`
+          ? highlightHashSection(
+              PUBLIC_CONTACT_ANCHOR,
+              'public-contact-highlight',
+              shouldFocusName,
+              formWasInteractedWith,
+            )
+          : highlightHashSection(PUBLIC_PURCHASE_ANCHOR, 'public-purchase-highlight');
     };
 
     const handleFormFocus = (event: FocusEvent) => {
@@ -98,25 +113,39 @@ export function PublicContactHashHandler() {
       }
 
       const url = new URL(anchor.href, window.location.href);
-      if (url.pathname === '/' && url.hash === `#${PUBLIC_CONTACT_ANCHOR}`) {
+      const isContactCta = url.pathname === '/' && url.hash === `#${PUBLIC_CONTACT_ANCHOR}`;
+      const isPurchaseCta = url.pathname === window.location.pathname && url.hash === '#comprar';
+
+      if (isContactCta) {
         markContactCtaActivation();
+      }
 
-        if (window.location.pathname === '/') {
-          samePageFocusPending = true;
-          window.setTimeout(() => {
-            if (!samePageFocusPending) {
-              return;
-            }
+      const isSamePageCta = (isContactCta && window.location.pathname === '/') || isPurchaseCta;
 
-            samePageFocusPending = false;
-            cleanup?.();
-            cleanup = focusContactSection(true, formWasInteractedWith);
-          }, 0);
-        }
+      if (isSamePageCta) {
+        samePageFocusPending = true;
+        window.setTimeout(() => {
+          if (!samePageFocusPending) {
+            return;
+          }
+
+          samePageFocusPending = false;
+          cleanup?.();
+          cleanup = isContactCta
+            ? highlightHashSection(
+                PUBLIC_CONTACT_ANCHOR,
+                'public-contact-highlight',
+                true,
+                formWasInteractedWith,
+              )
+            : highlightHashSection(PUBLIC_PURCHASE_ANCHOR, 'public-purchase-highlight');
+        }, 0);
       }
     };
 
-    const shouldHighlightCurrentHash = window.location.hash === `#${PUBLIC_CONTACT_ANCHOR}`;
+    const shouldHighlightCurrentHash = [PUBLIC_CONTACT_ANCHOR, PUBLIC_PURCHASE_ANCHOR].includes(
+      window.location.hash.slice(1),
+    );
     if (shouldHighlightCurrentHash) {
       handleHashChange();
     }

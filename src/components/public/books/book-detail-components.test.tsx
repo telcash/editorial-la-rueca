@@ -139,6 +139,7 @@ describe('public book detail components', () => {
         primaryEdition={edition}
         summary="Una novela que entrelaza memorias familiares."
         metaItems={[{ label: 'ISBN', value: '9788412345678' }]}
+        hasPurchaseOptions
       />,
     );
 
@@ -147,6 +148,8 @@ describe('public book detail components', () => {
     expect(html).toContain('Memoria y viaje');
     expect(html).toContain('Solicitar información');
     expect(html).toContain('href="/#publica-tu-libro"');
+    expect(html).toContain('Comprar');
+    expect(html).toContain('href="#comprar"');
     expect(html).toContain('Ver catálogo');
     expect(html).toContain('9788412345678');
   });
@@ -168,6 +171,20 @@ describe('public book detail components', () => {
 
   it('omits the purchase section when there are no public options', () => {
     expect(renderToStaticMarkup(<BookPurchaseSection channels={[]} />)).toBe('');
+  });
+
+  it('omits the hero purchase CTA when there are no public options', () => {
+    const html = renderToStaticMarkup(
+      <BookDetailHero
+        book={book}
+        primaryEdition={edition}
+        summary={null}
+        metaItems={[]}
+        hasPurchaseOptions={false}
+      />,
+    );
+
+    expect(html).not.toContain('href="#comprar"');
   });
 
   it('renders multiple resolved Quares markets as secure external links', () => {

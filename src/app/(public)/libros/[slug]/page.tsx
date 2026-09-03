@@ -4,7 +4,10 @@ import type { Metadata } from 'next';
 import { BookDetailHero } from '@/components/public/books/book-detail-hero';
 import { BookEditionsSection } from '@/components/public/books/book-editions-section';
 import { BookMetaGrid } from '@/components/public/books/book-meta-grid';
-import { BookPurchaseSection } from '@/components/public/books/book-purchase-section';
+import {
+  BookPurchaseSection,
+  hasPublicPurchaseOptions,
+} from '@/components/public/books/book-purchase-section';
 import { BookRelatedSection } from '@/components/public/books/book-related-section';
 import { PublicContainer } from '@/components/public/public-container';
 import { PublicSection } from '@/components/public/public-section';
@@ -89,6 +92,7 @@ export default async function PublicBookDetailPage({ params }: PublicBookDetailP
             primaryEdition={primaryEdition}
             summary={heroSummary}
             metaItems={heroMetaItems}
+            hasPurchaseOptions={hasPublicPurchaseOptions(purchaseOptions)}
           />
         </PublicContainer>
       </PublicSection>
