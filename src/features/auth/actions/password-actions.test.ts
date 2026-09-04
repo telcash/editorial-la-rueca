@@ -1,17 +1,12 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 const mocks = vi.hoisted(() => ({
-  headers: vi.fn(),
   revalidatePath: vi.fn(),
   redirect: vi.fn(() => {
     throw new Error('NEXT_REDIRECT');
   }),
   resetPasswordForEmail: vi.fn(),
   updateUser: vi.fn(),
-}));
-
-vi.mock('next/headers', () => ({
-  headers: mocks.headers,
 }));
 
 vi.mock('next/cache', () => ({
@@ -50,11 +45,13 @@ function createUpdateFormData(password: string, confirmPassword = password) {
 describe('password auth actions', () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    mocks.headers.mockResolvedValue({
-      get: (name: string) => (name === 'origin' ? 'https://admin.example.com' : null),
-    });
+    vi.stubEnv('NEXT_PUBLIC_SITE_URL', 'https://editorial.example.com/');
     mocks.resetPasswordForEmail.mockResolvedValue({ error: null });
     mocks.updateUser.mockResolvedValue({ error: null });
+  });
+
+  afterEach(() => {
+    vi.unstubAllEnvs();
   });
 
   it('requests a Supabase password reset without revealing account existence', async () => {
@@ -68,8 +65,23 @@ describe('password auth actions', () => {
     );
 
     expect(mocks.resetPasswordForEmail).toHaveBeenCalledWith('user@example.com', {
-      redirectTo: 'https://admin.example.com/auth/callback?next=%2Flogin%2Fupdate-password',
+      redirectTo:
+        'https://editorial.example.com/auth/callback?next=%2Flogin%2Fupdate-password',
     });
+  });
+
+  it('does not use an untrusted Origin and returns a controlled error without site config', async () => {
+    vi.stubEnv('NEXT_PUBLIC_SITE_URL', '');
+
+    const state = await requestPasswordReset({} as never, createResetFormData('user@example.com'));
+
+    expect(state).toEqual({
+      success: false,
+      fieldErrors: {},
+      formError: 'No se pudo solicitar el enlace. Inténtalo de nuevo más tarde.',
+      values: { email: 'user@example.com' },
+    });
+    expect(mocks.resetPasswordForEmail).not.toHaveBeenCalled();
   });
 
   it('returns field errors for invalid reset email before Supabase call', async () => {

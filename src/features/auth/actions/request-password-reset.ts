@@ -1,17 +1,9 @@
 'use server';
 
-import { headers } from 'next/headers';
-
 import { passwordResetRequestSchema } from '@/schemas/auth/password.schema';
 import { createClient } from '@/lib/supabase/server';
+import { getPasswordResetRedirectUrl } from '@/features/auth/lib/password-reset-url';
 import type { PasswordResetRequestState } from '../types/password-action-state';
-
-function getPasswordResetRedirectUrl(origin: string) {
-  const url = new URL('/auth/callback', origin);
-  url.searchParams.set('next', '/login/update-password');
-
-  return url.toString();
-}
 
 export async function requestPasswordReset(
   _previousState: PasswordResetRequestState,
@@ -31,11 +23,22 @@ export async function requestPasswordReset(
     };
   }
 
-  const headerStore = await headers();
-  const origin = headerStore.get('origin') ?? 'http://localhost:3000';
+  let redirectTo: string;
+
+  try {
+    redirectTo = getPasswordResetRedirectUrl();
+  } catch {
+    return {
+      success: false,
+      fieldErrors: {},
+      formError: 'No se pudo solicitar el enlace. Inténtalo de nuevo más tarde.',
+      values,
+    };
+  }
+
   const supabase = await createClient();
   const { error } = await supabase.auth.resetPasswordForEmail(parsedInput.data.email, {
-    redirectTo: getPasswordResetRedirectUrl(origin),
+    redirectTo,
   });
 
   if (error && process.env.NODE_ENV === 'development') {

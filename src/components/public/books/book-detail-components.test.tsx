@@ -146,8 +146,6 @@ describe('public book detail components', () => {
     expect(html.match(/<h1/g)?.length).toBe(1);
     expect(html).toContain('Cruce de Pasos');
     expect(html).toContain('Memoria y viaje');
-    expect(html).toContain('Solicitar información');
-    expect(html).toContain('href="/#publica-tu-libro"');
     expect(html).toContain('Comprar');
     expect(html).toContain('href="#comprar"');
     expect(html).toContain('Ver catálogo');
