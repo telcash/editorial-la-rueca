@@ -1,4 +1,9 @@
 import { SignOutButton } from '@/features/auth/components/sign-out-button';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 export default function UnauthorizedPage() {
   return (

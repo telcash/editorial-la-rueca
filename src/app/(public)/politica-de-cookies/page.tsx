@@ -8,6 +8,7 @@ import { siteConfig } from '@/config/site';
 export const metadata: Metadata = {
   title: 'Política de cookies | Editorial La Rueca',
   description: 'Información sobre el uso de cookies y tecnologías similares en Editorial La Rueca.',
+  alternates: { canonical: '/politica-de-cookies' },
 };
 
 export default function CookiePolicyPage() {

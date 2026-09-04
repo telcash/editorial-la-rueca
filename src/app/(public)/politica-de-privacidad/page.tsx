@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: 'Política de privacidad | Editorial La Rueca',
   description:
     'Información sobre el tratamiento y protección de datos personales en Editorial La Rueca.',
+  alternates: { canonical: '/politica-de-privacidad' },
 };
 
 export default function PrivacyPolicyPage() {

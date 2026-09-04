@@ -65,8 +65,7 @@ describe('password auth actions', () => {
     );
 
     expect(mocks.resetPasswordForEmail).toHaveBeenCalledWith('user@example.com', {
-      redirectTo:
-        'https://editorial.example.com/auth/callback?next=%2Flogin%2Fupdate-password',
+      redirectTo: 'https://editorial.example.com/auth/callback?next=%2Flogin%2Fupdate-password',
     });
   });
 

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: 'Aviso legal | Editorial La Rueca',
   description:
     'Información legal, condiciones de uso y datos identificativos de Editorial La Rueca.',
+  alternates: { canonical: '/aviso-legal' },
 };
 
 export default function LegalNoticePage() {

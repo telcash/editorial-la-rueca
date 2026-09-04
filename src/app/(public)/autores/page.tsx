@@ -18,6 +18,7 @@ import * as AuthorService from '@/services/authors/author.service';
 export const metadata: Metadata = {
   title: 'Autores | Editorial La Rueca',
   description: 'Autores acompañados y publicados por Editorial La Rueca.',
+  alternates: { canonical: '/autores' },
 };
 
 interface PublicAuthorsPageProps {

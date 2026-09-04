@@ -1,6 +1,11 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 
 import { PasswordResetRequestForm } from '@/features/auth/components/password-reset-request-form';
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 export default function ForgotPasswordPage() {
   return (

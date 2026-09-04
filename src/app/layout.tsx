@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Geist_Mono, Poppins, Source_Serif_4 } from 'next/font/google';
 import './globals.css';
+import { siteConfig } from '@/config/site';
+import { getPublicSiteUrl } from '@/lib/seo/public-site-url';
 
 const poppins = Poppins({
   variable: '--font-poppins',
@@ -19,9 +21,24 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: 'Editorial La Rueca',
-  description:
-    'Editorial independiente que acompaña a autores en la publicación de sus libros con cercanía, claridad y cuidado editorial.',
+  metadataBase: getPublicSiteUrl() ?? undefined,
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  openGraph: {
+    type: 'website',
+    locale: 'es_ES',
+    siteName: siteConfig.name,
+    title: siteConfig.name,
+    description: siteConfig.description,
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.name,
+    description: siteConfig.description,
+  },
 };
 
 export default function RootLayout({

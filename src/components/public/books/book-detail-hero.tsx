@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 
 import { BookAuthorsLinks } from '@/components/public/books/book-authors-links';
 import { BookCategoryBadges } from '@/components/public/books/book-category-badges';

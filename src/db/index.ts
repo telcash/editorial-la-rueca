@@ -1,7 +1,8 @@
 import postgres from 'postgres';
 import { drizzle } from 'drizzle-orm/postgres-js';
+import { getDatabaseUrl } from './database-env';
 
-const client = postgres(process.env.DATABASE_URL!, {
+const client = postgres(getDatabaseUrl(), {
   prepare: false,
 });
 let isDatabaseConnectionClosed = false;

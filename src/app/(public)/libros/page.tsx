@@ -20,6 +20,7 @@ import * as CategoryService from '@/services/categories/category.service';
 export const metadata: Metadata = {
   title: 'Libros | Editorial La Rueca',
   description: 'Catálogo de libros publicados por Editorial La Rueca.',
+  alternates: { canonical: '/libros' },
 };
 
 interface PublicBooksPageProps {

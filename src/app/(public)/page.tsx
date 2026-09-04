@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { connection } from 'next/server';
+import type { Metadata } from 'next';
 import { ArrowRight, BookOpen, UsersRound } from 'lucide-react';
 
 import { FeaturedAuthorsCarousel } from '@/components/public/featured-authors-carousel';
 import { FeaturedBooksCarousel } from '@/components/public/featured-books-carousel';
-import { EditorialVideo } from '@/components/public/editorial-video';
 import { PublicButton } from '@/components/public/public-button';
 import { PublicCard } from '@/components/public/public-card';
 import { PublicContainer } from '@/components/public/public-container';
@@ -12,7 +12,6 @@ import { PublicCtaLink } from '@/components/public/public-cta-link';
 import { PublicSection } from '@/components/public/public-section';
 import { SectionHeading } from '@/components/public/section-heading';
 import { TestimonialsSection } from '@/components/public/testimonials-section';
-import { editorialVideoContent } from '@/content/public-home';
 import { PublicContactForm } from '@/features/public/contact/components/public-contact-form';
 import type { Author } from '@/db/schema';
 import * as AuthorTestimonialService from '@/services/author-testimonials/author-testimonial.service';
@@ -24,6 +23,11 @@ import * as EditorialServiceService from '@/services/editorial-services/editoria
 import type { EditorialServicePublicItem } from '@/services/editorial-services/editorial-service.types';
 import * as PublicHomeService from '@/services/public-home/public-home.service';
 import type { PublicHomeMetrics } from '@/services/public-home/public-home.types';
+
+export const metadata: Metadata = {
+  title: 'Editorial La Rueca',
+  alternates: { canonical: '/' },
+};
 
 interface HomeData {
   featuredBooks: BookWithDetails[];

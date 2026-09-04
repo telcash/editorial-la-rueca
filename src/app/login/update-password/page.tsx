@@ -1,4 +1,9 @@
 import { UpdatePasswordForm } from '@/features/auth/components/update-password-form';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 export default function UpdatePasswordPage() {
   return (

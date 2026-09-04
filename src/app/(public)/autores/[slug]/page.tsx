@@ -40,6 +40,13 @@ export async function generateMetadata({ params }: PublicAuthorDetailPageProps):
   return {
     title: `${author.name} | Editorial La Rueca`,
     description: toPlainPublicText(author.shortBio ?? author.biography) ?? undefined,
+    alternates: { canonical: `/autores/${author.slug}` },
+    openGraph: {
+      type: 'profile',
+      title: author.name,
+      description: toPlainPublicText(author.shortBio ?? author.biography) ?? undefined,
+      images: author.photoUrl ? [author.photoUrl] : undefined,
+    },
   };
 }
 

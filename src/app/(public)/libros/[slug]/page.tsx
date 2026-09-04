@@ -63,6 +63,14 @@ export async function generateMetadata({ params }: PublicBookDetailPageProps): P
     title: `${book.metaTitle ?? book.title} | Editorial La Rueca`,
     description:
       toPlainPublicText(book.metaDescription ?? book.excerpt ?? book.description) ?? undefined,
+    alternates: { canonical: `/libros/${book.slug}` },
+    openGraph: {
+      type: 'article',
+      title: book.metaTitle ?? book.title,
+      description:
+        toPlainPublicText(book.metaDescription ?? book.excerpt ?? book.description) ?? undefined,
+      images: book.coverUrl ? [book.coverUrl] : undefined,
+    },
   };
 }
 
