@@ -12,6 +12,10 @@ import * as ContactRequestService from '@/services/contact-requests/contact-requ
 
 export interface ResendContactRequestNotificationResult {
   success: boolean;
+  feedback:
+    | 'contactRequestNotificationSent'
+    | 'contactRequestNotificationSentUnconfirmed'
+    | 'contactRequestNotificationFailed';
 }
 
 export async function resendContactRequestNotificationAction(
@@ -19,26 +23,16 @@ export async function resendContactRequestNotificationAction(
 ): Promise<ResendContactRequestNotificationResult> {
   await requireEditorialStaff();
 
+  let result: Awaited<ReturnType<typeof sendContactRequestNotification>>;
+
   try {
     const contactRequest = await ContactRequestService.getContactRequestById(contactRequestId);
-    const result = await sendContactRequestNotification(contactRequest, undefined, undefined, {
+    result = await sendContactRequestNotification(contactRequest, undefined, undefined, {
       force: true,
     });
-
-    if (result.status === 'sent' && result.sentAt) {
-      await ContactRequestService.markContactRequestEmailNotificationSent(
-        contactRequestId,
-        result.sentAt,
-      );
-    }
-
-    revalidatePath('/admin/contact-requests');
-    revalidatePath(`/admin/contact-requests/${contactRequestId}`);
-
-    return { success: true };
   } catch (error) {
     if (error instanceof ContactRequestNotFoundError) {
-      return { success: false };
+      return { success: false, feedback: 'contactRequestNotificationFailed' };
     }
 
     const emailError = getContactRequestNotificationErrorMessage(error);
@@ -63,6 +57,30 @@ export async function resendContactRequestNotificationAction(
     revalidatePath('/admin/contact-requests');
     revalidatePath(`/admin/contact-requests/${contactRequestId}`);
 
-    return { success: false };
+    return { success: false, feedback: 'contactRequestNotificationFailed' };
   }
+
+  if (result.status === 'sent' && result.sentAt) {
+    try {
+      await ContactRequestService.markContactRequestEmailNotificationSent(
+        contactRequestId,
+        result.sentAt,
+      );
+    } catch (error) {
+      console.error('[ContactRequestAdmin] Notification sent but status confirmation failed', {
+        contactRequestId,
+        message: getContactRequestNotificationErrorMessage(error),
+      });
+
+      revalidatePath('/admin/contact-requests');
+      revalidatePath(`/admin/contact-requests/${contactRequestId}`);
+
+      return { success: true, feedback: 'contactRequestNotificationSentUnconfirmed' };
+    }
+  }
+
+  revalidatePath('/admin/contact-requests');
+  revalidatePath(`/admin/contact-requests/${contactRequestId}`);
+
+  return { success: true, feedback: 'contactRequestNotificationSent' };
 }

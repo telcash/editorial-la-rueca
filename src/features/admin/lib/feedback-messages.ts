@@ -22,6 +22,8 @@ const feedbackMessages = {
   serviceRestored: 'Servicio restaurado correctamente.',
   contactRequestUpdated: 'Solicitud actualizada correctamente.',
   contactRequestNotificationSent: 'Notificación enviada correctamente.',
+  contactRequestNotificationSentUnconfirmed:
+    'La notificación se envió, pero no se pudo confirmar su estado en el CRM.',
   contactRequestNotificationFailed:
     'No se pudo reenviar la notificación. La solicitud se conserva y el error quedó registrado.',
   testimonialCreated: 'Testimonio creado correctamente.',

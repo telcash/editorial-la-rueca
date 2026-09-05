@@ -76,6 +76,32 @@ describe('contact request notification email', () => {
     expect(email.text).toContain('Servicio:\nCorrección de manuscrito');
     expect(email.text).toContain('Correo:\nmaria@example.com');
     expect(email.text).toContain('Origen:\nWebsite');
+    expect(email.text).not.toContain('Atribución:');
+    expect(email.html).not.toContain('UTM source');
+  });
+
+  it('includes only the compact UTM attribution when it exists', () => {
+    const email = buildContactRequestNotificationEmail(
+      {
+        ...contactRequest,
+        utmSource: 'instagram & partners',
+        utmMedium: 'social',
+        utmCampaign: 'manuscrito <septiembre>',
+        utmContent: 'reel-01',
+        utmTerm: 'novela',
+      },
+      smtpConfig,
+    );
+
+    expect(email.html).toContain('UTM source');
+    expect(email.html).toContain('instagram &amp; partners');
+    expect(email.html).toContain('manuscrito &lt;septiembre&gt;');
+    expect(email.text).toContain('Atribución:');
+    expect(email.text).toContain('UTM medium: social');
+    expect(email.html).not.toContain('reel-01');
+    expect(email.text).not.toContain('reel-01');
+    expect(email.html).not.toContain('novela');
+    expect(email.text).not.toContain('novela');
   });
 
   it('sends once and returns sentAt when no previous notification exists', async () => {
@@ -139,5 +165,13 @@ describe('contact request notification email', () => {
         new Error('Authentication failed for info@editoriallarueca.com\nstack trace'),
       ),
     ).toBe('Authentication failed for [email] stack trace');
+
+    expect(
+      getContactRequestNotificationErrorMessage(
+        new Error(
+          'SMTP_PASSWORD=super-secret smtp-user smtp.example.com\ncontact me at admin@example.com',
+        ),
+      ),
+    ).toBe('[redacted] [redacted] contact me at [email]');
   });
 });

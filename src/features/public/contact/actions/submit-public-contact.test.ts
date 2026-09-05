@@ -238,6 +238,25 @@ describe('submitPublicContactAction', () => {
     expect(mocks.markContactRequestEmailNotificationSent).not.toHaveBeenCalled();
   });
 
+  it('keeps SMTP success separate when confirming the sent status fails', async () => {
+    mocks.markContactRequestEmailNotificationSent.mockRejectedValue(
+      new Error('database unavailable after SMTP delivery'),
+    );
+
+    const result = await submitPublicContactAction(
+      initialPublicContactFormState,
+      createValidFormData(),
+    );
+
+    expect(result.success).toBe(true);
+    expect(mocks.markContactRequestEmailNotificationSent).toHaveBeenCalledOnce();
+    expect(mocks.markContactRequestEmailNotificationFailed).not.toHaveBeenCalled();
+    expect(consoleErrorSpy).toHaveBeenCalledWith(
+      '[PublicContact] Contact request notification sent but status confirmation failed',
+      expect.objectContaining({ contactRequestId }),
+    );
+  });
+
   it('returns success when SMTP configuration is missing after persistence', async () => {
     mocks.sendContactRequestNotification.mockRejectedValue(
       new Error('Missing SMTP configuration: SMTP_HOST.'),

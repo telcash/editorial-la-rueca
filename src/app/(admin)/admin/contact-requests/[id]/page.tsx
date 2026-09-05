@@ -9,6 +9,7 @@ import { AdminPageHeader } from '@/features/admin/components/admin-page-header';
 import { AdminFeedbackBanner } from '@/features/admin/components/feedback/admin-feedback-banner';
 import { ContactRequestAdminForm } from '@/features/admin/contact-requests/components/contact-request-admin-form';
 import { ContactRequestStatusBadge } from '@/features/admin/contact-requests/components/contact-request-status-badge';
+import { ContactRequestEmailStatusBadge } from '@/features/admin/contact-requests/components/contact-request-email-status-badge';
 import { ResendContactRequestNotificationButton } from '@/features/admin/contact-requests/components/resend-contact-request-notification-button';
 import { contactRequestSourceLabels } from '@/features/admin/contact-requests/lib/contact-request-labels';
 import { getContactRequestAdminFormValuesFromContactRequest } from '@/features/admin/contact-requests/lib/contact-request-form-data';
@@ -67,18 +68,6 @@ function DetailItem({ label, children }: { label: string; children: ReactNode })
       <dd className="text-sm text-foreground">{children}</dd>
     </div>
   );
-}
-
-function getEmailNotificationStatus(contactRequest: ContactRequestAdminDetail) {
-  if (contactRequest.emailSentAt && !contactRequest.emailError) {
-    return 'Enviada';
-  }
-
-  if (contactRequest.emailError) {
-    return 'Error';
-  }
-
-  return 'Pendiente';
 }
 
 export default async function ContactRequestDetailPage({
@@ -231,7 +220,10 @@ export default async function ContactRequestDetailPage({
             <CardContent className="space-y-5">
               <dl className="grid gap-5 sm:grid-cols-2">
                 <DetailItem label="Estado email">
-                  <span className="font-medium">{getEmailNotificationStatus(contactRequest)}</span>
+                  <ContactRequestEmailStatusBadge
+                    emailSentAt={contactRequest.emailSentAt}
+                    emailError={contactRequest.emailError}
+                  />
                 </DetailItem>
                 <DetailItem label="Fecha de envío">
                   {contactRequest.emailSentAt

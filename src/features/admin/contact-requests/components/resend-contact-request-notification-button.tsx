@@ -32,9 +32,7 @@ export function ResendContactRequestNotificationButton({
     startTransition(async () => {
       const result = await resendContactRequestNotificationAction(contactRequestId);
 
-      navigateWithFeedback(
-        result.success ? 'contactRequestNotificationSent' : 'contactRequestNotificationFailed',
-      );
+      navigateWithFeedback(result.feedback);
     });
   }
 

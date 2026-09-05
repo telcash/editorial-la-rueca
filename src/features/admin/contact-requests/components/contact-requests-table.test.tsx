@@ -34,11 +34,11 @@ describe('ContactRequestsTable', () => {
     expect(html).toContain('Corrección de manuscrito');
     expect(html).toContain('En seguimiento');
     expect(html).toContain('Instagram');
-    expect(html).toContain('Email enviado');
+    expect(html).toContain('Email enviada');
     expect(html).toContain('/admin/contact-requests/45aa8657-bf26-4b62-bc01-8ba7570d7bbb');
   });
 
-  it('shows a discreet warning when email notification is pending or failed', () => {
+  it('distinguishes an email error from a pending notification', () => {
     const html = renderToStaticMarkup(
       <ContactRequestsTable
         contactRequests={[
@@ -51,6 +51,14 @@ describe('ContactRequestsTable', () => {
       />,
     );
 
-    expect(html).toContain('Email pendiente');
+    expect(html).toContain('Error de email');
+
+    const pendingHtml = renderToStaticMarkup(
+      <ContactRequestsTable
+        contactRequests={[{ ...contactRequest, emailSentAt: null, emailError: null }]}
+      />,
+    );
+
+    expect(pendingHtml).toContain('Email pendiente');
   });
 });

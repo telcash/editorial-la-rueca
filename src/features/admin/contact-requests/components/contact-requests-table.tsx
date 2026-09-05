@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import { CheckCircle2, TriangleAlert } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import type { ContactRequestAdminListItem } from '@/services/contact-requests/contact-request.types';
 import { contactRequestSourceLabels } from '../lib/contact-request-labels';
 import { formatContactRequestDate } from '../lib/format-contact-request-date';
 import { ContactRequestStatusBadge } from './contact-request-status-badge';
+import { ContactRequestEmailStatusBadge } from './contact-request-email-status-badge';
 
 interface ContactRequestsTableProps {
   contactRequests: ContactRequestAdminListItem[];
@@ -49,24 +49,11 @@ export function ContactRequestsTable({ contactRequests }: ContactRequestsTablePr
                 </td>
                 <td className="px-4 py-3">
                   <div className="font-medium text-foreground">{contactRequest.name}</div>
-                  <div
-                    className={
-                      contactRequest.emailSentAt && !contactRequest.emailError
-                        ? 'mt-1 inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-medium text-emerald-700'
-                        : 'mt-1 inline-flex items-center gap-1 rounded-full bg-amber-50 px-2 py-0.5 text-xs font-medium text-amber-700'
-                    }
-                  >
-                    {contactRequest.emailSentAt && !contactRequest.emailError ? (
-                      <>
-                        <CheckCircle2 className="size-3" aria-hidden="true" />
-                        Email enviado
-                      </>
-                    ) : (
-                      <>
-                        <TriangleAlert className="size-3" aria-hidden="true" />
-                        Email pendiente
-                      </>
-                    )}
+                  <div className="mt-1">
+                    <ContactRequestEmailStatusBadge
+                      emailSentAt={contactRequest.emailSentAt}
+                      emailError={contactRequest.emailError}
+                    />
                   </div>
                   <div className="mt-0.5 text-xs text-muted-foreground">
                     <a href={`mailto:${contactRequest.email}`} className="hover:text-foreground">

@@ -93,17 +93,12 @@ export async function submitPublicContactAction(
     };
   }
 
+  let notificationResult: Awaited<ReturnType<typeof sendContactRequestNotification>>;
+
   try {
     const contactRequest =
       await ContactRequestService.getContactRequestById(createdContactRequestId);
-    const notificationResult = await sendContactRequestNotification(contactRequest);
-
-    if (notificationResult.status === 'sent' && notificationResult.sentAt) {
-      await ContactRequestService.markContactRequestEmailNotificationSent(
-        createdContactRequestId,
-        notificationResult.sentAt,
-      );
-    }
+    notificationResult = await sendContactRequestNotification(contactRequest);
   } catch (error) {
     const emailError = getContactRequestNotificationErrorMessage(error);
 
@@ -123,6 +118,30 @@ export async function submitPublicContactAction(
       contactRequestId: createdContactRequestId,
       message: emailError,
     });
+
+    return {
+      success: true,
+      fieldErrors: {},
+      formError: null,
+      values: initialPublicContactFormValues,
+    };
+  }
+
+  if (notificationResult.status === 'sent' && notificationResult.sentAt) {
+    try {
+      await ContactRequestService.markContactRequestEmailNotificationSent(
+        createdContactRequestId,
+        notificationResult.sentAt,
+      );
+    } catch (error) {
+      console.error(
+        '[PublicContact] Contact request notification sent but status confirmation failed',
+        {
+          contactRequestId: createdContactRequestId,
+          message: getContactRequestNotificationErrorMessage(error),
+        },
+      );
+    }
   }
 
   return {

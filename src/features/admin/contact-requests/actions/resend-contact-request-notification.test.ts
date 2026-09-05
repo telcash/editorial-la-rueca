@@ -100,7 +100,10 @@ describe('resendContactRequestNotificationAction', () => {
   it('marks the notification as sent and clears the previous email error', async () => {
     const result = await resendContactRequestNotificationAction(contactRequestId);
 
-    expect(result).toEqual({ success: true });
+    expect(result).toEqual({
+      success: true,
+      feedback: 'contactRequestNotificationSent',
+    });
     expect(mocks.markContactRequestEmailNotificationSent).toHaveBeenCalledWith(
       contactRequestId,
       new Date('2026-08-21T10:00:00.000Z'),
@@ -118,7 +121,10 @@ describe('resendContactRequestNotificationAction', () => {
 
     const result = await resendContactRequestNotificationAction(contactRequestId);
 
-    expect(result).toEqual({ success: false });
+    expect(result).toEqual({
+      success: false,
+      feedback: 'contactRequestNotificationFailed',
+    });
     expect(mocks.markContactRequestEmailNotificationFailed).toHaveBeenCalledWith(
       contactRequestId,
       'SMTP timeout',
@@ -131,6 +137,27 @@ describe('resendContactRequestNotificationAction', () => {
         contactRequestId,
         message: 'SMTP timeout',
       },
+    );
+
+    consoleErrorSpy.mockRestore();
+  });
+
+  it('does not mark SMTP failed when sent status confirmation fails', async () => {
+    const consoleErrorSpy = vi.spyOn(console, 'error').mockImplementation(() => undefined);
+    mocks.markContactRequestEmailNotificationSent.mockRejectedValue(
+      new Error('database unavailable after SMTP delivery'),
+    );
+
+    const result = await resendContactRequestNotificationAction(contactRequestId);
+
+    expect(result).toEqual({
+      success: true,
+      feedback: 'contactRequestNotificationSentUnconfirmed',
+    });
+    expect(mocks.markContactRequestEmailNotificationFailed).not.toHaveBeenCalled();
+    expect(consoleErrorSpy).toHaveBeenCalledWith(
+      '[ContactRequestAdmin] Notification sent but status confirmation failed',
+      expect.objectContaining({ contactRequestId }),
     );
 
     consoleErrorSpy.mockRestore();

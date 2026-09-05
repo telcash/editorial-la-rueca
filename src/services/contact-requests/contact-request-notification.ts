@@ -36,6 +36,21 @@ function sanitizeHeaderValue(value: string): string {
   return value.replace(/[\r\n]+/g, ' ').trim();
 }
 
+function sanitizeErrorValue(value: string): string {
+  return value
+    .replace(/https?:\/\/[^\s@]+@[^\s]+/gi, '[url]')
+    .replace(
+      /\b(?:smtp[_ -]?(?:password|user|host)|password|passwd|pass|secret|token)\s*[:=]\s*[^\s,;]+/gi,
+      '[redacted]',
+    )
+    .replace(/\b(?:smtp[_ -]?user|smtp[_ -]?host)\s+[^\s,;]+/gi, '[redacted]')
+    .replace(/\bsmtp(?:[-_.][a-z0-9.-]+)+/gi, '[redacted]')
+    .replace(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi, '[email]')
+    .replace(/[\r\n]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function formatDate(date: Date): string {
   return new Intl.DateTimeFormat('es-ES', {
     dateStyle: 'medium',
@@ -64,10 +79,18 @@ export function buildContactRequestNotificationEmail(
     ['Teléfono', contactRequest.phone],
     ['Provincia', contactRequest.province],
     ['Fecha', formattedDate],
-    ['Origen', 'Website'],
+    ['Origen', contactRequest.source],
   ] as const;
 
-  const htmlRows = rows
+  const attributionRows = [
+    ['UTM source', contactRequest.utmSource],
+    ['UTM medium', contactRequest.utmMedium],
+    ['Campaña', contactRequest.utmCampaign],
+  ].filter(([, value]) => value) as [string, string][];
+
+  const allRows = [...rows, ...attributionRows];
+
+  const htmlRows = allRows
     .map(
       ([label, value]) => `
         <tr>
@@ -116,7 +139,11 @@ Fecha:
 ${formattedDate}
 
 Origen:
-Website`;
+Website${
+    attributionRows.length > 0
+      ? `\n\nAtribución:\n${attributionRows.map(([label, value]) => `${label}: ${value}`).join('\n')}`
+      : ''
+  }`;
 
   return {
     from: getFromHeader(config),
@@ -130,9 +157,7 @@ Website`;
 
 export function getContactRequestNotificationErrorMessage(error: unknown): string {
   const rawMessage = error instanceof Error ? error.message : 'Contact request email failed.';
-  const normalizedMessage = normalizePlainText(rawMessage)
-    .replace(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi, '[email]')
-    .replace(/\s+/g, ' ');
+  const normalizedMessage = sanitizeErrorValue(normalizePlainText(rawMessage));
 
   return normalizedMessage.slice(0, ERROR_MESSAGE_MAX_LENGTH);
 }
