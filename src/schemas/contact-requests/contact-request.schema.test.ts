@@ -68,6 +68,19 @@ describe('contact request schemas', () => {
     ).toBe(false);
   });
 
+  it('enforces the database-aligned UTM limits', () => {
+    const result = createContactRequestSchema.safeParse({
+      ...validCreateInput,
+      utmSource: 'x'.repeat(161),
+      utmMedium: 'x'.repeat(161),
+      utmCampaign: 'x'.repeat(180),
+      utmContent: 'x'.repeat(180),
+      utmTerm: 'x'.repeat(180),
+    });
+
+    expect(result.success).toBe(false);
+  });
+
   it('rejects status and internal notes from public creation input', () => {
     const result = createContactRequestSchema.safeParse({
       ...validCreateInput,

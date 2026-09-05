@@ -10,6 +10,11 @@ export const publicContactSchema = createContactRequestSchema
     province: true,
     serviceId: true,
     message: true,
+    utmSource: true,
+    utmMedium: true,
+    utmCampaign: true,
+    utmContent: true,
+    utmTerm: true,
   })
   .extend({
     company: z.string().max(0).optional(),

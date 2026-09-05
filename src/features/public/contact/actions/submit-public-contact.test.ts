@@ -92,6 +92,11 @@ describe('submitPublicContactAction', () => {
       serviceId,
       message: 'Quiero recibir orientación editorial para publicar mi primer libro.',
       source: 'website',
+      utmSource: null,
+      utmMedium: null,
+      utmCampaign: null,
+      utmContent: null,
+      utmTerm: null,
     });
     expect(mocks.getContactRequestById).toHaveBeenCalledWith(contactRequestId);
     expect(mocks.sendContactRequestNotification).toHaveBeenCalledWith({
@@ -132,6 +137,38 @@ describe('submitPublicContactAction', () => {
 
     expect(result.success).toBe(true);
     expect(mocks.createContactRequest).toHaveBeenCalledOnce();
+  });
+
+  it('passes validated UTM attribution to the contact request service', async () => {
+    const formData = createValidFormData();
+    formData.set('utm_source', 'instagram');
+    formData.set('utm_medium', 'social');
+    formData.set('utm_campaign', 'manuscrito_cajon');
+    formData.set('utm_content', 'reel_01');
+
+    await submitPublicContactAction(initialPublicContactFormState, formData);
+
+    expect(mocks.createContactRequest).toHaveBeenCalledWith(
+      expect.objectContaining({
+        source: 'website',
+        utmSource: 'instagram',
+        utmMedium: 'social',
+        utmCampaign: 'manuscrito_cajon',
+        utmContent: 'reel_01',
+        utmTerm: null,
+      }),
+    );
+  });
+
+  it('preserves UTM attribution values when validation fails', async () => {
+    const formData = new FormData();
+    formData.set('utm_source', 'instagram');
+    formData.set('utm_campaign', 'manuscrito_cajon');
+
+    const result = await submitPublicContactAction(initialPublicContactFormState, formData);
+
+    expect(result.values.utmSource).toBe('instagram');
+    expect(result.values.utmCampaign).toBe('manuscrito_cajon');
   });
 
   it('returns a service field error for unavailable services', async () => {

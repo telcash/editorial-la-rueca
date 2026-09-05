@@ -21,6 +21,13 @@ describe('PublicContactForm', () => {
             name: 'Ghostwriting',
           },
         ]}
+        utmValues={{
+          utmSource: 'instagram',
+          utmMedium: 'social',
+          utmCampaign: 'manuscrito_cajon',
+          utmContent: 'reel_01',
+          utmTerm: '',
+        }}
       />,
     );
 
@@ -30,6 +37,8 @@ describe('PublicContactForm', () => {
     expect(html).toContain('Provincia');
     expect(html).toContain('Solicitar información');
     expect(html).toContain('href="/politica-de-privacidad"');
+    expect(html).toContain('name="utm_source" value="instagram"');
+    expect(html).toContain('name="utm_campaign" value="manuscrito_cajon"');
     expect(html).not.toContain('name="privacyAccepted"');
   });
 

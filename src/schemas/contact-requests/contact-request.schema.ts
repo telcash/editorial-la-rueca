@@ -1,5 +1,7 @@
 import { z } from 'zod';
 
+import { contactRequestUtmLimits } from './utm';
+
 export const contactRequestStatuses = ['new', 'contacted', 'in_progress', 'won', 'lost'] as const;
 export const contactRequestSources = [
   'website',
@@ -22,15 +24,24 @@ const optionalTrimmedStringAsNull = z.preprocess((value) => {
   return trimmedValue.length === 0 ? null : trimmedValue;
 }, z.string().trim().nullable().optional());
 
-const optionalUtmSchema = z.preprocess((value) => {
-  if (typeof value !== 'string') {
-    return value;
-  }
+const optionalUtmSchema = (maxLength: number) =>
+  z.preprocess(
+    (value) => {
+      if (typeof value !== 'string') {
+        return value;
+      }
 
-  const trimmedValue = value.trim();
+      const trimmedValue = value.trim();
 
-  return trimmedValue.length === 0 ? null : trimmedValue;
-}, z.string().trim().max(180, 'El valor UTM no puede superar los 180 caracteres.').nullable().optional());
+      return trimmedValue.length === 0 ? null : trimmedValue;
+    },
+    z
+      .string()
+      .trim()
+      .max(maxLength, `El valor UTM no puede superar los ${maxLength} caracteres.`)
+      .nullable()
+      .optional(),
+  );
 
 const phonePattern = /^[0-9+()\-\s.]{6,40}$/;
 
@@ -65,11 +76,11 @@ export const createContactRequestSchema = z
       .min(10, 'El mensaje debe tener al menos 10 caracteres.')
       .max(5000, 'El mensaje no puede superar los 5000 caracteres.'),
     source: contactRequestSourceSchema.default('website'),
-    utmSource: optionalUtmSchema,
-    utmMedium: optionalUtmSchema,
-    utmCampaign: optionalUtmSchema,
-    utmContent: optionalUtmSchema,
-    utmTerm: optionalUtmSchema,
+    utmSource: optionalUtmSchema(contactRequestUtmLimits.utmSource),
+    utmMedium: optionalUtmSchema(contactRequestUtmLimits.utmMedium),
+    utmCampaign: optionalUtmSchema(contactRequestUtmLimits.utmCampaign),
+    utmContent: optionalUtmSchema(contactRequestUtmLimits.utmContent),
+    utmTerm: optionalUtmSchema(contactRequestUtmLimits.utmTerm),
   })
   .strict();
 

@@ -91,6 +91,10 @@ export default function PrivacyPolicyPage() {
               <li>provincia;</li>
               <li>servicio editorial de interés;</li>
               <li>mensaje o información facilitada por la persona interesada.</li>
+              <li>
+                información técnica de procedencia, campaña, medio o contenido promocional, cuando
+                corresponda y exista la configuración de consentimiento necesaria.
+              </li>
             </ul>
 
             <p className="mt-3">
@@ -120,6 +124,10 @@ export default function PrivacyPolicyPage() {
               <li>
                 enviar al equipo de {siteConfig.legalData.companyName} las notificaciones operativas
                 necesarias para atender la solicitud;
+              </li>
+              <li>
+                medir la atribución de las solicitudes y campañas cuando la persona usuaria haya
+                aceptado la categoría Analytics;
               </li>
               <li>
                 gestionar, cuando corresponda, actuaciones previas a una eventual contratación de

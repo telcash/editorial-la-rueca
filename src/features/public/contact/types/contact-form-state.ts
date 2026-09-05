@@ -6,7 +6,17 @@ export interface PublicContactFormValues {
   serviceId: string;
   message: string;
   company: string;
+  utmSource: string;
+  utmMedium: string;
+  utmCampaign: string;
+  utmContent: string;
+  utmTerm: string;
 }
+
+export type PublicContactUtmValues = Pick<
+  PublicContactFormValues,
+  'utmSource' | 'utmMedium' | 'utmCampaign' | 'utmContent' | 'utmTerm'
+>;
 
 export interface PublicContactFormState {
   success: boolean;
@@ -23,6 +33,11 @@ export const initialPublicContactFormValues: PublicContactFormValues = {
   serviceId: '',
   message: '',
   company: '',
+  utmSource: '',
+  utmMedium: '',
+  utmCampaign: '',
+  utmContent: '',
+  utmTerm: '',
 };
 
 export const initialPublicContactFormState: PublicContactFormState = {

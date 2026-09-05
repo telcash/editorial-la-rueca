@@ -49,6 +49,11 @@ export async function submitPublicContactAction(
       serviceId: parsedInput.data.serviceId,
       message: parsedInput.data.message,
       source: 'website',
+      utmSource: parsedInput.data.utmSource ?? null,
+      utmMedium: parsedInput.data.utmMedium ?? null,
+      utmCampaign: parsedInput.data.utmCampaign ?? null,
+      utmContent: parsedInput.data.utmContent ?? null,
+      utmTerm: parsedInput.data.utmTerm ?? null,
     });
 
     createdContactRequestId = contactRequest.id;

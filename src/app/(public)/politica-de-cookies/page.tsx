@@ -87,12 +87,21 @@ export default function CookiePolicyPage() {
           </PolicySection>
 
           <PolicySection title="4. Cookies de analítica">
-            <p>Actualmente no hay herramientas opcionales de analítica instaladas en esta web.</p>
+            <p>
+              Cuando la persona usuaria acepta la categoría Analytics, la web puede utilizar
+              temporalmente el almacenamiento de sesión del navegador para conservar parámetros de
+              procedencia y campaña durante la navegación.
+            </p>
 
             <p className="mt-3">
-              El sistema de consentimiento incluye una categoría de analítica preparada para que, si
-              en el futuro se incorpora una herramienta de medición que requiera consentimiento,
-              permanezca desactivada hasta que la persona usuaria decida aceptarla.
+              Esta información se utiliza para medir la atribución de las solicitudes recibidas y de
+              las campañas que las originan. Se elimina al revocar Analytics y, normalmente, el
+              almacenamiento de sesión se limita a la sesión y a la pestaña del navegador.
+            </p>
+
+            <p className="mt-3">
+              Este almacenamiento de sesión no es una cookie. No se incorporan con esta finalidad
+              GA4, GTM, Meta Pixel ni otros sistemas externos de seguimiento.
             </p>
           </PolicySection>
 
@@ -115,8 +124,9 @@ export default function CookiePolicyPage() {
             </p>
 
             <p className="mt-3">
-              Actualmente no se identifican cookies opcionales concretas de analítica o marketing
-              que deban incluirse en un inventario adicional.
+              Actualmente no se identifican cookies opcionales concretas de marketing que deban
+              incluirse en un inventario adicional. La atribución Analytics descrita anteriormente
+              utiliza almacenamiento de sesión, no una cookie.
             </p>
 
             <p className="mt-3">

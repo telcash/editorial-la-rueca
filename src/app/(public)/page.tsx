@@ -13,6 +13,7 @@ import { PublicSection } from '@/components/public/public-section';
 import { SectionHeading } from '@/components/public/section-heading';
 import { TestimonialsSection } from '@/components/public/testimonials-section';
 import { PublicContactForm } from '@/features/public/contact/components/public-contact-form';
+import { getPublicContactUtmValues } from '@/features/public/contact/lib/contact-form-data';
 import type { Author } from '@/db/schema';
 import * as AuthorTestimonialService from '@/services/author-testimonials/author-testimonial.service';
 import type { AuthorTestimonialPublicItem } from '@/services/author-testimonials/author-testimonial.types';
@@ -142,9 +143,14 @@ function HeroMetrics({ metrics }: { metrics: PublicHomeMetrics | null }) {
   );
 }
 
-export default async function PublicHomePage() {
+interface PublicHomePageProps {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}
+
+export default async function PublicHomePage({ searchParams }: PublicHomePageProps) {
   await connection();
 
+  const params = await searchParams;
   const { featuredBooks, featuredAuthors, featuredTestimonials, publishedServices, metrics } =
     await getHomeData();
 
@@ -200,7 +206,10 @@ export default async function PublicHomePage() {
                 proyecto.
               </p>
               <div className="mt-7">
-                <PublicContactForm services={publishedServices} />
+                <PublicContactForm
+                  services={publishedServices}
+                  utmValues={getPublicContactUtmValues(params)}
+                />
               </div>
             </PublicCard>
           </div>

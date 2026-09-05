@@ -8,8 +8,13 @@ import { Send } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
+import { usePublicContactUtmAttribution } from '../lib/utm-attribution-client-store';
+import { hasPublicContactUtmValues } from '../lib/utm-attribution';
 import { submitPublicContactAction } from '../actions/submit-public-contact';
-import { initialPublicContactFormState } from '../types/contact-form-state';
+import {
+  initialPublicContactFormState,
+  type PublicContactUtmValues,
+} from '../types/contact-form-state';
 
 function FieldError({ id, message }: { id: string; message?: string }) {
   if (!message) {
@@ -30,6 +35,7 @@ interface PublicContactFormServiceOption {
 
 interface PublicContactFormProps {
   services: PublicContactFormServiceOption[];
+  utmValues?: PublicContactUtmValues;
 }
 
 function SubmitButton({ disabled }: { disabled: boolean }) {
@@ -47,16 +53,38 @@ function SubmitButton({ disabled }: { disabled: boolean }) {
   );
 }
 
-export function PublicContactForm({ services }: PublicContactFormProps) {
-  const [state, formAction] = useActionState(
-    submitPublicContactAction,
-    initialPublicContactFormState,
-  );
-  const formKey = state.success ? 'success' : JSON.stringify(state.values);
+export function PublicContactForm({ services, utmValues }: PublicContactFormProps) {
+  const storedUtmValues = usePublicContactUtmAttribution();
+  const directUtmValues = utmValues ?? initialPublicContactFormState.values;
+  const effectiveUtmValues = hasPublicContactUtmValues(directUtmValues)
+    ? directUtmValues
+    : (storedUtmValues ?? initialPublicContactFormState.values);
+  const initialState = {
+    ...initialPublicContactFormState,
+    values: {
+      ...initialPublicContactFormState.values,
+      ...effectiveUtmValues,
+    },
+  };
+  const [state, formAction] = useActionState(submitPublicContactAction, initialState);
+  const formValues = {
+    ...state.values,
+    utmSource: state.values.utmSource || effectiveUtmValues.utmSource,
+    utmMedium: state.values.utmMedium || effectiveUtmValues.utmMedium,
+    utmCampaign: state.values.utmCampaign || effectiveUtmValues.utmCampaign,
+    utmContent: state.values.utmContent || effectiveUtmValues.utmContent,
+    utmTerm: state.values.utmTerm || effectiveUtmValues.utmTerm,
+  };
+  const formKey = state.success ? 'success' : JSON.stringify(formValues);
   const hasServices = services.length > 0;
 
   return (
     <form key={formKey} action={formAction} className="space-y-5" noValidate>
+      <input type="hidden" name="utm_source" defaultValue={formValues.utmSource} />
+      <input type="hidden" name="utm_medium" defaultValue={formValues.utmMedium} />
+      <input type="hidden" name="utm_campaign" defaultValue={formValues.utmCampaign} />
+      <input type="hidden" name="utm_content" defaultValue={formValues.utmContent} />
+      <input type="hidden" name="utm_term" defaultValue={formValues.utmTerm} />
       {state.success ? (
         <div
           role="status"
@@ -221,7 +249,7 @@ export function PublicContactForm({ services }: PublicContactFormProps) {
         >
           Política de privacidad
         </Link>
-        .
+        . La solicitud puede incorporar datos técnicos de procedencia y campaña cuando corresponda.
       </p>
 
       <SubmitButton disabled={!hasServices} />
