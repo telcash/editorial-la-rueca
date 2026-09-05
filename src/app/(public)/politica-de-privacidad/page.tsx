@@ -130,6 +130,10 @@ export default function PrivacyPolicyPage() {
                 aceptado la categoría Analytics;
               </li>
               <li>
+                obtener métricas agregadas sobre el uso del sitio mediante Vercel Web Analytics
+                cuando la persona usuaria haya aceptado la categoría Analytics;
+              </li>
+              <li>
                 gestionar, cuando corresponda, actuaciones previas a una eventual contratación de
                 servicios editoriales;
               </li>

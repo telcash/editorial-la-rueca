@@ -5,6 +5,7 @@ import { PublicFooter } from '@/components/public/public-footer';
 import { PublicHeader } from '@/components/public/public-header';
 import { PublicContactHashHandler } from '@/components/public/public-contact-hash-handler';
 import { PublicUtmAttribution } from '@/components/public/public-utm-attribution';
+import { PublicWebAnalytics } from '@/components/public/public-web-analytics';
 import { siteConfig } from '@/config/site';
 import { CookieConsentProvider } from '@/components/public/cookie-consent/cookie-consent-provider';
 
@@ -17,6 +18,7 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
   return (
     <CookieConsentProvider>
       <div className="flex min-h-screen flex-col bg-public-background font-public text-public-ink">
+        <PublicWebAnalytics enabledForProduction={process.env.VERCEL_ENV === 'production'} />
         <PublicContactHashHandler />
         <Suspense fallback={null}>
           <PublicUtmAttribution />

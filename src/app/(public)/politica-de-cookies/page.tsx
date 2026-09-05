@@ -90,18 +90,22 @@ export default function CookiePolicyPage() {
             <p>
               Cuando la persona usuaria acepta la categoría Analytics, la web puede utilizar
               temporalmente el almacenamiento de sesión del navegador para conservar parámetros de
-              procedencia y campaña durante la navegación.
+              procedencia y campaña durante la navegación. En producción también puede cargar Vercel
+              Web Analytics para obtener métricas agregadas sobre el uso del sitio.
             </p>
 
             <p className="mt-3">
               Esta información se utiliza para medir la atribución de las solicitudes recibidas y de
-              las campañas que las originan. Se elimina al revocar Analytics y, normalmente, el
+              las campañas que las originan, así como el uso general del sitio mediante Vercel Web
+              Analytics. La integración se activa únicamente con consentimiento Analytics. La
+              atribución almacenada se elimina al revocar Analytics y, normalmente, el
               almacenamiento de sesión se limita a la sesión y a la pestaña del navegador.
             </p>
 
             <p className="mt-3">
-              Este almacenamiento de sesión no es una cookie. No se incorporan con esta finalidad
-              GA4, GTM, Meta Pixel ni otros sistemas externos de seguimiento.
+              Este almacenamiento de sesión no es una cookie. El proveedor utilizado para la
+              medición agregada es Vercel Web Analytics. No se incorporan con esta finalidad GA4,
+              GTM, Meta Pixel ni herramientas de publicidad o remarketing.
             </p>
           </PolicySection>
 
@@ -126,7 +130,8 @@ export default function CookiePolicyPage() {
             <p className="mt-3">
               Actualmente no se identifican cookies opcionales concretas de marketing que deban
               incluirse en un inventario adicional. La atribución Analytics descrita anteriormente
-              utiliza almacenamiento de sesión, no una cookie.
+              utiliza almacenamiento de sesión, no una cookie. Vercel Web Analytics se utiliza para
+              métricas agregadas y no para publicidad comportamental.
             </p>
 
             <p className="mt-3">
