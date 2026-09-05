@@ -10,6 +10,8 @@ const mocks = vi.hoisted(() => ({
   markContactRequestEmailNotificationFailed: vi.fn(),
   sendContactRequestNotification: vi.fn(),
   getContactRequestNotificationErrorMessage: vi.fn(),
+  checkContactRateLimit: vi.fn(),
+  headers: vi.fn(),
 }));
 
 vi.mock('@/services/contact-requests/contact-request.service', () => ({
@@ -22,6 +24,14 @@ vi.mock('@/services/contact-requests/contact-request.service', () => ({
 vi.mock('@/services/contact-requests/contact-request-notification', () => ({
   sendContactRequestNotification: mocks.sendContactRequestNotification,
   getContactRequestNotificationErrorMessage: mocks.getContactRequestNotificationErrorMessage,
+}));
+
+vi.mock('../lib/contact-rate-limit', () => ({
+  checkContactRateLimit: mocks.checkContactRateLimit,
+}));
+
+vi.mock('next/headers', () => ({
+  headers: mocks.headers,
 }));
 
 const { submitPublicContactAction } = await import('./submit-public-contact');
@@ -64,6 +74,8 @@ describe('submitPublicContactAction', () => {
     mocks.getContactRequestNotificationErrorMessage.mockImplementation((error: unknown) =>
       error instanceof Error ? error.message : 'Email failed.',
     );
+    mocks.checkContactRateLimit.mockResolvedValue({ allowed: true, reason: 'allowed' });
+    mocks.headers.mockResolvedValue(new Headers({ 'x-forwarded-for': '203.0.113.10' }));
   });
 
   afterEach(() => {
@@ -251,5 +263,25 @@ describe('submitPublicContactAction', () => {
 
     expect(result.success).toBe(true);
     expect(mocks.createContactRequest).not.toHaveBeenCalled();
+    expect(mocks.checkContactRateLimit).not.toHaveBeenCalled();
+  });
+
+  it('stops before validation, persistence and SMTP when the rate limit is exceeded', async () => {
+    mocks.checkContactRateLimit.mockResolvedValue({ allowed: false, reason: 'blocked' });
+
+    const result = await submitPublicContactAction(
+      initialPublicContactFormState,
+      createValidFormData(),
+    );
+
+    expect(result).toMatchObject({
+      success: false,
+      formError:
+        'Has realizado varios envíos en poco tiempo. Espera unos minutos antes de intentarlo de nuevo.',
+    });
+    expect(result.values.name).toBe('María López');
+    expect(result.values.email).toBe('maria@example.com');
+    expect(mocks.createContactRequest).not.toHaveBeenCalled();
+    expect(mocks.sendContactRequestNotification).not.toHaveBeenCalled();
   });
 });

@@ -1,5 +1,7 @@
 'use server';
 
+import { headers } from 'next/headers';
+
 import { publicContactSchema } from '@/schemas/contact/contact.schema';
 import {
   getContactRequestNotificationErrorMessage,
@@ -8,6 +10,7 @@ import {
 import { ContactRequestInvalidServiceError } from '@/services/contact-requests/contact-request.errors';
 import * as ContactRequestService from '@/services/contact-requests/contact-request.service';
 import { getPublicContactFormValues, getPublicContactInput } from '../lib/contact-form-data';
+import { checkContactRateLimit } from '../lib/contact-rate-limit';
 import {
   initialPublicContactFormValues,
   type PublicContactFormState,
@@ -18,7 +21,6 @@ export async function submitPublicContactAction(
   formData: FormData,
 ): Promise<PublicContactFormState> {
   const values = getPublicContactFormValues(formData);
-  const parsedInput = publicContactSchema.safeParse(getPublicContactInput(formData));
 
   if (values.company.trim()) {
     return {
@@ -28,6 +30,20 @@ export async function submitPublicContactAction(
       values: initialPublicContactFormValues,
     };
   }
+
+  const rateLimitResult = await checkContactRateLimit(await headers());
+
+  if (!rateLimitResult.allowed) {
+    return {
+      success: false,
+      fieldErrors: {},
+      formError:
+        'Has realizado varios envíos en poco tiempo. Espera unos minutos antes de intentarlo de nuevo.',
+      values,
+    };
+  }
+
+  const parsedInput = publicContactSchema.safeParse(getPublicContactInput(formData));
 
   if (!parsedInput.success) {
     return {
