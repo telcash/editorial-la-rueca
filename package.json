@@ -12,6 +12,7 @@
     "format:check": "prettier --check .",
     "test": "vitest",
     "test:run": "vitest run",
+    "smoke:production": "node --import tsx scripts/production-smoke.ts",
     "typecheck": "tsc --noEmit",
     "prepare": "husky",
     "db:generate": "drizzle-kit generate",
