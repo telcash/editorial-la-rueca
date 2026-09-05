@@ -5,6 +5,7 @@ import {
   LayoutDashboard,
   LibraryBig,
   MessageSquareQuote,
+  Megaphone,
   NotebookTabs,
   Settings,
   UsersRound,
@@ -38,6 +39,11 @@ export const adminNavigationItems: AdminNavigationItem[] = [
     href: '/admin/categories',
     label: 'Categorías',
     icon: FolderTree,
+  },
+  {
+    href: '/admin/marketing/utm',
+    label: 'Marketing',
+    icon: Megaphone,
   },
   {
     href: '/admin/services',
