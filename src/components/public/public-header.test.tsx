@@ -9,6 +9,10 @@ vi.mock('@/services/sales/sales.service', () => ({
   getPublicChannelMarkets: mocks.getPublicChannelMarkets,
 }));
 
+vi.mock('@/features/public/sales/public-sales-markets', () => ({
+  getPublicQuaresMarkets: () => mocks.getPublicChannelMarkets('quares'),
+}));
+
 vi.mock('next/navigation', () => ({
   usePathname: () => '/',
 }));

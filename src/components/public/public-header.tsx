@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Phone } from 'lucide-react';
 
 import { siteConfig } from '@/config/site';
-import * as SalesService from '@/services/sales/sales.service';
+import { getPublicQuaresMarkets } from '@/features/public/sales/public-sales-markets';
 import { PublicButton } from './public-button';
 import { PublicContainer } from './public-container';
 import { PublicLogo } from './public-logo';
@@ -16,7 +16,7 @@ function getErrorMessage(error: unknown) {
 
 async function getPublicStoreMarkets() {
   try {
-    return await SalesService.getPublicChannelMarkets('quares');
+    return await getPublicQuaresMarkets();
   } catch (error) {
     console.error('[PublicHeader] Store markets query failed', {
       message: getErrorMessage(error),
