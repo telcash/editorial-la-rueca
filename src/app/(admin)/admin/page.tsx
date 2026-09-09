@@ -44,21 +44,21 @@ export default async function AdminPage({ searchParams }: AdminPageProps) {
           value={dashboard.metrics.authorsActive}
           icon={UsersRound}
           href="/admin/authors"
-          description="Autores no archivados"
+          description="Autores disponibles en el catálogo"
         />
         <DashboardMetricCard
           label="Autores archivados"
           value={dashboard.metrics.authorsArchived}
           icon={Archive}
           href="/admin/authors?status=archived"
-          description="Fuera del catálogo activo"
+          description="Autores fuera del catálogo activo"
         />
         <DashboardMetricCard
-          label="Sin fotografía"
+          label="Autores sin fotografía"
           value={dashboard.metrics.authorsWithoutPhoto}
           icon={ImageOff}
-          href="/admin/authors"
-          description="Autores activos sin foto"
+          href="/admin/authors?image=false"
+          description="Autores activos sin fotografía"
         />
         <DashboardMetricCard
           label="Libros activos"
@@ -68,32 +68,32 @@ export default async function AdminPage({ searchParams }: AdminPageProps) {
           description="Libros no archivados"
         />
         <DashboardMetricCard
-          label="Publicados"
+          label="Libros publicados"
           value={dashboard.metrics.booksPublished}
           icon={CheckCircle2}
-          href="/admin/books"
-          description="Activos y visibles"
+          href="/admin/books?published=true"
+          description="Libros activos y visibles"
         />
         <DashboardMetricCard
-          label="Borradores"
+          label="Libros en borrador"
           value={dashboard.metrics.booksDraft}
           icon={FileText}
-          href="/admin/books"
-          description="Activos sin publicar"
+          href="/admin/books?published=false"
+          description="Libros activos pendientes de publicación"
         />
         <DashboardMetricCard
-          label="Sin portada"
+          label="Libros sin portada"
           value={dashboard.metrics.booksWithoutCover}
           icon={BookImage}
-          href="/admin/books"
-          description="Libros activos sin portada"
+          href="/admin/books?image=false"
+          description="Libros activos sin imagen de portada"
         />
         <DashboardMetricCard
           label="Libros archivados"
           value={dashboard.metrics.booksArchived}
           icon={Archive}
           href="/admin/books?status=archived"
-          description="Fuera del catálogo activo"
+          description="Libros fuera del catálogo activo"
         />
       </div>
 
