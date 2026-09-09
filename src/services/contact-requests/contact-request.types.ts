@@ -63,6 +63,7 @@ export interface ContactRequestRepository {
     options: ContactRequestAdminListOptions,
   ): Promise<PaginatedResult<ContactRequestAdminListItem>>;
   create(input: CreateContactRequestInput): Promise<ContactRequest>;
+  deleteById(id: string): Promise<ContactRequest | null>;
   update(
     id: string,
     input: UpdateContactRequestAdminInput,

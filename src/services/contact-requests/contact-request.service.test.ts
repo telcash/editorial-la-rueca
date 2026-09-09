@@ -162,6 +162,16 @@ function createFakeRepositories() {
 
       return contactRequest;
     },
+    async deleteById(id) {
+      const contactRequest = contactRequests.get(id);
+
+      if (!contactRequest) {
+        return null;
+      }
+
+      contactRequests.delete(id);
+      return contactRequest;
+    },
     async update(id, input) {
       return updateContactRequestRecord(id, input);
     },
@@ -379,6 +389,24 @@ describe('createContactRequestService', () => {
     await expect(
       service.getContactRequestById('00000000-0000-4000-8000-000000000000'),
     ).rejects.toBeInstanceOf(ContactRequestNotFoundError);
+  });
+
+  it('deletes an existing contact request and throws for a missing id', async () => {
+    const service = createContactRequestService(
+      repositories.contactRequestRepository,
+      repositories.editorialServiceRepository,
+    );
+
+    await expect(service.deleteContactRequestPermanently(contactRequestId)).resolves.toMatchObject({
+      id: contactRequestId,
+    });
+    expect(repositories.services.get(serviceId)).toEqual(activeService);
+    await expect(service.getContactRequestById(contactRequestId)).rejects.toBeInstanceOf(
+      ContactRequestNotFoundError,
+    );
+    await expect(service.deleteContactRequestPermanently(contactRequestId)).rejects.toBeInstanceOf(
+      ContactRequestNotFoundError,
+    );
   });
 
   it('updates status, internal notes and corrected service', async () => {

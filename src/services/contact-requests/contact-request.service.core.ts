@@ -64,6 +64,17 @@ export function createContactRequestService(
       return contactRequestRepository.create(data);
     },
 
+    async deleteContactRequestPermanently(id: string) {
+      const validId = contactRequestIdSchema.parse(id);
+      const deletedContactRequest = await contactRequestRepository.deleteById(validId);
+
+      if (!deletedContactRequest) {
+        throw new ContactRequestNotFoundError(validId);
+      }
+
+      return deletedContactRequest;
+    },
+
     async updateContactRequest(id: string, input: unknown) {
       const validId = contactRequestIdSchema.parse(id);
       const data: UpdateContactRequestAdminInput = updateContactRequestAdminSchema.parse(input);

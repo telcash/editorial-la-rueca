@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { AdminPageHeader } from '@/features/admin/components/admin-page-header';
 import { AdminFeedbackBanner } from '@/features/admin/components/feedback/admin-feedback-banner';
 import { ContactRequestAdminForm } from '@/features/admin/contact-requests/components/contact-request-admin-form';
+import { ContactRequestPermanentDeleteButton } from '@/features/admin/contact-requests/components/contact-request-permanent-delete-button';
 import { ContactRequestStatusBadge } from '@/features/admin/contact-requests/components/contact-request-status-badge';
 import { ContactRequestEmailStatusBadge } from '@/features/admin/contact-requests/components/contact-request-email-status-badge';
 import { ResendContactRequestNotificationButton } from '@/features/admin/contact-requests/components/resend-contact-request-notification-button';
@@ -273,6 +274,22 @@ export default async function ContactRequestDetailPage({
             initialValues={getContactRequestAdminFormValuesFromContactRequest(contactRequest)}
             services={serviceOptions}
           />
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Zona de riesgo</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <p className="text-sm leading-6 text-muted-foreground">
+                Esta acción eliminará definitivamente la solicitud y dejará de contabilizarse en las
+                estadísticas del CRM.
+              </p>
+              <ContactRequestPermanentDeleteButton
+                contactRequestId={contactRequest.id}
+                entityLabel={`${contactRequest.name} · ${contactRequest.email}`}
+              />
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

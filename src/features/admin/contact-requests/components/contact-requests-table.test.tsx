@@ -61,4 +61,10 @@ describe('ContactRequestsTable', () => {
 
     expect(pendingHtml).toContain('Email pendiente');
   });
+
+  it('does not expose permanent deletion in the list', () => {
+    const html = renderToStaticMarkup(<ContactRequestsTable contactRequests={[contactRequest]} />);
+
+    expect(html).not.toContain('Eliminar solicitud definitivamente');
+  });
 });

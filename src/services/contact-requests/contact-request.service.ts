@@ -25,6 +25,7 @@ export const {
   listContactRequests,
   getContactRequestCounts,
   createContactRequest,
+  deleteContactRequestPermanently,
   updateContactRequest,
   updateContactRequestStatus,
   updateContactRequestInternalNotes,

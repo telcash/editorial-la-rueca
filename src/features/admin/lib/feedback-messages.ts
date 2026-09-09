@@ -21,6 +21,7 @@ const feedbackMessages = {
   serviceArchived: 'Servicio archivado correctamente.',
   serviceRestored: 'Servicio restaurado correctamente.',
   contactRequestUpdated: 'Solicitud actualizada correctamente.',
+  contactRequestDeleted: 'Solicitud eliminada definitivamente.',
   contactRequestNotificationSent: 'Notificación enviada correctamente.',
   contactRequestNotificationSentUnconfirmed:
     'La notificación se envió, pero no se pudo confirmar su estado en el CRM.',

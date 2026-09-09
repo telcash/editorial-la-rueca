@@ -151,6 +151,15 @@ export async function create(input: CreateContactRequestInput): Promise<ContactR
   return contactRequest;
 }
 
+export async function deleteById(id: string): Promise<ContactRequest | null> {
+  const [contactRequest] = await db
+    .delete(contactRequests)
+    .where(eq(contactRequests.id, id))
+    .returning();
+
+  return contactRequest ?? null;
+}
+
 export async function update(
   id: string,
   input: UpdateContactRequestAdminInput,
