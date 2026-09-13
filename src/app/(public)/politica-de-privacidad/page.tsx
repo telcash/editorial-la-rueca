@@ -134,6 +134,10 @@ export default function PrivacyPolicyPage() {
                 cuando la persona usuaria haya aceptado la categoría Analytics;
               </li>
               <li>
+                medir campañas y analizar interacciones relacionadas con acciones de marketing
+                mediante Meta Pixel cuando la persona usuaria haya aceptado esa categoría;
+              </li>
+              <li>
                 gestionar, cuando corresponda, actuaciones previas a una eventual contratación de
                 servicios editoriales;
               </li>
@@ -215,6 +219,11 @@ export default function PrivacyPolicyPage() {
               de determinados libros. La existencia de estos enlaces no implica que los datos
               enviados mediante el formulario “Cuéntanos sobre tu libro” sean comunicados a dichas
               plataformas.
+            </p>
+
+            <p className="mt-3">
+              Cuando se activa la categoría Marketing, Meta Platforms puede intervenir como
+              proveedor de la tecnología Meta Pixel conforme a sus propias condiciones y políticas.
             </p>
           </PrivacySection>
 

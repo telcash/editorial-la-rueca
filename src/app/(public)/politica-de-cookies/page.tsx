@@ -111,13 +111,20 @@ export default function CookiePolicyPage() {
 
           <PolicySection title="5. Cookies de marketing">
             <p>
-              Actualmente no hay herramientas de marketing, píxeles publicitarios ni sistemas
-              equivalentes instalados en esta web.
+              La web puede utilizar Meta Pixel, proporcionado por Meta Platforms, como tecnología de
+              marketing para medir campañas, atribuir interacciones y analizar de forma agregada
+              determinadas acciones relacionadas con publicidad.
             </p>
 
             <p className="mt-3">
-              La categoría de marketing se encuentra preparada para futuras tecnologías y permanece
-              desactivada mientras no exista consentimiento expreso de la persona usuaria.
+              Meta Pixel pertenece exclusivamente a la categoría Marketing y solo se carga cuando
+              existe consentimiento expreso para esa categoría. Si la rechazas, nuestra integración
+              no carga el píxel ni emite nuevos eventos desde ella.
+            </p>
+
+            <p className="mt-3">
+              En esta fase no se utiliza Advanced Matching, Conversions API ni eventos de conversión
+              como Lead o Purchase.
             </p>
           </PolicySection>
 
@@ -128,10 +135,10 @@ export default function CookiePolicyPage() {
             </p>
 
             <p className="mt-3">
-              Actualmente no se identifican cookies opcionales concretas de marketing que deban
-              incluirse en un inventario adicional. La atribución Analytics descrita anteriormente
+              Meta Pixel puede utilizar cookies u otras tecnologías propias de su proveedor cuando
+              se activa con consentimiento Marketing. La atribución Analytics descrita anteriormente
               utiliza almacenamiento de sesión, no una cookie. Vercel Web Analytics se utiliza para
-              métricas agregadas y no para publicidad comportamental.
+              métricas agregadas y pertenece a una categoría distinta.
             </p>
 
             <p className="mt-3">

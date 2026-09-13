@@ -73,7 +73,7 @@ export function CookieSettingsDialog({ onOpenChange }: CookieSettingsDialogProps
           />
           <ConsentOption
             title="Cookies de marketing"
-            description="Permiten medir campañas y, cuando corresponda, personalizar acciones de marketing."
+            description="Pueden incluir tecnologías publicitarias como Meta Pixel para medir campañas e interacciones, solo con tu consentimiento."
             checked={draft.marketing}
             onChange={(checked) => setDraft((current) => ({ ...current, marketing: checked }))}
           />

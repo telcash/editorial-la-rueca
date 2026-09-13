@@ -77,7 +77,9 @@ describe('PublicWebAnalytics', () => {
     );
 
     expect(publicLayout).toContain('PublicWebAnalytics');
+    expect(publicLayout).toContain('PublicMetaPixel');
     expect(publicLayout).toContain("process.env.VERCEL_ENV === 'production'");
     expect(adminLayout).not.toContain('PublicWebAnalytics');
+    expect(adminLayout).not.toContain('PublicMetaPixel');
   });
 });
