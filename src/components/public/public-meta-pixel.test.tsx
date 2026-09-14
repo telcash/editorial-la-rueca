@@ -15,8 +15,13 @@ vi.mock('./cookie-consent/cookie-consent-provider', () => ({
   useCookieConsent: mocks.useCookieConsent,
 }));
 
-const { PublicMetaPixel, getMetaPixelRouteKey, isValidMetaPixelId, shouldEnableMetaPixel } =
-  await import('./public-meta-pixel');
+const {
+  PublicMetaPixel,
+  getMetaPixelRouteKey,
+  isValidMetaPixelId,
+  shouldEnableMetaPixel,
+  trackMetaEvent,
+} = await import('./public-meta-pixel');
 
 describe('PublicMetaPixel', () => {
   beforeEach(() => {
@@ -58,6 +63,10 @@ describe('PublicMetaPixel', () => {
     expect(getMetaPixelRouteKey('/libros')).toBe(getMetaPixelRouteKey('/libros'));
     expect(getMetaPixelRouteKey('/')).toBe('/');
     expect(getMetaPixelRouteKey('/libros')).not.toBe(getMetaPixelRouteKey('/autores'));
+  });
+
+  it('exposes only the standard Lead event for a ready Meta Pixel', () => {
+    expect(trackMetaEvent('Lead')).toBe(false);
   });
 
   it('is included only in the public layout', () => {

@@ -25,6 +25,7 @@ export async function submitPublicContactAction(
   if (values.company.trim()) {
     return {
       success: true,
+      contactRequestCreated: false,
       fieldErrors: {},
       formError: null,
       values: initialPublicContactFormValues,
@@ -36,6 +37,7 @@ export async function submitPublicContactAction(
   if (!rateLimitResult.allowed) {
     return {
       success: false,
+      contactRequestCreated: false,
       fieldErrors: {},
       formError:
         'Has realizado varios envíos en poco tiempo. Espera unos minutos antes de intentarlo de nuevo.',
@@ -48,6 +50,7 @@ export async function submitPublicContactAction(
   if (!parsedInput.success) {
     return {
       success: false,
+      contactRequestCreated: false,
       fieldErrors: parsedInput.error.flatten().fieldErrors,
       formError: null,
       values,
@@ -77,6 +80,7 @@ export async function submitPublicContactAction(
     if (error instanceof ContactRequestInvalidServiceError) {
       return {
         success: false,
+        contactRequestCreated: false,
         fieldErrors: {
           serviceId: ['Selecciona un servicio disponible.'],
         },
@@ -87,6 +91,7 @@ export async function submitPublicContactAction(
 
     return {
       success: false,
+      contactRequestCreated: false,
       fieldErrors: {},
       formError: 'No hemos podido enviar tu consulta. Inténtalo de nuevo.',
       values,
@@ -121,6 +126,7 @@ export async function submitPublicContactAction(
 
     return {
       success: true,
+      contactRequestCreated: true,
       fieldErrors: {},
       formError: null,
       values: initialPublicContactFormValues,
@@ -146,6 +152,7 @@ export async function submitPublicContactAction(
 
   return {
     success: true,
+    contactRequestCreated: true,
     fieldErrors: {},
     formError: null,
     values: initialPublicContactFormValues,

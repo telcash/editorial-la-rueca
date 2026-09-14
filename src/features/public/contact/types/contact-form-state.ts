@@ -20,6 +20,7 @@ export type PublicContactUtmValues = Pick<
 
 export interface PublicContactFormState {
   success: boolean;
+  contactRequestCreated: boolean;
   fieldErrors: Partial<Record<keyof PublicContactFormValues, string[]>>;
   formError: string | null;
   values: PublicContactFormValues;
@@ -42,6 +43,7 @@ export const initialPublicContactFormValues: PublicContactFormValues = {
 
 export const initialPublicContactFormState: PublicContactFormState = {
   success: false,
+  contactRequestCreated: false,
   fieldErrors: {},
   formError: null,
   values: initialPublicContactFormValues,

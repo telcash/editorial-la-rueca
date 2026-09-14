@@ -20,11 +20,15 @@ type MetaPixelFunction = ((...args: unknown[]) => void) & {
 interface MetaPixelRuntime {
   initializedPixelId: string | null;
   scriptPromise: Promise<void> | null;
+  active: boolean;
+  scriptReady: boolean;
 }
 
 const runtime: MetaPixelRuntime = {
   initializedPixelId: null,
   scriptPromise: null,
+  active: false,
+  scriptReady: false,
 };
 
 export function isValidMetaPixelId(value: string | undefined): value is string {
@@ -110,6 +114,16 @@ async function initializeMetaPixel(pixelId: string) {
   }
 
   await loadMetaPixelScript();
+  runtime.scriptReady = true;
+}
+
+export function trackMetaEvent(eventName: 'Lead'): boolean {
+  if (!runtime.active || !runtime.scriptReady || !window.fbq) {
+    return false;
+  }
+
+  window.fbq('track', eventName);
+  return true;
 }
 
 declare global {
@@ -132,6 +146,7 @@ export function PublicMetaPixel({ enabledForProduction }: PublicMetaPixelProps) 
   const routeKey = getMetaPixelRouteKey(pathname);
 
   useEffect(() => {
+    runtime.active = isEnabled;
     enabledRef.current = isEnabled;
 
     if (!isEnabled) {

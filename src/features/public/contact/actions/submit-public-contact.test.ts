@@ -92,6 +92,7 @@ describe('submitPublicContactAction', () => {
 
     expect(result).toEqual({
       success: true,
+      contactRequestCreated: true,
       fieldErrors: {},
       formError: null,
       values: initialPublicContactFormState.values,
@@ -226,6 +227,7 @@ describe('submitPublicContactAction', () => {
 
     expect(result).toEqual({
       success: true,
+      contactRequestCreated: true,
       fieldErrors: {},
       formError: null,
       values: initialPublicContactFormState.values,

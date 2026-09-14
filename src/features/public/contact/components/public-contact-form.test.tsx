@@ -1,13 +1,36 @@
 import { renderToStaticMarkup } from 'react-dom/server';
 import { describe, expect, it, vi } from 'vitest';
 
-import { PublicContactForm } from './public-contact-form';
+import { initialPublicContactFormState } from '../types/contact-form-state';
+import { PublicContactForm, shouldTrackSuccessfulContactRequest } from './public-contact-form';
 
 vi.mock('../actions/submit-public-contact', () => ({
   submitPublicContactAction: vi.fn(),
 }));
 
+vi.mock('@/components/public/public-meta-pixel', () => ({
+  trackMetaEvent: vi.fn(),
+}));
+
 describe('PublicContactForm', () => {
+  it('tracks only new successful action states', () => {
+    const firstSuccess = {
+      ...initialPublicContactFormState,
+      success: true,
+      contactRequestCreated: true,
+    };
+    const secondSuccess = {
+      ...initialPublicContactFormState,
+      success: true,
+      contactRequestCreated: true,
+    };
+
+    expect(shouldTrackSuccessfulContactRequest(firstSuccess, null)).toBe(true);
+    expect(shouldTrackSuccessfulContactRequest(firstSuccess, firstSuccess)).toBe(false);
+    expect(shouldTrackSuccessfulContactRequest(secondSuccess, firstSuccess)).toBe(true);
+    expect(shouldTrackSuccessfulContactRequest(initialPublicContactFormState, null)).toBe(false);
+  });
+
   it('renders dynamic services as serviceId options', () => {
     const html = renderToStaticMarkup(
       <PublicContactForm

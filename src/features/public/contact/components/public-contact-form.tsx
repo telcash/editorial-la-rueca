@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useActionState } from 'react';
+import { useEffect, useRef } from 'react';
 import { useFormStatus } from 'react-dom';
 import { Send } from 'lucide-react';
 
@@ -11,9 +12,11 @@ import { Textarea } from '@/components/ui/textarea';
 import { usePublicContactUtmAttribution } from '../lib/utm-attribution-client-store';
 import { hasPublicContactUtmValues } from '../lib/utm-attribution';
 import { submitPublicContactAction } from '../actions/submit-public-contact';
+import { trackMetaEvent } from '@/components/public/public-meta-pixel';
 import {
   initialPublicContactFormState,
   type PublicContactUtmValues,
+  type PublicContactFormState,
 } from '../types/contact-form-state';
 
 function FieldError({ id, message }: { id: string; message?: string }) {
@@ -36,6 +39,13 @@ interface PublicContactFormServiceOption {
 interface PublicContactFormProps {
   services: PublicContactFormServiceOption[];
   utmValues?: PublicContactUtmValues;
+}
+
+export function shouldTrackSuccessfulContactRequest(
+  state: PublicContactFormState,
+  lastTrackedState: PublicContactFormState | null,
+): boolean {
+  return state.contactRequestCreated && lastTrackedState !== state;
 }
 
 function SubmitButton({ disabled }: { disabled: boolean }) {
@@ -67,6 +77,17 @@ export function PublicContactForm({ services, utmValues }: PublicContactFormProp
     },
   };
   const [state, formAction] = useActionState(submitPublicContactAction, initialState);
+  const lastTrackedSuccessState = useRef<typeof state | null>(null);
+
+  useEffect(() => {
+    if (!shouldTrackSuccessfulContactRequest(state, lastTrackedSuccessState.current)) {
+      return;
+    }
+
+    lastTrackedSuccessState.current = state;
+    trackMetaEvent('Lead');
+  }, [state]);
+
   const formValues = {
     ...state.values,
     utmSource: state.values.utmSource || effectiveUtmValues.utmSource,
