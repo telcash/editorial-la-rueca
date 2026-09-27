@@ -33,6 +33,9 @@ const contactRequest: ContactRequestAdminDetail = {
   message: 'Tengo un manuscrito <script>alert("x")</script>\ny quiero orientación.',
   status: 'new',
   source: 'website',
+  metaLeadId: null,
+  metaFormId: null,
+  metaFormName: null,
   utmSource: null,
   utmMedium: null,
   utmCampaign: null,
@@ -102,6 +105,33 @@ describe('contact request notification email', () => {
     expect(email.text).not.toContain('reel-01');
     expect(email.html).not.toContain('novela');
     expect(email.text).not.toContain('novela');
+  });
+
+  it('labels Meta Ads leads and tolerates optional CRM fields', () => {
+    const email = buildContactRequestNotificationEmail(
+      {
+        ...contactRequest,
+        phone: null,
+        province: null,
+        serviceId: null,
+        service: null,
+        source: 'meta_instant_form',
+        metaLeadId: 'lead-private-id',
+        metaFormId: 'form-123',
+        metaFormName: null,
+      },
+      smtpConfig,
+    );
+
+    expect(email.subject).toBe('Nueva solicitud desde Meta Ads — Sin clasificar');
+    expect(email.html).toContain('Nueva solicitud desde Meta Ads');
+    expect(email.html).toContain('Meta Ads');
+    expect(email.html).toContain('Formulario Meta');
+    expect(email.html).toContain('form-123');
+    expect(email.html).toContain('Sin clasificar');
+    expect(email.text).toContain('Teléfono:\n—');
+    expect(email.text).toContain('Provincia:\n—');
+    expect(email.text).not.toContain('lead-private-id');
   });
 
   it('sends once and returns sentAt when no previous notification exists', async () => {

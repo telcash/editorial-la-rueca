@@ -3,12 +3,8 @@
 import { headers } from 'next/headers';
 
 import { publicContactSchema } from '@/schemas/contact/contact.schema';
-import {
-  getContactRequestNotificationErrorMessage,
-  sendContactRequestNotification,
-} from '@/services/contact-requests/contact-request-notification';
 import { ContactRequestInvalidServiceError } from '@/services/contact-requests/contact-request.errors';
-import * as ContactRequestService from '@/services/contact-requests/contact-request.service';
+import { createAndNotifyContactRequest } from '@/services/contact-requests/create-and-notify-contact-request';
 import { getPublicContactFormValues, getPublicContactInput } from '../lib/contact-form-data';
 import { checkContactRateLimit } from '../lib/contact-rate-limit';
 import {
@@ -57,10 +53,9 @@ export async function submitPublicContactAction(
     };
   }
 
-  let createdContactRequestId: string;
-
+  let creationResult: Awaited<ReturnType<typeof createAndNotifyContactRequest>>;
   try {
-    const contactRequest = await ContactRequestService.createContactRequest({
+    creationResult = await createAndNotifyContactRequest({
       name: parsedInput.data.name,
       email: parsedInput.data.email,
       phone: parsedInput.data.phone,
@@ -74,8 +69,6 @@ export async function submitPublicContactAction(
       utmContent: parsedInput.data.utmContent ?? null,
       utmTerm: parsedInput.data.utmTerm ?? null,
     });
-
-    createdContactRequestId = contactRequest.id;
   } catch (error) {
     if (error instanceof ContactRequestInvalidServiceError) {
       return {
@@ -98,61 +91,9 @@ export async function submitPublicContactAction(
     };
   }
 
-  let notificationResult: Awaited<ReturnType<typeof sendContactRequestNotification>>;
-
-  try {
-    const contactRequest =
-      await ContactRequestService.getContactRequestById(createdContactRequestId);
-    notificationResult = await sendContactRequestNotification(contactRequest);
-  } catch (error) {
-    const emailError = getContactRequestNotificationErrorMessage(error);
-
-    try {
-      await ContactRequestService.markContactRequestEmailNotificationFailed(
-        createdContactRequestId,
-        emailError,
-      );
-    } catch (markError) {
-      console.error('[PublicContact] Contact request notification status update failed', {
-        contactRequestId: createdContactRequestId,
-        message: getContactRequestNotificationErrorMessage(markError),
-      });
-    }
-
-    console.error('[PublicContact] Contact request notification failed', {
-      contactRequestId: createdContactRequestId,
-      message: emailError,
-    });
-
-    return {
-      success: true,
-      contactRequestCreated: true,
-      fieldErrors: {},
-      formError: null,
-      values: initialPublicContactFormValues,
-    };
-  }
-
-  if (notificationResult.status === 'sent' && notificationResult.sentAt) {
-    try {
-      await ContactRequestService.markContactRequestEmailNotificationSent(
-        createdContactRequestId,
-        notificationResult.sentAt,
-      );
-    } catch (error) {
-      console.error(
-        '[PublicContact] Contact request notification sent but status confirmation failed',
-        {
-          contactRequestId: createdContactRequestId,
-          message: getContactRequestNotificationErrorMessage(error),
-        },
-      );
-    }
-  }
-
   return {
     success: true,
-    contactRequestCreated: true,
+    contactRequestCreated: creationResult.status === 'created',
     fieldErrors: {},
     formError: null,
     values: initialPublicContactFormValues,

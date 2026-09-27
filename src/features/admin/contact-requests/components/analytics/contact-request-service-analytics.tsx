@@ -29,10 +29,12 @@ export function ContactRequestServiceAnalytics({ services }: ContactRequestServi
             </thead>
             <tbody className="divide-y divide-border">
               {services.map((service) => (
-                <tr key={service.serviceId}>
+                <tr key={service.serviceId ?? 'unclassified'}>
                   <td className="py-3 pr-3">
                     <div className="font-medium text-foreground">{service.serviceName}</div>
-                    <div className="text-xs text-muted-foreground">{service.serviceSlug}</div>
+                    {service.serviceSlug ? (
+                      <div className="text-xs text-muted-foreground">{service.serviceSlug}</div>
+                    ) : null}
                   </td>
                   <td className="px-3 py-3 text-right">{formatAnalyticsNumber(service.total)}</td>
                   <td className="px-3 py-3 text-right">{formatAnalyticsNumber(service.open)}</td>

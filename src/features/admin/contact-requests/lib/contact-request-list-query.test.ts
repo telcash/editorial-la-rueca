@@ -68,6 +68,13 @@ describe('contact request list query helpers', () => {
     });
   });
 
+  it('accepts Meta Instant Form as an independent CRM source filter', () => {
+    const parsed = parseContactRequestListQuery({ source: 'meta_instant_form' });
+
+    expect(parsed.source).toBe('meta_instant_form');
+    expect(toContactRequestFilters(parsed).source).toBe('meta_instant_form');
+  });
+
   it('converts date filters to inclusive day ranges', () => {
     const filters = toContactRequestFilters(
       parseContactRequestListQuery({

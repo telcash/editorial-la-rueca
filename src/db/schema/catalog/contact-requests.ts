@@ -1,5 +1,5 @@
 import { relations, type InferInsertModel, type InferSelectModel } from 'drizzle-orm';
-import { index, pgTable, text, timestamp, uuid, varchar } from 'drizzle-orm/pg-core';
+import { index, pgTable, text, timestamp, uniqueIndex, uuid, varchar } from 'drizzle-orm/pg-core';
 
 import { services } from './services';
 
@@ -9,11 +9,9 @@ export const contactRequests = pgTable(
     id: uuid('id').defaultRandom().primaryKey(),
     name: varchar('name', { length: 160 }).notNull(),
     email: varchar('email', { length: 254 }).notNull(),
-    phone: varchar('phone', { length: 80 }).notNull(),
-    province: varchar('province', { length: 120 }).notNull(),
-    serviceId: uuid('service_id')
-      .notNull()
-      .references(() => services.id, { onDelete: 'restrict' }),
+    phone: varchar('phone', { length: 80 }),
+    province: varchar('province', { length: 120 }),
+    serviceId: uuid('service_id').references(() => services.id, { onDelete: 'restrict' }),
     message: text('message').notNull(),
     status: varchar('status', { length: 40 }).default('new').notNull(),
     source: varchar('source', { length: 40 }).default('website').notNull(),
@@ -22,6 +20,9 @@ export const contactRequests = pgTable(
     utmCampaign: varchar('utm_campaign', { length: 180 }),
     utmContent: varchar('utm_content', { length: 180 }),
     utmTerm: varchar('utm_term', { length: 180 }),
+    metaLeadId: varchar('meta_lead_id', { length: 128 }),
+    metaFormId: varchar('meta_form_id', { length: 128 }),
+    metaFormName: varchar('meta_form_name', { length: 255 }),
     emailSentAt: timestamp('email_sent_at', { withTimezone: true }),
     emailError: text('email_error'),
     internalNotes: text('internal_notes'),
@@ -35,6 +36,7 @@ export const contactRequests = pgTable(
     index('contact_requests_created_at_idx').on(table.createdAt),
     index('contact_requests_service_id_status_idx').on(table.serviceId, table.status),
     index('contact_requests_status_created_at_idx').on(table.status, table.createdAt),
+    uniqueIndex('contact_requests_meta_lead_id_unique').on(table.metaLeadId),
   ],
 ).enableRLS();
 

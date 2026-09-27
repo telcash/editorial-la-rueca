@@ -67,4 +67,25 @@ describe('ContactRequestsTable', () => {
 
     expect(html).not.toContain('Eliminar solicitud definitivamente');
   });
+
+  it('renders Meta leads without phone, province or service', () => {
+    const html = renderToStaticMarkup(
+      <ContactRequestsTable
+        contactRequests={[
+          {
+            ...contactRequest,
+            phone: null,
+            province: null,
+            service: null,
+            source: 'meta_instant_form',
+          },
+        ]}
+      />,
+    );
+
+    expect(html).toContain('Meta Ads');
+    expect(html).toContain('Sin clasificar');
+    expect(html).toContain('—');
+    expect(html).not.toContain('tel:null');
+  });
 });

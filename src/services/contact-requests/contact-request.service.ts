@@ -13,6 +13,7 @@ export type {
   ContactRequestCounts,
   ContactRequestRepository,
   ContactRequestServiceSummary,
+  CreateContactRequestResult,
 } from './contact-request.types';
 
 const contactRequestService = createContactRequestService(

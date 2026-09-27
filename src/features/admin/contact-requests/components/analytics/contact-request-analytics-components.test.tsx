@@ -146,6 +146,45 @@ describe('contact request analytics components', () => {
     expect(html).toContain('No hay leads nuevos pendientes');
   });
 
+  it('renders unclassified service analytics and Meta Ads source labels', () => {
+    const servicesHtml = renderToStaticMarkup(
+      <ContactRequestServiceAnalytics
+        services={[
+          {
+            serviceId: null,
+            serviceName: 'Sin clasificar',
+            serviceSlug: '',
+            total: 2,
+            won: 0,
+            lost: 0,
+            open: 2,
+            generalConversionRate: 0,
+            closedConversionRate: null,
+          },
+        ]}
+      />,
+    );
+    const metaSourcesHtml = renderToStaticMarkup(
+      <ContactRequestSourceAnalytics
+        sources={[
+          {
+            source: 'meta_instant_form',
+            label: 'Meta Ads',
+            total: 2,
+            won: 0,
+            lost: 0,
+            percentage: 20,
+            generalConversionRate: 0,
+            closedConversionRate: null,
+          },
+        ]}
+      />,
+    );
+
+    expect(servicesHtml).toContain('Sin clasificar');
+    expect(metaSourcesHtml).toContain('Meta Ads');
+  });
+
   it('renders period filter and comparison fallback safely', () => {
     const filterHtml = renderToStaticMarkup(<ContactRequestPeriodFilter period="30d" />);
     const comparisonHtml = renderToStaticMarkup(

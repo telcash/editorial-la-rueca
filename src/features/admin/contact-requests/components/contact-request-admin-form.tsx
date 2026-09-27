@@ -96,6 +96,7 @@ export function ContactRequestAdminForm({
                     defaultValue={state.values.serviceId}
                     className="min-h-10 rounded-md border border-input bg-background px-3 text-sm"
                   >
+                    <option value="">Sin clasificar</option>
                     {services.map((service) => (
                       <option key={service.id} value={service.id}>
                         {service.name}

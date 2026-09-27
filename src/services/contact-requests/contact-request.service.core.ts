@@ -58,7 +58,9 @@ export function createContactRequestService(
     async createContactRequest(input: unknown) {
       const data: CreateContactRequestInput = createContactRequestSchema.parse(input);
 
-      await assertServiceCanReceiveLeads(editorialServiceRepository, data.serviceId);
+      if (data.serviceId) {
+        await assertServiceCanReceiveLeads(editorialServiceRepository, data.serviceId);
+      }
 
       // Future email notifications must be attempted only after this insert succeeds.
       return contactRequestRepository.create(data);

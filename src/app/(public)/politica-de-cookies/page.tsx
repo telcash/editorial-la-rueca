@@ -123,8 +123,11 @@ export default function CookiePolicyPage() {
             </p>
 
             <p className="mt-3">
-              En esta fase no se utiliza Advanced Matching, Conversions API ni eventos de conversión
-              como Lead o Purchase.
+              Tras crear correctamente una solicitud desde el formulario web, la integración puede
+              enviar a Meta el evento estándar Lead si se ha aceptado Marketing. No se utiliza
+              Advanced Matching, Conversions API ni el evento Purchase. Las solicitudes recibidas
+              desde formularios instantáneos de Meta se sincronizan con el CRM por servidor y no
+              generan otro evento Pixel Lead.
             </p>
           </PolicySection>
 

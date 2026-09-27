@@ -174,6 +174,7 @@ describe('contact request analytics service', () => {
           closedConversionRate: 60,
         }),
         expect.objectContaining({ source: 'facebook', label: 'Facebook', total: 0 }),
+        expect.objectContaining({ source: 'meta_instant_form', label: 'Meta Ads', total: 0 }),
         expect.objectContaining({ source: 'direct', label: 'Directo', total: 0 }),
         expect.objectContaining({ source: 'other', label: 'Otro', total: 0 }),
       ]),

@@ -12,6 +12,7 @@ import type {
   ContactRequestAdminListItem,
   ContactRequestAdminListOptions,
   ContactRequestCounts,
+  CreateContactRequestResult,
 } from '@/services/contact-requests/contact-request.types';
 import type {
   ContactRequestSource,
@@ -61,7 +62,7 @@ function getFilterCondition(filters: ContactRequestAdminFilters = {}) {
 
 function mapListRow(row: {
   contactRequest: ContactRequest;
-  service: { id: string; name: string; slug: string };
+  service: { id: string; name: string; slug: string } | null;
 }): ContactRequestAdminListItem {
   return {
     id: row.contactRequest.id,
@@ -81,7 +82,7 @@ function mapListRow(row: {
 
 function mapDetailRow(row: {
   contactRequest: ContactRequest;
-  service: { id: string; name: string; slug: string };
+  service: { id: string; name: string; slug: string } | null;
 }): ContactRequestAdminDetail {
   return {
     ...row.contactRequest,
@@ -102,7 +103,7 @@ async function findDetailById(id: string): Promise<ContactRequestAdminDetail | n
       },
     })
     .from(contactRequests)
-    .innerJoin(services, eq(services.id, contactRequests.serviceId))
+    .leftJoin(services, eq(services.id, contactRequests.serviceId))
     .where(eq(contactRequests.id, id))
     .limit(1);
 
@@ -118,7 +119,6 @@ export async function findAllPaginated(options: ContactRequestAdminListOptions) 
   const [{ totalItems = 0 } = {}] = await db
     .select({ totalItems: count() })
     .from(contactRequests)
-    .innerJoin(services, eq(services.id, contactRequests.serviceId))
     .where(whereCondition);
   const totalPages = Math.max(1, Math.ceil(totalItems / options.pageSize));
   const safePage = Math.min(Math.max(options.page, 1), totalPages);
@@ -132,7 +132,7 @@ export async function findAllPaginated(options: ContactRequestAdminListOptions) 
       },
     })
     .from(contactRequests)
-    .innerJoin(services, eq(services.id, contactRequests.serviceId))
+    .leftJoin(services, eq(services.id, contactRequests.serviceId))
     .where(whereCondition)
     .orderBy(desc(contactRequests.createdAt), desc(contactRequests.id))
     .limit(options.pageSize)
@@ -141,14 +141,20 @@ export async function findAllPaginated(options: ContactRequestAdminListOptions) 
   return createPaginatedResult(rows.map(mapListRow), totalItems, safePage, options.pageSize);
 }
 
-export async function create(input: CreateContactRequestInput): Promise<ContactRequest> {
-  const [contactRequest] = await db.insert(contactRequests).values(input).returning();
+export async function create(
+  input: CreateContactRequestInput,
+): Promise<CreateContactRequestResult> {
+  const [contactRequest] = await db
+    .insert(contactRequests)
+    .values(input)
+    .onConflictDoNothing({ target: contactRequests.metaLeadId })
+    .returning();
 
   if (!contactRequest) {
-    throw new Error('Contact request creation did not return a record.');
+    return { status: 'duplicate', contactRequest: null };
   }
 
-  return contactRequest;
+  return { status: 'created', contactRequest };
 }
 
 export async function deleteById(id: string): Promise<ContactRequest | null> {
@@ -239,7 +245,7 @@ export async function getCounts(
       won: sql<number>`count(*) filter (where ${contactRequests.status} = 'won')`.mapWith(Number),
     })
     .from(contactRequests)
-    .innerJoin(services, eq(services.id, contactRequests.serviceId))
+    .leftJoin(services, eq(services.id, contactRequests.serviceId))
     .where(whereCondition);
 
   return {

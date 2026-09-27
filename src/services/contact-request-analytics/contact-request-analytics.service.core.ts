@@ -12,9 +12,9 @@ import {
 } from './contact-request-analytics.types';
 import {
   contactRequestSources,
-  type ContactRequestSource,
   type ContactRequestStatus,
 } from '@/schemas/contact-requests/contact-request.schema';
+import { contactRequestSourceLabels } from '@/services/contact-requests/contact-request-source';
 
 const PENDING_CONTACT_REQUESTS_LIMIT = 5;
 const MADRID_TIME_ZONE = 'Europe/Madrid';
@@ -25,14 +25,6 @@ const statusLabels: Record<ContactRequestStatus, string> = {
   in_progress: 'En seguimiento',
   won: 'Ganado',
   lost: 'Perdido',
-};
-
-const sourceLabels: Record<ContactRequestSource, string> = {
-  website: 'Web',
-  instagram: 'Instagram',
-  facebook: 'Facebook',
-  direct: 'Directo',
-  other: 'Otro',
 };
 
 function getMadridYear(date: Date): number {
@@ -199,7 +191,7 @@ function completeSources(
 
     return {
       ...withConversions(row),
-      label: sourceLabels[source],
+      label: contactRequestSourceLabels[source],
       percentage: calculatePercentage(row.total, total),
     };
   });

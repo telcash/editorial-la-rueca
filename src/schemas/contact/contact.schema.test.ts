@@ -42,6 +42,9 @@ describe('publicContactSchema', () => {
 
   it('rejects an empty phone because the business requires it', () => {
     expect(publicContactSchema.safeParse({ ...validPayload, phone: '' }).success).toBe(false);
+    expect(
+      publicContactSchema.safeParse({ ...validPayload, phone: 'teléfono<script>' }).success,
+    ).toBe(false);
   });
 
   it('rejects admin fields and filled honeypot values', () => {

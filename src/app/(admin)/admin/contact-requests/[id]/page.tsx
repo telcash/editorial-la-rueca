@@ -47,6 +47,10 @@ function getServiceOptions(
   services: Awaited<ReturnType<typeof EditorialServiceService.listServices>>,
   contactRequest: ContactRequestAdminDetail,
 ) {
+  if (!contactRequest.service) {
+    return services;
+  }
+
   const currentServiceExists = services.some((service) => service.id === contactRequest.serviceId);
 
   if (currentServiceExists) {
@@ -121,7 +125,7 @@ export default async function ContactRequestDetailPage({
             <CardContent>
               <dl className="grid gap-5 sm:grid-cols-2">
                 <DetailItem label="Nombre">{contactRequest.name}</DetailItem>
-                <DetailItem label="Provincia">{contactRequest.province}</DetailItem>
+                <DetailItem label="Provincia">{contactRequest.province ?? '—'}</DetailItem>
                 <DetailItem label="Email">
                   <a
                     href={`mailto:${contactRequest.email}`}
@@ -133,11 +137,11 @@ export default async function ContactRequestDetailPage({
                 </DetailItem>
                 <DetailItem label="Teléfono">
                   <a
-                    href={`tel:${contactRequest.phone}`}
+                    href={contactRequest.phone ? `tel:${contactRequest.phone}` : undefined}
                     className="inline-flex items-center gap-2 text-primary hover:underline"
                   >
                     <Phone className="size-4" aria-hidden="true" />
-                    {contactRequest.phone}
+                    {contactRequest.phone ?? '—'}
                   </a>
                 </DetailItem>
               </dl>
@@ -149,12 +153,14 @@ export default async function ContactRequestDetailPage({
                     Enviar email
                   </a>
                 </Button>
-                <Button asChild variant="outline">
-                  <a href={`tel:${contactRequest.phone}`}>
-                    <Phone className="size-4" aria-hidden="true" />
-                    Llamar
-                  </a>
-                </Button>
+                {contactRequest.phone ? (
+                  <Button asChild variant="outline">
+                    <a href={`tel:${contactRequest.phone}`}>
+                      <Phone className="size-4" aria-hidden="true" />
+                      Llamar
+                    </a>
+                  </Button>
+                ) : null}
               </div>
             </CardContent>
           </Card>
@@ -166,10 +172,16 @@ export default async function ContactRequestDetailPage({
             <CardContent>
               <dl className="mb-5 grid gap-5 sm:grid-cols-2">
                 <DetailItem label="Servicio">
-                  <span className="font-medium">{contactRequest.service.name}</span>
-                  <span className="mt-1 block text-xs text-muted-foreground">
-                    {contactRequest.service.slug}
-                  </span>
+                  {contactRequest.service ? (
+                    <>
+                      <span className="font-medium">{contactRequest.service.name}</span>
+                      <span className="mt-1 block text-xs text-muted-foreground">
+                        {contactRequest.service.slug}
+                      </span>
+                    </>
+                  ) : (
+                    <span className="font-medium">Sin clasificar</span>
+                  )}
                 </DetailItem>
                 <DetailItem label="Fecha de entrada">
                   {formatContactRequestDate(contactRequest.createdAt)}
@@ -177,6 +189,11 @@ export default async function ContactRequestDetailPage({
                 <DetailItem label="Origen">
                   {contactRequestSourceLabels[contactRequest.source]}
                 </DetailItem>
+                {contactRequest.source === 'meta_instant_form' ? (
+                  <DetailItem label="Formulario Meta">
+                    {contactRequest.metaFormName ?? contactRequest.metaFormId ?? '—'}
+                  </DetailItem>
+                ) : null}
                 <DetailItem label="Última actualización">
                   {formatContactRequestDate(contactRequest.updatedAt)}
                 </DetailItem>

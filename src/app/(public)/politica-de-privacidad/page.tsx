@@ -224,6 +224,11 @@ export default function PrivacyPolicyPage() {
             <p className="mt-3">
               Cuando se activa la categoría Marketing, Meta Platforms puede intervenir como
               proveedor de la tecnología Meta Pixel conforme a sus propias condiciones y políticas.
+              El evento estándar Lead puede comunicarse cuando una solicitud se crea correctamente
+              desde el formulario web y existe consentimiento Marketing; no se envían a ese evento
+              los datos de contacto del formulario. Si una persona completa un formulario
+              instantáneo de Meta Ads, los datos facilitados pueden recibirse desde Meta y
+              registrarse en el CRM para atender y seguir la solicitud, con origen Meta Ads.
             </p>
           </PrivacySection>
 

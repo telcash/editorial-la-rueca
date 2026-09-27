@@ -25,14 +25,19 @@ export interface ContactRequestAdminListItem {
   emailError: ContactRequest['emailError'];
   createdAt: ContactRequest['createdAt'];
   updatedAt: ContactRequest['updatedAt'];
-  service: ContactRequestServiceSummary;
+  service: ContactRequestServiceSummary | null;
 }
 
-export type ContactRequestAdminDetail = ContactRequest & {
+export type ContactRequestAdminDetail = Omit<ContactRequest, 'serviceId'> & {
   status: ContactRequestStatus;
   source: ContactRequestSource;
-  service: ContactRequestServiceSummary;
+  serviceId: ContactRequest['serviceId'];
+  service: ContactRequestServiceSummary | null;
 };
+
+export type CreateContactRequestResult =
+  | { status: 'created'; contactRequest: ContactRequest }
+  | { status: 'duplicate'; contactRequest: null };
 
 export interface ContactRequestAdminFilters {
   query?: string;
@@ -62,7 +67,7 @@ export interface ContactRequestRepository {
   findAllPaginated(
     options: ContactRequestAdminListOptions,
   ): Promise<PaginatedResult<ContactRequestAdminListItem>>;
-  create(input: CreateContactRequestInput): Promise<ContactRequest>;
+  create(input: CreateContactRequestInput): Promise<CreateContactRequestResult>;
   deleteById(id: string): Promise<ContactRequest | null>;
   update(
     id: string,

@@ -37,7 +37,7 @@ export function getContactRequestAdminFormValuesFromContactRequest(
 ): ContactRequestAdminFormValues {
   return {
     status: contactRequest.status,
-    serviceId: contactRequest.serviceId,
+    serviceId: contactRequest.serviceId ?? '',
     internalNotes: contactRequest.internalNotes ?? '',
   };
 }

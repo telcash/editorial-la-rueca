@@ -57,6 +57,9 @@ const baseContactRequest: ContactRequest = {
   message: 'Quiero publicar mi libro con acompañamiento editorial.',
   status: 'new',
   source: 'website',
+  metaLeadId: null,
+  metaFormId: null,
+  metaFormName: null,
   utmSource: null,
   utmMedium: null,
   utmCampaign: null,
@@ -140,9 +143,9 @@ function createFakeRepositories() {
         id: `00000000-0000-4000-8000-${String(createCount).padStart(12, '0')}`,
         name: input.name,
         email: input.email,
-        phone: input.phone,
-        province: input.province,
-        serviceId: input.serviceId,
+        phone: input.phone ?? null,
+        province: input.province ?? null,
+        serviceId: input.serviceId ?? null,
         message: input.message,
         status: 'new',
         source: input.source,
@@ -151,6 +154,9 @@ function createFakeRepositories() {
         utmCampaign: input.utmCampaign ?? null,
         utmContent: input.utmContent ?? null,
         utmTerm: input.utmTerm ?? null,
+        metaLeadId: input.metaLeadId ?? null,
+        metaFormId: input.metaFormId ?? null,
+        metaFormName: input.metaFormName ?? null,
         emailSentAt: null,
         emailError: null,
         internalNotes: null,
@@ -160,7 +166,7 @@ function createFakeRepositories() {
 
       contactRequests.set(contactRequest.id, contactRequest);
 
-      return contactRequest;
+      return { status: 'created', contactRequest };
     },
     async deleteById(id) {
       const contactRequest = contactRequests.get(id);
@@ -330,12 +336,46 @@ describe('createContactRequestService', () => {
     });
 
     expect(created).toMatchObject({
-      name: 'Ana Pérez',
-      email: 'ana@example.com',
-      status: 'new',
-      source: 'instagram',
-      emailSentAt: null,
-      emailError: null,
+      status: 'created',
+      contactRequest: {
+        name: 'Ana Pérez',
+        email: 'ana@example.com',
+        status: 'new',
+        source: 'instagram',
+        emailSentAt: null,
+        emailError: null,
+      },
+    });
+    expect(repositories.getCreateCount()).toBe(1);
+  });
+
+  it('accepts Meta requests without optional contact and service fields', async () => {
+    const service = createContactRequestService(
+      repositories.contactRequestRepository,
+      repositories.editorialServiceRepository,
+    );
+
+    const result = await service.createContactRequest({
+      name: 'Eva Ruiz',
+      email: 'eva@example.com',
+      phone: null,
+      province: null,
+      serviceId: null,
+      message: 'Solicitud recibida mediante Meta Instant Form.',
+      source: 'meta_instant_form',
+      metaLeadId: 'meta-lead-777',
+      metaFormId: 'meta-form-777',
+    });
+
+    expect(result).toMatchObject({
+      status: 'created',
+      contactRequest: {
+        phone: null,
+        province: null,
+        serviceId: null,
+        source: 'meta_instant_form',
+        metaLeadId: 'meta-lead-777',
+      },
     });
     expect(repositories.getCreateCount()).toBe(1);
   });

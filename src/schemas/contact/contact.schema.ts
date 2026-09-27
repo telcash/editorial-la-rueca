@@ -1,6 +1,12 @@
 import { z } from 'zod';
 
-import { createContactRequestSchema } from '@/schemas/contact-requests/contact-request.schema';
+import {
+  createContactRequestSchema,
+  publicContactPhoneSchema,
+  publicContactMessageSchema,
+  publicContactProvinceSchema,
+  publicContactServiceIdSchema,
+} from '@/schemas/contact-requests/contact-request.schema';
 
 export const publicContactSchema = createContactRequestSchema
   .pick({
@@ -17,6 +23,10 @@ export const publicContactSchema = createContactRequestSchema
     utmTerm: true,
   })
   .extend({
+    phone: publicContactPhoneSchema,
+    province: publicContactProvinceSchema,
+    serviceId: publicContactServiceIdSchema,
+    message: publicContactMessageSchema,
     company: z.string().max(0).optional(),
   })
   .strict();

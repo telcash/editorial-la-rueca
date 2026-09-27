@@ -61,18 +61,28 @@ export function ContactRequestsTable({ contactRequests }: ContactRequestsTablePr
                     </a>
                   </div>
                   <div className="text-xs text-muted-foreground">
-                    <a href={`tel:${contactRequest.phone}`} className="hover:text-foreground">
-                      {contactRequest.phone}
-                    </a>
+                    {contactRequest.phone ? (
+                      <a href={`tel:${contactRequest.phone}`} className="hover:text-foreground">
+                        {contactRequest.phone}
+                      </a>
+                    ) : (
+                      '—'
+                    )}
                   </div>
                 </td>
                 <td className="px-4 py-3">
-                  <div className="font-medium text-foreground">{contactRequest.service.name}</div>
-                  <div className="mt-0.5 text-xs text-muted-foreground">
-                    {contactRequest.service.slug}
+                  <div className="font-medium text-foreground">
+                    {contactRequest.service?.name ?? 'Sin clasificar'}
                   </div>
+                  {contactRequest.service ? (
+                    <div className="mt-0.5 text-xs text-muted-foreground">
+                      {contactRequest.service.slug}
+                    </div>
+                  ) : null}
                 </td>
-                <td className="px-4 py-3 text-muted-foreground">{contactRequest.province}</td>
+                <td className="px-4 py-3 text-muted-foreground">
+                  {contactRequest.province ?? '—'}
+                </td>
                 <td className="px-4 py-3">
                   <ContactRequestStatusBadge status={contactRequest.status} />
                 </td>

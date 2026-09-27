@@ -35,7 +35,7 @@ export interface ContactRequestConversionMetrics {
 }
 
 export interface ContactRequestServiceAnalyticsItem extends ContactRequestConversionMetrics {
-  serviceId: string;
+  serviceId: string | null;
   serviceName: string;
   serviceSlug: string;
   total: number;

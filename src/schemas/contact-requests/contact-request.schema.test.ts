@@ -35,14 +35,11 @@ describe('contact request schemas', () => {
     });
   });
 
-  it('requires identity fields, selected service and message', () => {
+  it('requires a usable name, email and message in the shared CRM contract', () => {
     const result = createContactRequestSchema.safeParse({
       name: '',
       email: 'not-an-email',
-      phone: '',
-      province: '',
-      serviceId: 'not-a-uuid',
-      message: 'corto',
+      message: '',
     });
 
     expect(result.success).toBe(false);
@@ -51,19 +48,36 @@ describe('contact request schemas', () => {
     expect(fieldErrors).toMatchObject({
       name: ['El nombre es obligatorio.'],
       email: ['Introduce un email válido.'],
-      province: ['La provincia es obligatoria.'],
-      serviceId: ['Selecciona un servicio válido.'],
-      message: ['El mensaje debe tener al menos 10 caracteres.'],
+      message: ['El mensaje es obligatorio.'],
     });
-    expect(fieldErrors?.phone).toContain('El teléfono es obligatorio.');
   });
 
-  it('accepts broad but intentional phone characters only', () => {
+  it('allows Meta CRM records without phone, province or service', () => {
+    const result = createContactRequestSchema.parse({
+      name: 'Eva Ruiz',
+      email: 'eva@example.com',
+      message: 'Solicitud recibida mediante Meta Instant Form.',
+      source: 'meta_instant_form',
+      metaLeadId: 'lead-1',
+      metaFormId: 'form-1',
+      metaFormName: null,
+    });
+
+    expect(result).toMatchObject({
+      source: 'meta_instant_form',
+      metaLeadId: 'lead-1',
+    });
+    expect(result).not.toHaveProperty('phone');
+    expect(result).not.toHaveProperty('province');
+    expect(result).not.toHaveProperty('serviceId');
+  });
+
+  it('accepts optional phone values while retaining length limits', () => {
     expect(createContactRequestSchema.safeParse(validCreateInput).success).toBe(true);
     expect(
       createContactRequestSchema.safeParse({
         ...validCreateInput,
-        phone: 'teléfono<script>',
+        phone: 'x'.repeat(81),
       }).success,
     ).toBe(false);
   });

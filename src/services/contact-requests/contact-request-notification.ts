@@ -7,6 +7,7 @@ import {
   type EmailClient,
   type EmailMessage,
 } from '@/services/email/smtp-email-client';
+import { contactRequestSourceLabels } from './contact-request-source';
 
 export interface ContactRequestNotificationResult {
   status: 'sent' | 'skipped';
@@ -67,19 +68,32 @@ export function buildContactRequestNotificationEmail(
   contactRequest: ContactRequestAdminDetail,
   config: SmtpEmailConfig = getSmtpEmailConfig(),
 ): EmailMessage {
-  const serviceName = sanitizeHeaderValue(contactRequest.service.name);
-  const subject = `Nueva solicitud web — ${serviceName}`;
+  const serviceName = sanitizeHeaderValue(contactRequest.service?.name ?? 'Sin clasificar');
+  const sourceLabel =
+    contactRequest.source === 'website'
+      ? 'Website'
+      : contactRequestSourceLabels[contactRequest.source];
+  const title =
+    contactRequest.source === 'meta_instant_form'
+      ? 'Nueva solicitud desde Meta Ads'
+      : 'Nueva solicitud web';
+  const subject = `${title} — ${serviceName}`;
   const formattedDate = formatDate(contactRequest.createdAt);
   const message = normalizePlainText(contactRequest.message);
 
   const rows = [
-    ['Servicio', contactRequest.service.name],
+    ['Servicio', contactRequest.service?.name ?? 'Sin clasificar'],
     ['Nombre', contactRequest.name],
     ['Correo', contactRequest.email],
-    ['Teléfono', contactRequest.phone],
-    ['Provincia', contactRequest.province],
+    ['Teléfono', contactRequest.phone ?? '—'],
+    ['Provincia', contactRequest.province ?? '—'],
     ['Fecha', formattedDate],
-    ['Origen', contactRequest.source],
+    ['Origen', sourceLabel],
+    ...(contactRequest.metaFormName
+      ? ([['Formulario Meta', contactRequest.metaFormName]] as const)
+      : contactRequest.metaFormId
+        ? ([['Formulario Meta', contactRequest.metaFormId]] as const)
+        : []),
   ] as const;
 
   const attributionRows = [
@@ -105,7 +119,7 @@ export function buildContactRequestNotificationEmail(
   <body style="margin:0;background:#ffffff;color:#111;font-family:Arial,Helvetica,sans-serif;">
     <div style="max-width:640px;margin:0 auto;padding:24px;">
       <p style="margin:0 0 14px;color:#E02B20;font-size:13px;font-weight:700;letter-spacing:.04em;">EDITORIAL LA RUECA</p>
-      <h1 style="margin:0 0 20px;font-size:22px;line-height:1.25;color:#111;">Nueva solicitud web</h1>
+      <h1 style="margin:0 0 20px;font-size:22px;line-height:1.25;color:#111;">${escapeHtml(title)}</h1>
       <table role="presentation" style="width:100%;border-collapse:collapse;border:1px solid #eee;border-radius:8px;overflow:hidden;">
         <tbody>${htmlRows}</tbody>
       </table>
@@ -115,10 +129,10 @@ export function buildContactRequestNotificationEmail(
   </body>
 </html>`;
 
-  const text = `NUEVA SOLICITUD WEB
+  const text = `${title.toLocaleUpperCase('es-ES')}
 
 Servicio:
-${contactRequest.service.name}
+${contactRequest.service?.name ?? 'Sin clasificar'}
 
 Nombre:
 ${contactRequest.name}
@@ -127,10 +141,10 @@ Correo:
 ${contactRequest.email}
 
 Teléfono:
-${contactRequest.phone}
+${contactRequest.phone ?? '—'}
 
 Provincia:
-${contactRequest.province}
+${contactRequest.province ?? '—'}
 
 Mensaje:
 ${message}
@@ -139,7 +153,7 @@ Fecha:
 ${formattedDate}
 
 Origen:
-Website${
+${sourceLabel}${contactRequest.metaFormName || contactRequest.metaFormId ? `\nFormulario Meta:\n${contactRequest.metaFormName ?? contactRequest.metaFormId}` : ''}${
     attributionRows.length > 0
       ? `\n\nAtribución:\n${attributionRows.map(([label, value]) => `${label}: ${value}`).join('\n')}`
       : ''

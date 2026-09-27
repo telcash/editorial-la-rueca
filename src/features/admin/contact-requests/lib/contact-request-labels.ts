@@ -1,7 +1,5 @@
-import type {
-  ContactRequestSource,
-  ContactRequestStatus,
-} from '@/schemas/contact-requests/contact-request.schema';
+import type { ContactRequestStatus } from '@/schemas/contact-requests/contact-request.schema';
+import { contactRequestSourceLabels } from '@/services/contact-requests/contact-request-source';
 
 export const contactRequestStatusLabels: Record<ContactRequestStatus, string> = {
   new: 'Nuevo',
@@ -11,13 +9,7 @@ export const contactRequestStatusLabels: Record<ContactRequestStatus, string> = 
   lost: 'Perdido',
 };
 
-export const contactRequestSourceLabels: Record<ContactRequestSource, string> = {
-  website: 'Web',
-  instagram: 'Instagram',
-  facebook: 'Facebook',
-  direct: 'Directo',
-  other: 'Otro',
-};
+export { contactRequestSourceLabels };
 
 export type ContactRequestEmailStatus = 'sent' | 'error' | 'pending';
 

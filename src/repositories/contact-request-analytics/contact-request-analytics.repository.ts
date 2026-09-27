@@ -76,15 +76,15 @@ export async function getServiceAnalytics(range: ContactRequestAnalyticsRange) {
   const rows = await db
     .select({
       serviceId: services.id,
-      serviceName: services.name,
-      serviceSlug: services.slug,
+      serviceName: sql<string>`coalesce(${services.name}, 'Sin clasificar')`,
+      serviceSlug: sql<string>`coalesce(${services.slug}, '')`,
       total,
       won: wonCount,
       lost: lostCount,
       open: openCount,
     })
     .from(contactRequests)
-    .innerJoin(services, eq(services.id, contactRequests.serviceId))
+    .leftJoin(services, eq(services.id, contactRequests.serviceId))
     .where(getRangeCondition(range))
     .groupBy(services.id, services.name, services.slug)
     .orderBy(desc(total), asc(services.name), asc(services.id));
@@ -167,11 +167,11 @@ export async function findPendingContactRequests(
     .select({
       id: contactRequests.id,
       name: contactRequests.name,
-      serviceName: services.name,
+      serviceName: sql<string>`coalesce(${services.name}, 'Sin clasificar')`,
       createdAt: contactRequests.createdAt,
     })
     .from(contactRequests)
-    .innerJoin(services, eq(services.id, contactRequests.serviceId))
+    .leftJoin(services, eq(services.id, contactRequests.serviceId))
     .where(and(getRangeCondition(range), eq(contactRequests.status, 'new')))
     .orderBy(asc(contactRequests.createdAt), asc(contactRequests.id))
     .limit(limit);
