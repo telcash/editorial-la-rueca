@@ -1,7 +1,5 @@
 export interface ContactRequestAdminFormValues {
-  status: string;
   serviceId: string;
-  internalNotes: string;
 }
 
 export type ContactRequestAdminFormFieldErrors = Partial<
@@ -20,9 +18,7 @@ export const initialContactRequestAdminFormState: ContactRequestAdminFormState =
   fieldErrors: {},
   formError: null,
   values: {
-    status: 'new',
     serviceId: '',
-    internalNotes: '',
   },
 };
 

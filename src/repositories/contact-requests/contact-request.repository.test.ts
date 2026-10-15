@@ -35,7 +35,7 @@ describe('contact request repository delete', () => {
     mocks.onConflictDoNothing.mockReturnValue({ returning: mocks.returning });
     mocks.select.mockReturnValue({ from: mocks.from });
     mocks.from.mockReturnValue({ leftJoin: mocks.leftJoin, innerJoin: mocks.innerJoin });
-    mocks.leftJoin.mockReturnValue({ where: mocks.where });
+    mocks.leftJoin.mockReturnValue({ leftJoin: mocks.leftJoin, where: mocks.where });
     mocks.innerJoin.mockReturnValue({ where: mocks.where });
     mocks.delete.mockReturnValue({ where: mocks.where });
     mocks.where.mockReturnValue({ returning: mocks.returning });
@@ -93,7 +93,7 @@ describe('contact request repository delete', () => {
     mocks.where.mockResolvedValue([{ total: 2, new: 1, inProgress: 0, won: 1 }]);
 
     await expect(getCounts()).resolves.toEqual({ total: 2, new: 1, inProgress: 0, won: 1 });
-    expect(mocks.leftJoin).toHaveBeenCalledOnce();
+    expect(mocks.leftJoin).toHaveBeenCalledTimes(2);
     expect(mocks.leftJoin).toHaveBeenCalledWith(
       expect.objectContaining({ id: expect.anything() }),
       expect.anything(),
@@ -111,7 +111,7 @@ describe('contact request repository delete', () => {
       inProgress: 0,
       won: 0,
     });
-    expect(mocks.leftJoin).toHaveBeenCalledOnce();
+    expect(mocks.leftJoin).toHaveBeenCalledTimes(2);
     expect(mocks.where).toHaveBeenCalledWith(expect.anything());
   });
 });

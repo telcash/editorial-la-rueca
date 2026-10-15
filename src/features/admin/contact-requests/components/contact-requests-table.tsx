@@ -84,7 +84,10 @@ export function ContactRequestsTable({ contactRequests }: ContactRequestsTablePr
                   {contactRequest.province ?? '—'}
                 </td>
                 <td className="px-4 py-3">
-                  <ContactRequestStatusBadge status={contactRequest.status} />
+                  <ContactRequestStatusBadge
+                    label={contactRequest.statusLabel}
+                    classification={contactRequest.statusClassification}
+                  />
                 </td>
                 <td className="px-4 py-3 text-muted-foreground">
                   {contactRequestSourceLabels[contactRequest.source]}

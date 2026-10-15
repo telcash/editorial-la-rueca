@@ -1,22 +1,19 @@
 import { Badge } from '@/components/ui/badge';
-import type { ContactRequestStatus } from '@/schemas/contact-requests/contact-request.schema';
-import { contactRequestStatusLabels } from '../lib/contact-request-labels';
-
 interface ContactRequestStatusBadgeProps {
-  status: ContactRequestStatus;
+  label: string;
+  classification: 'open' | 'won' | 'lost';
 }
 
-const statusVariant: Record<
-  ContactRequestStatus,
-  'default' | 'secondary' | 'outline' | 'destructive'
-> = {
-  new: 'default',
-  contacted: 'secondary',
-  in_progress: 'secondary',
-  won: 'default',
-  lost: 'outline',
-};
+const classificationVariant: Record<'open' | 'won' | 'lost', 'default' | 'secondary' | 'outline'> =
+  {
+    open: 'secondary',
+    won: 'default',
+    lost: 'outline',
+  };
 
-export function ContactRequestStatusBadge({ status }: ContactRequestStatusBadgeProps) {
-  return <Badge variant={statusVariant[status]}>{contactRequestStatusLabels[status]}</Badge>;
+export function ContactRequestStatusBadge({
+  label,
+  classification,
+}: ContactRequestStatusBadgeProps) {
+  return <Badge variant={classificationVariant[classification]}>{label}</Badge>;
 }

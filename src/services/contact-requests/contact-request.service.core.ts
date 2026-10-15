@@ -1,10 +1,8 @@
 import { z } from 'zod';
 
 import {
-  contactRequestStatusSchema,
   createContactRequestSchema,
   updateContactRequestAdminSchema,
-  type ContactRequestStatus,
   type CreateContactRequestInput,
   type UpdateContactRequestAdminInput,
 } from '@/schemas/contact-requests/contact-request.schema';
@@ -91,47 +89,6 @@ export function createContactRequestService(
       }
 
       const updatedContactRequest = await contactRequestRepository.update(validId, data);
-
-      if (!updatedContactRequest) {
-        throw new ContactRequestNotFoundError(validId);
-      }
-
-      return updatedContactRequest;
-    },
-
-    async updateContactRequestStatus(id: string, status: unknown) {
-      const validId = contactRequestIdSchema.parse(id);
-      const validStatus: ContactRequestStatus = contactRequestStatusSchema.parse(status);
-      const currentContactRequest = await contactRequestRepository.findById(validId);
-
-      if (!currentContactRequest) {
-        throw new ContactRequestNotFoundError(validId);
-      }
-
-      const updatedContactRequest = await contactRequestRepository.updateStatus(
-        validId,
-        validStatus,
-      );
-
-      if (!updatedContactRequest) {
-        throw new ContactRequestNotFoundError(validId);
-      }
-
-      return updatedContactRequest;
-    },
-
-    async updateContactRequestInternalNotes(id: string, internalNotes: string | null) {
-      const validId = contactRequestIdSchema.parse(id);
-      const currentContactRequest = await contactRequestRepository.findById(validId);
-
-      if (!currentContactRequest) {
-        throw new ContactRequestNotFoundError(validId);
-      }
-
-      const updatedContactRequest = await contactRequestRepository.updateInternalNotes(
-        validId,
-        internalNotes,
-      );
 
       if (!updatedContactRequest) {
         throw new ContactRequestNotFoundError(validId);

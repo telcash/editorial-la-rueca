@@ -3,7 +3,12 @@ import 'server-only';
 import { and, count, desc, eq, gte, ilike, isNotNull, isNull, lte, or, sql } from 'drizzle-orm';
 
 import { db } from '@/db';
-import { contactRequests, services, type ContactRequest } from '@/db/schema';
+import {
+  contactRequestStatuses,
+  contactRequests,
+  services,
+  type ContactRequest,
+} from '@/db/schema';
 import { createPaginatedResult, getOffset } from '@/features/admin/lib/list-query';
 import type { CreateContactRequestInput } from '@/schemas/contact-requests/contact-request.schema';
 import type {
@@ -16,7 +21,6 @@ import type {
 } from '@/services/contact-requests/contact-request.types';
 import type {
   ContactRequestSource,
-  ContactRequestStatus,
   UpdateContactRequestAdminInput,
 } from '@/schemas/contact-requests/contact-request.schema';
 
@@ -63,6 +67,7 @@ function getFilterCondition(filters: ContactRequestAdminFilters = {}) {
 function mapListRow(row: {
   contactRequest: ContactRequest;
   service: { id: string; name: string; slug: string } | null;
+  statusDefinition: { label: string; classification: string };
 }): ContactRequestAdminListItem {
   return {
     id: row.contactRequest.id,
@@ -70,7 +75,9 @@ function mapListRow(row: {
     email: row.contactRequest.email,
     phone: row.contactRequest.phone,
     province: row.contactRequest.province,
-    status: row.contactRequest.status as ContactRequestStatus,
+    status: row.contactRequest.status,
+    statusLabel: row.statusDefinition.label,
+    statusClassification: row.statusDefinition.classification as 'open' | 'won' | 'lost',
     source: row.contactRequest.source as ContactRequestSource,
     emailSentAt: row.contactRequest.emailSentAt,
     emailError: row.contactRequest.emailError,
@@ -86,7 +93,7 @@ function mapDetailRow(row: {
 }): ContactRequestAdminDetail {
   return {
     ...row.contactRequest,
-    status: row.contactRequest.status as ContactRequestStatus,
+    status: row.contactRequest.status,
     source: row.contactRequest.source as ContactRequestSource,
     service: row.service,
   };
@@ -96,6 +103,10 @@ async function findDetailById(id: string): Promise<ContactRequestAdminDetail | n
   const [row] = await db
     .select({
       contactRequest: contactRequests,
+      statusDefinition: {
+        label: contactRequestStatuses.label,
+        classification: contactRequestStatuses.classification,
+      },
       service: {
         id: services.id,
         name: services.name,
@@ -103,6 +114,7 @@ async function findDetailById(id: string): Promise<ContactRequestAdminDetail | n
       },
     })
     .from(contactRequests)
+    .innerJoin(contactRequestStatuses, eq(contactRequestStatuses.key, contactRequests.status))
     .leftJoin(services, eq(services.id, contactRequests.serviceId))
     .where(eq(contactRequests.id, id))
     .limit(1);
@@ -125,6 +137,10 @@ export async function findAllPaginated(options: ContactRequestAdminListOptions) 
   const rows = await db
     .select({
       contactRequest: contactRequests,
+      statusDefinition: {
+        label: contactRequestStatuses.label,
+        classification: contactRequestStatuses.classification,
+      },
       service: {
         id: services.id,
         name: services.name,
@@ -132,6 +148,7 @@ export async function findAllPaginated(options: ContactRequestAdminListOptions) 
       },
     })
     .from(contactRequests)
+    .innerJoin(contactRequestStatuses, eq(contactRequestStatuses.key, contactRequests.status))
     .leftJoin(services, eq(services.id, contactRequests.serviceId))
     .where(whereCondition)
     .orderBy(desc(contactRequests.createdAt), desc(contactRequests.id))
@@ -173,27 +190,13 @@ export async function update(
   const [contactRequest] = await db
     .update(contactRequests)
     .set({
-      ...input,
+      ...(input.serviceId !== undefined ? { serviceId: input.serviceId } : {}),
       updatedAt: new Date(),
     })
     .where(eq(contactRequests.id, id))
     .returning({ id: contactRequests.id });
 
   return contactRequest ? findDetailById(contactRequest.id) : null;
-}
-
-export async function updateStatus(
-  id: string,
-  status: ContactRequestStatus,
-): Promise<ContactRequestAdminDetail | null> {
-  return update(id, { status });
-}
-
-export async function updateInternalNotes(
-  id: string,
-  internalNotes: string | null,
-): Promise<ContactRequestAdminDetail | null> {
-  return update(id, { internalNotes });
 }
 
 export async function markEmailNotificationSent(
@@ -242,9 +245,12 @@ export async function getCounts(
         sql<number>`count(*) filter (where ${contactRequests.status} = 'in_progress')`.mapWith(
           Number,
         ),
-      won: sql<number>`count(*) filter (where ${contactRequests.status} = 'won')`.mapWith(Number),
+      won: sql<number>`count(*) filter (where ${contactRequestStatuses.classification} = 'won')`.mapWith(
+        Number,
+      ),
     })
     .from(contactRequests)
+    .leftJoin(contactRequestStatuses, eq(contactRequestStatuses.key, contactRequests.status))
     .leftJoin(services, eq(services.id, contactRequests.serviceId))
     .where(whereCondition);
 

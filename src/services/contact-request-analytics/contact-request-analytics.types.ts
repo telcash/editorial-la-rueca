@@ -1,7 +1,4 @@
-import type {
-  ContactRequestSource,
-  ContactRequestStatus,
-} from '@/schemas/contact-requests/contact-request.schema';
+import type { ContactRequestSource } from '@/schemas/contact-requests/contact-request.schema';
 
 export const contactRequestAnalyticsPeriods = ['30d', '90d', 'year', 'all'] as const;
 export const contactRequestOpenStatuses = ['new', 'contacted', 'in_progress'] as const;
@@ -89,7 +86,7 @@ export interface ContactRequestAnalyticsData {
   range: ContactRequestAnalyticsRange;
   summary: ContactRequestStatusCounts & ContactRequestConversionMetrics;
   pipeline: Array<{
-    status: ContactRequestStatus;
+    status: string;
     label: string;
     count: number;
     percentage: number;
@@ -131,4 +128,12 @@ export interface ContactRequestAnalyticsRepository {
     range: ContactRequestAnalyticsRange,
     limit: number,
   ): Promise<PendingContactRequestAnalyticsItem[]>;
+  getStatusPipeline(range: ContactRequestAnalyticsRange): Promise<
+    Array<{
+      status: string;
+      label: string;
+      classification: 'open' | 'won' | 'lost';
+      count: number;
+    }>
+  >;
 }

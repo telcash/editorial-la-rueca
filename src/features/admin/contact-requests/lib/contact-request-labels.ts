@@ -1,13 +1,4 @@
-import type { ContactRequestStatus } from '@/schemas/contact-requests/contact-request.schema';
 import { contactRequestSourceLabels } from '@/services/contact-requests/contact-request-source';
-
-export const contactRequestStatusLabels: Record<ContactRequestStatus, string> = {
-  new: 'Nuevo',
-  contacted: 'Contactado',
-  in_progress: 'En seguimiento',
-  won: 'Ganado',
-  lost: 'Perdido',
-};
 
 export { contactRequestSourceLabels };
 

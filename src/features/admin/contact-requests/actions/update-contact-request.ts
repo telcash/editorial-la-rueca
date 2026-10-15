@@ -17,7 +17,7 @@ import {
 } from '../lib/contact-request-form-data';
 import type { ContactRequestAdminFormState } from '../types/contact-request-admin-form-state';
 
-export async function updateContactRequestAction(
+export async function updateContactRequestServiceAction(
   contactRequestId: string,
   _previousState: ContactRequestAdminFormState,
   formData: FormData,
@@ -25,6 +25,14 @@ export async function updateContactRequestAction(
   await requireEditorialStaff();
 
   const values = getContactRequestAdminFormValues(formData);
+  if (formData.has('status') || formData.has('internalNotes')) {
+    return {
+      success: false,
+      fieldErrors: {},
+      formError: 'Este formulario está desactualizado. Recarga la solicitud antes de guardar.',
+      values,
+    };
+  }
   const parsedInput = updateContactRequestAdminSchema.safeParse(
     getContactRequestAdminUpdateInput(formData),
   );
@@ -79,6 +87,7 @@ export async function updateContactRequestAction(
   }
 
   revalidatePath('/admin/contact-requests');
+  revalidatePath('/admin/contact-requests/analytics');
   revalidatePath(`/admin/contact-requests/${contactRequestId}`);
   redirect(`/admin/contact-requests/${contactRequestId}?feedback=contactRequestUpdated`);
 }

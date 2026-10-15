@@ -49,7 +49,7 @@ describe('contact request list query helpers', () => {
   it('normalizes invalid status, source, dates and page', () => {
     expect(
       parseContactRequestListQuery({
-        status: 'closed',
+        status: 'INVALID KEY',
         source: 'ads',
         emailStatus: 'queued',
         dateFrom: '01-01-2026',
@@ -73,6 +73,13 @@ describe('contact request list query helpers', () => {
 
     expect(parsed.source).toBe('meta_instant_form');
     expect(toContactRequestFilters(parsed).source).toBe('meta_instant_form');
+  });
+
+  it('accepts valid custom workflow keys in the status filter', () => {
+    expect(parseContactRequestListQuery({ status: 'waiting_for_reply' }).status).toBe(
+      'waiting_for_reply',
+    );
+    expect(parseContactRequestListQuery({ status: 'INVALID KEY' }).status).toBe('all');
   });
 
   it('converts date filters to inclusive day ranges', () => {

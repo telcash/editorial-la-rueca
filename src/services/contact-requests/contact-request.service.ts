@@ -28,8 +28,6 @@ export const {
   createContactRequest,
   deleteContactRequestPermanently,
   updateContactRequest,
-  updateContactRequestStatus,
-  updateContactRequestInternalNotes,
   markContactRequestEmailNotificationSent,
   markContactRequestEmailNotificationFailed,
 } = contactRequestService;

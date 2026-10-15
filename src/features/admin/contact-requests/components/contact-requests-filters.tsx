@@ -4,14 +4,9 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { buildListHref } from '@/features/admin/lib/list-query';
 import type { EditorialService } from '@/db/schema';
-import {
-  contactRequestSources,
-  contactRequestStatuses,
-} from '@/schemas/contact-requests/contact-request.schema';
-import {
-  contactRequestSourceLabels,
-  contactRequestStatusLabels,
-} from '../lib/contact-request-labels';
+import type { ContactRequestStatusDefinition } from '@/db/schema';
+import { contactRequestSources } from '@/schemas/contact-requests/contact-request.schema';
+import { contactRequestSourceLabels } from '../lib/contact-request-labels';
 import type {
   ContactRequestEmailStatusFilter,
   ContactRequestSourceFilter,
@@ -28,6 +23,7 @@ interface ContactRequestsFiltersProps {
   dateTo: string;
   pageSize: number;
   services: Pick<EditorialService, 'id' | 'name'>[];
+  statuses: Pick<ContactRequestStatusDefinition, 'key' | 'label' | 'isActive'>[];
 }
 
 export function ContactRequestsFilters({
@@ -40,6 +36,7 @@ export function ContactRequestsFilters({
   dateTo,
   pageSize,
   services,
+  statuses,
 }: ContactRequestsFiltersProps) {
   const hasFilters = Boolean(
     query ||
@@ -81,9 +78,10 @@ export function ContactRequestsFilters({
               className="min-h-10 rounded-md border border-input bg-background px-3 text-sm"
             >
               <option value="all">Todos</option>
-              {contactRequestStatuses.map((option) => (
-                <option key={option} value={option}>
-                  {contactRequestStatusLabels[option]}
+              {statuses.map((option) => (
+                <option key={option.key} value={option.key}>
+                  {option.label}
+                  {!option.isActive ? ' (inactivo)' : ''}
                 </option>
               ))}
             </select>

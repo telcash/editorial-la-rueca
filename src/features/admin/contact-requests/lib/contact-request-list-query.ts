@@ -1,16 +1,15 @@
 import {
   contactRequestSources,
-  contactRequestStatuses,
   type ContactRequestSource,
-  type ContactRequestStatus,
 } from '@/schemas/contact-requests/contact-request.schema';
+import { contactRequestStatusKeySchema } from '@/schemas/contact-requests/contact-request-workflow.schema';
 import {
   parseAdminPageSize,
   normalizeListSearchQuery,
   type AdminPageSize,
 } from '@/features/admin/lib/list-query';
 
-export type ContactRequestStatusFilter = ContactRequestStatus | 'all';
+export type ContactRequestStatusFilter = string | 'all';
 export type ContactRequestSourceFilter = ContactRequestSource | 'all';
 export type ContactRequestEmailStatusFilter = 'all' | 'sent' | 'problem';
 
@@ -49,9 +48,8 @@ function parsePage(value: string | undefined): number {
 }
 
 function parseStatus(value: string | undefined): ContactRequestStatusFilter {
-  return contactRequestStatuses.includes(value as ContactRequestStatus)
-    ? (value as ContactRequestStatus)
-    : 'all';
+  const parsed = contactRequestStatusKeySchema.safeParse(value);
+  return parsed.success ? parsed.data : 'all';
 }
 
 function parseSource(value: string | undefined): ContactRequestSourceFilter {

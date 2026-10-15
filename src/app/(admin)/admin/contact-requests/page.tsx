@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { BarChart3 } from 'lucide-react';
+import { BarChart3, ListChecks } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { AdminPageHeader } from '@/features/admin/components/admin-page-header';
@@ -17,6 +17,7 @@ import { getAdminFeedbackMessage } from '@/features/admin/lib/feedback-messages'
 import { requireEditorialStaff } from '@/services/auth/access.service';
 import * as ContactRequestService from '@/services/contact-requests/contact-request.service';
 import * as EditorialServiceService from '@/services/editorial-services/editorial-service.service';
+import * as ContactRequestWorkflowService from '@/services/contact-requests/contact-request-workflow.service';
 
 interface AdminContactRequestsPageProps {
   searchParams: Promise<{
@@ -39,14 +40,14 @@ export default async function AdminContactRequestsPage({
   const params = await searchParams;
   const query = parseContactRequestListQuery(params);
   const feedbackMessage = getAdminFeedbackMessage(params.feedback);
-  await requireEditorialStaff();
+  const staff = await requireEditorialStaff();
 
   const filters = toContactRequestFilters(query);
   const metricFilters = {
     ...filters,
     status: 'all' as const,
   };
-  const [contactRequests, counts, services] = await Promise.all([
+  const [contactRequests, counts, services, statuses] = await Promise.all([
     ContactRequestService.listContactRequests({
       filters,
       page: query.page,
@@ -54,6 +55,7 @@ export default async function AdminContactRequestsPage({
     }),
     ContactRequestService.getContactRequestCounts(metricFilters),
     EditorialServiceService.listServices('all'),
+    ContactRequestWorkflowService.listStatusesForFilters(),
   ]);
 
   return (
@@ -64,12 +66,22 @@ export default async function AdminContactRequestsPage({
         title="Solicitudes"
         description="Gestiona los leads recibidos por servicio, estado comercial, origen y campaña."
         actions={
-          <Button asChild variant="outline">
-            <Link href="/admin/contact-requests/analytics">
-              <BarChart3 className="size-4" aria-hidden="true" />
-              Analítica
-            </Link>
-          </Button>
+          <div className="flex flex-wrap gap-2">
+            <Button asChild variant="outline">
+              <Link href="/admin/contact-requests/analytics">
+                <BarChart3 className="size-4" aria-hidden="true" />
+                Analítica
+              </Link>
+            </Button>
+            {staff.role === 'admin' ? (
+              <Button asChild variant="outline">
+                <Link href="/admin/contact-requests/statuses">
+                  <ListChecks className="size-4" aria-hidden="true" />
+                  Estados
+                </Link>
+              </Button>
+            ) : null}
+          </div>
         }
       />
 
@@ -85,6 +97,7 @@ export default async function AdminContactRequestsPage({
         dateTo={query.dateTo}
         pageSize={query.pageSize}
         services={services}
+        statuses={statuses}
       />
 
       {contactRequests.items.length > 0 ? (

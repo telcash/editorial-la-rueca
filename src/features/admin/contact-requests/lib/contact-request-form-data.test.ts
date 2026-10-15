@@ -45,22 +45,16 @@ describe('contact request admin form data helpers', () => {
     formData.set('internalNotes', 'Llamar el jueves');
 
     expect(getContactRequestAdminFormValues(formData)).toEqual({
-      status: 'contacted',
       serviceId: 'f3f6a49f-c418-4522-b311-a70b88aab7f4',
-      internalNotes: 'Llamar el jueves',
     });
     expect(getContactRequestAdminUpdateInput(formData)).toEqual({
-      status: 'contacted',
       serviceId: 'f3f6a49f-c418-4522-b311-a70b88aab7f4',
-      internalNotes: 'Llamar el jueves',
     });
   });
 
-  it('maps nullable internal notes to an empty form string', () => {
+  it('maps the service association to the admin form', () => {
     expect(getContactRequestAdminFormValuesFromContactRequest(baseContactRequest)).toEqual({
-      status: 'new',
       serviceId: 'f3f6a49f-c418-4522-b311-a70b88aab7f4',
-      internalNotes: '',
     });
   });
 });

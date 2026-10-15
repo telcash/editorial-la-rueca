@@ -105,21 +105,20 @@ describe('contact request schemas', () => {
     expect(result.success).toBe(false);
   });
 
-  it('validates admin update status, service and internal notes', () => {
+  it('validates only the permitted admin service update', () => {
     expect(
       updateContactRequestAdminSchema.parse({
-        status: 'in_progress',
         serviceId,
-        internalNotes: '  Llamar el jueves  ',
       }),
     ).toEqual({
-      status: 'in_progress',
       serviceId,
-      internalNotes: 'Llamar el jueves',
     });
   });
 
-  it('rejects invalid admin status', () => {
-    expect(updateContactRequestAdminSchema.safeParse({ status: 'closed' }).success).toBe(false);
+  it('rejects legacy status and internal note updates', () => {
+    expect(updateContactRequestAdminSchema.safeParse({ status: 'won' }).success).toBe(false);
+    expect(updateContactRequestAdminSchema.safeParse({ internalNotes: 'legacy' }).success).toBe(
+      false,
+    );
   });
 });

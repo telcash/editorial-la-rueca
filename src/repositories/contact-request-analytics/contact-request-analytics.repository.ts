@@ -3,7 +3,7 @@ import 'server-only';
 import { and, asc, desc, eq, gte, isNotNull, lte, ne, sql } from 'drizzle-orm';
 
 import { db } from '@/db';
-import { contactRequests, services } from '@/db/schema';
+import { contactRequestStatuses, contactRequests, services } from '@/db/schema';
 import type {
   ContactRequestAnalyticsRange,
   ContactRequestStatusCounts,
@@ -27,14 +27,16 @@ const contactedCount =
   sql<number>`count(*) filter (where ${contactRequests.status} = 'contacted')`.mapWith(Number);
 const inProgressCount =
   sql<number>`count(*) filter (where ${contactRequests.status} = 'in_progress')`.mapWith(Number);
-const wonCount = sql<number>`count(*) filter (where ${contactRequests.status} = 'won')`.mapWith(
-  Number,
-);
-const lostCount = sql<number>`count(*) filter (where ${contactRequests.status} = 'lost')`.mapWith(
-  Number,
-);
+const wonCount =
+  sql<number>`count(*) filter (where ${contactRequestStatuses.classification} = 'won')`.mapWith(
+    Number,
+  );
+const lostCount =
+  sql<number>`count(*) filter (where ${contactRequestStatuses.classification} = 'lost')`.mapWith(
+    Number,
+  );
 const openCount =
-  sql<number>`count(*) filter (where ${contactRequests.status} in ('new', 'contacted', 'in_progress'))`.mapWith(
+  sql<number>`count(*) filter (where ${contactRequestStatuses.classification} = 'open')`.mapWith(
     Number,
   );
 const notificationProblemsCount =
@@ -57,6 +59,7 @@ export async function getStatusCounts(
       notificationProblems: notificationProblemsCount,
     })
     .from(contactRequests)
+    .leftJoin(contactRequestStatuses, eq(contactRequestStatuses.key, contactRequests.status))
     .where(getRangeCondition(range));
 
   return {
@@ -84,6 +87,7 @@ export async function getServiceAnalytics(range: ContactRequestAnalyticsRange) {
       open: openCount,
     })
     .from(contactRequests)
+    .leftJoin(contactRequestStatuses, eq(contactRequestStatuses.key, contactRequests.status))
     .leftJoin(services, eq(services.id, contactRequests.serviceId))
     .where(getRangeCondition(range))
     .groupBy(services.id, services.name, services.slug)
@@ -102,6 +106,7 @@ export async function getSourceAnalytics(range: ContactRequestAnalyticsRange) {
       lost: lostCount,
     })
     .from(contactRequests)
+    .leftJoin(contactRequestStatuses, eq(contactRequestStatuses.key, contactRequests.status))
     .where(getRangeCondition(range))
     .groupBy(contactRequests.source)
     .orderBy(desc(total), asc(contactRequests.source));
@@ -122,6 +127,7 @@ export async function getCampaignAnalytics(range: ContactRequestAnalyticsRange) 
       lost: lostCount,
     })
     .from(contactRequests)
+    .leftJoin(contactRequestStatuses, eq(contactRequestStatuses.key, contactRequests.status))
     .where(
       and(
         getRangeCondition(range),
@@ -152,6 +158,7 @@ export async function getMonthlyAnalytics(range: ContactRequestAnalyticsRange) {
       lost: lostCount,
     })
     .from(contactRequests)
+    .leftJoin(contactRequestStatuses, eq(contactRequestStatuses.key, contactRequests.status))
     .where(getRangeCondition(range))
     .groupBy(month)
     .orderBy(asc(month));
@@ -175,4 +182,37 @@ export async function findPendingContactRequests(
     .where(and(getRangeCondition(range), eq(contactRequests.status, 'new')))
     .orderBy(asc(contactRequests.createdAt), asc(contactRequests.id))
     .limit(limit);
+}
+
+export async function getStatusPipeline(range: ContactRequestAnalyticsRange) {
+  const [statuses, counts] = await Promise.all([
+    db
+      .select({
+        key: contactRequestStatuses.key,
+        label: contactRequestStatuses.label,
+        classification: contactRequestStatuses.classification,
+        isActive: contactRequestStatuses.isActive,
+        sortOrder: contactRequestStatuses.sortOrder,
+      })
+      .from(contactRequestStatuses)
+      .orderBy(asc(contactRequestStatuses.sortOrder), asc(contactRequestStatuses.key)),
+    db
+      .select({
+        status: contactRequests.status,
+        count: sql<number>`count(*)`.mapWith(Number),
+      })
+      .from(contactRequests)
+      .where(getRangeCondition(range))
+      .groupBy(contactRequests.status),
+  ]);
+  const countByStatus = new Map(counts.map(({ status, count }) => [status, count]));
+
+  return statuses
+    .filter((status) => status.isActive || (countByStatus.get(status.key) ?? 0) > 0)
+    .map((status) => ({
+      status: status.key,
+      label: status.label,
+      classification: status.classification as 'open' | 'won' | 'lost',
+      count: countByStatus.get(status.key) ?? 0,
+    }));
 }

@@ -11,6 +11,8 @@ const contactRequest: ContactRequestAdminListItem = {
   phone: '+34 600 111 222',
   province: 'Madrid',
   status: 'in_progress',
+  statusLabel: 'En seguimiento',
+  statusClassification: 'open',
   source: 'instagram',
   emailSentAt: new Date('2026-02-01T10:01:00.000Z'),
   emailError: null,

@@ -20,6 +20,8 @@ export interface ContactRequestAdminListItem {
   phone: ContactRequest['phone'];
   province: ContactRequest['province'];
   status: ContactRequestStatus;
+  statusLabel: string;
+  statusClassification: 'open' | 'won' | 'lost';
   source: ContactRequestSource;
   emailSentAt: ContactRequest['emailSentAt'];
   emailError: ContactRequest['emailError'];
@@ -72,11 +74,6 @@ export interface ContactRequestRepository {
   update(
     id: string,
     input: UpdateContactRequestAdminInput,
-  ): Promise<ContactRequestAdminDetail | null>;
-  updateStatus(id: string, status: ContactRequestStatus): Promise<ContactRequestAdminDetail | null>;
-  updateInternalNotes(
-    id: string,
-    internalNotes: string | null,
   ): Promise<ContactRequestAdminDetail | null>;
   markEmailNotificationSent(id: string, sentAt: Date): Promise<ContactRequestAdminDetail | null>;
   markEmailNotificationFailed(

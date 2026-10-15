@@ -5,14 +5,11 @@ import { useFormStatus } from 'react-dom';
 
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
 import { FieldError } from '@/features/admin/components/forms/field-error';
 import { FormActions } from '@/features/admin/components/forms/form-actions';
 import { FormSection } from '@/features/admin/components/forms/form-section';
-import { contactRequestStatuses } from '@/schemas/contact-requests/contact-request.schema';
 import type { EditorialService } from '@/db/schema';
-import { updateContactRequestAction } from '../actions/update-contact-request';
-import { contactRequestStatusLabels } from '../lib/contact-request-labels';
+import { updateContactRequestServiceAction } from '../actions/update-contact-request';
 import {
   initialContactRequestAdminFormState,
   type ContactRequestAdminFormState,
@@ -52,7 +49,7 @@ export function ContactRequestAdminForm({
   initialValues,
   services,
 }: ContactRequestAdminFormProps) {
-  const action = updateContactRequestAction.bind(null, contactRequestId);
+  const action = updateContactRequestServiceAction.bind(null, contactRequestId);
   const [state, formAction] = useActionState(action, getInitialState(initialValues));
 
   return (
@@ -67,27 +64,10 @@ export function ContactRequestAdminForm({
             ) : null}
 
             <FormSection
-              title="Gestión interna"
-              description="Actualiza el estado comercial, corrige el servicio asociado y añade notas privadas."
+              title="Clasificación administrativa"
+              description="El estado y las notas se gestionan en el seguimiento histórico."
             >
               <div className="grid gap-5">
-                <div className="grid gap-2 sm:max-w-xs">
-                  <Label htmlFor="status">Estado</Label>
-                  <select
-                    id="status"
-                    name="status"
-                    defaultValue={state.values.status}
-                    className="min-h-10 rounded-md border border-input bg-background px-3 text-sm"
-                  >
-                    {contactRequestStatuses.map((status) => (
-                      <option key={status} value={status}>
-                        {contactRequestStatusLabels[status]}
-                      </option>
-                    ))}
-                  </select>
-                  <FieldError message={state.fieldErrors.status?.[0]} />
-                </div>
-
                 <div className="grid gap-2 sm:max-w-md">
                   <Label htmlFor="serviceId">Servicio</Label>
                   <select
@@ -104,18 +84,6 @@ export function ContactRequestAdminForm({
                     ))}
                   </select>
                   <FieldError message={state.fieldErrors.serviceId?.[0]} />
-                </div>
-
-                <div className="grid gap-2">
-                  <Label htmlFor="internalNotes">Notas internas</Label>
-                  <Textarea
-                    id="internalNotes"
-                    name="internalNotes"
-                    defaultValue={state.values.internalNotes}
-                    rows={7}
-                    placeholder="Llamar el jueves, presupuesto enviado, manuscrito recibido…"
-                  />
-                  <FieldError message={state.fieldErrors.internalNotes?.[0]} />
                 </div>
               </div>
             </FormSection>

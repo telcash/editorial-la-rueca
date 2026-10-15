@@ -88,6 +88,39 @@ function toDetail(contactRequest: ContactRequest): ContactRequestAdminDetail {
   };
 }
 
+function toListItem(contactRequest: ContactRequest) {
+  const detail = toDetail(contactRequest);
+  const labels: Record<string, string> = {
+    new: 'Nuevo',
+    contacted: 'Contactado',
+    in_progress: 'En seguimiento',
+    won: 'Ganado',
+    lost: 'Perdido',
+  };
+
+  return {
+    id: detail.id,
+    name: detail.name,
+    email: detail.email,
+    phone: detail.phone,
+    province: detail.province,
+    status: detail.status,
+    statusLabel: labels[detail.status] ?? detail.status,
+    statusClassification:
+      detail.status === 'won'
+        ? ('won' as const)
+        : detail.status === 'lost'
+          ? ('lost' as const)
+          : ('open' as const),
+    source: detail.source,
+    emailSentAt: detail.emailSentAt,
+    emailError: detail.emailError,
+    createdAt: detail.createdAt,
+    updatedAt: detail.updatedAt,
+    service: detail.service,
+  };
+}
+
 function createFakeRepositories() {
   const services = new Map<string, EditorialService>([
     [activeService.id, activeService],
@@ -131,7 +164,7 @@ function createFakeRepositories() {
       lastListOptions = options;
 
       return createPaginatedResult(
-        Array.from(contactRequests.values()).map(toDetail),
+        Array.from(contactRequests.values()).map(toListItem),
         contactRequests.size,
         options.page,
         options.pageSize,
@@ -180,12 +213,6 @@ function createFakeRepositories() {
     },
     async update(id, input) {
       return updateContactRequestRecord(id, input);
-    },
-    async updateStatus(id, status) {
-      return updateContactRequestRecord(id, { status });
-    },
-    async updateInternalNotes(id, internalNotes) {
-      return updateContactRequestRecord(id, { internalNotes });
     },
     async markEmailNotificationSent(id, sentAt) {
       return updateContactRequestRecord(id, {
@@ -449,32 +476,25 @@ describe('createContactRequestService', () => {
     );
   });
 
-  it('updates status, internal notes and corrected service', async () => {
+  it('updates only service and rejects legacy status/note writes', async () => {
     const service = createContactRequestService(
       repositories.contactRequestRepository,
       repositories.editorialServiceRepository,
     );
 
     await expect(
-      service.updateContactRequest(contactRequestId, {
-        status: 'in_progress',
-        serviceId: alternateServiceId,
-        internalNotes: 'Llamar el jueves',
-      }),
+      service.updateContactRequest(contactRequestId, { serviceId: alternateServiceId }),
     ).resolves.toMatchObject({
-      status: 'in_progress',
+      status: 'new',
       serviceId: alternateServiceId,
-      internalNotes: 'Llamar el jueves',
+      internalNotes: null,
     });
 
     await expect(
-      service.updateContactRequestStatus(contactRequestId, 'won'),
-    ).resolves.toMatchObject({
-      status: 'won',
-    });
-    await expect(
-      service.updateContactRequestInternalNotes(contactRequestId, null),
-    ).resolves.toMatchObject({
+      service.updateContactRequest(contactRequestId, { status: 'won', internalNotes: 'legacy' }),
+    ).rejects.toThrow();
+    await expect(service.getContactRequestById(contactRequestId)).resolves.toMatchObject({
+      status: 'new',
       internalNotes: null,
     });
   });

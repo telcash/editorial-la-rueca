@@ -26,6 +26,7 @@ function createRepositoryMock(): MockAnalyticsRepository {
     getMonthlyAnalytics: vi.fn<ContactRequestAnalyticsRepository['getMonthlyAnalytics']>(),
     findPendingContactRequests:
       vi.fn<ContactRequestAnalyticsRepository['findPendingContactRequests']>(),
+    getStatusPipeline: vi.fn<ContactRequestAnalyticsRepository['getStatusPipeline']>(),
   };
 }
 
@@ -72,6 +73,15 @@ describe('contact request analytics service', () => {
         lost: 1,
         open: 3,
       },
+    ]);
+    repository.getStatusPipeline.mockResolvedValue([
+      { status: 'new', label: 'Nuevo', classification: 'open', count: 2 },
+      { status: 'contacted', label: 'Contactado', classification: 'open', count: 2 },
+      { status: 'in_progress', label: 'En seguimiento', classification: 'open', count: 1 },
+      { status: 'no_answer', label: 'No contesta', classification: 'open', count: 0 },
+      { status: 'won', label: 'Ganado', classification: 'won', count: 3 },
+      { status: 'lost', label: 'Perdido', classification: 'lost', count: 2 },
+      { status: 'custom_open', label: 'Pendiente de firma', classification: 'open', count: 0 },
     ]);
     repository.getSourceAnalytics.mockResolvedValue([
       {
@@ -149,6 +159,8 @@ describe('contact request analytics service', () => {
         expect.objectContaining({ status: 'in_progress', count: 1, percentage: 10 }),
         expect.objectContaining({ status: 'won', count: 3, percentage: 30 }),
         expect.objectContaining({ status: 'lost', count: 2, percentage: 20 }),
+        expect.objectContaining({ status: 'no_answer', label: 'No contesta', count: 0 }),
+        expect.objectContaining({ status: 'custom_open', label: 'Pendiente de firma', count: 0 }),
       ]),
     );
   });

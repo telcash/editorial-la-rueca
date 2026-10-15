@@ -7,11 +7,12 @@ describe('ContactRequestStatusBadge', () => {
   it('renders accessible text for every commercial status', () => {
     const html = renderToStaticMarkup(
       <div>
-        <ContactRequestStatusBadge status="new" />
-        <ContactRequestStatusBadge status="contacted" />
-        <ContactRequestStatusBadge status="in_progress" />
-        <ContactRequestStatusBadge status="won" />
-        <ContactRequestStatusBadge status="lost" />
+        <ContactRequestStatusBadge label="Nuevo" classification="open" />
+        <ContactRequestStatusBadge label="Contactado" classification="open" />
+        <ContactRequestStatusBadge label="En seguimiento" classification="open" />
+        <ContactRequestStatusBadge label="No contesta" classification="open" />
+        <ContactRequestStatusBadge label="Ganado" classification="won" />
+        <ContactRequestStatusBadge label="Perdido" classification="lost" />
       </div>,
     );
 
@@ -20,5 +21,14 @@ describe('ContactRequestStatusBadge', () => {
     expect(html).toContain('En seguimiento');
     expect(html).toContain('Ganado');
     expect(html).toContain('Perdido');
+    expect(html).toContain('No contesta');
+  });
+
+  it('renders custom catalog labels without requiring a static enum', () => {
+    const html = renderToStaticMarkup(
+      <ContactRequestStatusBadge label="Esperando revisión" classification="open" />,
+    );
+
+    expect(html).toContain('Esperando revisión');
   });
 });

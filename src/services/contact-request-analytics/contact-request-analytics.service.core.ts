@@ -10,22 +10,11 @@ import {
   type ContactRequestSourceAnalyticsItem,
   type ContactRequestStatusCounts,
 } from './contact-request-analytics.types';
-import {
-  contactRequestSources,
-  type ContactRequestStatus,
-} from '@/schemas/contact-requests/contact-request.schema';
+import { contactRequestSources } from '@/schemas/contact-requests/contact-request.schema';
 import { contactRequestSourceLabels } from '@/services/contact-requests/contact-request-source';
 
 const PENDING_CONTACT_REQUESTS_LIMIT = 5;
 const MADRID_TIME_ZONE = 'Europe/Madrid';
-
-const statusLabels: Record<ContactRequestStatus, string> = {
-  new: 'Nuevo',
-  contacted: 'Contactado',
-  in_progress: 'En seguimiento',
-  won: 'Ganado',
-  lost: 'Perdido',
-};
 
 function getMadridYear(date: Date): number {
   const year = new Intl.DateTimeFormat('en-CA', {
@@ -156,16 +145,12 @@ async function getComparison(
   };
 }
 
-function createPipeline(summary: ContactRequestStatusCounts) {
-  return [
-    { status: 'new', label: statusLabels.new, count: summary.new },
-    { status: 'contacted', label: statusLabels.contacted, count: summary.contacted },
-    { status: 'in_progress', label: statusLabels.in_progress, count: summary.inProgress },
-    { status: 'won', label: statusLabels.won, count: summary.won },
-    { status: 'lost', label: statusLabels.lost, count: summary.lost },
-  ].map((item) => ({
+function createPipeline(
+  statuses: Array<{ status: string; label: string; count: number }>,
+  summary: ContactRequestStatusCounts,
+) {
+  return statuses.map((item) => ({
     ...item,
-    status: item.status as ContactRequestStatus,
     percentage: calculatePercentage(item.count, summary.total),
   }));
 }
@@ -206,20 +191,22 @@ export function createContactRequestAnalyticsService(
       now: Date = new Date(),
     ): Promise<ContactRequestAnalyticsData> {
       const range = getContactRequestAnalyticsRange(period, now);
-      const [summaryCounts, services, sources, campaigns, monthly, pending] = await Promise.all([
-        repository.getStatusCounts(range),
-        repository.getServiceAnalytics(range),
-        repository.getSourceAnalytics(range),
-        repository.getCampaignAnalytics(range),
-        repository.getMonthlyAnalytics(range),
-        repository.findPendingContactRequests(range, PENDING_CONTACT_REQUESTS_LIMIT),
-      ]);
+      const [summaryCounts, statuses, services, sources, campaigns, monthly, pending] =
+        await Promise.all([
+          repository.getStatusCounts(range),
+          repository.getStatusPipeline(range),
+          repository.getServiceAnalytics(range),
+          repository.getSourceAnalytics(range),
+          repository.getCampaignAnalytics(range),
+          repository.getMonthlyAnalytics(range),
+          repository.findPendingContactRequests(range, PENDING_CONTACT_REQUESTS_LIMIT),
+        ]);
       const summary = withConversions(summaryCounts);
 
       return {
         range,
         summary,
-        pipeline: createPipeline(summaryCounts),
+        pipeline: createPipeline(statuses, summaryCounts),
         services: services.map((item): ContactRequestServiceAnalyticsItem => withConversions(item)),
         sources: completeSources(sources, summaryCounts.total),
         campaigns: campaigns.map((item): ContactRequestCampaignAnalyticsItem =>

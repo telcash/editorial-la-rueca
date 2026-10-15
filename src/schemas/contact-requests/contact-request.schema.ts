@@ -2,7 +2,6 @@ import { z } from 'zod';
 
 import { contactRequestUtmLimits } from './utm';
 
-export const contactRequestStatuses = ['new', 'contacted', 'in_progress', 'won', 'lost'] as const;
 export const contactRequestSources = [
   'website',
   'instagram',
@@ -12,18 +11,7 @@ export const contactRequestSources = [
   'meta_instant_form',
 ] as const;
 
-export const contactRequestStatusSchema = z.enum(contactRequestStatuses);
 export const contactRequestSourceSchema = z.enum(contactRequestSources);
-
-const optionalTrimmedStringAsNull = z.preprocess((value) => {
-  if (typeof value !== 'string') {
-    return value;
-  }
-
-  const trimmedValue = value.trim();
-
-  return trimmedValue.length === 0 ? null : trimmedValue;
-}, z.string().trim().nullable().optional());
 
 const optionalPhoneSchema = z.preprocess(
   (value) => (typeof value === 'string' && value.trim() === '' ? null : value),
@@ -91,19 +79,17 @@ export const createContactRequestSchema = z
 
 export const updateContactRequestAdminSchema = z
   .object({
-    status: contactRequestStatusSchema.optional(),
     serviceId: z.preprocess(
       (value) => (value === '' ? null : value),
       z.string().uuid('Selecciona un servicio válido.').nullable().optional(),
     ),
-    internalNotes: optionalTrimmedStringAsNull,
   })
   .strict()
   .refine((data) => Object.values(data).some((value) => value !== undefined), {
     message: 'Debes proporcionar al menos un campo para actualizar.',
   });
 
-export type ContactRequestStatus = (typeof contactRequestStatuses)[number];
+export type ContactRequestStatus = string;
 export type ContactRequestSource = (typeof contactRequestSources)[number];
 export type CreateContactRequestInput = z.infer<typeof createContactRequestSchema>;
 export type UpdateContactRequestAdminInput = z.infer<typeof updateContactRequestAdminSchema>;

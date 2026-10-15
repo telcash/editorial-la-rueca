@@ -14,9 +14,7 @@ export function getContactRequestAdminFormValues(
   formData: FormData,
 ): ContactRequestAdminFormValues {
   return {
-    status: getTextValue(formData, 'status'),
     serviceId: getTextValue(formData, 'serviceId'),
-    internalNotes: getTextValue(formData, 'internalNotes'),
   };
 }
 
@@ -26,9 +24,7 @@ export function getContactRequestAdminUpdateInput(
   const values = getContactRequestAdminFormValues(formData);
 
   return {
-    status: values.status,
     serviceId: values.serviceId,
-    internalNotes: values.internalNotes,
   };
 }
 
@@ -36,8 +32,6 @@ export function getContactRequestAdminFormValuesFromContactRequest(
   contactRequest: ContactRequestAdminDetail,
 ): ContactRequestAdminFormValues {
   return {
-    status: contactRequest.status,
     serviceId: contactRequest.serviceId ?? '',
-    internalNotes: contactRequest.internalNotes ?? '',
   };
 }

@@ -12,13 +12,16 @@ import { ContactRequestPermanentDeleteButton } from '@/features/admin/contact-re
 import { ContactRequestStatusBadge } from '@/features/admin/contact-requests/components/contact-request-status-badge';
 import { ContactRequestEmailStatusBadge } from '@/features/admin/contact-requests/components/contact-request-email-status-badge';
 import { ResendContactRequestNotificationButton } from '@/features/admin/contact-requests/components/resend-contact-request-notification-button';
+import { ContactRequestWorkflowForms } from '@/features/admin/contact-requests/components/contact-request-workflow-forms';
 import { contactRequestSourceLabels } from '@/features/admin/contact-requests/lib/contact-request-labels';
 import { getContactRequestAdminFormValuesFromContactRequest } from '@/features/admin/contact-requests/lib/contact-request-form-data';
 import { formatContactRequestDate } from '@/features/admin/contact-requests/lib/format-contact-request-date';
+import { createContactRequestTimeline } from '@/features/admin/contact-requests/lib/contact-request-timeline';
 import { getAdminFeedbackMessage } from '@/features/admin/lib/feedback-messages';
 import { requireEditorialStaff } from '@/services/auth/access.service';
 import { ContactRequestNotFoundError } from '@/services/contact-requests/contact-request.errors';
 import * as ContactRequestService from '@/services/contact-requests/contact-request.service';
+import * as ContactRequestWorkflowService from '@/services/contact-requests/contact-request-workflow.service';
 import type { ContactRequestAdminDetail } from '@/services/contact-requests/contact-request.types';
 import * as EditorialServiceService from '@/services/editorial-services/editorial-service.service';
 
@@ -82,12 +85,36 @@ export default async function ContactRequestDetailPage({
   const { id } = await params;
   const feedback = await searchParams;
   const feedbackMessage = getAdminFeedbackMessage(feedback.feedback);
-  const feedbackTone =
-    feedback.feedback === 'contactRequestNotificationFailed' ? 'error' : 'success';
   await requireEditorialStaff();
 
   const contactRequest = await getContactRequestOrNotFound(id);
-  const services = await EditorialServiceService.listServices('all');
+  const [services, statuses, notes, history] = await Promise.all([
+    EditorialServiceService.listServices('all'),
+    ContactRequestWorkflowService.listStatuses({ includeInactive: true }),
+    ContactRequestWorkflowService.listNotes(id),
+    ContactRequestWorkflowService.listStatusHistory(id),
+  ]);
+  const currentStatus = statuses.find((status) => status.key === contactRequest.status);
+  if (!currentStatus) {
+    throw new Error('La solicitud tiene un estado sin definición en el catálogo.');
+  }
+  const statusLabels = new Map(statuses.map((status) => [status.key, status.label]));
+  const timeline = createContactRequestTimeline(notes, history);
+  const statusFeedbackMessages: Record<string, string> = {
+    statusUpdated: 'El estado se ha actualizado y el cambio quedó registrado.',
+    statusConflict: 'La solicitud cambió en otra sesión. Recarga antes de volver a intentarlo.',
+    statusInvalid: 'El estado seleccionado ya no está disponible.',
+    noteAdded: 'La nota se ha añadido al historial.',
+    noteInvalid: 'La nota debe contener texto y no superar los 10.000 caracteres.',
+  };
+  const pageFeedbackMessage =
+    feedbackMessage ?? (feedback.feedback ? statusFeedbackMessages[feedback.feedback] : undefined);
+  const hasErrorFeedback = [
+    'contactRequestNotificationFailed',
+    'statusConflict',
+    'statusInvalid',
+    'noteInvalid',
+  ].includes(feedback.feedback ?? '');
   const serviceOptions = getServiceOptions(services, contactRequest);
   const hasUtmData = Boolean(
     contactRequest.utmSource ||
@@ -99,8 +126,11 @@ export default async function ContactRequestDetailPage({
 
   return (
     <section className="space-y-6">
-      {feedbackMessage ? (
-        <AdminFeedbackBanner tone={feedbackTone} message={feedbackMessage} />
+      {pageFeedbackMessage ? (
+        <AdminFeedbackBanner
+          tone={hasErrorFeedback ? 'error' : 'success'}
+          message={pageFeedbackMessage}
+        />
       ) : null}
 
       <AdminPageHeader
@@ -268,21 +298,64 @@ export default async function ContactRequestDetailPage({
             </CardHeader>
             <CardContent>
               <dl className="grid gap-5">
-                <DetailItem label="Estado">
-                  <ContactRequestStatusBadge status={contactRequest.status} />
-                </DetailItem>
-                <DetailItem label="Notas internas">
-                  {contactRequest.internalNotes ? (
-                    <span className="whitespace-pre-wrap">{contactRequest.internalNotes}</span>
-                  ) : (
-                    'Sin notas internas'
-                  )}
+                <DetailItem label="Estado actual">
+                  <ContactRequestStatusBadge
+                    label={currentStatus.label}
+                    classification={currentStatus.classification as 'open' | 'won' | 'lost'}
+                  />
+                  {!currentStatus.isActive ? (
+                    <span className="ml-2 text-xs text-muted-foreground">Estado inactivo</span>
+                  ) : null}
                 </DetailItem>
               </dl>
-              <p className="mt-5 text-xs leading-5 text-muted-foreground">
-                No se añaden fechas por estado en esta fase. La analítica temporal se modelará con
-                historial de eventos para evitar timestamps inconsistentes.
-              </p>
+              <div className="mt-5">
+                <ContactRequestWorkflowForms
+                  contactRequestId={contactRequest.id}
+                  currentStatus={contactRequest.status}
+                  activeStatuses={statuses.filter((status) => status.isActive)}
+                />
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Historial de seguimiento</CardTitle>
+            </CardHeader>
+            <CardContent>
+              {timeline.length > 0 ? (
+                <ol className="space-y-5 border-l border-border pl-4">
+                  {timeline.map((item) => (
+                    <li key={`${item.kind}-${item.id}`} className="relative space-y-1">
+                      <span className="absolute -left-[21px] top-1 size-2.5 rounded-full bg-primary" />
+                      <p className="text-sm font-medium">
+                        {item.kind === 'note'
+                          ? 'Nota interna'
+                          : item.previousStatus
+                            ? `${statusLabels.get(item.previousStatus) ?? item.previousStatus} → ${statusLabels.get(item.newStatus) ?? item.newStatus}`
+                            : `Estado inicial: ${statusLabels.get(item.newStatus) ?? item.newStatus}`}
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        {item.isLegacy
+                          ? 'Registro importado; fecha original desconocida'
+                          : formatContactRequestDate(item.sortAt)}
+                        {item.authorName
+                          ? ` · ${item.authorName}`
+                          : item.isLegacy
+                            ? ' · Autor desconocido'
+                            : ''}
+                      </p>
+                      {item.kind === 'note' ? (
+                        <p className="whitespace-pre-wrap text-sm leading-6">{item.body}</p>
+                      ) : null}
+                    </li>
+                  ))}
+                </ol>
+              ) : (
+                <p className="text-sm text-muted-foreground">
+                  Todavía no hay actividad de seguimiento.
+                </p>
+              )}
             </CardContent>
           </Card>
 
