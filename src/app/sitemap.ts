@@ -8,6 +8,7 @@ const staticRoutes = [
   '/',
   '/libros',
   '/autores',
+  '/servicios-y-tarifas',
   '/aviso-legal',
   '/politica-de-privacidad',
   '/politica-de-cookies',
