@@ -106,8 +106,17 @@ const money = new Intl.NumberFormat('es-ES', {
   useGrouping: 'always',
 });
 const integer = new Intl.NumberFormat('es-ES', { useGrouping: 'always' });
+const unitMoney = new Intl.NumberFormat('es-ES', {
+  style: 'currency',
+  currency: 'EUR',
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+  useGrouping: 'always',
+});
 export const formatMoney = (value: number): string => money.format(value);
 export const formatCount = (value: number): string => integer.format(value);
+export const formatUnitPrice = (total: number, copies: number): string =>
+  unitMoney.format(total / copies);
 
 export function describeEstimate(estimate: Estimate): string {
   if (estimate.kind === 'priced') {
@@ -126,7 +135,7 @@ export function buildCompleteEstimateSummary(pages: number, copies: number): str
     'Editorial La Rueca · Presupuesto estimado',
     `Hasta ${estimate.maxPages} páginas · ${formatCount(copies)} ejemplares · ${formatMoney(estimate.amount)} sin IVA.`,
     'Incluye maquetación, diseño de cubierta, impresión y envío a un único punto de la península.',
-    '15 × 21 cm (similar al A5, no DIN A5 exacto). Interior B/N, papel ahuesado de 90 g, sin fotografías, imágenes ni tablas.',
+    'Formato 15 × 21 cm. Interior B/N, papel ahuesado de 90 g, sin fotografías, imágenes ni tablas.',
     'Cubierta a color, estucado mate blanco de 270 g, plastificado por una cara y solapas de 9 cm.',
     'No incluye por defecto correcciones, ISBN/depósito legal, distribución, publicación en Amazon ni promoción.',
     'Importe orientativo: el precio definitivo y los impuestos aplicables se confirmarán tras valorar el proyecto.',

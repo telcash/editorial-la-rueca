@@ -20,8 +20,8 @@ describe('Services and pricing public page', () => {
   it('preserves the approved section order without a price table or duplicated layout', () => {
     const html = renderToStaticMarkup(<ServicesAndPricingPage />);
     const anchors = [
-      'id="incluye"',
       'id="calculadora"',
+      'id="incluye"',
       'id="individuales"',
       'id="proceso"',
       'id="preguntas"',
@@ -37,6 +37,45 @@ describe('Services and pricing public page', () => {
     expect(html).toContain('Tu libro, tus derechos.');
     expect(html.match(/<details/g)).toHaveLength(8);
     expect(html).toContain('href="/#publica-tu-libro"');
+    expect(html).not.toContain('Un presupuesto. Todas las etapas esenciales.');
+    expect(html.match(/id="calculator-heading"/g)).toHaveLength(1);
+    expect(html.replace(/<svg\b[\s\S]*?<\/svg>/g, '')).not.toContain('A5');
+  });
+
+  it('connects the heading directly to the estimate without redundant introductory paragraphs', () => {
+    const html = renderToStaticMarkup(<ServicesAndPricingPage />);
+    const section = html.slice(html.indexOf('id="calculadora"')).split('</section>')[0];
+    const afterHeading = section.slice(
+      section.indexOf('</h2>') + 5,
+      section.indexOf('role="group"'),
+    );
+    expect(afterHeading).not.toContain('<p');
+    expect(section).not.toContain('Tu presupuesto reúne');
+    expect(section).not.toContain('Elige el');
+  });
+
+  it('integrates the four included services above the controls in the same estimate group', () => {
+    const html = renderToStaticMarkup(<ServicesAndPricingPage />);
+    const section = html.slice(html.indexOf('id="calculadora"')).split('</section>')[0];
+    const inclusions = section.slice(section.indexOf('id="incluye"')).split('</ul>')[0];
+
+    expect(section).toContain('role="group" aria-label="Presupuesto de edición e impresión"');
+    expect(section.match(/Tu presupuesto incluye/g)).toHaveLength(1);
+    expect(inclusions.match(/<li[ >]/g)).toHaveLength(4);
+    expect(inclusions).not.toContain('<article');
+    expect(inclusions).toContain('Preparación profesional del interior del libro.');
+    expect(inclusions).toContain('Creación y preparación de cubierta a color con solapas.');
+    expect(inclusions).toContain('Producción de los ejemplares seleccionados');
+    expect(inclusions).toContain('Entrega a un único punto de la península.');
+    expect(section.indexOf('Tu presupuesto incluye')).toBeLessThan(section.indexOf('<fieldset'));
+    expect(section.indexOf('<fieldset')).toBeLessThan(section.indexOf('<aside'));
+    expect(section).toContain('555');
+    expect(section).toContain('Copiar estimación');
+    expect(section).toContain('Solicitar presupuesto personalizado');
+    expect(section).toContain('270 g');
+    expect(section).toContain('solapas de 9 cm');
+    expect(section).toContain('sin IVA');
+    expect(section).toContain('ISBN, depósito legal');
   });
 
   it('renders the default estimate and accessible inclusive page/copy controls', () => {
@@ -47,6 +86,16 @@ describe('Services and pricing public page', () => {
     expect(html).toContain('aria-live="polite"');
     expect(html).toContain('Copiar estimación');
     expect(html).toContain('IVA no incluido');
+    expect(html).toContain('id="total-price"');
+    expect(html).toContain('id="unit-price"');
+    expect(html).toMatch(/11,10\s*€/);
+    expect(html).toContain('Por ejemplar');
+    expect(html).toContain('Maquetación · Cubierta · Impresión · Envío');
+    expect(html).not.toContain('4 etapas');
+    expect(html).toContain('Coste medio del presupuesto completo');
+    expect(html).toContain('aria-describedby="unit-price-note"');
+    expect(html).toContain('Formato 15 × 21 cm');
+    expect(html).not.toContain('A5');
   });
 
   it('renders seven services and only the selected tab panel visibly', () => {

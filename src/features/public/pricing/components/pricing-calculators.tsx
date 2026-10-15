@@ -10,6 +10,7 @@ import {
   describeEstimate,
   formatCount,
   formatMoney,
+  formatUnitPrice,
   getIndividualEstimate,
   getPrintEstimate,
   individualStartingPrices,
@@ -84,14 +85,14 @@ export function CompletePricingCalculator() {
         <div className={styles.format}>
           <strong>Así será tu libro</strong>
           <ul className={styles.formatTags}>
-            <li>15 × 21 cm · similar al A5</li>
+            <li>Formato 15 × 21 cm</li>
             <li>Interior B/N</li>
             <li>Papel ahuesado 90 g</li>
           </ul>
           <p>
-            No es DIN A5 exacto. Cubierta a color en papel blanco estucado mate de{' '}
-            <strong>270 g</strong>, plastificada por una cara y con <strong>solapas de 9 cm</strong>
-            . Aplicable a interiores sin fotografías, imágenes ni tablas.
+            Cubierta a color en papel blanco estucado mate de <strong>270 g</strong>, plastificada
+            por una cara y con <strong>solapas de 9 cm</strong>. Aplicable a interiores sin
+            fotografías, imágenes ni tablas.
           </p>
           <p>
             Incluye el envío a <strong>un único punto de la península</strong>. Para otros formatos,
@@ -100,11 +101,37 @@ export function CompletePricingCalculator() {
         </div>
       </div>
       <aside className={styles.summary} aria-label="Presupuesto estimado principal">
-        <p className={styles.eyebrow}>Presupuesto estimado</p>
-        <output className={styles.amount} aria-live="polite" aria-atomic="true">
-          {estimate.kind === 'priced' ? formatMoney(estimate.amount) : 'Consultar presupuesto'}
-        </output>
-        <p>Maquetación + cubierta + impresión + envío · IVA no incluido</p>
+        <div className={styles.priceOverview}>
+          <p className={styles.eyebrow} id="total-price-label">
+            Presupuesto estimado
+          </p>
+          <p className={`${styles.eyebrow} ${styles.unitPriceLabel}`} id="unit-price-label">
+            Por ejemplar
+          </p>
+          <output
+            className={styles.amount}
+            id="total-price"
+            aria-labelledby="total-price-label"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            {estimate.kind === 'priced' ? formatMoney(estimate.amount) : 'Consultar presupuesto'}
+          </output>
+          <output
+            className={styles.unitAmount}
+            id="unit-price"
+            aria-labelledby="unit-price-label"
+            aria-describedby="unit-price-note"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            {estimate.kind === 'priced' ? formatUnitPrice(estimate.amount, copies) : 'Consultar'}
+          </output>
+        </div>
+        <p id="unit-price-note" className={styles.unitPriceNote}>
+          Coste medio del presupuesto completo, no una tarifa de impresión independiente. IVA no
+          incluido.
+        </p>
         <dl>
           <div>
             <dt>Extensión cubierta</dt>
@@ -114,9 +141,9 @@ export function CompletePricingCalculator() {
             <dt>Tirada solicitada</dt>
             <dd>{formatCount(copies)} ejemplares</dd>
           </div>
-          <div>
+          <div className={styles.includedSummary}>
             <dt>Incluye</dt>
-            <dd>4 etapas</dd>
+            <dd>Maquetación · Cubierta · Impresión · Envío</dd>
           </div>
         </dl>
         <button type="button" className={styles.primaryButton} onClick={copySummary}>

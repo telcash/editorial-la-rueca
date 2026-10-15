@@ -8,6 +8,7 @@ import {
   describeEstimate,
   formatCount,
   formatMoney,
+  formatUnitPrice,
   getIndividualEstimate,
   getPrintEstimate,
   layoutPrices,
@@ -135,9 +136,26 @@ describe('Editorial pricing from the 2026–2027 workbook', () => {
     expect(summary).toContain('maquetación, diseño de cubierta, impresión y envío');
     expect(summary).toContain('270 g');
     expect(summary).toContain('solapas de 9 cm');
+    expect(summary).toContain('Formato 15 × 21 cm');
+    expect(summary).not.toContain('A5');
     expect(summary).toContain('No incluye por defecto correcciones');
     expect(summary).not.toMatch(/\d+\s*%/);
   });
+
+  it.each([
+    [200, 50, 555, '11,10'],
+    [200, 100, 670, '6,70'],
+    [150, 200, 880, '4,40'],
+    [400, 1000, 5455, '5,46'],
+  ])(
+    'formats the complete budget average for %i pages and %i copies',
+    (pages, copies, total, unit) => {
+      const estimate = getPrintEstimate('complete', pages, copies);
+      expect(estimate).toMatchObject({ kind: 'priced', amount: total });
+      if (estimate.kind !== 'priced') throw new Error('Expected a published price');
+      expect(formatUnitPrice(estimate.amount, copies).replace(/\s/g, '')).toBe(`${unit}€`);
+    },
+  );
 
   it('formats in Spanish and explains unpriced or invalid estimates', () => {
     expect(formatMoney(0.011)).toContain('0,011');

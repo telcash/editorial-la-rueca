@@ -32,22 +32,22 @@ const benefits = [
   {
     title: 'Maquetación',
     icon: LayoutTemplate,
-    text: 'Composición del interior y preparación de las páginas para el formato final de impresión.',
+    text: 'Preparación profesional del interior del libro.',
   },
   {
     title: 'Diseño de cubierta',
     icon: Palette,
-    text: 'Creación y preparación de una cubierta a color con solapas, adaptada a las especificaciones de la edición.',
+    text: 'Creación y preparación de cubierta a color con solapas.',
   },
   {
     title: 'Impresión',
     icon: Printer,
-    text: 'Producción de la tirada elegida en formato 15 × 21 cm, interior en blanco y negro.',
+    text: 'Producción de los ejemplares seleccionados, según las especificaciones indicadas.',
   },
   {
     title: 'Envío',
     icon: Truck,
-    text: 'Porte de la tirada a un único punto de entrega en la península, tal como figura en las tarifas.',
+    text: 'Entrega a un único punto de la península.',
   },
 ] as const;
 
@@ -181,43 +181,33 @@ export default function ServicesAndPricingPage() {
           </div>
         </div>
       </header>
-      <section
-        className={`${styles.section} ${styles.whiteSection}`}
-        id="incluye"
-        aria-labelledby="included-heading"
-      >
-        <div className={styles.wrap}>
-          <div className={styles.sectionHead}>
-            <p className={styles.eyebrow}>Nuestra propuesta editorial</p>
-            <h2 id="included-heading">Un presupuesto. Todas las etapas esenciales.</h2>
-            <p>
-              Para un libro en papel con las características indicadas, la estimación reúne estos
-              cuatro trabajos. Puedes contratar otros servicios editoriales por separado.
-            </p>
-          </div>
-          <div className={styles.benefitGrid}>
-            {benefits.map(({ title, text, icon: Icon }) => (
-              <article key={title} className={styles.benefit}>
-                <Icon size={30} aria-hidden="true" />
-                <h3>{title}</h3>
-                <p>{text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
       <section className={styles.section} id="calculadora" aria-labelledby="calculator-heading">
         <div className={styles.wrap}>
           <div className={styles.sectionHead}>
             <p className={styles.eyebrow}>Calcula tu presupuesto</p>
             <h2 id="calculator-heading">¿Cuánto costará preparar e imprimir tu libro?</h2>
-            <p>
-              Elige el <strong>máximo de páginas</strong> previsto y la tirada. Por ejemplo, un
-              libro de 130 páginas entra en el tramo <strong>«Hasta 150»</strong>. Los importes son
-              estimaciones, no presupuestos definitivos.
-            </p>
           </div>
-          <CompletePricingCalculator />
+          <div
+            className={styles.estimate}
+            role="group"
+            aria-label="Presupuesto de edición e impresión"
+          >
+            <div className={styles.inclusions} id="incluye">
+              <h3 id="included-heading">Tu presupuesto incluye</h3>
+              <ul className={styles.includedServices} aria-labelledby="included-heading">
+                {benefits.map(({ title, text, icon: Icon }) => (
+                  <li key={title} className={styles.includedService}>
+                    <Icon size={24} aria-hidden="true" />
+                    <div>
+                      <h4>{title}</h4>
+                      <p>{text}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <CompletePricingCalculator />
+          </div>
           <p className={styles.note}>
             <strong>¿Tu libro supera las 400 páginas?</strong> Solicita una propuesta personalizada.
             Las opciones «Hasta…» representan un límite máximo, no una extensión exacta. No se

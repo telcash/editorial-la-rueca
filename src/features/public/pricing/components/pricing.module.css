@@ -133,23 +133,57 @@
   font-weight: 600;
   font-size: 13px;
 }
-.benefitGrid,
 .processGrid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
 }
-.benefit {
-  background: #faf8f6;
+.estimate {
   border: 1px solid var(--public-border);
   border-radius: 8px;
-  padding: 25px;
+  overflow: hidden;
+  box-shadow: var(--shadow-public-card);
+  background: white;
 }
-.benefit svg {
+.inclusions {
+  padding: 24px 32px;
+  border-bottom: 1px solid var(--public-border);
+  background: #fcfaf8;
+  scroll-margin-top: 90px;
+}
+.inclusions h3 {
+  margin: 0 0 18px;
+}
+.includedServices {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.includedService {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+  min-width: 0;
+}
+.includedService svg {
   color: var(--brand-red);
-  margin-bottom: 16px;
 }
-.benefit p,
+.includedService h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.includedService p {
+  margin: 8px 0 0;
+  color: #62605e;
+  font-size: 12px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
 .processCard p {
   color: #62605e;
   font-size: 13px;
@@ -157,10 +191,6 @@
 .calculator {
   display: grid;
   grid-template-columns: 1.13fr 0.87fr;
-  border: 1px solid var(--public-border);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: var(--shadow-public-card);
   background: white;
 }
 .inputs {
@@ -239,6 +269,7 @@
   border-radius: 4px;
 }
 .summary {
+  container: main-estimate / inline-size;
   min-width: 0;
   background: #191818;
   color: white;
@@ -250,13 +281,43 @@
 .summary .eyebrow {
   color: #ffb4ad;
 }
+.priceOverview {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  align-items: baseline;
+  column-gap: 20px;
+}
+.priceOverview .eyebrow {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.unitPriceLabel {
+  text-align: right;
+}
 .amount {
   display: block;
   font-family: var(--font-pricing-heading), Georgia, serif;
-  font-size: 64px;
+  font-size: 56px;
   line-height: 1.3;
   margin: 10px 0;
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.unitAmount {
+  display: block;
+  font-family: var(--font-pricing-heading), Georgia, serif;
+  font-size: 30px;
+  line-height: 1.3;
+  margin-block: 10px 3px;
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: #eee2df;
+}
+.summary .unitPriceNote {
+  font-size: 12px;
+  line-height: 1.7;
 }
 .summary > p {
   font-size: 13px;
@@ -277,6 +338,45 @@
 .summary dd {
   text-align: right;
   font-weight: 700;
+}
+.includedSummary dd {
+  font-size: 12px;
+  line-height: 1.7;
+  text-wrap: balance;
+}
+
+@container main-estimate (max-width: 390px) {
+  .priceOverview {
+    column-gap: 14px;
+  }
+  .amount {
+    font-size: 40px;
+  }
+  .unitAmount {
+    font-size: 26px;
+  }
+}
+@container main-estimate (max-width: 300px) {
+  .priceOverview {
+    column-gap: 12px;
+  }
+  .amount {
+    font-size: 34px;
+  }
+  .unitAmount {
+    font-size: 24px;
+  }
+}
+@container main-estimate (max-width: 250px) {
+  .priceOverview .eyebrow {
+    font-size: 10px;
+  }
+  .amount {
+    font-size: 32px;
+  }
+  .unitAmount {
+    font-size: 22px;
+  }
 }
 .primaryButton {
   display: inline-flex;
@@ -582,19 +682,20 @@
   .choices {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .benefitGrid,
   .processGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .individualGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .amount {
-    font-size: 52px;
-  }
   .inputs,
-  .summary {
+  .summary,
+  .inclusions {
     padding: 25px;
+  }
+  .includedServices {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
   }
   .faq {
     gap: 30px;
@@ -629,14 +730,21 @@
   .individualGrid {
     grid-template-columns: minmax(0, 1fr);
   }
-  .benefitGrid {
-    gap: 10px;
+  .inclusions {
+    padding: 20px 16px;
   }
-  .benefit {
-    padding: 18px 14px;
+  .includedServices {
+    gap: 18px 12px;
   }
-  .benefit h3 {
-    font-size: 17px;
+  .includedService {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .includedService svg {
+    width: 22px;
+    height: 22px;
+    margin-top: 0;
   }
   .inputs,
   .summary,
