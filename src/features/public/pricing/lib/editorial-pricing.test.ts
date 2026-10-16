@@ -133,12 +133,20 @@ describe('Editorial pricing from the 2026–2027 workbook', () => {
     expect(summary).toContain('Hasta 150 páginas');
     expect(summary).toContain('880');
     expect(summary).toContain('sin IVA');
-    expect(summary).toContain('maquetación, diseño de cubierta, impresión y envío');
+    expect(summary).toContain(
+      'maquetación, diseño de cubierta, impresión, ISBN y depósito legal, y distribución y envío',
+    );
+    expect(summary).toContain(
+      'según las condiciones del servicio, a un único punto de la península',
+    );
     expect(summary).toContain('270 g');
     expect(summary).toContain('solapas de 9 cm');
     expect(summary).toContain('Formato 15 × 21 cm');
     expect(summary).not.toContain('A5');
-    expect(summary).toContain('No incluye por defecto correcciones');
+    expect(summary).toContain(
+      'No incluye por defecto corrección de estilo, corrección ortotipográfica, publicación en Amazon ni promoción.',
+    );
+    expect(summary).not.toContain('ISBN/depósito legal');
     expect(summary).not.toMatch(/\d+\s*%/);
   });
 

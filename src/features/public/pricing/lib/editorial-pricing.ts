@@ -134,10 +134,10 @@ export function buildCompleteEstimateSummary(pages: number, copies: number): str
   return [
     'Editorial La Rueca · Presupuesto estimado',
     `Hasta ${estimate.maxPages} páginas · ${formatCount(copies)} ejemplares · ${formatMoney(estimate.amount)} sin IVA.`,
-    'Incluye maquetación, diseño de cubierta, impresión y envío a un único punto de la península.',
+    'Incluye maquetación, diseño de cubierta, impresión, ISBN y depósito legal, y distribución y envío según las condiciones del servicio, a un único punto de la península.',
     'Formato 15 × 21 cm. Interior B/N, papel ahuesado de 90 g, sin fotografías, imágenes ni tablas.',
     'Cubierta a color, estucado mate blanco de 270 g, plastificado por una cara y solapas de 9 cm.',
-    'No incluye por defecto correcciones, ISBN/depósito legal, distribución, publicación en Amazon ni promoción.',
+    'No incluye por defecto corrección de estilo, corrección ortotipográfica, publicación en Amazon ni promoción.',
     'Importe orientativo: el precio definitivo y los impuestos aplicables se confirmarán tras valorar el proyecto.',
   ].join('\n');
 }

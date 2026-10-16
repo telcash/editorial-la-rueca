@@ -1,7 +1,17 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Coustard } from 'next/font/google';
-import { ArrowRight, BookOpen, LayoutTemplate, Palette, Plus, Printer, Truck } from 'lucide-react';
+import {
+  ArrowRight,
+  BookOpen,
+  FileCheck,
+  LayoutTemplate,
+  Palette,
+  Plus,
+  Printer,
+  Truck,
+} from 'lucide-react';
 
 import { PublicButton } from '@/components/public/public-button';
 import {
@@ -45,9 +55,14 @@ const benefits = [
     text: 'Producción de los ejemplares seleccionados, según las especificaciones indicadas.',
   },
   {
-    title: 'Envío',
+    title: 'ISBN y depósito legal',
+    icon: FileCheck,
+    text: 'Gestión de los trámites necesarios para la identificación y el depósito legal de la publicación.',
+  },
+  {
+    title: 'Distribución y envío',
     icon: Truck,
-    text: 'Entrega a un único punto de la península.',
+    text: 'Distribución y entrega de los ejemplares según las condiciones del servicio, con envío a un único punto de la península.',
   },
 ] as const;
 
@@ -66,7 +81,7 @@ const process = [
   },
   {
     title: 'Maquetación',
-    text: 'Interior listo para la edición impresa o publicación en Amazon.',
+    text: 'Interior listo para la edición impresa.',
     tag: 'Incluida en la propuesta',
     included: true,
   },
@@ -79,20 +94,20 @@ const process = [
   {
     title: 'ISBN y depósito legal',
     text: 'Identificación bibliográfica y trámites según el tipo de proyecto.',
-    tag: 'Consultar condiciones',
-    included: false,
-  },
-  {
-    title: 'Impresión y envío',
-    text: 'Producción física y entrega a un punto de la península en la propuesta principal.',
     tag: 'Incluidos en la propuesta',
     included: true,
   },
   {
-    title: 'Distribución',
-    text: 'Disponibilidad del libro en canales y plataformas acordados.',
-    tag: 'Consultar condiciones',
-    included: false,
+    title: 'Impresión',
+    text: 'Producción física de los ejemplares según las especificaciones de la propuesta principal.',
+    tag: 'Incluida en la propuesta',
+    included: true,
+  },
+  {
+    title: 'Distribución y envío',
+    text: 'Distribución según las condiciones del servicio y envío a un único punto de la península.',
+    tag: 'Incluidos en la propuesta',
+    included: true,
   },
   {
     title: 'Promoción',
@@ -105,7 +120,7 @@ const process = [
 const questions = [
   [
     '¿Qué incluye la estimación principal?',
-    'Maquetación, diseño de cubierta, impresión y envío a un punto de la península, con las especificaciones detalladas en esta página. Correcciones, gestión de publicación, distribución y promoción no se presuponen incluidas en este cálculo.',
+    'Maquetación, diseño de cubierta, impresión, ISBN y depósito legal, y distribución y envío a un único punto de la península, según las condiciones del servicio y las especificaciones detalladas en esta página. No incluye por defecto corrección de estilo, corrección ortotipográfica, publicación en Amazon ni promoción.',
   ],
   [
     '¿Qué significa «Hasta 150 páginas»?',
@@ -209,10 +224,8 @@ export default function ServicesAndPricingPage() {
             <CompletePricingCalculator />
           </div>
           <p className={styles.note}>
-            <strong>¿Tu libro supera las 400 páginas?</strong> Solicita una propuesta personalizada.
-            Las opciones «Hasta…» representan un límite máximo, no una extensión exacta. No se
-            incluyen por defecto correcciones, ISBN, depósito legal, distribución, publicación en
-            Amazon ni promoción en esta estimación.
+            <strong>¿Tu libro supera las 400 páginas?</strong>{' '}
+            <Link href="/#publica-tu-libro">Solicita una propuesta personalizada</Link>.
           </p>
         </div>
       </section>

@@ -54,19 +54,24 @@ describe('Services and pricing public page', () => {
     expect(section).not.toContain('Elige el');
   });
 
-  it('integrates the four included services above the controls in the same estimate group', () => {
+  it('integrates the five included services above the controls in the same estimate group', () => {
     const html = renderToStaticMarkup(<ServicesAndPricingPage />);
     const section = html.slice(html.indexOf('id="calculadora"')).split('</section>')[0];
     const inclusions = section.slice(section.indexOf('id="incluye"')).split('</ul>')[0];
 
     expect(section).toContain('role="group" aria-label="Presupuesto de edición e impresión"');
     expect(section.match(/Tu presupuesto incluye/g)).toHaveLength(1);
-    expect(inclusions.match(/<li[ >]/g)).toHaveLength(4);
+    expect(inclusions.match(/<li[ >]/g)).toHaveLength(5);
     expect(inclusions).not.toContain('<article');
     expect(inclusions).toContain('Preparación profesional del interior del libro.');
     expect(inclusions).toContain('Creación y preparación de cubierta a color con solapas.');
     expect(inclusions).toContain('Producción de los ejemplares seleccionados');
-    expect(inclusions).toContain('Entrega a un único punto de la península.');
+    expect(inclusions).toContain('<h4>ISBN y depósito legal</h4>');
+    expect(inclusions).toContain('Gestión de los trámites necesarios para la identificación');
+    expect(inclusions).toContain('<h4>Distribución y envío</h4>');
+    expect(inclusions).toContain('según las condiciones del servicio');
+    expect(inclusions).toContain('con envío a un único punto de la península.');
+    expect(inclusions).not.toContain('<h4>Envío</h4>');
     expect(section.indexOf('Tu presupuesto incluye')).toBeLessThan(section.indexOf('<fieldset'));
     expect(section.indexOf('<fieldset')).toBeLessThan(section.indexOf('<aside'));
     expect(section).toContain('555');
@@ -75,7 +80,41 @@ describe('Services and pricing public page', () => {
     expect(section).toContain('270 g');
     expect(section).toContain('solapas de 9 cm');
     expect(section).toContain('sin IVA');
-    expect(section).toContain('ISBN, depósito legal');
+    expect(section).toContain('ISBN y depósito legal');
+  });
+
+  it('links the concise over-400-page note to the same existing contact form as the summary', () => {
+    const html = renderToStaticMarkup(<ServicesAndPricingPage />);
+    const section = html.slice(html.indexOf('id="calculadora"')).split('</section>')[0];
+    const note = section.slice(section.lastIndexOf('<p')).split('</p>')[0];
+    const contactHref = section.match(
+      /href="([^"]+)"[^>]*>Solicitar presupuesto personalizado/,
+    )?.[1];
+
+    expect(contactHref).toBe('/#publica-tu-libro');
+    expect(note).toContain(`href="${contactHref}"`);
+    expect(note.replace(/<[^>]*>/g, '')).toBe(
+      '¿Tu libro supera las 400 páginas? Solicita una propuesta personalizada.',
+    );
+    expect(section).not.toContain('No se incluyen por defecto');
+    expect(section).not.toContain('Las opciones «Hasta…»');
+  });
+
+  it('keeps the FAQ and process consistent without promising automatic sales-channel placement', () => {
+    const html = renderToStaticMarkup(<ServicesAndPricingPage />);
+    const faq = html.slice(html.indexOf('id="preguntas"')).split('</section>')[0];
+    const process = html.slice(html.indexOf('id="proceso"')).split('</section>')[0];
+
+    expect(faq).toContain('impresión, ISBN y depósito legal, y distribución y envío');
+    expect(faq).toContain(
+      'No incluye por defecto corrección de estilo, corrección ortotipográfica, publicación en Amazon ni promoción.',
+    );
+    for (const title of ['ISBN y depósito legal', 'Distribución y envío']) {
+      const step = process.slice(process.indexOf(`<h3>${title}</h3>`)).split('</article>')[0];
+      expect(step).toContain('Incluidos en la propuesta');
+      expect(step).not.toContain('Consultar condiciones');
+    }
+    expect(process).not.toContain('Disponibilidad del libro en canales y plataformas');
   });
 
   it('renders the default estimate and accessible inclusive page/copy controls', () => {
@@ -90,7 +129,9 @@ describe('Services and pricing public page', () => {
     expect(html).toContain('id="unit-price"');
     expect(html).toMatch(/11,10\s*€/);
     expect(html).toContain('Por ejemplar');
-    expect(html).toContain('Maquetación · Cubierta · Impresión · Envío');
+    expect(html).toContain(
+      'Maquetación · Cubierta · Impresión · ISBN y depósito legal · Distribución y envío',
+    );
     expect(html).not.toContain('4 etapas');
     expect(html).toContain('Coste medio del presupuesto completo');
     expect(html).toContain('aria-describedby="unit-price-note"');

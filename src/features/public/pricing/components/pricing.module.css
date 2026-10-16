@@ -156,16 +156,15 @@
 }
 .includedServices {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 24px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .includedService {
-  display: grid;
-  grid-template-columns: 24px minmax(0, 1fr);
-  align-items: start;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
   min-width: 0;
 }
@@ -176,6 +175,7 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
+  min-height: 3em;
 }
 .includedService p {
   margin: 8px 0 0;
@@ -432,6 +432,14 @@
   font-size: 13px;
   margin-top: 20px !important;
 }
+.note a {
+  color: var(--brand-red);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.note a:hover {
+  color: var(--brand-red-hover);
+}
 .individualGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -678,6 +686,17 @@
   border-radius: 8px;
 }
 
+@media (min-width: 711px) and (max-width: 1199px) {
+  .includedServices {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .includedService {
+    grid-column: span 2;
+  }
+  .includedService:nth-last-child(-n + 2) {
+    grid-column: span 3;
+  }
+}
 @media (max-width: 1023px) {
   .choices {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -694,7 +713,6 @@
     padding: 25px;
   }
   .includedServices {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
   }
   .faq {
@@ -734,6 +752,7 @@
     padding: 20px 16px;
   }
   .includedServices {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px 12px;
   }
   .includedService {
@@ -745,6 +764,14 @@
     width: 22px;
     height: 22px;
     margin-top: 0;
+  }
+  .includedService:last-child {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 22px minmax(0, 1fr);
+  }
+  .includedService:last-child h4 {
+    min-height: 0;
   }
   .inputs,
   .summary,

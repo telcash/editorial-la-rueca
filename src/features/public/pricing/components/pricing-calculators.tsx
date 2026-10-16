@@ -143,7 +143,9 @@ export function CompletePricingCalculator() {
           </div>
           <div className={styles.includedSummary}>
             <dt>Incluye</dt>
-            <dd>Maquetación · Cubierta · Impresión · Envío</dd>
+            <dd>
+              Maquetación · Cubierta · Impresión · ISBN y depósito legal · Distribución y envío
+            </dd>
           </div>
         </dl>
         <button type="button" className={styles.primaryButton} onClick={copySummary}>
