@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Phone } from 'lucide-react';
 
 import { siteConfig } from '@/config/site';
@@ -7,6 +6,7 @@ import { PublicButton } from './public-button';
 import { PublicContainer } from './public-container';
 import { PublicLogo } from './public-logo';
 import { publicNavigation } from './public-navigation';
+import { PublicNavigationLink } from './public-navigation-link';
 import { MobileNavigation } from './mobile-navigation';
 import { PublicStoreDropdown } from './public-store-dropdown';
 
@@ -37,13 +37,9 @@ export async function PublicHeader() {
 
           <nav aria-label="Navegación principal" className="flex min-w-0 items-center gap-6">
             {publicNavigation.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="whitespace-nowrap text-sm font-medium text-public-ink transition hover:text-public-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red focus-visible:ring-offset-2"
-              >
+              <PublicNavigationLink key={item.href} href={item.href}>
                 {item.label}
-              </Link>
+              </PublicNavigationLink>
             ))}
             <PublicStoreDropdown markets={storeMarkets} />
           </nav>

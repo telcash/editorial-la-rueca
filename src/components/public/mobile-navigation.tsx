@@ -1,8 +1,6 @@
 'use client';
 
-import Link from 'next/link';
 import { ChevronDown, ExternalLink, Menu } from 'lucide-react';
-import { usePathname } from 'next/navigation';
 import { useId, useState } from 'react';
 
 import { Button } from '@/components/ui/button';
@@ -18,6 +16,7 @@ import {
 import { cn } from '@/lib/utils';
 import { PublicButton } from './public-button';
 import { publicNavigation } from './public-navigation';
+import { PublicNavigationLink } from './public-navigation-link';
 import type { PublicSalesChannelMarket } from '@/services/sales/sales.types';
 
 interface MobileNavigationProps {
@@ -27,7 +26,6 @@ interface MobileNavigationProps {
 export function MobileNavigation({ storeMarkets = [] }: MobileNavigationProps) {
   const [open, setOpen] = useState(false);
   const [storeOpen, setStoreOpen] = useState(false);
-  const pathname = usePathname();
   const menuId = useId();
   const storeMenuId = useId();
 
@@ -60,23 +58,13 @@ export function MobileNavigation({ storeMarkets = [] }: MobileNavigationProps) {
           </SheetDescription>
         </SheetHeader>
         <nav aria-label="Navegación móvil" className="flex flex-col px-3 py-4">
-          {publicNavigation.map((item) => {
-            const isActive = item.href === '/' ? pathname === '/' : pathname.startsWith(item.href);
-
-            return (
-              <SheetClose key={item.href} asChild>
-                <Link
-                  href={item.href}
-                  className={cn(
-                    'rounded-lg px-3 py-3 text-base font-medium transition hover:bg-public-red-soft hover:text-public-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-public-red',
-                    isActive ? 'text-public-red' : 'text-public-ink',
-                  )}
-                >
-                  {item.label}
-                </Link>
-              </SheetClose>
-            );
-          })}
+          {publicNavigation.map((item) => (
+            <SheetClose key={item.href} asChild>
+              <PublicNavigationLink href={item.href} variant="mobile">
+                {item.label}
+              </PublicNavigationLink>
+            </SheetClose>
+          ))}
           {storeMarkets.length > 0 ? (
             <div className="border-t border-public-border-soft pt-2">
               <button

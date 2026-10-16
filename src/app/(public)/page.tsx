@@ -5,6 +5,7 @@ import { ArrowRight, BookOpen, UsersRound } from 'lucide-react';
 
 import { FeaturedAuthorsCarousel } from '@/components/public/featured-authors-carousel';
 import { FeaturedBooksCarousel } from '@/components/public/featured-books-carousel';
+import { DistributionSection } from '@/components/public/distribution-section';
 import { PublicButton } from '@/components/public/public-button';
 import { PublicCard } from '@/components/public/public-card';
 import { PublicContainer } from '@/components/public/public-container';
@@ -228,6 +229,8 @@ export default async function PublicHomePage({ searchParams }: PublicHomePagePro
           </PublicContainer>
         </PublicSection>
       ) : null}
+
+      <DistributionSection />
 
       {/* <PublicSection variant="compact">
         <PublicContainer>
