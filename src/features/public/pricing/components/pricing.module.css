@@ -136,6 +136,7 @@
 .processGrid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
   gap: 18px;
 }
 .estimate {
@@ -586,8 +587,16 @@
   overflow-wrap: anywhere;
 }
 .processCard {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
   border-top: 1px solid var(--public-border);
   padding-block: 20px;
+}
+.processCard > .tag {
+  align-self: flex-start;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 .processNumber {
   font-family: var(--font-pricing-heading), Georgia, serif;
@@ -597,6 +606,7 @@
 .processCard h3 {
   margin-top: 10px;
   font-size: 18px;
+  overflow-wrap: anywhere;
 }
 .tag {
   display: inline-block;
