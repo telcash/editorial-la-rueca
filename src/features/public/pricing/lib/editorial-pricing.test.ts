@@ -71,11 +71,34 @@ describe('Editorial pricing from the 2026–2027 workbook', () => {
     expect(getIndividualEstimate(service, pages)).toMatchObject({ kind: 'priced', amount });
   });
 
-  it.each([151, 180, 200])('never interpolates Amazon prices at %i pages', (pages) => {
+  it.each([151, 180, 195, 200])('uses the explicit Amazon tariff at %i pages', (pages) => {
     expect(getIndividualEstimate('amazon', pages)).toEqual({
-      kind: 'consult',
-      reason: 'unpublished',
+      kind: 'priced',
+      amount: 375,
+      minPages: 151,
+      maxPages: 200,
     });
+  });
+
+  it('resolves every inclusive layout and Amazon tier without interpolation', () => {
+    const limits = [50, 100, 150, 200, 250, 300, 350, 400];
+    const expected = {
+      layout: [60, 110, 160, 210, 260, 310, 360, 410],
+      amazon: [206, 275, 340, 375, 410, 550, 619, 685],
+    };
+    for (const service of ['layout', 'amazon'] as const) {
+      limits.forEach((maxPages, index) => {
+        const minPages = index === 0 ? 1 : limits[index - 1] + 1;
+        for (const pages of [minPages, maxPages]) {
+          expect(getIndividualEstimate(service, pages)).toEqual({
+            kind: 'priced',
+            amount: expected[service][index],
+            minPages,
+            maxPages,
+          });
+        }
+      });
+    }
   });
 
   it.each([0, -1, 1.5, NaN, Infinity, Number.MAX_SAFE_INTEGER + 1])(
@@ -86,6 +109,10 @@ describe('Editorial pricing from the 2026–2027 workbook', () => {
         reason: 'invalid',
       });
       expect(getPrintEstimate('complete', pages, 50)).toEqual({
+        kind: 'consult',
+        reason: 'invalid',
+      });
+      expect(getIndividualEstimate('amazon', pages)).toEqual({
         kind: 'consult',
         reason: 'invalid',
       });
@@ -114,6 +141,10 @@ describe('Editorial pricing from the 2026–2027 workbook', () => {
         reason: 'invalid',
       });
       expect(buildCompleteEstimateSummary(200, copies)).toBeNull();
+      expect(getPrintEstimate('printing', 200, copies)).toEqual({
+        kind: 'consult',
+        reason: 'invalid',
+      });
     }
   });
 
@@ -125,7 +156,35 @@ describe('Editorial pricing from the 2026–2027 workbook', () => {
 
   it('keeps the published single-service ranges intact', () => {
     expect(Object.values(layoutPrices)).toEqual([60, 110, 160, 210, 260, 310, 360, 410]);
-    expect(Object.values(amazonPrices)).toEqual([206, 275, 340, null, 410, 550, 619, 685]);
+    expect(Object.values(amazonPrices)).toEqual([206, 275, 340, 375, 410, 550, 619, 685]);
+  });
+
+  it('keeps all printing tariffs and divides by the requested number of copies', () => {
+    const expected = [
+      [130, 162, 199, 225, 250, 320],
+      [230, 275, 325, 380, 430, 550],
+      [430, 530, 630, 730, 830, 1100],
+      [599, 740, 890, 1100, 1200, 1530],
+      [980, 1220, 1470, 1700, 1950, 2530],
+      [1920, 2390, 2900, 3360, 3830, 4999],
+    ];
+    const currency = new Intl.NumberFormat('es-ES', {
+      style: 'currency',
+      currency: 'EUR',
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    });
+    copyCounts.forEach((copies, row) => {
+      pageLimits.forEach((pages, column) => {
+        const estimate = getPrintEstimate('printing', pages, copies);
+        expect(estimate).toMatchObject({ kind: 'priced', amount: expected[row][column] });
+        if (estimate.kind !== 'priced') throw new Error('Expected a published printing price');
+        expect(formatUnitPrice(estimate.amount, copies)).toBe(
+          currency.format(expected[row][column] / copies),
+        );
+      });
+    });
+    expect(formatUnitPrice(199, 50).replace(/\s/g, '')).toBe('3,98€');
   });
 
   it('copies an estimate with scope, technical specifications, tax caveat and no invented tax rate', () => {
@@ -169,7 +228,8 @@ describe('Editorial pricing from the 2026–2027 workbook', () => {
     expect(formatMoney(0.011)).toContain('0,011');
     expect(formatCount(1000)).toBe('1.000');
     expect(describeEstimate(getIndividualEstimate('layout', 180))).toBe('De 151 a 200 páginas');
-    expect(describeEstimate(getIndividualEstimate('amazon', 180))).toContain('pendiente');
+    expect(describeEstimate(getIndividualEstimate('amazon', 195))).toBe('De 151 a 200 páginas');
+    expect(describeEstimate(getIndividualEstimate('amazon', 401))).toContain('personalizado');
     expect(describeEstimate(getIndividualEstimate('layout', 0))).toContain('número entero');
   });
 });

@@ -1,7 +1,7 @@
 'use client';
 
-import { useRef, useState } from 'react';
-import { ArrowRight, Check, Copy } from 'lucide-react';
+import { useState } from 'react';
+import { ArrowRight, Check, ChevronDown, Copy } from 'lucide-react';
 
 import { PublicButton } from '@/components/public/public-button';
 import {
@@ -203,13 +203,13 @@ const individualServices = [
       'Maquetación, subida del libro a Amazon y diseño de cubierta adaptada a la plataforma.',
     price: individualStartingPrices.amazon,
     mode: 'amazon',
-    action: 'Consultar tarifas',
+    action: 'Calcular según páginas',
   },
   {
     title: 'Solo impresión',
     category: 'IMPRENTA',
     description:
-      'Para interiores y cubiertas preparados; incluye revisión técnica y los elementos indicados en las condiciones.',
+      'Impresión de interiores y cubiertas ya preparados. Recibirás todos los ejemplares encargados.',
     price: individualStartingPrices.printing,
     mode: 'printing',
     action: 'Calcular impresión',
@@ -245,63 +245,159 @@ const individualServices = [
   },
 ] as const;
 
-const tabs = [
-  { key: 'layout', label: 'Solo maquetación' },
-  { key: 'amazon', label: 'Para Amazon' },
-  { key: 'printing', label: 'Solo impresión' },
-] as const;
-type Tab = (typeof tabs)[number]['key'];
+function PageServiceCalculator({ service }: { service: 'layout' | 'amazon' }) {
+  const [pages, setPages] = useState(service === 'layout' ? '180' : '140');
+  const estimate = getIndividualEstimate(service, Number(pages));
+
+  return (
+    <>
+      <label htmlFor={`${service}-pages`}>
+        Páginas estimadas
+        <input
+          id={`${service}-pages`}
+          type="number"
+          inputMode="numeric"
+          min={1}
+          step={1}
+          value={pages}
+          aria-describedby={`${service}-band`}
+          aria-invalid={estimate.kind === 'consult' && estimate.reason === 'invalid'}
+          onChange={(event) => setPages(event.target.value)}
+        />
+      </label>
+      <div className={styles.individualResult} aria-live="polite" aria-atomic="true">
+        <span>Presupuesto estimado</span>
+        {estimate.kind === 'priced' ? <strong>{formatMoney(estimate.amount)}</strong> : null}
+        <span id={`${service}-band`}>{describeEstimate(estimate)}</span>
+      </div>
+      {estimate.kind === 'consult' ? (
+        <a className={styles.detailLink} href={contactHref}>
+          Solicitar presupuesto personalizado <ArrowRight size={17} aria-hidden="true" />
+        </a>
+      ) : null}
+    </>
+  );
+}
+
+function PrintingServiceCalculator() {
+  const [pages, setPages] = useState('200');
+  const [copies, setCopies] = useState('50');
+  const pageCount = Number(pages);
+  const copyCount = Number(copies);
+  const estimate = getPrintEstimate('printing', pageCount, copyCount);
+
+  return (
+    <>
+      <label htmlFor="printing-pages">
+        Páginas estimadas
+        <input
+          id="printing-pages"
+          type="number"
+          inputMode="numeric"
+          min={1}
+          step={1}
+          value={pages}
+          aria-invalid={!Number.isSafeInteger(pageCount) || pageCount < 1}
+          onChange={(event) => setPages(event.target.value)}
+        />
+      </label>
+      <label htmlFor="printing-copies">
+        Ejemplares solicitados
+        <input
+          id="printing-copies"
+          type="number"
+          inputMode="numeric"
+          min={1}
+          step={1}
+          list="printing-copy-options"
+          value={copies}
+          aria-describedby="printing-copy-hint"
+          aria-invalid={!copyCounts.some((count) => count === copyCount)}
+          onChange={(event) => setCopies(event.target.value)}
+        />
+        <datalist id="printing-copy-options">
+          {copyCounts.map((count) => (
+            <option key={count} value={count} />
+          ))}
+        </datalist>
+      </label>
+      <p id="printing-copy-hint" className={styles.small}>
+        Tiradas disponibles: {copyCounts.map(formatCount).join(', ')} ejemplares.
+      </p>
+      <div className={styles.individualResult} aria-live="polite" aria-atomic="true">
+        <span>Presupuesto estimado</span>
+        {estimate.kind === 'priced' ? (
+          <>
+            <strong>{formatMoney(estimate.amount)}</strong>
+            <span>{describeEstimate(estimate)}</span>
+            <span>
+              Por ejemplar: <b>{formatUnitPrice(estimate.amount, copyCount)}</b>
+            </span>
+            <span>Entrega al autor: {formatCount(copyCount)} ejemplares.</span>
+          </>
+        ) : (
+          <span>
+            {Number.isSafeInteger(pageCount) && pageCount > 400
+              ? 'Para más de 400 páginas, presupuesto personalizado.'
+              : 'Introduce páginas válidas y una de las tiradas disponibles.'}
+          </span>
+        )}
+      </div>
+      {estimate.kind === 'consult' ? (
+        <a className={styles.detailLink} href={contactHref}>
+          Solicitar presupuesto personalizado <ArrowRight size={17} aria-hidden="true" />
+        </a>
+      ) : null}
+      <p className={styles.small}>
+        Solo impresión: no incluye edición, publicación ni gestión del depósito legal. Los gastos de
+        envío deben confirmarse; no se presupone envío incluido.
+      </p>
+    </>
+  );
+}
 
 export function IndividualPricingCalculators() {
-  const [tab, setTab] = useState<Tab>('layout');
-  const [layoutPages, setLayoutPages] = useState('180');
-  const [amazonPages, setAmazonPages] = useState('140');
-  const [printPages, setPrintPages] = useState(200);
-  const [printCopies, setPrintCopies] = useState(50);
-  const estimatorRef = useRef<HTMLDivElement>(null);
-  const tabRefs = useRef<Partial<Record<Tab, HTMLButtonElement>>>({});
-
-  function chooseTab(next: Tab, scroll = false) {
-    setTab(next);
-    tabRefs.current[next]?.focus({ preventScroll: true });
-    if (scroll)
-      estimatorRef.current?.scrollIntoView({
-        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
-        block: 'start',
-      });
-  }
-
-  const printingEstimate = getPrintEstimate('printing', printPages, printCopies);
-
   return (
     <>
       <div className={styles.individualGrid}>
         {individualServices.map((service, index) => (
           <article className={styles.individualCard} key={service.title}>
-            <span className={styles.eyebrow}>
-              {String(index + 1).padStart(2, '0')} / {service.category}
-            </span>
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
-            <div className={styles.starting}>
-              {'price' in service ? (
-                <>
-                  Desde <strong>{formatMoney(service.price)}</strong>
-                  {'perWord' in service ? ' / palabra' : null}
-                </>
-              ) : (
-                <strong>Presupuesto personalizado</strong>
-              )}
+            <div className={styles.individualCardOverview}>
+              <span className={styles.eyebrow}>
+                {String(index + 1).padStart(2, '0')} / {service.category}
+              </span>
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+              <div className={styles.starting}>
+                {'price' in service ? (
+                  <>
+                    Desde <strong>{formatMoney(service.price)}</strong>
+                    {'perWord' in service ? ' / palabra' : null}
+                  </>
+                ) : (
+                  <strong>Presupuesto personalizado</strong>
+                )}
+              </div>
             </div>
             {'mode' in service ? (
-              <button
-                type="button"
-                className={styles.detailLink}
-                onClick={() => chooseTab(service.mode, true)}
-              >
-                {service.action}
-                <ArrowRight size={17} aria-hidden="true" />
-              </button>
+              <details className={styles.cardDisclosure}>
+                <summary className={styles.detailLink} aria-controls={`calculator-${service.mode}`}>
+                  {service.action}
+                  <ChevronDown size={17} aria-hidden="true" />
+                </summary>
+                <div
+                  id={`calculator-${service.mode}`}
+                  role="region"
+                  aria-label={`Calculadora: ${service.title}`}
+                  className={styles.cardCalculator}
+                >
+                  {service.mode === 'printing' ? (
+                    <PrintingServiceCalculator />
+                  ) : (
+                    <PageServiceCalculator service={service.mode} />
+                  )}
+                </div>
+              </details>
             ) : (
               <a className={styles.detailLink} href={contactHref}>
                 {service.action}
@@ -310,163 +406,6 @@ export function IndividualPricingCalculators() {
             )}
           </article>
         ))}
-      </div>
-      <div
-        className={styles.independentEstimator}
-        ref={estimatorRef}
-        id="calculadoras-individuales"
-      >
-        <p className={styles.eyebrow}>Detalle de tarifas</p>
-        <h3>Calcula un servicio individual</h3>
-        <p>
-          Consulta las tarifas por extensión o tirada. Los casos especiales deben ser valorados por
-          la editorial.
-        </p>
-        <div
-          role="tablist"
-          aria-label="Selecciona el servicio a presupuestar"
-          className={styles.tabs}
-        >
-          {tabs.map((item, index) => (
-            <button
-              key={item.key}
-              type="button"
-              role="tab"
-              id={`tab-${item.key}`}
-              ref={(element) => {
-                if (element) tabRefs.current[item.key] = element;
-              }}
-              aria-controls={`panel-${item.key}`}
-              aria-selected={tab === item.key}
-              tabIndex={tab === item.key ? 0 : -1}
-              onClick={() => chooseTab(item.key)}
-              onKeyDown={(event) => {
-                let next: number | undefined;
-                if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
-                if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
-                if (event.key === 'Home') next = 0;
-                if (event.key === 'End') next = tabs.length - 1;
-                if (next !== undefined) {
-                  event.preventDefault();
-                  chooseTab(tabs[next].key);
-                }
-              }}
-            >
-              {item.label}
-            </button>
-          ))}
-        </div>
-        {(['layout', 'amazon'] as const).map((service) => {
-          const pages = service === 'layout' ? layoutPages : amazonPages;
-          const estimate = getIndividualEstimate(service, Number(pages));
-          return (
-            <div
-              key={service}
-              id={`panel-${service}`}
-              role="tabpanel"
-              aria-labelledby={`tab-${service}`}
-              hidden={tab !== service}
-              tabIndex={0}
-              className={styles.panel}
-            >
-              <p>
-                {service === 'layout'
-                  ? 'Maquetación del interior, para libros sin fotografías. Introduce un número de páginas y se aplicará el tramo correspondiente.'
-                  : 'Incluye maquetación, subida del libro a Amazon y diseño de cubierta adaptada a la plataforma.'}
-              </p>
-              <div className={styles.controls}>
-                <label htmlFor={`${service}-pages`}>
-                  Páginas estimadas
-                  <input
-                    id={`${service}-pages`}
-                    type="number"
-                    inputMode="numeric"
-                    min={1}
-                    step={1}
-                    value={pages}
-                    aria-describedby={`${service}-band`}
-                    aria-invalid={estimate.kind === 'consult' && estimate.reason === 'invalid'}
-                    onChange={(event) =>
-                      (service === 'layout' ? setLayoutPages : setAmazonPages)(event.target.value)
-                    }
-                  />
-                </label>
-                <div className={styles.individualResult} aria-live="polite" aria-atomic="true">
-                  <span>Presupuesto estimado</span>
-                  <strong>
-                    {estimate.kind === 'priced'
-                      ? formatMoney(estimate.amount)
-                      : 'Consultar presupuesto'}
-                  </strong>
-                  <span id={`${service}-band`}>{describeEstimate(estimate)}</span>
-                </div>
-              </div>
-              <p className={styles.small}>
-                {service === 'layout'
-                  ? 'Para más de 400 páginas, presupuesto personalizado.'
-                  : 'Tramo 151–200 páginas: tarifa pendiente de confirmar. No se calculan importes por aproximación.'}
-              </p>
-            </div>
-          );
-        })}
-        <div
-          id="panel-printing"
-          role="tabpanel"
-          aria-labelledby="tab-printing"
-          hidden={tab !== 'printing'}
-          tabIndex={0}
-          className={styles.panel}
-        >
-          <p>
-            Tarifa para libros ya preparados. Revisión por la editorial e incorporación de ISBN,
-            logotipo editorial y depósito legal si el material está correcto, según las condiciones
-            del servicio.
-          </p>
-          <div className={styles.printControls}>
-            <label htmlFor="printing-pages">
-              Hasta cuántas páginas
-              <select
-                id="printing-pages"
-                value={printPages}
-                onChange={(event) => setPrintPages(Number(event.target.value))}
-              >
-                {pageLimits.map((limit) => (
-                  <option key={limit} value={limit}>
-                    Hasta {limit}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label htmlFor="printing-copies">
-              Ejemplares de la tirada
-              <select
-                id="printing-copies"
-                value={printCopies}
-                onChange={(event) => setPrintCopies(Number(event.target.value))}
-              >
-                {copyCounts.map((count) => (
-                  <option key={count} value={count}>
-                    {formatCount(count)}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <div className={styles.individualResult} aria-live="polite" aria-atomic="true">
-              <span>Presupuesto estimado</span>
-              <strong>
-                {printingEstimate.kind === 'priced'
-                  ? formatMoney(printingEstimate.amount)
-                  : 'Consultar presupuesto'}
-              </strong>
-              <span>Entrega prevista al autor: {formatCount(printCopies - 5)} ejemplares*</span>
-            </div>
-          </div>
-          <p className={styles.warning}>
-            * Se entregan <strong>cinco ejemplares menos</strong> que la tirada seleccionada.
-            Confirma con Almudena la aplicación de esta condición y los gastos de envío. No se
-            presupone envío incluido.
-          </p>
-        </div>
       </div>
       <p className={styles.note}>
         Estas cifras están sujetas a valoración de cada proyecto. El precio definitivo, impuestos

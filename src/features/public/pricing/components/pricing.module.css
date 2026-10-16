@@ -441,11 +441,15 @@
   color: var(--brand-red-hover);
 }
 .individualGrid {
+  --individual-card-min-height: 400px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
   gap: 16px;
 }
 .individualCard {
+  min-width: 0;
+  min-height: var(--individual-card-min-height);
   display: flex;
   flex-direction: column;
   border: 1px solid var(--public-border);
@@ -455,6 +459,12 @@
   transition:
     border-color 160ms,
     box-shadow 160ms;
+}
+.individualCardOverview {
+  display: flex;
+  flex-direction: column;
+  /* Descuenta padding, bordes y acción; la calculadora crece fuera de esta reserva. */
+  min-height: calc(var(--individual-card-min-height) - 48px - 2px - 44px);
 }
 .individualCard:first-child {
   background: #fff9f8;
@@ -473,6 +483,7 @@
   margin-bottom: 20px;
 }
 .starting {
+  min-height: 68px;
   margin-top: auto;
   margin-bottom: 16px;
   font-size: 12px;
@@ -501,68 +512,48 @@
 .detailLink:hover {
   color: var(--brand-red-hover);
 }
-.independentEstimator {
-  margin-top: 36px;
-  padding: 28px;
-  background: #faf8f6;
-  border: 1px solid var(--public-border);
-  border-radius: 8px;
-  scroll-margin-top: 90px;
+.cardDisclosure > summary {
+  cursor: pointer;
+  list-style: none;
 }
-.independentEstimator > p {
-  font-size: 13px;
+.cardDisclosure > summary::-webkit-details-marker {
+  display: none;
 }
-.independentEstimator h3 {
-  margin-top: 8px;
-  font-size: 25px;
+.cardDisclosure > summary svg {
+  transition: transform 160ms;
 }
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 24px;
-  border-bottom: 1px solid var(--public-border);
-  padding-bottom: 12px;
+.cardDisclosure[open] > summary svg {
+  transform: rotate(180deg);
 }
-.tabs button {
-  min-height: 44px;
-  border-radius: 6px;
-  padding: 10px 15px;
-  font-size: 13px;
-  font-weight: 600;
+.cardDisclosure[open] .cardCalculator {
+  animation: reveal-calculator 160ms ease-out;
 }
-.tabs button[aria-selected='true'] {
-  background: #191818;
-  color: white;
-}
-.panel {
-  padding-top: 18px;
-}
-.panel > p {
-  font-size: 13px;
-  max-width: 780px;
-}
-.controls {
+.cardCalculator {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
-  gap: 30px;
-  align-items: start;
-  padding-block: 18px;
+  gap: 16px;
+  min-width: 0;
+  padding-top: 20px;
 }
-.printControls {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1.5fr;
-  gap: 24px;
-  align-items: start;
-  padding-block: 18px;
-}
-.controls label,
-.printControls label {
+.cardCalculator label {
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-size: 13px;
   font-weight: 600;
+}
+.individualCard .cardCalculator p {
+  margin: 0;
+  font-size: 12px;
+}
+@keyframes reveal-calculator {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .page input,
 .page select {
@@ -593,10 +584,6 @@
   font-weight: 400;
   line-height: 1.4;
   overflow-wrap: anywhere;
-}
-.warning {
-  border-left: 3px solid var(--brand-red);
-  padding-left: 14px;
 }
 .processCard {
   border-top: 1px solid var(--public-border);
@@ -740,9 +727,7 @@
     padding-inline: 16px;
   }
   .calculator,
-  .faq,
-  .controls,
-  .printControls {
+  .faq {
     grid-template-columns: minmax(0, 1fr);
   }
   .individualGrid {
@@ -774,8 +759,7 @@
     min-height: 0;
   }
   .inputs,
-  .summary,
-  .independentEstimator {
+  .summary {
     padding: 22px;
   }
   .heroActions > a {
@@ -792,6 +776,7 @@
   .page *,
   .page *::before,
   .page *::after {
+    animation: none !important;
     transition: none !important;
     scroll-behavior: auto !important;
   }

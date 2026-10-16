@@ -13,6 +13,7 @@ import ServicesAndPricingPage, { metadata } from '@/app/(public)/servicios-y-tar
 import sitemap from '@/app/sitemap';
 import { publicNavigation, publicFooterNavigation } from '@/components/public/public-navigation';
 import { CompletePricingCalculator, IndividualPricingCalculators } from './pricing-calculators';
+import styles from './pricing.module.css';
 
 afterEach(() => vi.unstubAllEnvs());
 
@@ -35,7 +36,8 @@ describe('Services and pricing public page', () => {
     expect(html).not.toContain('mailto:');
     expect(html.match(/<h1[ >]/g)).toHaveLength(1);
     expect(html).toContain('Tu libro, tus derechos.');
-    expect(html.match(/<details/g)).toHaveLength(8);
+    const faq = html.slice(html.indexOf('id="preguntas"')).split('</section>')[0];
+    expect(faq.match(/<details/g)).toHaveLength(7);
     expect(html).toContain('href="/#publica-tu-libro"');
     expect(html).not.toContain('Un presupuesto. Todas las etapas esenciales.');
     expect(html.match(/id="calculator-heading"/g)).toHaveLength(1);
@@ -105,9 +107,11 @@ describe('Services and pricing public page', () => {
     const faq = html.slice(html.indexOf('id="preguntas"')).split('</section>')[0];
     const process = html.slice(html.indexOf('id="proceso"')).split('</section>')[0];
 
-    expect(faq).toContain('impresión, ISBN y depósito legal, y distribución y envío');
     expect(faq).toContain(
-      'No incluye por defecto corrección de estilo, corrección ortotipográfica, publicación en Amazon ni promoción.',
+      'gestión de publicación —incluidos ISBN y depósito legal— y distribución',
+    );
+    expect(faq).toContain(
+      'La corrección de textos y la promoción no están incluidas por defecto en esta estimación.',
     );
     for (const title of ['ISBN y depósito legal', 'Distribución y envío']) {
       const step = process.slice(process.indexOf(`<h3>${title}</h3>`)).split('</article>')[0];
@@ -139,18 +143,90 @@ describe('Services and pricing public page', () => {
     expect(html).not.toContain('A5');
   });
 
-  it('renders seven services and only the selected tab panel visibly', () => {
+  it('keeps all seven services with three initially collapsed calculators inside their cards', () => {
     const html = renderToStaticMarkup(<IndividualPricingCalculators />);
-    expect(html.match(/<article/g)).toHaveLength(7);
-    expect(html.match(/role="tab"/g)).toHaveLength(3);
-    expect(html.match(/role="tabpanel"/g)).toHaveLength(3);
-    expect(html.match(/hidden=""/g)).toHaveLength(2);
+    const cards = html.match(/<article\b[\s\S]*?<\/article>/g) ?? [];
+    expect(cards).toHaveLength(7);
+    const services = ['layout', 'amazon', 'printing'];
+    for (const [index, service] of services.entries()) {
+      expect(cards[index]).toContain('<details');
+      expect(cards[index]).not.toMatch(/<details[^>]*\bopen(?:[ =>])/);
+      expect(cards[index]).toContain(`aria-controls="calculator-${service}"`);
+      expect(cards[index]).toContain(`id="calculator-${service}"`);
+      expect(cards[index]).toContain(`for="${service}-pages"`);
+      expect(cards[index]).toContain(`id="${service}-pages"`);
+      expect(cards[index]).toContain('aria-live="polite"');
+    }
+    for (const card of cards.slice(3)) {
+      expect(card).not.toContain('<details');
+      expect(card).toContain('href="/#publica-tu-libro"');
+    }
+    expect(cards[0]).toMatch(/Desde <strong>60\s*€<\/strong>/);
+    expect(cards[1]).toMatch(/Desde <strong>206\s*€<\/strong>/);
+    expect(cards[2]).toMatch(/Desde <strong>130\s*€<\/strong>/);
+    expect(cards[1]).toContain('Calcular según páginas');
+    expect(cards[1]).toContain('Maquetación, subida del libro a Amazon y diseño de cubierta');
+    expect(html).not.toContain('role="tab');
+    expect(html).not.toContain('Calcula un servicio individual');
+    expect(html).not.toContain('calculadoras-individuales');
     expect(html).not.toContain('htmlFor');
-    expect(html).toContain('for="layout-pages"');
-    expect(html).toContain('for="printing-copies"');
-    expect(html).toContain('cinco ejemplares menos');
-    expect(html).toContain('45 ejemplares');
     expect(html).toContain('0,011');
+  });
+
+  it('shows printing total, average per requested copy and delivery of the full order', () => {
+    const html = renderToStaticMarkup(<IndividualPricingCalculators />);
+    const printing = html.match(/<article\b[\s\S]*?<\/article>/g)![2];
+    expect(printing).toMatch(/<strong>199\s*€<\/strong>/);
+    expect(printing).toMatch(/Por ejemplar: <b>3,98\s*€<\/b>/);
+    expect(printing).toContain('Entrega al autor: 50 ejemplares.');
+    expect(printing).toContain('for="printing-copies"');
+    expect(printing).toContain('no incluye edición, publicación ni gestión del depósito legal');
+    expect(printing).toContain('no se presupone envío incluido');
+    expect(html).toContain('impuestos');
+  });
+
+  it('groups each card overview and price independently of its expandable calculator', () => {
+    const html = renderToStaticMarkup(<IndividualPricingCalculators />);
+    const cards = html.match(/<article\b[\s\S]*?<\/article>/g) ?? [];
+    expect(cards).toHaveLength(7);
+    for (const card of cards) {
+      const overviewStart = card.indexOf(`class="${styles.individualCardOverview}"`);
+      const priceStart = card.indexOf(`class="${styles.starting}"`);
+      const overviewEnd = card.indexOf('</div></div>', priceStart) + '</div></div>'.length;
+      expect(overviewStart).toBeGreaterThan(0);
+      expect(priceStart).toBeGreaterThan(overviewStart);
+      expect(overviewEnd).toBeGreaterThan(priceStart);
+      const overview = card.slice(overviewStart, overviewEnd);
+      expect(overview).toContain('<h3>');
+      expect(overview).toContain('<p>');
+      expect(overview).not.toContain('<details');
+      expect(overview).not.toContain('<summary');
+      expect(overview).not.toContain('role="region"');
+      if (card.includes('<details'))
+        expect(card.indexOf('<details')).toBeGreaterThanOrEqual(overviewEnd);
+    }
+  });
+
+  it('uses the approved FAQ answers, safe emphasis and no obsolete pricing or delivery notices', () => {
+    const html = renderToStaticMarkup(<ServicesAndPricingPage />);
+    const faq = html.slice(html.indexOf('id="preguntas"')).split('</section>')[0];
+    expect(faq).toContain(
+      'Maquetación, diseño de cubierta, impresión y envío a un punto de la península, gestión de publicación —incluidos ISBN y depósito legal— y distribución, con las especificaciones detalladas en esta página.',
+    );
+    expect(faq).toContain(
+      'Si el libro acaba teniendo más o menos páginas, se hará un presupuesto personalizado. El precio definitivo se confirma tras la maquetación.',
+    );
+    expect(faq).toContain(
+      'Imprimimos el número de ejemplares que solicites y recibirás todos los ejemplares encargados. Este servicio incluye únicamente la impresión del libro; no incluye edición, publicación ni gestión del depósito legal.',
+    );
+    expect(faq).toContain('¿Conservo los derechos de autor de mi libro?');
+    expect(faq).toContain('<strong>Los derechos de autor siempre pertenecen al autor</strong>');
+    expect(faq).toContain('<strong>Registro de la Propiedad Intelectual</strong>');
+    expect(html).not.toContain('cinco ejemplares menos');
+    expect(html).not.toContain('45 ejemplares');
+    expect(html).not.toContain('tarifa pendiente');
+    expect(html).not.toContain('no hay precio de Amazon');
+    expect(html).not.toContain('Ese tramo no figura');
   });
 
   it('is linked from desktop/mobile shared navigation and footer and has a canonical', () => {

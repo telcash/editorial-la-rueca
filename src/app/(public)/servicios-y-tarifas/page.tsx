@@ -120,11 +120,11 @@ const process = [
 const questions = [
   [
     '¿Qué incluye la estimación principal?',
-    'Maquetación, diseño de cubierta, impresión, ISBN y depósito legal, y distribución y envío a un único punto de la península, según las condiciones del servicio y las especificaciones detalladas en esta página. No incluye por defecto corrección de estilo, corrección ortotipográfica, publicación en Amazon ni promoción.',
+    'Maquetación, diseño de cubierta, impresión y envío a un punto de la península, gestión de publicación —incluidos ISBN y depósito legal— y distribución, con las especificaciones detalladas en esta página. La corrección de textos y la promoción no están incluidas por defecto en esta estimación.',
   ],
   [
     '¿Qué significa «Hasta 150 páginas»?',
-    'Es el máximo de páginas de ese tramo: incluye libros de 101 a 150 páginas. Si el libro acaba teniendo 151, se aplica el tramo siguiente, hasta 200. Se confirmará una vez maquetado.',
+    'Es el máximo de páginas de ese tramo: incluye libros de 101 a 150 páginas. Si el libro acaba teniendo más o menos páginas, se hará un presupuesto personalizado. El precio definitivo se confirma tras la maquetación.',
   ],
   [
     '¿El precio de la calculadora es definitivo?',
@@ -135,20 +135,21 @@ const questions = [
     'Sí. Dispones de tarifas independientes y opciones personalizadas. Si tu libro contiene fotografías, tablas, ilustraciones o supera los tramos publicados, solicita una valoración específica.',
   ],
   [
-    '¿Por qué no hay precio de Amazon para 151–200 páginas?',
-    'Ese tramo no figura en las tarifas publicadas. Preferimos indicarlo con transparencia y confirmarlo antes de publicar un importe.',
-  ],
-  [
     '¿Cuántos ejemplares recibo en «Solo impresión»?',
-    'Ese servicio indica una entrega de cinco ejemplares menos que la tirada solicitada. La entrega, los gastos de envío y otros aspectos del servicio se deben confirmar en el presupuesto.',
+    'Imprimimos el número de ejemplares que solicites y recibirás todos los ejemplares encargados. Este servicio incluye únicamente la impresión del libro; no incluye edición, publicación ni gestión del depósito legal.',
   ],
   [
     '¿Los importes incluyen impuestos?',
     'La estimación principal indica precios sin IVA. El presupuesto final aclarará el tratamiento fiscal aplicable y el importe total. El precio definitivo se confirmará tras valorar el proyecto.',
   ],
   [
-    '¿Conservo mis derechos de autor?',
-    'La Rueca comunica que el autor conserva sus derechos. Los términos específicos y el alcance del servicio se detallarán en el acuerdo aplicable.',
+    '¿Conservo los derechos de autor de mi libro?',
+    <>
+      Sí. <strong>Los derechos de autor siempre pertenecen al autor</strong>. En La Rueca respetamos
+      la autoría de tu obra. Además, te recomendamos registrar tu libro en el{' '}
+      <strong>Registro de la Propiedad Intelectual</strong> como medida adicional de protección y
+      para dejar constancia de su autoría.
+    </>,
   ],
 ] as const;
 

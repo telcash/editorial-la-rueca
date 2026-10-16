@@ -35,11 +35,12 @@ export const layoutPrices: Readonly<Record<IndividualPageLimit, number>> = {
   350: 360,
   400: 410,
 };
-export const amazonPrices: Readonly<Record<IndividualPageLimit, number | null>> = {
+// El tramo 151–200 se incorpora como propuesta comercial pendiente de validación con Almudena.
+export const amazonPrices: Readonly<Record<IndividualPageLimit, number>> = {
   50: 206,
   100: 275,
   150: 340,
-  200: null,
+  200: 375,
   250: 410,
   300: 550,
   350: 619,
@@ -48,7 +49,7 @@ export const amazonPrices: Readonly<Record<IndividualPageLimit, number | null>> 
 
 export const individualStartingPrices = {
   layout: layoutPrices[50],
-  amazon: amazonPrices[50]!,
+  amazon: amazonPrices[50],
   printing: printingPrices[50][0],
   correctionPerWord: 0.011,
   readingReport: 50,
@@ -58,7 +59,7 @@ export const individualStartingPrices = {
 
 export type Estimate =
   | { kind: 'priced'; amount: number; minPages: number; maxPages: number }
-  | { kind: 'consult'; reason: 'invalid' | 'out_of_range' | 'unpublished' };
+  | { kind: 'consult'; reason: 'invalid' | 'out_of_range' };
 
 function validPages(pages: number): boolean {
   return Number.isSafeInteger(pages) && pages > 0;
@@ -89,7 +90,6 @@ export function getIndividualEstimate(service: 'layout' | 'amazon', pages: numbe
   if (index < 0) return { kind: 'consult', reason: 'out_of_range' };
   const maxPages = individualPageLimits[index];
   const amount = (service === 'layout' ? layoutPrices : amazonPrices)[maxPages];
-  if (amount === null) return { kind: 'consult', reason: 'unpublished' };
   return {
     kind: 'priced',
     amount,
@@ -123,9 +123,7 @@ export function describeEstimate(estimate: Estimate): string {
     return `De ${estimate.minPages} a ${estimate.maxPages} páginas`;
   }
   if (estimate.reason === 'invalid') return 'Introduce un número entero de páginas mayor que cero.';
-  if (estimate.reason === 'out_of_range')
-    return 'Para más de 400 páginas, presupuesto personalizado.';
-  return 'Tramo 151–200 páginas: tarifa pendiente de confirmar.';
+  return 'Para más de 400 páginas, presupuesto personalizado.';
 }
 
 export function buildCompleteEstimateSummary(pages: number, copies: number): string | null {
