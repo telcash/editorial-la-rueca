@@ -1,0 +1,130 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-block: 1.5rem;
+  background: white;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.grid > :last-child {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}
+
+.introduction {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.photograph {
+  position: relative;
+  order: 2;
+  width: 100%;
+  aspect-ratio: 6 / 5;
+}
+
+.image {
+  object-fit: cover;
+  object-position: 76% 35%;
+}
+
+.fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, white, transparent 18%);
+}
+
+.copy {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-block: 2rem;
+  }
+
+  .introduction {
+    display: block;
+    min-height: 32rem;
+  }
+
+  .photograph {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    aspect-ratio: auto;
+  }
+
+  .image {
+    object-position: 72% 25%;
+  }
+
+  .fade {
+    background: linear-gradient(
+      to right,
+      white 32%,
+      rgb(255 255 255 / 97%) 43%,
+      rgb(255 255 255 / 78%) 50%,
+      rgb(255 255 255 / 22%) 59%,
+      transparent 65%
+    );
+  }
+
+  .copy {
+    width: 52%;
+    padding-block: 1.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    padding-block: 2.5rem;
+  }
+
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(22.5rem, 26.25rem);
+  }
+
+  .introduction {
+    position: static;
+    min-height: 0;
+  }
+
+  .photograph {
+    /* Keep the portrait beside the form even beyond the container's maximum width. */
+    inset: 0 max(0px, calc((100% - 90rem) / 2 + 16.25rem)) 0 auto;
+    width: min(82%, 80rem);
+  }
+
+  .image {
+    object-position: right 30%;
+  }
+
+  .fade {
+    background: linear-gradient(
+      to right,
+      white 30%,
+      rgb(255 255 255 / 97%) 40%,
+      rgb(255 255 255 / 60%) 47%,
+      rgb(255 255 255 / 15%) 54%,
+      transparent 60%
+    );
+  }
+
+  .copy {
+    width: 100%;
+    max-width: 34rem;
+  }
+}

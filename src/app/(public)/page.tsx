@@ -1,15 +1,14 @@
-import Image from 'next/image';
 import { connection } from 'next/server';
 import type { Metadata } from 'next';
-import { ArrowRight, BookOpen, UsersRound } from 'lucide-react';
+import { BookOpen, UsersRound } from 'lucide-react';
 
 import { FeaturedAuthorsCarousel } from '@/components/public/featured-authors-carousel';
 import { FeaturedBooksCarousel } from '@/components/public/featured-books-carousel';
 import { DistributionSection } from '@/components/public/distribution-section';
-import { PublicButton } from '@/components/public/public-button';
 import { PublicCard } from '@/components/public/public-card';
 import { PublicContainer } from '@/components/public/public-container';
 import { PublicCtaLink } from '@/components/public/public-cta-link';
+import { PublicHomeHero } from '@/components/public/public-home-hero';
 import { PublicSection } from '@/components/public/public-section';
 import { SectionHeading } from '@/components/public/section-heading';
 import { TestimonialsSection } from '@/components/public/testimonials-section';
@@ -157,65 +156,23 @@ export default async function PublicHomePage({ searchParams }: PublicHomePagePro
 
   return (
     <>
-      <PublicSection variant="compact" className="pt-5 md:pt-8">
-        <PublicContainer>
-          <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr]">
-            <div className="overflow-hidden rounded-2xl border border-public-border bg-white shadow-[0_18px_50px_rgba(23,23,23,0.08)]">
-              <div className="relative grid h-full min-h-[24rem] items-center gap-8 overflow-hidden p-6 sm:p-8 lg:p-12">
-                <Image
-                  src="/brand/home-hero.png"
-                  alt=""
-                  aria-hidden="true"
-                  fill
-                  priority
-                  sizes="(min-width: 1024px) 60vw, 100vw"
-                  className="z-0 object-cover object-[68%_center] md:object-[60%_center] lg:object-[55%_center]"
-                />
-                <div
-                  className="absolute inset-0 z-10 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.95)_0%,rgba(255,255,255,0.9)_45%,rgba(255,255,255,0.85)_100%)]"
-                  aria-hidden="true"
-                />
-                <div className="relative z-20 max-w-2xl">
-                  <h1 className="font-serif-public text-public-display font-semibold tracking-normal text-public-ink">
-                    Publicamos libros
-                    <span className="block text-public-red">Acompañamos autores</span>
-                  </h1>
-                  <p className="mt-public-heading-gap max-w-xl text-xl font-medium leading-relaxed text-public-ink/85 md:text-2xl">
-                    Te acompañamos durante todo el proceso editorial, con claridad, cercanía y un
-                    equipo que cuida tu obra como merece.
-                  </p>
-                  <HeroMetrics metrics={metrics} />
-                  <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                    <PublicButton href="#publica-tu-libro">
-                      Quiero publicar mi libro
-                      <ArrowRight className="size-4" aria-hidden="true" />
-                    </PublicButton>
-                    <PublicButton href="/libros" variant="secondary">
-                      Ver catálogo
-                    </PublicButton>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <PublicCard id="publica-tu-libro" className="scroll-mt-24 p-6 sm:p-8 lg:p-10">
-              <h2 className="font-serif-public text-3xl font-semibold leading-tight text-public-ink">
-                Cuéntanos sobre tu libro
-              </h2>
-              <p className="mt-3 text-public-body-small text-public-muted">
-                Déjanos tus datos y te orientamos sobre el proceso editorial más adecuado para tu
-                proyecto.
-              </p>
-              <div className="mt-7">
-                <PublicContactForm
-                  services={publishedServices}
-                  utmValues={getPublicContactUtmValues(params)}
-                />
-              </div>
-            </PublicCard>
+      <PublicHomeHero metrics={<HeroMetrics metrics={metrics} />}>
+        <PublicCard id="publica-tu-libro" className="scroll-mt-24 p-6 sm:p-8 lg:p-10">
+          <h2 className="font-serif-public text-3xl font-semibold leading-tight text-public-ink">
+            Cuéntanos sobre tu libro
+          </h2>
+          <p className="mt-3 text-public-body-small text-public-muted">
+            Déjanos tus datos y te orientamos sobre el proceso editorial más adecuado para tu
+            proyecto.
+          </p>
+          <div className="mt-7">
+            <PublicContactForm
+              services={publishedServices}
+              utmValues={getPublicContactUtmValues(params)}
+            />
           </div>
-        </PublicContainer>
-      </PublicSection>
+        </PublicCard>
+      </PublicHomeHero>
 
       {featuredBooks.length > 0 ? (
         <PublicSection>
