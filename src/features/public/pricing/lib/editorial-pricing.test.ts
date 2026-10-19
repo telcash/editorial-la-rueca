@@ -200,7 +200,7 @@ describe('Editorial pricing from the 2026–2027 workbook', () => {
     );
     expect(summary).toContain('270 g');
     expect(summary).toContain('solapas de 9 cm');
-    expect(summary).toContain('Formato 15 × 21 cm');
+    expect(summary).toContain('Formato 15 x 21 cm - A5');
     expect(summary).not.toContain('A5');
     expect(summary).toContain(
       'No incluye por defecto corrección de estilo, corrección ortotipográfica, publicación en Amazon ni promoción.',

@@ -6,6 +6,7 @@ import { PublicButton } from '@/components/public/public-button';
 import { PublicContainer } from '@/components/public/public-container';
 import { PublicSection } from '@/components/public/public-section';
 
+import heroPhotograph from '../../../public/brand/home-hero-almudena.webp';
 import styles from './public-home-hero.module.css';
 
 interface PublicHomeHeroProps {
@@ -21,7 +22,7 @@ export function PublicHomeHero({ metrics, children }: PublicHomeHeroProps) {
           <div className={styles.introduction}>
             <div className={styles.photograph} aria-hidden="true">
               <Image
-                src="/brand/home-hero-almudena.webp"
+                src={heroPhotograph}
                 alt=""
                 fill
                 priority

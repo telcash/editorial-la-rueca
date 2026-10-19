@@ -1,7 +1,15 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
+
+vi.mock('../../../public/brand/home-hero-almudena.webp', () => ({
+  default: {
+    src: '/_next/static/media/home-hero-almudena.test-content-hash.webp',
+    width: 1575,
+    height: 1225,
+  },
+}));
 
 import { PublicHomeHero } from './public-home-hero';
 
@@ -23,14 +31,17 @@ describe('PublicHomeHero', () => {
     expect(html).toContain('Ver catálogo');
   });
 
-  it('uses the optimized original photograph through Next Image with priority loading', () => {
+  it('uses the statically imported photograph with a content-hashed URL and priority loading', () => {
     const html = renderToStaticMarkup(
       <PublicHomeHero metrics={null}>
         <div />
       </PublicHomeHero>,
     );
     expect(html.match(/<img\b/g)).toHaveLength(1);
-    expect(html).toContain(encodeURIComponent('/brand/home-hero-almudena.webp'));
+    expect(html).toContain(
+      encodeURIComponent('/_next/static/media/home-hero-almudena.test-content-hash.webp'),
+    );
+    expect(html).not.toContain(encodeURIComponent('/brand/home-hero-almudena.webp'));
     expect(html).toContain('alt=""');
     expect(html).toContain('data-nimg="fill"');
     expect(html).toContain('rel="preload"');

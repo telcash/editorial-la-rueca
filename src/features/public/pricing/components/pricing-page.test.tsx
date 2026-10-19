@@ -139,7 +139,7 @@ describe('Services and pricing public page', () => {
     expect(html).not.toContain('4 etapas');
     expect(html).toContain('Coste medio del presupuesto completo');
     expect(html).toContain('aria-describedby="unit-price-note"');
-    expect(html).toContain('Formato 15 × 21 cm');
+    expect(html).toContain('Formato 15 x 21 cm - A5');
     expect(html).not.toContain('A5');
   });
 

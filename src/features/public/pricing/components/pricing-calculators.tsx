@@ -85,7 +85,7 @@ export function CompletePricingCalculator() {
         <div className={styles.format}>
           <strong>Así será tu libro</strong>
           <ul className={styles.formatTags}>
-            <li>Formato 15 × 21 cm</li>
+            <li>Formato 15 x 21 cm - A5</li>
             <li>Interior B/N</li>
             <li>Papel ahuesado 90 g</li>
           </ul>
