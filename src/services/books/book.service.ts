@@ -27,7 +27,7 @@ export const {
   listPublishedBooksPaginated,
   getPublishedBookBySlug,
   listPublishedBooksByAuthorId,
-  listRelatedPublishedBooksByAuthorIds,
+  listRelatedPublishedBooks,
   listHomeFeaturedPublishedBooks,
   createBook,
   updateBook,

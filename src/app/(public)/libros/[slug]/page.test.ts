@@ -10,12 +10,20 @@ const pageSource = readFileSync(
 describe('public book detail page composition', () => {
   it('keeps the route as a server composition over BookService data', () => {
     expect(pageSource).toContain('BookService.getPublishedBookBySlug');
-    expect(pageSource).toContain('BookService.listRelatedPublishedBooksByAuthorIds');
+    expect(pageSource).toContain('BookService.listRelatedPublishedBooks');
     expect(pageSource).toContain('SalesService.getPublicPurchaseOptionsByBookId');
     expect(pageSource).toContain('<BookDetailHero');
     expect(pageSource).toContain('<BookEditionsSection');
     expect(pageSource).toContain('<BookRelatedSection');
     expect(pageSource).toContain('<BookPurchaseSection');
+  });
+
+  it('passes every public author and category without imposing a recommendation limit', () => {
+    expect(pageSource).toContain('authorIds: book.authors.map((author) => author.id)');
+    expect(pageSource).toContain('categoryIds: book.categories.map((category) => category.id)');
+    expect(pageSource).toContain('excludeBookId: book.id');
+    expect(pageSource).not.toContain('limit: 4');
+    expect(pageSource).not.toContain('relatedBooks.slice(');
   });
 
   it('keeps inline cover and edition cards extracted from the route file', () => {

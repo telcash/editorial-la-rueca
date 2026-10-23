@@ -83,11 +83,11 @@ export default async function PublicBookDetailPage({ params }: PublicBookDetailP
   const heroMetaItems = getPrimaryEditionMetaItems(book, primaryEdition);
   const editorialFactItems = getBookEditorialFactItems(book, primaryEdition);
   const [relatedBooks, purchaseOptions] = await Promise.all([
-    BookService.listRelatedPublishedBooksByAuthorIds(
-      book.authors.map((author) => author.id),
-      book.id,
-      4,
-    ),
+    BookService.listRelatedPublishedBooks({
+      authorIds: book.authors.map((author) => author.id),
+      categoryIds: book.categories.map((category) => category.id),
+      excludeBookId: book.id,
+    }),
     getPublicPurchaseOptions(book.id),
   ]);
 

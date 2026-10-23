@@ -148,7 +148,7 @@ function createBookRepositoryMock(): MockBookRepository {
     findPublishedPaginated: vi.fn<BookRepository['findPublishedPaginated']>(),
     findPublishedBySlug: vi.fn<BookRepository['findPublishedBySlug']>(),
     findPublishedByAuthorId: vi.fn<BookRepository['findPublishedByAuthorId']>(),
-    findRelatedPublishedByAuthorIds: vi.fn<BookRepository['findRelatedPublishedByAuthorIds']>(),
+    findRelatedPublished: vi.fn<BookRepository['findRelatedPublished']>(),
     findHomeFeaturedPublished: vi.fn<BookRepository['findHomeFeaturedPublished']>(),
     existsBySlug: vi.fn<BookRepository['existsBySlug']>(),
     existsByIsbn10: vi.fn<BookRepository['existsByIsbn10']>(),
@@ -359,18 +359,59 @@ describe('createBookService', () => {
     expect(bookRepository.findPublishedByAuthorId).toHaveBeenCalledWith(authorId, 6);
   });
 
-  it('delegates related public books by author ids', async () => {
+  it('delegates related public books with all author and category ids', async () => {
     const relatedBook = { ...baseBook, id: '64089830-d46b-49d4-b3d0-4a8be22f6992' };
-    bookRepository.findRelatedPublishedByAuthorIds.mockResolvedValue([relatedBook]);
+    const options = {
+      authorIds: [authorId, secondAuthorId],
+      categoryIds: [categoryId, secondCategoryId],
+      excludeBookId: bookId,
+    };
+    bookRepository.findRelatedPublished.mockResolvedValue([relatedBook]);
+
+    await expect(service.listRelatedPublishedBooks(options)).resolves.toEqual([relatedBook]);
+    expect(bookRepository.findRelatedPublished).toHaveBeenCalledWith(options);
+  });
+
+  it('deduplicates recommendation relations before querying', async () => {
+    bookRepository.findRelatedPublished.mockResolvedValue([]);
+
+    await service.listRelatedPublishedBooks({
+      authorIds: [authorId, authorId],
+      categoryIds: [categoryId, categoryId],
+      excludeBookId: bookId,
+    });
+
+    expect(bookRepository.findRelatedPublished).toHaveBeenCalledWith({
+      authorIds: [authorId],
+      categoryIds: [categoryId],
+      excludeBookId: bookId,
+    });
+  });
+
+  it('returns all fifteen same-author recommendations without a service-side cap', async () => {
+    const relatedBooks = Array.from({ length: 15 }, (_, index) => ({
+      ...baseBook,
+      id: `related-${index + 1}`,
+      isPublished: true,
+    }));
+    bookRepository.findRelatedPublished.mockResolvedValue(relatedBooks);
 
     await expect(
-      service.listRelatedPublishedBooksByAuthorIds([authorId, secondAuthorId], bookId, 4),
-    ).resolves.toEqual([relatedBook]);
-    expect(bookRepository.findRelatedPublishedByAuthorIds).toHaveBeenCalledWith(
-      [authorId, secondAuthorId],
-      bookId,
-      4,
-    );
+      service.listRelatedPublishedBooks({
+        authorIds: [authorId],
+        categoryIds: [],
+        excludeBookId: bookId,
+      }),
+    ).resolves.toBe(relatedBooks);
+  });
+
+  it.each([
+    { authorIds: ['invalid'], categoryIds: [], excludeBookId: bookId },
+    { authorIds: [], categoryIds: ['invalid'], excludeBookId: bookId },
+    { authorIds: [], categoryIds: [], excludeBookId: 'invalid' },
+  ])('rejects invalid recommendation ids before querying: %j', async (options) => {
+    await expect(service.listRelatedPublishedBooks(options)).rejects.toThrow();
+    expect(bookRepository.findRelatedPublished).not.toHaveBeenCalled();
   });
 
   it('delegates public home books to featured-first repository logic', async () => {

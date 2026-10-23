@@ -167,6 +167,47 @@ describe('public book detail components', () => {
     expect(renderToStaticMarkup(<BookRelatedSection books={[]} />)).toBe('');
   });
 
+  it('keeps the related section title and links, rendering only available books', () => {
+    const relatedBooks = ['primero', 'segundo', 'tercero'].map((slug) => ({
+      ...book,
+      id: slug,
+      slug,
+      title: `Libro ${slug}`,
+    }));
+    const html = renderToStaticMarkup(<BookRelatedSection books={relatedBooks} />);
+
+    expect(html).toContain('También te puede interesar');
+    for (const related of relatedBooks) {
+      expect(html).toContain(`href="/libros/${related.slug}"`);
+      expect(html).toContain(related.title);
+    }
+    expect(html.match(/<article\b/g)).toHaveLength(3);
+    expect(html).toContain('data-carousel-track="featured-books"');
+  });
+
+  it.each([4, 7, 12, 15])(
+    'renders all %i recommendations in the existing carousel without slicing',
+    (count) => {
+      const relatedBooks = Array.from({ length: count }, (_, index) => ({
+        ...book,
+        id: `related-${index + 1}`,
+        slug: `related-${index + 1}`,
+        title: `Libro ${index + 1}`,
+      }));
+      const html = renderToStaticMarkup(<BookRelatedSection books={relatedBooks} />);
+
+      expect(html.match(/data-carousel-slide="featured-book"/g)).toHaveLength(count);
+      expect(html.match(/<article\b/g)).toHaveLength(count);
+      expect(html).toContain('aria-label="Libros recomendados"');
+      let previousPosition = -1;
+      for (const relatedBook of relatedBooks) {
+        const position = html.indexOf(`href="/libros/${relatedBook.slug}"`);
+        expect(position).toBeGreaterThan(previousPosition);
+        previousPosition = position;
+      }
+    },
+  );
+
   it('omits the purchase section when there are no public options', () => {
     expect(renderToStaticMarkup(<BookPurchaseSection channels={[]} />)).toBe('');
   });

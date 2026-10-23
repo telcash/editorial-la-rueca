@@ -83,6 +83,12 @@ export interface BookPublicListOptions {
   pageSize: number;
 }
 
+export interface BookRecommendationOptions {
+  authorIds: string[];
+  categoryIds: string[];
+  excludeBookId: string;
+}
+
 export interface BookRepository {
   findById(id: string): Promise<BookWithDetails | null>;
   findBySlug(slug: string): Promise<BookWithDetails | null>;
@@ -100,11 +106,7 @@ export interface BookRepository {
   findPublishedPaginated(options: BookPublicListOptions): Promise<PaginatedResult<BookWithDetails>>;
   findPublishedBySlug(slug: string): Promise<BookWithDetails | null>;
   findPublishedByAuthorId(authorId: string, limit?: number): Promise<BookWithDetails[]>;
-  findRelatedPublishedByAuthorIds(
-    authorIds: string[],
-    excludeBookId: string,
-    limit?: number,
-  ): Promise<BookWithDetails[]>;
+  findRelatedPublished(options: BookRecommendationOptions): Promise<BookWithDetails[]>;
   findHomeFeaturedPublished(limit?: number): Promise<BookWithDetails[]>;
   existsBySlug(slug: string, excludeId?: string): Promise<boolean>;
   existsByIsbn10(

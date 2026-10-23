@@ -24,7 +24,12 @@ import {
   DuplicateBookAuthorError,
   DuplicateBookCategoryError,
 } from './book.errors';
-import type { BookDataCreateInput, BookDataUpdateInput, BookRepository } from './book.types';
+import type {
+  BookDataCreateInput,
+  BookDataUpdateInput,
+  BookRecommendationOptions,
+  BookRepository,
+} from './book.types';
 
 const bookIdSchema = z.string().uuid('El id del libro debe ser un UUID valido.');
 const bookSlugSchema = createBookSchema.shape.slug;
@@ -227,19 +232,17 @@ export function createBookService(
       return bookRepository.findPublishedByAuthorId(validAuthorId, limit);
     },
 
-    async listRelatedPublishedBooksByAuthorIds(
-      authorIds: string[],
-      excludeBookId: string,
-      limit?: number,
-    ) {
-      const validAuthorIds = authorIds.map((authorId) => bookIdSchema.parse(authorId));
-      const validExcludeBookId = bookIdSchema.parse(excludeBookId);
+    async listRelatedPublishedBooks(options: BookRecommendationOptions) {
+      const authorIds = [...new Set(options.authorIds.map((id) => bookIdSchema.parse(id)))];
+      const categoryIds = [...new Set(options.categoryIds.map((id) => bookIdSchema.parse(id)))];
+      const excludeBookId = bookIdSchema.parse(options.excludeBookId);
 
-      return bookRepository.findRelatedPublishedByAuthorIds(
-        validAuthorIds,
-        validExcludeBookId,
-        limit,
-      );
+      return bookRepository.findRelatedPublished({
+        ...options,
+        authorIds,
+        categoryIds,
+        excludeBookId,
+      });
     },
 
     async listHomeFeaturedPublishedBooks(limit?: number) {

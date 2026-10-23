@@ -5,6 +5,7 @@ import {
   asc,
   desc,
   eq,
+  exists,
   ilike,
   inArray,
   isNotNull,
@@ -42,6 +43,7 @@ import type {
   BookPublicListOptions,
   BookRecentItem,
   BookRecentRow,
+  BookRecommendationOptions,
   BookWithDetails,
 } from '@/services/books/book.types';
 import type { PaginatedResult } from '@/features/admin/lib/list-query';
@@ -534,32 +536,126 @@ export async function findPublishedByAuthorId(
   return assembleBooks(bookRows, authorRows, categoryRows, editionRows);
 }
 
-export async function findRelatedPublishedByAuthorIds(
-  authorIds: string[],
-  excludeBookId: string,
-  limit = 4,
-): Promise<BookWithDetails[]> {
-  if (authorIds.length === 0) {
-    return [];
-  }
-
-  const safeLimit = Math.min(Math.max(Math.trunc(limit), 1), 12);
-  const rows = await db
-    .select({ book: books })
-    .from(books)
-    .innerJoin(bookAuthors, eq(bookAuthors.bookId, books.id))
+export async function findRelatedPublished({
+  authorIds,
+  categoryIds,
+  excludeBookId,
+}: BookRecommendationOptions): Promise<BookWithDetails[]> {
+  const publicAuthors = db
+    .select({ id: authors.id })
+    .from(bookAuthors)
+    .innerJoin(authors, eq(authors.id, bookAuthors.authorId))
     .where(
       and(
-        inArray(bookAuthors.authorId, authorIds),
-        ne(books.id, excludeBookId),
-        eq(books.isPublished, true),
-        eq(books.isArchived, false),
+        eq(bookAuthors.bookId, books.id),
+        eq(authors.isPublished, true),
+        eq(authors.isArchived, false),
       ),
-    )
-    .groupBy(books.id)
-    .orderBy(desc(books.isFeatured), asc(books.sortOrder), desc(books.createdAt), asc(books.title))
-    .limit(safeLimit);
-  const bookRows = rows.map((row) => row.book);
+    );
+  const sameAuthor =
+    authorIds.length > 0
+      ? exists(
+          db
+            .select({ id: authors.id })
+            .from(bookAuthors)
+            .innerJoin(authors, eq(authors.id, bookAuthors.authorId))
+            .where(
+              and(
+                eq(bookAuthors.bookId, books.id),
+                inArray(authors.id, authorIds),
+                eq(authors.isPublished, true),
+                eq(authors.isArchived, false),
+              ),
+            ),
+        )
+      : sql`false`;
+  const visibleBook = and(
+    ne(books.id, excludeBookId),
+    eq(books.isPublished, true),
+    eq(books.isArchived, false),
+    exists(publicAuthors),
+  );
+  const stableOrder = [
+    desc(books.isFeatured),
+    asc(books.sortOrder),
+    desc(books.createdAt),
+    asc(books.title),
+    asc(books.id),
+  ];
+  const sameAuthorRows =
+    authorIds.length > 0
+      ? await db
+          .select()
+          .from(books)
+          .where(and(visibleBook, sameAuthor))
+          .orderBy(...stableOrder)
+      : [];
+
+  // Keep every same-author book; other priorities only complete the minimum of four.
+  const remaining = Math.max(0, 4 - sameAuthorRows.length);
+  let fallbackRows: BookRow[] = [];
+
+  if (remaining > 0) {
+    const sameCategory =
+      categoryIds.length > 0
+        ? exists(
+            db
+              .select({ id: categories.id })
+              .from(bookCategories)
+              .innerJoin(categories, eq(categories.id, bookCategories.categoryId))
+              .where(
+                and(
+                  eq(bookCategories.bookId, books.id),
+                  inArray(categories.id, categoryIds),
+                  eq(categories.isPublished, true),
+                  eq(categories.isArchived, false),
+                ),
+              ),
+          )
+        : sql`false`;
+    const featuredAuthor = exists(
+      db
+        .select({ id: authors.id })
+        .from(bookAuthors)
+        .innerJoin(authors, eq(authors.id, bookAuthors.authorId))
+        .where(
+          and(
+            eq(bookAuthors.bookId, books.id),
+            eq(authors.isPublished, true),
+            eq(authors.isArchived, false),
+            eq(authors.isFeatured, true),
+          ),
+        ),
+    );
+    const priority = sql<number>`case
+      when ${sameCategory} and ${featuredAuthor} then 2
+      when ${sameCategory} then 3
+      else 4
+    end`;
+
+    fallbackRows = await db
+      .select()
+      .from(books)
+      .where(
+        and(
+          visibleBook,
+          not(sameAuthor),
+          sameAuthorRows.length > 0
+            ? not(
+                inArray(
+                  books.id,
+                  sameAuthorRows.map((book) => book.id),
+                ),
+              )
+            : undefined,
+          or(sameCategory, featuredAuthor),
+        ),
+      )
+      .orderBy(priority, ...stableOrder)
+      .limit(remaining);
+  }
+
+  const bookRows = [...sameAuthorRows, ...fallbackRows];
   const { authorRows, categoryRows, editionRows } = await findPublicDetailsByBookIds(
     bookRows.map((book) => book.id),
   );
